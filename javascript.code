@@ -1,0 +1,40 @@
+/*	terminology
+---------------------------------------------------------------------------------- */
+
+/*	sync vs async
+------------------- */
+
+synchronous = one by one in sequence, can only proceed after one finishes
+asynchronous = non sequential; next in line can start before previous finishes
+
+
+
+
+
+
+
+
+/*	promises
+---------------------------------------------------------------------------------- */
+
+/*	example
+------------------- */
+
+doSomeAsyncTask() {
+	return new Promise( ( resolve, reject )=> {
+		//	doYourAsyncTask
+		if ( yourTasks suceeds ) {
+			resolve( //	pass a string or object here optionally )
+		} else {
+			reject( //	pass a string or object here optionally )
+		}
+	})
+}
+
+doSomeAsyncTask()
+.then( ( //	recieve object or string )=> {
+	console.log( //	object or string )
+})
+.catch( ( //	recieve object or string )=> {
+	console.log( //	object or string )
+})
