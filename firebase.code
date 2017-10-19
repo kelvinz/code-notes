@@ -1,0 +1,8 @@
+/*	general
+---------------------------------------------------------------------------------- */
+
+//	prevent double config error
+
+if ( !firebase.apps.length ) {
+	firebase.initializeApp( config )
+}
