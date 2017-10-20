@@ -1,0 +1,22 @@
+/*	general
+---------------------------------------------------------------------------------- */
+
+/*	ssh
+---------------------------------------------------------------------------------- */
+
+//	create
+ssh-keygen -t rsa
+
+//	default save location
+/yourhome/.ssh/id_rsa
+
+//	passphrase is optional
+
+//	public key
+/yourhome/.ssh/id_rsa.pub
+
+//	private key
+/yourhome/.ssh/id_rsa
+
+//	get public key
+ssh-keygen -y
