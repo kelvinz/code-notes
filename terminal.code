@@ -1,8 +1,33 @@
 /*	general
 ---------------------------------------------------------------------------------- */
 
+
+
+/*	cleaner prompt
+------------------- */
+
+
+
+//	find profile if exists
+//	or it will create
+sudo nano ~/.bash_profile
+
+//	add lines
+# Change prompt
+export PS1="\W \$ "
+
+//	save, exit, test
+
+
+
+
+
+
+
 /*	ssh
 ---------------------------------------------------------------------------------- */
+
+
 
 //	create
 ssh-keygen -t rsa
@@ -20,3 +45,9 @@ ssh-keygen -t rsa
 
 //	get public key
 ssh-keygen -y
+
+
+
+
+
+

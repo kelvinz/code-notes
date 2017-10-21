@@ -1,10 +1,14 @@
 /*	general
 ---------------------------------------------------------------------------------- */
 
+
+
 //	prevent double config error
 if ( !firebase.apps.length ) {
 	firebase.initializeApp( config )
 }
+
+
 
 //	check if connected
 firebase.database().ref().child( '.info/connected' )
@@ -14,6 +18,14 @@ firebase.database().ref().child( '.info/connected' )
 	}
 })
 
+
+
 //	to create an empty node for placeholder
 //	add a 0: 0 as a child node
 //	it has to have 'content' to exist
+
+
+
+
+
+

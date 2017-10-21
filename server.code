@@ -1,0 +1,260 @@
+/*	general
+---------------------------------------------------------------------------------- */
+
+
+
+//	logging in
+ssh root@[ your.ip.address.here ]
+
+
+
+//	add ssh keys to existing droplet
+cat ~/.ssh/id_rsa.pub | ssh root@[your.ip.address.here] "cat >> ~/.ssh/authorized_keys"
+
+
+
+//	base controls uses control + [ something ]
+
+
+
+
+
+
+
+/*	creation
+---------------------------------------------------------------------------------- */
+
+
+
+/*	Ubuntu 16.04
+------------------- */
+
+//	add new user
+adduser [ name ]
+//	add secure password
+//	other info optional
+
+//	grant sudo
+usermod -aG sudo [ name ]
+
+//	switch to user temporarily
+su - [ name ]
+
+//	create directory
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+nano ~/.ssh/authorized_keys
+
+//	paste ssh in
+//	then
+chmod 600 ~/.ssh/authorized_keys
+exit
+
+//	as root user now after exit
+//	disable password auth
+sudo nano /etc/ssh/sshd_config
+
+//	find lines & change
+//	unless already correct
+PasswordAuthentication no
+PubkeyAuthentication yes
+ChallengeResponseAuthentication no
+
+//	reload
+sudo systemctl reload sshd
+
+
+
+/*	basic firewall
+------------------- */
+
+sudo ufw app list
+sudo ufw allow OpenSSH
+sudo ufw enable
+sudo ufw status
+
+
+
+
+
+
+
+/*	nginx
+---------------------------------------------------------------------------------- */
+
+
+
+sudo apt-get update
+sudo apt-get install nginx
+sudo ufw app list
+sudo ufw allow 'Nginx HTTP'
+sudo ufw status
+systemctl status nginx
+//	should see it saying active (running)
+//	test by checking http://[ your ip ]
+
+
+
+/*	basic commands
+------------------- */
+
+//	stop server
+sudo systemctl stop nginx
+
+//	start server
+sudo systemctl start nginx
+
+//	stop & start
+sudo systemctl restart nginx
+
+//	reload without restart
+sudo systemctl reload nginx
+
+
+
+/*	directories
+------------------- */
+
+//	default web content
+/var/www/html
+
+//	config directory & file
+/etc/nginx
+/etc/nginx/nginx.conf
+
+//	server blocks
+/etc/nginx/sites-available/
+/etc/nginx/sites-enabled/
+
+//	every request recorded here
+/var/log/nginx/access.log
+
+//	any error recorded here
+/var/log/nginx/error.log
+
+
+
+/*	server blocks
+------------------- */
+
+//	make directory & give permissions
+sudo mkdir -p /var/www/[ mysite.com ]/html
+sudo chown -R $USER:$USER /var/www/[ mysite.com ]/html
+sudo chmod -R 755 /var/www
+
+//	temp html
+nano /var/www/[ mysite.com ]/html/index.html
+
+<html>
+    <head>
+        <title>[ mysite.com ]</title>
+    </head>
+    <body>
+        <h1>Upgrading in progress...</h1>
+    </body>
+</html>
+
+//	server block file
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/[ mysite.com ]
+sudo nano /etc/nginx/sites-available/[ mysite.com ]
+
+//	change the following
+//	remove default_server
+//	default server remains pointing to www/html
+//	for direct ip connection without domains
+listen 80;
+listen [::]:80;
+
+//	add root directory
+root /var/www/[ mysite.com ]/html;
+
+//	add server name
+server_name [ mysite.com ] www.[ mysite.com ];
+
+//	save & exit
+//	enable
+sudo ln -s /etc/nginx/sites-available/[ mysite.com ] /etc/nginx/sites-enabled/
+
+//	config
+sudo nano /etc/nginx/nginx.conf
+//	uncomment ( remove # ) from
+server_names_hash_bucket_size 64;
+//	save & exit
+
+sudo nginx -t
+//	see that there's no errors
+sudo systemctl restart nginx
+//	test yoursite.com
+
+
+
+/*	optimise
+------------------- */
+
+//	check number of cores e.g. 1
+grep processor /proc/cpuinfo | wc -l
+//	check core limit e.g. 1024
+ulimit -n
+
+//	change default config
+//	according to previous results
+worker_processes 1;
+worker_connections 1024;
+
+sudo service nginx restart
+
+
+
+/*	secure
+------------------- */
+
+//	fail2ban
+sudo apt-get update
+sudo apt-get install fail2ban
+
+//	to be updated...
+
+
+
+
+
+
+
+/*	ssl
+---------------------------------------------------------------------------------- */
+
+//	install certbot
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install python-certbot-nginx
+
+//	adjust firewall
+sudo ufw status
+sudo ufw allow 'Nginx Full'
+sudo ufw delete allow 'Nginx HTTP'
+sudo ufw status
+
+//	getting ssl cert
+sudo certbot --nginx -d [ mysite.com ] -d www.[ mysite.com ]
+
+//	upsize security
+sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+
+sudo nano /etc/nginx/sites-available/[ mysite.com ]
+
+//	add this anywhere in server {}
+ssl_dhparam /etc/ssl/certs/dhparam.pem;
+
+sudo systemctl reload nginx
+
+//	auto-renewal
+sudo crontab -e
+
+//	add at bottom for 2:22 am renewal when possible
+22 2 * * * /usr/bin/certbot renew --quiet
+
+
+
+
+
+

@@ -1,12 +1,26 @@
+/*	general
+---------------------------------------------------------------------------------- */
+
+
+
+//	placeholder
+
+
+
+
+
+
+
 /*	terminology
 ---------------------------------------------------------------------------------- */
+
+
 
 /*	sync vs async
 ------------------- */
 
 synchronous = one by one in sequence, can only proceed after one finishes
 asynchronous = non sequential; next in line can start before previous finishes
-
 
 
 
@@ -38,3 +52,9 @@ doSomeAsyncTask()
 .catch( ( //	recieve object or string )=> {
 	console.log( //	object or string )
 })
+
+
+
+
+
+
