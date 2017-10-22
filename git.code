@@ -1,0 +1,25 @@
+/*	general
+---------------------------------------------------------------------------------- */
+
+
+
+//	ignore vs exclude
+ignore - will be git versioned
+exclude - only for yourself
+
+
+
+//	cherry pick
+choose a particular commit's changes & implement on current head
+
+
+
+//	reset vs revert
+reset - undo. for local commit mistakes that haven't been pushed
+revert - undo by committing previous version to current head
+
+
+
+
+
+
