@@ -3,10 +3,34 @@
 
 
 
-/*	cleaner prompt
+/*	basic commands
 ------------------- */
 
+//	clear screen
+clear
 
+//	login directory
+cd
+
+//	root directory
+cd /
+
+//	home directory
+cd /home
+
+//	up one directory
+..
+
+//	closing programs
+control + c
+
+//	easy word editor
+nano
+
+
+
+/*	cleaner prompt
+------------------- */
 
 //	find profile if exists
 //	or it will create
@@ -17,6 +41,30 @@ sudo nano ~/.bash_profile
 export PS1="\W \$ "
 
 //	save, exit, test
+
+
+
+
+
+
+
+/*	installing misc
+---------------------------------------------------------------------------------- */
+
+
+
+/*	homebrew
+------------------- */
+
+
+
+/*	node
+------------------- */
+
+
+
+/*	npm
+------------------- */
 
 
 
