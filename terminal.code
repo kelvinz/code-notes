@@ -56,15 +56,74 @@ export PS1="\W \$ "
 /*	homebrew
 ------------------- */
 
+//	install
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+//	update lists
+brew update
+
+//	check which packages are outdated
+brew outdated
+
+//	upgrade all outdated
+brew upgrade
+
+//	delete old caches
+brew cleanup
+
 
 
 /*	node
 ------------------- */
 
+//	better option than installer at site
+//	use brew to install
+brew install node
+
+//	list installed versions
+brew search node
+
+//	find specific v to install
+brew install node@1.23
+
+//	if you have multiple
+//	switch between v
+brew unlink node
+brew link node@1.23
+
 
 
 /*	npm
 ------------------- */
+
+//	npm comes with node
+
+//	listing all npm global packages
+npm list -g --depth=0
+
+//	remove packages not in dependencies
+npm prune
+
+//	clear old versions in cache
+npm cache clean --force
+
+//	update npm
+sudo npm install npm@latest -g
+
+//	install packages
+//	to dependency or dev dependency
+npm install --save xxx
+npm install --save-dev xxx
+
+//	uninstall packages
+//	from dependency or dev dependency
+npm uninstall --save xxx
+npm uninstall --save-dev xxx
+
+//	to remove if uninstall doesn't work
+npm remove xxx
+
+//	add -g to commands for global
 
 
 
