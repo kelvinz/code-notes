@@ -23,3 +23,24 @@ revert - undo by committing previous version to current head
 
 
 
+
+/*	starting a new project
+---------------------------------------------------------------------------------- */
+
+
+
+1.	create a new repo in tower - cloud
+2.	setup project locally - vue init or otherwise
+3.	drag folder into tower repo - non cloud
+4.	commit init, add git-ignore
+5.	create remote - origin
+6.	publish master branch
+7.	activate git-flow
+8.	publish develop branch
+9.	~volia
+
+
+
+
+
+

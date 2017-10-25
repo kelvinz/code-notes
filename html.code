@@ -3,7 +3,15 @@
 
 
 
-//	placeholder
+//	paths
+
+/	root of the current drive
+./	current directory
+../	parent of the current directory
+
+//	you can use file.jpg or ./file.jpg
+//	but ./ is for compilers that generate paths for you to get a reference
+//	not needed in most cases, but can add just in case
 
 
 
