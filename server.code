@@ -182,6 +182,14 @@ root /var/www/[ mysite.com ]/html;
 //	add server name
 server_name [ mysite.com ] www.[ mysite.com ];
 
+//	redirect all to index.html
+location / {
+  try_files $uri $uri/ /index.html;
+}
+
+//	remove trailing slash
+rewrite ^/(.*)/$ /$1 permanent;
+
 //	save & exit
 //	enable
 sudo ln -s /etc/nginx/sites-available/[ mysite.com ] /etc/nginx/sites-enabled/
@@ -216,23 +224,31 @@ worker_processes 1;
 worker_connections 1024;
 
 //	gzip settings
-gzip             on;
-gzip_comp_level  2;
-gzip_min_length  1000;
-gzip_proxied     expired no-cache no-store private auth;
-gzip_types       text/plain application/x-javascript text/xml text/css application/xml;
+gzip on;
+gzip_comp_level 2;
+gzip_min_length 1024;
+gzip_vary on;
+gzip_proxied any;
+gzip_buffers 4 32k;
+gzip_http_version 1.1;
+gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
 
 //	buffer
+//	ignore for now - seem to have error
 client_body_buffer_size 10K;
 client_header_buffer_size 1k;
 client_max_body_size 8m;
 large_client_header_buffers 2 1k;
 
 //	timeout
+//	ignore for now - seem to have error
 client_body_timeout 12;
 client_header_timeout 12;
 keepalive_timeout 15;
 send_timeout 10;
+
+//	turn off logging every request
+access_log off;
 
 //	inside server block file
 location ~* .(jpg|jpeg|png|gif|ico|css|js)$ {
@@ -254,7 +270,43 @@ sudo service nginx restart
 sudo apt-get update
 sudo apt-get install fail2ban
 
-//	to be updated...
+//	copy jail.local
+awk '{ printf "# "; print; }' /etc/fail2ban/jail.conf | sudo tee /etc/fail2ban/jail.local
+
+//	install misc
+sudo apt-get install sendmail iptables-persistent
+sudo service fail2ban stop
+
+//	firewall config
+sudo iptables -A INPUT -i lo -j ACCEPT
+sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+sudo iptables -A INPUT -p tcp -m multiport --dports 80,443 -j ACCEPT
+sudo iptables -A INPUT -j DROP
+
+//	view
+sudo iptables -S
+
+//	save
+sudo dpkg-reconfigure iptables-persistent
+sudo service fail2ban start
+
+//	change fail2ban settings
+sudo nano /etc/fail2ban/jail.local
+
+[DEFAULT]
+bantime = 1800
+
+destemail = [ your email ]
+sendername = [ your preferred name ]
+action = %(action_mwl)s
+
+[nginx-http-auth]
+enabled = true
+
+//	restart
+sudo service fail2ban stop
+sudo service fail2ban start
 
 
 
@@ -294,6 +346,25 @@ sudo crontab -e
 
 //	add at bottom for 2:22 am renewal when possible
 22 2 * * * /usr/bin/certbot renew --quiet
+
+
+
+
+
+
+
+/*	using cdns
+---------------------------------------------------------------------------------- */
+
+
+
+//	free one at cloudflare
+sign up, etc etc
+changed DNS records from
+ns1.digitalocean.com
+ns2.digitalocean.com
+ns3.digitalocean.com
+to their given DNS
 
 
 

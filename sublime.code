@@ -16,3 +16,36 @@
 
 
 
+
+/*	initial setup
+---------------------------------------------------------------------------------- */
+
+
+
+//	base
+1.	install package control
+2.	install packages
+		-	AlignTab
+		-	Emmet
+		-	CodeIntel
+		-	CodeKit
+		-	SCSS
+		-	Vue Syntax Highlight
+
+
+
+//	under key bindings
+[
+	{ "keys": ["command+shift+t"], "command": "delete_trailing_spaces" }
+]
+
+
+
+//	under preference add
+"scroll_past_end": true,
+
+
+
+
+
+
