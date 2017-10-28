@@ -84,3 +84,27 @@ Math.round
 
 
 
+
+/*	helpers
+---------------------------------------------------------------------------------- */
+
+
+
+/*	random
+------------------- */
+
+function random( min, max ) {
+	if ( isArr( min ) && min.length === 2 )
+		return min[ 0 ] + Math.random() * ( min[ 1 ] - min[ 0 ] )
+	if ( isArr( min ) )
+		return min[ ~~( Math.random() * min.length ) ]
+	if ( !isNum( max ) )
+		max = min || 1, min = 0
+		return min + Math.random() * ( max - min )
+}
+
+
+
+
+
+
