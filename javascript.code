@@ -120,13 +120,31 @@ function isString( object ) {
 
 //	to update
 function random( min, max ) {
-	if ( isArr( min ) && min.length === 2 )
+	if ( isArray( min ) && min.length === 2 ) {
 		return min[ 0 ] + Math.random() * ( min[ 1 ] - min[ 0 ] )
-	if ( isArr( min ) )
+	}
+	if ( isArray( min ) ) {
 		return min[ ~~( Math.random() * min.length ) ]
-	if ( !isNum( max ) )
+	}
+	if ( !isNumber( max ) ) {
 		max = min || 1, min = 0
-		return min + Math.random() * ( max - min )
+	}
+	return min + Math.random() * ( max - min )
+}
+
+
+
+//	shuffle arrays
+function shuffle( arr ) {
+	let i = arr.length, t, r
+	while ( 0 !== i ) {
+		r = Math.floor( Math.random() * i )
+		i -= 1
+		t = arr[ i ]
+		arr[ i ] = arr[ r ]
+		arr[ r ] = t
+	}
+	return arr;
 }
 
 
