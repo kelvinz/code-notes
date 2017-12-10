@@ -15,6 +15,11 @@
 
 
 
+//	prevent requests for favicons
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+
+
 
 
 

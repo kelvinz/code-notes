@@ -118,3 +118,6 @@ firebase deploy
 
 /*  cloud functions
 ---------------------------------------------------------------------------------- */
+
+//  add functions to existing project
+firebase init functions
