@@ -35,12 +35,60 @@ firebase.database().ref().child( '.info/connected' )
 
 
 
+//	auto sign in user anonymously
+firebase.auth().signInAnonymously()
+.catch( error => {
+	console.log( error.message )
+})
+
+//	when auth changes
+firebase.auth().onAuthStateChanged( user => {
+	if ( user ) { }
+}
+
+
+
 
 
 
 
 /*  database
 ---------------------------------------------------------------------------------- */
+
+
+
+//	indexing your database for faster query
+//	so scores value is going to be sorted by value
+//	scores: { someone: 2, other: 3 }
+{
+	"rules": {
+		"scores": {
+			".indexOn": ".value"
+		}
+	}
+}
+//	or if people is sorted by scores
+{
+	"rules": {
+		"people": {
+			".indexOn": "scores"
+		}
+	}
+}
+
+
+
+/*	realtime
+------------------- */
+
+
+
+
+
+
+
+/*	firestore
+------------------- */
 
 
 
@@ -73,41 +121,41 @@ firebase deploy
 
 //	firebase.json
 {
-  "hosting": {
-    "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-    	{
-    		"source": "**",
-    		"destination": "/index.html"
-    	}
-    ],
-    "headers": [ {
-      "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
-      "headers" : [ {
-        "key" : "Access-Control-Allow-Origin",
-        "value" : "*"
-      } ]
-    }, {
-      "source" : "**/*.@(js|css)",
-      "headers" : [ {
-        "key" : "Cache-Control",
-        "value" : "max-age=604800"
-      } ]
-    }, {
-      "source" : "**/*.@(jpg|jpeg|gif|png|ico)",
-      "headers" : [ {
-        "key" : "Cache-Control",
-        "value" : "max-age=604800"
-      } ]
-    } ],
-    "cleanUrls": true,
-    "trailingSlash": false
-  }
+	"hosting": {
+		"public": "dist",
+		"ignore": [
+			"firebase.json",
+			"**/.*",
+			"**/node_modules/**"
+		],
+		"rewrites": [
+			{
+				"source": "**",
+				"destination": "/index.html"
+			}
+		],
+		"headers": [ {
+			"source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+			"headers" : [ {
+				"key" : "Access-Control-Allow-Origin",
+				"value" : "*"
+			} ]
+		}, {
+			"source" : "**/*.@(js|css)",
+			"headers" : [ {
+				"key" : "Cache-Control",
+				"value" : "max-age=604800"
+			} ]
+		}, {
+			"source" : "**/*.@(jpg|jpeg|gif|png|ico)",
+			"headers" : [ {
+				"key" : "Cache-Control",
+				"value" : "max-age=604800"
+			} ]
+		} ],
+		"cleanUrls": true,
+		"trailingSlash": false
+	}
 }
 
 
@@ -116,8 +164,27 @@ firebase deploy
 
 
 
-/*  cloud functions
+/*	cloud functions
 ---------------------------------------------------------------------------------- */
 
-//  add functions to existing project
+//	add functions to existing project
 firebase init functions
+
+//	add environment configs into project
+firebase functions:config:set someservice.key="THE API KEY" someservice.id="THE CLIENT ID"
+
+//	read what's in the configs of project
+firebase functions:config:get
+
+//	using configs in functions
+functions.config().someservice.key
+
+//	when using firebase admin, config is auto included
+const admin = require( 'firebase-admin' )
+admin.initializeApp( functions.config().firebase )
+
+
+
+
+
+
