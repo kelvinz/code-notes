@@ -3,7 +3,470 @@
 
 
 
-//	placeholder
+/*	new vue project
+------------------- */
+
+//	update vue cli
+sudo npm i -g vue-cli
+
+//	create webpack project
+vue init webpack 'project-name'
+//	runtime only
+cd 'project-name'
+
+//	sass loader
+npm install sass-loader node-sass webpack --save-dev
+
+//	normalize
+npm install --save normalize.css
+
+//	vuex
+npm install vuex --save
+
+//	firebase
+npm install firebase --save
+
+//	config > index
+productionSourceMap: false
+autoOpenBrowser: true
+
+//	index.html
+size: 2, indentation to tabs, size: 4
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Hi 👋🏻, I'm Kelvin Zhao.</title>
+<meta name="author" content="Kelvin Zhao | www.kelvinzhao.com">
+<meta name="copyright" content="Kelvin Zhao | Copyright (c) 1982-2017">
+<meta name="description" content="I design 🎨, code 👾, and sometimes sell myself 🙊 for money.">
+<link rel='icon' type='image/x-icon' href='./static/favicon.ico'>
+<link rel="apple-touch-icon" href="./static/icon.png">
+//	or <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<!-- google analytics placeholder -->
+
+//	README.md
+Hi 👋🏻, I'm Kelvin Zhao. I design 🎨, code 👾, and sometimes sell myself 🙊 for money.
+
+//	src > App.vue
+size: 2, indentation to tabs, size: 4
+
+<template>
+	<div id="app">
+		<router-view/>
+	</div>
+</template>
+
+
+
+<!---->
+
+
+
+<script>
+export default {
+	name: 'app'
+}
+</script>
+
+
+
+<!---->
+
+
+
+<style lang="scss">
+@import "./scss/app.scss";
+</style>
+
+//	src > main.js
+size: 2, indentation to tabs, size: 4
+
+import Vue from 'vue'
+import App from './App'
+import { store } from './store'
+import router from './router'
+
+Vue.config.productionTip = false
+
+new Vue({
+	el: '#app',
+	store,
+	router,
+	render: h => h( App )
+})
+
+//	src > components > HelloWorld.vue
+rename to Index.vue
+size: 2, indentation to tabs, size: 4
+
+<template>
+	<div></div>
+</template>
+
+
+
+<!---->
+
+
+
+<script>
+export default {
+	name: 'Index',
+	data () {
+		return {
+
+		}
+	}
+}
+</script>
+
+
+
+<!---->
+
+
+
+<style lang="scss" scoped>
+</style>
+
+//	src > router > index.js
+size: 2, indentation to tabs, size: 4
+
+import Vue from 'vue'
+import Router from 'vue-router'
+import Index from '@/components/Index'
+
+Vue.use( Router )
+
+export default new Router({
+	mode: 'history',
+	routes: [
+		{
+			path: '/',
+			name: 'Index',
+			component: Index
+		}
+	]
+})
+
+//	src > create scss folder + following files
+
+//	_base.scss
+
+/*  base settings
+---------------------------------------------------------------------------------- */
+
+html,
+body {
+	width      : 100vw; // make site fit width
+	min-height : 100vh; // make site fill screen // may cause scrollTop bug
+	max-width  : 100%; // do not allow x scrolling
+	overflow-x : hidden; // able to hide stuff out of screen
+	overflow-y : auto; // scrolling auto
+	font-size  : 100%; // ~16px
+}
+
+html {
+	box-sizing : border-box; // width & height to include paddings
+	-webkit-overflow-scrolling : touch; // smooth scrolling for iOS
+	-webkit-font-smoothing: antialiased; // better font rendering
+	-moz-osx-font-smoothing: grayscale; // ^^
+}
+
+*,
+*::before,
+*::after {
+	box-sizing     : inherit; // inherit border-box from above
+	text-rendering : optimizeLegibility; // make small text readable
+}
+
+body {
+	cursor      : auto; // reset cursor
+	margin      : 0; // tight fit as a default
+	padding     : 0; // ^^
+	position    : relative; // for child absolutes to align to
+	font-style  : normal; // reset font
+	font-weight : normal; // ^^
+}
+
+a:hover {
+	cursor : pointer; // links use pointers
+}
+
+img {
+	height    : auto; // for responsive images
+	max-width : 100%; // ^^
+
+	display        : inline-block; // inline but have width & height
+	vertical-align : middle; // line side by side images by middle
+
+	image-rendering        : auto; // better scaling images most browers
+	-ms-interpolation-mode : bicubic; // better scaling images IE
+}
+
+.map_canvas,
+.mqa-display {
+	img,
+	embed,
+	object {
+		max-width : none !important; // better google map embed
+	}
+}
+
+//	_configs.scss
+
+/*  mother of all bases
+---------------------------------------------------------------------------------- */
+$em    : 16px;
+$ratio : 1.618; // golden ratio
+
+/*  device sizes
+---------------------------------------------------------------------------------- */
+$phone   : 36em; // ~576px
+$tablet  : 48em; // ~768px
+$desktop : 62em; // ~992px
+$xlarge  : 75em; // ~1200px
+
+/*  colors
+---------------------------------------------------------------------------------- */
+$color-black  : #1e1e1e;
+$color-grey   : #6e6e6e;
+$color-white  : #fafafa;
+
+$color-red    : #f55555;
+$color-orange : #ffb446;
+$color-yellow : #fff546;
+$color-green  : #a5f06e;
+$color-blue   : #4691fa;
+$color-purple : #a04bc8;
+$color-pink   : #ff96f5;
+
+/*  typography
+---------------------------------------------------------------------------------- */
+$pri-font  : 'Varela Round';
+$pri-link  : 'Varela+Round';
+$pri-sizes : '';
+
+$sec-font  : 'Montserrat';
+$sec-link  : $sec-font;
+$sec-sizes : ':300,400,700';
+
+//	_constants.scss
+
+/*  foundation
+---------------------------------------------------------------------------------- */
+
+@import url( 'https://fonts.googleapis.com/css?family=#{$pri-link}|#{$sec-link}#{$sec-sizes}' );
+
+h1 { font-size : #{ power( $ratio, 4 ) }em; }
+h2 { font-size : #{ power( $ratio, 3 ) }em; }
+h3 { font-size : #{ power( $ratio, 2 ) }em; }
+h4 { font-size : #{ power( $ratio, 1 ) }em; }
+h5 { font-size : 1em; }
+h6 { font-size : #{ power( $ratio, 1 ) - 1 }em; }
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	color: $color-black;
+	font-weight: normal; // safari auto bolds h, can cause bugs if custom font has weights in them
+	font-family: $pri-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html {
+	font-size: 1em;
+	line-height: 1.5;
+	color: $color-black;
+	font-family: $sec-font, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	color: $color-orange;
+	text-decoration: none;
+	transition: all ease 0.25s;
+	box-shadow: inset 0 -2px 0px 0px $color-orange;
+
+	&:hover {
+		color: $color-yellow;
+		box-shadow: inset 0 -2px 0px 0px $color-yellow;
+	}
+}
+
+/*  constants
+---------------------------------------------------------------------------------- */
+
+//	_helpers.scss
+
+/*  functions
+---------------------------------------------------------------------------------- */
+
+// strip( 16px ) = 16
+@function strip( $num ) {
+	@return $num / ( $num * 0 + 1 );
+}
+
+// em( 16px ) = 1em
+@function em( $pixels, $context: $em ) {
+	@return ( $pixels / $context ) * 1em;
+}
+
+// power( 2, 2 )
+@function power( $num, $power ) {
+	$x: 1;
+	@if $power > 0 {
+		@for $i from 1 through $power {
+			$x: $x * $num;
+		}
+	} @else if $power < 0 {
+		@for $i from 1 through $power {
+			$x: $x / $num;
+		}
+	}
+	@return $x;
+}
+
+/*  mixins
+---------------------------------------------------------------------------------- */
+
+// @include align( 50%, 20% )
+// 50 50 is default if you @include align()
+@mixin align( $x: 50%, $y: 50% ) {
+	top       : $y;
+	left      : $x;
+	position  : absolute;
+	transform : translate( -( $x ), -( $y ) );
+}
+
+// @include break( $phone, up )
+// $phone, $tablet, $desktop, $xlarge or em size, up or down
+@mixin break( $size, $dir ) {
+
+	@if $dir == 'up' {
+		$dir: min-width;
+	} @else if $dir == 'down' {
+		$dir: max-width;
+		$size: $size - em( 1px );  // -1px to avoid conflict with up
+	}
+
+	@media ( $dir: $size ) {
+		@content;
+	}
+}
+
+/*  extends
+---------------------------------------------------------------------------------- */
+
+// @extend %clearfix
+// % = placeholder class ,if not used, won't be in output css
+%clearfix {
+	&:after {
+		content : '';
+		display : table;
+		clear   : both;
+	}
+}
+
+//	app.scss
+
+/*!
+	(╯°□°)╯︵ ┻━┻ ¯\_(ツ)_/¯
+	kelvinzhao.com
+*/
+
+// dependencies
+@import '~normalize.css';
+
+// app structure
+@import 'base';
+@import 'helpers';
+@import 'configs';
+@import 'constants';
+
+//	src > new folder - store > index.js
+
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use( Vuex )
+
+export const store = new Vuex.Store({
+	state: {
+
+	},
+	getters: {
+
+	},
+	mutations: {
+
+	},
+	actions: {
+
+	}
+})
+
+//	update firebase tools
+npm install -g firebase-tools
+firebase init
+
+//	firebase.json
+
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(js|css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|ico)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800"
+          }
+        ]
+      }
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
+  }
+}
+
+//	src > assets
+delete default file/s
 
 
 

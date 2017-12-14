@@ -3,7 +3,8 @@
 
 
 
-//	placeholder
+//	string interpolation
+`My string and ${ myVar } hand-in-hand.`
 
 
 
