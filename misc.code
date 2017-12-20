@@ -1,0 +1,82 @@
+/*	stripe
+---------------------------------------------------------------------------------- */
+
+
+
+//	placeholder
+
+
+
+
+
+
+
+/*	mailgun
+---------------------------------------------------------------------------------- */
+
+
+
+//	setup
+npm install mailgun-js --save
+
+//	config keys if needed in firebase or otherwise
+//	example below from firebase configs
+
+//	node code
+mailgun    = require( 'mailgun-js' )({
+	apiKey: functions.config().mailgun.key,
+	domain: functions.config().mailgun.domain
+})
+
+const toUser = {
+	to      : `${ e.email }`,
+	from    : `no-reply@mg.magnoliasensuel.com`,
+	subject : `BVLGARI | Magnolia Sensuel`,
+	html    : `
+		insert edm here`
+	}
+
+return mailgun.messages().send( toUser, ( error, body ) => {
+	console.log( error, body )
+})
+
+
+
+
+
+
+
+/*	twilio
+---------------------------------------------------------------------------------- */
+
+
+
+//	setup
+npm install twilio --save
+
+//	config keys if needed in firebase or otherwise
+//	example below from firebase configs
+
+//	node code
+twilio     = require( 'twilio' ),
+accountSid = functions.config().twilio.sid,
+authToken  = functions.config().twilio.token,
+client     = new twilio( accountSid, authToken )
+
+return client.messages.create({
+	body : `insert text here`,
+	to   : `+123456789`,
+	from : `+123456789`
+})
+.then( message => {
+	// console.log( message.sid )
+})
+.catch( err => {
+	// console.log( err )
+})
+
+
+
+
+
+
