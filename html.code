@@ -20,6 +20,12 @@
 
 
 
+//	images by default is inline-block
+//	in div's with only the image, a white space appears below it
+//	which cannot be detected via inspector
+
+
+
 
 
 
