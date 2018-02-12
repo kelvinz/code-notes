@@ -10,3 +10,384 @@
 
 
 
+
+/*	sample code
+---------------------------------------------------------------------------------- */
+
+
+
+//	stores page
+<div class="grid--full page-wrapper store-header">
+
+	<!-- selector -->
+	{{ section.settings.banner | img_url: 'master' | img_tag: section.settings.banner.alt }}
+	<div class="grid__item large--two-thirds push--large--one-sixth">
+	  <h1 class="page-title">{{ page.title }}</h1>
+	  <a href="#stores" id="collection-down-arrow"><img src="//cdn.shopify.com/s/files/1/2623/3408/t/2/assets/down-arrow.svg?16471722114123132060"></a>
+	  <div class="section-header sorting-header">
+		<div class=" collection-sorting">
+		  <div class="form-horizontal">
+			<div class="sort-flex">
+			  <label for="SortBy">{{ 'collections.sorting.title' | t }}</label>
+			  <select name="SortBy" id="SortBy">
+				<option value="all">All</option>
+				{% for block in section.blocks %}
+				{% if block.type == 'location' %}
+				<option value="{{ block.settings.tag }}">{{ block.settings.location }}</option>
+				{% endif %}
+				{% endfor %}
+			  </select>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+</div>
+
+<div id="stores">
+
+	{% for block in section.blocks %}
+	{% if block.type == 'store' %}
+
+	<!-- content -->
+	<div class="grid--full page-wrapper store-stores {{ block.settings.store-tag }}">
+	  {{ block.settings.store-banner | img_url: 'master' | img_tag: block.settings.store-banner.alt }}
+	  <div class="holder">
+		<h1>{{ block.settings.store-title }}</h1>
+		<div class="flex-me">
+		  <div class="lefty">
+			<p>{{ block.settings.store-location }}</p>
+		  </div>
+		  <div class="righty">
+			<a href="tel:{{ block.settings.store-number }}">
+			<div class="button">
+			  <p>Call Now</p>
+			</div>
+			</a>
+			<div class="button see-brands" data-id="{{ block.settings.store-tag }}">
+			  <p>See Brands</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+	<!-- popup -->
+	<div class="store-popup {{ block.settings.store-tag }}">
+	<div class="content">
+	  {{ block.settings.store-about }}
+	  <span class="modal-close" data-id="{{ block.settings.store-tag }}">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 841.889 595.281" enable-background="new 0 0 841.889 595.281"
+	 xml:space="preserve" width="100%" height="100%" style="fill:#000000"><polygon points="585.242,125.604 418.564,292.878 251.29,125.604 239.98,136.915 406.657,304.188 239.98,471.463
+	251.29,482.772 418.564,315.499 585.242,482.772 597.148,471.463 429.873,304.188 597.148,136.915 "/></svg>
+	  </span>
+	</div>
+	</div>
+	{% endif %}
+	{% endfor %}
+
+</div>
+
+{% schema %}
+{
+	"name": "Store Locator",
+	"settings": [{
+		"label": "Banner",
+		"id": "banner",
+		"type": "image_picker"
+	}],
+	"blocks": [{
+		"type": "location",
+		"name": "Location",
+		"settings": [{
+			"label": "Location Name",
+			"id": "location",
+			"type": "text"
+		}, {
+			"label": "Location Tag (Single Word)",
+			"id": "tag",
+			"type": "text"
+		}]
+	}, {
+		"type": "store",
+		"name": "Store",
+		"settings": [{
+			"label": "Banner",
+			"id": "store-banner",
+			"type": "image_picker"
+		}, {
+			"label": "Title",
+			"id": "store-title",
+			"type": "text"
+		}, {
+			"label": "Location Tag",
+			"id": "store-tag",
+			"type": "text"
+		}, {
+			"label": "Location Address",
+			"id": "store-location",
+			"type": "textarea"
+		}, {
+			"label": "Number",
+			"id": "store-number",
+			"type": "text"
+		}, {
+			"label": "About",
+			"id": "store-about",
+			"type": "textarea"
+		}]
+	}]
+}
+{% endschema %}
+{% stylesheet %}
+@media only screen and (min-width: 769px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+{% endstylesheet %}
+
+{% javascript %}
+$('#SortBy').change(function(){
+	if ( $(this).val() != "all" ) {
+		$('.store-stores').hide()
+		$('.'+$(this).val()).show()
+	} else {
+		$('.store-stores').show()
+	}
+	$('#stores .store-popup').hide()
+})
+
+$('#stores .see-brands').on('click', function() {
+	$('body').addClass( 'noscroll' )
+	$('#stores .store-popup.'+$(this).data('id')).show()
+})
+
+$('#stores .modal-close').on('click', function() {
+	$('body').removeClass( 'noscroll' );
+	$('#stores .store-popup.'+$(this).data('id')).hide()
+})
+
+$('#stores .modal-close').hover(function() {
+	$(this).find('svg').attr('style', "fill: #dc3732")
+}, function() {
+	$(this).find('svg').attr('style', "fill: #000000")
+})
+{% endjavascript %}
+
+
+
+//	reviews page
+<div class="grid--full review">
+	<div class="blog-featured-image" style="background-color: white; background-image: url({{ section.settings.image | img_url: '1920x', format: 'pjpg' }}); height: 400px;"></div>
+	<div class="blog-header">
+		<h1 class="collection__title blog">{{ blog.title }}</h1>
+		<div class="collection-desc blog">{{ section.settings.review_text }}</div>
+	</div>
+</div>
+
+<div class="blog-holder">
+{% for article in blog.articles %}
+<div class="review-item card-shadow">
+	{{ article.image | img_url: 'master' | img_tag: article.image }}
+	<h2>{{ article.title }}</h2>
+	<h6>Published on {{ article.published_at | date: "%d/%m/%Y" }}</h6>
+	<p>{{ article.excerpt }}</p>
+	<a href="{{ article.url }}"><div class="my-button">Read More</div></a>
+</div>
+{% endfor %}
+</div>
+
+{% schema %}
+  {
+	"name": "Reviews",
+	"settings": [
+	  {
+	  "type": "header",
+	  "content": "Feature image"
+	  },
+	  {
+	  "type": "image_picker",
+	  "id": "image",
+	  "label": "Banner image"
+	  },
+	  {
+	  "type": "richtext",
+	  "id": "review_text",
+	  "label": "Description text"
+	  }
+	]
+  }
+{% endschema %}
+
+
+
+//	articles
+<div class="article-body">
+	{{ article.content }}
+
+	{% if blog.next_article or blog.previous_article %}
+	<p class="review-wrapper clearfix">
+	{% if blog.previous_article %}
+		<span class="left">
+			&larr; {{ 'blogs.article.older_post' | t | link_to: blog.previous_article }}
+		</span>
+	{% endif %}
+	{% if blog.next_article %}
+		<span class="right">
+			{{ 'blogs.article.newer_post' | t | link_to: blog.next_article }} &rarr;
+		</span>
+	{% endif %}
+	</p>
+	{% endif %}
+</div>
+
+
+
+//	blogs
+{% if blog.title == "News" %}
+	{% section 'blog' %}
+{% else %}
+	{% section 'blog-reviews' %}
+{% endif %}
+
+
+
+
+//	products
+<div data-section-id="{{ section.id }}" data-section-type="product" id="quick">
+  <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm-{{ section.id }}" class="form-vertical">
+	{% comment %}
+	MOBILE TOP BUTTONS AND PRICING
+	{% endcomment %}
+	<div class="product-top-buttons grid--full main-content wrapper tbm_mobile-pricing">
+	  <div class="grid__item one-half">
+		<div class="top-button-inner">
+		  <span id="ProductPriceMobile" class="h2 js-prod-price" itemprop="price" content="{{ current_variant.price | divided_by: 100  }}">
+			{{ current_variant.price | money  }}
+		  </span>
+		</div>
+	  </div>
+	  <div class="grid__item one-half">
+		<div class="top-button-inner">
+		  <button type="submit" name="add" id="AddToCart" id="AddToCart-{{ section.id }}" class="btn mobile-add-to-cart-btn js-prod-disable-on-soldout" {% if sold_out %}disabled{% endif %}>
+			<span id="AddToCartText" class="js-prod-show-available" {% if sold_out %}style="display:none"{% endif %}>{{ 'products.product.add_to_cart' | t }}</span>
+			<span id="AddToCartTextDesk" class="js-prod-show-soldout js-prod-soldout-btn-text" {% unless sold_out %}style="display:none"{% endunless %}>{{ 'products.product.sold_out' | t }}</span>
+		  </button>
+		</div>
+
+	  </div>
+	</div>
+
+	<div class="product-template__container page-width" itemscope itemtype="http://schema.org/Product" id="ProductSection-{{ section.id }}" data-enable-history-state="true">
+	  <meta itemprop="name" content="{{ product.title }}">
+	  <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
+	  <meta itemprop="image" content="{{ product.featured_image.src | img_url: '800x' }}">
+
+	  <div class="grid--full product-single card-shadow">
+		<div class="grid__item large--{{ image_grid }} text-center {{ product_image_width }} grid-product-container product-image">
+		  {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
+		  {% if product.images.size > 1 %}
+		  <div class="product__slides product-single__photos  {%if section.settings.enable_zoom%}product-featured-image{%else%}product-featured-image-no-zoom{%endif%}" id="ProductPhoto-{{ section.id }}" {% if section.settings.image_size == 'large'%}data-response-adapt-height="true"{%endif%}>
+			<div class="product__photo" data-thumb="{{ featured_image.src | img_url: 'small_cropped' }}">
+			  <img src="{{ featured_image | img_url: product_image_width }}" alt="{{ image.alt | escape }}"
+				   data-mfp-src="{{ featured_image | img_url: '1024x1024' }}"
+				   data-image-id="{{ featured_image.id }}"
+				   class="ProductImg-{{ section.id }} ">
+			</div>
+			{% for image in product.images %}
+			{% unless image contains featured_image %}
+			<div class="product__photo{% unless forloop.first == true %} product__photo--additional{% endunless %}" data-thumb="{{ image.src | img_url: 'small_cropped' }}">
+			  <img src="{{ image.src | img_url: product_image_width  }}" alt="{{ image.alt | escape }}"
+				   data-mfp-src="{{  image | img_url: '1024x1024' }}"
+				   data-image-id="{{ image.id }}"
+				   class="ProductImg-{{ section.id }}">
+			</div>
+			{% endunless %}
+			{% endfor %}
+		  </div>
+		  <div id="ProductThumbs-{{ section.id }}" class="product__thumbs--square"></div>
+		  {%else%}
+		  <div class="product__photo {%if section.settings.enable_zoom%}product-featured-image{%else%}product-featured-image-no-zoom{%endif%}">
+			<img src="{{ featured_image | img_url: product_image_width  }}" alt="{{ image.alt | escape }}"
+				 data-mfp-src="{{ featured_image | img_url: '1024x1024'}}"
+				 data-image-id="{{ featured_image.id }}"
+				 class="ProductImg-{{ section.id }}">
+		  </div>
+		  {%endif%}
+
+		  <div class="sold-out collection-product-sale-badge js-prod-show-sale js-prod-badge" {%if sold_out or on_sale == false%}style="display:none"{%endif%}>
+			{% include 'tbm-icons', icon: 'sale' %}
+		  </div>
+		  <div class="sold-out collection-product-soldout-badge js-prod-show-soldout js-prod-badge" {%unless sold_out%}style="display:none{%endunless%}">
+			{% include 'tbm-icons', icon: 'soldout'%}
+		  </div>
+		</div>
+		<div class="grid__item large--one-half product-mobile {% unless product.images.size > 1%}mobile-prod-title{% endunless %}">
+		  <h1 itemprop="name">{{ product.title }}</h1>
+		  {% if section.settings.show_vendor %}
+		  <h4 itemprop="brand" class="product-single__vendor">{{ product.vendor | link_to_vendor }}</h4>
+		  {% endif %}
+		  <span id="ProductPrice" class="h2 small--hide medium--hide js-prod-price" itemprop="price" content="{{ current_variant.price | divided_by: 100  }}">
+			{{ current_variant.price | money  }}
+		  </span>
+		  {% if on_sale %}
+		  <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+		  <p id="ComparePrice" data-compare-text="{{ 'products.product.compare_at' | t }}">
+			{{ 'products.product.compare_at' | t }} {{ current_variant.compare_at_price | money }}
+		  </p>
+		  {% endif %}
+		  {%comment%}
+		  DESKTOP PRODUCT DESCRIPTION
+		  {%endcomment%}
+			  {%if section.settings.button_location == "above"%}
+		  {%comment%}
+		  DESKTOP PRODUCT DETAILS
+		  {%endcomment%}
+		  {% include 'product-details'%}
+		  {%endif%}
+		  <div class="large--show medium-down--hide act-desc">
+			{% include 'product-description' %}
+		  </div>
+		  <div class="quick-desc" style="display:none;">
+			<div class="product-description" itemprop="description">
+			  <div class="rte">
+				<div class="description" itemprop="description">
+				  {{product.description | truncatewords:50 | strip_html }}
+				  <a href="{{product.url}}" class="h4 view-more-quick">VIEW MORE</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  {%if section.settings.button_location == "below"%}
+		  {%comment%}
+		  DESKTOP PRODUCT DETAILS
+		  {%endcomment%}
+		  {% include 'product-details'%}
+		  {%endif%}
+		</div>
+	  </div>
+	</div>
+	{%comment%}
+	MOBILE PRODUCT DESCRIPTION
+	{%endcomment%}
+	{% unless product.description == blank %}
+	<div class="large--hide medium-down--show mobile-prod-desc mobile-block card-shadow">
+	  <div class="grid--full product-single">
+		<div class="grid__item large--three-fifths medium-down--one-whole text-center">
+		  {% include 'product-description'%}
+		</div>
+	  </div>
+	</div>
+	{% endunless %}
+  </form><!-- form end -->
+</div>
+
+
+
+
+
+

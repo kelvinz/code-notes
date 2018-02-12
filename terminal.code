@@ -101,6 +101,10 @@ brew link node@1.23
 //	listing all npm global packages
 npm list -g --depth=0
 
+//	updating global packages
+npm outdated -g --depth=0
+npm update -g
+
 //	remove packages not in dependencies
 npm prune
 
@@ -124,6 +128,9 @@ npm uninstall --save-dev xxx
 npm remove xxx
 
 //	add -g to commands for global
+
+//	install specific versions global
+npm install -g xxx@x.x.x
 
 
 
