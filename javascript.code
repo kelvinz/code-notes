@@ -17,6 +17,95 @@ decodeURIComponent( theText )
 
 
 
+//	string number to actual number
+const hello = '1'
+const helloNum = parseFloat( hello )
+
+
+
+//	shorten code single if
+if ( mouseDown ) {
+	doSomething()
+}
+
+//	is the same as
+mouseDown && doSomething()
+
+
+
+//	shorten code if else
+if ( mouseDown ) {
+	doSomething()
+} else {
+	doSomethingElse()
+}
+
+//	is the same as
+mouseDown? doSomething() : doSomethingElse()
+
+
+
+//	fetch
+fetch( 'https://api.github.com/users/kelvin___' )
+.then( data => data.json() )
+.then( data => {
+	console.log( data )
+})
+
+
+
+//	grouping console log
+console.group( something )
+console.log( 'xxx' )
+console.groupEnd( something )
+
+
+
+//	tabled results
+//	if there is a dogs array you want to console check
+console.table( dogs )
+
+
+
+//	console log time
+console.time( 'fetching data' )
+fetch( 'https://api.github.com/users/kelvin___' )
+.then( data => data.json() )
+.then( data => {
+	console.timeEnd( 'fetching data' )
+	console.log( data )
+})
+
+
+
+
+
+
+
+
+/*	replacing jquery
+---------------------------------------------------------------------------------- */
+
+
+
+//	select one
+//	gives a single element
+document.querySelector( '.myClass' )
+
+
+
+//	select all <div data-something="1">
+//	gives array
+document.querySelectorAll( '[data-something]' )
+
+
+
+myButton.addEventListener( 'click', () => {
+	console.log( 'hello' )
+})
+
+
+
 
 
 
@@ -195,6 +284,20 @@ function debounce( func, wait, immediate ) {
 		if ( callNow ) func.apply( context, args );
 	};
 };
+
+
+
+
+
+
+
+/*	es6 tips
+---------------------------------------------------------------------------------- */
+
+
+
+//	changing two vars at the same time
+[ lastX, lastY ] = [ e.offsetX, e.offsetY ]
 
 
 
