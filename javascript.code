@@ -45,6 +45,17 @@ mouseDown? doSomething() : doSomethingElse()
 
 
 
+//	return
+if ( myFunc( a ) > myFunc( b ) ) {
+	return 1
+} else {
+	return -1
+}
+//	is the same as
+return myFunc( a ) > myFunc( b ) ? 1 : -1
+
+
+
 //	fetch
 fetch( 'https://api.github.com/users/kelvin___' )
 .then( data => data.json() )
@@ -98,11 +109,20 @@ document.querySelector( '.myClass' )
 //	gives array
 document.querySelectorAll( '[data-something]' )
 
+//	get data
+console.log( e.dataset.something )
+
 
 
 myButton.addEventListener( 'click', () => {
 	console.log( 'hello' )
 })
+
+
+
+//	add & remove classes
+myDiv.classList.add( 'hello' )
+myDiv.classList.remove( 'hello' )
 
 
 
@@ -293,6 +313,25 @@ function debounce( func, wait, immediate ) {
 
 /*	es6 tips
 ---------------------------------------------------------------------------------- */
+
+
+
+const x = e.offsetX
+const y = e.offsetY
+//	is the same as
+const { offsetX: x, offsetY: y } = e
+
+
+
+//	split & assign at same time
+//	make string to num at end with map
+const timeCode = 5:55
+const [ min, secs ] = timeCode.split( ':' ).map( parseFloat )
+
+
+
+//	if doesn't match a input element
+if ( !e.target.matches( 'input' ) ) return
 
 
 
