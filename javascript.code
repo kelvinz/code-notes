@@ -17,9 +17,35 @@ decodeURIComponent( theText )
 
 
 
+//	element size & position info
+const linkCoords = this.getBoundingClientRect()
+const coords = {
+	width  : linkCoords.width,
+	height : linkCoords.height,
+	top    : linkCoords.top + window.scrollY,
+	left   : linkCoords.left + window.scrollX
+}
+highlight.style.width = `${coords.width}px`
+highlight.style.height = `${coords.height}px`
+highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`
+
+
+
 //	string number to actual number
 const hello = '1'
 const helloNum = parseFloat( hello )
+
+
+
+//	loop till true
+//	by return-ing the function itself
+function randomNum() {
+	const myNum = Math.floor( Math.random() * 3 )
+	if ( myNum === 2 ) {
+		return randomNum()
+	}
+	return myNum
+}
 
 
 
