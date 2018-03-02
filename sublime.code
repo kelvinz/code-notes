@@ -46,6 +46,192 @@
 
 
 
+//	syncing setup
+//	on main
+mkdir /Users/Kelvin/Documents/Dropbox/Sync/Misc/Sublime
+Packages $ mv User /Users/Kelvin/Documents/Dropbox/Sync/Misc/Sublime
+Packages $ ln -s /Users/Kelvin/Documents/Dropbox/Sync/Misc/Sublime/User
+//	on sub
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+rm -r User
+ln -s /Users/Kelvin/Documents/Dropbox/Sync/Misc/Sublime/User
+
+
+
+
+
+
+
+/*	snippets
+---------------------------------------------------------------------------------- */
+
+
+
+//	tools > developer > new snippet
+//	change the following portion
+Hello, ${1:this} is a ${2:snippet}.
+
+
+
+//	${1:myPlaceholderText} is the tab placeholders
+
+
+
+//	what keyword to trigger
+<tabTrigger>myTrigger</tabTrigger>
+
+
+
+//	what lang it would activate
+<string>source.css.scss.sass</string>
+
+
+
+//	description in list
+<description>my little snippet</description>
+
+
+
+//	create folder snippets in package > user
+save as
+	.sublime-snippet
+
+
+
+
+
+
+
+/*	shortcuts
+---------------------------------------------------------------------------------- */
+
+
+
+//	command palette
+cmd + shift + p
+	//	change file syntax
+	ss
+
+
+
+//	goto anything
+cmd + p
+	//	goto line
+	:
+	//	fuzzy search
+	#
+	//	find symbol
+	@
+	//	able to chain options
+
+
+
+//	paste & indent
+command + shift + v
+
+
+
+//	multi cursor
+cmd + click
+ctr + shift + up/down
+
+
+
+//	multi select
+cmd + double-click
+
+
+
+//	select same word
+select, then cmd + d to add one by one
+cmd + k + d to skip
+
+
+
+//	select multi line partially
+cmd + drag
+
+
+
+//	moving around words
+option + arrow key
+
+
+
+//	moving around lines
+cmd + arrow key
+
+
+
+//	wrap content
+ctr + w
+
+
+
+//	select content inside wrap
+shift + cmd + a
+
+
+
+//	line bubbling
+cmd + ctr + arrow key
+
+
+
+//	edit > line > reindent
+//	when indents are a mess
+
+
+
+//	join lines
+cmd + j
+
+
+
+//	duplicate line
+cmd + shift + d
+
+
+
+//	delete line
+ctr + shift + k
+//	delete from cursor to end of line
+ctr + k
+//	delete from cursor to start of line
+cmd + backspace
+
+
+
+//	insert new line
+//	from middle to next
+cmd + enter
+//	from middle to before
+cmd + shift + enter
+
+
+
+//	convert img to data
+ctr + shift + d
+//	fold code
+cmd + option + [
+cmd + option + ]
+
+
+
+//	increment/decrement
+ctr + arrow         -   by 1
+alt + arrow         -   by 0.1
+alt + cmd + arrow   -   by 10
+
+
+
+//	lorem
+lorem + tab
+lorem5 + tab
+p>lorem10 + tab
+
+
+
 
 
 
