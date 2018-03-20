@@ -8,6 +8,8 @@
 
 //	clear screen
 clear
+or
+command + k
 
 //	login directory
 cd
@@ -19,13 +21,29 @@ cd /
 cd /home
 
 //	up one directory
-..
+cd ..
 
 //	closing programs
 control + c
 
 //	easy word editor
 nano
+
+//	create folder
+mkdir myFolder
+
+//	list files in current folder
+ls
+ls -l for more details
+
+//	create files
+touch my-file.html
+
+//	delete files
+rm my-file.html
+
+//	delete folders
+rm -r myFolder
 
 
 
