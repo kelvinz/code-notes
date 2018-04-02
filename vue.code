@@ -16,6 +16,10 @@ require( './bokeh.js' )
 /*	new vue project
 ------------------- */
 
+//	vue cli 3.0
+npm install -g @vue/cli
+vue create my-project
+
 //	update vue cli
 sudo npm i -g vue-cli
 

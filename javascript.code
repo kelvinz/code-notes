@@ -55,6 +55,9 @@ if ( mouseDown ) {
 }
 
 //	is the same as
+if ( mouseDown ) doSomething()
+
+//	or
 mouseDown && doSomething()
 
 

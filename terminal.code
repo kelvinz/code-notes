@@ -111,6 +111,11 @@ brew link node@1.23
 
 
 
+//	supposedly install using nvm
+//	is better than using brew
+
+
+
 /*	npm
 ------------------- */
 
