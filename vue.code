@@ -19,33 +19,19 @@ require( './bokeh.js' )
 //	vue cli 3.0
 npm install -g @vue/cli
 vue create my-project
-
-//	update vue cli
-sudo npm i -g vue-cli
-
-//	create webpack project
-vue init webpack 'project-name'
-//	runtime only
-cd 'project-name'
-
-//	sass loader
-npm install sass-loader node-sass webpack --save-dev
+npm run serve
+npm run build
 
 //	normalize
 npm install --save normalize.css
 
-//	vuex
-npm install vuex --save
-
 //	firebase
 npm install firebase --save
 
-//	config > index
-productionSourceMap: false
-autoOpenBrowser: true
 
 //	index.html
 size: 2, indentation to tabs, size: 4
+
 <!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Hi 👋🏻, I'm Kelvin Zhao.</title>
