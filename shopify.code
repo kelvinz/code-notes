@@ -3,7 +3,14 @@
 
 
 
-//	placeholder
+//	to have sections in homepage add
+"presets": [{
+	"name": "Collection Carousel",
+	"category": "Carousel",
+		"settings": {
+
+		}
+}]
 
 
 

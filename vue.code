@@ -22,11 +22,39 @@ vue create my-project
 npm run serve
 npm run build
 
+//	place config in package.json
+
 //	normalize
 npm install --save normalize.css
 
 //	firebase
 npm install firebase --save
+
+
+
+
+/*	things to add
+------------------- */
+
+
+
+- html lang
+- meta - copyright, description, title
+- catch all route
+- history mode
+- robots.txt
+	User-agent: *
+	Disallow:
+- package.json
+- google analytics
+- manifest shortname, starturl
+- rel="noopener" for links
+
+
+
+/*	old settings
+------------------- */
+
 
 
 //	index.html

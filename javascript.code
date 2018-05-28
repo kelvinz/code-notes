@@ -292,7 +292,7 @@ function shuffle( arr ) {
 		arr[ i ] = arr[ r ]
 		arr[ r ] = t
 	}
-	return arr;
+	return arr
 }
 
 
