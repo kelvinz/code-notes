@@ -49,6 +49,7 @@ npm install firebase --save
 - google analytics
 - manifest shortname, starturl
 - rel="noopener" for links
+- add img alt
 
 
 
