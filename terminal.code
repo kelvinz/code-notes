@@ -115,6 +115,12 @@ brew link node@1.23
 //	is better than using brew
 https://github.com/creationix/nvm
 
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+//	if any errors, add these lines into ~/.bash_profile
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+source ~/.bashrc
+
 
 
 /*	npm
