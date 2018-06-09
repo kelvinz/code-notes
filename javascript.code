@@ -94,6 +94,12 @@ fetch( 'https://api.github.com/users/kelvin___' )
 
 
 
+//	when splicing/deleting from array
+//	while looping through it
+//	do in reverse to prevent bugs
+
+
+
 //	grouping console log
 console.group( something )
 console.log( 'xxx' )
@@ -297,6 +303,11 @@ function shuffle( arr ) {
 
 
 
+/*	one time
+------------------- */
+
+
+
 // const oneTimeFunction = once( function() {
 // 	// function goes here
 // });
@@ -333,6 +344,32 @@ function debounce( func, wait, immediate ) {
 		if ( callNow ) func.apply( context, args );
 	};
 };
+
+
+
+/*	% chance
+------------------- */
+
+
+
+//	where arr is an array of objects
+//	each object has a chance property
+//	chance is 0-1
+//	all objects' chance adds up to 1
+
+pickOne( arr ) {
+	let
+	i = 0,
+	r = Math.random()
+
+	while ( r > 0 ) {
+		r = r - arr[ i ].chance
+		i++
+	}
+
+	i--
+	return arr[ i ]
+}
 
 
 
