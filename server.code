@@ -63,6 +63,9 @@ ChallengeResponseAuthentication no
 //	reload
 sudo systemctl reload sshd
 
+//	check number of connections
+netstat -ant | grep ESTABLISHED | wc -l
+
 
 
 /*	basic firewall
