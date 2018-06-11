@@ -347,6 +347,20 @@ function debounce( func, wait, immediate ) {
 
 
 
+/*	norm
+------------------- */
+
+
+
+//	where me is current value you want to normalize
+//	start1, end1 is what is the range of current value
+//	start2, end2 is to normalize to what ranges
+norm( me, start1, end1, start2, end2 ) {
+	return ( me - start1 ) / ( end1 - start1 ) * ( end2 - start2 ) + start2
+}
+
+
+
 /*	% chance
 ------------------- */
 
