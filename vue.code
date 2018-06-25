@@ -149,6 +149,16 @@ module.exports = {
 
 
 
+/*	misc
+------------------- */
+
+
+
+	- updating arrays if reactive list is needed
+	this.$set( this.arr, index, this.arr[ index ] += 1 )
+
+
+
 /*	old settings
 ------------------- */
 
