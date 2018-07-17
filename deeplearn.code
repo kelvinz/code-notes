@@ -1,0 +1,179 @@
+/*	base
+---------------------------------------------------------------------------------- */
+
+supervised learning
+- classification ( identify things )
+- regression ( predict future )
+
+reinforcement learning
+- artificial intelligence ( decision making )
+
+unsupervised learning
+- clustering ( segmentation )
+- dimensionality reduction ( visualisation )
+
+
+
+neural networks
+- mimic brain neurons
+- input pushes thru layers + weights to give output
+- uses backpropagation algorithm back thru layers
+- gradient descent to tweak layer weights
+
+
+
+
+
+
+
+/*	bias
+---------------------------------------------------------------------------------- */
+
+
+/*	neuroevolution
+---------------------------------------------------------------------------------- */
+
+
+
+/*	activation
+---------------------------------------------------------------------------------- */
+
+elu
+
+hardSigmoid
+
+linear
+
+relu
+
+relu6
+
+selu
+
+sigmod
+	squashes range to 0-1
+	sharp curve with near 0 and near 1 having more points
+
+softmax
+	ensure all units adds up to 1
+
+softplus
+
+softsign
+
+tanh
+
+
+
+/*	optimizer
+---------------------------------------------------------------------------------- */
+
+sgd
+
+momentum
+
+adagrad
+
+adadelta
+
+adam
+
+adamax
+
+rmsprop
+
+
+
+/*	losses
+---------------------------------------------------------------------------------- */
+
+absoluteDifference
+
+computeWeightedLoss
+
+cosineDistance
+
+hingeLoss
+
+huberLoss
+
+logLoss
+
+meanSquaredError
+
+softmaxCrossEntropy
+
+
+
+/*	layers
+---------------------------------------------------------------------------------- */
+
+/*	dense
+------------------- */
+fully connected layer
+
+
+
+/*	convolutional
+------------------- */
+
+
+
+/*	pooling
+------------------- */
+
+
+
+/*	recurrent
+------------------- */
+
+
+
+/*	normalization
+---------------------------------------------------------------------------------- */
+
+
+
+/*	optimizers
+---------------------------------------------------------------------------------- */
+
+
+
+/*	learning rate
+---------------------------------------------------------------------------------- */
+
+
+
+/*	regularization
+---------------------------------------------------------------------------------- */
+
+L1
+- sparse features like million possible words as inputs
+- words not used shouldn't be affecting results
+- drive certain weights down to 0
+- save processing power
+- remove noise
+- sum of abs( weights )
+
+L2
+- reduce model complexity
+- prevent overfitting to training data
+- prefer smaller weights
+- reduce the sum of the squared weight
+- center around 0
+- normally distributed
+
+
+
+
+
+
+
+/*	gyms
+---------------------------------------------------------------------------------- */
+
+
+
+
+
+
