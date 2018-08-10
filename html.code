@@ -28,6 +28,8 @@
 //	when in html you break the div up, it has a irritating white space
 //	-4px to remove it or use comments inbetween the breaks to mask it
 
+//	or vertical-align: top;
+
 
 
 
