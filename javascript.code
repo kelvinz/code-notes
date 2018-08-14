@@ -361,6 +361,18 @@ norm( me, start1, end1, start2, end2 ) {
 
 
 
+/*	chunks
+------------------- */
+
+function chunks( array, size ) {
+	let results = []
+	for ( i = 0, j = array.length; i < j; i += size ) {
+		results.push( array.slice( i ,i + size ) )
+	}
+	return results
+}
+
+
 /*	% chance
 ------------------- */
 
