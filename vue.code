@@ -18,9 +18,12 @@ require( './bokeh.js' )
 
 //	vue cli 3.0
 npm install -g @vue/cli
+//	optional for vue shortcuts
+npm install -g @vue/cli-service-global
 vue create my-project
-npm run serve
-npm run build
+vue serve
+vue build
+vue-cli-service build --modern
 
 //	place config in package.json
 

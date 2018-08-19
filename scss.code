@@ -3,7 +3,8 @@
 
 
 
-//	placeholder
+//	::before & ::after should use double : as they are pseudo elements
+//	while single : is for pseudo classes like :hover
 
 
 
