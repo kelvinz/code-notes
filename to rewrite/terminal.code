@@ -213,3 +213,37 @@ ssh-keygen -y
 
 
 
+
+/*	syncing files
+---------------------------------------------------------------------------------- */
+
+
+
+sudo cp -a -v fromwhere towhere
+sudo cp -Rfv fromwhere towhere
+
+-v shows progress
+-f ???
+-R recursive
+-a preserve timestamps
+
+rsync -a -v -u fromwhere towhere
+-a recursive plus timestamp preservation
+-v shows progress
+-u don't overwrite newer files at dest
+
+--progess count and stats
+
+--existing skip creating new files on dest
+
+--dry-run -v -a
+
+-c skip based on checksum not date modified
+
+Blog.iangreenleaf.com/2009/03/rsync-and-retrying-until-we-get-it.html
+
+
+
+
+
+

@@ -8,6 +8,11 @@
 
 
 
+//	loops
+you can add things to an array in an array loop while it's looping
+
+
+
 //	remember to encode user entered stuff before storing
 //	error occurred when users entered foreign language
 encodeURIComponent( theText )
