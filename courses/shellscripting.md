@@ -315,11 +315,124 @@ else use `return 1` to explictly give an exit status
 
 
 
+## summary
+
+character or string used for pattern matching
+can be used with most commands
+
+
+
+## *
+
+matches zero or more characters
+
+eg.
+*.txt
+a*
+a*.txt
+
+
+
+## ?
+
+matches exactly one character
+
+eg.
+?.txt
+a?
+a?.txt
+
+
+
+## []
+
+character class
+matches any of the characters included between the brackets
+matches exactly one character
+
+eg.
+[aeiou]
+
+or
+
+ca[nt]* will match
+
++	can
++	cat
++	candy
++ 	catch
+
+
+
+## [!]
+
+matches any of the characters NOT included between the brackets
+matches exactly one character
+
+eg.
+[!aeiou]*
+
++	baseball
++	cricket
+
+
+
+## ranges
+
+use two characters seperated by a hyphen to create a range
+
+eg.
+[a-g]*
+[3-6]*
+
+
+
+## named character classes
+
+[[:alpha:]] - alphabetic characters
+[[:alnum:]] - alphanumberic characters
+[[:digit:]] - any digits
+[[:lower:]] - any lower case letters
+[[:space:]] - white space, tabs, new lines
+[[:upper:]] - uppercase letters
+
+
+
+## matching wildcards
+
+\ before character to escape
+
+match all files that end with a question mark
+`*\?`
+
+
+
 ---
 
 
 
 # case statements
+
+
+
+end each case with a )
+normal wildcards or character matching works
+
+```shell
+
+	case "$1" in
+		start|START)
+			/usr/sbin/sshd
+			;;
+		stop)
+			kill $(cat /var/run/sshd.pid)
+			;;
+		*)
+			echo "Usage: $0 start|stop" ; exit 1
+			;;
+	esac
+
+```
 
 
 
@@ -331,11 +444,101 @@ else use `return 1` to explictly give an exit status
 
 
 
+## syslog standard
+
++	facilities: kern, user, mail, daemon, auth, local0, local7
++	severities: emerg, alert, crit, err, warning, notice, info, debug
+
+locations are configurable, but usually found here;
+`/var/log/messages`
+`/var/log/syslog`
+
+
+
+## logger
+
+basic message
+`logger "Message"`
+
+local facility + info severity
+`logger -p local0.info "Message"`
+
+tag message with your program name to find it easier in logs
+`logger -t myscript -p local0.info "Message"`
+
+add process ID
+`logger -i -t myscript "Message"`
+
+
+
+## shift
+
+shift is used to remove variables used & consider only the remaining
+eg.
+
+```shell
+
+	logit() {
+		local LOG_LEVEL=$1
+		shift
+		MSG=$@
+		TIMESTAMP=$(date +"%Y-%m-%d %T")
+		if [ $LOG_LEVEL = "error" ] || $VERBOSE
+		then
+			echo "${TIMESTAMP} ${HOST} ${PROGRAME_NAME} [${PID}]: ${LOG_LEVEL} ${MSG}"
+		fi
+	}
+
+```
+
+
+
 ---
 
 
 
 # while loops
+
+
+
+## basic structure
+
+```shell
+
+	while [ CONDITION_IS_TRUE ]
+	do
+		command 1
+		command 2
+		command 3
+	done
+
+```
+
+`((MY_VARIABLE++))` will increment variable by 1
+
+
+
+## infinite loops
+
+useful to run on-going scripts/service until manually quitting
+use sleep to pause for x seconds before looping
+
+```shell
+
+	while true
+	do
+		command 1
+		sleep 1
+	done
+
+```
+
+
+
+## break & continue loops
+
+use `break` to stop loop, exit loop but continue in script
+use `continue` to jump up to top of loop to continue loop
 
 
 
@@ -347,11 +550,60 @@ else use `return 1` to explictly give an exit status
 
 
 
----
+## basic commands
+
+`-x`
+prints commands as they execute
+
+add in shebang of your script
+`#!/bin/bash -x`
+
+or in command line
+`set -x`
+to off it in command line
+`set +x`
+or wrap parts of your script with these two commands
+
+will show in + xxx in logs/command line
+
+`-e`
+exit on error
+
+similar to -x
+can be used together too
+`#!/bin/bash -ex`
+
+`-v`
+prints shell input lines as they are read
+can be combined with others too
 
 
 
-# script samples
+## manual debugging
+
+create your own debugging code
+use special variable like DEBUG
+`DEBUG=true`
+boolean is without quotes
+
+go line by line in command line to test
+
+
+
+## PS4
+
+`PS4="+ $BASH_SOURCE : $LINENO : "`
+adds additional stuff to the default + produced by -x
+example above shows name of script & line number
+
+
+
+## dos vs linux/unix
+
+windows create carriage returns which are hidden
+these can become unwanted characters in linux causing bugs
+cat -v to view them & remove them manaually or using a script
+dos2unix.sh
 
 
 
