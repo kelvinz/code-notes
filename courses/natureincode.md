@@ -1,9 +1,11 @@
 
 
 
-# definitions
+# genes
 
 
+
+## definitions
 
 allele
 :	variant of a gene in population
@@ -28,6 +30,46 @@ evolutionary influences
 +	population bottleneck
 +	founder effect
 +	inbreeding
+
+
+
+---
+
+
+
+# genetic drift
+
+
+
+---
+
+
+
+# mutation
+
+
+
+---
+
+
+
+# migration
+
+
+
+---
+
+
+
+# natural selection
+
+
+
+---
+
+
+
+# epidemics
 
 
 
