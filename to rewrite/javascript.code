@@ -85,8 +85,68 @@ if ( myFunc( a ) > myFunc( b ) ) {
 } else {
 	return -1
 }
+
 //	is the same as
 return myFunc( a ) > myFunc( b ) ? 1 : -1
+
+
+
+//	return obj
+const barker = ( state ) => {
+	return {
+		bark: () => {
+			console.log( 'woof' + state.name )
+		}
+	}
+}
+
+//	is the same as
+const barker = ( state ) => ({
+	bark() {
+		console.log( 'woof' + state.name )
+	}
+})
+
+//	is the same as
+const barker = ( state ) => ({
+	bark: () => console.log( 'woof' + state.name )
+})
+
+
+
+//	factory functions
+
+const barker = ( state ) => ({
+	bark() { console.log( 'woof ' + state.name ) }
+})
+
+const driver = ( state ) => ({
+	drive() { state.position = state.position + state.speed	}
+})
+
+barker({ name: 'karo' }).bark()
+//	woof karo
+
+const murderRobotDog = ( name ) => {
+	let state = {
+		name,
+		speed: 100,
+		position: 0
+	}
+
+	return Object.assign(
+		{},
+		barker( state ),
+		driver( state )
+	)
+}
+
+murderRobotDog( 'sniffles' ).bark()
+//	woof sniffles
+
+const newBot = murderRobotDog( 'anol' )
+newBot.bark()
+//	woof anol
 
 
 

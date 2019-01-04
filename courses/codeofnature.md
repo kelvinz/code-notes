@@ -808,37 +808,98 @@ x is the displacement of spring, difference between current length vs resting le
 
 ## a single particle
 
--
+emitter
+:	usually used in particle systems
+:	source of particles
+:	controls init settings
+:	a particle is born here
+
+lifespan
+:	let old particles die
+:	x amount
+:	-- every frame
+:	if < 0, dead
 
 
 
 ## the arraylist
 
--
+place particles into an array to loop thru
+remove dead particles from array
+
+1.	iterate array backwards so deleting items off won't cause it to skip next no.
+2.	use an iterator ( not sure if this is useful in javasript )
 
 
 
 ## the particle system class
 
--
+move the loops & functions into a class or factory
+easier to control multiple systems & overall cleaner
 
 
 
 ## a system of systems
 
--
+add systems into an array
+loop array
+tell each system to run, do it's stuff
 
 
 
 ## inheritance & polymorphism
 
--
+to prevent copy & pasting things like variables & functions across systems
+we use inheritance to share common stuff between them
+
+polymorphism allow objects with different types to be stored together
 
 
 
 ## inheritance basics
 
--
+my own preference
+use factory functions instead
+
+```js
+
+	const barker = ( state ) => ({
+		bark() {
+			console.log( 'woof ' + state.name )
+		}
+	})
+
+	const driver = ( state ) => ({
+		drive() {
+			state.position = state.position + state.speed
+		}
+	})
+
+	barker({ name: 'karo' }).bark()
+	//	woof karo
+
+	const murderRobotDog = ( name ) => {
+		let state = {
+			name,
+			speed: 100,
+			position: 0
+		}
+
+		return Object.assign(
+			{},
+			barker( state ),
+			driver( state )
+		)
+	}
+
+	murderRobotDog( 'sniffles' ).bark()
+	//	woof sniffles
+
+	const newBot = murderRobotDog( 'anol' )
+	newBot.bark()
+	//	woof anol
+
+```
 
 
 
