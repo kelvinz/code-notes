@@ -134,8 +134,7 @@ const murderRobotDog = ( name ) => {
 		position: 0
 	}
 
-	return Object.assign(
-		{},
+	return Object.assign({},
 		barker( state ),
 		driver( state )
 	)
@@ -148,6 +147,38 @@ const newBot = murderRobotDog( 'anol' )
 newBot.bark()
 //	woof anol
 
+//	other way of writing
+function createCircle( radius ) {
+	return {
+		radius,
+		draw() {
+			console.log( 'draw' )
+		}
+	}
+}
+
+const circle1 = createCircle( 1 )
+console.log( circle1 )
+circle1.draw()
+
+//	yet another example
+function makeGreeting( lang ) {
+	return function( firstname, lastname ) {
+		if ( lang === 'en' ) {
+			console.log( 'Hello ' + firstname + ' ' + lastname )
+		}
+		if ( lang === 'es' ) {
+			console.log( 'Hola ' + firstname + ' ' + lastname )
+		}
+	}
+}
+
+var greetEnglish = makeGreeting( 'en' )
+var greetSpanish = makeGreeting( 'es' )
+greetEnglish( 'John', 'Doe' )
+//	Hello John Doe'
+greetSpanish( 'John', 'Doe' )
+//	Hola John Doe'
 
 
 //	fetch

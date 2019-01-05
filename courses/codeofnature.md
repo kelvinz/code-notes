@@ -885,8 +885,7 @@ use factory functions instead
 			position: 0
 		}
 
-		return Object.assign(
-			{},
+		return Object.assign({},
 			barker( state ),
 			driver( state )
 		)
