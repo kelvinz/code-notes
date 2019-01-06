@@ -895,7 +895,7 @@ use factory functions instead
 	//	woof sniffles
 
 	const newBot = murderRobotDog( 'anol' )
-	newBot.bark()
+	newBot.bark();
 	//	woof anol
 
 ```
@@ -904,9 +904,36 @@ use factory functions instead
 
 ## particles with inheritance
 
--
+```js
 
+	function Particle( location ) {
+		let
+		velocity = [ Math.random(), Math.random() ],
+		acceleration = [ 0, .5 ]
 
+		return {
+			run() {
+				this.update()
+				this.display()
+			},
+			add( a, b ) {
+				a[ 0 ] += b[ 0 ]
+				a[ 1 ] += b[ 1 ]
+			},
+			update() {
+				this.add( velocity, acceleration )
+				this.add( location, velocity )
+			},
+			display() {
+				console.log( location )
+			}
+		}
+	}
+
+	const particle = Particle([ 0, 0 ])
+	particle.run()
+
+```
 
 ## polymorphism basics
 
