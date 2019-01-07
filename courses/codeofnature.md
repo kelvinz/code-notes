@@ -906,11 +906,15 @@ use factory functions instead
 
 ```js
 
-	function Particle( location ) {
-		let
-		velocity = [ Math.random(), Math.random() ],
-		acceleration = [ 0, .5 ]
+	const newState = ( location ) => {
+		return {
+			location,
+			velocity: [ Math.random(), Math.random() ],
+			acceleration: [ 0, .5 ]
+		}
+	}
 
+	const Particle = ( state ) => {
 		return {
 			run() {
 				this.update()
@@ -921,17 +925,39 @@ use factory functions instead
 				a[ 1 ] += b[ 1 ]
 			},
 			update() {
-				this.add( velocity, acceleration )
-				this.add( location, velocity )
+				this.add( state.velocity, state.acceleration )
+				this.add( state.location, state.velocity )
 			},
 			display() {
-				console.log( location )
+				console.log( state.location )
 			}
 		}
 	}
 
-	const particle = Particle([ 0, 0 ])
+	const particle = Particle( newState([ 0, 0 ]) )
 	particle.run()
+
+	const SpecialParticle = ( state ) => {
+		state.location = [ 10, 0 ]
+
+		return Object.assign( Particle( state ), {
+			init() {
+				state.acceleration = [ 10, 0 ]
+			},
+			change() {
+				this.add( state.location, [ 0, 10 ] )
+			},
+			run() {
+				this.update()
+				this.change()
+				this.display()
+			}
+		})
+	}
+
+	const specialParticle = SpecialParticle( newState([ 0, 0 ]) )
+	specialParticle.init()
+	specialParticle.run();
 
 ```
 

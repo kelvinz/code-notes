@@ -220,6 +220,11 @@ fetch( 'https://api.github.com/users/kelvin___' )
 
 
 
+//	declare functions using vars instead of
+//	function xxx() {}
+//	save global namespace
+
+
 
 
 
