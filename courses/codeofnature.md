@@ -1,6 +1,10 @@
 
 
 
+https://natureofcode.com/book/
+
+
+
 # introduction
 
 
@@ -963,31 +967,53 @@ use factory functions instead
 
 ## polymorphism basics
 
--
+polymorphism refers to the treatment of a single instance of an object in multple forms
+a dog is certainly a dog, but since dog extends animal, it can also be considered an animal
 
 
 
 ## particle systems with polymorphism
 
--
+1.	array of particles
+2.	add particles in array
+	-	add normal particles
+	-	add confetti
+3.	loop mutha array
+	-	ask particle to do its stuff
+
+this way we have a single particle array to handle
+instead of two arrays to hold two different types of arrays
 
 
 
 ## particle systems with forces
 
--
+-	apply force function ( pass force in )
+	-	loop particles
+	-	particle.applyForce( force )
 
 
 
 ## particle system with repellers
 
--
+-	apply repeller function ( pass thing to repel )
+	-	loop particles
+	-	force = thing to repel against particle
+	-	particle.applyForce( force )
 
+-	thing to repel against particle
+	-	dir = thing location - particle location
+	-	d = dir.magnitude
+	-	dir.normalize()
+	-	d = constrain( d, 5, 100 )
+	-	force = -1 * strength / ( d * d )
+	-	dir * force
+	-	return dir
 
 
 ## image textures & additive blending
 
--
+-	processing specific thus skip
 
 
 
@@ -996,6 +1022,86 @@ use factory functions instead
 
 
 # physics libraries
+
+
+
+## what is box2d & when is it useful?
+
+
+
+## getting box2d in processing
+
+
+
+## box2d basics
+
+
+
+## living in a box2d world
+
+
+
+## building a box2d body
+
+
+
+## three's company: bodies & shapes & fixtures
+
+
+
+## box2d & processing: reunited & it feels so good
+
+
+
+## fixed box2d objects
+
+
+
+## a curvy boundary
+
+
+
+## complex forms
+
+
+
+## feeling attached - box2d joints
+
+
+
+## bringing it all back home to forces
+
+
+
+## collision events
+
+
+
+## a brief interlude - integration methods
+
+
+
+## verlet physics with toxiclibs
+
+
+
+## particles & springs in toxiclibs
+
+
+
+## putting it all together: a simple interactive spring
+
+
+
+## connected systems, part 1: string
+
+
+
+## connected systems, part 2: force-directed graph
+
+
+
+## attraction & repulsion behaviors
 
 
 
