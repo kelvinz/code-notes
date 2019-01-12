@@ -1027,9 +1027,22 @@ instead of two arrays to hold two different types of arrays
 
 ## what is box2d & when is it useful?
 
+a physics library that can help with complicated real world physics
+initially built in C++ but subsequently ported over to various other languages
+
 
 
 ## getting box2d in processing
+
+for js in my case instead of processing
+
+-	https://github.com/kripken/box2d.js
+-	https://github.com/shakiba/planck.js
+
+other js physics libraries
+
+-	http://brm.io/matter-js
+-	https://github.com/schteppe/p2.js
 
 
 
