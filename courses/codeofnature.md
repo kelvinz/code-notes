@@ -1034,7 +1034,7 @@ initially built in C++ but subsequently ported over to various other languages
 
 ## getting box2d in processing
 
-for js in my case instead of processing
+js in my case instead of processing
 
 -	https://github.com/kripken/box2d.js
 -	https://github.com/shakiba/planck.js
@@ -1047,6 +1047,40 @@ other js physics libraries
 
 
 ## box2d basics
+
+basic idea
+
+1.	setup
+	-	create everything in our pixel world
+	-	translate into box2s world
+2.	draw
+	-	ask box2d where everything is
+	-	translate box2d's answer into pixel world
+	-	draw everything
+
+core elements of a box2d world
+
+1.  world
+	manages physics simulation
+	knows everything about overall coordinates space
+	stores lists of every element in world
+2.	body
+	primary element in box2d world
+	has a location
+	has velocity
+3.	shape
+	keeps track of collision geometry attached to a body
+4.	fixture
+	attaches a shape to a body
+	sets properties like density, friction, restitution
+5.	joint
+	acts as connection between two bodies
+	or between body and the world itself
+6.	vec2
+	describes a vector in the box2d world
+
+learn more here,
+http://box2d.org/manual.pdf
 
 
 
