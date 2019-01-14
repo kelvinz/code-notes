@@ -1086,6 +1086,83 @@ http://box2d.org/manual.pdf
 
 ## living in a box2d world
 
+-	**gravity**
+	start with createWorld()
+	a default gravity pointing down will be assigned
+	you can reassign using box2d.setGravity( 0, -10 )
+	or set it to ( 0, 0 ) if you want to turn off gravity
+
+
+-	**space**
+	box2d ( 0, 0 ) is in the center of screen
+	unlike pixel world which is cornered at top left
+	thus what we're used to is +y to add gravity
+	while box2d -y to add gravity
+
+
+-	**helpers**
+	help convert between pixel world & box2d world
+	`coordPixelsToWorld()`
+	`coordWorldToPixels()`
+	`scalarPixelsToWorld()`
+	`scalarWorldToPixels()`
+
+
+
+## building a box2d body
+
+body is the primary element
+it isn't anything physical
+shapes will attach to a body
+a body is like a soul
+
+types of body
+
+-	**dynamic**
+	use most often
+	moves around world, collides, responds to forces
+
+-	**static**
+	cannot move
+	used for platforms & boundaries
+
+-	**kinematic**
+	cannot be moved manually by setting velocity directly
+	can be used for user-controlled object
+	can only collide with dynamic bodies & not with static or kinematic bodies
+
+```js
+
+	//	define new body
+	bd = new BodyDef()
+
+	//	get browser center
+	//	convert to box2d world
+	Vec2 center = box2d.coordPixelsToWorld( width / 2, height / 2 )
+
+	//	set body position
+	bd.position.set( center ) //
+
+	//	body never rotate
+	bd.fixedRotation = true
+
+	//	add friction
+	bd.linearDamping = 0.8
+	bd.angularDamping = 0.9
+
+	//	fast moving objects set as bullets
+	//	this tells box2d to check collisions more carefully
+	bd.bullet = true
+
+	//	finally create actual body
+	body = box2d.createBody( bd )
+
+	//	set other init state if needed
+	body.setLinearVelocity( new Vec2( 0, 3 ) )
+	body.setAngularVelocity( 1.2 );
+
+```
+
 
 
 ## building a box2d body
