@@ -1165,11 +1165,57 @@ types of body
 
 
 
-## building a box2d body
-
-
-
 ## three's company: bodies & shapes & fixtures
+
+shape class keeps track of collision geometry attached to a body
+also has properties like density, friction, restitution( bounciness ) defined through a fixture
+can combined different shapes to a body to create complex objects
+
+```js
+
+	//	define new shape
+	var ps = new PolygonShape()
+
+	//	set width/height
+	//	conver to box2d world
+	var box2Dw = box2d.scalarPixelsToWorld( 150 ),
+		box2Dh = box2d.scalarPixelsToWorld( 100 )
+
+	//	use setAsBox to define shape as a rectangle
+	ps.setAsBox(box2Dw, box2Dh)
+
+	//	define new fixture
+	var fd = new FixtureDef()
+
+	//	assign to shape
+	fd.shape = ps
+
+	//	coefficient of friction usually between 0 & 1
+	fd.friction = 0.3
+
+	//	elasticity usually between 0 & 1
+	fd.restitution = 0.5
+
+	//	density in kg/m2
+	fd.density = 1.0
+
+	//	creates fixture & attach shape to body
+	body.createFixture( fd )
+
+	//	box2d will use defaults if fixture isn't defined
+	//	create fixture & attach shape at one go is possible too
+	//	below sets density to 1 as it creates fixture
+	body.createFixture( ps, 1 );
+
+```
+
+**recap steps**
+
+1.	define body using a BodyDef object ( set any properties, such as location )
+2.	create body object from body definition
+3.	define shape object using PolygonShape, CircleShape, or any other shape class
+4.	define fixture using FixtureDef, assign a shape ( set any properties, such as friction, density, restitution )
+5.	Attach the shape to the body
 
 
 
