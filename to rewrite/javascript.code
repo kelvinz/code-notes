@@ -220,9 +220,11 @@ fetch( 'https://api.github.com/users/kelvin___' )
 
 
 
-//	declare functions using vars instead of
+//	declare functions using vars/const instead of
 //	function xxx() {}
-//	save global namespace
+//	more systematic, code flows from top down
+//	function xxx() will hoist it all to the top
+//	& have issues when called within functions
 
 
 
