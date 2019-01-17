@@ -1221,6 +1221,22 @@ can combined different shapes to a body to create complex objects
 
 ## box2d & processing: reunited & it feels so good
 
+box2d keeps a list of all bodies in the world
+called using `getBodyList()`
+
+`box2d.step()` advances the box2d world a step in time
+without this function, nothing will happen
+box2d sweeps looks at all bodies & figure what to do with them
+
+`var pos = box2d.getBodyPixelCoord( body )`
+get pixel coordinates at current point in time
+
+`body.getAngle()` to get angle of body
+but rotation of box2d is in opposite direction to pixel world
+multiply it by -1 to get pixel rotation
+
+`box2d.destoryBody( body )` to kill object if needed
+
 
 
 ## fixed box2d objects
