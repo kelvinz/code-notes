@@ -1241,9 +1241,50 @@ multiply it by -1 to get pixel rotation
 
 ## fixed box2d objects
 
+`bd.type = BodyType.STATIC`
+makes immovable bodies like the ground
+can just draw it without checking coords & rotation since it doesn't move
+
 
 
 ## a curvy boundary
+
+ChainShape, PolygonShape, CircleShape creates different shapes
+
+```js
+
+	//	define body
+	var bd = new BodyDef()
+	//	body does not need position
+	//	EdgeShape will take care of that
+	//	does not need type too as it is STATIC by default
+	var body = box2d.world.createBody( bd )
+
+	//	define shape
+	var chain = new ChainShape()
+
+	//	configure shape
+	//	ChainShape is series of connected vertices
+	//	specify an array of Vec2
+	//	if straight line, ( 0, 150 ) & ( width, 150 )
+	//	if a loop is needed, use ChainLoop instead
+	var vertices = new Vec2[ 2 ]
+	vertices[ 0 ] = box2d.coordPixelsToWorld( 0, 150 )
+	vertices[ 1 ] = box2d.coordPixelsToWorld( width, 150 )
+	//	to create the chain with vertices
+	//	the array is passed into a function called createChain()
+	chain.createChain( vertices, vertices.length )
+
+	//	attach shape to body with fixture
+	//	shapes must be attached to bodies
+	var fd = new FixtureDef()
+	fd.shape = chain
+	fd.density = 1
+	fd.friction = .3
+	fd.restitution = .5
+	body.createFixture( fd );
+
+```
 
 
 
