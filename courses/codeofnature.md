@@ -1290,6 +1290,57 @@ ChainShape, PolygonShape, CircleShape creates different shapes
 
 ## complex forms
 
+PolygonShape can also be generated from an array
+
+```js
+
+	var vertices = new Vec2[ 4 ]
+	vertices[ 0 ] = box2d.vectorPixelsToWorld( new Vec2( -15, 25 ) )
+	vertices[ 1 ] = box2d.vectorPixelsToWorld( new Vec2( 15, 0 ) )
+	vertices[ 2 ] = box2d.vectorPixelsToWorld( new Vec2( 20, -15 ) )
+	vertices[ 3 ] = box2d.vectorPixelsToWorld( new Vec2( -10, -10 ) )
+
+	var ps = new PolygonShape()
+	ps.set( vertices, vertices.length );
+
+```
+
+things to note
+
+-	**order of vertices**
+	if you're thinking in terms of pixels
+	it should be defined in counterclockwise order
+	when it's translated to box2d
+	they will be flipped & thus become clockwise
+
+-	**convex shapes only**
+	box2d does not support concave shapes
+	aka shapes that curves inwards
+	if concave is needed, use multiple convex shapes merged
+
+to build a body with multiple shapes
+
+1.	define body
+2.	create body
+3.	define shape
+4.	attach shape to body
+repeat 3, 4 as many times as needed
+5.	finalise body's mass
+
+by default shape is attached to middle of body
+offset it to adjust accordingly using variable called m_p
+
+```js
+
+	//	set offset in pixels
+	var offset = new Vec2( 0, -h/2 )
+	//	convert to box2d
+	offset = box2d.vectorPixelsToWorld( offset )
+	//	set location of circle
+	circle.m_p.set( offset.x, offset.y );
+
+```
+
 
 
 ## feeling attached - box2d joints
