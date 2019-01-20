@@ -1075,7 +1075,7 @@ core elements of a box2d world
 	sets properties like density, friction, restitution
 5.	joint
 	acts as connection between two bodies
-	or between body and the world itself
+	or between body & the world itself
 6.	vec2
 	describes a vector in the box2d world
 
@@ -1344,6 +1344,72 @@ offset it to adjust accordingly using variable called m_p
 
 
 ## feeling attached - box2d joints
+
+1.	**distance joints**
+	connect two bodies with a fixed length
+	attached to each body at specified anchor point relative to body's center
+
+```js
+
+	var p1 = new Particle()
+	var p2 = new Particle()
+
+	//	define joint
+	var djd = new DistanceJointDef()
+
+	//	tell joint which two bodies it connects
+	djd.bodyA = p1.body
+	djd.bodyB = p2.body
+
+	//	setup length
+	djd.length = box2d.scalarPixelsToWorld( 10 )
+
+	//	frequency of harmoic oscillation
+	//	usually values 1 to 5
+	djd.frequencyHz = 1
+
+	//	dampens spring
+	//	usually values 0 to 1
+	djd.dampingRatio = 1
+
+	//	create joint
+	var dj = ( DistanceJoint ) box2d.world.createJoint( djd );
+
+```
+
+2.	**revolute joints**
+	connects two bodies at a common anchor point
+	like a hinge
+	joint has angle that describes relative rotation of each body
+
+```js
+
+	var box1 = new Box()
+	var box2 = new Box()
+
+	//	define joint
+	var rjd = new RevoluteJointDef()
+
+	//	init two bodies & where they are connected
+	rjd.initialize( box1.body, box2.body, box1.body.getWorldCenter() )
+	//	3rd arguement gets center of box1 body
+
+	//	add motor to spin it autonomously if needed
+	rjd.enableMotor = true
+	rjd.motorSpeed = PI * 2	// how fast
+	rjd.maxMotorTorque = 1000 // how powerful
+
+	//	can be constrained between two angles
+	rjd.enableLimit = true
+	rjd.lowerAngle = -PI / 8
+	rjd.upperAngle = PI / 8
+
+	//	create joint
+	var joint = ( RevoluteJoint ) box2d.world.createJoint( rjd );
+
+```
+
+3.	**mouse joints**
 
 
 
