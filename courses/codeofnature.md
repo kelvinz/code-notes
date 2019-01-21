@@ -1410,6 +1410,65 @@ offset it to adjust accordingly using variable called m_p
 ```
 
 3.	**mouse joints**
+	to move a body with the mouse
+	or used to drag an object around the screen
+
+	note:
+	if you directly set an object's position it will break the physics of box2d
+	as if object is teleporting, box2d no longer knows how to compute it
+	a mouse joint is as if a rope is tied to an object & dragged around
+	thus the physics still works
+
+```js
+
+	//	define joint
+	var md = new MouseJointDef()
+
+	//	getGroundBody is to make as if the screen is like the ground
+	//	the object is joint to the screen
+	//	the point of the joint is a moving target aka the mouse on the screen
+	md.bodyA = box2d.getGroundBody()
+	//	attach the box body
+	md.bodyB = box.body
+
+	//	set properties
+	md.maxForce = 5000
+	md.frequencyHz = 5
+	md.dampingRatio = .9
+
+	//	create joint
+	var mouseJoint = ( MouseJoint )
+	box2d.world.createJoint( md );
+
+	//	we'll need to update target location continually
+	var mouseWorld = box2d.coordPixelsToWorld( mouseX, mouseY )
+	mouseJoint.setTarget( mouseWorld );
+
+```
+
+another way to move an object to mouse
+is to set a body to be a KINEMATIC type
+they can be controlled by setting velocity directly
+eg. if you want an object to follow a target like the mouse
+create a vector that points from body's location to a target
+
+```js
+
+	var bd = new BodyDef()
+	bd.type = BodyType.KINEMATIC
+
+	var pos = body.getWorldCenter()
+	var target = box2d.coordPixelsToWorld( mouseX, mouseY )
+	var v = target.sub( pos ) // vector pointing to mouse
+
+	//	assign body's velocity directly
+	//	overriding physics
+	body.setLinearVelocity( v );
+	//	can also do the same with angular velocity
+	//	kinematic bodies do not collide with other kinematic or static bodies
+	//	in those cases a mouse joint is preferable
+
+```
 
 
 
