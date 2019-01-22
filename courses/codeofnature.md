@@ -1474,6 +1474,12 @@ create a vector that points from body's location to a target
 
 ## bringing it all back home to forces
 
+`body.applyForce( force, pos )`
+box2d allows us to specify where the force is applied on the body
+
+when we created our own applyForce function previously
+it simply applies on to the center
+
 
 
 ## collision events
