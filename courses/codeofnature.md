@@ -1484,6 +1484,27 @@ it simply applies on to the center
 
 ## collision events
 
+box2d alerts you to moments of collision with something called an 'interface'
+start with `box2d.listenForCollisions()`
+
+types of collision event callbacks
+
+1.	**beginContact()**
+	when two shapes first come into contact with each other
+
+2.	**endContact()**
+	over & over again as long as shapes continue to be in contact
+
+3.	**preSolve()**
+	before box2d solves the outcome of collision
+	ie. before beginContact()
+	can be used to disable collision if needed
+
+4.	**postSolve()**
+	after outcome of collision is solved
+	allows you to gather information about the 'solution'
+	which is known as 'impulse'
+
 
 
 ## a brief interlude - integration methods
