@@ -1509,6 +1509,22 @@ types of collision event callbacks
 
 ## a brief interlude - integration methods
 
+**differentiation** is the process of finding a 'derivative'
+
+location is a point in space
+velocity is change in location over time
+thus, velocity can be described as the 'derivative' of location
+
+acceleration is change in velocity over time
+thus, accelation is the 'derivative' of velocity
+
+**integration** is the inverse of the derivative
+
+integral of object's velocity over time tells us object's new location when time period ends
+
+location is integral of velocity
+velocity is integral of accelation
+
 
 
 ## verlet physics with toxiclibs
