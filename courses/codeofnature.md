@@ -1516,14 +1516,26 @@ velocity is change in location over time
 thus, velocity can be described as the 'derivative' of location
 
 acceleration is change in velocity over time
-thus, accelation is the 'derivative' of velocity
+thus, accelaration is the 'derivative' of velocity
 
 **integration** is the inverse of the derivative
 
 integral of object's velocity over time tells us object's new location when time period ends
 
 location is integral of velocity
-velocity is integral of accelation
+velocity is integral of acceleration
+
+integration figures out where the object is at x time
+we've been doing integration like so
+`velocity.add( acceleration )`
+it's a methodology known as Euler integration or the Euler method
+it's the simpleset form of integration but not necessarily the most efficient or accurate
+in real life location is a continuous integration, while Euler integrates at fixed points
+thus outputting a series of line segments rather than a smooth curve
+one option to overcome this is to use smaller segments/time
+but it isn't practical as it will cause too much processing to take place
+
+box2d uses symplectic Euler or semi-explict Euler, a slight modification of Euler
 
 
 
