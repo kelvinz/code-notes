@@ -1541,6 +1541,46 @@ box2d uses symplectic Euler or semi-explict Euler, a slight modification of Eule
 
 ## verlet physics with toxiclibs
 
+an alternative to box2d
+when to use?
+
+-	collisions needed
+	multiple shaped objects knocking each other around
+	= *use box2d*
+	toxiclibs does not handle collisions
+
+-	particles flying around
+	attract or repel each other
+	connected with springs
+	= *use toxiclibs*
+	simplier to use than box2d
+	suited for connected particle systems
+	high performance due to verlet integration algorithm ( & ignores collisions )
+
+translating box2d world to verlet physics
+**core elements**
+World   => VerletPhysics
+Body    => VerletParticle
+Shape   => n/a
+Fixture => n/a
+Joint   => VerletSpring
+
+```js
+
+	//	create world
+	var physics = new VerletPhysics2D()
+
+	//	set global properties
+	physics.setWorldBounds( new Rect( 0, 0, width, height ) )
+
+	//	add gravity - how strong, which direction
+	physics.addBehavior( new GravityBehavior( new Vec2D( 0, .5 ) ) )
+
+	//	to calculate call update() on every draw
+	var draw = ()=> physics.update();
+
+```
+
 
 
 ## particles & springs in toxiclibs
