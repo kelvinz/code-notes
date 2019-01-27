@@ -1585,6 +1585,19 @@ Joint   => VerletSpring
 
 ## particles & springs in toxiclibs
 
+1.	**VerletSpring**
+	springy connection between two particles in space
+	properties can be configured to create stiff stick-like or highly elastic
+	a particle can also be locked so that only one end of the spring can move
+
+2.	**VerletConstrainedSpring**
+	maximum distance can be limited
+	can help whole spring system achieve better stability
+
+3.	**VerletMinDistanceSpring**
+	only enforces its rest length if current distance is less than rest length
+	ensure objects are at least a certain distance from each other
+
 
 
 ## putting it all together: a simple interactive spring
