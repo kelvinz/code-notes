@@ -1602,6 +1602,23 @@ Joint   => VerletSpring
 
 ## putting it all together: a simple interactive spring
 
+in box2d, you can't manually change location of object without breaking physics
+in toxiclibs you can
+but it's generally a good idea to call the lock() function first
+lock() is typically used to lock a particle in place
+lock it, move it, then unlock it so that it continues to move according to toxiclibs physics simulation
+
+```js
+
+	if ( mousePressed ) {
+		p2.lock()
+		p2.x = mouseX
+		p2.y = mouseY
+		p2.unlock()
+	}
+
+```
+
 
 
 ## connected systems, part 1: string
