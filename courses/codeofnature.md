@@ -1623,6 +1623,39 @@ lock it, move it, then unlock it so that it continues to move according to toxic
 
 ## connected systems, part 1: string
 
+```js
+
+	//	20 particles, 10 pixels apart
+	var particles = [],
+		numParticles = 20,
+		dist = 10
+
+	for ( var i = 0; i < numParticles; i++ ) {
+		//	create new particle
+		//	spaced apart by dist
+		var particle = new Particle( 0, i * dist )
+
+		//	add to world
+		physics.addParticle( particle )
+
+		//	add to list
+		particles.add( particle )
+
+		//	connect the particles
+		if ( i != 0 ) {
+			//	find reference to previous particle
+			var previous = particles.get( i - 1 )
+
+			//	make spring connection between particles
+			var spring = new VerletSpring2D( particle, previous, dist, strength )
+
+			//	add spring to world
+			physics.addSpring( spring )
+		}
+	}
+
+```
+
 
 
 ## connected systems, part 2: force-directed graph
