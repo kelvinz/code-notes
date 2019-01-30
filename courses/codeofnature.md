@@ -1660,6 +1660,41 @@ lock it, move it, then unlock it so that it continues to move according to toxic
 
 ## connected systems, part 2: force-directed graph
 
+-	**no node is connected to itself**
+	ie. we don't have 0 connected to 0 or 1 connected to 1
+
+-	**don't repeat connections in reverse**
+	if 0 is connected to 1, we don't need 1 to connect to 0 since it's already is
+
+```js
+
+	var cluster = ()=> {
+		function create( n, d, center ) {
+			var nodes = [],
+				//	resting length between nodes
+				diameter = d
+
+			for ( var i = 0; i < n; i++ ) {
+				//	if all node objects start at same loc it'll have an issue
+				//	so add random vector to center so it's slightly offset
+				nodes.add( new Node( center.add( Vec2D.randomVector() ) ) )
+			}
+
+			for ( var i = 0; i < nodes.size() - 1; i++ ) {
+				ni = nodes.get( i )
+
+				for ( var j = i + 1; j < nodes.size(); j++ ) {
+					nj = nodes.get( j )
+
+					//	connects nodes ni & nj
+					physics.addSpring( new VerletSpring2D( ni, nj, diameter, .01 ) )
+				}
+			}
+		}
+	};
+
+```
+
 
 
 ## attraction & repulsion behaviors
