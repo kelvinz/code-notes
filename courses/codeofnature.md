@@ -1699,6 +1699,28 @@ lock it, move it, then unlock it so that it continues to move according to toxic
 
 ## attraction & repulsion behaviors
 
+toxiclibs lets us addForce too and even has common forces built-in
+
+```js
+
+	//	add attraction force to a particle
+	//	all other particles will be attracted to this particle
+	var p = new Particle( new Vec2D( 200, 200 ) ),
+		//	how far away will the force be felt by others
+		distance = 20,
+		//	how strong the force is
+		strength = .1,
+		behavior = new AttractionBehavior( p, distance, strength )
+
+	physics.addBehavior( behavior );
+
+```
+
+even though toxiclibs doesn't handle collisions
+you can create a collision-like effect by using a repulsive behavior
+so every particle repels each other
+change strength to negative in behavior to create a repulsive force
+
 
 
 ---
