@@ -1731,6 +1731,84 @@ change strength to negative in behavior to create a repulsive force
 
 
 
+## forces from within
+
+-	limited ability to perceive environment
+-	proccesses information from its environment & calculates an action
+-	has no leader
+
+
+
+## vehicles & steering
+
+idealized vehicles has 3 layers
+
+1.	**action selection**
+	-	has a goal
+	-	can select action based on goal
+	-	eg. seek target, avoid obstacle, follow path
+
+2.	**steering**
+	-	once action selected, calculate next move
+	-	steering force = desired velocity - current velocity
+
+3.	**locomotion**
+	-	ie. left leg, right leg, spinning wheels or oscillating paddles?
+
+
+
+## the steering force
+
+
+
+## arriving behavior
+
+
+
+## your own desires: disired velocity
+
+
+
+## flow fields
+
+
+
+## the dot product
+
+
+
+## path following
+
+
+
+## path following with multiple segments
+
+
+
+## complex systems
+
+
+
+## group behaviors or: let's not run into each other
+
+
+
+## combinations
+
+
+
+## flocking
+
+
+
+## algorithmic efficiency
+
+
+
+## a few last notes: optimization tricks
+
+
+
 ---
 
 
