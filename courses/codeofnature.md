@@ -1759,6 +1759,61 @@ idealized vehicles has 3 layers
 
 ## the steering force
 
+```js
+
+	const Vehicle = ()=> {
+		let location, velocity, acceleration, r, maxforce, maxspeed
+
+		const init = ( x, y )=> {
+			acceleration = new PVector( 0, 0 )
+			velocity = new PVector( 0, 0 )
+			location = new PVector( x, y )
+			r = 3 // size
+			maxspeed = 4
+			maxforce = .1
+		}
+
+		const update = ()=> {
+			velocity.add( acceleration )
+			velocity.limit( maxspeed )
+			location.add( velocity )
+			acceleration.mult( 0 )
+		}
+
+		const applyForce = ( force )=> {
+			acceleration.add( force )
+		}
+
+		const seek = ( target )=> {
+			let desired = PVector.sub( target, location )
+			desired.normalize()
+			desired.mult( maxspeed )
+
+			let steer = PVector.sub( desired, velocity )
+			steer.limit( maxforce )
+			applyForce( steer )
+		}
+
+		const display = ()=> {
+			//	vehicle is a triangle pointing in direction of velocity
+			//	since it is drawn pointing up, we rotate it 90 degrees
+			let theta = velocity.heading() + PI/2
+			fill( 175 )
+			stroke( 0 )
+			pushMatrix()
+			translate( location.x, location.y )
+			rotate( theta )
+			beginShape()
+			vertex( 0, -r*2 )
+			vertex( -r, r*2 )
+			verlex( r, r*2 )
+			endShape( CLOSE )
+			popMatrix
+		}
+	};
+
+```
+
 
 
 ## arriving behavior
