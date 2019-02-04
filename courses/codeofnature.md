@@ -1818,6 +1818,38 @@ idealized vehicles has 3 layers
 
 ## arriving behavior
 
+because the vehicle always moves as fast as possible towards target
+it will keep overshooting target
+may never arrive
+what we want is for it to slow down as it approaches
+stops when arrived
+
+```js
+
+	const arrive = ( target )=> {
+		let desired = PVector.sub( target, location )
+
+		//	distance is the magnitude of the vector pointing from location to target
+		let d = desired.mag()
+		desired.normalize()
+
+		//	if we're closer than 100 pixels
+		if ( d < 100 ) {
+			//	set the magnitude according to how close we are
+			let m = map( d, 0, 100, 0, maxspeed )
+			desired.mult( m )
+		} else {
+			desired.mult( maxspeed )
+		}
+
+		//	usual steering
+		let steer = PVector.sub( desired, velocity )
+		steer.limit( maxforce )
+		applyForce( steer )
+	};
+
+```
+
 
 
 ## your own desires: disired velocity
