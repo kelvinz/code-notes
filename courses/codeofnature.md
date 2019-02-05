@@ -1854,6 +1854,33 @@ stops when arrived
 
 ## your own desires: disired velocity
 
+wandering is not simply random motion
+its more moving in one direction for a while before wandering to the next & so on
+how to achieve it:
+
+-	draw a circle with radius r in front of vehicle with fixed distance away
+-	pick random point along circumference of circle
+-	random point moves randomly around the circle in each frame
+-	random point is vehicle's target, its desired vector pointing in that direction
+
+it keeps the motion from looking jittery & random
+more like wandering around
+
+-	if vehicle comes within distance d of wall
+-	move at maximum speed in opposite direction of wall
+
+```js
+
+	if ( location.x > 25 ) {
+		let desired = new PVector( maxspeed, velocity.y ),
+			steer = PVector.sub( desired, velocity )
+
+		steer.limit( maxforce )
+		applyForce( steer )
+	}
+
+```
+
 
 
 ## flow fields
