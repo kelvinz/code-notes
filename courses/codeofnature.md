@@ -1885,6 +1885,55 @@ more like wandering around
 
 ## flow fields
 
+a grid with cells, cells with arrows pointing in direction, aka vector
+as a vehicle moves around the screen, it checks what cell/arrow is it on
+moves with that as desired velocity
+
+```js
+
+	const FlowField = ( r )=> {
+		let resolution = r,
+			cols = width / resolution,
+			rows = height / resolution,
+			field = new PVector[ cols ][ rows ]
+
+		let xoff = 0
+		for ( let i = 0; i < cols; i++ ) {
+			let yoff = 0
+			for ( let j = 0; j < rows; j++ ) {
+				//	apply perlin noise
+				let theta = map( noise( xoff, yoff ), 0, 1, TWO_PI )
+				field[ i ][ j ] = new PVector( cos( theta ), sin( theta ) )
+				yoff += .1
+			}
+			xoff += .1
+		}
+
+		//	return the vector at location
+		const lookup = ( lookup )=> {
+			//	constrain so it doesn't look outside the FlowField
+			const column = int( constrain( lookup.x / resolution, 0, cols - 1 ) ),
+			row = int( constrain( lookup.y / resolution, 0, rows - 1 ) )
+			return field[ column ][ row ].get()
+		}
+	}
+
+	const Vehicle = ()=> {
+
+		const follow = ( flow )=> {
+			//	what vector is at my location
+			let desired = flow.lookup( location )
+
+			desired.mult( maxspeed )
+			//	steering is desired minus velocity
+			let steer = PVector.sub( desired, velocity )
+			steer.limit( maxforce )
+			applyForce( steer )
+		}
+	};
+
+```
+
 
 
 ## the dot product
