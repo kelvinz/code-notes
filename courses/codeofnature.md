@@ -1699,7 +1699,7 @@ lock it, move it, then unlock it so that it continues to move according to toxic
 
 ## attraction & repulsion behaviors
 
-toxiclibs lets us addForce too and even has common forces built-in
+toxiclibs lets us addForce too & even has common forces built-in
 
 ```js
 
@@ -1938,9 +1938,60 @@ moves with that as desired velocity
 
 ## the dot product
 
+```js
+
+	//	if
+	a = ( -3, 5 )
+	b = ( 10, 1 )
+	//	then
+	a.b = ( -3 * 10 ) + ( 5 * 1 ) = -30 + 5 = 35
+
+	// implemented using
+	let a = new PVector( -3, 5 ),
+		b = new PVector( 10, 1 )
+
+	n = a.dot( b );
+
+```
+
+dot product used to find the angle between two vectors
+A dot B is equal to the magnitude of A times magnitude of B time cosine of theta
+with theta defined as the angle between two vectors A & B
+thus
+theta = inverse cos of ( a.dot( b ) ) / ( magnitude of a * magnitude of b )
+`let theta = acos( a.dot( b ) / ( a.mag() * b.mag() ) )`
+
+note:
+
+-	if two vectors are orthogonal, ie. perpendicular, the dot product of a & b is 0
+-	if two vectors are unit vector, the dot product is simply cosine of angle, ie. if a.mag() & b.mag() is = 1
+
 
 
 ## path following
+
+**what**
+path following, not path finding
+a path is a series of connected points
+path has a radius like a road has width
+smaller radius, vehicle follows closer
+bigger radius, vehicle able to stray more
+
+**how**
+assuming constant velocity
+we want to predict where the vehicle would be in the future
+find distance from path - predicted vs current
+if it's far, steer back, if close, keep going
+
+**distance between point & line**
+length of normal between point & line
+normal is a vector that extends from point perpendicular to line
+
+```js
+
+
+
+```
 
 
 
