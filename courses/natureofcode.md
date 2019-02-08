@@ -1989,7 +1989,49 @@ normal is a vector that extends from point perpendicular to line
 
 ```js
 
+	const follow( p ) {
+		//	step 1
+		//	predict vehicle's future location
+		const predict = vel.get()
+		predict.normalize()
+		predict.mult( 25 )
+		const predictLoc = PVector.add( loc, predict )
 
+		//	step 2
+		//	find normal point along path
+		const a = p.start,
+			b = p.end,
+			normalPoint = getNormalPoint( predictLoc, a, b )
+
+		//	step 3
+		//	move a little further along path & set target
+		const dir = PVector.sub( a, b )
+		dir.normalize()
+		dir.mult( 10 )
+		const target = PVector.add( normalPoint, dir )
+
+		//	step 4
+		//	if off path, seek target to stay on path
+		const distance = PVector.dist( normalPoint, predictLoc )
+		if ( distance > p.radius ) {
+			seek( target )
+		}
+	}
+
+	const getNormalPoint( p, a, b ) {
+		//	vector that points from a to p
+		const ap = PVector.sub( p, a )
+		//	vector that points from a to b
+		const ab = PVector.sub( b, a )
+
+		//	using dot product for scalar projection
+		ab.normalize()
+		ab.mult( ap.dot( ab ) )
+		//	find normal point along the line segment
+		const normalPoint = PVector.add( a, ab )
+
+		return normalPoint
+	};
 
 ```
 
