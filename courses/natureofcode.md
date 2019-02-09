@@ -2039,6 +2039,39 @@ normal is a vector that extends from point perpendicular to line
 
 ## path following with multiple segments
 
+pick closet point
+previously we find the normal for one line segment
+now we find the normals for all the line segments in a loop
+
+```js
+
+	//	start with a very high record that can be easily beaten
+	let worldRecord = 1000000
+
+
+	for ( let i = 0; i < p.points.size() - 1; i++ ) {
+		const a = p.points.get( i )
+		const b = p.points.get( i + 1 )
+
+		let normalPoint = getNormalPoint( predictLoc, a, b )
+
+		if ( normalPoint.x < a.x || normalPoint.x > b.x ) {
+			//	use the end point of our segment if can't find one
+			normalPoint = b.get()
+		}
+
+		const distance = PVector.dist( predictLoc, normalPoint )
+
+		//	if we beat the world record
+		//	this is the target
+		if ( distance < worldRecord ) {
+			worldRecord = distance
+			target = normalPoint.get()
+		}
+	}
+
+```
+
 
 
 ## complex systems
