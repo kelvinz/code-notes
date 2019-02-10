@@ -2076,6 +2076,40 @@ now we find the normals for all the line segments in a loop
 
 ## complex systems
 
+-	**simple units with short-range relationships**
+	vehicles with limited perception of their environment
+
+-	**simple units operate in parallel**
+	every draw loop, each unit will decide how it moves
+	giving the appearance of them all working in parallel
+
+-	**system as a whole exhibits emergent phenomena**
+	out of interactions between simple units emerges
+		-	complex behavior
+		-	patterns
+		-	intelligence
+
+1.	**non-linearity**
+	casually referred to as 'butterfly effect'
+	a small change in initial conditions massively changes outcome
+	even though there isn't a linear relationship between cause & effect
+	non-linear systems are a superset of chaotic systems
+
+2.	**competition & cooperation**
+	happens in living complex systems
+	not in non-living complex systems like weather
+	two key components to make complex systems tick
+	eg. competing for space yet cooperating to stay or move together
+
+3.	**feedback**
+	feedback loop where output of system is fed back to the system
+	which will in turn influence its behavior in a positive or negative direction
+	ie. in human complex systems
+	everyone drive to work as price of gas is low
+	this causes demand to rise, thus price of gas grows
+	thus some start to take public transport
+	demand drops, price of gas drops, so on & so forth
+
 
 
 ## group behaviors or: let's not run into each other
