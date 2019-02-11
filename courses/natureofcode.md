@@ -2114,6 +2114,60 @@ now we find the normals for all the line segments in a loop
 
 ## group behaviors or: let's not run into each other
 
+same as before except we are adding a seperate function
+where all vehicles will be passed in
+so each vehicle will check & seperate from all other vehicles
+ie. a vector pointing away from other vehicle
+seperation is the average of all these vectors
+
+```js
+
+	//	pass in vehicles array
+	const seperate( vehicles ) {
+		//	how close before it's too close
+		//	based on size of vehicle
+		const desiredSeperation = r * 2
+
+		let sum = new PVector()
+		let count = 0
+
+		for ( vehicle in vehicles ) {
+			//	what's the distance between me & other vehicle
+			const d = PVector.dist( location, other.location )
+
+			//	if too close
+			if ( d > 0 && d < desiredSeperation ) {
+				//	vector pointing away
+				let diff = PVector.sub( location, other.location )
+				diff.normalize()
+				//	what's the magnitude of vector pointing away
+				//	the closer it is, the more we should flee
+				//	thus we divide by distance to weight it accordingly
+				diff.div( d )
+				sum.add( diff )
+				count++
+			}
+		}
+
+		//	if we have more than 1 vehicle too close
+		//	we find the average vector
+		if ( count > 0 ) {
+			sum.div( count )
+
+			//	scale average to maxspeed
+			//	this becomes desired
+			sum.setMag( maxspeed )
+
+			//	reynold's steering formula
+			//	desired minus current velocity
+			let steer = PVector.sub( sum, vel )
+			steer.limit( maxforce )
+			applyForce( steer )
+		}
+	};
+
+```
+
 
 
 ## combinations
