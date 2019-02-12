@@ -2172,6 +2172,34 @@ seperation is the average of all these vectors
 
 ## combinations
 
+adjust seek & seperate functions so they return the force
+this way we can adjust the strength & allow combinations of different effects
+
+```js
+
+	const seek( target ) {
+		let desired = PVector.sub( target, loc )
+		desired.normalize()
+		desired.mult( maxspeed )
+		let steer = PVector.sub( desired, vel )
+		steer.limit( maxForce )
+
+		return steer
+	}
+
+	const applyBehaviors( vehicles ) {
+		let seperate = seperate( vehicles ),
+			seek = seek( new PVector( mouseX, mouseY ) )
+
+		seperate.mult( 1.5 )
+		seek.mult( .5 )
+
+		applyForce( seperate )
+		applyForce( seek )
+	}
+
+```
+
 
 
 ## flocking
