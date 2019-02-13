@@ -2196,13 +2196,43 @@ this way we can adjust the strength & allow combinations of different effects
 
 		applyForce( seperate )
 		applyForce( seek )
-	}
+	};
 
 ```
 
 
 
 ## flocking
+
+bringing various concepts together
+
+1.	use steering force formula to implement rules of flocking
+	steer = desired - velocity
+
+2.	these forces will be group behaviors & require each vehicle to look at all other vehicles
+
+3.	combine & weight multiple forces
+
+4.	result will be a complex system
+	intelligent group behavior emerging from these simple rules without a centralized system or leader
+
+rules to flocking
+
+1.	**seperation** also known as avoidance
+	steer to avoid colliding with neighbors
+
+2.	**alignment** also known as copy
+	steer in same direction as neighbors
+
+3.	**cohesion** also known as center
+	steer towards center of neighbors, stay with group
+
+boids are another name we're using for vehicles
+
+```js
+
+
+```
 
 
 
