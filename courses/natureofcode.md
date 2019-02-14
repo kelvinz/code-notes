@@ -1577,7 +1577,7 @@ Joint   => VerletSpring
 	physics.addBehavior( new GravityBehavior( new Vec2D( 0, .5 ) ) )
 
 	//	to calculate call update() on every draw
-	var draw = ()=> physics.update();
+	var draw = () => physics.update();
 
 ```
 
@@ -1668,7 +1668,7 @@ lock it, move it, then unlock it so that it continues to move according to toxic
 
 ```js
 
-	var cluster = ()=> {
+	var cluster = () => {
 		function create( n, d, center ) {
 			var nodes = [],
 				//	resting length between nodes
@@ -1761,10 +1761,10 @@ idealized vehicles has 3 layers
 
 ```js
 
-	const Vehicle = ()=> {
+	const Vehicle = () => {
 		let location, velocity, acceleration, r, maxforce, maxspeed
 
-		const init = ( x, y )=> {
+		const init = ( x, y ) => {
 			acceleration = new PVector( 0, 0 )
 			velocity = new PVector( 0, 0 )
 			location = new PVector( x, y )
@@ -1773,18 +1773,18 @@ idealized vehicles has 3 layers
 			maxforce = .1
 		}
 
-		const update = ()=> {
+		const update = () => {
 			velocity.add( acceleration )
 			velocity.limit( maxspeed )
 			location.add( velocity )
 			acceleration.mult( 0 )
 		}
 
-		const applyForce = ( force )=> {
+		const applyForce = ( force ) => {
 			acceleration.add( force )
 		}
 
-		const seek = ( target )=> {
+		const seek = ( target ) => {
 			let desired = PVector.sub( target, location )
 			desired.normalize()
 			desired.mult( maxspeed )
@@ -1794,7 +1794,7 @@ idealized vehicles has 3 layers
 			applyForce( steer )
 		}
 
-		const display = ()=> {
+		const display = () => {
 			//	vehicle is a triangle pointing in direction of velocity
 			//	since it is drawn pointing up, we rotate it 90 degrees
 			let theta = velocity.heading() + PI/2
@@ -1826,7 +1826,7 @@ stops when arrived
 
 ```js
 
-	const arrive = ( target )=> {
+	const arrive = ( target ) => {
 		let desired = PVector.sub( target, location )
 
 		//	distance is the magnitude of the vector pointing from location to target
@@ -1891,7 +1891,7 @@ moves with that as desired velocity
 
 ```js
 
-	const FlowField = ( r )=> {
+	const FlowField = ( r ) => {
 		let resolution = r,
 			cols = width / resolution,
 			rows = height / resolution,
@@ -1910,7 +1910,7 @@ moves with that as desired velocity
 		}
 
 		//	return the vector at location
-		const lookup = ( lookup )=> {
+		const lookup = ( lookup ) => {
 			//	constrain so it doesn't look outside the FlowField
 			const column = int( constrain( lookup.x / resolution, 0, cols - 1 ) ),
 			row = int( constrain( lookup.y / resolution, 0, rows - 1 ) )
@@ -1918,9 +1918,9 @@ moves with that as desired velocity
 		}
 	}
 
-	const Vehicle = ()=> {
+	const Vehicle = () => {
 
-		const follow = ( flow )=> {
+		const follow = ( flow ) => {
 			//	what vector is at my location
 			let desired = flow.lookup( location )
 
@@ -1989,7 +1989,7 @@ normal is a vector that extends from point perpendicular to line
 
 ```js
 
-	const follow( p ) {
+	const follow = ( p ) => {
 		//	step 1
 		//	predict vehicle's future location
 		const predict = vel.get()
@@ -2018,7 +2018,7 @@ normal is a vector that extends from point perpendicular to line
 		}
 	}
 
-	const getNormalPoint( p, a, b ) {
+	const getNormalPoint = ( p, a, b ) => {
 		//	vector that points from a to p
 		const ap = PVector.sub( p, a )
 		//	vector that points from a to b
@@ -2123,7 +2123,7 @@ seperation is the average of all these vectors
 ```js
 
 	//	pass in vehicles array
-	const seperate( vehicles ) {
+	const seperate = ( vehicles ) => {
 		//	how close before it's too close
 		//	based on size of vehicle
 		const desiredSeperation = r * 2
@@ -2177,7 +2177,7 @@ this way we can adjust the strength & allow combinations of different effects
 
 ```js
 
-	const seek( target ) {
+	const seek = ( target ) => {
 		let desired = PVector.sub( target, loc )
 		desired.normalize()
 		desired.mult( maxspeed )
@@ -2187,7 +2187,7 @@ this way we can adjust the strength & allow combinations of different effects
 		return steer
 	}
 
-	const applyBehaviors( vehicles ) {
+	const applyBehaviors = ( vehicles ) => {
 		let seperate = seperate( vehicles ),
 			seek = seek( new PVector( mouseX, mouseY ) )
 
@@ -2231,6 +2231,67 @@ boids are another name we're using for vehicles
 
 ```js
 
+	const flock = ( boids ) => {
+		let sep = seperate( boids ),
+			ali = align( boids ),
+			coh = cohesion( boids )
+
+		sep.mult( 1.5 )
+		ali.mult( 1.0 )
+		coh.mult( 1.0 )
+
+		applyForce( sep )
+		applyForce( ali )
+		applyForce( coh )
+	}
+
+	const align = ( boids ) => {
+		const neighbordist = 50
+		let sum = new PVector( 0, 0 ),
+			count = 0
+
+		//	find average velocity
+		for ( boid in boids ) {
+			if ( d < 0 && d < neighbordist ) {
+				sum.add( boid.velocity )
+				count++
+			}
+		}
+		if ( count > 0 ) {
+			sum.div( count )
+			sum.normalize()
+			//	go in that direction at maxspeed
+			sum.mult( maxspeed )
+
+			//	steering formula
+			let steer = PVector.sub( sum, velocity )
+			steer.limit( maxForce )
+			return steer
+		} else {
+			return new PVector( 0, 0 )
+		}
+	}
+
+	const cohesion = ( boids ) => {
+		const neighbordist = 50
+		let sum = new PVector( 0, 0 ),
+			count = 0
+
+		for ( boid in boids ) {
+			d = PVector.dist( location, boid.location )
+			if ( d > 0 && d < neighbordist ) {
+				sum.add( boid.location )
+				count++
+			}
+		}
+
+		if ( count > 0 ) {
+			sum.div( count )
+			return seek( sum )
+		} else {
+			return new PVector( 0, 0 )
+		}
+	};
 
 ```
 
