@@ -2299,6 +2299,33 @@ boids are another name we're using for vehicles
 
 ## algorithmic efficiency
 
+problem with what we're doing currently is
+for x number of birds in our flock
+we have to loop x * x times for each cycle to check for neighbors
+
+solution: divide the screen into a grid
+only loop birds in a grid to check for neighbors
+aka bin-lattice spatial subdivision
+
+```js
+
+	//	loop thru boids & add them into a grid
+	let column = boid.x / resolution,
+		row = boid.y / resolution
+	grid[ column ][ row ].add( boid )
+
+	//	when it comes to check neighbors, check in grid
+	let column = boid.x / resolution,
+		row = boid.y / resolution
+	boid.flock( grid[ column ][ row ] );
+
+```
+
+but this still has an issue
+what if all boids congregate in a corner?
+wouldn't it the same as previously looping x * x times?
+we'll have to use other optimization methods that are more sophisticated
+
 
 
 ## a few last notes: optimization tricks
