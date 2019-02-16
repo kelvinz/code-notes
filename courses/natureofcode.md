@@ -2330,6 +2330,79 @@ we'll have to use other optimization methods that are more sophisticated
 
 ## a few last notes: optimization tricks
 
+1.	magnitude squared or distance squared
+	`const mag = ()=> sqrt( x * x + y * y )`
+	square root is a heavy process
+	if we can skip running that
+	we'll save on processing power
+	eg. if we just need to know the relative magnitude of a vector
+	`if ( v.mag() > 10 ) {}`
+	is the same as
+	`if ( v.magSq() > 100 ) {}`
+	where
+	`const magSq = ()=> x * x + y * y`
+
+2.	sine & cosine lookup tables
+	sine, cosine, tangent are all heavy proccesses
+	if we can stop them from running too many times aka in huge loops
+	it'll save processing power
+	build an array to store sine & cosine at angles between 0 & TWO_PI (359 degrees) that you can use later on
+
+```js
+
+	const sinvalues[] = new float[ 360 ]
+	const cosvalues[] = new float[ 360 ]
+	for ( let i = 0; i < 360; i++ ) {
+		sinvalues[ i ] = sin( radians( i ) )
+		cosvalues[ i ] = cos( radians( i ) )
+	}
+
+	//	use the table
+	const angle = int( degrees( PI ) )
+	let answer = sinvalues[ angle ];
+
+```
+
+3.	making gajillions of unnecessary PVector objects
+
+```js
+
+	//	instead of
+	const draw = () => {
+		for ( vehicle in vehicles ) {
+			const mouse = new PVector( mouseX, mouseY )
+			v.seek( mouse )
+		}
+	}
+
+	//	do this
+	const mouse = new PVector()
+	const draw = () => {
+		mouse.x = mouseX
+		mouse.y = mouseY
+		for ( vehicle in vehicles ) {
+			v.seek( mouse )
+		}
+	}
+
+	//	instead of
+	let desired = PVector.sub( target, location )
+	desired.normalize()
+	desired.mult( maxspeed )
+	let steer = PVector.sub( desired, velocity )
+	steer.limit( maxforce )
+	return steer
+
+	//	do this
+	let desired = PVector.sub( target, location )
+	desired.normalize()
+	desired.mult( maxspeed )
+	desired.sub( velocity )
+	desired.limit( maxforce )
+	return desired
+
+```
+
 
 
 ---
