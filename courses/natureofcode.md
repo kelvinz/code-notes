@@ -2413,6 +2413,64 @@ we'll have to use other optimization methods that are more sophisticated
 
 
 
+## what is a cellular automation?
+
+a model of 'cell' objects with the following characteristics
+
+-	cells live on a **grid**
+-	each cell has a **state**
+-	each cell has a **neighborhood**
+
+
+
+## elementary cellular automata
+
+//
+
+
+
+## how to program an elementary ca
+
+//
+
+
+
+## drawing an elementary ca
+
+//
+
+
+
+## wolfram classification
+
+//
+
+
+
+## the game of life
+
+//
+
+
+
+## programming the game of life
+
+//
+
+
+
+## object-oriented cells
+
+//
+
+
+
+## variations of traditional ca
+
+//
+
+
+
 ---
 
 
