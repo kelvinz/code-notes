@@ -1529,7 +1529,7 @@ integration figures out where the object is at x time
 we've been doing integration like so
 `velocity.add( acceleration )`
 it's a methodology known as Euler integration or the Euler method
-it's the simpleset form of integration but not necessarily the most efficient or accurate
+it's the simplest form of integration but not necessarily the most efficient or accurate
 in real life location is a continuous integration, while Euler integrates at fixed points
 thus outputting a series of line segments rather than a smooth curve
 one option to overcome this is to use smaller segments/time
@@ -2425,7 +2425,29 @@ a model of 'cell' objects with the following characteristics
 
 ## elementary cellular automata
 
-//
+simplest form
+
+1.	**grid**
+	one dimensional - a line of cells
+
+2.	**states**
+	two states - 0 or 1
+
+3.	**neighborhood**
+	the cell itself & its left, right cell
+
+ca living over a period of time = generation or frame count
+how do we compute states for all cells at generation 1, generation 2 & so on
+`CELL state at time t = f( CELL neighborhood at time t - 1 )`
+a cell's new state is a function of all the states in the cell's neighborhood at the previous moment in time
+aka we calculate a new state by looking at all the previous neighbor states
+
+eg. if we look at a 3 cell neighborhood with 0 or 1 states there is 8 possible outcomes
+000   001   010   011   100   101   110   111
+we can then define an outcome for each of the neighborhood configuration
+ 0     1     0     1     1     0     1     0
+using this simple setup we can generate outcomes for generations starting with just a grid of 0s & a single 1
+it can create interesting patterns like the sierpinski triangle from the above setup
 
 
 
