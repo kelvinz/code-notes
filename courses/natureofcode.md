@@ -2453,7 +2453,65 @@ it can create interesting patterns like the sierpinski triangle from the above s
 
 ## how to program an elementary ca
 
-//
+```js
+
+	//	CA factory
+	const CA = () => {
+		let cells = [],
+			ruleset = []
+
+		const init = () => {
+			//	arbitarily starting with rule 90
+			//	its in reverse order for the parseInt to pass 111 correctly as 0
+			//	see below in rules function
+			ruleset = { 0, 1, 0, 1, 1, 0, 1, 0 }
+
+			for ( let i = 0; i < cells.length; i++ ) {
+				cells[ i ] = 0
+			}
+			//	all cells start with 0, except center cell has state 1
+			cells[ cells.length / 2 ] = 1
+		}
+	}
+
+	const generate = () => {
+		//	store new cells array so that after changing a cell
+		//	it wouldn't after the i++ loop to read off wrong info
+		//	aka after i changed, i + 1
+		//	when looking for the cell on left sees changed cell instead of old one
+		let nextgen = []
+
+		//	loop ignores first & last cell as they don't fit into our 3 cell neighborhood system
+		for ( let i = 1; i < cells.length - 1; i++ ) {
+			let left = cells[ i - 1 ],
+				me = cells[ i ],
+				right = cells[ i + 1 ]
+
+			nextgen[ i ] = rules( left, me, right )
+		}
+
+		cells = nextgen
+	}
+
+	//	lookup new state from ruleset
+	const rules = ( a, b, c ) => {
+		//	combine 3 cells into a 3 digit number
+		let s = "" + a + b + c,
+			//	2 indicates we want to parse a binary number of base 2
+			index = Integer.parseInt( s, 2 )
+			return ruleset[ index ]
+	};
+
+	//	parseInt( '000', 2 ) = 0
+	//	parseInt( '001', 2 ) = 1
+	//	parseInt( '010', 2 ) = 2
+	//	parseInt( '011', 2 ) = 3
+	//	parseInt( '100', 2 ) = 4
+	//	parseInt( '101', 2 ) = 5
+	//	parseInt( '110', 2 ) = 6
+	//	parseInt( '111', 2 ) = 7
+
+```
 
 
 
