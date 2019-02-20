@@ -2517,7 +2517,20 @@ it can create interesting patterns like the sierpinski triangle from the above s
 
 ## drawing an elementary ca
 
-//
+```js
+
+	//	same as above, but keep track of generations
+	//	generations = 0, then during generate generation++
+
+	//	size of each cell
+	const w = 10
+
+	for ( let i = 0; i < cells.length; i++ ) {
+		cells[ i ] === 1 ? fill( 0 ) : fill( 255 )
+		rect( i * w, generation * w, w, w )
+	}
+
+```
 
 
 
