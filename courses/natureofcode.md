@@ -2536,7 +2536,29 @@ it can create interesting patterns like the sierpinski triangle from the above s
 
 ## wolfram classification
 
-//
+majority of elementary ca rulesets produce uninspiring results
+some though results in complex patterns like those found in nature
+wolfram's classification for cellular automata of the range of outcomes
+
+1.	**uniformity**
+	class 1 cas end up after some number of generations with every cell constant
+	after running long enough, every cell turns black
+	ie. ruleset 222
+
+2.	**repetition**
+	class 2 cas remain stable, but cells states are not constant
+	they oscillate in a regular pattern back & forth
+	ie. ruleset 190
+
+3.	**random**
+	class 3 cas appear random & has no easily discernible pattern
+	is used as a random number generator in Wolfram's Mathematica software
+	ie. ruleset 30
+
+4.	**complexity**
+	class 4 is a mix between class 2 & 3
+	one can find repetitive & oscillating patterns but they appear unpredicatable & seemingly random
+	ie. ruleset 110
 
 
 
