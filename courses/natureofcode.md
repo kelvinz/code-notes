@@ -2564,7 +2564,28 @@ wolfram's classification for cellular automata of the range of outcomes
 
 ## the game of life
 
-//
+two dimensional cellular automata
+for a neighborhood of 3 cells, we have 8 possible configurations
+but for a 2D ca with 9 cell neighborhoods, we have 512 possible configurations
+which is impractical to manually define an outcome for each
+thus we use rules instead
+
++	**death**
+	if a cell is alive ( state = 1 ) it will die ( state becomes 0 ) under the following circumstances
+		+	*overpopulation*
+			if a cell has four or more alive neighbors, it dies
+		+	*loneliness*
+			if a cell has one or fewer alive neighbors, it dies
+
++	**birth**
+	if a cell is dead it will come to life if it has exactly 3 alive neighbors ( no more, no less )
+
++	**stasis**
+	in all other cases, cell state does not change
+		+	*staying alive*
+			if a cell is alive & has exactly 2 or 3 live neighbors, it stays alive
+		+	*staying dead*
+			if a cell is dead & has anything other than 3 living neighbors, it stays dead
 
 
 
