@@ -2591,7 +2591,44 @@ thus we use rules instead
 
 ## programming the game of life
 
-//
+```js
+	const
+	columns = 10,
+	rows = 10,
+	board = [],	// current board
+	next = []	// next board
+
+	//	looping but skipping edge cells
+	for ( let x = 1; x < columns - 1; x++ ) {
+		for ( let y = 1; y < rows - 1; y++ ) {
+			//	count total states of neighbors
+			//	since 1 is alive, total will know total alive
+			let neighbors = 0
+
+			//	loop thru up down left right of cell
+			for ( let i = -1; i <= 1; i++ ) {
+				for ( let j = -1; j <= 1; j++ ) {
+					neighbors += board[ x + i ][ y + j ]
+				}
+			}
+
+			//	subtract own cell state as it's not part of neighbors
+			neighbors -= board[ x ][ y ]
+
+			//	set next board states
+			if ( board[ x ][ y ] === 1 && neighbors < 2 ) {
+				next[ x ][ y ] = 0
+			} else if ( board[ x ][ y ] === 1 && neighbors > 3 ) {
+				next[ x ][ y ] = 0
+			} else if ( board[ x ][ y ] === 0 && neighbors === 3 ) {
+				next[ x ][ y ] = 1
+			} else {
+				next[ x ][ y ] = board[ x ][ y ]
+			}
+		}
+	}
+
+```
 
 
 
