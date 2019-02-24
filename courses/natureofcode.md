@@ -2634,7 +2634,47 @@ thus we use rules instead
 
 ## object-oriented cells
 
-//
+```js
+
+	const cell = () => {
+		let x, y, w, state, previous
+
+		const display = () => {
+			if ( previous === 0 && state === 1 ) {
+				fill( 0, 0, 255 ) // cell born, color it blue
+			} else if ( state === 1 ) {
+				fill( 0 )
+			} else if ( previous === 1 && state === 0 ) {
+				fill( 255, 0, 0 ) // cell dies, color it red
+			} else {
+				fill( 255 )
+			}
+			rect( x, y, w, w )
+		}
+	}
+
+	for ( let x = 1; x < columns - 1; x++ ) {
+		for ( let y = 1; y < rows - 1; y++ ) {
+			let neighbors = 0
+
+			for ( let i = -1; i <= 1; i++ ) {
+				for ( let j = -1; j <= 1; j++ ) {
+					neighbors += board[ x + i ][ y + j ].previous
+				}
+			}
+			neighbors -= board[ x ][ y ].previous
+
+			if ( board[ x ][ y ].state === 1 && neighbors < 2 ) {
+				board[ x ][ y ].newState( 0 )
+			} else if ( board[ x ][ y ].state === 1 && neighbors > 3 ) {
+				board[ x ][ y ].newState( 0 )
+			} else if ( board[ x ][ y ].state === 0 && neighbors === 3 ) {
+				board[ x ][ y ].newState( 1 )
+			}
+		}
+	}
+
+```
 
 
 
