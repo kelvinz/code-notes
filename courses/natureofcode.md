@@ -2718,6 +2718,49 @@ thus we use rules instead
 
 
 
+## what is a fractal
+
+fractal is latin for broken
+a rough or fragmented geometric shape that can be split into parts
+each of which is ( at least approximately ) reduced-size copy of the whole
+
+like a tree branching off
+or stock market data where zoomed out & zoomed in might look similar visually
+
+*stochastic* fractal means that it is built out of probabilities & randomness
+
+
+
+## recursion
+
+//
+
+
+
+## the cantor set with a recursive function
+
+//
+
+
+
+## the koch curve & the arraylist technique
+
+//
+
+
+
+## trees
+
+//
+
+
+
+## l-systems
+
+//
+
+
+
 ---
 
 
