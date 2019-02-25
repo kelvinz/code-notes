@@ -2680,7 +2680,33 @@ thus we use rules instead
 
 ## variations of traditional ca
 
-//
+1.	**non-rectangular grids**
+	instead of square cells like what we've been doing
+	try other shapes like hexagon
+
+2.	**probabilistic**
+	rules of ca doesn't have to define an exact outcome
+	if more than 4 alive neighbors, 80% chance of dying
+
+3.	**continuous**
+	so far the states are all & 0
+	it could also be a floating point number between 0 & 1 instead
+
+4.	**image processing**
+	blurring an image is creating a pixel out of the average of its neighbors
+	or ink dispersing on paper or water rippling ontop of image can all be done with ca rules
+
+5.	**historical**
+	we are currenly only tracking current & previous
+	what if we keep an array of states to create complex adaptive systems that learn from history
+
+6.	**moving cells**
+	currently all cells are on a fixed grid
+	we can also have a ca with cells moving around on screen
+
+7.	**nesting**
+	eg. a city is a complex system of people, a person is a complex system of organs,
+	an organ is a complex system of cells, etc
 
 
 
