@@ -2733,7 +2733,32 @@ or stock market data where zoomed out & zoomed in might look similar visually
 
 ## recursion
 
-//
+functions that call themselves are recursive & good for solving certain problems
+eg. calculating a factorial
+
+4! = 4 * 3 * 2 * 1
+3! = 3 * 2 * 1
+
+therefore
+
+4! = 4 * 3!
+
+or
+
+n! = n * ( n - 1 )!
+1! = 1
+
+```js
+
+	const factorial = ( n ) => {
+		if ( n === 1 ) {
+			return 1
+		} else {
+			return n * factorial( n - 1 )
+		}
+	};
+
+```
 
 
 
