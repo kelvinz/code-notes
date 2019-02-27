@@ -2760,6 +2760,25 @@ n! = n * ( n - 1 )!
 
 ```
 
+**recursive circles 1**
+drawCircle() draws a ellipse based on a set of parameters it receives as arguments
+it then calls itself with those same parameters, adjusting slightly
+note that it only calls itself if the radius is greater than 2
+as with iteration, all recursive functions must have an exit condition
+else your program will crash in an infinite loop
+
+```js
+
+	const drawCircle = ( x, y, radius ) => {
+		ellipse( x, y, radius, radius )
+		if ( radius > 2 ) {
+			radius *= .75
+			drawCircle( x, y, radius )
+		}
+	};
+
+```
+
 
 
 ## the cantor set with a recursive function
