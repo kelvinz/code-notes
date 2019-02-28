@@ -2779,6 +2779,33 @@ else your program will crash in an infinite loop
 
 ```
 
+**recursion twice**
+
+```js
+
+	const setup = () => {
+		size( 640, 360 )
+	}
+
+	const draw = () => {
+		background( 255 )
+		drawCircle( width / 2, height / 2, 200 )
+	}
+
+	const drawCircle = ( x, y, radius ) => {
+		stroke( 0 )
+		noFill()
+		ellipse( x, y, radius, radius )
+		if ( radius > 2 ) {
+			//	drawCircle() calls itself twice, creating a branching effect
+			//	for every circle, a smaller circle is drawn to the left & right
+			drawCircle( x + radius / 2, y, radius / 2 )
+			drawCircle( x - radius / 2, y, radius / 2 )
+		}
+	};
+
+```
+
 
 
 ## the cantor set with a recursive function
