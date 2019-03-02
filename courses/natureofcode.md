@@ -2806,6 +2806,22 @@ else your program will crash in an infinite loop
 
 ```
 
+**recursion four times**
+
+```js
+
+	const drawCircle = ( x, y, radius ) => {
+		ellipse( x, y, radius )
+		if ( radius > 8 ) {
+			drawCircle( x + radius / 2, y, radius / 2 )
+			drawCircle( x - radius / 2, y, radius / 2 )
+			drawCircle( x, y + radius / 2, radius / 2 )
+			drawCircle( x, y - radius / 2, radius / 2 )
+		}
+	};
+
+```
+
 
 
 ## the cantor set with a recursive function
