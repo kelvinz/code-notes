@@ -2826,7 +2826,35 @@ else your program will crash in an infinite loop
 
 ## the cantor set with a recursive function
 
-//
+cantor set, line that keeps dividing down smaller
+
+```js
+
+	const cantor = ( x, y, len ) => {
+		//	draw line
+		line( x, y, x + len, y )
+
+		//	move down
+		y += 20
+
+		//	draw two lines
+		//	1/3 length of initial line
+		//	at each side
+		line( x, y, x + len / 3, y ) // start to 1/3
+		line( x + len * 2 / 3, y, x + len, y ) // 2/3 to end
+	}
+
+	//	make cantor loop
+	const cantor = ( x, y, len ) => {
+		if ( len >= 1 ) {
+			line( x, y, x + len, y )
+			y += 20
+			cantor( x, y, len / 3 )
+			cantor( x + len * 2 / 3, y, len / 3 )
+		}
+	};
+
+```
 
 
 
