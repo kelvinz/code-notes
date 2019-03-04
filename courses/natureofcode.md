@@ -2869,6 +2869,103 @@ cantor set, line that keeps dividing down smaller
 we can try storing lines as individual objecst
 so we can move them later independently or allow interaction
 
+```js
+
+	const kochline = ( a, b ) => {
+		let start = a.get(),
+			end = b.get()
+
+		const display = () => {
+			stroke( 0 )
+			line( start.x, start.y, end.x, end.y )
+		}
+
+		const kochA = () => {
+			//	simply starting point
+			return start.get()
+		}
+
+		const kochB = () => {
+			//	a vector from start to end
+			let v = PVector.sub( end, start )
+			//	move 1 / 3 along line
+			v.div( 3 )
+			//	add to start to find this new point
+			v.add( start )
+			return v
+		}
+
+		const kochC = () => {
+			let a = start.get(),
+				v = PVector.sub( end, start )
+			//	move 1 / 3 along line
+			v.div( 3 )
+			//	add to start to find this new point
+			a.add( v )
+			//	rotate line above by 60 degrees
+			v.rotate( -radians( 60 ) )
+			//	move along that vector to point c
+			a.add( v )
+			return a
+		}
+
+		const kochD = () => {
+			//	a vector from start to end
+			let v = PVector.sub( end, start )
+			//	move 2 / 3 along line
+			v.mult( 2 / 3 )
+			//	add to start to find this new point
+			v.add( start )
+			return v
+		}
+
+		const kochE = () => {
+			//	simply ending point
+			return end.get()
+		}
+	}
+
+	const generate = () => {
+		let next = []
+
+		for ( line in lines ) {
+			let
+			a = line.kochA(),
+			b = line.kochB(),
+			c = line.kochC(),
+			d = line.kochD(),
+			e = line.kochE()
+
+			next.add( kochline( a, b ) )
+			next.add( kochline( b, c ) )
+			next.add( kochline( c, d ) )
+			next.add( kochline( d, e ) )
+		}
+
+		lines = next
+	}
+
+	const setup = () => {
+		size( 600, 300 )
+		let lines = [],
+			start = [ 0, 200 ],
+			end = [ width, 200 ]
+		lines.add( kochline( start, end ) )
+
+		for ( let i = 0; i < 5; i++ ) {
+			generate()
+		}
+	}
+
+	const draw = () => {
+		background( 255 )
+		for ( line in lines ) {
+			lines.display()
+		}
+	};
+
+```
+
 
 
 ## trees
