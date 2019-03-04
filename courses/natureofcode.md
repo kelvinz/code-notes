@@ -2860,7 +2860,14 @@ cantor set, line that keeps dividing down smaller
 
 ## the koch curve & the arraylist technique
 
-//
+1.	start with a line
+2.	divide line into 3 equal parts
+3.	draw a equilateral triangle using middle segment as base
+4.	erase the middle segment from above
+5.	repeat steps 2 - 4 for remaining lines
+
+we can try storing lines as individual objecst
+so we can move them later independently or allow interaction
 
 
 
