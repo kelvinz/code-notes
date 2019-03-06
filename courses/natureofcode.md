@@ -2970,7 +2970,16 @@ so we can move them later independently or allow interaction
 
 ## trees
 
-//
+build a stochastic or non-deterministic fractal aka slightly more random
+
+1.	draw a line
+2.	at end of line
+	-	rotate to left, draw a shorter line
+	-	rotate to right, draw a shorter line
+3.	repeat steps 2
+
+note: processing's pushMatrix, popMatrix
+<http://processing.org/learning/transform2d/>
 
 
 
