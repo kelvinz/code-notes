@@ -2981,6 +2981,63 @@ build a stochastic or non-deterministic fractal aka slightly more random
 note: processing's pushMatrix, popMatrix
 <http://processing.org/learning/transform2d/>
 
+```js
+
+	//	normal tree
+	const branch = ( len ) => {
+		let theta = random( 0, PI / 3 )
+
+		//	draw branch
+		line( 0, 0, 0, -len )
+		//	move to end
+		translate( 0, -len )
+
+		//	shrink length by 2/3
+		let len *= .66
+
+		if ( len > 2 ) {
+			pushMatrix()
+			//	rotate to right & branch again
+			rotate( theta )
+			branch( len )
+			popMatrix()
+
+			pushMatrix()
+			//	rotate to left & branch again
+			rotate( -theta )
+			branch( len )
+			popMatrix()
+		}
+	}
+
+	//	wacky tree
+	const branch = ( len ) => {
+		//	draw branch
+		line( 0, 0, 0, -len )
+		//	move to end
+		translate( 0, -len )
+
+		//	shrink length by 2/3
+		let len *= .66
+
+		if ( len > 2 ) {
+			//	call branch a random amount of times
+			let n = random( 1, 4 )
+
+			for ( let i = 0; i < n; i++ ) {
+				let theta = random( -PI / 2, PI / 2 )
+
+				pushMatrix()
+				//	rotate to left or right
+				rotate( theta )
+				branch( len )
+				popMatrix()
+			}
+		}
+	};
+
+```
+
 
 
 ## l-systems
