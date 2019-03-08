@@ -3042,7 +3042,31 @@ note: processing's pushMatrix, popMatrix
 
 ## l-systems
 
-//
+grammar-based system to model the growth pattern of plants
+l-systems can be used to generate all of the recursive fractal patterns we've seen so far
+incredibly useful mechanism for keeping track of fractal structures that require complex/multi-faceted rules
+
+uses recursion, transformations, strings
+<http://www.processing.org/learning/text/>
+
+1.	**alphabet**
+	comprised of valid characters that can be included
+	eg. we could say the alphabet is 'ABC', meaning any valid sentence ( string of characters )
+	can only include these 3 characters
+
+2.  **axiom**
+	sentence that describes the initial state of the system
+	eg. 'AAA', 'B', 'ACBAB'
+
+3.  **rules**
+	rules of l-system applied to axiom & applied recursively, generating new sentences
+	rule includes two sentences, 'predecessor' & 'successor'
+	eg. rule 'A' -> 'AB', whenever an 'A' is found in a string, it's replaced with 'AB'
+
+example - basic l-system for modelling growth of algae
+*alphabet* : AB
+*axiom*    : A
+*rules*    : ( A -> AB ) ( B -> A )
 
 
 
