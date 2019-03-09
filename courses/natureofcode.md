@@ -3068,6 +3068,32 @@ example - basic l-system for modelling growth of algae
 *axiom*    : A
 *rules*    : ( A -> AB ) ( B -> A )
 
+```js
+
+	let current = 'A',
+		count = 0
+
+	const setup = () => {
+		println( 'Generation ' + count + ': ' + current )
+	}
+
+	const mousePressed = () => {
+		let next = ''
+		for ( let i = 0; i < current.length; i++ ) {
+			let c = current.charAt( i )
+			if ( c == 'A' ) {
+				next += 'AB'
+			} else if ( c == 'B' ) {
+				next += 'A'
+			}
+		}
+		current = next
+		count++
+		println( 'Generation ' + count + ': ' + current )
+	};
+
+```
+
 
 
 ---
