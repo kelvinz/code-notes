@@ -3094,6 +3094,33 @@ example - basic l-system for modelling growth of algae
 
 ```
 
+we can translate this to drawing this way,
+if A - draw a line forward
+if B - move forward without drawing
+thus the above l-system draws a cantor set
+
+*other example*
+alphabet - 'FG+-[]'
+F:	draw a line & move forward
+G:	move forward ( without drawing a line )
++:	turn right
+-:	turn left
+[:	save current location
+]:	restore previous location
+
+translated into processing
+F:	line( 0, 0, 0, len ); translate( 0, len )
+G:	translate( 0, len )
++:	rotate( angle )
+-:	rotate( -angle )
+[:	pushMatrix()
+]:	popMatrix()
+
+slightly more elaborate l-system
+*alphabet* : FG+-[]
+*axiom*    : F
+*rules*    : F -> FF+[+F-F-F]-[-F+F+F]
+
 
 
 ---
