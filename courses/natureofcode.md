@@ -3131,6 +3131,28 @@ slightly more elaborate l-system
 
 
 
+## genetic algorithms: inspired by actual events
+
+1.	**traditional genetic algorithm**
+	developed to solve problems in which the solution space is so vast
+	a 'brute force' algorithm would simply take too long to solve
+	eg. i'm thinking of a number between 1 & 1,000,000,000
+	guess the outcome randomly through 'brute force' means testing each number till you 'hit'
+	but what if each 'guess' comes with a 'hot or cold' reply
+	allowing you to adjust the next guess acccordingly
+	this would mean you'll be more accurately 'evolving' your answer towards the right direction
+	it's the premise of genetic algorithm
+
+2.	**interactive selection**
+	process of evolving something through user interaction
+	eg. user picking their 10 favorite shows
+	which in turn affects the algorithmic process to generate new shows based on user preferences
+
+3.	**ecosystem simulation**
+	simulate objects moving on screen, meet, mate, pass genes on, etc
+
+
+
 ---
 
 
