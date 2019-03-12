@@ -3153,6 +3153,26 @@ slightly more elaborate l-system
 
 
 
+## why use genetic algorithms?
+
+the infinite monkey theorem stats that
+a monkey hitting keys randomly on a typewriter will eventually type the complete works of Shakespeare
+given an infinite amount of time
+except that the probability of that happening is so low it will take way too long
+
+eg. the probability of random characters forming the phrase 'to be or not to be that is the question'
+to get the first letter correct it is 1/27 chance
+to get the first two letters correct it is 1/27 * 27
+thus total probability of the full phrase is 1/27 * 39
+or 1 in 66,555,937,033,867,822,607,895,549,241,096,482,953,017,615,834,735,226,163
+
+it is impossible to simulate that happening via 'brute force'
+but using GA we can attempt to solve the problem more systematically
+
+before doing so, let's dive deeper into GA principles
+
+
+
 ---
 
 
