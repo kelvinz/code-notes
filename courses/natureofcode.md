@@ -3173,6 +3173,26 @@ before doing so, let's dive deeper into GA principles
 
 
 
+## darwinian natural selection
+
+1.	**heredity**
+	children receive properties of their parents
+	if creatures live long enough to reproduce, their traits are passed down to the next generation
+
+2.	**variation**
+	variety of traits present in population or means to introduce variation
+	eg. if all beetles are same in color, size, wings, everything
+	then children will be identical
+	new combination of traits can never occur & nothing can evolve
+
+3.	**selection**
+	a mechanism by which some members of population have opportunity to be parents & pass genes down
+	while some do not
+	typically referred to as 'survival of the fittest'
+	their traits are better adapted for its environment & produce a greater likelihood of survival & reproduction
+
+
+
 ---
 
 
