@@ -3193,6 +3193,21 @@ before doing so, let's dive deeper into GA principles
 
 
 
+## the genetic algorithm, part 1: creating a population
+
+**genotype**
+the actual genetic code
+this is what gets passed down from generation to generation
+
+**phenotype**
+the expression of that data
+eg. using color to denote the different genotype, color is thus it's phenotype
+
+for the typing challenge we are attempting though
+both the genotype & phenotype can/are the same
+
+
+
 ---
 
 
