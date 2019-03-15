@@ -3208,6 +3208,23 @@ both the genotype & phenotype can/are the same
 
 
 
+## the genetic algorithm, part 2: selection
+
+1.	**evaluate fitness**
+	fitness function produce a numeric score describing fitness of member of the population
+
+2.	**create a mating pool**
+	select fit members to mate
+
+better to use a probabilistic method
+firstly normalize all scores & use it as a % chance of reproducing
+fitter = higher chance
+but the less fit also have a small chance rather than 0
+the less fit might have a small bit of their gene that might be useful in the long run
+thus we don't want to eliminate completely
+
+
+
 ---
 
 
