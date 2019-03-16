@@ -3225,6 +3225,19 @@ thus we don't want to eliminate completely
 
 
 
+## the genetic algorithm, part 3: reproduction
+
+1.	**crossover**
+	how do you select genes from parents
+	half each? randomly? alternating?
+
+2.	**mutation**
+	optional step
+	to create more variation throughout the evolutionary process
+	usually described in terms of a rate, ie. 1%, 5%
+
+
+
 ---
 
 
