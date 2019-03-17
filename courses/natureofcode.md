@@ -1,7 +1,7 @@
 
 
 
-https://natureofcode.com/book/
+<https://natureofcode.com/book/>
 
 
 
@@ -3235,6 +3235,68 @@ thus we don't want to eliminate completely
 	optional step
 	to create more variation throughout the evolutionary process
 	usually described in terms of a rate, ie. 1%, 5%
+
+
+
+## code for creating the population
+
+see below
+
+
+
+## genetic algorithms: putting it all together
+
+```js
+
+	const setup = () => {
+		size( 640, 360 )
+		const
+		target = 'to be or not to be',
+		mutationRate = .01,
+		totalPopulation = 150
+
+		//	step 1 - init population
+		const population = []
+		for ( let i = 0; i < totalPopulation; i++ ) {
+			population[ i ] = DNA()
+		}
+
+		for ( let i = 0; i < population.length; i++ ) {
+			population[ i ] = DNA.init()
+		}
+	}
+
+	const draw = () => {
+		//	step 2 - selection
+		for ( let i = 0; i < population.length; i++ ) {
+			population[ i ].fitness()
+		}
+
+		const matingPool = []
+		for ( let i = 0; i < population.length; i++ ) {
+			let n = population[ i ].fitness * 100 // add members n times according to their fitness
+			for ( let j = 0; j < n; j++ ) {
+				matingPool.add( population[ i ] )
+			}
+		}
+
+		//	step 3 - reproduction
+		for( let i = 0; i < population.length; i++ ) {
+			let a = random( matingPool.size() ),
+				b = random( matingPool.size() )
+
+			let partnerA = matingPool.get( a ),
+				partnerB = matingPool.get( b ).
+				child = partnerA.crossover( partnerB )
+
+			child.mutate( mutationRate )
+
+			population[ i ] = child
+		}
+
+	};
+
+```
 
 
 
