@@ -3298,6 +3298,57 @@ see below
 
 ```
 
+```js
+
+	const DNA = () => {
+		let genes, fitness
+
+		const init = () => {
+			genes = new char[ target.length() ]
+			for ( let i = 0; i < genes.length; i++ ) {
+				genes[ i ] = ( char ) random( 32, 128 )
+			}
+		}
+
+		const fitness = () => {
+			let score = 0
+			for ( let i = 0; i < genes.length; i++ ) {
+				if ( genes[ i ] == target.charAt( i ) ) {
+					score++
+				}
+			}
+			fitness = score / target.length()
+		}
+
+		const crossover = ( partner ) => {
+			let child = new DNA( genes.length ),
+				midpoint = random( genes.length )
+
+			for ( let i = 0; i < genes.length; i++ ) {
+				if ( i > midpoint ) {
+					child.genes[ i ] = genes[ i ]
+				} else {
+					child.genes[ i ] = partner.genes[ i ]
+				}
+			}
+			return child
+		}
+
+		const mutate = ( mutationRate ) => {
+			for ( let i = 0; i < genes.length; i++ ) {
+				if ( random( 1 ) < mutationRate ) {
+					genes[ i ] = ( char ) random( 32, 128 )
+				}
+			}
+		}
+
+		const getPhrase = () => {
+			return new String( genes )
+		}
+	};
+
+```
+
 
 
 ---
