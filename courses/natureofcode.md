@@ -3351,6 +3351,26 @@ see below
 
 
 
+## genetic algorithms: make them your own
+
+1.	*varying the variables*
+	eg. previous code has mutationRate & totalPopulation
+	vary both to test optimal values
+	seems 1,000 totalPopulation & 2% mutationRate is best for previous code after testing
+
+2.	*the fitness function*
+	it is the steering that moves the vehicle in the right direction
+	eg. previous code we should increase the importance of each correct character
+	fitness = ( number of correct characters ) * ( number of correct characters )
+	or fitness = 2 to the power of ( number of correct characters )
+
+3.	*genotype & phenotype*
+	genotype = an array of variables that make up the dna of your objects
+	phenotype is the expression of these genotype so that it can be viewed visually
+	ie. drawing them out
+
+
+
 ---
 
 
