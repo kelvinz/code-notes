@@ -3371,6 +3371,49 @@ see below
 
 
 
+## evolving forces: smart rockets
+
+see below
+
+
+
+## smart rockets: putting it all together
+
+1.	create a population of rockets
+2.	let rockets live for N frames
+3.	evolve the next generation
+	-	selection
+	-	reproduction
+4.	return to step 2
+
+```js
+
+	const setup = () => {
+		size( 640, 480 )
+		let
+		lifetime = 500,
+		lifeCounter = 0,
+		mutationRate = .01,
+		population = Population( mutationRate, 50 )
+	}
+
+	const draw = () => {
+		background( 255 )
+		if ( lifeCounter < lifetime ) {
+			population.live()
+			lifeCounter++
+		} else {
+			lifeCounter = 0
+			population.fitness()
+			population.selection()
+			population.reproduction()
+		}
+	};
+
+```
+
+
+
 ---
 
 
