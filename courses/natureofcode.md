@@ -3414,6 +3414,27 @@ see below
 
 
 
+**improvements that could be added**
+
+1.	*obstacles*
+	when hitting an obstacle, reduce fitness, stop updating it
+
+2.	*evolve reaching the target faster*
+	get rewarded for reaching faster
+
+
+
+## interactive selection
+
+**Galapagos**
+museum installation
+
+-	random shapes generated to form a face
+-	depending on how long each face is being viewed, fitness adjusted
+-	next generation
+
+
+
 ---
 
 
