@@ -3435,6 +3435,76 @@ museum installation
 
 
 
+## ecosystem simulation
+
+in the real world, babies don't all reproduce at the same time
+nor does the fittest survive, survival has many factors, sometimes just luck
+we shall try to simulate this
+
+```js
+
+	const Bloop = ( location, DNA ) => {
+		let location, DNA, r, maxspeed, xoff, yoff,
+			health = 100
+
+		const init = () => {
+			//	init all the variables
+		}
+
+		const update = () => {
+			health -= 1
+			//	perlin noise calculation
+			let vx = map( noise( xoff ), 0, 1, -maxspeed, maxspeed ),
+				vy = map( noise( yoff ), 0, 1, -maxspeed, maxspeed ),
+				velocity = new PVector( vx, vy )
+			xoff += .01
+			yoff += .01
+			location.add( velocity )
+		}
+
+		const eat = () => {
+			for ( let i = food.size() - 1; i >= 0; i-- ) {
+				let foodLocation = food.get( i ),
+					d = PVector.dist( location, foodLocation )
+
+				//	am i near food
+				if ( d < r /2 ) {
+					//	eat food
+					health += 100
+					//	remove food from world
+					food.remove( i )
+				}
+			}
+		}
+
+		const reproduce = () => {
+			//	randomly self-reproduce
+			if ( random( 1 ) < .01 ) {
+				let childDNA = dna.copy()
+				childDNA.mutate( .01 )
+				return Bloop( location, childDNA )
+			} else {
+				return null
+			}
+		}
+
+		const dead = () => {
+			if ( health < 0 ) {
+				return true
+			} else {
+				return false
+			}
+		}
+
+		const display = () => {
+			ellipse( location.x, location.y, r, r )
+		}
+	};
+
+```
+
+
+
 ---
 
 
