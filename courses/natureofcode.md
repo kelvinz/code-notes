@@ -3513,4 +3513,59 @@ we shall try to simulate this
 
 
 
+## artificial neural networks: introduction & application
+
++	Artificial Intelligence: A Modern Approach by Stuart J. Russell
++	Peter Norvig and AI for Game Developers by David M. Bourg and Glenn Seemann
+
+individual elements of a neural network, neurons, are simple
+they read an input, process it, generate an output
+but a network of nurons can exhibit incredibly rich & intelligent behaviors
+also, they are adaptive
+learning through the adjustment of weights
+
+**various strategies for learning**
+
++	*supervised learning*
+	teacher that is smarter than the network
+	eg. show the network a series of faces
+	network guesses
+	teacher marks them as correct or wrong
+	network adjusts accordingly
+
++	*unsupervised learning*
+	when there is no known answers
+	eg. finding hidden patterns within a data set
+
++	*reinforcement learning*
+	strategy built on observation
+	mouse running through a maze
+	turn left get cheese, turn right get shock
+	over time, it will learn to turn left
+
+**some standard uses of neural networks**
+
++	*pattern recognition*
+	most common application of neural networks
+	eg. facial recognition
+
++	*time series prediction*
+	eg. weather prediction, stock price prediction
+
++	*signal processing*
+	eg. hearing aid filtering out unnecessary noise & amplify important sounds
+
++	*control*
+	eg. self-driving cars; making steering decisions
+
++	*soft sensors*
+	process of analyzing a collection of many measurements
+	eg. evaluating humidity, barometric pressure, dewpoint, air quality, air density as a whole
+
++	*anomaly detection*
+	good at recognizing patterns
+	thus able to be trained to find when something is out of the ordinary
+
+
+
 ---
