@@ -3568,4 +3568,35 @@ learning through the adjustment of weights
 
 
 
+## the perceptron
+
+a perceptron is the simplest neural network possible
+follows a 'feed-forward' model
+meaning inputs are sent in, processed, result in output
+
+eg.
+
+1.	*receive inputs*
+	input 0: x1 = 12
+	input 1: x2 = 4
+
+2.	*weight inputs*
+	( usually random between 0, 1 )
+	weight 0: .5
+	weight 1: -1
+
+	input 0 * weight 0 => 12 * .5 = 6
+	input 1 * weight 1 => 4 * -1 = -4
+
+3.	*sum inputs*
+	6 + -4 = 2
+
+4.	*generate output*
+	pass sum through activation function
+	eg.
+	if sum > 0, output = 1
+	if sum < 0, output = -1
+
+
+
 ---

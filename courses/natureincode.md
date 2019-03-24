@@ -1,7 +1,7 @@
 
 
 
-https://courses.edx.org/courses/course-v1:EPFLx+NiC1.0x+3T2016/course/
+<https://courses.edx.org/courses/course-v1:EPFLx+NiC1.0x+3T2016/course/>
 
 
 
