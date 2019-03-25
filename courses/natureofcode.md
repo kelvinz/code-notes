@@ -3599,4 +3599,81 @@ eg.
 
 
 
+## simple pattern recognition using a perceptron
+
+*example problem:*
+2d canvas
+random dots around
+draw a line from top left to bottom right
+determine if dots are below or above line
+
+if dot is at ( 0, 0 )
+passing those numbers into the perceptron will always result in 0
+thus we need to pass a 3rd number in
+usually this is called *bias*
+it always have a value of 1 & is also weighted
+
+
+
+## coding the perceptron
+
+how do we adjust the output
+`new weight = weight + error * input * learning constant`
+similar to steering
+learning constant will determine how fast the weight is adjusted
+higher = faster to arrive at correct number, but easier to overshoot
+
+```js
+
+	const Perceptron = () => {
+		let weights = [],
+			c = .01
+
+		const init = ( n ) => {
+			for ( let i = 0; i < n; i++ ) {
+				weights[ i ] = random( 1, -1 )
+			}
+		}
+
+		const feedforward = ( inputs ) => {
+			let sum = 0
+			for ( let i = 0; i < weights.length; i++ ) {
+				sum += inputs[ i ] * weight[ i ]
+			}
+			return activate( sum )
+		}
+
+		const activate = ( sum ) => {
+			sum > 0 ? 1 : 0
+		}
+
+		const train = ( inputs, desired ) => {
+			let guess = feedforward( inputs ),
+				error = desired - guess
+
+			for ( let i = 0; i < weights.length; i++ ) {
+				weights[ i ] += c * error * inputs[ i ]
+			}
+		}
+	};
+
+	const Trainer = () => {
+		let inputs =[],
+			answers
+
+		const init = ( x, y, a ) => {
+			inputs[ 0 ] = x
+			inputs[ 1 ] = y
+			inputs[ 2 ] = 1
+			answer = a
+		}
+	};
+
+	//	will have to rewrite this properly
+	//	esp the init generation
+
+```
+
+
+
 ---
