@@ -192,7 +192,7 @@ npm install -g xxx@x.x.x
 
 
 //	create
-ssh-keygen -t rsa
+ssh-keygen -t rsa -b 4096
 
 //	default save location
 /yourhome/.ssh/id_rsa
