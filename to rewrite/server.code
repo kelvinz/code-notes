@@ -374,3 +374,36 @@ to their given DNS
 
 
 
+
+/*	checking open sessions
+---------------------------------------------------------------------------------- */
+
+
+
+who
+display who is on the system
+
+w
+displays information about users currently on the machine
+
+last
+shows listing of last logged users
+
+to kill a specific session
+who -u
+will print process numbers then
+sudo kill -9 <session-process-number>
+
+eg.
+$ who -u
+spas     pts/1        2017-11-05 21:43  old         1597 (tmux(1597).%0)
+spas     pts/14       2017-11-09 13:02   .         31822 (192.168.100.110)
+guest    tty2         2017-11-09 16:15  old         2225 (:1)
+
+$ sudo kill -9 2225   # this command will kill the third session from the above list
+
+
+
+
+
+
