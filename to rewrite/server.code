@@ -407,3 +407,19 @@ $ sudo kill -9 2225   # this command will kill the third session from the above 
 
 
 
+
+/*	add new ssh
+---------------------------------------------------------------------------------- */
+
+
+
+nano ~/.ssh/authorized_keys
+
+esc, then shift+4 to word wrap
+copy ssh paste in
+
+
+
+
+
+

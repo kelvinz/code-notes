@@ -3752,4 +3752,83 @@ higher = faster to arrive at correct number, but easier to overshoot
 
 
 
+## it's a 'network', remember?
+
+**backpropagation**
+optimizing weights of multi-layered networks
+
+
+
+## neural network diagrams
+
+visualising now the neural network is connected & its weights
+*skip*
+
+
+
+## animating feed forward
+
+```js
+
+	const draw = () => {
+		background( 255 )
+		network.update()
+		network.display()
+
+		if ( framecount % 3 == 0 ) {
+			//	send an input every 30 frames
+			network.feedforward( random( 1 ) )
+		}
+	}
+
+	const Connection = () => {
+		let weight, a, b, sending = false, sender, output = 0
+
+		const init = ( from, to, w ) => {
+			weight = w
+			a = from
+			b = to
+		}
+
+		const feedforward = ( val ) => {
+			output = val * weight
+			sender = a.location.get()
+			sending = true
+		}
+
+		const update = () => {
+			if ( sending ) {
+				sender.x = lerp( sender.x, b.location, .1 )
+				sender.y = lerp( sender.y, b.location.y, .1 )
+				let d = PVector.dist( sender, b.location )
+				if ( d < 1 ) {
+					b.feedforward( output )
+					sending = false
+				}
+			}
+		}
+
+		const display = () => {
+			stroke( 0 )
+			strokeWeight( 1 + weight * 4 )
+			line( a.location.x, a.location.y, b.location.x, b.location.y )
+
+			if ( sending ) {
+				fill( 0 )
+				strokeWeight( 1 )
+				ellipse( sender.x, sender.y, 16, 16 )
+			}
+		}
+	};
+
+```
+
+
+
 ---
+
+*ending notes*
+a lot of the example code is written in processing & classes
+so i did quite some quick & dirty conversion into factory functions ( preference issue )& pure js
+will need to refactor them to be able to actually run properly
+but will serve as a good reference of the concepts & required scripts
