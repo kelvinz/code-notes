@@ -37,6 +37,30 @@
 
 ```
 
+## delete smoothie
+
+`@click="deleteSmoothie( smoothie.id )"`
+
+```js
+
+	deleteSmoothie( id ) {
+		db.collection( 'smoothies' ).doc( id ).delete()
+ 		.then( () => {
+ 			//	take the list of smoothies & filter
+			//	if not the smoothie that's clicked
+			//	paste it back into smoothie list
+			//	the one 'flitered' out is not pasted back
+			//	thus it is deleted
+			this.smoothies = this.smoothies.filter( smoothie => {
+				return smoothie.id != id
+			})
+		})
+		.catch( err => {
+			console.log( err )
+		})
+	}
+
+```
 
 
 ---
