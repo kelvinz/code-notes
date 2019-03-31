@@ -62,6 +62,26 @@
 
 ```
 
+## add smoothie
+
+```js
+
+	addSmoothie() {
+		db.collection( 'smoothies' ).add({
+			title: this.title,
+			ingredients: this.ingredients,
+			slug: this.slug
+		})
+		.then( () => {
+			this.$router.push( { name: 'Index' } )
+		})
+		.catch( err => {
+			console.log( err )
+		})
+	}
+
+```
+
 
 ---
 
