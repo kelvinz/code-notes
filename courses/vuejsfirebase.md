@@ -82,6 +82,56 @@
 
 ```
 
+## edit smoothie
+
+```js
+
+	created() {
+		let slug = this.$route.params.smoothie_slug,
+			ref = db.collection( 'smoothies' ).where( 'slug', '==', slug )
+
+		ref.get().then( snapshot => {
+			snapshot.forEach( doc => {
+				this.smoothie = doc.data()
+				this.smoothie.id = doc.id
+			})
+		})
+	}
+
+	editSmoothie() {
+		this.feedback = null
+
+		//	optional plugin to create slug
+		this.slug = slugify( this.smoothie.title, {
+			replacement: '-',
+			remove: /[$*_+~.()'"!\-:@]/g,
+			lower: true
+		})
+
+		db.collection( 'smoothies' ).doc( this.smoothie.id ).update({
+			title: this.smoothie.title,
+			slug: this.slug,
+			ingredients: this.smoothie.ingredients
+		}).then( () => {
+			this.$router.push({ name: 'Index' })
+		}).catch(err => {
+			console.log( err )
+		})
+	}
+
+```
+
+### tips & tricks
+
+init data with `xxx = null`
+this way you can check if there's data later by doing `if ( xxx ) {}`
+
+use v-if to load element that might be `null` to prevent errors
+
+open two terminal tabs so you can have the dev server up
+yet install stuff to project as you go
+
+
 
 ---
 
