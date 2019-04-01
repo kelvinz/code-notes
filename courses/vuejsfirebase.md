@@ -141,7 +141,37 @@ yet install stuff to project as you go
 
 
 
--
+## send props thru links with route guard
+
+```js
+
+	//	in link
+	this.$router.push({
+		name: 'Chat',
+		params: {
+			name: this.name
+		}
+	})
+
+	//	in router
+	{
+		path: '/chat',
+		name: 'Chat',
+		component: Chat,
+		props: true,
+		beforeEnter: ( to, from, next ) => {
+			if ( to.params.name ) {
+				next()
+			} else {
+				//	if no name passed
+				//	send back to welcome page
+				next({ name: 'Welcome' })
+			}
+		}
+	}
+
+```
+
 
 
 
