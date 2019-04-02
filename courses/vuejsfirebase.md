@@ -172,6 +172,36 @@ yet install stuff to project as you go
 
 ```
 
+## real-time
+
+```js
+
+	created() {
+		let ref = db.collection( 'messages' ).orderBy( 'timestamp' )
+
+		ref.onSnapshot( snapshot => {
+			snapshot.docChanges().forEach( change => {
+				if ( change.type == 'added' ) {
+					let doc = change.doc
+					this.messages.push({
+						id: doc.id,
+						name: doc.data().name,
+						content: doc.data().content,
+						timestamp: doc.data().timestamp
+					})
+				}
+			})
+		})
+	}
+
+```
+
+### tips & tricks
+
+use `date.now()` to get current time in seconds
+
+vue-scroll-chat plugin to keep chatbox scrollbars at bottom
+momentjs to format dates
 
 
 
