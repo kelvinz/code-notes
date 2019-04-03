@@ -212,8 +212,66 @@ momentjs to format dates
 # project one - geo ninjas
 
 
+## google maps
 
--
+in html
+`<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIPXfL1rYhDUtvIKw9jIZZKXAChmOA1DY"></script>`
+
+```js
+
+	//	in component
+	renderMap() {
+		const map = new google.maps.Map( document.getElementById( 'map' ), {
+			center: { lat: this.lat, lng: this.lng },
+			zoom: 6,
+			maxZoom: 15,
+			minZoom: 3,
+			streetViewControl: false
+		})
+	}
+
+```
+
+## signup
+
+```js
+
+	signup() {
+		if ( this.alias && this.email && this.password ) {
+			this.slug = slugify( this.alias, {
+				replacement: '-',
+				remove: /[$*_+~.()'"!\-:@]/g,
+				lower: true
+			})
+
+			let ref = db.collection( 'users' ).doc( this.slug )
+
+			ref.get().then( doc => {
+				if ( doc.exists ) {
+					this.feedback = 'This alias already exists'
+				} else {
+					firebase.auth().createUserWithEmailAndPassword( this.email, this.password )
+					.then( cred => {
+						ref.set({
+							alias: this.alias,
+							geolocation: null,
+							user_id: cred.user.id
+						})
+						.then( () => {
+							this.$router.push({ name: 'GMap' })
+						})
+					})
+					.catch( err => {
+						this.feedback = err.message
+					})
+				}
+			})
+		} else {
+			this.feedback = 'Please fill in all fields'
+		}
+	}
+
+```
 
 
 
