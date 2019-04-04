@@ -273,6 +273,28 @@ in html
 
 ```
 
+## wrapping vue instance
+this is to prevent the vue instance from loading before auth inits
+
+```js
+
+	import firebase from 'firebase'
+
+	let app = null
+
+	firebase.auth().onAuthStateChanged( () => {
+		//	init app if not alreday created
+		if ( !app ) {
+			app = new Vue({
+				el: '#app',
+				router,
+				components: { App },
+				template: '<App/>'
+			})
+		}
+	});
+
+```
 
 
 ---
