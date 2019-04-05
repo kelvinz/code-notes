@@ -296,5 +296,36 @@ this is to prevent the vue instance from loading before auth inits
 
 ```
 
+## log out
+
+```js
+
+	logout() {
+		firebase.auth().signOut().then( () => {
+			this.$router.push({ name: 'Signup' })
+		})
+	}
+
+```
+
+## log in
+
+```js
+
+	login (){
+		if ( this.email && this.password ){
+			this.feedback = null
+			firebase.auth().signInWithEmailAndPassword( this.email, this.password )
+			.then( cred => {
+				this.$router.push({ name: 'GMap' })
+			}).catch( err => {
+				this.feedback = err.message
+			})
+		} else {
+			this.feedback = 'Please fill in both fields'
+		}
+	}
+
+```
 
 ---
