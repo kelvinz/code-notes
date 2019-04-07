@@ -372,4 +372,62 @@ this is to prevent the vue instance from loading before auth inits
 	}
 
 ```
+
+## route guard next level
+
+```js
+
+	//	instead of normal export new router
+	//	we store it into a variable
+	const router = new Router({
+		routes: [
+			{
+				path: '/',
+				name: 'GMap',
+				component: GMap,
+				meta: {
+					requiresAuth: true
+				}
+			},
+			{
+				path: '/signup',
+				name: 'Signup',
+				component: Signup
+			},
+			{
+				path: '/login',
+				name: 'Login',
+				component: Login
+			}
+		]
+	})
+
+	//	router guards
+	router.beforeEach(( to, from, next ) => {
+
+		//	check to see if route has auth guard
+		if( to.matched.some( rec => rec.meta.requiresAuth )) {
+
+			//	check auth state of user
+			let user = firebase.auth().currentUser
+			if ( user ) {
+				//	User is signed in
+				//	proceed to route
+				next()
+			} else {
+				//	no user is signed in
+				//	redirect to login
+				next({
+					name: 'Login'
+				})
+			}
+		} else {
+			//	if route is not guarded by auth, proceed
+			next()
+		}
+	})
+
+	export default router
+
+```
 ---
