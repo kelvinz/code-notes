@@ -430,4 +430,34 @@ this is to prevent the vue instance from loading before auth inits
 	export default router
 
 ```
+
+## create markers on map
+
+```js
+
+	db.collection( 'users' ).get().then( users => {
+		users.docs.forEach( doc => {
+			let data = doc.data()
+			if( data.geolocation ) {
+				let marker = new google.maps.Marker({
+					position: {
+						lat: data.geolocation.lat,
+						lng: data.geolocation.lng
+					},
+					//	map is the const that holds the map
+					//	map = new google.maps, etc
+					//	map: map
+					//	es6 shorten to below since same name
+					map
+				})
+
+				//	add click event to marker
+				marker.addListener( 'click', () => {
+					console.log( doc.id )
+				})
+			}
+		})
+	});
+
+```
 ---
