@@ -460,4 +460,24 @@ this is to prevent the vue instance from loading before auth inits
 	});
 
 ```
+
+## live comments loading
+
+```js
+
+	db.collection( 'comments' ).where( 'to', '==', this.$route.params.id ).orderBy( 'time' )
+	.onSnapshot( snapshot => {
+		snapshot.docChanges().forEach( change => {
+			if ( change.type == 'added' ) {
+				//	unshift places into the start of array
+				//	push places into end of array
+				this.comments.unshift({
+					from: change.doc.data().from,
+					content: change.doc.data().content
+				})
+			}
+		})
+	});
+
+```
 ---
