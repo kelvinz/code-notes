@@ -480,4 +480,45 @@ this is to prevent the vue instance from loading before auth inits
 	});
 
 ```
+
+
+## adding comments
+
+```js
+
+	addComment() {
+		if( this.newComment ) {
+			this.feedback = null
+			db.collection( 'comments' ).add({
+				to      : this.$route.params.id,
+				from    : this.user.alias,
+				content : this.newComment,
+				time    : Date.now()
+			}).then( doc => {
+				this.newComment = null
+			})
+		} else {
+			this.feedback = 'You must enter a comment to add it'
+		}
+	}
+
+```
+
+
+
+### tips & tricks
+
+`firebase.auth().onAuthStateChanged` will run everytime user logs in or out
+
+`v-if="!user"` happens only when the user data is null
+
+seperate comments into a new collection instead of putting them into the user document
+each comment will be a document in the comments collection
+
+`.unshift` places content into start of an arrary
+while `.push` places content into the end of an arrary
+
+
+
+---
 ---
