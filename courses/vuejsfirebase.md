@@ -547,4 +547,21 @@ while `.push` places content into the end of an arrary
 	});
 
 ```
+
+```js
+
+	//	calling the cloud function
+	import functions from 'firebase/functions'
+
+	let checkAlias = firebase.functions().httpsCallable( 'checkAlias' )
+
+	checkAlias({ slug: this.slug })
+	.then( result => {
+		if ( !result.data.unique ) {
+			//	etc etc
+		}
+	});
+
+```
+
 ---
