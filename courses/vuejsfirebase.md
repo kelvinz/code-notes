@@ -586,4 +586,41 @@ while `.push` places content into the end of an arrary
 
 
 ---
+
+
+
+# es6 & extras
+
+
+
+## export, import
+
+```js
+
+	//	export, import example pairs
+
+	//	single thingy export = export default
+	export default 'hello'
+
+	import greet from './export'
+
+	//	export objects
+	export default {
+		name: 'mario',
+		age: 32
+	}
+
+	import mario from './export'
+
+	//	export multiple items, import selected items
+	let name = 'luigi',
+		age = 30,
+		favColor = 'green'
+
+	export { name, age, favColor }
+
+	import { name, age } from './export'
+
+```
+
 ---
