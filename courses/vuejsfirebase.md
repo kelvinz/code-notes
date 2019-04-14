@@ -564,4 +564,26 @@ while `.push` places content into the end of an arrary
 
 ```
 
+## firebase rules
+
+```js
+
+	service cloud.firestore {
+		match /databases/{database}/documents {
+			match /{document=**} {
+				//	anyone can read
+				allow read;
+				//	only logged in users can write
+				allow write: if request.auth.uid != null;
+			}
+		}
+	}
+
+```
+
+<https://firebase.google.com/docs/firestore/security/get-started>
+
+
+
+---
 ---
