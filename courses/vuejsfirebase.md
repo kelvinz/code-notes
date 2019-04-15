@@ -623,4 +623,25 @@ while `.push` places content into the end of an arrary
 
 ```
 
+## filter method
+
+```js
+
+	let users = [
+		{ name: 'mario', premium: true },
+		{ name: 'yoshi', premium: true },
+		{ name: 'toad', premium: false },
+		{ name: 'bowser', premium: true }
+	]
+
+	//	doesn't change original array
+	//	true keeps item, false remove item
+	let newUsers = users.filter( item => {
+		return item.premium
+	});
+
+```
+
+
+
 ---
