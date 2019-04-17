@@ -38,6 +38,23 @@
 
 
 
+## k-nearest neighbor ( knn )
+
+one of the simplest machine learning algorithms
+essentially averaging the most similar inputs previously & their results
+
+*eg. which bucket will a ball go into if dropped at 300px*
+
+-	drop a ball a bunch of times all around the board
+-	for each observation, subtract drop point from 300px to get absolute value
+-	sort the results from least to most
+-	look at the 'k' top records, what was the most frequent bucket
+-	the more frequent bucket is our prediction
+
+*note: k is a generic number which can be experimented & adjusted to suit different tasks*
+
+
+
 ---
 
 
