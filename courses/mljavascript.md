@@ -55,6 +55,41 @@ essentially averaging the most similar inputs previously & their results
 
 
 
+## lodash
+
+javascript utility library
+
+```js
+
+	const numbers = [
+		[ 10, 5 ],
+		[ 17, 2 ],
+		[ 34, 1 ]
+	]
+
+	const sorted = _.sortBy( numbers, row => row[ 1 ] )
+
+	//	results in
+	sorted = [
+		[ 34, 1 ],
+		[ 17, 2 ],
+		[ 10, 5 ]
+	]
+
+	const mapped = _.map( sorted, row => row[ 1 ] )
+
+	//	results in
+	mapped = [ 1, 2, 5 ]
+
+	//	chaining
+	//	_.chain to start chain
+	//	.value() to get result
+	const chained = _.chain( numbers )
+						.sortBy( row => row[ 1 ] )
+						.map( row => row[ 1 ] )
+						.value();
+
+```
 ---
 
 
