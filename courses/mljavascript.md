@@ -90,6 +90,53 @@ javascript utility library
 						.value();
 
 ```
+
+
+
+## implementing knn
+
+```js
+
+	const outputs = [
+		//	drop position, bounciness, ball size, result
+		[ 10, .5, 16, 1 ],
+		[ 200, .5, 16, 4 ],
+		[ 350, .5, 16, 4 ],
+		[ 600, .5, 16, 5 ]
+	]
+
+	const
+	predictionPoint = 300,
+	k = 3
+
+	function distance( point, predictionPoint ) {
+		return Math.abs( point - predictionPoint )
+	}
+
+	_.chain( outputs )
+		//	get abs difference & results into an array, ignoring bounce & size
+		.map( row => [ distance( row[ 0 ], predictionPoint ), row[ 3 ] ] )
+		//	sort difference from lowest to highest
+		.sortBy( row => row[ 0 ] )
+		//	get top k records
+		.slice( 0, k )
+		//	get object with value of row[ 1 ] & number of times it occurs
+		//	countBy changes value/keys into strings
+		//	note to change back to num later
+		.countBy( row => row[ 1 ] )
+		//	take object & convert to array of arrays
+		.toPairs( )
+		//	sort most commonly occurring bucket from low to high
+		.sortBy( row => row[ 1 ] )
+		//	return last element aka [ "4", "2" ]
+		.last()
+		//	return first element aka "4"
+		.first()
+		//	change to num
+		.parseInt()
+		.value();
+
+```
 ---
 
 
