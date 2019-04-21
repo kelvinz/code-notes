@@ -138,6 +138,66 @@ javascript utility library
 		.value();
 
 ```
+
+
+
+## training & test data
+
+split all data into training & test
+
+*training&* is used to implement the knn formula, aka train our algo
+*test* use the trained algo & check how accurate our algo is
+
+note: always shuffle data before splitting to ensure no patterns exists in our data
+eg. our data could come in from small to large or arranged in some particular order we don't know about
+
+```js
+
+	function splitDataset( data, testCount ) {
+		const shuffled = _.shuffle( data )
+
+		const testSet = _.slice( shuffled, 0, testCount )
+		const trainingSet = _.slice( shuffled, testCount )
+
+		return [ testSet, trainingSet ]
+	}
+
+	//	modified from above to be generalized
+	function knn( data, point ) {
+		return _.chain( data )
+			.map( row => [ distance( row[ 0 ], point ), row[ 3 ] ] )
+			.sortBy( row => row[ 0 ] )
+			.slice( 0, k )
+			.countBy( row => row[ 1 ] )
+			.toPairs()
+			.sortBy( row => row[ 1 ] )
+			.last()
+			.first()
+			.parseInt()
+			.value()
+	}
+
+	function runAnalysis() {
+		const testSetSize = 10
+		const [ testSet, trainingSet ] = splitDataset( outputs, testSetSize )
+
+		let numberCorrect = 0
+
+		for ( let i = 0; i < testSet.length; i++ ) {
+			const bucket = knn( trainingSet, testSet[ i ][ 0 ] )
+
+			if ( bucket === test[ i ][ 3 ] ) {
+				numberCorrect++
+			}
+		}
+
+		console.log( 'Accuracy', numberCorrect / testSetSize )
+	}
+
+```
+
+
+
 ---
 
 
