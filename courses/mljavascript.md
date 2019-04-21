@@ -113,6 +113,7 @@ javascript utility library
 		return Math.abs( point - predictionPoint )
 	}
 
+	//	using lodash
 	_.chain( outputs )
 		//	get abs difference & results into an array, ignoring bounce & size
 		.map( row => [ distance( row[ 0 ], predictionPoint ), row[ 3 ] ] )
