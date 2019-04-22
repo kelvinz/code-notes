@@ -198,6 +198,28 @@ eg. our data could come in from small to large or arranged in some particular or
 
 
 
+## refactoring accuracy report
+
+```js
+
+	//	refactored from top
+	function runAnalysis() {
+		const testSetSize = 10
+		const [ testSet, trainingSet ] = splitDataset( outputs, testSetSize )
+
+		const accuracy = _.chain( testSet )
+			.fliter( testPoint => knn( trainingSet, testPoint[ 0 ] ) === testPoint[ 3 ] )
+			.size()
+			.divide( testSetSize )
+			.value()
+
+		console.log( 'Accuracy is ', accuracy )
+	}
+
+```
+
+
+
 ---
 
 
