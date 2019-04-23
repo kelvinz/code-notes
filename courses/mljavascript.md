@@ -220,6 +220,29 @@ eg. our data could come in from small to large or arranged in some particular or
 
 
 
+## investigating optimal k values
+
+```js
+
+	function runAnalysis() {
+		const testSetSize = 50
+		const [ testSet, trainingSet ] = splitDataset( outputs, testSetSize )
+
+		_.range( 1, 15 ).forEach( k => {
+			const accuracy = _.chain( testSet )
+				.fliter( testPoint => knn( trainingSet, testPoint[ 0 ], k ) === testPoint[ 3 ] )
+				.size()
+				.divide( testSetSize )
+				.value()
+
+			console.log( 'For k of ', k, ' accuracy is ', accuracy )
+		}
+	}
+
+```
+
+
+
 ---
 
 
