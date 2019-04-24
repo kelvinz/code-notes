@@ -243,6 +243,41 @@ eg. our data could come in from small to large or arranged in some particular or
 
 
 
+## multi-dimensional knn
+
+updating the distance function to use the pythagorean theorem
+
+`c ** 2 = a ** 2 + b ** 2`
+`c = ( a ** 2 + b ** 2 ) ** .5`
+
+with more than 2 features, we just add more x ** 2 into equation
+
+```js
+
+	function distance( pointA, pointB ) {
+
+		//	where pointA is an array
+		_.chain( pointA )
+			//	zip takes arrays
+			//	makes each pair at point into its own array
+			.zip( pointB )
+			.map( ( [ a, b ] ) => ( a - b ) ** 2 )
+			.sum()
+			.value() ** .5
+	}
+
+	//	returns array without the last data
+	//	without modifying actual array
+	_.initial( row )
+
+	//	returns last data of array
+	//	without modifying actual array
+	_.last( row);
+
+```
+
+
+
 ---
 
 
