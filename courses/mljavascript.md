@@ -278,6 +278,38 @@ with more than 2 features, we just add more x ** 2 into equation
 
 
 
+## magnitude offsets in features
+
+because the range of different features may be very different
+the effects of it on the calculation might become offscaled
+thus we need to normalize our data or standardize them
+
+-	*normalize*
+	make data range between 0 to 1
+	data will only be between 0 to 1
+
+-	*standardize*
+	make majority of data near 0, from -1 to 1
+	possible for outliers to exceed -1 or 1
+
+```js
+
+	//	get min & max value
+	//	normalize points to minmax
+
+	const points = [ 200, 150, 650, 430 ]
+
+	const min = _.min( points )
+	const max = _.max( points )
+
+	_.map( points, point => {
+		return ( point - min ) / ( max - min )
+	} );
+
+```
+
+
+
 ---
 
 
