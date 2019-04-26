@@ -310,6 +310,40 @@ thus we need to normalize our data or standardize them
 
 
 
+## normalization with minmax
+
+```js
+
+	//	feature count will let us know
+	//	that the last data in array is its result
+	//	not a feature
+	function minMax( data, featureCount ) {
+		//	clone so we don't modify actual data
+		const clonedData = _.cloneDeep( data )
+
+		//	i is column in clonedData array
+		//	getting each feature we want to normalize
+		for ( let i = 0; i < featureCount; i++ ) {
+			const column = clonedData.map( row => row[ i ] )
+
+			const min = _.min( column )
+			const max = _.max( column )
+
+			//	j is row in clonedData array
+			//	getting each set of data
+			for ( let j = 0; j <  clonedData.length; j++ ) {
+				//	modify array
+				clonedData[ j ][ i ] = ( clonedData[ j ][ i ] - min ) / ( max - min )
+			}
+		}
+
+		return clonedData
+	}
+
+```
+
+
+
 ---
 
 
