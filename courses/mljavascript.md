@@ -352,6 +352,40 @@ thus we need to normalize our data or standardize them
 
 
 
+## tensor shape & dimension
+
+**tensor**
+something like an array with extra functionalities
+
+**dimensions**
+1d = array
+2d = array of array
+3d... 4d...
+one trick is to count the number of opening brackets in succession
+[ [ 1, 2 ], [ 3, 4 ] ] = 2d
+
+**shape**
+imagine calling .length once on each dimention from outside in
+
+[ 5, 10, 17 ]
+*shape* = [ 3 ]
+
+[
+	[ 5, 10, 17 ],
+	[ 18, 4, 2 ]
+]
+*shape* = [ 2, 3 ]
+something like [ rows, columns ]
+
+[
+	[
+		[ 5, 10, 17 ]
+	]
+]
+*shape* = [ 1, 1, 3 ]
+
+
+
 ---
 
 
