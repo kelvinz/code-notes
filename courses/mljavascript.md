@@ -386,6 +386,30 @@ something like [ rows, columns ]
 
 
 
+## elementwise operations
+
+```js
+
+	const data = tf.tensor( [ 1, 2, 3 ] )
+	const otherData = tf.tensor( [ 4, 5, 6 ] )
+
+	data.shape	//	[ 3 ]
+
+	//	elementwise operations return a new tensor
+	//	does not affect original tensors
+
+	data.add( otherData )	//	[ 5, 7, 9 ]
+	data.sub( otherData )	//	[ -3, -3, -3 ]
+	data.mul( otherData )	//	[ 4, 10, 18 ]
+	data.div( otherData );	//	[ .25, .4, .5 ]
+
+	//	if the shapes don't match
+	//	we can't do elementwise operations
+
+```
+
+
+
 ---
 
 
