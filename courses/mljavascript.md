@@ -463,6 +463,110 @@ something like [ rows, columns ]
 
 
 
+## misc
+
+```js
+
+	//	logging tensor data
+	const data = tf.tensor( [ 1, 2, 3 ] )
+	data.print()
+	//	console log out tensor
+	//	results => tensor [ 1, 2, 3 ]
+
+
+
+	//	tensor accessors
+	data.get( 0 )
+
+	const data = tf.tensor( [ [ 1, 2, 3 ], [ 40, 50, 60 ] ] )
+	data.get( 0, 0 );
+	//	row, col
+	//	results => 1
+
+	//	no set method
+	//	you can't modify values in tensors
+	//	have to create new tensor
+
+
+
+	//	slice data
+	const data = tf.tensor( [ [ 1, 2, 3 ], [ 40, 50, 60 ] ] )
+	//	start index, size
+	//	index starts with 0
+	//	size starts with 1
+	//	size => rows, cols
+	data.slice( [ 0, 1 ], [ 2, 1 ] )
+	//	results in [ [ 1 ], [ 40 ] ]
+	//	or use -1 for 'all' from point to end
+	data.slice( [ 0, 1 ], [ -1, 1 ] );
+
+
+
+	//	joining data
+	const tensorA = tf.tensor([
+		[ 1, 2, 3 ],
+		[ 4, 5, 6 ]
+	])
+
+	const tensorB = tf.tensor([
+		[ 7, 8, 9 ],
+		[ 10, 11, 12 ]
+	])
+
+	tensorA.concat( tensorB, 0 )
+	//	imagine arrow going top down
+	//	results => [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ], [ 10, 11, 12 ] ]
+
+	tensorA.concat( tensorB, 1 )
+	//	imagine arrow going left to right
+	//	results => [ [ 1, 2, 3, 7, 8, 9 ], [ 4, 5, 6, 10, 11, 12 ] ]
+
+
+
+	//	summing along axis
+	const jumpData = tf.tensor([
+		[ 70, 70, 70 ],
+		[ 70, 70, 70 ]
+	])
+
+	const playerData = tf.tensor([
+		[ 1, 160 ],
+		[ 2, 160 ]
+	])
+	//	if no second argument given in sum
+	//	it will sum all numbers into one single result
+	//	second arguement if added is the axis to go by
+
+	jumpData.sum( 0 )
+	//	imagine arrow going top down
+	//	results => [ 140, 140, 140 ]
+
+	jumpData.sum( 1 )
+	//	imagine arrow going left to right
+	//	results => [ 210, 210 ]
+
+
+
+	//	massaging dimensions
+	jumpData.sum( 1 ).concat( playerData, 1 )
+	//	error
+	//	sum reduces dimensions
+	//	[ 2, 3 ] => [ 2 ]
+
+	//	fix 1
+	//	keep dimension when summing
+	jumpData.sum( 1, true )
+
+	//	fix 2
+	//	more robust, useful in different situations
+	//	expandDims increase dimensions
+	//	expand in which axis, row - 0, col - 1
+	jumpData.sum( 1 ).expandDims( 1 );
+
+```
+
+
+
 ---
 
 
