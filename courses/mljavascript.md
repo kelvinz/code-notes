@@ -410,6 +410,59 @@ something like [ rows, columns ]
 
 
 
+## broadcasting operations
+
+```js
+
+	const data = tf.tensor( [ 1, 2, 3 ] )
+	const otherData = tf.tensor( [ 4 ] )
+
+	//	if the shapes don't match
+	//	there are edge cases where we can still do operations
+	//	this is known as broadcasting
+
+	//	only works if
+	//	after stacking shape up
+	//	comparing columns from right to left
+	//	shapes are equal or one is '1'
+
+	[ 1, 2, 3 ] + [ 4 ]
+	shape = [ 3 ] + shape = [ 1 ]
+	//	stack the shapes up
+	[ 3 ]
+	[ 1 ]
+	//	one of it is 1
+
+	[ [ 1, 2, 3 ], [ 4, 5, 6 ] ] + [ [ 1 ], [ 1 ] ]
+	shape = [ 2, 3 ] + shape = [ 2, 1 ]
+	//	stack the shapes up
+	[ 2, 3 ]
+	[ 2, 1 ]
+	//	first col has a 1
+	//	second col both are 2 so its equal
+
+	//	kinda means smearing the [ [ 1 ], [ 1 ] ] over the other array
+
+	shape = [ 2, 3, 2 ] + shape = [ 3, 1 ]
+	//	stack the shapes up
+	[ 2, 3, 2 ]
+	   [ 3, 1 ]
+	//	2, 1 has a 1
+	//	3, 3 is the same
+	//	last one has no value on bottom col so we skip
+
+	shape = [ 2, 3, 2 ] + shape = [ 2, 1 ]
+	//	stack the shapes up
+	[ 2, 3, 2 ]
+	   [ 2, 1 ]
+	//	2, 1 has a 1
+	//	3, 2 doesn't match
+	//	thus this operation cannot be done
+
+```
+
+
+
 ---
 
 
