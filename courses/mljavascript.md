@@ -575,6 +575,72 @@ something like [ rows, columns ]
 
 
 
+## knn
+
+using regression instead of classification like example above
+
+```js
+
+	//	location of house predict price
+
+	//	long/lat of house
+	const features = tf.tensor([
+		[ -121, 47 ],
+		[ -121.2, 46.5 ],
+		[ -122, 46.4 ],
+		[ -120.9, 46.7 ]
+	])
+
+	//	house price
+	const labels = tf.tensor([
+		[ 200 ],
+		[ 250 ],
+		[ 215 ],
+		[ 240 ]
+	])
+
+	//	long/lat to predict price for
+	const predictionPoint = tf.tensor( [ -121, 47 ] )
+
+	const k = 2
+
+	features
+		//	find difference between prediction point vs actual points
+		//	subtract prediction point on every feature point
+		.sub( predictionPoint )
+		//	square each of the difference
+		.pow( 2 )
+		//	add all rows up
+		.sum( 1 )
+		//	square root each row
+		.pow( .5 )
+		//	up dim
+		.expandDims( 1 )
+		//	join with labels
+		.concat( labels, 1 )
+		//	unstack make each row a new tensor
+		//	add them into an array
+		.unstack()
+		//	sort from a - z or 0 - 10 by default
+		//	function with a, b
+		//	return 1 will be below, -1 will be on top
+		.sort( ( a, b ) => {
+			return a.get( 0 ) > b.get( 0 ) ? 1 : -1
+		} )
+		//	get top k records
+		//	this is an array slice not tf slice
+		//	after unstack we are working with arrays returned
+		.slice( 0, k )
+		//	sum the labels
+		//	divide by k to get average
+		.reduce( ( acc, obj ) => {
+			return acc + obj.get( 1 )
+		}, 0 ) / k
+
+```
+
+
+
 ---
 
 
