@@ -641,6 +641,30 @@ using regression instead of classification like example above
 
 
 
+## standardization
+
+( value - average ) / standard deviation
+
+```js
+
+	const numbers = tf.tensor([
+		[ 1, 2 ],
+		[ 3, 4 ],
+		[ 5, 6 ]
+	])
+
+	//	mean = average
+	//	sqrt( variance ) = standard deviation
+	//	if no 2nd value, moments combines all values
+	//	2nd value is axis if needed
+	const { mean, variance } = tf.moments( numbers, 0 )
+
+	numbers.sub( mean ).div( variance.pow( .5 ) );
+
+```
+
+
+
 ---
 
 
