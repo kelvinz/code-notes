@@ -665,6 +665,36 @@ using regression instead of classification like example above
 
 
 
+## final knn
+
+```js
+
+	function knn( features, labels, predictionPoint, k ) {
+
+		const { mean, variance } = tf.moments( features, 0 )
+		const scaledPrediction = scaledPrediction.sub( mean ).div( variance.pow( .5 ) )
+
+		return (
+			features
+				.sub( mean )
+				.div( variance.pow( .5 ) )
+				.sub( scaledPrediction )
+				.pow( 2 )
+				.sum( 1 )
+				.pow( .5 )
+				.expandDims( 1 )
+				.concat( labels, 1 )
+				.unstack()
+				.sort( ( a, b ) => ( a.get( 0 ) > b.get( 0 ) ? 1 : -1 ) )
+				.slice( 0, k )
+				.reduce( ( acc, pair ) => acc + pair.get( 1 ), 0 ) / k
+		)
+	}
+
+```
+
+
+
 ---
 
 
