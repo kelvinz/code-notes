@@ -703,6 +703,34 @@ using regression instead of classification like example above
 
 
 
+## linear regression
+
+drawing a trendline on a chart of points
+results in a equation that can be used to do predictions
+
+many ways to solve linear regression
+gradient descent is one of them
+
+
+
+## calculate how far guess is from actual
+
+-	**mean squared error ( mse )**
+	loop all with i
+	add all of ( guess[ i ] - actual[ i ] ) squared
+	divide by number of i
+
+
+
+## derivatives
+
+slope of mse can be used to arrive at optimal guess
+derivative can be used to get the slope
+
+*negative number means slopping to the right*
+
+
+
 ---
 
 
