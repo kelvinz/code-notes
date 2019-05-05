@@ -731,6 +731,24 @@ derivative can be used to get the slope
 
 
 
+## gradient descent in action
+
+line equation is
+`y = mx + b`
+
+1.	pick a value for 'b' & 'm'
+2.	calculate the slope of mse with respect to 'b' & 'm'
+3.	check if both slopes are very small, if so, end
+4.	multiply slopes by arbitrary value - 'learning rate'
+5.	subtract results from 'b' & 'm'
+6.	repeat step 2 till end
+
+
+
+**to be updated with more details on the math**
+
+
+
 ---
 
 
