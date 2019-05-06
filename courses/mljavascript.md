@@ -757,6 +757,67 @@ line equation is
 
 
 
+## basic class for learning formula
+
+```js
+
+	class LinearRegression {
+
+		constructor( features, labels, options ) {
+			this.features = features
+			this.labels   = labels
+
+			//	object assign allows you to set defaults
+			//	which will be overriden if options are passed in
+			//	assigning options into an obj
+			//	this obj could be an empty obj {}
+			//	or with the defaults inside like below
+			this.options  = Object.assign( {
+				learningRate: .1,
+				iterations: 1000
+			}, options )
+
+			//	inital guesses
+			this.m = 0
+			this.b = 0
+		}
+
+		gradientDescent() {
+			const currentGuesses = this.features.map( row => {
+				//	mx + b
+				return this.m * row[ 0 ] + this.b
+			} )
+
+			//	add all guess - actual
+			const bSlope = _.sum( currentGuesses.map( ( guess, i ) => {
+				//	guess - actual
+				return guess - this.labels[ i ][ 0 ]
+			//	multiply results by 2
+			//	then divide total by length of array
+			} ) ) * 2 / this.features.length
+
+			const mSlope = _.sum( currentGuesses.map( ( guess, i ) => {
+				//	-x * ( actual - guess )
+				return -1 * this.features[ i ][ 0 ] * ( this.labels[ i ][ 0 ] - guess )
+			//	multiply results by 2
+			//	then divide total by length of array
+			} ) ) * 2 / this.features.length
+
+			this.m = this.m - mSlope * this.options.learningRate
+			this.b = this.b - bSlope * this.options.learningRate
+		}
+
+		train() {
+			for ( let i = 0; i < this.options.iterations; i++ ) {
+				this.gradientDescent()
+			}
+		}
+	}
+
+```
+
+
+
 ---
 
 
