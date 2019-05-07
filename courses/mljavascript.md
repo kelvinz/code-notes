@@ -818,6 +818,54 @@ line equation is
 
 
 
+## matrix multiplication
+
+
+
+### are two matrices eligible to be multiplied together
+
+put two shapes of two tensors ( matrices ) together side by side
+are the two numbers next to each other the same
+if they are the same, they can be multiplied
+
+*eg.*
+shapeA = [ 4, 2 ]
+shapeB = [ 2, 3 ]
+toegther => [ 4, 2 ] [ 2, 3 ]
+since 2, 2 are the same, they can be multiplied
+
+in matrices
+A * B is not the same as B * A
+
+
+
+### what's the output of matrix multiplication
+
+remove the inner shapes from above
+[ 4, 2 ][ 2, 3 ]
+results of multiplication is a [ 4, 3 ] shaped matrix
+
+
+
+### how is matrix multiplication done
+
+... skip
+
+
+
+## tensorflow version of above
+
+slope of mse with respect to m & b toegther
+( features * ( ( features * weights ) - labels ) ) / n
+
+*where*
+labels  = tensor of our label data
+features = tensor of our features data
+n       = number of observations
+weights = m & b in a tensor
+
+
+
 ---
 
 
