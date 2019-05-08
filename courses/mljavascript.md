@@ -874,6 +874,53 @@ weights = m & b in a tensor
 
 
 
+## tensorflow linear regression
+
+```js
+
+	class LinearRegression {
+		constructor( features, labels, options ) {
+			this.features = tf.tensor( features )
+			this.labels = tf.tensor( labels )
+
+			//	tf.ones create tensor with all 1s based on shape given
+			this.features = tf.ones( [ this.features.shape[ 0 ], 1 ] )
+								.concat( this.features, 1 )
+
+			this.options = Object.assign( {
+				learningRate: .1,
+				iterations: 1000
+			}, options )
+		}
+
+		//	creating m & b into a tensor [ 0, 0 ]
+		this.weights = tf.zeros( [ 2, 1 ] )
+
+		gradientDescent() {
+			//	matMul is matrix multiplication
+			const currentGuesses = this.features.matMul( this.weights )
+			const differences = currentGuesses.sub( this.labels )
+
+			const slopes = this.features
+								.transpose() //	switch up the shape 1, 2 to 2, 1, etc
+								.matMul( differences )
+								.div( this.features.shape[ 0 ] )
+
+			//	new weights = weights subtracted from slope multiplied by learning rate
+			this.weights = this.weights.sub( slopes.mul( this.options.learningRate ) )
+		}
+
+		train() {
+			for ( let i = 0; i < this.options.iterations; i++ ) {
+				this.gradientDescent()
+			}
+		}
+	}
+
+```
+
+
+
 ---
 
 
