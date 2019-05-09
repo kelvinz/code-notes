@@ -921,6 +921,46 @@ weights = m & b in a tensor
 
 
 
+## calculating model accuracy
+
+```js
+
+	class LinearRegression {
+		...
+
+		//	testing results
+		test( testFeatures, testLabels ) {
+			testFeatures = tf.tensor( testFeatures )
+			testLabels = tf.tensor( testLabels )
+
+			testFeatures = tf.ones( [ testFeatures.shape[ 0 ], 1 ] )
+								.concat( testFeatures, 1 )
+
+			const predictions = testFeatures.matMul( this.weights )
+
+			//	coefficient of determination
+			const res = testLabels
+						.sub( predictions )
+						.pow( 2 )
+						.sum()
+						.get()
+
+			const tot = testLabels
+						.sub( testLabels.mean() )
+						.pow( 2 )
+						.sum()
+						.get()
+
+			return 1 - res / tot
+			//	if results is negative
+			//	taking average is more accurate than your slope
+		}
+	}
+
+```
+
+
+
 ---
 
 
