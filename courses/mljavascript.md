@@ -961,6 +961,48 @@ weights = m & b in a tensor
 
 
 
+## standardization
+
+```js
+
+	class LinearRegression {
+
+		//	helper function for constructor & test
+		//	since there are repeated scripts
+		processFeatures( features ) {
+			features = tf.tensor( features )
+
+			if ( this.mean && this.variance ) {
+				//	if mean & variance already exists
+				//	use them & not re-generate new one
+				features = features.sub( this.mean ).div( this.variance.pow( .5 ) )
+			} else {
+				//	generate new mean & variance
+				//	do standarization
+				features = this.standardize( features )
+			}
+
+			features = tf.ones( [ features.shape[ 0 ], 1 ] )
+							.concat( features, 1 )
+
+			return features
+		}
+
+		standardize( features ) {
+			const { mean, variance } = tf.moments( features, 0 )
+
+			this.mean = mean
+			this.variance = variance
+
+			return features.sub( mean ).div( variance.pow( .5 ) )
+		}
+
+	}
+
+```
+
+
+
 ---
 
 
