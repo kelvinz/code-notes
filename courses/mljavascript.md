@@ -1003,6 +1003,24 @@ weights = m & b in a tensor
 
 
 
+## multivariate regression
+
+```js
+
+	class LinearRegression {
+		...
+
+		constructor( features, labels, options ) {
+			...
+
+			this.weights = tf.zeros( [ this.features.shape[ 1 ], 1 ] )
+		}
+	}
+
+```
+
+
+
 ---
 
 
