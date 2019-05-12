@@ -1021,6 +1021,57 @@ weights = m & b in a tensor
 
 
 
+## learning rate optimization
+
+eg. adam, adagrad, rmsprop, momentum
+
+```js
+
+	class LinearRegression {
+		constructor( features, labels, options ) {
+			...
+			this.mseHistory = []
+		}
+
+		...
+
+		train() {
+			for ( let i = 0; i < this.options.iterations; i++ ) {
+				this.gradientDescent()
+				this.recordMSE()
+				this.updateLearningRate()
+			}
+		}
+
+		recordMSE() {
+			const mse = this.features
+							.matMul( this.weights )
+							.sub( this.labels )
+							.pow( 2 )
+							.sum()
+							.div( this.features.shape[ 0 ] )
+							.get()
+
+			this.mseHistory.unshift( mse )
+		}
+
+		updateLearningRate() {
+			if ( this.mseHistory.length < 2 ) {
+				return
+			}
+
+			if ( this.mseHistory[ 0 ] > this.mseHistory ) {
+				this.options.learningRate /= 2
+			} else {
+				this.options.learningRate *= 1.05
+			}
+		}
+	}
+
+```
+
+
+
 ---
 
 
