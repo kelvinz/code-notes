@@ -1078,6 +1078,20 @@ eg. adam, adagrad, rmsprop, momentum
 
 # plotting data with javascript
 
+using the 'node remote plot' plugin
+
+```js
+
+	const plot = require( 'node-remote-plot' )
+
+	plot( {
+		x: regression.mseHistory.reverse(),
+		xLabel: 'Iteration #',
+		yLabel: 'Mean Squared Error'
+	} );
+
+```
+
 
 
 ---
