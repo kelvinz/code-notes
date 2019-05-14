@@ -1102,6 +1102,23 @@ using the 'node remote plot' plugin
 
 
 
+## definitions
+
+**why do it?**
+decrease time needed to reach optimal mse for huge datasets
+as we are running gradient descent more often rather than wait for whole datasets to be run
+
+*gradient descent*
+use entire feature set to update m & b
+
+*batch gradient descent*
+use a couple of observations at a time to update m & b
+
+*stochastic gradient descent*
+use one observation at a time to update m & b
+
+
+
 ---
 
 
