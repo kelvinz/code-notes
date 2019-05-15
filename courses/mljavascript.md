@@ -1119,6 +1119,68 @@ use one observation at a time to update m & b
 
 
 
+## batch gradient descent
+
+```js
+
+	const regression = new LinearRegression( features, labels, {
+		learningRate: .1,
+		iterations: 100,
+		//	adding batch size
+		batchSize: 10
+	} )
+
+	class LinearRegression {
+		...
+
+		//	let features & labels to be passed in instead of this.
+
+		//	change this.features to features
+		gradientDescent( features, labels ) {
+			const currentGuesses = features.matMul( this.weights )
+			const differences = currentGuesses.sub( labels )
+
+			const slopes = features
+							.transpose()
+							.matMul( differences )
+							.div( features.shape[ 0 ] )
+
+			this.weights = this.weights.sub( slopes.mul( this.options.learningRate ) )
+		}
+
+		train() {
+			const batchQuantity = Math.floor(
+				this.features.shape[ 0 ] / this.options.batchSize
+			)
+
+			for ( let i = 0; i < this.options.iterations; i++ ) {
+				for ( let j = 0; j < batchQuantity; j++ ) {
+					const { batchSize } this.options
+					const startIndex = j * batchSize
+
+					const featureSlice = this.features.slice(
+						[ startIndex, 0 ],
+						[ batchSize, -1 ]
+					)
+
+					const labelSlice = this.label.slice(
+						[ startIndex, 0 ],
+						[ batchSize, -1 ]
+					)
+
+					this.gradientDescent( featureSlice, labelSlice )
+				}
+
+				this.recordMSE()
+				this.updateLearningRate()
+			}
+		}
+	}
+
+```
+
+
+
 ---
 
 
