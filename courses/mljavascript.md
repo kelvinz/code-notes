@@ -1181,6 +1181,21 @@ use one observation at a time to update m & b
 
 
 
+## stochastic gradient descent
+
+```js
+
+	const regression = new LinearRegression( features, labels, {
+		learningRate: .1,
+		iterations: 100,
+		//	batch is single observation
+		batchSize: 1
+	} );
+
+```
+
+
+
 ---
 
 
