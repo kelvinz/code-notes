@@ -1196,6 +1196,23 @@ use one observation at a time to update m & b
 
 
 
+## making predictions
+
+```js
+
+	predict( observation ) {
+		return this.processFeatures( observations ).matMul( this.weights )
+	}
+
+	regression.predict( [
+		[ 120, 2, 380 ],
+		[ 123, 1.8, 400 ]
+	] ).print();
+
+```
+
+
+
 ---
 
 
