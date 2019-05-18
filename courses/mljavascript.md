@@ -1221,4 +1221,40 @@ use one observation at a time to update m & b
 
 
 
+## types of regression
+
+*linear regression*
+predicts continuous values
+
+*logistic regression*
+predicts discrete values ( classification )
+
+*binary classification*
+binary options only
+	yes or no
+	spam or not spam
+
+
+
+## sigmoid equation
+
+if mx + b ( straight line slope ) will never give us an appropriate fit
+we can use the sigmoid equation instead ( sigmoid looks like a sharper s )
+
+1 / 1 + e to the power of -z
+where e is euler's constant = 2.718
+
+z = m * input + b
+
+
+
+## decision boundaries
+
+as sharp as the curve is, it is still a curve
+so we need a decision boundary to cut off to a binary result
+eg. anything lesser than .5 is 0, above is 1
+
+
+
+---
 ---
