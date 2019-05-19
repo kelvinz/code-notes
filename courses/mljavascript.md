@@ -1256,5 +1256,17 @@ eg. anything lesser than .5 is 0, above is 1
 
 
 
+## encoding label values
+
+```js
+
+	//	additional option in loadcsv
+	converters: {
+		passedemissions: value => {
+			return value === 'TRUE' ? 1 : 0
+		}
+	}
+
+```
 ---
 ---
