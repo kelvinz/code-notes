@@ -1268,5 +1268,44 @@ eg. anything lesser than .5 is 0, above is 1
 	}
 
 ```
+
+
+
+## updating linear regression for logistic regression
+
+simply run sigmoid on mx+b equations
+
+```js
+
+	class LogisticRegression {
+		...
+
+		gradientDescent( features, labels ) {
+			//	add .sigmoid here
+			const currentGuesses = features.matMul( this.weights ).sigmoid()
+			const differences = currentGuesses.sub( labels )
+
+			const slope = features
+							.transpose()
+							.mathMul( differences )
+							.div( features.shape[ 0 ] )
+
+			this.weights = this.weights.sub( slopes.mul( this.options.learningRate ) )
+		}
+
+		predict( observations ) {
+			//	add .sigmoid here
+			return this.processFeatures( observations )
+						.matMul( this.weights )
+						.sigmoid()
+		}
+
+		...
+	}
+
+```
+
+
+
 ---
 ---
