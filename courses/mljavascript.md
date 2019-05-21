@@ -1307,5 +1307,37 @@ simply run sigmoid on mx+b equations
 
 
 
+## implementing a test function
+
+```js
+
+	predict( observations ) {
+		return this.processFeatures( observations )
+					.matMul( this.weights )
+					.sigmoid()
+					//	add greater( .5 ) = 50%, above -> 1, below -> 0
+					.greater( this.options.decisionBoundary )
+					//	treat results as numbers instead of a bool of 1/0
+					.cast( 'float32' )
+	}
+
+	test( testFeatures, testLabels ) {
+		const predictions = this.predict( testFeatures )
+
+		testLabels = tf.tensor( testLabels )
+
+		const incorrect = predictions
+							.sub( testLabels )
+							.abs()
+							.sum()
+							.get()
+
+		return ( predictions.shape[ 0 ] - incorrect ) / predictions.shape[ 0 ]
+	}
+
+```
+
+
+
 ---
 ---
