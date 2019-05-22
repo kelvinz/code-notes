@@ -1339,5 +1339,42 @@ simply run sigmoid on mx+b equations
 
 
 
+## mse history to cost history
+
+```js
+
+	recordCost() {
+		const guesses = this.features.matMul( this.weights ).sigmoid()
+
+		const termOne = this.labels
+							.transpose()
+							.matMul( guesses.log() )
+
+		const termTwo = this.labels
+							.mul( -1 )
+							.add( 1 )
+							.transpose()
+							.matMul(
+								guesses()
+								.mul( -1 )
+								.add( 1 ).
+								log()
+							)
+
+		const cost = termOne.add( termTwo )
+							.div( this.features.shape[ 0 ] )
+							.mul( - 1 )
+							.get( 0, 0 )
+
+		this.costHistory.unshift( cost )
+	}
+
+	//	change all other spots with mseHistory to costHistory
+	//	recordMSE to recordCost
+
+```
+
+
+
 ---
 ---
