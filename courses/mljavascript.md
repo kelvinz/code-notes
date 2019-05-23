@@ -1377,4 +1377,26 @@ simply run sigmoid on mx+b equations
 
 
 ---
+
+
+
+# multi-value classification
+
+
+
+## multinominal logistic regression
+
+instead of 1 or 0 binary, have a list of possible results
+
+```js
+
+	//	change the init weights
+	//	in constructor to be dynamic
+	//	based on length aka shape[ 1 ] passed in
+	this.weights = tf.( [ this.features.shape[ 1 ], this.labels.shape[ 1 ] ] )
+
+```
+
+
+
 ---
