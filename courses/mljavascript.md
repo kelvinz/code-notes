@@ -1399,4 +1399,21 @@ instead of 1 or 0 binary, have a list of possible results
 
 
 
+## marginal vs conditional probability
+
+sigmoid is marginal probability
+softmax is conditional probability
+
+*marginal probability distribution*
+-	considers one possible output case in isolation
+-	possible to have two or more same probability
+-	if you add all probability together, can exceed 1
+
+*conditional probability distribution*
+-	considers all possible output cases together
+-	cannot have same probability results
+-	if you add all probability together, totals 1
+
+
+
 ---
