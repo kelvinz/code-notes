@@ -1430,4 +1430,35 @@ softmax is conditional probability
 
 
 
+## implementing accuracy gauges
+
+argMax will return column with highest value
+ie.
+[ 1, 0, 0 ] will return [ 0 ] as column 0 is the one with highest value of 3 columns
+
+```js
+
+	predict( observations ) {
+		return this.processFeatures( observations )
+					.matMul( this.weights )
+					.softmax()
+					.argMax( 1 )
+	}
+
+	test( testFeatures, testLabels ) {
+		const predictions = this.predict( testFeatures )
+		testLabels = tf.tensor( testLabels ).argMax( 1 )
+
+		const incorrect = predictions
+							.notEqual( testLabels )
+							.sum()
+							.get()
+
+		return ( predictions.shape[ 0 ] - incorrect ) / predictions.shape[ 0 ]
+	}
+
+```
+
+
+
 ---
