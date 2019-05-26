@@ -1416,4 +1416,18 @@ softmax is conditional probability
 
 
 
+## sigmoid to softmax
+
+```js
+
+	//	simply change all sigmoid() to softmax()
+	//	ie.
+	const guesses = this.features.matMul( this.weights ).sigmoid()
+	//	to
+	const guesses = this.features.matMul( this.weights ).softmax();
+
+```
+
+
+
 ---
