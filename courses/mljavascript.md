@@ -1462,3 +1462,28 @@ ie.
 
 
 ---
+
+
+
+# image recognition in action
+
+
+
+## flattening image data
+
+```js
+
+	//	npm library to handle mnist data
+	const mnist = require( 'mnist-data' )
+
+	//	gets one set out
+	const mnistData = mnist.training( 0, 1 )
+
+	//	flatmap will flatten the nested array to a single array
+	const features = mnistData.images.values.map( image => _.flatMap( image ) );
+
+```
+
+
+
+---
