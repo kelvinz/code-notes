@@ -1486,4 +1486,21 @@ ie.
 
 
 
+## encoding label values
+
+```js
+
+	const encodedLabels = mnist.labels.values.map( label => {
+		//	there are 10 possible results
+		//	fill all with 0 first
+		const row = new Array( 10 ).fill( 0 )
+		//	switch the correct label to 1
+		row[ label ] = 1
+		return row
+	} );
+
+```
+
+
+
 ---
