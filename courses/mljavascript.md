@@ -1503,4 +1503,22 @@ ie.
 
 
 
+## implementing & accuracy gauge
+
+```js
+
+	const testMnistData = mnist.testing( 0, 1000 )
+	const testFeatures = testMnistData.images.values.map( image => _.flatmap( image ) )
+	const testEncodedLabels = testMnistData.labels.values.map( label => {
+		const row = new Array( 10 ).fill( 0 )
+		row[ label ] = 1
+		return row
+	} )
+
+	const accuracy = regression.test( testFeatures, testEncodedLabels );
+
+```
+
+
+
 ---
