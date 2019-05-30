@@ -1521,4 +1521,33 @@ ie.
 
 
 
+## dealing with zero variances
+
+zeros are causing issues with standardization step we're doing
+
+```js
+
+	standardize( features ) {
+		const { mean, variance } = tf.moments( features, 0 )
+
+		//	change 0, 1 values to a bool, 0 becomes 1
+		//	switch 1 to 0, vice versa
+		//	change back to a number
+		const filler = variance.cast( 'bool' ).logicalNot().cast( 'float32' )
+
+		this.mean = mean
+		//	where there's value of 0 in variance, it becomes a 1
+		this.variance = variance.add( filler )
+
+		return features.sub( mean ).div( this.variance.pow( .5 ) )
+	}
+
+```
+
+
+
+---
+
+
+
 ---
