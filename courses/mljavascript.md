@@ -1550,4 +1550,29 @@ zeros are causing issues with standardization step we're doing
 
 
 
+# performance optimization
+
+
+
+## the javascript garbage collector
+
+once we are no longer able to access certain values
+ie. scope closed with no reference to inner values
+garbage collector will clear it
+if you return results, etc so you can still reference things
+garbage collector will leave it in memory
+
+
+
+## shallow vs retained memory
+
+*shallow*
+actual memory usage
+
+*retained*
+the object has a reference to another item
+this is retained memory
+
+
+
 ---
