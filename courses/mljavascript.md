@@ -1575,4 +1575,30 @@ this is retained memory
 
 
 
+## releasing references
+
+wrap the loading of data into a function & only pass back needed values
+garbage collector will kick in & clear the rest
+
+```js
+
+	function loadData() {
+		const mnistData = mnist.training( 0, 60000 )
+
+		const features = mnist.images.map( image => _.flatmap( image ) )
+		const encodedLabels = mnist.labels.values.map( label => {
+			const row = new Array( 10 ).fill( 0 )
+			row[ label ] = 1
+			return row
+		} )
+
+		return { features, labels: encodedLabels }
+	}
+
+	const { features, labels } = loadData();
+
+```
+
+
+
 ---
