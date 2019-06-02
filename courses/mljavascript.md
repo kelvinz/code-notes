@@ -1601,4 +1601,32 @@ garbage collector will kick in & clear the rest
 
 
 
+## implementing tf tidy
+
+tensorflow creates a tensor for every calculation/chain
+
+```js
+
+	//	wrap any tensor creation with
+	this.weights = tf.tidy( ()=> {
+
+		const featureSlice = this.features.slice(
+			[ startIndex, 0 ],
+			[ batchSize, -1 ]
+		)
+
+		const labelSlice = this.labels.slice(
+			[ startIndex, 0 ],
+			[ batchSize, -1 ]
+		)
+
+		//	gradientDescent call also will have its tensors cleaned
+		return this.gradientDescent( featureSlice, labelSlice )
+
+	} );
+
+```
+
+
+
 ---
