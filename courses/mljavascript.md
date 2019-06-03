@@ -1629,4 +1629,41 @@ tensorflow creates a tensor for every calculation/chain
 
 
 
+## nan in cost history
+
+```js
+
+	//	add a very very small no.
+	//	so we won't have 0 to be log()
+	//	log 0 will becomes negative infinity
+	const termTwo = this.labels
+						.mul( - 1 )
+						.add( 1 )
+						.transpose()
+						.matMul(
+							guesses
+							.mul( - 1 )
+							.add( 1 )
+							.add( 1e-7 ) // 1 x 10 ^ -1 = 0.00000001
+							.log()
+						);
+
+```
+
+
+
+## improving model accuracy
+
+play around with
+
+-	**learningRate**
+-	**iterations**
+-	**batchSize**
+
+
+
+---
+
+
+
 ---
