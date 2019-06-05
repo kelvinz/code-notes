@@ -1666,4 +1666,26 @@ play around with
 
 
 
+# custom csv loader
+
+
+
+## reading files from disk
+
+```js
+
+	//	inbuilt module, don't have to npm install
+	const fs = require( 'fs' )
+
+	//	npm install lodash for helpers
+	const _ = require( 'lodash' )
+
+	function loadCSV( filename, options ) {
+		let data = fs.readFileSync( filename, { 'utf-8' } )
+	}
+
+```
+
+
+
 ---
