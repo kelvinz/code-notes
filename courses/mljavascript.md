@@ -1688,4 +1688,27 @@ play around with
 
 
 
+## splitting into columns
+
+```js
+
+	const fs = require( 'fs' )
+	const _ = require( 'lodash' )
+
+	function loadCSV( filename, options ) {
+		let data = fs.readFileSync( filename, { 'utf-8' } )
+
+		//	split data by line breaks
+		//	in csv data is in rows with line breaks to next row
+		//	first row is header row
+		data = data.split( '\n' )
+					//	each row in csv is then split to columns by a comma ','
+					//	split them to make array of arrays
+					.map( row => row.split( ',' ) )
+	}
+
+```
+
+
+
 ---
