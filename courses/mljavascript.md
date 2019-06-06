@@ -1711,4 +1711,26 @@ play around with
 
 
 
+## dropping trailing columns
+
+```js
+
+	const fs = require( 'fs' )
+	const _ = require( 'lodash' )
+
+	function loadCSV( filename, options ) {
+		let data = fs.readFileSync( filename, { 'utf-8' } )
+
+		data = data.split( '\n' )
+					.map( row => row.split( ',' ) )
+
+		//	most bad exports of csv will have columns of extra empty columns
+		//	we use a lodash method to clean those out
+		data = data.map( row => _.dropRightWhile( row, val => val === '' ) )
+	}
+
+```
+
+
+
 ---
