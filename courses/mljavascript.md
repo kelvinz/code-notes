@@ -1733,4 +1733,43 @@ play around with
 
 
 
+## parsing number values
+
+```js
+
+	const fs = require( 'fs' )
+	const _ = require( 'lodash' )
+
+	function loadCSV( filename, options ) {
+		let data = fs.readFileSync( filename, { 'utf-8' } )
+
+		data = data.split( '\n' )
+					.map( row => row.split( ',' ) )
+
+		data = data.map( row => _.dropRightWhile( row, val => val === '' ) )
+
+		//	get first row, it's the headers!
+		const headers = _.first( data )
+
+		data = data.map( ( row, index ) => {
+			//	if it's first row, it's headers
+			//	don't parse it
+			if ( index === 0 ) {
+				return row
+			}
+
+			row.map( ( element, index ) => {
+				//	data in csv comes in as strings
+				//	parseFloat makes strings into numbers
+				const result = parseFloat( element )
+				//	if result is not number return string, else return number
+				return _.isNan( result ) ? element : result
+			} )
+		} )
+	}
+
+```
+
+
+
 ---
