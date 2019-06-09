@@ -1772,4 +1772,54 @@ play around with
 
 
 
+## custom value parsing
+
+```js
+
+	const fs = require( 'fs' )
+	const _ = require( 'lodash' )
+
+	//	have a converter option which is by default an empty object
+	//	if you need a custom converter function
+	//	pass the function in as an option after filename
+	function loadCSV( filename, { converters = {} } ) {
+		let data = fs.readFileSync( filename, { 'utf-8' } )
+
+		data = data.split( '\n' )
+					.map( row => row.split( ',' ) )
+
+		data = data.map( row => _.dropRightWhile( row, val => val === '' ) )
+
+		const headers = _.first( data )
+
+		data = data.map( ( row, index ) => {
+			if ( index === 0 ) {
+				return row
+			}
+
+			row.map( ( element, index ) => {
+				//	if there is converters
+				if ( converters[ headers [ index ] ] ) {
+					const converted = converters[ headers[ index ] ]( element )
+					return _.isNan( converted ) ? element : converted
+				}
+
+				const result = parseFloat( element )
+				return _.isNan( result ) ? element : result
+			} )
+		} )
+	}
+
+	//	add examples of passing in options
+	//	add a converter option in to make string 'TRUE' to 1 or 0
+	loadCSV( 'data.csv', {
+		converters: {
+			passed: val => ( val === 'TRUE' ? 1 : 0 )
+		}
+	} );
+
+```
+
+
+
 ---
