@@ -1822,4 +1822,74 @@ play around with
 
 
 
+## extracting data columns
+
+```js
+
+	const fs = require( 'fs' )
+	const _ = require( 'lodash' )
+
+	//	add extract columns function to do extraction
+	//	pass in data & name of columns to pull
+	function extractColumns( data, columnNames ) {
+		//	get headers out
+		const headers = _.first( data )
+		//	find index of column names in headers
+		const indexes = _.map( columnNames, column => headers.indexOf( column ) )
+		//	put out data at the index at every row
+		const extracted = _.map( data, row => _.pullAt( row, indexes ) )
+
+		return extracted
+	}
+
+	//	add two more options into loadCSV, these are empty arrays
+	function loadCSV( filename, { converters = {}, dataColumns = [], labelColumns = [] } ) {
+		let data = fs.readFileSync( filename, { 'utf-8' } )
+
+		data = data.split( '\n' )
+					.map( row => row.split( ',' ) )
+
+		data = data.map( row => _.dropRightWhile( row, val => val === '' ) )
+
+		const headers = _.first( data )
+
+		data = data.map( ( row, index ) => {
+			if ( index === 0 ) {
+				return row
+			}
+
+			row.map( ( element, index ) => {
+				if ( converters[ headers [ index ] ] ) {
+					const converted = converters[ headers[ index ] ]( element )
+					return _.isNan( converted ) ? element : converted
+				}
+
+				const result = parseFloat( element )
+				return _.isNan( result ) ? element : result
+			} )
+		} )
+
+		//	run the extractColumns with the info passed in from options
+		let labels = extractColumns( data, labelColumns )
+		data = extractColumns( data, dataColumns )
+
+		//	dump the headers as we no longer need them
+		//	only needed to get the indexes to use in extractColumns
+		data.shift()
+		labels.shift()
+	}
+
+	//	add in extraction options of arrays
+	loadCSV( 'data.csv', {
+		dataColumns: [ 'height', 'value' ],
+		labelColumns: [ 'passed' ],
+		converters: {
+			passed: val => ( val === 'TRUE' ? 1 : 0 )
+		}
+	} );
+
+```
+
+
+
 ---
