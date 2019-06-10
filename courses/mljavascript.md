@@ -1892,4 +1892,85 @@ play around with
 
 
 
+## shuffling data via seed phrase
+
+```js
+
+	const fs = require( 'fs' )
+	const _ = require( 'lodash' )
+
+	//	npm install shuffle-seed
+	//	library to help with shuffling data
+	const shuffleSeed = require( 'shuffle-seed' )
+
+	function extractColumns( data, columnNames ) {
+		const headers = _.first( data )
+		const indexes = _.map( columnNames, column => headers.indexOf( column ) )
+		const extracted = _.map( data, row => _.pullAt( row, indexes ) )
+
+		return extracted
+	}
+
+	//	add shuffle option with default to true
+	function loadCSV( filename, {	converters = {},
+									dataColumns = [],
+									labelColumns = [],
+									shuffle = true } ) {
+		let data = fs.readFileSync( filename, { 'utf-8' } )
+
+		data = data.split( '\n' )
+					.map( row => row.split( ',' ) )
+
+		data = data.map( row => _.dropRightWhile( row, val => val === '' ) )
+
+		const headers = _.first( data )
+
+		data = data.map( ( row, index ) => {
+			if ( index === 0 ) {
+				return row
+			}
+
+			row.map( ( element, index ) => {
+				if ( converters[ headers [ index ] ] ) {
+					const converted = converters[ headers[ index ] ]( element )
+					return _.isNan( converted ) ? element : converted
+				}
+
+				const result = parseFloat( element )
+				return _.isNan( result ) ? element : result
+			} )
+		} )
+
+		let labels = extractColumns( data, labelColumns )
+		data = extractColumns( data, dataColumns )
+
+		data.shift()
+		labels.shift()
+
+		if ( shuffle ) {
+			//	'phrase' can be any string
+			//	but passing the same string to your different shuffles
+			//	will result in the same shuffle
+			//	aka the phrase is a algo step to shuffle
+			//	same phrase is same steps, thus same mixture
+			data = shuffleSeed.shuffle( data, 'phrase' )
+			labels = shuffleSeed.shuffle( data, 'phrase' )
+			//	you can pass in a phrase with shuffle too if needed
+			//	so you can customise your shuffles by passing in an additional option
+		}
+	}
+
+	loadCSV( 'data.csv', {
+		dataColumns: [ 'height', 'value' ],
+		labelColumns: [ 'passed' ],
+		shuffle: true,
+		converters: {
+			passed: val => ( val === 'TRUE' ? 1 : 0 )
+		}
+	} );
+
+```
+
+
+
 ---
