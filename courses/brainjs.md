@@ -103,6 +103,25 @@ as it has finished learning & giving our final prediction
 
 
 
+```js
+
+	//	give it inputs & outputs
+	( inputs ) => outputs;
+
+	//	starts off with random values
+	Math.random();
+
+	//	ends with an activation e.g. 'relu'
+	value < 0 ? 0 : value;
+
+```
+
+<https://en.wikipedia.org/wiki/Activation_function>
+<https://github.com/BrainJS/brain.js/blob/9595fe1d0069939ba271b25c1e7db785edd11936/src/neural-network.js#L227>
+<https://github.com/BrainJS/brain.js/blob/9595fe1d0069939ba271b25c1e7db785edd11936/src/neural-network.js#L527>
+
+
+
 ---
 
 
