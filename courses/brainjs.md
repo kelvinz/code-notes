@@ -130,6 +130,35 @@ as it has finished learning & giving our final prediction
 
 
 
+hiddenLayers are layers inbetween the input & output layers
+
+```js
+
+	//	have two hidden layers with two nodes each
+	const net = new brain.NeuralNetwork({
+		hiddenLayers: [ 2, 2 ]
+	});
+
+	//	no hard & fast rule to how many to use
+	//	more doesn't = better
+	//	more does mean more processing power needed though
+
+	//	this is where experimentation & trial & error comes into play
+	//	find the best amount of layers & nodes for your dataset
+
+	//	one way is to use it like a funnel 4, 3, 2, 1
+	//	but not always good too
+
+```
+
+in feedforward neural networks
+`activate(( inputWeights * inputs ) + biases )`
+these are the lines connecting each node in each layer to the next
+starting off with random inputWeights & biases
+& slowly tweaking thru back propagation to find optimal numbers
+
+
+
 ---
 
 
