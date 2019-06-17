@@ -231,6 +231,28 @@ starting off with random inputWeights & biases
 
 
 
+if we want it the other way?
+use dark, light, to get colors instead
+
+```js
+
+	const invertedTrainingData = []
+
+	for ( let i = 0; i < colors.length; i++ ) {
+		invertedTrainingData.push({
+			input: brightnesses[ i ],
+			output: colors[ i ]
+		})
+	}
+
+	const invertedNet = new.brain.NeuralNetwork({ hiddenLayers: [ 3 ] })
+
+	const invertedStats = invertedNet.train( invertedTrainingData );
+
+```
+
+
+
 ---
 
 
