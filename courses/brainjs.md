@@ -261,6 +261,48 @@ use dark, light, to get colors instead
 
 
 
+```js
+
+	//	which restaurant to go to on which day
+	const restaurants = {
+		"Brilliant Yellow Corral": "Monday",
+		"Penny’s": "Tuesday",
+		"Right Coast Wings": "Wednesday",
+		"The Delusion Last Railway Car": "Thursday",
+		"Fun Day Inn": "Friday",
+		"JHOP": "Saturday",
+		"Owls": "Sunday"
+	}
+
+	// input: { Monday, Tuesday, Wednesday, etc. }
+	// output: { Restaurant1, Restaurant2 }
+
+	const trainingData = []
+
+	for ( let restaurantName in restaurants ) {
+		const dayOfWeek = restaurants[ restaurantName ]
+		trainingData.push({
+			input: { [ dayOfWeek ]: 1 },
+			output: { [ restaurantName ]: 1 }
+		});
+	}
+
+	const net = new brain.NeuralNetwork({ hiddenLayers: [ 3 ] })
+
+	const stats = net.train( trainingData )
+
+	console.log( stats )
+	//	{ error: 0.004999649141397284, iterations: 1978 }
+
+	console.log(
+		net.run({ 'Monday': 1 })
+	);
+	//	{ Brilliant Yellow Corral: 0.8856178522109985, Penny’s: 0.0613485723733902, Right Coast Wings: 0.06930675357580185, The Delusion Last Railway Car: 0.013687257654964924, Fun Day Inn: 0.0006127985543571413, JHOP: 0.019557546824216843, Owls: 0.042483992874622345 }
+
+```
+
+
+
 ---
 
 
