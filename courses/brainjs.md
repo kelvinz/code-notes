@@ -303,6 +303,34 @@ use dark, light, to get colors instead
 
 
 
+if we want to get just one result instead of probability of all
+
+```js
+
+	function restaurantForDay( dayOfWeek ) {
+		const result = net.run({ [ dayOfWeek ]: 1 })
+		let highestValue = 0,
+			highestRestaurantName = ''
+
+		for ( let restaurantName in result ) {
+			if ( result[ restaurantName ] in result ) {
+				if ( result[ restaurantName ] > highestValue ) {
+					highestValue = result[ restaurantName ]
+					highestRestaurantName = restaurantName
+				}
+			}
+		}
+
+		return highestRestaurantName
+	}
+
+	console.log( restaurantForDay( 'Monday' ));
+	//	Brilliant Yellow Corral
+
+```
+
+
+
 ---
 
 
