@@ -339,6 +339,29 @@ if we want to get just one result instead of probability of all
 
 
 
+reccurent = depth/time sequence
+find out what's next
+
+```js
+
+	const trainingData = [
+		[ 1, 2, 3, 4, 5 ],
+		[ 5, 4, 3, 2, 1 ]
+	]
+
+	const net = new brain.recurrent.LSTMTimeStep()
+
+	net.train(trainingData)
+
+	console.log( net.run([ 1, 2, 3, 4 ] ))
+	console.log( net.run([ 5, 4, 3, 2 ] ));
+	//	4.984043121337891
+	//	1.0050597190856934
+
+```
+
+
+
 ---
 
 
