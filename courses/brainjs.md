@@ -429,6 +429,41 @@ a more generalized approach
 # example: stock price predictor
 
 
+continue from above
+
+```js
+
+	const scaledData = rawData.map( scaleDOwn )
+
+	const trainingData = [
+		scaledData.slice( 0, 5 ),
+		scaledData.slice( 5, 10 ),
+		scaledData.slice( 10, 15 ),
+		scaledData.slice( 15, 20 )
+	]
+
+	const net = new brain.reccurent.LSTMTimeStep({
+		inputSize: 4,
+		hiddenLayers: [ 8, 8 ],
+		outputSize: 4
+	})
+
+	net.train( trainingData, {
+		learningRate: 0.005,
+		errorThresh: 0.02,
+	})
+
+	console.log( net.run( trainingData[ 0 ] ))
+	//	{ open: 1.0385923385620117, high: 1.0430594682693481, low: 1.0190941095352173, close: 1.0272064208984375 }
+
+	//	denormalize result
+	console.log( scaleUp( net.run( trainingData[ 0 ] )));
+	//	{ open: 143.26656889915466, high: 144.82152271270752, low: 143.62225341796875, close: 145.2148139476776 }
+
+
+```
+
+
 
 ---
 
