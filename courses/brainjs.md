@@ -370,6 +370,58 @@ find out what's next
 
 
 
+scaling data to between 0 & 1
+easier for machines to digest
+
+```js
+
+	//	rawData = [{ open: number, high: number, low: number, close: number }]
+
+	//	lowest data in the example list is 138
+
+	//	normalize
+	function scaleDown( step ) {
+		return {
+			open: step.open / 138,
+			high: step.high / 138,
+			low: step.low / 138,
+			close: step.close / 138
+		}
+	}
+
+	console.log( scaleDown( rawData[ 0 ] ))
+	//	{ open: 1.0222579710144928, high: 1.0224739130434783, low: 1.0056246376811593, close: 1.0129695652173913 }
+
+	//	denormalize
+	function scaleUp( step ) {
+		return {
+			open: step.open * 138,
+			high: step.high * 138,
+			low: step.low * 138,
+			close: step.close * 138
+		}
+	}
+
+	console.log( scaleUp( scaleDown( rawData[ 0 ] )));
+	//	{ open: 141.07160000000002, high: 141.1014, low: 138.7762, close: 139.7898 }
+
+```
+
+a more generalized approach
+
+```js
+
+	//	open: ( step.open - lowest ) / ( highest - lowest ),
+	//	open: ( 140 - 138 ) / ( 147 - 138 )
+	//	actually equals:
+	//	140 - 138 = 2
+	//	147 - 138 = 9
+	//	2 / 9 = 0.22222222
+
+```
+
+
+
 ---
 
 
