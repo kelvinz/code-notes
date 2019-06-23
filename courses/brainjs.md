@@ -473,6 +473,24 @@ continue from above
 
 
 
+continue from above
+instead of just predicting the next step
+we will try to predict multiple steps
+
+```js
+
+	//	get next 3 steps
+	console.log( net.forecast([
+		trainingData[ 0 ][ 0 ],
+		trainingData[ 0 ][ 1 ]
+	], 3 ).map( scaleUp ));
+
+	//	[{ open: 141.25500440597534, high: 142.67968368530273, low: 140.4848563671112, close: 142.29841804504395 }, { open: 142.92139649391174, high: 144.16087174415588, low: 142.50964736938477, close: 143.6745343208313 }, { open: 143.55654859542847, high: 145.03005409240723, low: 143.25207567214966, close: 144.46179127693176 }]
+
+```
+
+
+
 ---
 
 
