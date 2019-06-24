@@ -499,6 +499,88 @@ we will try to predict multiple steps
 
 
 
+feed strings to learn math
+
+```js
+
+	const trainingData = [
+		'0+0=0',
+		'0+1=1',
+		'0+2=2',
+		'0+3=3',
+		'0+4=4',
+		'0+5=5',
+
+		'1+0=1',
+		'1+1=2',
+		'1+2=3',
+		'1+3=4',
+		'1+4=5',
+		'1+5=6',
+
+		'2+0=2',
+		'2+1=3',
+		'2+2=4',
+		'2+3=5',
+		'2+4=6',
+		'2+5=7',
+
+		'3+0=3',
+		'3+1=4',
+		'3+2=5',
+		'3+3=6',
+		'3+4=7',
+		'3+5=8',
+
+		'4+0=4',
+		'4+1=5',
+		'4+2=6',
+		'4+3=7',
+		'4+4=8',
+		'4+5=9',
+
+		'5+0=5',
+		'5+1=6',
+		'5+2=7',
+		'5+3=8',
+		'5+4=9',
+		'5+5=10',
+	]
+
+	//	recurrent neural network works with an input map
+	//	which is like an array
+	//	it maps a value that is coming in to a neuron via an index
+	//	pulling out unique values to for the input map
+	const inputMap = [ '0', '+', '=', '1', '2', '3', '4', '5', '6', '7', '8', '9' ];
+
+	//	if we send in
+	//	0 + 0 = 0
+	//	it will be mapped to
+	[ 1,0,0,0,0,0,0,0,0,0,0,0 ];
+	[ 0,1,0,0,0,0,0,0,0,0,0,0 ];
+	[ 1,0,0,0,0,0,0,0,0,0,0,0 ];
+	[ 0,0,1,0,0,0,0,0,0,0,0,0 ];
+	[ 1,0,0,0,0,0,0,0,0,0,0,0 ];
+	//	this is done internally, aka, we don't have to worry about it
+	//	notice how the index tallies up with the characters passed in
+
+	const net = new brain.recurrent.LSTM({ hiddenLayers: [ 20 ] })
+	net.train( trainingData, { errorThresh: 0.025, log: ( stats ) => console.log( stats ) })
+	//	iterations: 0, training error: 0.1668389986723721
+	//	...
+	//	iterations: 230, training error: 0.025011789954705422
+
+	console.log( net.run( '0+1=' ) )
+	//	1
+	console.log( net.run( '4+1=' ) )
+	//	5
+	console.log( net.run( '2+1=' ) );
+	//	3
+
+```
+
+
+
 ---
 
 
