@@ -589,6 +589,166 @@ feed strings to learn math
 
 
 
+```js
+
+	function toArray( string ) { // normalize
+		if ( string.length !== 7 * 7 ) throw new Error( 'string in wrong size' )
+		return string.split('').map( toNumber )
+	}
+
+	function toNumber( character ) {
+		return character === '#' ? 1 : 0
+	}
+
+	const zero = toArray(
+		'#######' +
+		'#     #' +
+		'#     #' +
+		'#     #' +
+		'#     #' +
+		'#     #' +
+		'#######'
+	)
+
+	const one = toArray(
+		'   #   ' +
+		'   #   ' +
+		'   #   ' +
+		'   #   ' +
+		'   #   ' +
+		'   #   ' +
+		'   #   '
+	)
+
+	const two = toArray(
+		'#######' +
+		'#     #' +
+		'      #' +
+		'     # ' +
+		'   #   ' +
+		' #     ' +
+		'#######'
+	)
+
+	const three = toArray(
+		'#######' +
+		'      #' +
+		'      #' +
+		' ######' +
+		'      #' +
+		'      #' +
+		'#######'
+	)
+
+	const four = toArray(
+		'#     #' +
+		'#     #' +
+		'#     #' +
+		'#######' +
+		'      #' +
+		'      #' +
+		'      #'
+	)
+
+	const five = toArray(
+		'#######' +
+		'#      ' +
+		'#      ' +
+		'#######' +
+		'      #' +
+		'      #' +
+		'#######'
+	)
+
+	const six = toArray(
+		'      #' +
+		'    #  ' +
+		'  #    ' +
+		' ######' +
+		'#     #' +
+		'#     #' +
+		'#######'
+	)
+
+	const seven = toArray(
+		'#######' +
+		'     # ' +
+		'    #  ' +
+		'   #   ' +
+		'  #    ' +
+		' #     ' +
+		'#      '
+	)
+
+	const eight = toArray(
+		'#######' +
+		'#     #' +
+		'#     #' +
+		'#######' +
+		'#     #' +
+		'#     #' +
+		'#######'
+	)
+
+	const nine = toArray(
+		'#######' +
+		'#     #' +
+		'#     #' +
+		'###### ' +
+		'    #  ' +
+		'   #   ' +
+		' #     '
+	)
+
+	const net = new brain.NeuralNetwork()
+	const trainingData = [
+		{ input: zero, output: { zero: 1 } },
+		{ input: one, output: { one: 1 } },
+		{ input: two, output: { two: 1 } },
+		{ input: three, output: { three: 1 } },
+		{ input: four, output: { four: 1 } },
+		{ input: five, output: { five: 1 } },
+		{ input: six, output: { six: 1 } },
+		{ input: seven, output: { seven: 1 } },
+		{ input: eight, output: { eight: 1 } },
+		{ input: nine, output: { nine: 1 } }
+	]
+
+	net.train(trainingData, { log: ( stats ) => console.log( stats ) })
+	//	iterations: 10, training error: 0.09078126809058898
+	//	...
+	//	iterations: 190, training error: 0.005342570493631855
+
+	const result = net.run( toArray(
+		'#######' +
+		'#     #' +
+		'#     #' +
+		'#######' +
+		'#     #' +
+		'#     #' +
+		'#######'
+	))
+
+	console.log( result )
+	//	{ zero: 0.12005739659070969, one: 0.002535067265853286, two: 0.007020252291113138, three: 0.07957419753074646, four: 0.09392401576042175, five: 0.10396166145801544, six: 0.07308097928762436, seven: 0.003825594438239932, eight: 0.7266772985458374, nine: 0.028500506654381752 }
+
+	const result = brain.likely( toArray(
+		'#######' +
+		'#     #' +
+		'#     #' +
+		'#######' +
+		'#     #' +
+		'#     #' +
+		'#######'
+	), net )
+
+	console.log(result);
+	//	eight
+
+```
+
+
+
 ---
 
 
