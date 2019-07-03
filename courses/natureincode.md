@@ -57,6 +57,33 @@ haploid
 
 
 
+eg.
+two allele, A1 & A2
+we can pack them into a A1/A1 diploid or A2/A2 diploid which will be known as heterozygous
+or we can pack them into A1/A2 which is homozygous
+they are genotypes
+
+A1A1 : 15%
+A1A2 : 50%
+A2A2 : 35%
+these are genotype frequencies
+totals to 100%
+
+A1A1 : 15 * 2 = 30 A1 alleles
+A1A2 : 50 = 50 A1, 50 A2 alleles
+A2A2 : 35 * 2 = 70 A2 alleles
+
+A1 = 80 = 40%
+A2 = 120 = 60%
+these are allele frequencies
+
+genotype frequencies can change in one generation
+but allele frequencies will remain the same in the absence of evolutionary influences
+genotype frequencies will remain constant after the inital change
+the frequencies it stays at is known as the hardy weinberg frequencies
+
+
+
 ---
 
 
