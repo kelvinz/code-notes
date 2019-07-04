@@ -105,6 +105,36 @@ the frequencies it stays at is known as the hardy weinberg frequencies
 
 ```
 
+```js
+
+	//	making things more repeatable via functions & loops
+	function create_next_generation() {
+		a1a1 = p * p
+		a1a2 = 2 * p * q
+		a2a2 = q * q
+	}
+
+	for ( var i = 0; i < 5; i++ ) {
+		create_next_generation()
+		console.log( 'generation ' + ( i + 1 ) + ':', a1a1, a1a2, a2a2 );
+	}
+
+```
+
+```js
+
+	//	rounding up to x decimals by multiplying by x00 first
+	//	then bring it back by dividing by x00
+	//	as math.round can't specify the decimals to round to but defaults to 0
+	function round_number( value, decimals ) {
+		var shifter = Math.pow( 10, decimals )
+		return Math.round( value * shifter ) / shifter
+	}
+
+```
+
+
+
 ---
 
 
