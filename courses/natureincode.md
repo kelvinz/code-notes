@@ -162,6 +162,38 @@ the frequencies it stays at is known as the hardy weinberg frequencies
 
 ```
 
+```js
+
+	function toss_coins() {
+		var coins = 10,
+			heads = 0,
+			tails = 0
+
+		for ( var i = 0; i < coins; i++ ) {
+			Math.random() <= .5 ? heads++ : tails++
+		}
+
+		if ( heads === 8 ) {
+			return true
+		} else {
+			return false
+		}
+	}
+
+	var repeats = 1000000,
+		counter = 0
+
+	for ( var i = 0; i < repeats; i++ ) {
+		var desired_outcome = toss_coins()
+		if ( desired_outcome ) {
+			counter++
+		}
+	}
+
+	console.log( 'Getting 8 heads, 2 tails', ( counter / repeats ) * 100, '% of the time' );
+
+```
+
 ---
 
 
