@@ -143,6 +143,25 @@ the frequencies it stays at is known as the hardy weinberg frequencies
 
 
 
+```js
+
+	//	coin flip
+	var coins = 10,
+		headds = 0,
+		tails = 0
+
+	for ( var i = 0; i < coins; i++ ) {
+		if ( Math.random() <= .5 ) {
+			heads++
+		} else {
+			tails++
+		}
+	}
+
+	console.log( heads, 'heads', tails, 'tails' );
+
+```
+
 ---
 
 
