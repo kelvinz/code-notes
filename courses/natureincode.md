@@ -194,6 +194,44 @@ the frequencies it stays at is known as the hardy weinberg frequencies
 
 ```
 
+```js
+
+	//	if population size is not infinite
+	//	we will experience genetic drift
+
+	var
+	//	allele frequency
+	p = .5,
+	//	population size
+	N = 1000,
+	generations = 1000
+
+	function next_generation() {
+		var
+		draws = 2 * N,
+		a1    = 0,
+		a2    = 0
+
+		for ( var i = 0; i < draws; i++ ) {
+			Math.random() <= p ? a1++ : a2++
+		}
+
+		p = a1 / draws
+	}
+
+	function round_number( value, decimals ) {
+		var shifter = Math.pow( 10, decimals )
+		return Math.round( value * shifter ) / shifter
+	}
+
+	for ( var i = 0; i < generations; i++ ) {
+		next_generation()
+		console.log( 'generation ' + i, round_number( p, 4 ), round_number( 1-p, 4 ) )
+		//	fluctuating p & q due to genetic drift
+	}
+
+```
+
 ---
 
 
