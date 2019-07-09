@@ -389,11 +389,51 @@ the frequencies it stays at is known as the hardy weinberg frequencies
 
 ```
 
+```js
+
+	//	setup graph to view multiple sets of generations instead of just one set
+
+	function next_generation( simulation_data ) {
+		...
+		simulation_data.push( p )
+	}
+
+	function simulation( simulation_counter ) {
+		//	reset p
+		p = .5
+
+		for ( var i = 0; i < generations; i++ ) {
+			next_generation( data[ simulation_counter ] )
+		}
+	}
+
+	for ( var i = 0; i < 10; i++ ) {
+		data.push( [ ] )
+		simulation( i )
+	}
+
+```
+
+observation:
+genetic drift will eventually cause genetic variation to go to 0 given enough time
+
+genetic variation is not 0 in real life because there are other factors in action like mutation, etc
+
+
+
 ---
 
 
 
 # mutation
+
+
+
+```js
+
+
+
+```
 
 
 
@@ -405,6 +445,14 @@ the frequencies it stays at is known as the hardy weinberg frequencies
 
 
 
+```js
+
+
+
+```
+
+
+
 ---
 
 
@@ -413,11 +461,27 @@ the frequencies it stays at is known as the hardy weinberg frequencies
 
 
 
+```js
+
+
+
+```
+
+
+
 ---
 
 
 
 # epidemics
+
+
+
+```js
+
+
+
+```
 
 
 
