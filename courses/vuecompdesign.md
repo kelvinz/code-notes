@@ -90,3 +90,55 @@ script
 
 
 
+Lession 2
+# customizing controlled component bindings
+
+
+
+## toggle component
+
+template
+
+```html
+
+	<!--
+		if we want to use custom names instead of the default value, input
+		we can use model to specify the prop & event we want to take in & pass out
+	-->
+
+	<span
+		role="checkbox"
+		tabindex="0"
+		:aria-checked="toggled.toString()"
+		click="toggle"
+		@keydown.space.prevent="toggle"
+	>
+	</span>
+
+```
+
+script
+
+```js
+
+	export default {
+		model: {
+			prop: 'toggled',
+			event: 'toggle'
+		},
+		props: [ 'toggled' ],
+		methods: {
+			toggle() {
+				this.$emit( 'toggle', !this.toggled )
+			}
+		}
+	}
+
+```
+
+
+
+---
+
+
+
