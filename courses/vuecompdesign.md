@@ -142,3 +142,91 @@ script
 
 
 
+Lession 3
+# wrapping external libraries
+
+
+
+## parent
+
+template
+
+```html
+
+	<!-- note:
+		when passing in strings a normal variable like format will do
+		when passing in objects we need a : infront of it
+	-->
+	<date-picker
+		v-model="date"
+		format="YYYY-MM-DD"
+		:options="{ firstDay: 1 }"
+	>
+	</date-picker>
+
+```
+
+script
+
+```js
+
+	import Pikaday from 'pikaday'
+	import DatePicker from './components/DatePicker.vue'
+
+	export default {
+		data() {
+			return {
+				date: '2019-07-07'
+			}
+		}
+	}
+
+```
+
+## component
+
+template
+
+```html
+
+	<input
+		:value="value"
+		type="text"
+		ref="input"
+		placeholder="YYYY-MM-DD"
+	/>
+
+```
+
+script
+
+```js
+
+	import Pikaday from 'pikaday'
+
+	export default {
+		props: {
+			value: { required: true },
+			format: { default: 'YYYY-MM-DD' },
+			options: { default: {} }
+		},
+		mounted() {
+			const picker = new Pikaday({
+				field: this.$refs.input,
+				format: this.format,
+				onSelect: () => {
+					this.$emit( 'input', picker.toString() )
+				},
+				...this.options
+			})
+		}
+	}
+
+```
+
+
+
+---
+
+
+
