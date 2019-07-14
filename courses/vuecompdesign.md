@@ -326,3 +326,86 @@ css
 
 
 
+**option 2**
+
+-	use global event listener in modal
+
+## component
+
+template
+
+```html
+
+	<div class="modal">
+		<h1>Lorem ipsum.</h1>
+		<button @click="dismiss" type="button"></button>
+	</div>
+
+```
+
+script
+
+```js
+
+	export default {
+		props: [ 'show' ],
+		created() {
+			this.escapeHandler = ( e ) => {
+				if ( e.key === 'Escape' && this.show ) {
+					this.dismiss()
+				}
+			}
+
+			document.addEventListener( 'keydown', this.escapeHandler )
+		},
+		destroyed() {
+			document.removeEventListener( 'keydown', this.escapeHandler )
+		},
+		methods: {
+			dismiss() {
+				this.$emit( 'close' )
+			}
+		}
+	}
+
+```
+
+-	alternative way to handle removeEventListener
+-	using this.$once to only run it one time
+-	during when destroyed hook runs
+-	since it's in same scope, we can use const variable
+-	instead of this.var which is a component data prop
+
+script
+
+```js
+
+	export default {
+		props: [ 'show' ],
+		created() {
+			const escapeHandler = ( e ) => {
+				if ( e.key === 'Escape' && this.show ) {
+					this.dismiss()
+				}
+			}
+
+			document.addEventListener( 'keydown', escapeHandler )
+
+			this.$once( 'hook:destroyed', () => {
+				document.removeEventListener( 'keydown', escapeHandler )
+			})
+		},
+		methods: {
+			dismiss() {
+				this.$emit( 'close' )
+			}
+		}
+	}
+
+```
+
+
+---
+
+
+
