@@ -230,3 +230,99 @@ script
 
 
 
+Lession 4
+# encapsulating behavior - global events
+
+
+
+**option 1**
+
+-	add tabindex to make modal focusable
+-	add css to hide focus outline of modal
+-	watch for state change to focus on modal
+-	use nexttick to wait for dom change to activate focus
+
+## parent
+
+template
+
+```html
+
+	<button type="button" @click="modalOpen = true">Open Modal</button>
+
+	<announcement-modal
+		:show="modalOpen"
+		@close="modalOpen = false"
+	>
+	</announcement-modal>
+
+```
+
+script
+
+```js
+
+	import AnnouncementModal from './components/AnnouncementModal.vue'
+
+	export default {
+		components: {
+			AnnouncementModal
+		},
+		data() {
+			return {
+				modalOpen: false
+			}
+		}
+	}
+
+```
+
+## component
+
+template
+
+```html
+
+	<div class="modal" ref="modal" @keydown.esc="dismiss" tabindex="0">
+		<h1>Lorem ipsum.</h1>
+		<button @click="dismiss" type="button"></button>
+	</div>
+
+```
+
+script
+
+```js
+
+	export default {
+		props: [ 'show' ],
+		watch: {
+			show( show ) {
+				if ( show ) {
+					this.$nextTick( () => {
+						this.$refs.modal.focus()
+					})
+				}
+			}
+		},
+		methods: {
+			dismiss() {
+				this.$emit( 'close' )
+			}
+		}
+	}
+
+```
+
+css
+
+```css
+
+	.modal: focus {
+		outline: 0;
+	}
+
+```
+
+
+
