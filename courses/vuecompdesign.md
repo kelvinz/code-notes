@@ -409,3 +409,69 @@ script
 
 
 
+Lession 5
+# encapsulating behavior - direct dom manipulation
+
+
+
+script
+
+```js
+
+	export default {
+		props: {
+			show: { required: true },
+			preventBgScroll: { default: true }
+		}
+		watch: {
+			show( show ) {
+				if ( show ) {
+					this.preventBgScroll && document.body.style.setProperty( 'overflow', 'hidden' )
+				} else {
+					this.preventBgScroll && document.body.style.removeProperty( 'overflow' )
+				}
+			}
+		}
+	}
+
+```
+
+-	watcher doesn't run on start
+-	only when value changes
+-	so if eg. modal is open by default
+-	the preventBgScroll doesn't get activated like it should
+-	to solve it
+-	make the watcher an object
+-	pass immediate to true ( it's default was false )
+
+script
+
+```js
+
+	export default {
+		props: {
+			show: { required: true },
+			preventBgScroll: { default: true }
+		}
+		watch: {
+			show: {
+				immediate: true,
+				handler: function( show ) {
+					if ( show ) {
+						this.preventBgScroll && document.body.style.setProperty( 'overflow', 'hidden' )
+					} else {
+						this.preventBgScroll && document.body.style.removeProperty( 'overflow' )
+					}
+				}
+			}
+		}
+	}
+
+```
+
+
+
+---
+
+
+
