@@ -475,3 +475,62 @@ script
 
 
 
+Lession 6
+# encapsulating behavior - portals
+
+
+
+-	npm install portal-vue
+-	render children of a component into difference place on dom hierarchy
+
+## main.js
+
+```js
+
+	import PortalVue from 'portal-vue'
+
+	Vue.use( PortalVue );
+
+```
+
+## parent
+
+template
+
+```html
+
+	<user-settings-form
+		:account-id="accountId"
+	>
+	</user-settings-form>
+
+	<portal-target name="modals"></portal-target>
+
+```
+
+script
+
+## component
+
+template
+
+```html
+
+	<button>
+		...
+		<portal to="modals">
+			<confirm-delete-modal
+				...
+			>
+			</confirm-delete-modal>
+		</portal>
+	</button>
+
+```
+
+
+
+---
+
+
+
