@@ -534,3 +534,36 @@ template
 
 
 
+Lession 7
+# encapsulating behavior - reusing portals
+
+
+
+-	portal targets can only hold one content at a time
+-	conditionally render component to solve this issue
+
+
+## component
+
+template
+
+```html
+
+	<!-- only render portal into target if... -->
+	<portal to="modals" v-if="showAnnouncement">
+		...
+	</portal>
+
+	<!-- only render portal into target if... -->
+	<portal to="modals" v-if="confirmDeleteModalOpen">
+		...
+	</portal>
+
+```
+
+
+
+---
+
+
+
