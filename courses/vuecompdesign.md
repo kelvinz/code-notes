@@ -567,3 +567,74 @@ template
 
 
 
+Lession 8
+# injecting content using slots
+
+
+
+## parent
+
+template
+
+```html
+
+	<primary-button>
+		Download
+	</primary-button>
+
+```
+
+## component
+
+template
+
+```html
+
+	<button type="button">
+		<slot></slot>
+	</button>
+
+```
+
+## parent
+
+template
+
+```html
+
+	<media-card>
+		<img src="..." slot="image">
+		<template slot="heading">
+			Heading text
+		</template>
+		<p>Body text</p>
+	</media-card>
+
+```
+
+## component
+
+template
+
+```html
+
+	<div class="media-card">
+		<slot name="image"></slot>
+		<h4 class="heading">
+			<slot name="heading">
+				Dedault heading if no heading passed in
+			</slot>
+		</h4>
+		<div class="body">
+			<slot></slot>
+		</div>
+	</div>
+
+```
+
+
+
+---
+
+
+
