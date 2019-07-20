@@ -638,3 +638,42 @@ template
 
 
 
+Lession 9
+# native-style buttons using slots & class merging
+
+
+
+-	vue will merge the parent's component class
+-	into the actual component
+-	so you can style the imported component from above
+
+## parent
+
+template
+
+```html
+
+	<delete-account-button class="text-red-dark">
+		Cancel Account
+	</delete-account-button>
+
+```
+
+## component
+
+template
+
+```html
+
+	<button type="button" class="hover:underline">
+		<slot></slot>
+	</button>
+
+```
+
+
+
+---
+
+
+
