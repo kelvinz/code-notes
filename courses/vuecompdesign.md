@@ -775,3 +775,67 @@ script
 
 
 
+Lession 11
+# passing data up using scoped slots
+
+
+
+## parent
+
+**option 1**
+
+template
+
+```html
+
+	<!-- pass pseudo-slot as a prop down which is a function which can be run in component -->
+	<contact-list
+		:pseudo-slot="( contact ) => contact.name.first"
+	>
+	</contact-list>
+
+	<!-- 1b option -->
+	<contact-list
+		:pseudo-slot="( prop ) => prop.contact.name.first"
+	>
+	</contact-list>
+
+	<!-- using es6 destructuring -->
+	<contact-list
+		:pseudo-slot="({ contact }) => contact.name.first"
+	>
+	</contact-list>
+
+```
+
+## component
+
+template
+
+```html
+
+	<!-- pass contact data from component up by running pseudo slot ( prop ) function -->
+	<!-- which in turns pass the results back down -->
+	<div>
+		{{ pseudoSlot( contact ) }}
+	</div>
+
+	<!-- 1b option -->
+	<div>
+		{{ pseudoSlot({ contact: contact }) }}
+	</div>
+
+```
+
+script
+
+```js
+
+	export default {
+		props: [ 'pseudoSlot']
+	}
+
+```
+
+
+
