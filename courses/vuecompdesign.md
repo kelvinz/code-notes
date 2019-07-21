@@ -677,3 +677,101 @@ template
 
 
 
+Lession 10
+# extending components using composition
+
+
+
+## parent
+
+template
+
+```html
+
+	<modal-dialog :show="show" @close="dismiss">
+		<h1>Exciting new features are here!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis placeat, obcaecati fuga laboriosam. Totam reiciendis dicta assumenda dolorem, dolores iure nemo repellendus officia deserunt id quas qui saepe, voluptas voluptates.</p>
+		<button @click="dismiss" type="button">Dismiss</button>
+	</modal-dialog>
+
+```
+
+script
+
+```js
+
+	import ModalDialog from './ModalDialog.vue'
+
+	export default {
+		components: {
+			ModalDialog
+		},
+		props: [ 'show' ],
+		methods: {
+			dismiss() {
+				this.$emit( 'close' )
+			}
+		}
+	}
+
+```
+
+## component
+
+template
+
+```html
+
+	<div class="modal-backdrop" v-show="show">
+		<div class="modal">
+			<slot></slot>
+		</div>
+	</div>
+
+```
+
+script
+
+```js
+
+	export default {
+		props: [ 'show' ],
+		watch: {
+			show: {
+				immediate: true,
+				handler: ( show ) => {
+					if ( show ) {
+						document.body.style.setProperty( 'overflow', 'hidden' )
+					} else {
+						document.body.style.removeProperty( 'overflow' )
+					}
+				}
+			}
+		},
+		methods: {
+			cancel() {
+				this.$emit( 'close' )
+			}
+		},
+		created() {
+			const escapeHandler = ( e ) => {
+				if ( e.key === 'Escape' && this.show ) {
+					this.cancel()
+				}
+			}
+
+			document.addEventListener( 'keydown', escapeHandler )
+			this.$once( 'hook:destroyed', () => {
+				document.removeEventListener( 'keydown', escapeHandler )
+			})
+		}
+	}
+
+```
+
+
+
+---
+
+
+
