@@ -839,3 +839,41 @@ script
 
 
 
+**option 2**
+
+template
+
+```html
+
+	<contact-list>
+		<a slot-scope="props" :href="`/contact/${ props.contact.id }`">
+			{{ contact.name.first }}
+		</a>
+	</contact-list>
+
+	<!-- using es6 destructuring -->
+	<contact-list>
+		<a slot-scope="{ contact }" :href="`/contact/${ contact.id }`">
+			{{ contact.name.first }}
+		</a>
+	</contact-list>
+
+```
+
+## component
+
+template
+
+```html
+
+	<!-- passing up a key/value pair -->
+	<slot :contact="contact"></slot>
+
+```
+
+
+
+---
+
+
+
