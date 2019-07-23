@@ -877,3 +877,45 @@ template
 
 
 
+Lession 12
+# render functions 101
+
+
+
+## parent
+
+template
+
+```html
+
+	<!--
+		to render this span template below
+		we can use instead use the render function too
+		thus we don't need the span below
+	-->
+
+	<span class="text-xl text-blue font-bold">
+		Hello world!
+	</span>
+
+```
+
+script
+
+```js
+
+	export default {
+		render( createElement ) {
+			//	( element, attributes, children )
+			return createElement( 'span', {
+				attrs: {
+					class: 'text-xl text-blue font-bold'
+				}
+			}, 'Hello world!' )
+		}
+	}
+
+```
+
+
+
