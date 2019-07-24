@@ -919,3 +919,58 @@ script
 
 
 
+**the use for this**
+
+## parent
+
+template
+
+```html
+
+	<hello-world tag="button"></hello-world>
+
+```
+
+script
+
+```js
+
+	import HelloWorld from './components/HelloWorld.vue'
+
+	export default {
+		components: {
+			HelloWorld
+		}
+	}
+
+```
+
+## component
+
+template
+
+```html
+
+	<!-- no need html template in this case -->
+
+```
+
+script
+
+```js
+
+	export default {
+		props: [ 'tag' ],
+		render( createElement ) {
+			return createElement( this.tag, {
+				attrs: {
+					class: 'blue'
+				}
+			}, 'Hello world!' )
+		}
+	}
+
+```
+
+
+
