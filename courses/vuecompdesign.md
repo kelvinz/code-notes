@@ -974,3 +974,67 @@ script
 
 
 
+**adding event handlers**
+
+## parent
+
+template
+
+```html
+
+	<hello-world tag="button"></hello-world>
+
+```
+
+script
+
+```js
+
+	import HelloWorld from './components/HelloWorld.vue'
+
+	export default {
+		components: {
+			HelloWorld
+		}
+	}
+
+```
+
+## component
+
+template
+
+```html
+
+	<!-- no need html template in this case -->
+
+```
+
+script
+
+```js
+
+	export default {
+		props: [ 'tag' ],
+		render( createElement ) {
+			//	this.tag comes from top & determines the tag holding the template content
+			return createElement( this.tag, {
+				attrs: {
+					class: 'blue'
+				},
+				//	emitting a click $event
+				on: {
+					click: () => alert( 'Clicked!' )
+				}
+			}, 'Hello world!' )
+		}
+	}
+
+```
+
+
+
+---
+
+
+
