@@ -1038,3 +1038,31 @@ script
 
 
 
+Lession 13
+# render functions & components
+
+
+
+## parent
+
+script
+
+```js
+
+	import PrimaryButton from './PrimaryButton.vue'
+
+	export default {
+		render( createElement ) {
+			return createElement( PrimaryButton, {
+				//	native browser click
+				nativeOn: {
+					click: () => alert( 'Clicked!' )
+				}
+			}, 'Hello world!' )
+		}
+	}
+
+```
+
+
+
