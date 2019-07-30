@@ -1224,3 +1224,57 @@ script
 
 
 
+**scoped slot**
+
+## parent
+
+template
+
+```html
+
+	<hello-world>
+		<template slot-scope="{ subject }">
+			hello {{ subject }}
+		</template>
+	</hello-world>
+
+```
+
+script
+
+```js
+
+	import HelloWorld from './components/HelloWorld.vue'
+
+	export default {
+		components: {
+			HelloWorld
+		}
+	}
+
+```
+
+## component
+
+script
+
+```js
+
+	export default {
+		render( createElement ) {
+			return createElement( 'span', {
+				attrs: {
+					class: 'text-xl text-blue font-bold'
+				}
+			}, [
+				this.$scopedSlots.default({
+					subject: 'universe'
+				})
+			])
+		}
+	}
+
+```
+
+
+
