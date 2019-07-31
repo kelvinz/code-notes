@@ -1278,3 +1278,55 @@ script
 
 
 
+**scoped slot simplier**
+
+## parent
+
+template
+
+```html
+
+	<hello-world>
+		<strong slot-scope="{ subject }">
+			hello {{ subject }}
+		</strong>
+	</hello-world>
+
+```
+
+script
+
+```js
+
+	import HelloWorld from './components/HelloWorld.vue'
+
+	export default {
+		components: {
+			HelloWorld
+		}
+	}
+
+```
+
+## component
+
+script
+
+```js
+
+	export default {
+		render( createElement ) {
+			return this.$scopedSlots.default({
+				subject: 'universe'
+			})
+		}
+	}
+
+```
+
+
+
+---
+
+
+
