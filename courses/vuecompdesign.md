@@ -1330,3 +1330,79 @@ script
 
 
 
+Lession 16
+# data provider components
+
+
+
+## parent
+
+template
+
+```html
+
+	<fetch-json url="/contacts.json">
+		<div class="card" slots-scope="{ json: contacts, loading }">
+			<div v-if="loading">Loading...</div>
+			<div v-else>
+				<div v-for="contact in contacts" :key="contact.id">
+					{{ contact.name.first }}
+				</div>
+			</div>
+		</div>
+	</fetch-json>
+
+```
+
+script
+
+```js
+
+	import FetchJson from './components/FetchJson.vue'
+
+	export default {
+		components: {
+			FetchJson
+		}
+	}
+
+```
+
+## component
+
+script
+
+```js
+
+	export default {
+		props: [ 'url' ],
+		data() {
+			return {
+				json: null,
+				loading: true
+			}
+		},
+		created() {
+			fetch( this.url )
+				.then( response => response.json() )
+				.then( json => {
+					this.json = json
+					this.loading = false
+				})
+		},
+		render() {
+			return this.$scopedSlots.default({
+				json: this.json,
+				loading: this.loading
+			})
+		}
+	}
+
+```
+
+
+
+---
+
+
+
