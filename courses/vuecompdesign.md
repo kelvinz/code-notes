@@ -1406,3 +1406,63 @@ script
 
 
 
+Lession 17
+# getting started with renderless components
+
+
+
+## parent
+
+template
+
+```html
+
+	<renderless-tag-input>
+		<div slot-scope="{ }">
+
+		</div>
+	</renderless-tag-input>
+
+```
+
+script
+
+```js
+
+	import RenderlessTagInput from './components/RenderlessTagInput.vue'
+
+	export default {
+		components: {
+			RenderlessTagInput
+		},
+		data() {
+			return {
+				tags: [ 'awesome', 'excellent', 'amazing' ]
+			}
+		}
+	}
+
+```
+
+## component
+
+script
+
+```js
+
+	export default {
+		render() {
+			return this.$scopedSlots.default({
+
+			})
+		}
+	}
+
+```
+
+
+
+---
+
+
+
