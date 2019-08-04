@@ -1533,3 +1533,78 @@ script
 
 
 
+Lession 19
+# passing action props
+
+
+
+## parent
+
+template
+
+```html
+
+	<renderless-tag-input v-model="tags">
+		<div slot-scope="{ tags, removeTag }">
+			<span v-for="tag in tags" :key="tag">
+				{{ tag }}
+				<button @click="removeTag( tag )">
+				</button>
+			</span>
+		</div>
+	</renderless-tag-input>
+
+```
+
+script
+
+```js
+
+	import RenderlessTagInput from './components/RenderlessTagInput.vue'
+
+	export default {
+		components: {
+			RenderlessTagInput
+		},
+		data() {
+			return {
+				tags: [ 'awesome', 'excellent', 'amazing' ]
+			}
+		}
+	}
+
+```
+
+## component
+
+script
+
+```js
+
+	export default {
+		model: {
+			prop: 'tags',
+			event: 'update'
+		},
+		props: [ 'tag' ],
+		methods: {
+			removeTag( tag ) {
+				this.$emit( 'update', this.tags.filter( t => t !=== tag ) )
+			}
+		},
+		render() {
+			return this.$scopedSlots.default({
+				tags: this.tags,
+				removeTag: this.removeTag
+			})
+		}
+	}
+
+```
+
+
+
+---
+
+
+
