@@ -1466,3 +1466,70 @@ script
 
 
 
+Lession 18
+# passing data props
+
+
+
+## parent
+
+template
+
+```html
+
+	<renderless-tag-input v-model="tags">
+		<div slot-scope="{ tags }">
+			<span v-for="tag in tags" :key="tag">
+				{{ tag }}
+			</span>
+		</div>
+	</renderless-tag-input>
+
+```
+
+script
+
+```js
+
+	import RenderlessTagInput from './components/RenderlessTagInput.vue'
+
+	export default {
+		components: {
+			RenderlessTagInput
+		},
+		data() {
+			return {
+				tags: [ 'awesome', 'excellent', 'amazing' ]
+			}
+		}
+	}
+
+```
+
+## component
+
+script
+
+```js
+
+	export default {
+		model: {
+			prop: 'tags',
+			event: 'update'
+		},
+		props: [ 'tags' ],
+		render() {
+			return this.$scopedSlots.default({
+				tags: this.tags
+			})
+		}
+	}
+
+```
+
+
+
+---
+
+
+
