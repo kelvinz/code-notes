@@ -1608,3 +1608,127 @@ script
 
 
 
+Lession 20
+# passing binding props
+
+
+
+-	these 3 are the same
+	-	:value="inputValue"
+	-	v-bind:value="inputValue"
+	-	v-bind="{ value: inputValue }"
+
+## parent
+
+template
+
+```html
+
+	<renderless-tag-input v-model="tags">
+		<div slot-scope="{ tags, removeTag, inputProps, inputEvents }">
+			<span v-for="tag in tags" :key="tag">
+				{{ tag }}
+				<button @click="removeTag( tag )"></button>
+			</span>
+			<input placeholder="Add tag..."
+				v-bind="inputProps"
+				v-on="inputEvents"
+			>
+		</div>
+	</renderless-tag-input>
+
+```
+
+script
+
+```js
+
+	import RenderlessTagInput from './components/RenderlessTagInput.vue'
+
+	export default {
+		components: {
+			RenderlessTagInput
+		},
+		data() {
+			return {
+				tags: [ 'awesome', 'excellent', 'amazing' ]
+			}
+		}
+	}
+
+```
+
+## component
+
+script
+
+```js
+
+	export default {
+		model: {
+			prop: 'tags',
+			event: 'update'
+		},
+		props: [ 'tag' ],
+		data() {
+			return {
+				input: ''
+			}
+		},
+		computed: {
+			newTag() {
+				return this.input.trim()
+			}
+		},
+		methods: {
+			removeTag( tag ) {
+				this.$emit( 'update', this.tags.filter( t => t !=== tag ) )
+			},
+			addTag() {
+				if ( this.newTag.length === 0 || this.tags.includes( this.newTag ) ) {
+					return
+				}
+				this.$emit( 'update', [ ...this.tags, this.newTag ] )
+				this.clearInput()
+			},
+			clearInput() {
+				this.input = ''
+			},
+			handleBackspace( e ) {
+				if ( this.newTag.length === 0 ) {
+					this.$emit( 'update', this.tags.slice( 0, -1 ) )
+				}
+			}
+		},
+		render() {
+			return this.$scopedSlots.default({
+				tags: this.tags,
+				removeTag: this.removeTag,
+				inputProps: {
+					value: this.input
+				},
+				inputEvents: {
+					input: e => this.input = e.target.value,
+					keydown: e => {
+						if ( e.key === 'Backspace' ) {
+							this.handleBackspace()
+						}
+
+						if ( e.key === 'Enter' ) {
+							e.preventDefault()
+							this.addTag()
+						}
+					}
+				}
+			})
+		}
+	}
+
+```
+
+
+
+---
+
+
+
