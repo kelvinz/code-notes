@@ -1732,3 +1732,131 @@ script
 
 
 
+Lession 21
+# using functions as binding props
+
+
+
+-	const barker = () => ({ bark: () => console.log( 'woof' ) })
+-	is the same as
+-	const barker = () => { return { bark: () => console.log( 'woof' ) } }
+
+## parent
+
+template
+
+```html
+
+	<renderless-tag-input v-model="tags">
+		<div slot-scope="{ tags, removeTag, removeButtonEvents, inputProps, inputEvents }">
+			<span v-for="tag in tags" :key="tag">
+				{{ tag }}
+				<button v-on="removeButtonEvents( tag )"></button>
+			</span>
+			<input placeholder="Add tag..."
+				v-bind="inputProps"
+				v-on="inputEvents"
+			>
+		</div>
+	</renderless-tag-input>
+
+```
+
+script
+
+```js
+
+	import RenderlessTagInput from './components/RenderlessTagInput.vue'
+
+	export default {
+		components: {
+			RenderlessTagInput
+		},
+		data() {
+			return {
+				tags: [ 'awesome', 'excellent', 'amazing' ]
+			}
+		}
+	}
+
+```
+
+## component
+
+script
+
+```js
+
+	export default {
+		model: {
+			prop: 'tags',
+			event: 'update'
+		},
+		props: [ 'tag' ],
+		data() {
+			return {
+				input: ''
+			}
+		},
+		computed: {
+			newTag() {
+				return this.input.trim()
+			}
+		},
+		methods: {
+			removeTag( tag ) {
+				this.$emit( 'update', this.tags.filter( t => t !=== tag ) )
+			},
+			addTag() {
+				if ( this.newTag.length === 0 || this.tags.includes( this.newTag ) ) {
+					return
+				}
+				this.$emit( 'update', [ ...this.tags, this.newTag ] )
+				this.clearInput()
+			},
+			clearInput() {
+				this.input = ''
+			},
+			handleBackspace( e ) {
+				if ( this.newTag.length === 0 ) {
+					this.$emit( 'update', this.tags.slice( 0, -1 ) )
+				}
+			}
+		},
+		render() {
+			return this.$scopedSlots.default({
+				tags: this.tags,
+				removeTag: this.removeTag,
+				removeButtonEvents: ( tag ) => ({
+					click: () => {
+						this.removeTag( tag )
+					}
+				}),
+				inputProps: {
+					value: this.input
+				},
+				inputEvents: {
+					input: e => this.input = e.target.value,
+					keydown: e => {
+						if ( e.key === 'Backspace' ) {
+							this.handleBackspace()
+						}
+
+						if ( e.key === 'Enter' ) {
+							e.preventDefault()
+							this.addTag()
+						}
+					}
+				}
+			})
+		}
+	}
+
+```
+
+
+
+---
+
+
+
