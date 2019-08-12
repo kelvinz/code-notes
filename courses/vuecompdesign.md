@@ -2099,3 +2099,153 @@ script
 				this.$emit( 'update', [ ...this.tags, this.newTag ] )
 				this.clearInput()
 			},
+			clearInput() {
+				this.input = ''
+			},
+			handleBackspace( e ) {
+				if ( this.newTag.length === 0 ) {
+					this.$emit( 'update', this.tags.slice( 0, -1 ) )
+				}
+			}
+		},
+		render() {
+			return this.$scopedSlots.default({
+				tags: this.tags,
+				removeTag: this.removeTag,
+				addTag: this.addTag,
+				removeButtonEvents: ( tag ) => ({
+					click: () => {
+						this.removeTag( tag )
+					}
+				}),
+				inputProps: {
+					value: this.input
+				},
+				inputEvents: {
+					input: e => this.input = e.target.value,
+					keydown: e => {
+						if ( e.key === 'Backspace' && this.removeOnBackspace ) {
+							this.handleBackspace()
+						}
+
+						if ( e.key === 'Enter' ) {
+							e.preventDefault()
+							this.addTag()
+						}
+					}
+				}
+			})
+		}
+	}
+
+```
+
+
+
+---
+
+
+
+Lession 24
+# wrapping renderless components
+
+
+
+-	component inside component
+
+## parent
+
+template
+
+```html
+
+	<stacked-tag-input v-model="tags"></stacked-tag-input>
+
+```
+
+script
+
+```js
+
+	import StackedTagInput from './components/StackedTagInput.vue'
+
+	export default {
+		components: {
+			StackedTagInput
+		},
+		data() {
+			return {
+				tags: [ 'awesome', 'excellent', 'amazing' ]
+			}
+		}
+	}
+
+```
+
+## component
+
+template
+
+```html
+
+	<renderless-tag-input
+		:tags="tags"
+		@update="(newTags) => $emit('update', newTags)"
+		:remove-on-backspace="false"
+	>
+		<div class="stacked-tag-input"
+			slot-scope="{ tags, addTag, removeButtonEvents, inputProps, inputEvents }"
+		>
+			<div class="stacked-tag-input-form">
+				<input class="form-input" placeholder="Add tag..."
+					v-bind="inputProps"
+					v-on="inputEvents"
+				>
+				<button class="btn btn-indigo"
+					@click="addTag"
+				>
+					Add Tag
+				</button>
+			</div>
+			<ul class="stacked-tag-list">
+				<li v-for="tag in tags" :key="tag">
+					{{ tag }}
+					<button type="button" class="stacked-tag-link"
+						v-on="removeButtonEvents( tag )"
+					>
+						Remove
+					</button>
+				</li>
+			</ul>
+		</div>
+	</renderless-tag-input>
+
+```
+
+script
+
+```js
+
+	import RenderlessTagInput from "./RenderlessTagInput.vue"
+
+	export default {
+		components: {
+			RenderlessTagInput
+		},
+		model: {
+			prop: "tags",
+			event: "update"
+		},
+		props: {
+			tags: { required: true }
+		}
+	}
+
+```
+
+
+
+---
+
+
+
