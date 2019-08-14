@@ -2249,3 +2249,77 @@ script
 
 
 
+Lession 25
+# building an element query component
+
+
+
+-	element resize detector library
+
+## parent
+
+template
+
+```html
+
+	<width-dimensions>
+		<div
+			slot-scope="{ width }"
+			class="profile-card"
+			:class="{ 'profile-card--horizontal': width >= 400 }"
+		>
+			... stuff
+		</div>
+	</width-dimensions>
+
+```
+
+script
+
+```js
+	import WidthDimensions from './components/WidthDimensions.vue'
+
+	export default {
+		components: {
+			WidthDimensions
+		}
+	}
+
+```
+
+## component
+
+script
+
+```js
+	import elementResizeDetectorMaker from 'element-resize-detector'
+
+	const erd = elementResizeDetectorMaker({ strategy: 'scroll' })
+
+	export default {
+		data() {
+			width: null,
+			height: null
+		},
+		mounted() {
+			erd.listenTo( this.$el, ( el ) => {
+				this.width = el.offsetWidth
+				this.height = el.offsetHeight
+			})
+		},
+		render() {
+			return this.$scopedSlots.default({
+				width: this.width,
+				height: this.height
+			})
+		}
+	}
+
+```
+
+
+
+---
+
+
+
