@@ -2323,3 +2323,111 @@ script
 
 
 
+Lession 26
+# compound components & provideInject
+
+
+
+## parent
+
+template
+
+```html
+
+	<accordion-list>
+		<accordion-item :item-id="1">
+			<template slot="header">Item A</template>
+			<template slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</template>
+		</accordion-item>
+		<accordion-item :item-id="2">
+			<template slot="header">Item B</template>
+			<template slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</template>
+		</accordion-item>
+		<accordion-item :item-id="3">
+			<template slot="header">Item C</template>
+			<template slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</template>
+		</accordion-item>
+	</accordion-list>
+
+```
+
+## component : accordion-list
+
+template
+
+```html
+
+	<div class="accordion-list">
+		<slot></slot>
+	</div>
+
+```
+
+script
+
+```js
+
+	export default {
+		provide() {
+			return {
+				accordionListState: this.sharedState
+			}
+		},
+		data() {
+			return {
+				//	return an object to make it reactive
+				//	returning activeItem on its on as per usual data, non reactive
+				sharedState: {
+					activeItem: 1
+				}
+			}
+		}
+	}
+
+```
+
+## component : accordion-item
+
+template
+
+```html
+
+	<div class="accordion-item">
+		<div @click="toggle" role="button" class="accordion-item-header">
+			<slot name="header"></slot>
+			<svg class="icon" :class="{ 'rotate-90': active }">...</svg>
+		</div>
+		<div class="accordion-item-body" v-show="active">
+			<slot name="content"></slot>
+		</div>
+	</div>
+
+```
+
+script
+
+```js
+
+	export default {
+		inject: [ 'accordionListState' ],
+		props: [ 'itemId' ],
+		computed: {
+			active() {
+				return this.accordionListState.activeItem === this.itemId
+			}
+		},
+		methods: {
+			toggle() {
+				this.accordionListState.activeItem = this.active ? null : this.itemId
+			}
+		}
+	}
+
+```
+
+
+
+---
+
+
+
