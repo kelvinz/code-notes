@@ -2431,3 +2431,126 @@ script
 
 
 
+Lession 27
+# building a compound sortable list component
+
+
+
+-	draggable library
+
+## parent
+
+template
+
+```html
+
+	<sortable-list v-model="contacts" item-class="something-else" handle-class="if-i-want">
+		<div class="contact-list" slot-scope="{ items: contacts }">
+			<sortable-item v-for="contact in contacts" :key="contact.id">
+				<div class="contact-list-item">
+					<div class="contact-list-contact">
+						<img :src="contact.avatar" class="contact-list-avatar">
+						<div>
+							<div class="contact-list-name">
+								{{ contact.name }}
+							</div>
+							<div class="contact-list-email">
+								{{ contact.email }}
+							</div>
+						</div>
+					</div>
+					<sortable-handle>
+						<svg class="contact-list-handle">...</svg>
+					</sortable-handle>
+				</div>
+			</sortable-item>
+		</div>
+	</sortable-list>
+
+```
+
+script
+
+```js
+	import SortableList from './components/SortableList.vue'
+	import SortableItem from './components/SortableItem.vue'
+	import SortableHandle from './components/SortableHandle.vue'
+
+	export default {
+		components: {
+			SortableList,
+			SortableItem,
+			SortableHandle
+		},
+		data() {
+			return {
+				contacts: [
+					{ ... },
+					{ ... }
+				]
+			}
+		}
+	}
+
+```
+
+## component : sortable-list
+
+script
+
+```js
+
+	import { Sortable } from '@shopify/draggable'
+
+	//	helper function
+	function move( items, oldIndex, newIndex ) {
+		const itemRemovedArray = [
+			...items.slice( 0, oldIndex ),
+			...items.slice( oldIndex, + 1, items.length )
+		]
+
+		return [
+			...itemRemovedArray.slice( 0, newIndex ),
+			items[ oldIndex ],
+			...itemRemovedArray.slice( newIndex, itemRemovedArray.length )
+		]
+	}
+
+	export default {
+		props: {
+			value: {
+				required: true
+			},
+			itemClass: {
+				default: 'sortable-list-item'
+			},
+			handleClass: {
+				default: 'sortable-list-handle'
+			}
+		},
+		provide() {
+			return {
+				sortableListItemClass: this.itemClass,
+				sortableListHandleClass: this.handleClass
+			}
+		},
+		mounted() {
+			new Sortable( this.$el, {
+				draggable: `.${ this.itemClass }`,
+				handle: `.${ this.handleClass }`,
+				mirror: {
+					constrainDimensions: true
+				}
+			}).on( 'sortable:stop', ({ oldIndex, newIndex })=> {
+				this.$emit( 'input', move( this.value, oldIndex, newIndex ) )
+			})
+		},
+		render() {
+			return this.$scopedSlots.default({
+				items: this.value
+			})
+		}
+	}
+
+```
+
