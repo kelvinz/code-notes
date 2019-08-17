@@ -2572,3 +2572,27 @@ script
 
 ```
 
+## component : sortable-handle
+
+script
+
+```js
+
+	export default {
+		inject: [ 'sortableListHandleClass' ],
+		mounted() {
+			this.$el.classList.add( this.sortableListHandleClass )
+		},
+		render() {
+			return this.$slots.default[ 0 ]
+		}
+	}
+
+```
+
+
+
+---
+
+
+
