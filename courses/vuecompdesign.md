@@ -2666,3 +2666,39 @@ script
 
 
 
+Lession 29
+# building a search select - filtering
+
+
+
+## component
+
+template
+
+```html
+
+	<div class="search-select" :class="{ 'is-active': isOpen }">
+		<button @click="open" type="button" class="search-select-input">
+			<span v-if="value !== null">{{ value }}</span>
+			<span v-else class="search-select-placeholder">Select a band...</span>
+		</button>
+		<div v-show="isOpen" class="search-select-dropdown">
+			<input v-model="search" class="search-select-search">
+			<ul v-show="filteredOptions.length > 0" class="search-select-options">
+				<li
+					class="search-select-option"
+					v-for="option in filteredOptions"
+					:key="option"
+					@click="select( option )"
+				>
+					{{ option }}
+				</li>
+			</ul>
+			<div v-show="filteredOptions.length === 0" class="search-select-empty">
+				No results found for "{{ search }}"
+			</div>
+		</div>
+	</div>
+
+```
+
