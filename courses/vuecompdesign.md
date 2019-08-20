@@ -2702,3 +2702,49 @@ template
 
 ```
 
+script
+
+```js
+
+	export default {
+		data() {
+			return {
+				isOpen: false,
+				value: null,
+				search: '',
+				options: [
+					'...',
+					'...'
+				]
+			}
+		},
+		computed: {
+			filteredOptions() {
+				return this.options.filter( option => {
+					return option.toLowerCase().startsWith( this.search.toLowerCase() )
+				})
+			}
+		},
+		methods: {
+			open() {
+				this.isOpen = true
+			},
+			close() {
+				this.isOpen = false
+			},
+			select( option ) {
+				this.value = option
+				this.search = ''
+				this.close()
+			}
+		}
+	}
+
+```
+
+
+
+---
+
+
+
