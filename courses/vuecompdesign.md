@@ -2793,3 +2793,54 @@ template
 
 ```
 
+script
+
+```js
+
+	export default {
+		data() {
+			return {
+				isOpen: false,
+				value: null,
+				search: '',
+				options: [
+					'...',
+					'...'
+				]
+			}
+		},
+		computed: {
+			filteredOptions() {
+				return this.options.filter( option => {
+					return option.toLowerCase().startsWith( this.search.toLowerCase() )
+				})
+			}
+		},
+		methods: {
+			open() {
+				this.isOpen = true
+				this.$nextTick( () => {
+					this.this.$refs.search.focus()
+				})
+			},
+			close() {
+				this.isOpen = false
+				this.$refs.button.focus()
+
+			},
+			select( option ) {
+				this.value = option
+				this.search = ''
+				this.close()
+			}
+		}
+	}
+
+```
+
+
+
+---
+
+
+
