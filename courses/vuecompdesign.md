@@ -2934,3 +2934,48 @@ template
 
 ```
 
+script
+
+```js
+
+	export default {
+		props: [ 'value', 'options', 'filterFunction' ],
+		data() {
+			return {
+				isOpen: false,
+				search: ''
+			}
+		},
+		computed: {
+			filteredOptions() {
+				return this.filterFunction( this.search, this.options )
+			}
+		},
+		methods: {
+			open() {
+				this.isOpen = true
+				this.$nextTick( () => {
+					this.this.$refs.search.focus()
+				})
+			},
+			close() {
+				this.isOpen = false
+				this.$refs.button.focus()
+
+			},
+			select( option ) {
+				this.$emit( 'input', option )
+				this.search = ''
+				this.close()
+			}
+		}
+	}
+
+```
+
+
+
+---
+
+
+
