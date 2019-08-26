@@ -2979,3 +2979,53 @@ script
 
 
 
+Lession 32
+# building a search select - keyboard navigation
+
+
+
+## parent
+
+template
+
+```html
+
+	<search-select
+		v-model="selectedBand"
+		:options="bands"
+		:filter-function="applySearchFilter"
+	>
+	</search-select>
+
+```
+
+script
+
+```js
+
+	import SearchSelect from './components/SearchSelect.vue'
+
+	export default {
+		components: {
+			SearchSelect
+		},
+		data() {
+			return {
+				selectedBand: null,
+				bands: [
+					'...',
+					'...'
+				]
+			}
+		},
+		methods: {
+			applySearchFilter( search, options ) {
+				return options.filter( option => {
+					return option.toLowerCase().startsWith( search.toLowerCase() )
+				})
+			}
+		}
+	}
+
+```
+
