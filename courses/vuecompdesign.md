@@ -3075,3 +3075,82 @@ template
 
 ```
 
+script
+
+```js
+
+	export default {
+		props: [ 'value', 'options', 'filterFunction' ],
+		data() {
+			return {
+				isOpen: false,
+				search: '',
+				highlightedIndex: 0
+			}
+		},
+		computed: {
+			filteredOptions() {
+				return this.filterFunction( this.search, this.options )
+			}
+		},
+		methods: {
+			open() {
+				if ( this.isOpen ) {
+					return
+				}
+
+				this.isOpen = true
+				this.$nextTick( () => {
+					this.this.$refs.search.focus()
+					this.scrollToHighlighted()
+				})
+			},
+			close() {
+				this.isOpen = false
+				this.$refs.button.focus()
+
+			},
+			select( option ) {
+				this.$emit( 'input', option )
+				this.search = ''
+				this.highlightedIndex = 0
+				this.close()
+			},
+			selectHighlighted() {
+				this.select( this.filteredOptions[ this.highlightedIndex ] )
+			},
+			scrollToHighlighted() {
+				this.$refs.options.children[ this.highlightedIndex ].scrollIntoView({
+					block: 'nearest'
+				})
+			},
+			highlight( index ) {
+				this.highlightedIndex = index
+
+				if ( this.highlightedIndex < 0 ) {
+					this.highlightedIndex = this.filteredOptions.length - 1
+				}
+
+				if ( this.highlightedIndex > this.filteredOptions.length - 1 ) {
+					this.highlightedIndex = 0
+				}
+
+				this.scrollToHighlighted()
+			},
+			highlightPrev() {
+				this.highlight( this.highlightedIndex - 1 )
+			},
+			highlightNext() {
+				this.highlight( this.highlightedIndex + 1 )
+			}
+		}
+	}
+
+```
+
+
+
+---
+
+
+
