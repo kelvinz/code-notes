@@ -3204,3 +3204,51 @@ script
 
 ```
 
+## component
+
+template
+
+```html
+
+	<on-click-outside :do="close">
+		<div class="search-select" :class="{ 'is-active': isOpen }">
+			<button
+				@click="open"
+				type="button"
+				class="search-select-input"
+				ref="button"
+			>
+				<span v-if="value !== null">{{ value }}</span>
+				<span v-else class="search-select-placeholder">Select a band...</span>
+			</button>
+			<div v-show="isOpen" class="search-select-dropdown">
+				<input
+					v-model="search"
+					class="search-select-search"
+					ref="search"
+					@keydown.esc="close"
+					@keydown.up="highlightPrev"
+					@keydown.down="highlightNext"
+					@keydown.enter.prevent="selectHighlighted"
+					@keydown.tab.prevent
+				>
+				<ul ref="options" v-show="filteredOptions.length > 0" class="search-select-options">
+					<li
+						class="search-select-option"
+						:class="{ 'is-active': i === highlightedIndex }"
+						v-for="( option, i ) in filteredOptions"
+						:key="option"
+						@click="select( option )"
+					>
+						{{ option }}
+					</li>
+				</ul>
+				<div v-show="filteredOptions.length === 0" class="search-select-empty">
+					No results found for "{{ search }}"
+				</div>
+			</div>
+		</div>
+	</on-click-outside>
+
+```
+
