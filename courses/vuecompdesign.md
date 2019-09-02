@@ -3369,3 +3369,25 @@ script
 
 
 
+Lession 34
+# building a search select - integrating popper.js
+
+
+
+-	popper.js library
+
+## parent
+
+template
+
+```html
+
+	<search-select
+		v-model="selectedBand"
+		:options="bands"
+		:filter-function="applySearchFilter"
+	>
+	</search-select>
+
+```
+
