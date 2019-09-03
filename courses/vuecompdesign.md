@@ -3391,3 +3391,33 @@ template
 
 ```
 
+script
+
+```js
+
+	import SearchSelect from './components/SearchSelect.vue'
+
+	export default {
+		components: {
+			SearchSelect
+		},
+		data() {
+			return {
+				selectedBand: null,
+				bands: [
+					'...',
+					'...'
+				]
+			}
+		},
+		methods: {
+			applySearchFilter( search, options ) {
+				return options.filter( option => {
+					return option.toLowerCase().startsWith( search.toLowerCase() )
+				})
+			}
+		}
+	}
+
+```
+
