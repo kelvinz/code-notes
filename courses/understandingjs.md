@@ -9,11 +9,43 @@
 
 
 
+...
+
+
+
 ---
 
 
 
 # section 2: execution contexts & lexical environments
+
+
+
+## some definitions
+
+**syntax parsers**
+a program that reads your code & determines what it does & if its grammar is valid
+your code -> syntax parser -> instructions that computer reads
+like a translator in the middle between you & computer
+
+**lexical environment**
+where something sits physically in the code you write
+
+**execution context**
+a wrapper to help manage the code that is running
+
+**name/value pair**
+a name which maps to a unique value
+
+**object**
+a collection of name value pairs
+
+**javascript is single threaded**
+one command at a time
+
+**synchronous**
+one line at a time
+in the order it appears
 
 
 
