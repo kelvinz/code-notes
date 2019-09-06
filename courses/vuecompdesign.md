@@ -3567,3 +3567,35 @@ script
 
 ```
 
+## component
+
+script
+
+```js
+
+	export default {
+		props: [ 'do' ],
+		mounted() {
+			const listener = ( e ) => {
+				if ( e.target === this.$el || this.$el.contains( e.target ) ) {
+					return
+				}
+
+				this.do()
+			}
+
+			document.addEventListener( 'click', listener )
+			this.$once( 'hook:beforeDestory', () => {
+				document.removeEventListener( 'click', listener )
+			})
+		},
+		render() {
+			return this.$slots.default[ 0 ]
+		}
+	}
+
+```
+
+
+
+---
