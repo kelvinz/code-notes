@@ -49,6 +49,37 @@ in the order it appears
 
 
 
+## global & execution contexts
+
+**global execution context**
+
+-	*creates a global object*
+	in the case of browsers, it is the window object
+	global = not inside a function
+
+-	*creates 'this'*
+	indow can be called by using 'this' or window
+
+-	*creates outer environment*
+	in the case of global
+	there is no outer environment as it is the furthest out it can be
+
+**execution context phases**
+
+-	*creation*
+	-	global object
+	-	this
+	-	outer environment
+	-	setup memory space for all variables & functions *hoisting*
+		-	all variables in js are initially set to undefined in creation
+		-	*undefined* is a special value
+		-	all functions on the otherhand sits in memory in its entirety in creation
+
+-	**execution**
+	-	runs code line by line
+
+
+
 ---
 
 
