@@ -80,6 +80,42 @@ in the order it appears
 
 
 
+## function invocation & the execution stack
+
+**invocation**
+running a function
+in js, using the parenthesis ()
+
+1. when a function is invocated, a new execution context is created
+2. this will be added to the execution stack one on top of the other
+3. the one on top is the one currently running line by line
+4. when the top context finishes running, it is popped off the stack
+5. the one below it continues to run
+6. until it finishes the global execution context which is always the first & bottom
+
+**variable environment**
+where the variable live
+& how they relate to each other in memory
+
+each execution context holds its own variables
+aka scope
+
+**scope chain**
+if a variable is not defined in its execution context
+it looks for it in the outer environment
+all the way till it finds it
+else it's undefined/uncaught reference
+
+**outer environment**
+is determined by the lexical environment
+where the code sits physically in the code
+if it's not wrapped within another function
+the outer environment is the global environment
+
+or 'who created me'
+
+
+
 ---
 
 
