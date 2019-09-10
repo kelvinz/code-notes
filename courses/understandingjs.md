@@ -116,6 +116,19 @@ or 'who created me'
 
 
 
+## scope, es6, let
+
+**scope**
+where a variable is available in your code
+& if it's the same or a new copy
+
+**let**
+uses block scope
+block is defined using {}
+only available in the block
+
+
+
 ---
 
 
