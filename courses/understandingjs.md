@@ -129,6 +129,20 @@ only available in the block
 
 
 
+## asynchronous callback
+
+**asynchronous**
+more than one at a time
+
+**event queue**
+stuff outside of the js engine which runs asynchronously
+adds things to do into an event queue into js engine
+when the execution stack of the js engine is empty
+aka global stack finishes
+it looks at the event queue & runs them
+
+
+
 ---
 
 
