@@ -151,6 +151,44 @@ it looks at the event queue & runs them
 
 
 
+## types
+
+**dynamic typing**
+you don't tell the engine what type of data a variable holds
+it figures it out while your code is running
+
+opposite is static typing where you need to specify a type to the variable
+
+**primitive types**
+a type of data that represents a single value
+not an object
+
+-	*undefined*
+	lack of existence
+	set automatically, don't set it yourself
+
+-	*null*
+	lack of existence
+	you can set it yourself
+
+-	*boolean*
+	true or false
+	1 or 0
+
+-	*number*
+	floating point number
+	always some decimals
+	can cause weird math issues
+
+-	*string*
+	a sequence of characters
+	'' or "" can be used to specify strings
+
+-	*symbol*
+	used in es6
+
+
+
 ---
 
 
