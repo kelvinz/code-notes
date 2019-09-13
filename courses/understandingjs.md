@@ -189,6 +189,32 @@ not an object
 
 
 
+## operators
+
+**definition**
+a special function that is syntactically ( written ) different
+generally, operators take two parameters & return one result
+
+**operator precedence**
+which operator function gets called first
+functions are called in order of precedence
+higher precedence wins
+
+**operator associativity**
+what order operator functions get called in:
+left-to-right or right-to-left
+when functions have the same precedence
+
+var a = 2, b = 3, c = 4;
+a = b = c
+console.log( a, b, c )
+//	4, 4, 4
+
+**operator precedence & associativity table**
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence>
+
+
+
 ---
 
 
