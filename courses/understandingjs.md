@@ -215,6 +215,51 @@ console.log( a, b, c )
 
 
 
+## coercion
+
+**definition**
+converting a value from one type to another
+happens quite often in javascript as it's dynamically typed
+
+**example**
+var a = 1 + '2'
+//	12 ( string instead of number )
+1 is coerced from a number to a string so it can be concatenated with the string
+
+**comparison operators**
+console.log( 1 < 2 < 3 )
+//	true
+console.log( 3 < 2 < 1 )
+//	true
+
+left to right associativity
+
+3 < 2 < 1
+false < 1
+//	coerced to
+0 < 1
+//	true
+*this is a dangerous side effect of javascript's auto coercion*
+
+**side note**
+NaN   = not a number
+null  = 0
+""    = 0
+false = 0
+true  = 1
+
+**prevent coercion**
+use '===' instead of '=='
+use '>==' instead of '>='
+use '!==' instead of '!='
+
+### use strict comparison operator unless you knowingly need to coerce values
+
+**equality comparisons table**
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness>
+
+
+
 ---
 
 
