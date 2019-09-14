@@ -260,6 +260,26 @@ use '!==' instead of '!='
 
 
 
+## existence & booleans
+
+undefined = false
+null      = false
+""        = false
+
+*use this to our advantage*
+
+```js
+
+	var a
+	//	then add some function that goes out to the internet
+	//	finds a value & update var a
+
+	if ( a ) {
+		//	then do something
+	}
+
+```
+
 ---
 
 
