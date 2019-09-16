@@ -280,6 +280,41 @@ null      = false
 
 ```
 
+*gotcha*
+0 = false
+in case 0 is the result you want use this
+if ( a || a === 0 )
+
+**default values**
+
+```js
+
+	function greet( name ) {
+		console.log( 'Hello ' + name )
+	}
+
+	greet( 'kelvin' )
+	//	hello kelvin
+	greet()
+	//	hello undefined
+
+
+
+
+	function greet( name ) {
+		name = name || 'me'
+		console.log( 'Hello ' + name )
+	}
+
+	greet( 'kelvin' )
+	//	hello kelvin
+	greet();
+	//	hello me
+
+```
+
+
+
 ---
 
 
