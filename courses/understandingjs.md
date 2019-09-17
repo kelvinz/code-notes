@@ -352,6 +352,31 @@ eg. address in memory: 0x001
 
 
 
+## objects & object literals
+
+```js
+
+	var me = {
+		firstname: 'Kelvin',
+		lastname: 'Zhao',
+		address: {
+			street: '446C Jalan Kayu',
+			country: 'Singapore'
+		}
+	}
+
+	function greet( person ) {
+		console.log( 'Hi ' + person.firstname )
+	}
+
+	greet( me );
+	//	same results
+	greet( { firstname: 'Kelvin' } );
+
+```
+
+
+
 ---
 
 
