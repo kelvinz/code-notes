@@ -323,6 +323,35 @@ if ( a || a === 0 )
 
 
 
+## objects & the dot
+
+objects have
+eg. address in memory: 0x001
+
+-	primitive property: type, ie. boolean, string, etc
+	eg. address in memory: 0x002
+
+-	object property: ie. child object
+	eg. address in memory: 0x003
+
+-	function: called method
+	eg. address in memory: 0x004
+
+```js
+
+	console.log( person[ 'name' ] )
+
+	//	same results as above but
+	//	preferred way of accessing properties unless dynamic string needed
+	//	dot notation will auto convert name to string
+	//	so it won't implement a variable like myVar = 'na' + 'me'
+	//	person.myVar will become person.'myVar' instead of person.'name'
+	console.log( person.name );
+
+```
+
+
+
 ---
 
 
