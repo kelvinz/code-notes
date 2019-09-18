@@ -377,6 +377,34 @@ eg. address in memory: 0x001
 
 
 
+## framework aside: faking namespaces
+
+**namespace**
+a container for variables & functions
+typically to keep variables & functions with the same name seperate
+
+```js
+
+	var greet = 'Hello!'
+	var greet = 'Hola!'
+
+	console.log( greet )
+	//	Hola!
+
+	//	use an object to contain namespaces
+	var english = {}
+	var spanish = {}
+
+	english.greet = 'Hello!'
+	spanish.greet = 'Hola!'
+
+	console.log( english.greet )
+	console.log( spanish.greet );
+
+```
+
+
+
 ---
 
 
