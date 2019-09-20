@@ -405,6 +405,33 @@ typically to keep variables & functions with the same name seperate
 
 
 
+## json & object literals
+
+```js
+
+	//	properties doesn't have to be wrapped in quotes
+	//	but it can be too for objects
+	var objectLiteral = {
+		firstname: 'Mary',
+		isAProgrammer: true
+	}
+
+	//	properties has to be wrapped in quotes
+	{
+		'firstname': 'Mary',
+		'isAProgrammer': true
+	}
+
+	//	convert objects to json
+	var json = JSON.stringify( objectLiteral )
+
+	//	convert json to objects
+	var objectLiteral = JSON.parse( "{ 'firstname': 'Mary', 'isAProgrammer': true }" );
+
+```
+
+
+
 ---
 
 
