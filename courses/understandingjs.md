@@ -432,6 +432,36 @@ typically to keep variables & functions with the same name seperate
 
 
 
+## functions are objects
+
+**first class functions**
+everything you can do with other types you can do with functions
+assign them to variables, pass them around, create them on the fly
+
+function - a special type of object with
+-	primitive
+-	object
+-	function
+-	name: optional, can be anonymous
+-	code: invocable with ()
+
+```js
+
+	function greet() {
+		console.log( 'hi' )
+	}
+
+	greet.language = 'english'
+	console.log( greet.language );
+
+	//	function object with
+	//	name - greet
+	//	code - console.log( 'hi ' )
+
+```
+
+
+
 ---
 
 
