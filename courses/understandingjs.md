@@ -308,10 +308,10 @@ if ( a || a === 0 )
 
 	greet( 'kelvin' )
 	//	hello kelvin
-	greet();
+	greet()
 	//	hello me
 
-```
+;```
 
 
 
@@ -346,9 +346,9 @@ eg. address in memory: 0x001
 	//	dot notation will auto convert name to string
 	//	so it won't implement a variable like myVar = 'na' + 'me'
 	//	person.myVar will become person.'myVar' instead of person.'name'
-	console.log( person.name );
+	console.log( person.name )
 
-```
+;```
 
 
 
@@ -371,9 +371,9 @@ eg. address in memory: 0x001
 
 	greet( me );
 	//	same results
-	greet( { firstname: 'Kelvin' } );
+	greet( { firstname: 'Kelvin' } )
 
-```
+;```
 
 
 
@@ -399,9 +399,9 @@ typically to keep variables & functions with the same name seperate
 	spanish.greet = 'Hola!'
 
 	console.log( english.greet )
-	console.log( spanish.greet );
+	console.log( spanish.greet )
 
-```
+;```
 
 
 
@@ -426,9 +426,9 @@ typically to keep variables & functions with the same name seperate
 	var json = JSON.stringify( objectLiteral )
 
 	//	convert json to objects
-	var objectLiteral = JSON.parse( "{ 'firstname': 'Mary', 'isAProgrammer': true }" );
+	var objectLiteral = JSON.parse( "{ 'firstname': 'Mary', 'isAProgrammer': true }" )
 
-```
+;```
 
 
 
@@ -452,13 +452,13 @@ function - a special type of object with
 	}
 
 	greet.language = 'english'
-	console.log( greet.language );
+	console.log( greet.language )
 
 	//	function object with
 	//	name - greet
 	//	code - console.log( 'hi ' )
 
-```
+;```
 
 
 
@@ -514,10 +514,10 @@ it doesn't have to save to a variable
 
 	log( function() {
 		console.log( 'hi' )
-	} );
+	} )
 	//	hi
 
-```
+;```
 
 
 
