@@ -462,6 +462,65 @@ function - a special type of object with
 
 
 
+## function statements & function expressions
+
+**expression**
+a unit of code that results in a value
+it doesn't have to save to a variable
+
+```js
+
+	//	both returns a value
+	//	they are expressions
+	a = 3
+	//	3
+
+	1 + 2
+	//	3
+
+	//	this is a statement
+	//	it doesn't return anything
+	if ( a === 3 ) {
+		//
+	}
+
+	//	this is a statement
+	//	it doesn't result in a value
+	function greet() {
+		console.log( 'hi' )
+	}
+
+	greet()
+
+	//	this is an expression as it results in a value
+	//	function doesn't have a name it is anonymous
+	//	but the variable anonGreet points to the anonymous function
+	var anonGreet = function() {
+		console.log( 'hi' )
+	}
+
+	anonGreet()
+
+	function log( a ) {
+		console.log( a )
+	}
+
+	log( 3 )
+	//	3
+
+	function log( a ) {
+		a()
+	}
+
+	log( function() {
+		console.log( 'hi' )
+	} );
+	//	hi
+
+```
+
+
+
 ---
 
 
