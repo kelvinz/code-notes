@@ -521,6 +521,71 @@ it doesn't have to save to a variable
 
 
 
+## conceptual aside: by value vs by reference
+
+*by value*
+var a = a primitive value
+a points to an address in memory, 0x001 which contains the value
+var b = a
+b will point to a different address in memory, 0x002 which contains a copy of the value in a
+
+*by reference*
+var a = an object
+a points to an address in memory, 0x001 which contains the object
+var b = a
+b will point to the same address in memory, 0x001
+
+*note*
+equals '=' will set up a new memory address if there's no existing reference
+
+```js
+
+	//	by value ( primitives )
+	var a = 3
+	var b
+
+	b = a
+	a = 2
+
+	console.log( a )
+	//	2
+	console.log( b )
+	//	3
+
+	//	by reference ( objects, including functions )
+	var c = { greeting: 'hi' }
+	var d
+
+	d = c
+	c.greeting = 'hello' //	mutate: change
+
+	console.log( c )
+	//	Object { greeting: 'hello' }
+	console.log( d )
+	//	Object { greeting: 'hello' }
+
+	//	reference even as parameters
+	function changeGreeting( obj ) {
+		obj.greeting = 'hola'
+	}
+
+	changeGreeting( d )
+	console.log( c )
+	//	Object { greeting: 'hola' }
+	console.log( d )
+	//	Object { greeting: 'hola' }
+
+	//	equals operator sets up a new memory space ( new address )
+	c = { greeting: 'howdy' }
+	console.log( c )
+	//	Object { greeting: 'howdy' }
+	console.log( d )
+	//	Object { greeting: 'hola' }
+
+;```
+
+
+
 ---
 
 
