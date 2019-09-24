@@ -586,6 +586,93 @@ equals '=' will set up a new memory address if there's no existing reference
 
 
 
+## objects, functions & 'this'
+
+*execution context ( creation phase )*
+
+-	variable environment
+-	outer environment
+-	'this' ( changes depending on where function is & how it's called )
+
+**this points to an object**
+
+```js
+
+	function a() {
+		console.log( this )
+	}
+
+	a()
+	//	Window { ... }
+
+	var b = function() {
+		console.log( this )
+	}
+
+	b()
+	//	Window { ... }
+
+	var c = {
+		name: 'The c object',
+		log: function() {
+			console.log( this )
+		}
+	}
+
+	c.log()
+	//	Object { name: 'The c object', log: function }
+
+	var c = {
+		name: 'The c object',
+		log: function() {
+			this.name = 'Updated c object'
+			console.log( this )
+		}
+	}
+
+	c.log()
+	//	Object { name: 'Updated c object', log: function }
+
+	var c = {
+		name: 'The c object',
+		log: function() {
+			this.name = 'Updated c object'
+			console.log( this )
+			//	Object { name: 'Updated c object', log: function }
+
+			var setname = function( newname ) {
+				this.name = newname
+				//	this.name actually points to global object instead
+				//	Window.name = newname
+			}
+			setname( 'Updated again!' )
+			console.log( this )
+			//	Object { name: 'Updated c object', log: function }
+		}
+	}
+
+	var c = {
+		name: 'The c object',
+		log: function() {
+			var self = this
+
+			this.name = 'Updated c object'
+			console.log( self )
+			//	Object { name: 'Updated c object', log: function }
+
+			var setname = function( newname ) {
+				self.name = newname
+			}
+			setname( 'Updated again!' )
+			console.log( self )
+			//	Object { name: 'Updated again!', log: function }
+		}
+	}
+
+;```
+
+
+
 ---
 
 
