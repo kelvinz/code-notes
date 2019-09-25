@@ -673,6 +673,34 @@ equals '=' will set up a new memory address if there's no existing reference
 
 
 
+## conceptual aside: arrays - collections of anything
+
+```js
+
+	var arr = [
+		1,
+		false,
+		{
+			name: 'Kelvin',
+			address: '111 Main St.'
+		},
+		function( name ) {
+			var greeting = 'Hello '
+			console.log( greeting + name )
+		},
+		'hello'
+	]
+
+	console.log( arr )
+	//	[ 1, false, Object, function, 'hello' ]
+
+	arr[ 3 ]( arr[ 2 ].name )
+	//	Hello Kelvin
+
+;```
+
+
+
 ---
 
 
