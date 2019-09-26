@@ -701,6 +701,63 @@ equals '=' will set up a new memory address if there's no existing reference
 
 
 
+## arguments & spread
+
+*execution conext is created ( function )*
+
+-	variable environment
+-	'this'
+-	outer environment
+-	arguments: all the values/parameters passed in to function
+
+```js
+
+	function greet( firstname, lastname, language ) {
+		console.log( firstname )
+		console.log( lastname )
+		console.log( language )
+	}
+
+	greet()
+	//	undefined, undefined, undefined
+
+	greet( 'John' )
+	//	John, undefined, undefined
+
+	greet( 'John', 'Doe' )
+	//	John, Doe, undefined
+
+	greet( 'John', 'Doe', 'en' )
+	//	John, Doe, en
+
+	function greet( firstname, lastname, language ) {
+		console.log( firstname )
+		console.log( lastname )
+		console.log( language )
+
+		console.log( arguments )
+		console.log( arguments.length )
+	}
+
+	greet()
+	//	undefined, undefined, undefined, [], 0
+
+	greet( 'John' )
+	//	John, undefined, undefined, [ 'John' ], 1
+
+	//	arguments will be deprecated
+	//	spread will replace it
+
+	function greet( firstname, lastname, ...other ) {
+		//
+	}
+
+	//	...other will be an array
+
+;```
+
+
+
 ---
 
 
