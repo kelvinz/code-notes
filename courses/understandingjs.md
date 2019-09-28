@@ -758,6 +758,38 @@ equals '=' will set up a new memory address if there's no existing reference
 
 
 
+## framework aside: function overloading
+
+```js
+
+	function greet( firstname, lastname, language ) {
+		language = language || 'en'
+
+		if ( language === 'en' ) {
+			console.log( 'Hello ' + firstname + ' ' + lastname )
+		}
+
+		if ( language === 'es' ) {
+			console.log( 'Hola ' + firstname + ' ' + lastname )
+		}
+	}
+
+	greet( 'John', 'Doe', 'en' )
+	//	Hello John Doe
+	greet( 'John', 'Doe', 'es' )
+	//	Hola John Doe
+
+	function greetEnglish( firstname, lastname ) {
+		greet( firstname, lastname, 'en' )
+	}
+
+	greetEnglish( 'John', 'Doe' )
+	//	Hello John Doe
+
+;```
+
+
+
 ---
 
 
