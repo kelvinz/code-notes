@@ -827,6 +827,41 @@ javascript engine reads 'return/enter' it auto adds a semicolon ;
 ;```
 
 
+
+## framework aside: whitespace
+
+*whitespace*
+invisible characters that create literal 'space' in your written code
+carriage returns, tabs, spaces
+
+javascript engine is very liberal with whitespace
+it will just ignore/accept them
+
+```js
+
+	var
+		//	first name of erson
+		firstname,
+
+		//	last name of person
+		lastname,
+
+		//	the language
+		//	can be 'en' or 'es'
+		language
+
+	var person = {
+		//	the first name
+		firstname: 'John',
+
+		//	the last name
+		lastname: 'Doe'
+	}
+
+;```
+
+
+
 ---
 
 
