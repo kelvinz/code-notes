@@ -790,6 +790,43 @@ equals '=' will set up a new memory address if there's no existing reference
 
 
 
+## conceptual aside: syntax parsers
+
+javascript engine reads character by character with a set of rules
+it can even make changes if it wants before it is executed
+
+
+
+## dangerous aside: automatic semicolon insertion
+
+javascript engine reads 'return/enter' it auto adds a semicolon ;
+
+```js
+
+	function getPerson() {
+		return
+		{
+			firstname: 'Tony'
+		}
+	}
+
+	console.log( getPerson() )
+	//	undefined
+	//	; is added beside the return
+	//	breaks the return-ing of the object
+
+	function getPerson() {
+		return {
+			firstname: 'Tony'
+		}
+	}
+
+	console.log( getPerson() )
+	//	Object { firstname: 'Tony' }
+
+;```
+
+
 ---
 
 
