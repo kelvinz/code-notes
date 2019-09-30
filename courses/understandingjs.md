@@ -862,6 +862,33 @@ it will just ignore/accept them
 
 
 
+## immediately invoked functions expressions ( IIFEs )
+
+```js
+
+	//	function statement
+	function greet() {
+		//
+	}
+
+	//	function expression
+	var greetFunc = function() {
+		//
+	}
+
+	//	IIFEs
+	var greeting = function() {
+		//
+	}()
+
+	( function() {
+		//
+	}())
+
+;```
+
+
+
 ---
 
 
