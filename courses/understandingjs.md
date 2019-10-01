@@ -889,6 +889,27 @@ it will just ignore/accept them
 
 
 
+## framework aside: IIFEs & safe code
+
+variables in IIFEs exists in the execution context of that IIFE
+it doesn't pollute the global context
+
+```js
+
+	//	if we do want to access/edit the global
+	//	pass it into the IIFE
+
+	var greeting = 'Mary'
+
+	( function( global, name ) {
+		var greeting = 'Hello'
+		global.greeting = greeting + ' ' + name
+	}( window, 'John' ) )
+
+;```
+
+
+
 ---
 
 
