@@ -910,6 +910,32 @@ it doesn't pollute the global context
 
 
 
+## understanding closures
+
+```js
+
+	function greet( whattosay ) {
+		return function( name ) {
+			console.log( whattosay + ' ' + name )
+		}
+	}
+
+	greet( 'hi' )( 'kelvin' )
+	//	hi kelvin
+
+	var sayHi = greet( 'hi' )
+	sayHi( 'kelvin' )
+	//	hi kelvin
+
+;```
+
+every execution context has a dedicated space that stores all variables, etc
+when the context is popped off/cleared, the variables still exists in memory
+they will eventually be cleared off by garbage collection, but it's there for now
+functions created within, has access to them
+
+
+
 ---
 
 
