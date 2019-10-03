@@ -936,6 +936,35 @@ functions created within, has access to them
 
 
 
+## understanding closures 2
+
+```js
+
+	function buildFunctions() {
+		var arr = []
+		for ( var i = 0; i < 3; i++ ) {
+			arr.push(
+				function() {
+					console.log( i )
+				}
+			)
+		}
+		return arr
+	}
+
+	var fs = buildFunctions()
+	fs[ 0 ]()
+	fs[ 1 ]()
+	fs[ 2 ]()
+	//	3, 3, 3
+
+;```
+
+console.log is executed only after the arr runs/finishes
+when it references the i, it is the last i = 3 in memory
+
+
+
 ---
 
 
