@@ -965,6 +965,33 @@ when it references the i, it is the last i = 3 in memory
 
 
 
+```js
+
+	function buildFunctions() {
+		var arr = []
+		for ( let i = 0; i < 3; i++ ) {
+			arr.push(
+				function() {
+					console.log( i )
+				}
+			)
+		}
+		return arr
+	}
+
+	var fs = buildFunctions()
+	fs[ 0 ]()
+	fs[ 1 ]()
+	fs[ 2 ]()
+	//	0, 1, 2
+
+;```
+
+let is block scoped not function scope
+in the block, a memory reference is created like how functions creates execution contexts
+
+
+
 ---
 
 
