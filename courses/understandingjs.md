@@ -992,6 +992,35 @@ in the block, a memory reference is created like how functions creates execution
 
 
 
+```js
+
+	function buildFunctions() {
+		var arr = []
+		for ( var i = 0; i < 3; i++ ) {
+			arr.push(
+				(function( i ) {
+					return function() {
+						console.log( i )
+					}
+				}( i ) )
+			)
+		}
+		return arr
+	}
+
+	var fs = buildFunctions()
+	fs[ 0 ]()
+	fs[ 1 ]()
+	fs[ 2 ]()
+	//	0, 1, 2
+
+;```
+
+if you don't want to use let
+we can create immediately invoked functions to create a function scope to store each k value
+
+
+
 ---
 
 
