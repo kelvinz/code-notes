@@ -1021,6 +1021,34 @@ we can create immediately invoked functions to create a function scope to store 
 
 
 
+## framework aside: function factories
+
+```js
+
+	function makeGreeting( lang ) {
+		return function( firstname, lastname ) {
+			if ( lang === 'en' ) {
+				console.log( 'Hello ' + firstname + ' ' + lastname )
+			}
+			if ( lang === 'es' ) {
+				console.log( 'Hola ' + firstname + ' ' + lastname )
+			}
+		}
+	}
+
+	var greetEnglish = makeGreeting( 'en' )
+	var greetSpanish = makeGreeting( 'es' )
+
+	greetEnglish( 'John', 'Doe' )
+	//	Hello John Doe
+
+	greetSpanish( 'John', 'Doe' )
+	//	Hola John Doe
+
+;```
+
+
+
 ---
 
 
