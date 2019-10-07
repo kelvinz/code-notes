@@ -1049,6 +1049,23 @@ we can create immediately invoked functions to create a function scope to store 
 
 
 
+## closures & callbacks
+
+```js
+
+	function sayHiLater() {
+		var greeting = 'Hi!'
+
+		setTimeout( function() {
+			console.log( greeting )
+		}, 3000 )
+	}
+
+	sayHiLater()
+	//	3 seconds later, 'Hi!'
+
+;```
+
 ---
 
 
