@@ -1066,6 +1066,35 @@ we can create immediately invoked functions to create a function scope to store 
 
 ;```
 
+**callback function**
+a function you give to another function,
+to be run when the other function is finished
+so the function you call ( invoke ), 'calls back' by
+calling the function you gave it when it finishes
+
+```js
+
+	function tellMeWhenDone( callback ) {
+		var a = 1000 // some work to be done
+		var b = 2000 // some work to be done
+
+		callback()
+	}
+
+	tellMeWhenDone( function() {
+		console.log( 'I am done!' )
+	} )
+	//	I am done!
+
+	tellMeWhenDone( function() {
+		console.log( 'Done again!' )
+	} )
+	//	Done again!
+
+;```
+
+
+
 ---
 
 
