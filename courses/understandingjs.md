@@ -1095,6 +1095,47 @@ calling the function you gave it when it finishes
 
 
 
+## call(), apply(), bind()
+
+all functions have a special methods
+call, apply, bind
+these all have to do with the 'this' variable
+
+```js
+
+	var person = {
+		firstname: 'John',
+		lastname: 'Doe',
+		getFullName: function() {
+			var fullname = this.firstname + ' ' + this.lastname
+			return fullname
+		}
+	}
+
+	var logname = function() {
+		console.log( 'Logged: ' + this.getFullName() )
+	}
+
+	logName()
+	//	error
+	//	because 'this' in logname points to the global object
+
+	var logPersonName = logName.bind( person )
+	//	bind creates a new function
+	//	with 'this' pointing to what is passed in, i.e. person object
+	logPersonName()
+	//	Logged: John Doe
+
+	//	or call bind when creating the function works too
+	var logName = function() {
+		console.log( 'Logged: ' + this.getFullName() )
+	}.bind( person )
+
+	logName()
+	//	Logged: John Doe
+
+;```
+
 ---
 
 
