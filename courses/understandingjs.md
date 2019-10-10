@@ -1136,6 +1136,18 @@ these all have to do with the 'this' variable
 
 ;```
 
+```js
+
+	//	or using call, passing in the 'this' object
+	//	doesn't create a new function like bind
+	//	but just executes it
+	//	is it equals to invoking with (), but with more options
+
+	logName.call( person, 'pass other', 'var in' )
+	//	Logged: John Doe
+
+;```
+
 ---
 
 
