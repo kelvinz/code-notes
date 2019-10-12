@@ -1148,6 +1148,22 @@ these all have to do with the 'this' variable
 
 ;```
 
+```js
+
+	//	difference for apply to call is just the other vars
+	//	needs to be in an array
+	logName.apply( person, [ 'pass other', 'var in' ] )
+
+	( function( lang1, lang2 ) {
+		console.log( 'Logged: ' + this.getFullName() )
+		console.log( 'Arguments: ' + lang1 + lang2 )
+	}).apply( person, [ 'en', 'es' ] )
+	//	Logged: John Doe
+	//	Arguments: en es
+
+
+;```
+
 ---
 
 
