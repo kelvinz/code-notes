@@ -1164,6 +1164,26 @@ these all have to do with the 'this' variable
 
 ;```
 
+```js
+
+	//	function currying
+	function multiply( a, b ) {
+		return a * b
+	}
+
+	//	this makes the first var always 2
+	//	aka multiply( 2, b )
+	//	this is just default
+	var multiplyByTwo = multiply.bind( this, 2 )
+
+;```
+
+**function currying**
+creating a copy of a function but with some preset parameters
+very useful in mathematical situations
+
+
+
 ---
 
 
