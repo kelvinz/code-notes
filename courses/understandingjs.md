@@ -1220,6 +1220,21 @@ very useful in mathematical situations
 
 ;```
 
+```js
+
+	//	pass 2 var into the mapForEach
+	//	which only accepts 1 var
+	//	bind the first one in!
+
+	var checkPastLimit = function( limiter, item ) {
+		return item > limiter
+	}
+
+	var arr5 = mapForEach( arr1, checkPastLimit.bind( this, 1 ) )
+	//	[ false, true, true ]
+
+;```
+
 ---
 
 
