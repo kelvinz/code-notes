@@ -1235,6 +1235,24 @@ very useful in mathematical situations
 
 ;```
 
+```js
+
+	//	calling bind each time seems troublesome
+	//	bind auto adds when the new fn is created
+
+	var checkPastLimitSimplified = function( limiter ) {
+		return function( limiter, item ) {
+			return item > limiter
+		}.bind( this, limiter )
+	}
+
+	var arr6 = mapForEach( arr1, checkPastLimitSimplified( 2 ) )
+	//	[ false, false, true ]
+
+;```
+
+
+
 ---
 
 
