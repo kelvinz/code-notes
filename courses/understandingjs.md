@@ -1253,6 +1253,29 @@ very useful in mathematical situations
 
 
 
+## functional programming 2
+
+```js
+
+	//	underscore.js
+
+	var arr1 = _.map( [ 1, 2, 3 ], function( item ) { return item * 3 } )
+	//	[ 3, 6, 9 ]
+
+	var arr2 = _.filter( [ 2, 3, 4, 5, 6, 7 ], function( item ) { return item % 2 === 0 } )
+	//	% is remainder after dividing
+	//	[ 2, 4, 6 ]
+
+;```
+
+the OG
+<https://underscorejs.org/docs/underscore.html>
+
+the built-upon
+<https://lodash.com/docs/4.17.15>
+
+
+
 ---
 
 
