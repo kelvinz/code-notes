@@ -1284,6 +1284,26 @@ the built-upon
 
 
 
+## conceptual aside: classical vs prototypal inheritance
+
+**inheritance**
+one object gets access to the properties & methods of another object
+
+**classical inheritance**
+verbose
+-	friend
+-	protected
+-	private
+-	interface
+
+**prototypal inheritance**
+simple
+-	flexible
+-	extensible
+-	easy to understand
+
+
+
 ---
 
 
