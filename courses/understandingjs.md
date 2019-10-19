@@ -1304,6 +1304,58 @@ simple
 
 
 
+## understanding the prototype
+
+obj
+-> prop1
+-> proto{}
+	- prop2
+	-> proto{}
+		- prop3
+
+obj.prop1 = finds prop1 in obj, runs
+obj.prop2 = can't find in obj, goes to proto, finds prop2, runs
+obj.prop3 = can't find in obj, goes to proto, can't find, goes to proto of proto, finds prop3, runs
+
+other objs can point to the same proto{}
+
+```js
+
+	var person = {
+		firstname: 'Default',
+		lastname: 'Default',
+		getFullName: function() {
+			return this.firstname + ' ' + this.lastname
+		}
+	}
+
+	var john = {
+		firstname: 'John',
+		lastname: 'Doe'
+	}
+
+	//	don't do this EVER! for demo purposes only!!!
+	john.__proto__ = person
+	console.log( john.getFullName() )
+	//	John Doe
+	//	can't find getFullName, so went to find in proto
+
+	console.log( john.firstname )
+	//	John
+	//	found firstname, so didn't go to proto
+
+	var jane = {
+		firstname: 'Jane'
+	}
+
+	jane.__proto__ = person
+	console.log( jane.getFullName )
+	//	Jane Default
+
+;```
+
+
+
 ---
 
 
