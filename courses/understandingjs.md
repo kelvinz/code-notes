@@ -1356,6 +1356,40 @@ other objs can point to the same proto{}
 
 
 
+## everything is an object ( or a primitive )
+
+```js
+
+	//	everything has a prototype
+	var a = {}
+	var b = function() {}
+	var c = []
+
+	a.__proto__
+	//	Object {}
+	//	this is the base object
+	//	with properties & methods
+	//	.toString(), etc
+
+	b.__proto__
+	//	function Empty() {}
+	//	this is the base function object
+	//	with properties & methods
+	//	.bind() .call(), etc
+
+	c.__proto__
+	//	[]
+	//	with properties & methods
+	//	.length() .push(), etc
+
+	c.__proto__.__proto__
+	//	Object {}
+	//	the base of all objects
+
+;```
+
+
+
 ---
 
 
