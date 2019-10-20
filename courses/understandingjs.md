@@ -1390,6 +1390,49 @@ other objs can point to the same proto{}
 
 
 
+## reflection & extend
+
+**reflection**
+an object can look at itself, listing & changing its properties & methods
+
+```js
+
+	var person = {
+		firstname: 'Default',
+		lastname: 'Default',
+		getFullName: function() {
+			return this.firstname + ' ' + this.lastname
+		}
+	}
+
+	var john = {
+		firstname: 'John',
+		lastname: 'Doe'
+	}
+
+	//	don't do this EVER! for demo purposes only!!!
+	john.__proto__ = person
+
+	for ( var prop in john ) {
+		console.log( prop + ': ' + john[ prop ] )
+		//	firstname: John
+		//	lastname: Doe
+		//	getFullName: function() { return this.firstname + ' ' + this.lastname }
+	}
+	//	for... in got all props even those on it's prototype
+
+	for ( var prop in john ) {
+		if ( john.hasOwnProperty( prop ) ) {
+			console.log( prop + ': ' + john[ prop ] )
+			//	firstname: John
+			//	lastname: Doe
+		}
+	}
+	//	the property is on the object itself & not in its proto
+	//	'reflect' on object
+
+;```
+
 ---
 
 
