@@ -1433,6 +1433,29 @@ an object can look at itself, listing & changing its properties & methods
 
 ;```
 
+```js
+
+	var jane = {
+		addres: '111 main st',
+		getFormalFullName: function() {
+			return this.lastname + ', ' + this.firstname
+		}
+	}
+
+	var jim = {
+		getFirstName: function() {
+			return firstname
+		}
+	}
+
+	_.extend( john, jane, jim )
+	//	adds jane & jim's properties to john
+	//	combines objects
+
+;```
+
+
+
 ---
 
 
