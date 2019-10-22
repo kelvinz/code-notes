@@ -1464,6 +1464,32 @@ an object can look at itself, listing & changing its properties & methods
 
 
 
+## function constructors, 'new', & the history of javascript
+
+**function constructors**
+a normal function that is used to construct objects
+the 'this' variable points to a new empty object
+that object is returned from the function automatically
+
+```js
+
+	//	function constructor
+	function Person( firstname, lastname ) {
+		this.firstname = firstname
+		this.lastname = lastname
+	}
+
+	var john = new Person( 'John', 'Doe' )
+	//	'new' creates a new empty object
+	//	person function invokes & itself loads into the empty object
+	//	'this' will now refer to that new object
+	//	it works as long as the person function doesn't return something
+	//	i.e. -return 'hello world'- in one of its line
+
+;```
+
+
+
 ---
 
 
