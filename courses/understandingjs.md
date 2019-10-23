@@ -1490,6 +1490,36 @@ that object is returned from the function automatically
 
 
 
+## function constructors & '.prototype'
+
+every function has a prototype property
+that starts off as an empty object
+`myFunction.prototype`
+
+the 'new' keyword creates a prototype for the new object
+which is the initial function's prototype that it's created from
+
+```js
+
+	Person.prototype.getFullName = function() {
+		return this.firstname + ' ' + this.lastname
+	}
+
+	john.getFullName()
+	//	John Doe
+
+;```
+
+adding getFullName in the intial Person function works too
+but it means that every 'new' person you create has that function
+this takes up memory
+but if you add getFullName inside its prototype
+it can be used by all persons created
+but it's sharing the same function inside its prototype linkage
+thus only 1 copy of the function is in memory
+
+
+
 ---
 
 
