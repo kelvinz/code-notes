@@ -1520,6 +1520,16 @@ thus only 1 copy of the function is in memory
 
 
 
+## dangerous aside: 'new' & functions
+
+there won't be an error if you forgot to add the 'new' keyword
+but the object won't be created & the object you thought you created is undefined
+
+convention is to name function constructors with captital first letter
+so you can easily notice functions that does't have a 'new' infront of them
+
+
+
 ---
 
 
