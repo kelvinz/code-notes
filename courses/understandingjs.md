@@ -1551,6 +1551,32 @@ so you can easily notice functions that does't have a 'new' infront of them
 
 ;```
 
+```js
+
+	//	add own functions to prototypes
+
+	String.prototype.isLengthGreaterThan = function( limit ) {
+		return this.length > limit
+	}
+	console.log( 'John'.isLengthGreaterThan( 3 ) )
+	//	true
+
+	Number.prototype.isPositive = function() {
+		return this > 0
+	}
+	console.log( 3.isPositive() )
+	//	error
+	//	javascript auto guesses/converts strings for you
+	//	but somehow not numbers
+	//	you'll have to do the object creating yourself
+	var c = new Number( 3 )
+	console.log( c.isPositive() )
+	//	true
+
+;```
+
+
+
 ---
 
 
