@@ -1530,6 +1530,27 @@ so you can easily notice functions that does't have a 'new' infront of them
 
 
 
+## conceptual aside: built-in function constructors
+
+```js
+
+	var a = new Number( 3 )
+	//	a is now an object that contains a primitive with .prototype
+
+	var b = new String( 'John' )
+	//	b is now an object that contains a primitive with .prototype
+	//	b.indexOf( 'o' ) -> 1
+
+	'John'.length
+	//	4
+	//	javascript guesses what you're trying to do
+	//	wraps the primitive into an object
+	//	which has a prototype
+	//	which allows .length to work
+	//	aka like applying new String( 'John' ) behind the scenes
+
+;```
+
 ---
 
 
