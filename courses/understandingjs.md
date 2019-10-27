@@ -1577,6 +1577,29 @@ so you can easily notice functions that does't have a 'new' infront of them
 
 
 
+## dangerous aside: built-in function constructors
+
+```js
+
+	var a = 3
+	var b = new Number( 3 )
+
+	a == b
+	//	true
+	//	b will be coerced to a number
+	//	even tho it is an object with a number inside
+	//	thus might cause bugs or confusion
+	//	better not to use the built-in function constructors
+
+	a === b
+	//	false
+
+;```
+
+sidenote: use moments.js when you need to use dates instead of new Date()
+
+
+
 ---
 
 
