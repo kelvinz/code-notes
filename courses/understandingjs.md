@@ -1600,6 +1600,54 @@ sidenote: use moments.js when you need to use dates instead of new Date()
 
 
 
+## dangerous aside: arrays & for... in
+
+```js
+
+	var arr = [ 'John', 'Jane', 'Jim' ]
+	for ( var prop in arr ) {
+		console.log( prop + ': ' + arr[ prop ] )
+		//	0: John, 1: Jane, 1: Jim
+	}
+
+	Array.prototype.myCustomFeature = 'cool'
+
+	for ( var prop in arr ) {
+		console.log( prop + ': ' + arr[ prop ] )
+		//	0: John, 1: Jane, 1: Jim, myCustomFeature: cool
+	}
+	//	because arrays are objects
+	//	use normal for loop instead when handling arrays
+
+;```
+
+
+
+## object.create & pure prototypal inheritance
+
+```js
+
+	var person = {
+		firstname: 'Default',
+		lastname: 'Default',
+		greet: function() {
+			return 'Hi ' + this.firstname
+		}
+	}
+
+	var john = Object.create( person )
+	john.firstname = 'John'
+	john.lastname = 'Doe'
+	john.greet()
+	//	Hi John Doe
+
+;```
+
+**polyfill**
+code that adds a feature which the engine may lack
+
+
+
 ---
 
 
