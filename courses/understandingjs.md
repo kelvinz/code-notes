@@ -1648,6 +1648,42 @@ code that adds a feature which the engine may lack
 
 
 
+## es6 & classes
+
+```js
+
+	class Person {
+		constructor( firstname, lastname ) {
+			this.firstname = firstname
+			this.lastname = lastname
+		}
+
+		greet() {
+			return 'Hi ' + firstname
+		}
+	}
+
+	var john = new Person( 'John', 'Doe' )
+
+	class InformalPerson extends Person {
+		constructor( firstname, lastname ) {
+			super( firstname, lastname )
+		}
+
+		greet() {
+			return 'Yo ' + firstname
+		}
+	}
+
+	var jane = new InformalPerson( 'Jane' )
+
+;```
+
+**syntactic sugar**
+a different way to type something that doesn't change how it works under the hood
+
+
+
 ---
 
 
