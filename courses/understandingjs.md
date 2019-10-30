@@ -1692,6 +1692,38 @@ a different way to type something that doesn't change how it works under the hoo
 
 
 
+## initialization
+
+```js
+
+	var people = [
+		{
+			//	the 'john' object
+			firstname: 'John',
+			lastname: 'Doe',
+			address: [
+				'111 Main St',
+				'222 Third St'
+			]
+		},
+		{
+			//	the 'jane' object
+			firstname: 'Jane',
+			lastname: 'Doe',
+			address: [
+				'333 Main St',
+				'444 Third St'
+			],
+			greet: function() {
+				return 'Hello!'
+			}
+		}
+	]
+
+;```
+
+
+
 ---
 
 
