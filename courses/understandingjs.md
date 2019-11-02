@@ -1769,6 +1769,34 @@ a different way to type something that doesn't change how it works under the hoo
 
 
 
+## strict mode
+
+```js
+
+	var person
+	persom = {}
+	console.log( persom )
+	//	Object {}
+
+	'use strict'
+	var person
+	persom = {}
+	console.log( persom )
+	//	uncaught referenceerror: persom is not defined
+
+;```
+
+use it on the whole file -> first line of javascript file
+use it only on a function -> first line of function
+
+
+
+## strict mode reference
+
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode>
+
+
+
 ---
 
 
