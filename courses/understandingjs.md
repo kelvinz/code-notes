@@ -1805,6 +1805,23 @@ use it only on a function -> first line of function
 
 
 
+## learning from other's good code
+
+github -> explore -> front-end js frameworks -> src folder
+
+
+
+## deep dive into source code: jquery - part 1
+
+```js
+
+	var q = $( 'ul.people li' )
+	console.log( q )
+	//	jQuery.fn.init[ 3 ]
+	//	& __proto__ is jQuery Object
+
+;```
+
 ---
 
 
