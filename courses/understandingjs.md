@@ -1822,6 +1822,37 @@ github -> explore -> front-end js frameworks -> src folder
 
 ;```
 
+```js
+
+	//	new jQuery objects are created when you use the jQuery call
+	//	thus the jQuery.fn.init Object from above
+	var jQuery = function( selector, context ) {
+		return new jQuery.fn.init( selector, context )
+	}
+
+	//	setting the jQuery object's prototype
+	//	& being able to call it with a shortcut .fn instead of .prototype
+	jQuery.fn = jQuery.prototype = {
+		//	some functions in the jQuery prototype
+		each: function( callback, args ) {
+			return jQuery.each( this, callback, args )
+		},
+		map: function( callback ) {
+			return this.pushStack( jQuery.map( this, function( elem, i ) {
+				return callback.call( elem, i, elem )
+			}))
+		},
+		first: function() {
+			return this.eq( 0 )
+		}
+
+		//	etc etc
+	}
+
+;```
+
+
+
 ---
 
 
