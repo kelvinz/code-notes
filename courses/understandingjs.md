@@ -1853,6 +1853,30 @@ github -> explore -> front-end js frameworks -> src folder
 
 
 
+## deep dive into source code: jquery - part 2
+
+```js
+
+	//	sizzle is imported
+
+	//	init
+	var init = jQuery.fn.init = function( selector, context ) {
+		//	etc etc
+
+		//	doing something to the empty object created
+		//	then returning the object
+		//	thus the new operator still works
+		//	in normal cases 'this' is simply returned by default with new operator
+		return jQuery.makeArray( selector, this )
+	}
+
+	//	init's prototype is jQuery's prototype
+	init.prototype = jquery.fn
+
+;```
+
+
+
 ---
 
 
