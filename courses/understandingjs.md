@@ -1877,6 +1877,24 @@ github -> explore -> front-end js frameworks -> src folder
 
 
 
+## deep dive into source code: jquery - part 3
+
+**method chaining**
+calling one method after another,
+each method affects the parent object
+obj.method1().method2()
+both methods end up with a 'this' var pointing at obj
+
+```js
+
+	//	method chaining
+	addClass: function() {
+		//	does stuff
+		return this
+	}
+
+;```
+
 ---
 
 
