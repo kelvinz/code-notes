@@ -1895,6 +1895,37 @@ both methods end up with a 'this' var pointing at obj
 
 ;```
 
+```js
+
+	var
+
+	//	map over jQuery in case of overwrite
+	_jQuery = window.jQuery,
+
+	//	map over the $ in case of overwrite
+	_$ = window.$
+
+	jQuery.noConflict = function( deep ) {
+		if ( window.$ === jQuery ) {
+			window.$ = _$
+		}
+
+		if ( deep && window.jQuery === jQuery ) {
+			window.jQuery = _jQuery
+		}
+
+		return jQuery
+	}
+
+	//	expose jQuery globally so you can use it via $( xxx )
+	if ( typeof noGlobal === strundefined ) {
+		window.jQuery = window.$ = jQuery
+	}
+
+;```
+
+
+
 ---
 
 
