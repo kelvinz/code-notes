@@ -1934,6 +1934,26 @@ both methods end up with a 'this' var pointing at obj
 
 
 
+## requirements
+
+1. reuseable library/framework
+2. easy to type structure like G$()
+3. support jQuery
+
+
+
+## structuring safe code
+
+```js
+
+	( function( global, $ ) {
+		//	greeter framework goes inside
+	} ( window, jQuery ) )
+
+;```
+
+
+
 ---
 
 
