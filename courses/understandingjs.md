@@ -1954,6 +1954,38 @@ both methods end up with a 'this' var pointing at obj
 
 
 
+## our object & its prototype
+
+```js
+
+	//	'new' an object
+	var Greetr = function( firstName, lastName, language ) {
+		return new Greetr.init( firstName, lastName, language )
+	}
+
+	Greetr.prototype = {}
+
+	//	the actual object is created here
+	//	allowing us to 'new' an object without calling 'new'
+	Greetr.init = function( firstName, lastName, language ) {
+		var self = this
+		self.firstName = firstName || ''
+		self.lastName  = lastName || ''
+		self.language  = language || 'en'
+		self.validate()
+	}
+
+	//	trick borrowed from jQuery so we don't have to use the 'new' keyword
+	Greetr.init.prototype = Greetr.prototype
+
+	//	attach our Greetr to the global object
+	//	provide a shorthand '$G' for ease our poor fingers
+	global.Greetr = global.G$ = Greetr
+
+;```
+
+
+
 ---
 
 
