@@ -1986,6 +1986,108 @@ both methods end up with a 'this' var pointing at obj
 
 
 
+## properties & chainable methods
+
+```js
+
+	//	hidden within the scope of the IIFE & never directly accessible
+	var supportedLangs = [ 'en', 'es' ]
+
+	var greetings = {
+		en: 'Hello',
+		es: 'Hola'
+	}
+
+	var formalGreetings = {
+		en: 'Greetings',
+		es: 'Saludos'
+	}
+
+	var logMessages = {
+		en: 'Logged in',
+		es: 'Inició sesión'
+	}
+
+	Greetr.init = function( firstName, lastName, language ) {
+		//	has access to the vars supportedLangs, greetings, etc
+		//	but global doesn't
+		//	because of closures
+		//	they sit in the same lexical environment
+		...
+	}
+
+	//	prototype holds methods ( to save memory space )
+	Greetr.prototype = {
+		fullName: function() {
+			//	'this' refers to the calling object at execution time
+			return this.firstName + ' ' + this.lastName
+		},
+		validate: function() {
+			//	check that is a valid language
+            //	references the externally inaccessible 'supportedLangs' within the closure
+			if ( supportedLangs.indexOf( this.language ) === -1 ) {
+				throw 'Invalid language'
+			}
+		},
+		greeting: function() {
+			return greetings[ this.language ] + ' ' + this.firstName + '!'
+		},
+		formalGreeting: function() {
+			return formalGreetings[ this.language ] + ' ' + this.fullName()
+		},
+		greet: function( formal ) {
+			var msg
+
+			//	if undefined or null it will be coerced to 'false'
+			if ( formal ) {
+				msg = this.formalGreeting()
+			} else {
+				msg = this.greeting()
+			}
+
+			if ( console ) {
+				console.log( msg )
+			}
+
+			//	'this' refers to the calling object at execution time
+			//	makes the method chainable
+			return this
+		},
+		log: function() {
+			if ( console ) {
+				console.log( logMessages[ this.language ] + ': ' + this.fullName() )
+			}
+
+			return this
+		},
+		setLang: function( lang ) {
+			this.language = lang
+			this.validate()
+			return this
+		}
+	}
+
+;```
+
+```js
+
+	var g = G$( 'John', 'Doe' )
+	g.greet().greet( true )
+	//	Hello John!
+	//	Greetings, John Doe
+
+	g.greet().setLang( 'es' ).greet( true )
+	//	Hello John!
+	//	Saludos, John Doe
+
+	g.greet().setLang( 'fr' ).greet( true )
+	//	Hello John!
+	//	Uncaught Invalid language
+
+;```
+
+
+
 ---
 
 
