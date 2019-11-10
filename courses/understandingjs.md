@@ -2088,6 +2088,42 @@ both methods end up with a 'this' var pointing at obj
 
 
 
+## adding jQuery support
+
+```js
+
+	//	set up some html
+	//	select lang
+	//	login
+	//	example
+
+	//	in prototype
+	HTMLGreeting: function( selector, formal ) {
+		if ( !$ ) {
+			throw 'jQuery is not loaded'
+		}
+
+		if ( !selector ) {
+			throw 'Missing jQuery selector'
+		}
+
+		var msg
+		if ( formal ) {
+			msg = this.formalGreeting()
+		} else {
+			msg = this.greeting()
+		}
+
+		//	inject the message in the chosen place in the DOM
+		$( selector ).html( msg )
+
+		return this
+	}
+
+;```
+
+
+
 ---
 
 
