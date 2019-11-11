@@ -2124,6 +2124,14 @@ both methods end up with a 'this' var pointing at obj
 
 
 
+## good commenting
+
+always comment as much as possible
+to prevent missing anything
+& for future you or other devs to continue work
+
+
+
 ---
 
 
