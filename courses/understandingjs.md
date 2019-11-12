@@ -2132,6 +2132,33 @@ to prevent missing anything
 
 
 
+## let's use our framework
+
+```js
+
+	//	gets a new object
+	var g = G$( 'john', 'doe' )
+
+	//	use our chainable methods
+	g.greet().setLang( 'es' ).greet( true ).log()
+
+	//	use our object on click of login button
+	$( '#login' ).click( function() {
+		//	create a new Greetr object
+		var loginGtr = G$( 'John', 'Doe' )
+		//	hide the login from screen
+		$( '#logindiv' ).hide()
+		//	fire off html greeting
+		//	pass #greeting as the selector
+		//	+ chosen lang
+		//	log the welcome msg too
+		loginGtr.setLang( $( '#lang' ).val() ).HTMLGreeting( '#greeting', true ).log()
+	})
+
+;```
+
+
+
 ---
 
 
