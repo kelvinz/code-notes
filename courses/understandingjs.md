@@ -2168,8 +2168,15 @@ to prevent missing anything
 
 
 ---
+## typescript, es6 & transpiled languages
 
+**transpile**
+convert the syntax of one programming language to another
+in this case languages that don't really ever run anywhere
+but instead are processed by 'transpilers' that generate javascript
 
+-	typescript
+-	traceur
 
 # section 11: getting ready for ecmascript 6
 
