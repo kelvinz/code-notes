@@ -2167,7 +2167,6 @@ to prevent missing anything
 
 
 
----
 ## typescript, es6 & transpiled languages
 
 **transpile**
@@ -2178,7 +2177,15 @@ but instead are processed by 'transpilers' that generate javascript
 -	typescript
 -	traceur
 
-# section 11: getting ready for ecmascript 6
+
+
+## transpiled languages references
+
+<http://www.typescriptlang.org>
+<http://www.typescriptlang.org/Playground>
+
+<https://github.com/google/traceur-compiler>
+<https://google.github.io/traceur-compiler/demo/repl.html#>
 
 
 
