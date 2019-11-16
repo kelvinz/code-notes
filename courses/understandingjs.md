@@ -2193,7 +2193,13 @@ but instead are processed by 'transpilers' that generate javascript
 
 
 
-# section 12: conclusion
+# section 11: getting ready for ecmascript 6
+
+
+
+## es6 features reference
+
+<https://github.com/lukehoban/es6features>
 
 
 
