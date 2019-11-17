@@ -21,6 +21,19 @@ without a framework dependency
 
 ## adding data
 
+```html
+
+	<script>
+		let name = 'world'
+	</script>
+
+	<h1>Hello { name }!</h1>
+	<h1>Hello { name.toUpperCase() }!</h1>
+
+;```
+
+
+
 
 
 ---
