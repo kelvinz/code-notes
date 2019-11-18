@@ -34,6 +34,25 @@ without a framework dependency
 
 
 
+## dynamic attributes
+
+```html
+
+	<script>
+		let src = 'tutorial/image.gif',
+			name = 'A man'
+	</script>
+
+	<img src={ src } alt="{ name } dances.">
+
+	<!-- shorthand -->
+	<!-- since name & value are the same ie. src={ src } -->
+	<img { src } alt="{ name } dances.">
+
+;```
+
+
+
 
 
 ---
