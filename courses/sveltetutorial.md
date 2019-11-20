@@ -53,6 +53,25 @@ without a framework dependency
 
 
 
+## styling
+
+scoped to component
+won't affect others
+
+```html
+
+	<style>
+		p {
+			color: purple;
+		}
+	</style>
+
+	<p>This is a paragraph.</p>
+
+;```
+
+
+
 
 
 ---
