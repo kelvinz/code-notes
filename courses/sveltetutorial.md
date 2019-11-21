@@ -72,6 +72,32 @@ won't affect others
 
 
 
+## nested components
+
+```html
+
+	<!-- App.svelte -->
+	<script>
+		import Nested from './Nested.svelte'
+	</script>
+
+	<style>
+		p {
+			color: purple;
+		}
+	</style>
+
+	<!-- only this p is purple, the nested one is not affected -->
+	<p>This is a paragraph.</p>
+	<Nested/>
+
+	<!-- Nested.svelte -->
+	<p>This is another paragraph.</p>
+
+;```
+
+
+
 
 
 ---
