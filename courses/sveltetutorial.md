@@ -115,6 +115,21 @@ remember to do it yourself or only use for trusted sources
 
 
 
+## making an app
+
+build tools to integrate svelte
+
+**rollup**
+<https://github.com/rollup/rollup-plugin-svelte>
+
+**webpack**
+<https://github.com/sveltejs/svelte-loader>
+
+**parcel**
+<https://github.com/DeMoorJasper/parcel-plugin-svelte>
+
+
+
 
 
 ---
