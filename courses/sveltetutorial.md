@@ -98,6 +98,23 @@ won't affect others
 
 
 
+## html tags
+
+svelte doesn't perform any sanitization of expression inside @html
+remember to do it yourself or only use for trusted sources
+
+```html
+
+	<script>
+		let string = `this string contains some <strong>html!!!</strong>`
+	</script>
+
+	<p>{ @html string }</p>
+
+;```
+
+
+
 
 
 ---
