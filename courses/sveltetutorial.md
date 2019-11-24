@@ -130,6 +130,20 @@ build tools to integrate svelte
 
 
 
+configure text editor to read svelte files
+
+**sublime**
+open any .svelte file
+view > syntax > open all with current extension as... > html
+
+**vs code**
+in settings.json
+"files.associations": {
+	"*.svelte": "html"
+}
+
+
+
 
 
 ---
