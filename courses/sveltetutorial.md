@@ -211,6 +211,29 @@ reactive vars that will change depending on others
 
 
 
+## statements
+
+not limited to declaring reactive values
+can also run arbitary statements reactively
+
+```js
+
+	$: console.log( `the count is ${ count }` )
+
+	$: {
+		console.log( `the count is ${ count }` )
+		alert( `i said the count is ${ count }` )
+	}
+
+	$: if ( count >= 10 ) {
+		alert( `count is dangerously high!` )
+		count = 9
+	}
+
+;```
+
+
+
 
 
 ---
