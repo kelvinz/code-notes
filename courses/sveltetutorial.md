@@ -234,6 +234,29 @@ can also run arbitary statements reactively
 
 
 
+## updating arrays & objects
+
+svelte's reactivity is triggered by assignments
+push & splice, etc won't cause an update
+here're some solutions
+
+```js
+
+	function addNumber() {
+		numbers.push( numbers.length + 1 )
+		numbers = numbers
+	}
+
+	function addNumber() {
+		numbers = [...numbers, numbers.length + 1 ]
+	}
+
+	function addNumber() {
+		numbers[ numbers.length ] = numbers.length + 1
+	}
+
+;```
+
 
 
 ---
