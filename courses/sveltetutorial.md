@@ -257,6 +257,20 @@ here're some solutions
 
 ;```
 
+a simple rule of thumb:
+the name of the updated var must appear on the left hand side of the assignment
+
+```js
+
+	const foo = obj.foo
+	foo.bar = 'baz'
+	// obj.foo.bar won't be updated unless you follow up with
+	obj = obj
+
+;```
+
+
+
 
 
 ---
