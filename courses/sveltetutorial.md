@@ -271,6 +271,36 @@ the name of the updated var must appear on the left hand side of the assignment
 
 
 
+# props
+
+
+
+## declaring props
+
+it is 'getting' the prop through an 'export' statement
+as if export means import prop
+weird, but essentially an hack svelte created
+
+```html
+
+	<!-- app.svelte -->
+	<script>
+		import Nested from './Nested.svelte'
+	</script>
+
+	<Nested answer={42} />
+
+	<!-- Nested.svelte -->
+	<script>
+		export let answer
+	</script>
+
+	<p>The answer is { answer }</p>
+
+;```
+
+
+
 
 
 ---
