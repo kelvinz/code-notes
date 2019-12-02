@@ -301,6 +301,19 @@ weird, but essentially an hack svelte created
 
 
 
+## default values
+
+```html
+
+	<script>
+		export let answer = 'a mystery'
+	</script>
+	<!-- if prop is passed down, it is used else 'a mystery' is used as default -->
+
+;```
+
+
+
 
 
 ---
