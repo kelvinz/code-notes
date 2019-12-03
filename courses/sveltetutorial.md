@@ -340,6 +340,30 @@ weird, but essentially an hack svelte created
 
 
 
+# logic
+
+
+
+## if blocks
+
+```html
+
+	{ #if user.loggedIn }
+		<button on:click={toggle}>
+			Log out
+		</button>
+	{ /if }
+
+	{ #if !user.loggedIn }
+		<button on:click={toggle}>
+			Log in
+		</button>
+	{ /if }
+
+;```
+
+
+
 
 
 ---
