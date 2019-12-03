@@ -162,6 +162,10 @@ import & instantiate with new
 
 
 
+---
+
+
+
 # reactivity
 
 
@@ -271,6 +275,10 @@ the name of the updated var must appear on the left hand side of the assignment
 
 
 
+---
+
+
+
 # props
 
 
@@ -311,6 +319,24 @@ weird, but essentially an hack svelte created
 	<!-- if prop is passed down, it is used else 'a mystery' is used as default -->
 
 ;```
+
+
+
+## spread props
+
+```html
+
+	<!-- instead of -->
+	<Info name={pkg.name} version={pkg.version} speed={pkg.speed} website={pkg.website}/>
+
+	<!-- you can do this -->
+	<Info {...pkg} />
+
+;```
+
+
+
+---
 
 
 
