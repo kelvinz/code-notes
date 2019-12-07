@@ -398,6 +398,48 @@ weird, but essentially an hack svelte created
 
 
 
+## each blocks
+
+```html
+
+	{ #each cats as cat }
+		{ cat.name }
+	{ /each }
+
+	<!-- or -->
+
+	{ #each cats as { id, name } }
+		{ name } with { id }
+	{ /each }
+
+	<!-- or -->
+
+	{ #each [ ...cats ] as cat }
+		{ cat.name }
+	{ /each }
+
+	<!-- or -->
+
+	{ #each cats as cat, i }
+		{ i + 1 }: { cat.name }
+	{ /each }
+
+	<!-- or -->
+
+	{ #each cats as { id, name }, i }
+		{ i + 1 }: { name } with { id }
+	{ /each }
+
+	<!-- or -->
+
+	{ #each [ ...cats ] as cat, i }
+		{ i + 1 }: { cat.name }
+	{ /each }
+
+;```
+
+
+
 
 
 ---
