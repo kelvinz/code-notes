@@ -440,6 +440,21 @@ weird, but essentially an hack svelte created
 
 
 
+## keyed each blocks
+
+ensure that if the array changes
+the prop is re-passed in for everything inside
+
+```html
+
+	{ #each things as thing ( thing.id ) }
+		<Thing current={thing.color} />
+	{ /each }
+
+;```
+
+
+
 
 
 ---
