@@ -89,7 +89,7 @@ won't affect others
 
 	<!-- only this p is purple, the nested one is not affected -->
 	<p>This is a paragraph.</p>
-	<Nested/>
+	<Nested />
 
 	<!-- Nested.svelte -->
 	<p>This is another paragraph.</p>
@@ -291,7 +291,7 @@ weird, but essentially an hack svelte created
 
 ```html
 
-	<!-- app.svelte -->
+	<!-- App.svelte -->
 	<script>
 		import Nested from './Nested.svelte'
 	</script>
@@ -452,6 +452,54 @@ the prop is re-passed in for everything inside
 	{ /each }
 
 ;```
+
+
+
+## await blocks
+
+```html
+	<script>
+		let promise = getRandomNumber()
+
+		async function getRandomNumber() {
+			const res = await fetch( `tutorial/random-number` )
+			const text = await res.text()
+
+			if ( res.ok ) {
+				return text
+			} else {
+				throw new Error( text )
+			}
+		}
+
+		function handleClick() {
+			promise = getRandomNumber()
+		}
+	</script>
+
+	<button on:click={handleClick}>
+		generate random number
+	</button>
+
+	{ #await promise }
+		<p>...waiting</p>
+	{ :then number }
+		<p>The number is { number }</p>
+	{ :catch error }
+		<p>{ error.message }</p>
+	{ /await }
+
+	<!-- or -->
+
+	{ #await promise then value }
+		<p>the value is { value }</p>
+	{ /await }
+
+;```
+
+
+
+---
 
 
 
