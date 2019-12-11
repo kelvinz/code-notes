@@ -327,7 +327,7 @@ weird, but essentially an hack svelte created
 ```html
 
 	<!-- instead of -->
-	<Info name={pkg.name} version={pkg.version} speed={pkg.speed} website={pkg.website}/>
+	<Info name={pkg.name} version={pkg.version} speed={pkg.speed} website={pkg.website} />
 
 	<!-- you can do this -->
 	<Info {...pkg} />
