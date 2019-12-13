@@ -544,6 +544,37 @@ the prop is re-passed in for everything inside
 
 
 
+## event modifiers
+
+```html
+
+	<button on:click|once={handleClick}>Click</button>
+	<button on:click|once|capture|stopPropagation={handleClick}>Click</button>
+
+;```
+
+-	*preventDefault*
+	stops default action like submit form
+
+-	*stopPropagation*
+	prevents event reaching next element
+
+-	*passive*
+	improves scrolling performance on touch/wheel events
+	svelte will add this automatically when its safe to do so
+
+-	*capture*
+	fires during capture phase instead of the usual bubbling phase
+	<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture>
+
+-	*once*
+	removes handler after first time it runs
+
+-	*self*
+	only trigger if event target is the element itself
+
+
+
 
 
 ---
