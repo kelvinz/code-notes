@@ -575,6 +575,42 @@ the prop is re-passed in for everything inside
 
 
 
+## component events
+
+```html
+
+	<!-- App.svelte -->
+	<script>
+		import Inner from './Inner.svelte'
+
+		function handleMessage( event ) {
+			alert( event.detail.text )
+		}
+	</script>
+
+	<Inner on:message={handleMessage} />
+
+	<!-- Inner.svelte -->
+	<script>
+		import { createEventDispatcher } from 'svelte'
+
+		const dispatch = createEventDispatcher()
+
+		function sayHello() {
+			dispatch( 'message', {
+				text: 'Hello!'
+			} )
+		}
+	</script>
+
+	<button on:click={sayHello}>
+		Click to say hello
+	</button>
+
+;```
+
+
+
 
 
 ---
