@@ -611,6 +611,28 @@ the prop is re-passed in for everything inside
 
 
 
+## event forwarding
+
+unlike dom events, component events don't bubble
+components must forward events if they need to be reaching elsewhere
+
+```html
+
+	<script>
+		function forward( event ) {
+			dispatch( 'message', event.detail )
+		}
+	</script>
+
+	<Inner on:message={forward} />
+
+	<!-- or shorthand to forward all message events -->
+	<Inner on:message />
+
+;```
+
+
+
 
 
 ---
