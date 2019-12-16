@@ -633,6 +633,18 @@ components must forward events if they need to be reaching elsewhere
 
 
 
+## dom event forwarding
+
+works on dom events too
+
+```html
+
+	<button on:click>Click me</button>
+
+;```
+
+
+
 
 
 ---
