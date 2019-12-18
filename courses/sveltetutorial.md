@@ -645,6 +645,33 @@ works on dom events too
 
 
 
+---
+
+
+
+# bindings
+
+
+
+## text inputs
+
+generally data flow is top down
+unless you bind data
+
+```html
+
+	<script>
+		let name = 'world'
+	</script>
+
+	<input bind:value={name}>
+
+	<h1>Hello { name }!</h1>
+
+;```
+
+
+
 
 
 ---
