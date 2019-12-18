@@ -672,6 +672,31 @@ unless you bind data
 
 
 
+## numeric inputs
+
+in dom everything is a string
+when dealing with numeric inputs
+you'll have to coerce the value before using it
+but binding, svelte would take care of it
+
+```html
+
+	<script>
+		let a = 1
+		let b = 2
+	</script>
+
+	<label>
+		<input type="number" value={a} min="0" max="10">
+		<input type="range" value={a} min="0" max="10">
+	</label>
+
+	<p>{ a }</p>
+
+;```
+
+
+
 
 
 ---
