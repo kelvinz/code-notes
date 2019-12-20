@@ -697,6 +697,33 @@ but binding, svelte would take care of it
 
 
 
+## checkbox inputs
+
+```html
+
+	<script>
+		let yes = false
+	</script>
+
+	<label>
+		<input type="checkbox" bind:checked={yes}>
+		Yes! Send me regular email spam
+	</label>
+
+	{ #if yes }
+		<p>Thank you.</p>
+	{ :else }
+		<p>Opt in to continue.</p>
+	{ /if }
+
+	<button disabled={!yes}>
+		Subscribe
+	</button>
+
+;```
+
+
+
 
 
 ---
