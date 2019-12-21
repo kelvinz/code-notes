@@ -724,6 +724,18 @@ but binding, svelte would take care of it
 
 
 
+## group inputs
+
+```html
+
+	<input type=radio bind:group={scoops} value={1}>
+	<input type=radio bind:group={scoops} value={2}>
+	<input type=radio bind:group={scoops} value={3}>
+
+;```
+
+
+
 
 
 ---
