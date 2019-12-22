@@ -736,6 +736,19 @@ but binding, svelte would take care of it
 
 
 
+## textarea inputs
+
+```html
+
+	<textarea bind:value={value}></textarea>
+
+	<!-- shorthand -->
+	<textarea bind:value></textarea>
+
+;```
+
+
+
 
 
 ---
