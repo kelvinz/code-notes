@@ -391,7 +391,7 @@ weird, but essentially an hack svelte created
 	{ :else if 5 > x }
 		<p>{ x } is less than 5</p>
 	{ :else }
-		<p>{ x } is between 5 and 10</p>
+		<p>{ x } is between 5 & 10</p>
 	{ /if }
 
 ;```
@@ -794,6 +794,26 @@ values are objects in options
 
 
 
+## select multiple
+
+for selects with a multiple attribute
+it will populate an array rather than a single value
+
+```html
+
+	<select multiple bind:value={flavours}>
+		{ #each menu as flavour }
+			<option value={flavour}>
+				{ flavour }
+			</option>
+		{ /each }
+	</select>
+
+;```
+
+
+
+## conteneditable bindings
 
 
 ---
