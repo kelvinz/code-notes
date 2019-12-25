@@ -815,5 +815,18 @@ it will populate an array rather than a single value
 
 ## conteneditable bindings
 
+elements with a contenteditable="true" attribute support textContent & innerHTML bindings
+
+```html
+
+	<div
+		contenteditable="true"
+		bind:innerHTML={html}
+	></div>
+
+;```
+
+
+
 
 ---
