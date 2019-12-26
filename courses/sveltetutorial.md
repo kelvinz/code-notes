@@ -828,5 +828,27 @@ elements with a contenteditable="true" attribute support textContent & innerHTML
 
 
 
+## each block bindings
+
+```html
+
+	{ #each todos as todo }
+		<div class:done={todo.done}>
+			<input
+				type=checkbox
+				bind:checked={todo.done}
+			>
+
+			<input
+				placeholder="What needs to be done?"
+				bind:value={todo.text}
+			>
+		</div>
+	{ /each }
+
+;```
+
+
+
 
 ---
