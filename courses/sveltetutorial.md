@@ -866,5 +866,28 @@ elements with a contenteditable="true" attribute support textContent & innerHTML
 
 ;```
 
+**readonly**
+
+-	*duration*
+	the total duration of the video, in seconds
+
+-	*buffered*
+	an array of {start, end} objects
+
+-	*seekable*
+	ditto
+
+-	*played*
+	ditto
+
+-	*seeking*
+	boolean
+
+-	*ended*
+	boolean
+
+-	*videoWidth*
+	*videoHeight*
+
 
 ---
