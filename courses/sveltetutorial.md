@@ -850,5 +850,21 @@ elements with a contenteditable="true" attribute support textContent & innerHTML
 
 
 
+## media elements
+
+```html
+
+	<video
+		poster="https://sveltejs.github.io/assets/caminandes-llamigos.jpg"
+		src="https://sveltejs.github.io/assets/caminandes-llamigos.mp4"
+		on:mousemove={handleMousemove}
+		on:mousedown={handleMousedown}
+		bind:currentTime={time}
+		bind:duration
+		bind:paused
+	></video>
+
+;```
+
 
 ---
