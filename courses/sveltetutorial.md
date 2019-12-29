@@ -889,5 +889,21 @@ elements with a contenteditable="true" attribute support textContent & innerHTML
 -	*videoWidth*
 	*videoHeight*
 
+**two-way**
+
+-	*currentTime*
+	the current point in the video, in seconds
+
+-	*playbackRate*
+	how fast to play the video, where 1 is 'normal'
+
+-	*paused*
+	this one should be self-explanatory
+
+-	*volume*
+	a value between 0 & 1
+
+
+
 
 ---
