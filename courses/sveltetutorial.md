@@ -905,5 +905,22 @@ elements with a contenteditable="true" attribute support textContent & innerHTML
 
 
 
+## dimensions
+
+every block-level element has
+
+-	clientWidth
+-	clientHeight
+-	offsetWidth
+-	offsetHeight
+
+1.	they are readonly
+2.	has some overhead, not recommended for large number of elements
+3.	display: inline elements cannot be measured this way
+4.	elements that can't contain other elements like canvas can't be measured too
+5.	use a wrapper to contain them if needed
+
+
+
 
 ---
