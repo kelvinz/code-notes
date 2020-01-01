@@ -976,5 +976,62 @@ put it inside onMount lifecycle function
 
 
 
+## component bindings
+
+bind to component props
+value in the parent component is immediately updated
+but
+use component bindings sparingly
+difficult to track the flow of data around your application if you have too many of them
+if there is no 'single source of truth'
+
+```html
+
+	<!-- App.svelte -->
+	<script>
+		import Keypad from './Keypad.svelte'
+
+		let pin
+		$: view = pin ? pin.replace(/\d(?!$)/g, '•') : 'enter your pin'
+
+		function handleSubmit() {
+			alert( `submitted ${ pin }` )
+		}
+	</script>
+
+	<h1 style="color: { pin ? '#333' : '#ccc' }">{ view }</h1>
+	<Keypad on:submit={handleSubmit} />
+
+	<!-- Keypad.svelte -->
+	<script>
+		import { createEventDispatcher } from 'svelte'
+		export let value = ''
+
+		const dispatch = createEventDispatcher()
+		const select = num => () => value += num
+		const clear  = () => value = ''
+		const submit = () => dispatch( 'submit' )
+	</script>
+
+	<div class="keypad">
+		<button on:click={select(1)}>1</button>
+		<button on:click={select(2)}>2</button>
+		<button on:click={select(3)}>3</button>
+		<button on:click={select(4)}>4</button>
+		<button on:click={select(5)}>5</button>
+		<button on:click={select(6)}>6</button>
+		<button on:click={select(7)}>7</button>
+		<button on:click={select(8)}>8</button>
+		<button on:click={select(9)}>9</button>
+
+		<button disabled={!value} on:click={clear}>clear</button>
+		<button on:click={select(0)}>0</button>
+		<button disabled={!value} on:click={submit}>submit</button>
+	</div>
+
+;```
+
+
+
 
 ---
