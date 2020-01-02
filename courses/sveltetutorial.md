@@ -1033,5 +1033,34 @@ if there is no 'single source of truth'
 
 
 
+---
+
+
+
+# lifecycle
+
+
+
+## onMount
+
+recommended to put fetch in onMount rather than top level script
+
+```html
+
+	<script>
+		import { onMount } from 'svelte'
+
+		let photos = []
+
+		onMount( async () => {
+			const res = await fetch( `https://jsonplaceholder.typicode.com/photos?_limit=20` )
+			photos = await res.json()
+		} )
+	</script>
+
+;```
+
+
+
 
 ---
