@@ -1062,5 +1062,49 @@ recommended to put fetch in onMount rather than top level script
 
 
 
+## onDestroy
+
+```html
+
+	<script>
+		import { onDestroy } from 'svelte'
+
+		let seconds = 0
+		const interval = setInterval( () => seconds += 1, 1000 )
+
+		onDestroy( () => clearInterval( interval ) )
+	</script>
+
+;```
+
+we can also abstract the interval logic into a helper function
+
+```html
+
+	<!-- App.svelte -->
+	<script>
+		import { onInterval } from './utils.js'
+
+		let seconds = 0
+		onInterval( () => seconds += 1, 1000 )
+	</script>
+
+	<!-- utils.js -->
+	<script>
+		import { onDestroy } from 'svelte'
+
+		export function onInterval( callback, milliseconds ) {
+			const interval = setInterval( callback, milliseconds )
+
+			onDestroy( () => {
+				clearInterval(interval)
+			} )
+		}
+	</script>
+
+;```
+
+
+
 
 ---
