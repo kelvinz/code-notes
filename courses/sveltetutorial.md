@@ -1339,5 +1339,30 @@ a promise that resolves as soon as there're any state changes to DOM
 
 
 
+## auto-subscriptions
+
+the app in the previous example works
+but there's a subtle bug
+the unsubscribe function never gets called
+if the component was instantiated & destroyed many times
+this would result in a memory leak
+
+```html
+
+	<script>
+		import { onDestroy } from 'svelte'
+		import { count } from './stores.js'
+
+		let count_value
+
+		const unsubscribe = count.subscribe( value => {
+			count_value = value
+		} )
+
+		onDestroy( unsubscribe )
+	</script>
+
+;```
+
 
 ---
