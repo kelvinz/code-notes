@@ -1364,5 +1364,22 @@ this would result in a memory leak
 
 ;```
 
+auto subscribe by prefixing the store name with $
+any name beginning with $ is assumed to refer to a store value
+it's effectively a reserved character
+svelte will prevent you from declaring your own variables with a $ prefix
+
+```html
+
+	<script>
+		import { count } from './stores.js'
+	</script>
+
+	<h1>The count is { $count }</h1>
+
+;```
+
+
+
 
 ---
