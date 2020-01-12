@@ -1457,5 +1457,19 @@ stop is called when the last subscriber unsubscribes
 
 
 
+## store bindings
+
+```html
+
+	<input bind:value={$name}>
+
+	<button on:click="{() => $name += '!'}">
+		Add exclamation mark!
+	</button>
+
+;```
+
+
+
 
 ---
