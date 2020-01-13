@@ -1513,5 +1513,25 @@ stop is called when the last subscriber unsubscribes
 
 ;```
 
+**options**
+
+-	*delay* milliseconds before the tween starts
+-	*duration* either the duration of the tween in milliseconds
+	or (from, to) => milliseconds function
+	allowing you to (e.g.) specify longer tweens for larger changes in value
+-	*easing* p => t function
+-	*interpolate* custom (from, to) => t => value function
+	for interpolating between arbitrary values
+	by default, svelte will interpolate between numbers, dates, & identically-shaped arrays & objects
+	as long as they only contain numbers & dates or other valid arrays & objects
+	if you want to interpolate (for example) colour strings or transformation matrices
+	supply a custom interpolator
+
+you can also pass these options to progress.set & progress.update as a second argument
+in which case they will override the defaults
+the set & update methods both return a promise that resolves when the tween completes
+
+
+
 
 ---
