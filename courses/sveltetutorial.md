@@ -1649,5 +1649,63 @@ alternative to tweened that often works better for values that are frequently ch
 
 
 
+## custom css transitions
+
+```html
+
+	<script>
+		import { fade } from 'svelte/transition'
+		import { elasticOut } from 'svelte/easing'
+
+		let visible = true
+
+		function spin( node, { duration } ) {
+			return {
+				duration,
+				css: t => {
+					const eased = elasticOut( t )
+
+					return `
+						transform: scale(${eased}) rotate(${eased * 1080}deg);
+						color: hsl(
+							${~~(t * 360)},
+							${Math.min(100, 1000 - 1000 * t)}%,
+							${Math.min(50, 500 - 500 * t)}%
+						);`
+				}
+			}
+		}
+	</script>
+
+	<style>
+		.centered {
+			top: 50%;
+			left: 50%;
+			position: absolute;
+			transform: translate(-50%,-50%);
+		}
+
+		span {
+			font-size: 4em;
+			position: absolute;
+			transform: translate(-50%,-50%);
+		}
+	</style>
+
+	<label>
+		<input type="checkbox" bind:checked={visible}>
+		visible
+	</label>
+
+	{ #if visible }
+		<div class="centered" in:spin="{{duration: 8000}}" out:fade>
+			<span>transitions!</span>
+		</div>
+	{ /if }
+
+;```
+
+
+
 
 ---
