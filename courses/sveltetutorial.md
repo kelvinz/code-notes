@@ -1598,7 +1598,7 @@ alternative to tweened that often works better for values that are frequently ch
 	</label>
 
 	{ #if visible }
-		<p transition:fade>Fades in and out</p>
+		<p transition:fade>Fades in & out</p>
 	{ /if }
 
 ;```
@@ -1620,7 +1620,7 @@ alternative to tweened that often works better for values that are frequently ch
 	</label>
 
 	{ #if visible }
-		<p transition:fly="{{ y: 200, duration: 2000 }}">Fades in and out</p>
+		<p transition:fly="{{ y: 200, duration: 2000 }}">Fades in & out</p>
 	{ /if }
 
 ;```
@@ -1642,7 +1642,7 @@ alternative to tweened that often works better for values that are frequently ch
 	</label>
 
 	{ #if visible }
-		<p in:fly="{{ y: 200, duration: 2000 }}" out:fade>Flies in and out</p>
+		<p in:fly="{{ y: 200, duration: 2000 }}" out:fade>Flies in & out</p>
 	{ /if }
 
 ;```
