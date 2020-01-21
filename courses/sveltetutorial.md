@@ -1750,5 +1750,38 @@ alternative to tweened that often works better for values that are frequently ch
 
 
 
+## transition events
+
+```html
+
+	<script>
+		import { fly } from 'svelte/transition'
+
+		let visible = true
+		let status = 'waiting...'
+	</script>
+
+	<p>status: { status }</p>
+
+	<label>
+		<input type="checkbox" bind:checked={visible}>
+		visible
+	</label>
+
+	{ #if visible }
+		<p
+			transition:fly="{{ y: 200, duration: 2000 }}"
+			on:introstart="{() => status = 'intro started'}"
+			on:outrostart="{() => status = 'outro started'}"
+			on:introend="{() => status = 'intro ended'}"
+			on:outroend="{() => status = 'outro ended'}">
+			Flies in & out
+		</p>
+	{ /if }
+
+;```
+
+
+
 
 ---
