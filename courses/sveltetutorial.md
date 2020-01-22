@@ -1783,5 +1783,48 @@ alternative to tweened that often works better for values that are frequently ch
 
 
 
+## local transitions
+
+play only when individual element is added or removed
+not when the container block is added or destroyed
+
+```html
+
+	<script>
+		import { slide } from 'svelte/transition'
+
+		let i = 5
+		let showItems = true
+		let items = [ 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten' ]
+	</script>
+
+	<style>
+		div {
+			padding: 0.5em 0;
+			border-top: 1px solid #eee;
+		}
+	</style>
+
+	<label>
+		<input type="checkbox" bind:checked={showItems}>
+		show list
+	</label>
+
+	<label>
+		<input type="range" bind:value={i} max=10>
+	</label>
+
+	{ #if showItems }
+		{ #each items.slice( 0, i ) as item }
+			<div transition:slide|local>
+				{ item }
+			</div>
+		{ /each }
+	{ /if }
+
+;```
+
+
+
 
 ---
