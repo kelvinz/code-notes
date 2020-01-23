@@ -1826,5 +1826,62 @@ not when the container block is added or destroyed
 
 
 
+## deferred transitions
+
+```html
+
+	<script>
+		import { quintOut } from 'svelte/easing'
+		import { crossfade } from 'svelte/transition'
+
+		const [ send, receive ] = crossfade( {
+			duration: d => Math.sqrt( d * 200 ),
+			fallback( node, params ) {
+				const style = getComputedStyle( node )
+				const transform = style.transform === 'none' ? '' : style.transform
+
+				return {
+					duration: 600,
+					easing: quintOut,
+					css: t => `
+						transform: ${ transform } scale( ${ t } );
+						opacity: ${ t }
+					`
+				}
+			}
+		} )
+
+		let uid = 1
+
+		let todos = [
+			{ id: uid++, done: false, description: 'write some docs' },
+			{ id: uid++, done: false, description: 'start writing blog post' },
+			{ id: uid++, done: true,  description: 'buy some milk' },
+			{ id: uid++, done: false, description: 'mow the lawn' },
+			{ id: uid++, done: false, description: 'feed the turtle' },
+			{ id: uid++, done: false, description: 'fix some bugs' },
+		]
+
+		function add( input ) {
+			const todo = {
+				id: uid++,
+				done: false,
+				description: input.value
+			}
+
+			todos = [ todo, ...todos ]
+			input.value = ''
+		}
+
+		function remove( todo ) {
+			todos = todos.filter( t => t !== todo )
+		}
+
+		function mark( todo, done ) {
+			todo.done = done
+			remove( todo )
+			todos = todos.concat( todo )
+		}
+	</script>
 
 ---
