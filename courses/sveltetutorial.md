@@ -1988,3 +1988,25 @@ not when the container block is added or destroyed
 
 
 ---
+
+
+
+# animations
+
+
+
+## the animate directive
+
+```html
+
+	<label
+		in:receive="{{key: todo.id}}"
+		out:send="{{key: todo.id}}"
+		animate:flip="{{duration: 200}}"
+	>
+
+;```
+
+
+
+---
