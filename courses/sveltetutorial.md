@@ -2075,4 +2075,58 @@ not when the container block is added or destroyed
 
 ;```
 
+```js
+
+	export function pannable( node ) {
+		let x
+		let y
+
+		function handleMousedown( event ) {
+			x = event.clientX
+			y = event.clientY
+
+			node.dispatchEvent( new CustomEvent( 'panstart', {
+				detail: { x, y }
+			} ) )
+
+			window.addEventListener( 'mouseup', handleMouseup )
+			window.addEventListener( 'mousemove', handleMousemove )
+		}
+
+		function handleMousemove( event ) {
+			const dx = event.clientX - x
+			const dy = event.clientY - y
+			x = event.clientX
+			y = event.clientY
+
+			node.dispatchEvent( new CustomEvent( 'panmove', {
+				detail: { x, y, dx, dy }
+			} ) )
+		}
+
+		function handleMouseup( event ) {
+			x = event.clientX
+			y = event.clientY
+
+			node.dispatchEvent( new CustomEvent( 'panend', {
+				detail: { x, y }
+			} ) )
+
+			window.removeEventListener( 'mouseup', handleMouseup )
+			window.removeEventListener( 'mousemove', handleMousemove )
+		}
+
+		node.addEventListener( 'mousedown', handleMousedown )
+
+		return {
+			destroy() {
+				node.removeEventListener( 'mousedown', handleMousedown )
+			}
+		}
+	}
+
+;```
+
+
+
 ---
