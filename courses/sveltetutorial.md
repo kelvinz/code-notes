@@ -43,11 +43,11 @@ without a framework dependency
 			name = 'A man'
 	</script>
 
-	<img src={ src } alt="{ name } dances.">
+	<img src={src} alt="{name} dances.">
 
 	<!-- shorthand -->
 	<!-- since name & value are the same ie. src={ src } -->
-	<img { src } alt="{ name } dances.">
+	<img {src} alt="{name} dances.">
 
 ;```
 
@@ -2187,6 +2187,33 @@ not when the container block is added or destroyed
 			}
 		}
 	}
+
+;```
+
+
+
+---
+
+
+
+# classes
+
+
+
+## the class directive
+
+```html
+
+	<button
+		class="{current === 'foo' ? 'active' : ''}"
+		on:click="{() => current = 'foo'}"
+	>foo</button>
+
+	<!-- special directive to simplify it -->
+	<button
+		class:active="{current === 'foo'}"
+		on:click="{() => current = 'foo'}"
+	>foo</button>
 
 ;```
 
