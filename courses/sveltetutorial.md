@@ -2219,4 +2219,21 @@ not when the container block is added or destroyed
 
 
 
+## shorthand class directive
+
+```html
+
+	<div class:big={big}>
+		<!-- ... -->
+	</div>
+
+	<!-- or -->
+	<div class:big>
+		<!-- ... -->
+	</div>
+
+;```
+
+
+
 ---
