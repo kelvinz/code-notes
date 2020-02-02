@@ -2278,4 +2278,42 @@ not when the container block is added or destroyed
 
 
 
+## slot fallbacks
+
+```html
+
+	<!-- App.svelte -->
+	<script>
+		import Box from './Box.svelte'
+	</script>
+
+	<Box>
+		<h2>Hello!</h2>
+		<p>This is a box. It can contain anything.</p>
+	</Box>
+
+	<Box/>
+
+	<!-- Box.svelte -->
+	<style>
+		.box {
+			width: 300px;
+			border: 1px solid #aaa;
+			border-radius: 2px;
+			box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+			padding: 1em;
+			margin: 0 0 1em 0;
+		}
+	</style>
+
+	<div class="box">
+		<slot>
+			<em>no content was provided</em>
+		</slot>
+	</div>
+
+;```
+
+
+
 ---
