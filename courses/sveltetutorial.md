@@ -2399,4 +2399,22 @@ not when the container block is added or destroyed
 
 ;```
 
+you can also rename the variable if you want, etc call it active
+
+```html
+
+	<Hoverable let:hovering={active}>
+		<div class:active>
+			{#if active}
+				<p>I am being hovered upon.</p>
+			{:else}
+				<p>Hover over me!</p>
+			{/if}
+		</div>
+	</Hoverable>
+
+;```
+
+
+
 ---
