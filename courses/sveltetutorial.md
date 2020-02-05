@@ -2361,4 +2361,42 @@ not when the container block is added or destroyed
 
 
 
+## slot props
+
+```html
+
+	<!-- App.svelte -->
+	<script>
+		import Hoverable from './Hoverable.svelte'
+	</script>
+
+	<Hoverable let:hovering={hovering}>
+		<div class:active={hovering}>
+			{#if hovering}
+				<p>I am being hovered upon.</p>
+			{:else}
+				<p>Hover over me!</p>
+			{/if}
+		</div>
+	</Hoverable>
+
+	<!-- Hoverable.svelte -->
+	<script>
+		let hovering
+
+		function enter() {
+			hovering = true
+		}
+
+		function leave() {
+			hovering = false
+		}
+	</script>
+
+	<div on:mouseenter={enter} on:mouseleave={leave}>
+		<slot hovering={hovering}></slot>
+	</div>
+
+;```
+
 ---
