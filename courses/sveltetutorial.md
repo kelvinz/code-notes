@@ -2418,3 +2418,42 @@ you can also rename the variable if you want, etc call it active
 
 
 ---
+
+
+
+# context api
+
+
+
+## setContext & getContext
+
+a mechanism for components to 'talk' to each other
+without passing around data & functions as props or dispatching lots of events
+
+```js
+
+	// Map.svelte
+	import { onMount, setContext } from 'svelte'
+	import { mapbox, key } from './mapbox.js'
+
+	setContext( key, {
+		getMap: () => map
+	} )
+
+	// MapMarker.svelte
+	import { getContext } from 'svelte'
+	import { mapbox, key } from './mapbox.js'
+
+	const { getMap } = getContext( key )
+	const map = getMap()
+
+;```
+
+*context vs stores*
+stores are available to any part of an app
+context is only available to a component & its descendants
+context is not reactive, values that change over time should be represented as stores
+
+
+
+---
