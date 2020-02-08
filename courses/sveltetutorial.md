@@ -2457,3 +2457,27 @@ context is not reactive, values that change over time should be represented as s
 
 
 ---
+
+
+
+# special elements
+
+
+
+## svelte:self
+
+contain itself recursively
+
+```html
+
+	{ #if file.type === 'folder' }
+		<svelte:self {...file}/>
+	{ :else }
+		<File {...file}/>
+	{ /if }
+
+;```
+
+
+
+---
