@@ -2514,4 +2514,16 @@ contain itself recursively
 
 
 
+## svelte:window
+
+```html
+
+	<svelte:window on:keydown={handleKeydown}/>
+
+;```
+
+can add event modifiers like *preventDefault*
+
+
+
 ---
