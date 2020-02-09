@@ -2480,4 +2480,38 @@ contain itself recursively
 
 
 
+## svelte:component
+
+```html
+
+	<script>
+		import RedThing from './RedThing.svelte'
+		import GreenThing from './GreenThing.svelte'
+		import BlueThing from './BlueThing.svelte'
+
+		const options = [
+			{ color: 'red',   component: RedThing   },
+			{ color: 'green', component: GreenThing },
+			{ color: 'blue',  component: BlueThing  },
+		]
+
+		let selected = options[ 0 ]
+	</script>
+
+	<!-- instead of doing this -->
+	{ #if selected.color === 'red' }
+		<RedThing/>
+	{ :else if selected.color === 'green' }
+		<GreenThing/>
+	{ :else if selected.color === 'blue' }
+		<BlueThing/>
+	{ /if }
+
+	<!-- we can do this -->
+	<svelte:component this={selected.component}/>
+
+;```
+
+
+
 ---
