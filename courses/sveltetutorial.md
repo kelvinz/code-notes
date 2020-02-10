@@ -2526,4 +2526,26 @@ can add event modifiers like *preventDefault*
 
 
 
+## svelte:window bindings
+
+```html
+
+	<svelte:window bind:scrollY={y}/>
+
+;```
+
+**bindable properties**
+
+- innerWidth
+- innerHeight
+- outerWidth
+- outerHeight
+- scrollX
+- scrollY
+- online ( alias for window.navigator.online )
+
+*all except scrollX & scrollY are readonly*
+
+
+
 ---
