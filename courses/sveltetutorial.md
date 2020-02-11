@@ -2548,4 +2548,19 @@ can add event modifiers like *preventDefault*
 
 
 
+## svelte:body
+
+listen to events that fire on document.body
+
+```html
+
+	<svelte:body
+		on:mouseenter={handleMouseenter}
+		on:mouseleave={handleMouseleave}
+	/>
+
+;```
+
+
+
 ---
