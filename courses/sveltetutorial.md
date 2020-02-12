@@ -2563,4 +2563,18 @@ listen to events that fire on document.body
 
 
 
+## svelte:head
+
+insert elements inside head of document
+
+```html
+
+	<svelte:head>
+		<link rel="stylesheet" href="tutorial/dark-theme.css">
+	</svelte:head>
+
+;```
+
+
+
 ---
