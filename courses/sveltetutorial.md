@@ -2610,3 +2610,73 @@ the name to use when compiling this component as a custom element
 
 
 ---
+
+
+
+# module context
+
+
+
+## sharing code
+
+```html
+
+	<!-- App.svelte -->
+	<script>
+		import AudioPlayer from './AudioPlayer.svelte'
+	</script>
+
+	<!-- https://musopen.org/music/9862-the-blue-danube-op-314/ -->
+	<AudioPlayer
+		src="https://sveltejs.github.io/assets/music/strauss.mp3"
+		title="The Blue Danube Waltz"
+		composer="Johann Strauss"
+		performer="European Archive"
+	/>
+
+	<!-- https://musopen.org/music/43775-the-planets-op-32/ -->
+	<AudioPlayer
+		src="https://sveltejs.github.io/assets/music/holst.mp3"
+		title="Mars, the Bringer of War"
+		composer="Gustav Holst"
+		performer="USAF Heritage of America Band"
+	/>
+
+	<!-- AudioPlayer.svelte -->
+	<script context="module">
+		let current
+	</script>
+
+	<script>
+		export let src
+		export let title
+		export let composer
+		export let performer
+
+		let audio
+		let paused = true
+
+		function stopOthers() {
+			if ( current && current !== audio ) current.pause()
+			current = audio
+		}
+	</script>
+
+	<article class:playing={!paused}>
+		<h2>{ title }</h2>
+		<p><strong>{ composer }</strong> / performed by { performer }</p>
+
+		<audio
+			bind:this={audio}
+			bind:paused
+			on:play={stopOthers}
+			controls
+			{src}
+		></audio>
+	</article>
+
+;```
+
+
+
+---
