@@ -2760,3 +2760,39 @@ the name to use when compiling this component as a custom element
 
 
 ---
+
+
+
+# debugging
+
+
+
+## the @debug tag
+
+```html
+
+	<script>
+		let user = {
+			firstname: 'Ada',
+			lastname: 'Lovelace'
+		}
+	</script>
+
+	<input bind:value={user.firstname}>
+	<input bind:value={user.lastname}>
+
+	{ (console.log( user ), '') }
+
+	{ @debug user }
+
+	<h1>Hello { user.firstname }!</h1>
+
+;```
+
+
+
+---
+
+
+
+---
