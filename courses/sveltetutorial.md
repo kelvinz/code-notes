@@ -2679,4 +2679,84 @@ the name to use when compiling this component as a custom element
 
 
 
+## exports
+
+```html
+
+	<!-- App.svelte -->
+	<script>
+		import AudioPlayer, { stopAll } from './AudioPlayer.svelte'
+	</script>
+
+	<button on:click={stopAll}>
+		stop all audio
+	</button>
+
+	<!-- https://musopen.org/music/9862-the-blue-danube-op-314/ -->
+	<AudioPlayer
+		src="https://sveltejs.github.io/assets/music/strauss.mp3"
+		title="The Blue Danube Waltz"
+		composer="Johann Strauss"
+		performer="European Archive"
+	/>
+
+	<!-- https://musopen.org/music/43775-the-planets-op-32/ -->
+	<AudioPlayer
+		src="https://sveltejs.github.io/assets/music/holst.mp3"
+		title="Mars, the Bringer of War"
+		composer="Gustav Holst"
+		performer="USAF Heritage of America Band"
+	/>
+
+	<!-- AudioPlayer.svelte -->
+	<script context="module">
+		const elements = new Set()
+
+		export function stopAll() {
+			elements.forEach( element => {
+				element.pause()
+			} )
+		}
+	</script>
+
+	<script>
+		import { onMount } from 'svelte'
+
+		export let src
+		export let title
+		export let composer
+		export let performer
+
+		let audio
+		let paused = true
+
+		onMount( () => {
+			elements.add( audio )
+			return () => elements.delete( audio )
+		} )
+
+		function stopOthers() {
+			elements.forEach( element => {
+				if ( element !== audio ) element.pause()
+			} )
+		}
+	</script>
+
+	<article class:playing={!paused}>
+		<h2>{ title }</h2>
+		<p><strong>{ composer }</strong> / performed by { performer }</p>
+
+		<audio
+			bind:this={audio}
+			bind:paused
+			on:play={stopOthers}
+			controls
+			{src}
+		></audio>
+	</article>
+
+;```
+
+
+
 ---
