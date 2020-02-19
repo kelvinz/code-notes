@@ -37,3 +37,17 @@ console tab in dev tools
 
 
 
+# running & loading js
+
+
+
+-	browser console directly
+-	script tag in html
+-	running in node engine
+
+
+
+---
+
+
+
