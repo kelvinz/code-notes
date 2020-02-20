@@ -51,3 +51,37 @@ console tab in dev tools
 
 
 
+# variables & statements
+
+
+
+## var, let, const
+
+**var**
+
+-	can be updated
+-	function scoped
+
+**let**
+
+-	can be updated
+-	block scoped
+
+**const**
+
+-	cannot be updated
+- 	block scoped
+
+*some common conventions*
+
+variables
+
+-	shouldn't start with capital letters
+-	should start with a-z
+-	_ or $ starting letters used by other big libraries, try not to use
+-	camelCase for multi-word variables
+
+
+
+---
+
