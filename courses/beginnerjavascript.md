@@ -85,3 +85,20 @@ variables
 
 ---
 
+
+
+# code quality tooling with prettier & eslint
+
+<https://github.com/wesbos/eslint-config-wesbos>
+some default settings for both to start with
+
+<https://www.prettier.io>
+formatting to make code more 'pretty' & easier to read
+
+<https://www.eslint.org>
+for best practises or potential errors
+
+
+
+---
+
