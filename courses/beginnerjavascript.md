@@ -122,3 +122,31 @@ for best practises or potential errors
 
 
 
+## strings
+
+```js
+
+	//	3 ways to display strings
+	const singleQuotes = 'single'
+	const doubleQuotes = "double"
+	const backticks = `backticks`
+
+	//	escape using backslash
+	const sentence = 'she\'s so cool'
+
+	//	backslash or backticks for multiple lines
+	const song = 'hi\
+		this is multi-lines\
+		'
+	const song = `hi
+		this is multi-lines
+		`
+
+	//	concat strings
+	const hello = 'hello my name is ' + myName + '!'
+	const hello = `hello my name is ${ myName }!`
+
+;```
+
+
+
