@@ -102,3 +102,23 @@ for best practises or potential errors
 
 ---
 
+
+
+# types
+
+
+
+## introduction
+
+**7 types**
+
+-	string
+-	number
+-	object
+-	boolean
+-	null
+-	undefined
+-	symbol
+
+
+
