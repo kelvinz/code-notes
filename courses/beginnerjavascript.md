@@ -15,15 +15,7 @@
 
 
 
----
-
-
-
-# browser, editor & terminal setup
-
-
-
-## shortcuts
+## browser, editor & terminal setup
 
 **option + command + c**
 elements tab in dev tools
@@ -33,13 +25,7 @@ console tab in dev tools
 
 
 
----
-
-
-
-# running & loading js
-
-
+## running & loading js
 
 -	browser console directly
 -	script tag in html
@@ -47,15 +33,7 @@ console tab in dev tools
 
 
 
----
-
-
-
-# variables & statements
-
-
-
-## var, let, const
+## variables & statements
 
 **var**
 
@@ -83,11 +61,7 @@ variables
 
 
 
----
-
-
-
-# code quality tooling with prettier & eslint
+## code quality tooling with prettier & eslint
 
 <https://github.com/wesbos/eslint-config-wesbos>
 some default settings for both to start with
@@ -145,6 +119,67 @@ for best practises or potential errors
 	//	concat strings
 	const hello = 'hello my name is ' + myName + '!'
 	const hello = `hello my name is ${ myName }!`
+
+;```
+
+
+
+## numbers
+
+```js
+
+	const age = 100
+	const name = 'wes'
+
+	typeof age
+	//	'number'
+	typeof name
+	//	'string'
+
+	1 + '1' = '11'
+	//	num + string = string
+
+	Math.round( 20.5 )
+	//	21
+
+	Math.round( 20.2 )
+	//	20
+
+	Math.floor( 20.999 )
+	//	20
+
+	Math.ceil( 20.1 )
+	//	21
+
+	Math.random()
+	//	random number between 0 & 1
+
+	const smarties = 20
+	const kids = 3
+	const eachKidGets = smarties / kids
+	//	eachKidGets = 6.666666666666667
+	smarties % kids
+	//	2
+	//	remainder after division
+
+	0.1 + 0.2 = 0.30000000000000004
+	//	www.http://0.30000000000000004.com
+
+	/* Your language isn't broken, it's doing floating point math. Computers can only natively store integers, so they need some way of representing decimal numbers. This representation comes with some degree of inaccuracy. That's why, more often than not, .1 + .2 != .3. */
+
+	//	thus, don't store prices in decimals, might cause some bugs
+	//	store them in cents & when displaying convert it
+
+	10 ** 2
+	//	100
+	//	** = to the power of
+
+	1000 ** 200
+	//	infinity
+	//	computer can't process
+
+	NaN
+	//	not a number
 
 ;```
 
