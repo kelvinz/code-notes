@@ -185,3 +185,25 @@ for best practises or potential errors
 
 
 
+## objects
+
+```js
+
+	//	collection of stuff
+
+	const person = {
+		first: 'kelvin',
+		last: 'zhao',
+		age: 18
+	}
+
+	//	order doesn't matter in objects
+	//	if you need them to be in order, use arrays
+
+	person.first
+	//	'kelvin'
+
+;```
+
+
+
