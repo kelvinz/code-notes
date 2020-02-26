@@ -207,3 +207,19 @@ for best practises or potential errors
 
 
 
+## null & undefined
+
+```js
+
+	let somethingUndefined
+	//	undefined
+	//	yet to be set
+
+	const somethingNull = null
+	//	null
+	//	explictly set to nothing
+
+;```
+
+
+
