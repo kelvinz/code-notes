@@ -223,3 +223,24 @@ for best practises or potential errors
 
 
 
+## booleans & equality
+
+```js
+
+	let isDrawing = false
+
+	const age = 18
+	const ofAge = age > 19
+	//	ofAge = false
+
+	==
+	//	loose check
+	//	only value checked, can be coerced
+	===
+	//	strict check
+	//	value + type, no coercion
+
+;```
+
+
+
