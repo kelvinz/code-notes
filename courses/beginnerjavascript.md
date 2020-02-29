@@ -244,3 +244,41 @@ for best practises or potential errors
 
 
 
+---
+
+
+
+# functions
+
+
+
+## built in
+
+```js
+
+	//	a few examples
+
+	Math.max( 10, 12 )
+	//	12
+	//	larger of the two
+
+	Math.floor( 2.44 )
+	//	2
+
+	Date.now()
+	//	e.g. 123456789
+	//	represents current time/date
+
+	document.querySelector( 'p' )
+	//	selects the p tag in html
+
+	navigator.vibrate( 100 )
+	//	vibrate device for 100 ms
+
+	window.scrollTo( 0, 200 )
+	//	scroll down to 200 y
+
+;```
+
+
+
