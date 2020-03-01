@@ -311,3 +311,60 @@ for best practises or potential errors
 
 
 
+## parameters & arguments
+
+```js
+
+	//	pass in parameters - billAmount, taxRate
+	function calculateBill( billAmount, taxRate ) {
+
+		const total = billAmount * ( 1 + taxRate )
+
+		return total
+
+	}
+
+	//	pass in arguments - 200, 0.17
+	calculateBill( 200, .17 )
+
+
+
+	//	pass expressions in arguments
+	//	will result in 100 in first argument
+	calculateBill( 50 + 50, .17 )
+
+
+
+	//	pass in functions in arguments
+	calculateBill( addUp( 50, 50 ), .17 )
+
+	function addUp( one, two ) {
+		return one + two
+	}
+
+
+
+	//	default values
+	function calculateBill( billAmount, taxRate = .17 ) {
+		const total = billAmount * ( 1 + taxRate )
+		return total
+	}
+
+	calculateBill( 100 )
+	//	taxRate will default to .17 when nothing is passed in
+
+
+
+	function caculateBill( billAmount, taxRate = .17, tipRate = .15 ) {
+		const total billAmount * ( 1 + taxRate ) * tipRate
+		return total
+	}
+
+	//	skip setting taxRate but set tipRate
+	//	pass in undefined
+	caculateBill( 100, undefined, .2 )
+
+;```
+
+
+
