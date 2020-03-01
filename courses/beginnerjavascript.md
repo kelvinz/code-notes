@@ -282,3 +282,32 @@ for best practises or potential errors
 
 
 
+## custom
+
+```js
+
+	//	function definition
+	function calculateBill() {
+
+		//	function body
+		const total = 100 * 1.17
+
+		//	return statement
+		return total
+
+	}
+
+	//	function call
+	calculateBill()
+
+	//	capture return value
+	const myTotal = calculateBill()
+	console.log( `the total is $${ myTotal }` )
+
+	//	using it directly
+	console.log( `the total is $${ calculateBill() }` )
+
+;```
+
+
+
