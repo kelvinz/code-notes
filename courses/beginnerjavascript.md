@@ -368,3 +368,108 @@ for best practises or potential errors
 
 
 
+## different ways to declare functions
+
+```js
+
+	//	function declaration
+	function doctorize( firstName ) {
+		return `Dr. ${ firstName }`
+	}
+
+
+
+	//	anonymous function
+	//	function without a name
+	function ( firstName ) {
+		return `Dr. ${ firstName }`
+	}
+
+
+
+	//	function expression
+	//	store anonymous function into a variable
+	const doctorize = function( firstName ) {
+		return `Dr. ${ firstName }`
+	}
+	//	difference between function declaration is hoisting
+
+
+
+	//	arrow function
+	//	they are anonymous functions
+	const inchToCM = ( inches ) => {
+		return inches * 2.54
+	}
+
+	//	shorthand
+	const inchToCM = ( inches ) => inches * 2.54
+
+	//	even shorter
+	const inchToCM = inches => inches * 2.54
+
+
+
+	//	returning an object
+	const makeABaby = ( first, last ) => {
+		return {
+			name: `${ first } ${ last }`,
+			age: 0
+		}
+	}
+
+	//	shorthand
+	const makeABaby = ( first, last ) => ( { name: `${ first } ${ last }`, age: 0 } )
+
+
+
+	//	IIFE - immediately invoked function expression
+	( function() {
+		console.log( 'running iife' )
+	} )()
+
+
+
+	//	methods - function that lives inside an object
+	const hello = {
+		name: 'Kelvin',
+
+		//	method
+		sayHi: function() {
+			console.log( `Hi ${ this.name }` )
+		},
+
+		//	shorthand method
+		yellHi() {
+			console.log( `HI ${ this.name.uppercase() }` )
+		},
+
+		//	arrow function
+		whisperHi: ( name ) => {
+			console.log( `HI ${ name.uppercase() }` )
+		}
+	}
+
+
+
+	//	callback function
+	const button = document.querySelector( '.clickMe' )
+	button.addEventListener( 'click', hello.yellHi )
+
+	//	via anonymous function
+	button.addEventListener( 'click', function() {
+		console.log( 'nice' )
+	} )
+
+	//	timer callback - 1 sec later
+	setTimeout( hello.sayHi, 1000 )
+
+	//	via anonymous function
+	setTimeout( function() {
+		console.log( 'hoho' )
+	}, 1000 )
+
+;```
+
+
+
