@@ -473,3 +473,31 @@ for best practises or potential errors
 
 
 
+## debugging tools
+
+**console methods**
+
+-	*console.log()*
+	general logging info
+
+-	*console.info()*
+	informative logging
+
+-	*console.error()*
+	outputs error message
+
+-	*console.warn()*
+	outputs warning message
+
+-	*console.table()*
+	outputs data as a table
+
+-	*console.count()*
+	count number of times it runs
+
+-	*console.group()*
+	group up console logs xxx... console.groupEnd()
+
+
+
+
