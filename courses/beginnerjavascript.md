@@ -501,3 +501,16 @@ for best practises or potential errors
 
 
 
+**callstack**
+Uncaught ReferenceError: doesntExist is not defined
+	at greet (debugging.js: 47)
+	at go (debugging.js: 52)
+	at <anonymous>:1:1
+
+error happened as doesntExist variable is not defined
+it happned at greet function debugging.js line 47
+greet was called at go function debugging.js line 52
+go was called in console
+
+
+
