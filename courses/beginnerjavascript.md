@@ -514,3 +514,13 @@ go was called in console
 
 
 
+**grabbing elements**
+select the element via element inspector
+swap to console
+$0 will select the element
+$0.value will show the value inside if there is
+`$('p') select the first para`
+`$$( 'p' ) select all the paras`
+
+
+
