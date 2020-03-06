@@ -524,3 +524,28 @@ $0.value will show the value inside if there is
 
 
 
+**breakpoints**
+`debugger`
+stops script from running at point where debugger is written
+happens if your console is open only
+
+
+
+**scope**
+what vars are inside each scope, explained further later
+
+
+
+**network requests**
+network tab
+shows all resources sent & recieved & its details
+
+
+
+**break on attribute**
+go into element
+right click > break on > attribute modification
+or set it in the sources tab
+
+
+
