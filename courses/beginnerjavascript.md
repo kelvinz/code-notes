@@ -549,3 +549,16 @@ or set it in the sources tab
 
 
 
+## scope
+
+**global scope**
+window object
+
+**function scope**
+inside functions (){ ... }
+variables exists in it only
+can't be accessed outside of it
+if variables can't be found in scope tho,
+it searches/lookup in external scope
+but not the other way round
+
