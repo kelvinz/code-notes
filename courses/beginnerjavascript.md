@@ -562,3 +562,34 @@ if variables can't be found in scope tho,
 it searches/lookup in external scope
 but not the other way round
 
+**block scope**
+inside blocks { ... }
+const, let are block scoped
+var is not
+
+```js
+
+	const dog = 'snickers'
+
+	function logDog() {
+		console.log( dog )
+	}
+
+	function go() {
+		const dog = 'sunny'
+		logDog()
+	}
+
+	go()
+	//	snickers
+	//	var lookup looks at where it's written
+	//	not where it is called
+	//	scope depends on where things are declared
+
+;```
+
+**functions**
+functions are scoped like variables
+
+
+
