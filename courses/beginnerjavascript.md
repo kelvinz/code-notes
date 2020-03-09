@@ -593,3 +593,12 @@ functions are scoped like variables
 
 
 
+## hoisting
+
+functions & variables are hoisted to top of file
+before it goes line by line to run script
+functions are hoisted fully
+variables are hoisted but undefined before it reaches line to define it
+
+
+
