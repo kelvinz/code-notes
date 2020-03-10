@@ -602,3 +602,74 @@ variables are hoisted but undefined before it reaches line to define it
 
 
 
+## closures
+
+```js
+
+	function outer() {
+		const outerVar = `I am outerVar`
+		function inner() {
+			const innerVar = `I am innerVar`
+			console.log( innerVar )
+			console.log( outerVar )
+		}
+		inner()
+	}
+
+	outer()
+	//	I am innerVar
+	//	I am outerVar
+
+
+
+	function outer() {
+		const outerVar = `I am outerVar`
+		function inner() {
+			const innerVar = `I am innerVar`
+			console.log( innerVar )
+			console.log( outerVar )
+		}
+		return inner
+	}
+
+	const innerFn = outer()
+	innerFn()
+	//	I am innerVar
+	//	I am outerVar
+
+
+
+	function createGreeting( greeting = `` ) {
+		const myGreet = greeting.toUpperCase()
+		return function( name ) {
+			return `${ myGreet } ${ name }`
+		}
+	}
+
+	const sayHello = createGreeting( 'hello' )
+	const sayHey = createGreeting( 'hey' )
+
+	console.log( sayHello( 'kelvin' ) )
+	//	HELLO kelvin
+	console.log( sayHey( 'kelvin' ) )
+	//	HEY kelvin
+
+
+
+	function createGame( gameName ) {
+		let score = 0
+		return function win() {
+			score++
+			return `${ gameName } score is ${ score }`
+		}
+	}
+
+	const hockeyGame = createGame( 'Hockey' )
+	hockeyGame()
+	hockeyGame()
+	//	Hockey score is 2
+
+;```
+
+
+
