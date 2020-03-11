@@ -673,3 +673,27 @@ variables are hoisted but undefined before it reaches line to define it
 
 
 
+---
+
+
+
+# the dom
+
+
+
+## introduction to the document
+
+-	**dom**
+	document object model, represents webpage in tree-node structure
+
+-	**window**
+	global object holding functions, objects, namespaces associated to the opened browser window
+
+-	**document**
+	everything inside the html head to html end
+
+-	**navigator**
+	device related stuff like vibration, gps, etc
+
+
+
