@@ -697,3 +697,26 @@ variables are hoisted but undefined before it reaches line to define it
 
 
 
+## selecting elements
+
+note: load js at the bottom so html loads first
+
+```js
+
+	//	select the first p element
+	//	returns single node
+	const p = document.querySelector( 'p' )
+
+	//	selects all divs
+	//	returns NodeList - array-like
+	const divs = document.querySelectorAll( 'div' )
+
+	//	able to use css selectors
+	const items = document.querySelectorAll( '.item' )
+	//	go deeper
+	const img = items.querySelector( 'img' )
+
+;```
+
+
+
