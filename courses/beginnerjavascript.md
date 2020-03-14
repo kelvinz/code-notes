@@ -720,3 +720,27 @@ note: load js at the bottom so html loads first
 
 
 
+## element properties & methods
+
+```js
+
+	//	get or set any content inside element including text or scripts
+	myElement.textContent
+
+	//	get or set only readable text content & is not hidden
+	myElement.innerText
+
+	//	get or set html content, including or excluding the element itself
+	myElement.innerHTML
+	myElement.outerHTML
+
+	//	insert stuff beside element
+	//	afterbegin, beforeend in position
+	myElement.insertAdjacentText( position, what )
+	myElement.insertAdjacentHTML( position, what )
+	myElement.insertAdjacentElement( position, what )
+
+;```
+
+
+
