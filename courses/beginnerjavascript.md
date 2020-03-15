@@ -744,3 +744,18 @@ note: load js at the bottom so html loads first
 
 
 
+## working with classes
+
+```js
+
+	const pic = document.querySelector( '.nice' )
+
+	pic.classList.add( 'open' )
+	pic.classList.remove( 'nice' )
+	pic.classList.toggle( 'hello' )
+	pic.classList.contains( 'hello' )
+
+;```
+
+
+
