@@ -759,3 +759,26 @@ note: load js at the bottom so html loads first
 
 
 
+## build in & custom data attributes
+
+```js
+
+	//	get or set
+	pic.alt = 'some alt text'
+	pic.width = 200
+
+	//	get
+	pic.naturalWidth
+
+	pic.setAttribute( 'alt', 'hello' )
+	pic.getAttribute( 'alt' )
+	pic.hasAttribute( 'alt' )
+
+	//	img src='' data-greet="kelvin">
+	//	custom data attribute
+	pic.dataset.greet
+
+;```
+
+
+
