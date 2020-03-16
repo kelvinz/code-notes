@@ -782,3 +782,32 @@ note: load js at the bottom so html loads first
 
 
 
+## creating html
+
+```js
+
+	const myDiv = document.createElement( 'div' )
+	myDiv.classList.add( 'wrapper' )
+
+	const myimg = document.createElement( 'img' )
+	img.src = 'https://picsum.photos/500'
+	img.alt = 'random pic'
+
+	const myPara = document.createElement( 'p' )
+	myPara.textContent = 'I am a <p>'
+	myPara.classList.add( 'hello' )
+
+	myDiv.appendChild( myImg )
+	myDiv.appendChild( myPara )
+
+	//	repaints page when adding to page
+	//	best to do it only once
+	document.body.appendChild( myDiv )
+
+	//	this will cause another repaint
+	const heading = document.createElement( 'h2' )
+	heading.textContent = 'Some header'
+	myDiv.insertAdjacentElement( 'beforebegin', heading )
+
+;```
+
