@@ -811,3 +811,19 @@ note: load js at the bottom so html loads first
 
 ;```
 
+```js
+
+	const li2 = document.createElement( 'li' )
+	li2.textContent = 'two'
+	list.append( li2 )
+
+	//	deep clone, true
+	const li1 = li2.cloneNode( true )
+	li1.textContent = 'one'
+
+	list.insertAdjacentElement( 'afterbegin', li1 )
+
+;```
+
+
+
