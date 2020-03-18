@@ -827,3 +827,33 @@ note: load js at the bottom so html loads first
 
 
 
+## html from strings & xss
+
+```js
+
+	const
+	item = document.querySelector( '.item' ),
+	src = `https://picsum.photos/200`,
+	alt = `random`,
+	myHTML = `
+			<div>
+				<h1>Hey how are you?</h1>
+				<img src="${ src }" alt="${ alt }" />
+			</div>
+		`
+
+	console.log( myHTML.querySelector( 'img' ) )
+	//	error
+
+	//	myHTML is a string until it's added to dom via innerHTML
+	item.innerHTML = myHTML
+
+	//	turns a string into a dom element w/o putting into dom first
+	const myFragment = document.createRange()
+						.createContextualFragment( myHTML )
+	console.log( myFragment.querySelector( 'img' ) )
+
+;```
+
+
+
