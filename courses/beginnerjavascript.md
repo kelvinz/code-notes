@@ -857,3 +857,48 @@ note: load js at the bottom so html loads first
 
 
 
+## traversing & removing nodes
+
+```js
+
+	//	<p class="wes">I am Wes, I <em>love</em> to bbq</p>
+
+	const wes = document.querySelector( '.wes' )
+
+	console.log( wes.children )
+	//	1
+	//	em
+
+	//	some other element commands
+	//	ignore plain text
+	myItem.children
+	myItem.firstElementChild
+	myItem.lastElementChild
+	myItem.previousElementSibling
+	myItem.nextElementSibling
+	myItem.parentElement
+
+
+
+	console.log( wes.childNodes )
+	//	3
+	//	text, em, text
+
+	//	some other node commands
+	//	considers plain text
+	myItem.childNodes
+	myItem.firstChild
+	myItem.lastChild
+	myItem.previousSibling
+	myItem.nextSibling
+	myItem.parentNode
+
+	//	removing stuff from dom
+	myItem.remove()
+
+
+
+;```
+
+
+
