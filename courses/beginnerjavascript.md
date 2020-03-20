@@ -902,3 +902,33 @@ note: load js at the bottom so html loads first
 
 
 
+## cardio
+
+```js
+
+	//	adding div with class
+	const div = document.createElement( 'div' )
+	div.classList.add( 'wrapper' )
+
+	document.body.appendChild( div )
+
+
+
+
+;```
+
+
+
+---
+
+
+
+
+;```
+
+
+
+---
+
+
+
