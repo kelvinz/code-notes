@@ -914,6 +914,31 @@ note: load js at the bottom so html loads first
 
 
 
+	//	adding ul with li items
+	const ul = `
+		<ul>
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+		</ul>
+	`
+
+	div.innerHTML = ul
+
+
+
+	//	adding image
+	const img = document.createElement( 'img' )
+	img.src = `https://picsum.photos/500`
+	img.width = 250
+	img.height = 250
+	img.classList.add( 'cute' )
+	img.alt = 'random'
+
+	div.appendChild( img )
+
+
+
 
 ;```
 
