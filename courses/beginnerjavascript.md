@@ -939,6 +939,24 @@ note: load js at the bottom so html loads first
 
 
 
+	//	adding html + misc
+	const myHTML = `
+		<div class="myDiv">
+			<p>Para One</p>
+			<p>Para Two</p>
+		</div>
+	`
+
+	const ulEl = div.querySelector( 'ul' )
+	ul.insertAdjacentHTML( 'beforebegin', myHTML )
+
+	const myDiv = div.querySelector( '.myDiv' )
+	myDiv.children[ 1 ].classList.add( 'warning' )
+
+	myDiv.firstElementChild.remove()
+
+
+
 
 ;```
 
