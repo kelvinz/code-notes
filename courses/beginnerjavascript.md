@@ -957,6 +957,45 @@ note: load js at the bottom so html loads first
 
 
 
+	//	function generating stuff
+	function generatePlayerCard( name, age, height ) {
+		const html = `
+			<div class="playerCard">
+				<h2>${ name } - ${ age }</h2>
+				<p>
+					They are ${ height } and ${ age } years old.
+					In dog years this person would be ${ age * 7 }.
+				</p>
+				<button class="delete" type="button">&times; Delete</button>
+			</div>
+		`
+		return html
+	}
+	const cards = document.createElement( 'div' )
+	cards.classList.add( 'cards' )
+
+	let cardsHTML = generatePlayerCard( 'wes', 12, 150 )
+	cardsHTML += generatePlayerCard( 'wes', 12, 150 )
+	cardsHTML += generatePlayerCard( 'scott', 24, 160 )
+	cardsHTML += generatePlayerCard( 'snickers', 11, 170 )
+	cards.innerHTML = cardsHTML
+	div.insertAdjacentElement( 'beforebegin', cards )
+
+	const buttons = document.querySelectorAll( '.delete' )
+
+	function deleteCard() {
+		const buttonThatGotClicked = event.currentTarget
+		buttonThatGotClicked.parentElement.remove()
+		//	or look up nodes & find closest
+		buttonThatGotClicked.closest( '.playerCard' ).remove()
+	}
+
+	buttons.forEach( button => button.addEventListener( 'click', deleteCard ) )
+
+;```
+
+
+
 
 ;```
 
