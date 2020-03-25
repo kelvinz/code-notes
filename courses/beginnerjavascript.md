@@ -996,6 +996,46 @@ note: load js at the bottom so html loads first
 
 
 
+---
+
+
+
+# events
+
+
+
+## event listener
+
+```js
+
+	const butts = document.querySelector( '.butts' )
+
+	//	anonymous
+	butts.addEventListener( 'click', () => {
+		console.log( 'clicked' )
+	} )
+	//	unable to remove as there's no ref
+
+	//	named
+	const = () => { console.log( 'clicked' ) }
+	butts.addEventListener( 'click', handleClick )
+	butts.removeEventListener( 'click', handleClick )
+
+
+
+	//	listen on multiple items
+	const buyButtons = document.querySelectorAll( 'button.buy' )
+
+	const buyItem = () => {
+		console.log( 'buy!' )
+	}
+
+	buyButtons.forEach( button => button.addEventListener( 'click', buyItem ) )
+
+;```
+
+
+
 
 ;```
 
