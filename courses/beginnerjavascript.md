@@ -1065,6 +1065,39 @@ note: load js at the bottom so html loads first
 
 
 
+## prevent default & form events
+
+```js
+
+	//	stop default action
+	//	like link going to its src link, submit button from submitting, etc
+
+	myLink.addEventListener( 'click', e => {
+		const shouldChangePage = confirm(
+			'Do you want to continue?'
+		)
+		if ( !shouldChangePage ) {
+			e.preventDefault()
+		}
+	} )
+
+	const signupForm = document.querySelector( '[ name = "signup" ]' )
+	signupForm.addEventListener( 'submit', e => {
+		e.preventDefault()
+		const name = e.currentTarget.name.value
+		if ( name.includes( 'wes' ) ) {
+			alert( 'sorry bro' )
+			e.preventDefault()
+		}
+	} )
+
+;```
+
+**sidenote**
+preserve log option in browser console settings to keep log even if navigate away from page
+
+
+
 
 ;```
 
