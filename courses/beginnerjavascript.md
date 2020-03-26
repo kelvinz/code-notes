@@ -1036,6 +1036,35 @@ note: load js at the bottom so html loads first
 
 
 
+## targets, bubbling, propagation & capture
+
+```js
+
+	function handleBuyButtonClick( e ) {
+		console.log( e ) // whole bunch of info
+		console.log( e.target ) // what exactly is clicked ( dive into nested elements )
+		console.log( e.currentTarget ) // what is clicked ( the thing that fired listener )
+
+		//	stop event from bubbling up
+		//	clicking on button, also clicked window if you don't stop bubbling
+		//	events keep going up the node
+		e.stopPropagation()
+	}
+
+	buyButtons.forEach( button => button.addEventListener( 'click', handleBuyButtonClick ) )
+
+	//	capture happens before the bubbling happens
+	//	you click the window first, then the div, then the button, etc
+	//	then the button bubbles the event upwards
+	//	true activates event when it's moving down, instead of when it's bubbling up
+	window.addEventListener( 'click', e => {
+		console.log( e.target )
+	}, true )
+
+;```
+
+
+
 
 ;```
 
