@@ -1098,6 +1098,20 @@ preserve log option in browser console settings to keep log even if navigate awa
 
 
 
+## accesibility gotchas & keyboard codes
+
+-	*buttons* are for actions within site
+-	*links* are used to change the page
+-	*clickable things* that are not buttons or links
+	should be given a role="button" tabindex="0" so they can be tabbed to
+-	*clickable things* should be given a eventlistener 'keyup' enter so they can be clicked
+
+
+
+---
+
+
+
 
 ;```
 
