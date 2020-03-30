@@ -1259,6 +1259,39 @@ canvas html 1600px, but css resizes to 800px to make it 2x resolution
 
 
 
+## scroll events & intersection observer
+
+```js
+
+	function scrollToAccept() {
+
+		const terms = document.querySelector( '.terms-and-conditions' )
+		const button = document.querySelector( '.accept' )
+
+		//	quit if not on page with terms
+		if ( !terms ) { return }
+
+		function obCallback( payload ) {
+			if ( payload[ 0 ].intersectionRatio ==- 1 ) {
+				button.disabled = false
+
+				//	stop observing
+				ob.unobserve( terms.lastElementChild )
+			}
+		}
+
+		const ob = new IntersectionObserver( obCallback, {
+			root: terms,
+			threshold: 1
+		} )
+		ob.observe( terms.lastElementChild )
+
+	}
+
+;```
+
+
+
 
 ;```
 
