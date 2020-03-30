@@ -1210,6 +1210,55 @@ canvas html 1600px, but css resizes to 800px to make it 2x resolution
 
 
 
+## click outside modal
+
+```js
+
+	const
+	cardButtons = document.querySelectorAll( '.card button' ),
+	modalInner = document.querySelector( '.modal-inner' )
+
+	function handleCardButtonClick( e ) {
+		const
+		button = e.currentTarget,
+		card = button.closest( '.card' ),
+		imgSrc = card.querySelector( 'img' ).src,
+		desc = card.dataset.description
+		modalInner.innerHTML = `
+			<img
+				src="${ imgSrc.replace( '200', '600' )}"
+				alt="${ name }"
+			/>
+			<p>${ desc }</p>
+		`
+		modalOuter.classList.add( 'open' )
+	}
+
+	cardButtons.forEach( button = > {
+		button.addEventListener( 'click', handleCardButtonClick )
+	})
+
+	function closeModal() {
+		modalOuter.classList.remove( 'open' )
+	}
+
+	modalOuter.addEventListener( 'click',  e => {
+		const isOutside = !e.target.closest( '.modal-inner' )
+		if ( isOutside ) {
+			closeModal()
+		}
+	})
+
+	window.addEventListener( 'keydown', e => {
+		if ( event.key === 'Escape' ) {
+			closeModal()
+		}
+	})
+
+;```
+
+
+
 
 ;```
 
