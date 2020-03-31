@@ -1292,6 +1292,35 @@ canvas html 1600px, but css resizes to 800px to make it 2x resolution
 
 
 
+## tabs
+
+```html
+
+	<div class="tabs">
+		<div role="tablist" aria-label="Programming Languages">
+			<button role="tab" aria-selected="true" id="js">
+				JavaScript
+			</button>
+			<button role="tab" aria-selected="false" id="ruby">
+				Ruby
+			</button>
+			<button role="tab" aria-selected="false" id="php">
+				PHP
+			</button>
+		</div>
+		<div role="tabpanel" aria-labelledby="js">
+			<p>JavaScript is great!</p>
+		</div>
+		<div role="tabpanel" aria-labelledby="ruby" hidden>
+			<p>Ruby is great!</p>
+		</div>
+		<div role="tabpanel" aria-labelledby="php" hidden>
+			<p>PHP is great!</p>
+		</div>
+	</div>
+
+;```
+
 
 ;```
 
