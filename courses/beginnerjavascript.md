@@ -1321,6 +1321,49 @@ canvas html 1600px, but css resizes to 800px to make it 2x resolution
 
 ;```
 
+```js
+
+	const
+	tabs = document.querySelectorAll( '.tabs' ),
+	tabButtons = tabs.querySelectorAll( '[role="tab"]' ),
+	tabPanels = tabs.querySelectorAll( '[role="tabpanel"]' )
+
+	function handleTabClick( e ) {
+		//	mark all tabs as unselected
+		tabButtons.forEach( tab => {
+			tab.setAttribute( 'aria-selected', false )
+		})
+		//	hide all tab panels
+		tabPanels.forEach( panel => {
+			panel.hidden = true
+		})
+		//	mark clicked tab as selected
+		e.currentTarget.setAttribute( 'aria-selected', true )
+
+		//	show tab panel
+		const { id } = e.currentTarget
+		const tabPanel = tabs.querySelector( `[aria-labelledby="${ id }"]` )
+		tabPanel.hidden = false
+
+		//	alt way to show panel
+		//	need array to .find()
+		//	tab panels is a nodelist, thus convert it to array
+		const tabPanels = Array.from( tabs.querySelectorAll( '[role="tabpanel"]' ) )
+		const tabPanel = tabPanels.find( panel => {
+			return panel.getAttribute( 'aria-labelledby') === id
+		})
+		tabPanel.hidden = false
+
+	}
+
+	tabButtons.forEach( button => {
+		button.addEventListener( 'click', handleTabClick )
+	})
+
+;```
+
+
+
 
 ;```
 
