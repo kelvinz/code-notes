@@ -1364,6 +1364,18 @@ canvas html 1600px, but css resizes to 800px to make it 2x resolution
 
 
 
+## bedmas
+
+**order by which things are run**
+Brackets       : ()
+Exponents      : **
+Division       : /
+Multiplication : *
+Addition       : +
+Subtraction    : -
+
+
+
 
 ;```
 
