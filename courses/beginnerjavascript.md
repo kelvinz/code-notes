@@ -1415,6 +1415,50 @@ Subtraction    : -
 
 
 
+## coercion, ternaries & conditional abuse
+
+```js
+
+	//	convert into boolean
+	const name = 'hello'
+
+	console.log( name )
+	//	'hello'
+	console.log( !name )
+	//	false
+	console.log( !!name )
+	//	true
+
+
+
+	//	ternaries = shorthand
+	const count = 2
+	let word
+	if ( count === 1 ) {
+		word = 'item'
+	} else {
+		word = 'items'
+	}
+
+	//	shorthand version
+	const word = count === 1 ? 'item' : 'items'
+
+	//	if with no else, null as to there for shorthand
+	const isAdmin = true
+	isAdmin ? doSomething() : null
+
+	//	unless with && trick
+	isAdmin && doSomething()
+	//	if else - checks will run
+	//	if true, goes to the && to run it to check for true
+	//	since it won't return true
+	//	it short curcuits so it doesn't need to go forward to the actual if else actions
+	//	thus is a fake way of doing if else shorthand
+
+;```
+
+
+
 
 ;```
 
