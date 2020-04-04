@@ -1376,6 +1376,45 @@ Subtraction    : -
 
 
 
+## flow control - if statements, function returns, truthy, falsy
+
+```js
+
+	if ( true ) {
+		//
+	}
+
+	if ( !false ) {
+		//
+	}
+
+	function slugify( sentence, lowercase ) {
+		let slug = sentence.replace( /\s/g, '-' )
+		if ( lowercase ) {
+			return slug.toLowerCase()
+		}
+		return slug
+	}
+
+	//	truthy
+	1
+	-1
+	-10
+	"0"
+	[]
+	{}
+
+	//	falsy
+	0
+	undefined
+	null
+	NaN
+	""
+
+;```
+
+
+
 
 ;```
 
