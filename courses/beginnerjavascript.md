@@ -1459,6 +1459,52 @@ Subtraction    : -
 
 
 
+## case switch & animating a turtle with css variables
+
+```js
+
+	const turtle = document.querySelector( '.turtle' )
+
+	function handleKeyDown( e ) {
+		if ( !e.key.includes( 'Arrow' ) ) { return }
+
+		let x = 0, y = 0, flipped = false
+
+		switch ( e.key ) {
+			case 'ArrowUp':
+				y--
+				break
+			case 'ArrowDown'
+				y++
+				break
+			case 'ArrowLeft'
+				x--
+				flipped = true
+				break
+			case 'ArrowRight'
+				x++
+				flipped = false
+				break
+			default:
+				console.log( 'not valid' )
+				break
+		}
+
+		//	custom css variables --x, --y, --rotate
+		//	transform: translateX( var( --x ) ) translateY( var( --y ) ) rotateY( var( --rotate ) );
+		turtle.setAttribute( 'style', `
+			--rotate: ${ flipped ? '180deg' : '0' };
+			--x: ${ x }px;
+			--y: ${ y }px;
+		` )
+	}
+
+	window.addEventListener( 'keydown', handleKeyDown )
+
+;```
+
+
+
 
 ;```
 
