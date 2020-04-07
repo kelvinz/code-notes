@@ -1545,6 +1545,40 @@ Subtraction    : -
 
 
 
+# objects
+
+
+
+## intro
+
+```js
+
+	//	order doesn't matter
+	//	order js store objects isn't guaranteed
+
+
+
+	//	age: age shorthand is just age
+	const age = 100
+	const person = {
+		age
+	}
+
+
+
+	//	recommended to always add , at end
+	const something = {
+		hi: 'you',
+		yo: 'yea',
+	}
+
+
+
+
+;```
+
+
+
 
 ;```
 
