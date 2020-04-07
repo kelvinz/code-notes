@@ -486,7 +486,7 @@ function chunks( array, size ) {
 //	chance is 0-1
 //	all objects' chance adds up to 1
 
-pickOne( arr ) {
+function pickOne( arr ) {
 	let
 	i = 0,
 	r = Math.random()
@@ -498,6 +498,14 @@ pickOne( arr ) {
 
 	i--
 	return arr[ i ]
+}
+
+
+
+//	percentage chance of being true
+
+function chance( percent ) {
+	return Math.random() >= 1 - percent
 }
 
 

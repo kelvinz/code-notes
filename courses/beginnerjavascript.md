@@ -963,7 +963,7 @@ note: load js at the bottom so html loads first
 			<div class="playerCard">
 				<h2>${ name } - ${ age }</h2>
 				<p>
-					They are ${ height } and ${ age } years old.
+					They are ${ height } & ${ age } years old.
 					In dog years this person would be ${ age * 7 }.
 				</p>
 				<button class="delete" type="button">&times; Delete</button>
@@ -1502,6 +1502,46 @@ Subtraction    : -
 	window.addEventListener( 'keydown', handleKeyDown )
 
 ;```
+
+
+
+## intervals & timers
+
+```js
+
+	//	500 millisecond before myFunction is run
+	setTimeout( myFunction, 500 )
+
+	//	myFunction runs EVERY 500 millisecond
+	setInterval( myFunction, 500 )
+
+	//	run right away before starting interval
+	function setImmediateInterval( funcToRun, ms ) {
+		funcToRun()
+		return setInterval( funcToRun, ms )
+	}
+
+	setImmediateInterval( myFunction, 2000 )
+
+
+
+	//	to clear timer or interval, you need a ref to it
+	function destory() {
+		document.body.innerHTML = `<p>DESTORYED</p>`
+	}
+
+	const bombTimer = setTimeout( destory, 3000 )
+
+	window.addEventListener( 'click', function() {
+		console.log( 'You saved the world!' )
+		clearTimeout( bombTimer )
+	})
+
+;```
+
+
+
+---
 
 
 
