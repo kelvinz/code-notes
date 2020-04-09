@@ -1574,6 +1574,26 @@ Subtraction    : -
 
 
 
+	//	const doesnt mean properties within objects cannot be changed
+	//	only the object assignment itself
+	const me = { name: 'kelvin' }
+	//	error
+	me = { something: 'else' }
+	//	okay
+	me.name = 'something else'
+	//	to make properties not change
+	//	meFroze cannot be changed
+	//	but me still can be changed, original object not affected
+	const meFroze = Object.freeze( me )
+
+
+
+	//	accessing properties
+	myObject.age
+	myObject[ 'age' ]
+
+
+
 
 ;```
 
