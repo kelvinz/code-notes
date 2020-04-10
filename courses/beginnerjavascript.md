@@ -1594,6 +1594,27 @@ Subtraction    : -
 
 
 
+	//	if wes.jobs doesn't exist
+	if ( wes.jobs ) // works, return undefined
+	if ( wes.jobs.main ) // returns error, code breaks
+	//	thus you have to do checks beforehand
+	if ( wes.jobs && wes.jobs.main ) {
+		//	do something with wes.jobs.main
+	}
+	//	other common way to go into child without error
+	//	check first if parent is undefined aka loading or doesn't exist
+	const name = nameInput ? nameInput.value : ''
+
+
+
+	//	delete property, returns true if successful
+	delete me.name
+	//	doesn't delete property but clears what's inside
+	me.name = undefined
+	me.name = null
+
+
+
 
 ;```
 
