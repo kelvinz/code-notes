@@ -1615,6 +1615,33 @@ Subtraction    : -
 
 
 
+	//	method aka function of object
+	const me = {
+		name: 'kelvin',
+		sayHello: function( greeting ) {
+			return `${ greeting } ${ this.name }`
+		},
+	}
+	//	method shorthand
+	const me = {
+		name: 'kelvin',
+		sayHello( greeting ) {
+			return `${ greeting } ${ this.name }`
+		},
+	}
+	//	arrow function affects this keyword
+	const me = {
+		name: 'kelvin',
+		sayHello: ( greeting ) => {
+			//	this becomes window instead of the object
+			return `${ greeting } ${ this.name }`
+		}
+	}
+
+;```
+
+
+
 
 ;```
 
