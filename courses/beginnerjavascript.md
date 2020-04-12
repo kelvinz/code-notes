@@ -1642,6 +1642,28 @@ Subtraction    : -
 
 
 
+## reference vs values
+
+```js
+
+	let name1 = 'kelvin'
+	let name2 = 'zhao'
+
+	console.log( name1 === name2 )
+	//	false
+	name1 = name2
+	console.log( name1 === name2 )
+	//	true
+	name1 = 'kelvin'
+	console.log( name1 === name2 )
+	//	false
+
+	//	contents are copied over
+	//	not pointing to same thing
+	//	value
+
+
+
 
 ;```
 
