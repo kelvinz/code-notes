@@ -1664,6 +1664,33 @@ Subtraction    : -
 
 
 
+	const person1 = { name: 'kelvin' }
+	const person2 = { name: 'kelvin' }
+
+	console.log( person1 === person2 )
+	//	false
+	//	same content, but not same object
+
+	const person3 = person1
+	person3.name = 'zhao'
+	console.log( person3.name, person1.name )
+	//	zhao, zhao
+
+	//	person3 points to person1 instead of copy
+	//	objects & arrays
+	//	reference
+
+	//	ways to copy object
+	//	caveat - one level deep
+	const person4 = { ...person1 }
+	const person5 = Object.assign( { }, person1 )
+
+	//	deep clone
+	//	import lodash lib
+	const person6 = _.cloneDeep( person1 )
+
+
+
 
 ;```
 
