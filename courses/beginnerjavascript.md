@@ -1691,6 +1691,22 @@ Subtraction    : -
 
 
 
+	//	merge
+	const meat = {
+		bacon: 2
+	}
+
+	const veggie = {
+		tomatoes = 3
+	}
+
+	const inventory = {
+		...meat,
+		...veggie,
+		oyster: 1
+	}
+	//	note, if there are same items in the spread
+	//	the last one in will override the previous one
 
 ;```
 
