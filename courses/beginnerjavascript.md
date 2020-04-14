@@ -1712,6 +1712,35 @@ Subtraction    : -
 
 
 
+## maps
+
+```js
+
+	const myMap = new Map()
+
+	myMap.set( 'name', 'kelvin' )
+	console.log( myMap )
+	//	entries 0: name => wes
+	//	in a map, key can be anything
+	myMap.set( person1, 'really cool' )
+	//	can even be an object
+
+	myMap.get( person1 )
+	//	reall cool
+
+	myMap.size
+	//	2
+
+	//	order in maps is maintained, unlike objects
+
+;```
+
+
+
+---
+
+
+
 
 ;```
 
