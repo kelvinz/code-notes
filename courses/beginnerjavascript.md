@@ -1741,6 +1741,35 @@ Subtraction    : -
 
 
 
+# arrays
+
+
+
+## intro
+
+```js
+
+	const names = [ 'one', 'two', 'three' ]
+
+	typeof names
+	//	object
+	Array.isArray( names )
+	//	true
+
+	names[ 0 ] // first item
+	names[ names.length - 1 ] // last item
+
+	const backwards = names.reverse()
+	//	names array is mutated/changed - mutable
+
+	const pizzaSlice = names.slice( 1, 2 )
+	//	names array remains the same - immutable
+
+	const reversed = [ ...names ].reverse()
+	//	a new copy of array to use for mutation
+
+
+
 
 ;```
 
