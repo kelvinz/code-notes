@@ -1770,6 +1770,21 @@ Subtraction    : -
 
 
 
+	const numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+	//	slice - immutable
+	//	( begin, end ) - begin included, end not included
+	numbers.slice( 2, 4 )
+	//	[ 3, 4 ]
+	//	numbers array remain the same
+
+	//	splice - mutable
+	//	( start, delete count )
+	numbers.splice( 2, 4 )
+	//	[ 3, 4, 5, 6 ] deleted
+	//	numbers array changed
+
+
+
 
 ;```
 
