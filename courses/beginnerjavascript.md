@@ -1785,6 +1785,25 @@ Subtraction    : -
 
 
 
+	const comments = [
+		{ text: 'Me', id: 111 },
+		{ text: 'You', id: 222 },
+		{ text: 'This', id: 333 },
+		{ text: 'That', id: 444 },
+	]
+
+	function deleteComment( id, comments ) {
+		const commentIndex = comments.findIndex( comment => comment.id === id )
+		return [
+			...comments.slice( 0, commentIndex ),
+			...comments.slice( commentIndex + 1 )
+		]
+	}
+
+;```
+
+
+
 
 ;```
 
