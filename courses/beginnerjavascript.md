@@ -1804,6 +1804,27 @@ Subtraction    : -
 
 
 
+## static methods
+
+```js
+
+	Array.of( 'kelvin', 'zhao' )
+	//	[ 'kelvin', 'zhao' ]
+
+	Array.isArray( myArray )
+	//	true
+
+	Object.entries( myObject )
+	//	create array of arrays with the object
+	Object.keys( myObject )
+	//	create array with all the keys
+	Object.values( myObject )
+	//	create array with all the values
+
+;```
+
+
+
 
 ;```
 
