@@ -1825,6 +1825,37 @@ Subtraction    : -
 
 
 
+## instance methods
+
+```js
+
+	myArray.join()
+	//	joins array into a string with , seperator
+	//	or given seperator
+	//	join.( ' or ' )
+	//	[ one, two, three ] => 'one or two or three'
+
+	myString.split( ',' )
+	//	string to array by ,
+	//	split() will make every character an item in array
+
+	myArray.pop()
+	//	returns last item
+	//	removes last time too
+	//	mutable
+
+	myArray.shift()
+	//	returns first time
+	//	removes first item
+
+	myArray.indexOf( 'something' )
+	//	gets index of x
+	//	-1 means nothing
+
+;```
+
+
+
 
 ;```
 
