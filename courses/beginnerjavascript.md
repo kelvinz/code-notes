@@ -1856,6 +1856,27 @@ Subtraction    : -
 
 
 
+## callback methods & function generation
+
+```js
+
+	const feedback = [
+		{ comment: 'Love the burgs', rating: 4 },
+		{ comment: 'Horrible Service', rating: 2 },
+		{ comment: 'Smoothies are great, liked the burger too', rating: 5 },
+		{ comment: 'Ambiance needs work', rating: 3 },
+		{ comment: 'I DONT LIKE BURGERS', rating: 1 },
+	]
+
+	function findBurgRating( singleFeedback, i, array ) {
+		return singleFeedback.comment.includes( 'burg' )
+	}
+
+	//	ends loop to find once a true is returned
+	const burgRating = feedback.find( findBurgRating )
+
+
+
 
 ;```
 
