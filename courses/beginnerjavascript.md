@@ -1877,6 +1877,23 @@ Subtraction    : -
 
 
 
+	// function to make another function
+	function findByWord( word ) {
+		return function( singleFeedback ) {
+			return singleFeedback.comment.includes( word )
+		}
+	}
+
+	const burgFinder = findByWord( 'burg' )
+	const burgRating = feedback.find( burgFinder )
+	const smoothieFinder = findByWord( 'smoothie' )
+	const smoothieRating = feedback.find( smoothieFinder )
+
+	//	or shorter
+	const friesRating = feedback.find( findByWord( 'fries' ) )
+
+
+
 
 ;```
 
