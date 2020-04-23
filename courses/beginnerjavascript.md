@@ -1920,6 +1920,31 @@ Subtraction    : -
 
 
 
+	//	sort() alphabetically as strings, or giving pairs of item to check with
+	const numbers = [ 1, 2, 100, 3, 200, 400, 155 ]
+	const numbersSorted = numbers.sort( function( firstItem, secondItem ) {
+		if ( firstItem > secondItem ) {
+			return 1
+		} else {
+			return -1
+		} else {
+			return 0
+		}
+	} )
+	//	shorter
+	const numbersSorted = numbers.sort( function( firstItem, secondItem ) {
+		return firstItem - secondItem
+	} )
+	const numbersSorted = numbers.sort( ( firstItem, secondItem ) => firstItem - secondItem )
+	//	by default as strings
+	myAlphabets.sort()
+
+	const meatsSortedByNum = Object.entries( num ).sort( ( a, b ) => {
+		const aNum = a[ 1 ]
+		const bNum = b[ 1 ]
+		return aNum - bNum
+	} )
+	const meatsSortedByNumObject = Object.fromEntries( meatsSortedByNum )
 
 ;```
 
