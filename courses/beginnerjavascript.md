@@ -1894,6 +1894,32 @@ Subtraction    : -
 
 
 
+	// filter returns new array
+	const goodReviews = feedback.filter( singleFeedback => singleFeedback.rating > 2 )
+
+	//	reuse
+	function filterByMinRating( minRating ) {
+		return function( singleFeedback ) {
+			return singleFeedback.rating > minRating
+		}
+	}
+	const greatReviews = feedback.filter( filterByMinRating( 4 ) )
+
+
+
+	const meats = {
+		beyond: 10,
+		beef: 5,
+		pork: 7,
+	}
+
+	//	some() checks for at least 1
+	const moreThanOneMeat = Object.values( meats ).some( meatValue => 5 )
+	//	every() checks for all
+	const enoughOfEveryMeat = Object.values( meats ).every( meatValue => 3 )
+
+
+
 
 ;```
 
