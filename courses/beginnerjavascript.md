@@ -1954,6 +1954,35 @@ Subtraction    : -
 
 
 
+# looping & iterating
+
+
+
+## Array.forEach
+
+```js
+
+	const toppings = [
+		'Mushrooms', 'Tomatoes', 'Eggs', 'Chili', 'Lettuce',
+		'Avocado', 'Bacon', 'Pickles', 'Onions', 'Cheese'
+	]
+
+	toppings.forEach( ( topping, index, myArray ) => {
+		const nextTopping = myArray( index + 1 )
+		const prevTopping = myArray( index - 1 )
+
+		prevTopping ? console.log( prevTopping ) : null
+		console.log( topping )
+		nextTopping ? console.log( nextTopping ) : null
+
+		console.log( '-------🍕-------' )
+		debugger
+	} )
+
+;```
+
+
+
 
 ;```
 
