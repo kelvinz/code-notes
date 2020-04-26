@@ -2014,6 +2014,48 @@ Subtraction    : -
 
 
 
+## filter, find & higher order functions
+
+```js
+
+	//	filter returns an array
+	//	people over 40 will be in this new list that is filtered
+	const over40 = cleanPeople.filter( person => {
+		if ( person.age > 40 ) {
+			return true
+		} else {
+			return false
+		}
+	} )
+
+	//	shorter
+	const over40 = cleanPeople.filter( person => person.age > 40 )
+
+
+
+	//	find returns 1 item, not array
+	const student = students.find( stud => stud.id === '565a' )
+
+	function findById( id ) {
+		return function isStudent( student ) {
+			return student.id === id
+		}
+	}
+
+	const student = students.find( findById( '565a' ) )
+
+	function findByProp( prop, propWeAreLookingFor ) {
+		return function isStudent( student ) {
+			return student[ prop ] === propWeAreLookingFor
+		}
+	}
+
+	const student = students.find( findByProp( 'first_name', 'Micki' ) )
+
+;```
+
+
+
 
 ;```
 
