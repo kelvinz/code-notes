@@ -2056,6 +2056,37 @@ Subtraction    : -
 
 
 
+## reduce
+
+```js
+
+	//	using normal loop
+	let total = 0
+	orderTotals.forEach( single => total += single )
+
+
+
+	//	using reduce
+	function tally( total, current ) {
+		return total + current
+	}
+
+	//	starts total at 0
+	const allOrders = orderTotals.reduce( tally, 0 )
+
+
+
+	//	totals as an object
+	function inventoryReducer( total, current ) {
+		total[ current.type ] = totals[ current.type ]++ || 1
+		return total
+	}
+
+	const inventoryCounts = inventory.reduce( inventoryReducer, {} )
+	const totalInventoryPrice = inventory.reduce( ( total, item ) => total + item.price, 0 )
+
+
+
 
 ;```
 
