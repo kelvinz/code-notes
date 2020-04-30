@@ -1960,6 +1960,10 @@ Subtraction    : -
 
 ## Array.forEach
 
+difference between .foreach & .map
+foreach does something to each el of array
+map returns a new array with modified el
+
 ```js
 
 	const toppings = [
