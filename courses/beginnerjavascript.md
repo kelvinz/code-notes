@@ -2105,6 +2105,26 @@ map returns a new array with modified el
 
 
 
+## reduce exercise
+
+```js
+
+	const result = myPara
+					.split( '' ) // split each char into an item of an array
+					.filter( char => char.match( /[a-z0-9]/i ) ) // remove non alphanumeric
+					.map( char => char.toLowerCase ) // change all to lowercase
+					.reduce( ( total, current ) => {
+						total[ current ] = totals[ current ]++ || 1
+						return total
+					}, {} )
+
+	const sortedResults = Object.entries( result )
+								.sort( ( a, b ) => a[ 1 ] - b[ 1 ] )
+
+;```
+
+
+
 
 ;```
 
