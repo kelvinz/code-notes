@@ -2125,6 +2125,25 @@ map returns a new array with modified el
 
 
 
+## for, for in, for of & while loops
+
+```js
+
+	//	for
+	for ( let i = 0; i < 10; i++ ) {
+		console.log( i )
+	}
+
+	for ( let i = 100; i <= 120; i += 2 ) {
+		console.log( i )
+	}
+
+	for ( let i = 0; i < numbers.length; i++ ) {
+		console.log( numbers[ i ] )
+	}
+
+
+
 
 ;```
 
