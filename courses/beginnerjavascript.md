@@ -2144,6 +2144,33 @@ map returns a new array with modified el
 
 
 
+	//	for of
+	const name = 'Kelvin Zhao'
+
+	for ( const letter of name ) {
+		console.log( letter )
+		//	k, e, l ...
+	}
+
+
+
+	//	for in
+	//	looping keys
+	const kelvin = {
+		age: 18,
+		first: 'kelvin',
+		last: 'zhao',
+	}
+
+	//	similar to object.keys
+	//	but can grab props even from prototypes/father
+	for ( const prop in kelvin ) {
+		console.log( prop )
+		//	age, first, last
+	}
+
+
+
 
 ;```
 
