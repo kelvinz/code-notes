@@ -2171,6 +2171,29 @@ map returns a new array with modified el
 
 
 
+	//	while
+	let i = 0
+	while( i < 100 ) {
+		i++
+		console.log( i )
+	}
+
+
+
+	//	do while
+	do {
+		i++
+		console.log( i )
+	} while( i < 100 )
+
+;```
+
+
+
+---
+
+
+
 
 ;```
 
