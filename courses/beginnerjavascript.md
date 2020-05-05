@@ -1960,9 +1960,9 @@ Subtraction    : -
 
 ## Array.forEach
 
-difference between .foreach & .map
-foreach does something to each el of array
-map returns a new array with modified el
+> difference between .foreach & .map
+> foreach does something to each el of array
+> map returns a new array with modified el
 
 ```js
 
@@ -2191,6 +2191,148 @@ map returns a new array with modified el
 
 
 ---
+
+
+
+# exercises
+
+
+
+## face detection & censorship
+
+chrome://flags
+experimental web platform features - enabled
+
+```html
+
+	<div class="wrap">
+		<video class="webcam"></video>
+		<canvas class="video"></canvas>
+		<canvas class="face"></canvas>
+	</div>
+
+	<div class="controls">
+		<label for="scale">
+			Scale:
+			<input value="1.35" type="range" name="scale" min="0.3" max="3" step="0.1">
+		</label>
+		<label for="size">
+			Size:
+			<input value="10" type="range" name="size" min="1" max="100" step="1">
+		</label>
+	</div>
+
+;```
+
+```js
+
+	const
+	video      = document.querySelector( '.webcam' ),
+
+	canvas     = document.querySelector( '.video' ),
+	ctx        = canvas.getContext( '2d' ),
+
+	faceCanvas = document.querySelector( '.face' ),
+	faceCtx    = faceCanvas.getContext( '2d' ),
+
+	faceDector = new window.FaceDetector(),
+
+	options = {
+		size  : 10,
+		scale : 1.35,
+	}
+
+	const optionsInputs = document.querySelectorAll( '.controls input[type="range"]' )
+
+	function handleOption( e ) {
+		const { value, name } = e.currentTarget
+		options[ name ] = parseFloat( value )
+	}
+
+	optionsInputs.forEach( input => input.addEventListener( 'input', handleOption ) )
+
+	async function populateVideo() {
+		//	get webcam video stream
+		const stream = await navigator.mediaDevices.getUserMedia( {
+			video: {
+				width: 1280,
+				height: 720
+			}
+		} )
+
+		//	put it into video src
+		video.srcObject = stream
+
+		//	play webcam video
+		await video.play()
+
+		//	update canvas sizes
+		canvas.width = video.videoWidth
+		canvas.height = video.videoHeight
+		faceCanvas.width = video.videoWidth
+		faceCanvas.height = video.videoHeight
+	}
+
+	async function detect() {
+		const faces = await faceDector.detect( video )
+
+		faces.forEach( drawFace )
+		faces.forEach( censor )
+		requestAnimationFrame( detect )
+	}
+
+	function drawFace( face ) {
+		const { width, height, top, left } = face.boundingBox
+		ctx.clearRect( 0, 0, canvas.width, canvas.height )
+		ctx.strokeStyle = '#ffc600'
+		ctx.lineWidth   = 2
+		ctx.strokeRect( left, top, width, height )
+	}
+
+	//	deconstruct the boundingBox & name it as a var name face
+	function censor( { boundingBox: face } ) {
+
+		faceCtx.imageSmoothingEnabled = false
+		faceCtx.clearRect( 0, 0, faceCanvas.width, faceCanvas.height )
+
+		//	draw a small face
+		faceCtx.drawImage(
+			video, // where does the source come from?
+
+			face.x, // where do we start pulling
+			face.y,
+			face.width,
+			face.height,
+
+			face.x, // where should we start drawing
+			face.y,
+			options.size,
+			options.size
+		)
+
+		const
+		width = face.width * options.scale,
+		height = face.height * options.scale
+
+		//	scale small face up
+		faceCtx.drawImage(
+			faceCanvas,
+
+			face.x,
+			face.y,
+			options.size,
+			options.size,
+
+			face.x - ( width - face.width ) / 2,
+			face.y - ( height - face.height ) / 2,
+			width,
+			height
+		)
+	}
+
+	populateVideo().then( detect )
+
+;```
 
 
 
