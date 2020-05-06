@@ -2336,6 +2336,53 @@ experimental web platform features - enabled
 
 
 
+## sarcastic text generator
+
+```js
+
+	const textarea = document.querySelector( '[name="text"]' )
+	const result = document.querySelector( '.result' )
+	const filterInputs = Array.from( document.querySelectorAll( '[name="filter"]' ) )
+
+	const funkyLetters = { a: 'à', ... } // assorted funky letters
+
+	const filters = {
+		sarcastic( letter, index ) {
+			return index % 2 ? letter.toUpperCase() : letter.toLowerCase()
+		},
+		funcky( letter ) {
+			let funkyLetter = funkyLetters[ letter ]
+			if ( funkyLetter ) return funkyLetter
+			funkyLetter = funkyLetters[ letter.toLowerCase() ]
+			if ( funkyLetter ) return funkyLetter
+			return letter
+		},
+		unable( letter ) {
+			const random = Math.floor( Math.random() * 3 )
+			if ( letter === ' ' && random === 2 ) {
+				return '...'
+			}
+			return letter
+		},
+	}
+
+	function transformText( text ) {
+		// const filter = document.querySelector( '[name="filter"]:checked' ).value
+		const filter = filterInputs.find( input => input.checked ).value
+
+		const mod = Array.from( text ).map( filters[ filter ] )
+		result.textContent = mod.join( '' )
+	}
+
+	textarea.addEventListener( 'input', e => transformText( e.target.value ) )
+	filterInputs.forEach( input => {
+		input.addEventListener( 'input', () => transformText( textarea.value ) )
+	} )
+
+;```
+
+
+
 
 ;```
 
