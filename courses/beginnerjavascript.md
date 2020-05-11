@@ -2652,6 +2652,38 @@ so they can be tabbed/switched via keyboard
 
 
 
+---
+
+
+
+# keywords
+
+
+
+## the new keyword
+
+```js
+
+	const myDate = new Date( 'August 11, 2025' )
+	console.log( typeof myDate ) // object
+	console.log( myDate instanceof Date ) // true
+
+	const names = [ 'hello', 'you' ]
+	//	same as
+	const names = new Array( 'hello', 'you' )
+
+	function Pizza() {
+		console.log( 'Making a pizza...' )
+	}
+
+	//	creating a new object
+	//	that's an instance of the function that creates it
+	const pepperoniPizza = new Pizza()
+
+;```
+
+
+
 
 ;```
 
