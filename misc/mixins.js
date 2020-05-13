@@ -37,6 +37,16 @@ export const pickOne = ( arr ) => {
 
 
 
+//	generate alphanumeric code without o, 0, i, l, 1
+export const generateCode = ( num ) => {
+	return Math.random()
+				.toString( 36 )
+				.replace( /[o0il1,.]+/g, '' )
+				.slice( -num )
+}
+
+
+
 //	split array into chunks of x size
 export const splitToChunks = ( array, size ) => {
 	let results = []
