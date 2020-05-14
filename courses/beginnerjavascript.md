@@ -2684,6 +2684,43 @@ so they can be tabbed/switched via keyboard
 
 
 
+## the this keyword
+
+```js
+
+	const button1 = document.querySelector( '.one' )
+	const button2 = document.querySelector( '.two' )
+
+	function tellMeAboutTheButton() {
+		console.log( this ) // button1 or button2
+	}
+
+	function tellMeAboutTheButton = () => {
+		console.log( this ) // window
+		//	the scoped this
+		//	if no outside scope, it'll be window
+	}
+
+	button1.addEventListener( 'click', tellMeAboutTheButton )
+	button2.addEventListener( 'click', tellMeAboutTheButton )
+
+	function Pizza( toppings = [], customer ) {
+		this.toppings = toppings
+		this.customer = customer
+		this.id = Math.floor( Math.random() * 16777215 ).toString( 16 )
+	}
+
+	const pepperoniPizza = new Pizza( [ 'pepperoni' ], 'kelvin' )
+	const canadianPizza = new Pizza( [ 'mushrooms', 'onion' ], 'kelly' )
+
+;```
+
+
+
+---
+
+
+
 
 ;```
 
