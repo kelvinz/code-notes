@@ -2721,6 +2721,48 @@ so they can be tabbed/switched via keyboard
 
 
 
+# prototype
+
+
+
+## prototypes & prototypal inheritance
+
+```js
+
+	function Pizza( toppings = [], customer ) {
+		this.toppings = toppings
+		this.customer = customer
+		this.id = Math.floor( Math.random() * 16777215 ).toString( 16 )
+		this.slices = 12
+		this.size = 'Medium'
+
+		//	1 function for each instance
+		//	not cost efficient
+		//	duplicated for no good reason
+		this.eat = function() {
+			if ( this.slices > 0 ) this.slices -= 1
+		}
+	}
+
+	//	share functions via prototype
+	//	better
+	Pizza.prototype.eat = function() {
+		if ( this.slices > 0 ) this.slices -= 1
+	}
+
+	Pizza.prototype.size = 'Large'
+
+	const pepperoniPizza = new Pizza( [ 'pepperoni' ], 'kelvin' )
+	const canadianPizza = new Pizza( [ 'mushrooms', 'onion' ], 'kelly' )
+
+	console.log( canadianPizza.size ) // Medium
+	//	only if pizza itself has no size prop
+	//	will it go to prototype to look
+
+;```
+
+
+
 
 ;```
 
