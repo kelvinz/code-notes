@@ -133,3 +133,10 @@ export const once = ( fn ) => {
 }
 
 
+
+//	wait x millisecond
+export const wait = ( amount = 0 ) => {
+	return new Promise( resolve => {
+		setTimeout( resolve, amount )
+	} )
+}
