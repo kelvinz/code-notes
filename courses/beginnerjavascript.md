@@ -2860,6 +2860,80 @@ so they can be tabbed/switched via keyboard
 
 
 
+## prototype refactor of the slider exercise
+
+```js
+
+	function Slider( slider ) {
+		if ( !( slider instanceof Element ) ) throw new Error( 'No slider passed in... 😧' )
+
+		this.slider = slider
+
+		this.slides = this.slider.querySelector( '.slides' )
+		this.prevButton = this.slider.querySelector( '.goToPrev' )
+		this.nextButton = this.slider.querySelector( '.goToNext' )
+
+		this.startSlider()
+		this.applyClasses()
+
+		//	why we don't bind but use arrow functions to fix the 'this' issue
+		//	we don't need a reference to the event which needs to be removed
+		//	in the gallery example
+		//	anon arrow function removes the ability to reference it thus can't remove it later
+		this.prevButton.addEventListener( 'click', () => this.move( 'back' ) )
+		this.nextButton.addEventListener( 'click', () => this.move() )
+	}
+
+	Slider.prototype.startSlider = function() {
+		//	nextSibling can be anything even plain text, breaks, etc
+		//	nextElementSibling will give you the element
+		this.current = this.slider.querySelector( '.current' ) || this.slides.firstElementChild
+		this.prev = this.current.previousElementSibling || this.slides.lastElementChild
+		this.next = this.current.nextElementSibling || this.slides.firstElementChild
+	}
+
+	Slider.prototype.applyClasses = function() {
+		this.current.classList.add( 'current' )
+		this.prev.classList.add( 'prev' )
+		this.next.classList.add( 'next' )
+	}
+
+	Slider.prototype.move = function( dir ) {
+		const classesToRemove = [ 'prev', 'current', 'next' ]
+
+		this.prev.classList.remove( ...classesToRemove )
+		this.current.classList.remove( ...classesToRemove )
+		this.next.classList.remove( ...classesToRemove )
+
+		if ( dir === 'back' ) {
+			//	using destructuring to reassign
+			[ this.prev, this.current, this.next ] = [
+					this.prev.previousElementSibling || this.slides.lastElementChild,
+					this.prev,
+					this.current
+				]
+		} else {
+			[ this.prev, this.current, this.next ] = [
+					this.current,
+					this.next,
+					this.next.nextElementSibling || this.slides.firstElementChild
+				]
+		}
+
+		this.applyClasses()
+	}
+
+	const mySlider = new Slider( document.querySelector( '.slider' ) )
+	const mySlider = new Slider( document.querySelector( '.dog-slider' ) )
+
+;```
+
+
+
+---
+
+
+
 
 ;```
 
