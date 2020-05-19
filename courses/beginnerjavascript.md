@@ -2934,6 +2934,51 @@ so they can be tabbed/switched via keyboard
 
 
 
+## bind, call, apply
+
+```js
+
+	const person = {
+		name: 'kelvin',
+		sayHi() {
+			return `hey ${ this.name }`
+		}
+	}
+
+	person.sayHi()
+	//	hey kelvin
+
+	const sayHi = person.sayHi
+	sayHi()
+	//	hey
+
+	const sayHi = person.sayHi.bind( person )
+	sayHi()
+	//	hey kelvin
+
+	const jenna = { name: 'jenna' }
+	const sayHi = person.sayHi.bind( jenna )
+	sayHi()
+	//	hey jenna
+
+	const $ = document.querySelector.bind( document )
+	$( 'p' )
+	//	without bind, document.querySelector loses the document.
+	//	because $ = function called querySelector taken from document
+	//	but without document being locked in
+
+	//	first arguument object to be binded
+	//	second argument
+	//	.06 will be passed into the calculate function
+	const calc = bill.calculate.bind( { total: 500 }, .06 )
+
+;```
+
+.call binds & runs the function at the same time
+.apply binds & runs the function at the same time, but parameters passed in as an array
+
+
+
 
 ;```
 
