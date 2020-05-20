@@ -3020,3 +3020,67 @@ so they can be tabbed/switched via keyboard
 
 
 
+## promises
+
+```js
+
+	function makePizza( toppings ) {
+		return new Promise( function( resolve, reject ) {
+
+			setTimeout( function() {
+				resolve( `🍕 with ${ toppings.join( ' ' ) }` )
+			}, 1000 )
+
+		} )
+	}
+
+	const pepperoniPromise = makePizza( [ 'pepperoni', 'tomatoes' ] )
+
+	pepperoniPromise.then( function( pizza ) {
+		console.log( pizza )
+	} )
+
+	// wait one after another
+	makePizza( [ 'pepperoni' ] )
+		.then( function( pizza ) {
+			console.log( pizza )
+			return makePizza( [ 'ham', 'cheese' ] )
+		} )
+		.then( function( pizza ) {
+			console.log( pizza )
+			return makePizza( [ 'hot peppers', 'onions' ] )
+		} )
+		.then( function( pizza ) {
+			console.log( pizza )
+		} )
+
+	// wait for all to finish
+	const pizzaPromise1 = makePizza( [ 'pepperoni' ] )
+	const pizzaPromise2 = makePizza( [ 'ham', 'cheese' ] )
+	const pizzaPromise3 = makePizza( [ 'hot peppers', 'onions' ] )
+
+	const dinnerPromise = Promise.all( [ pizzaPromise1, pizzaPromise2, pizzaPromise3 ] )
+
+	dinnerPromise.then( function( pizzas ) {
+		console.log( pizzas )
+		//	array with all the pizza
+	} )
+
+	//	restructuring tips
+	dinnerPromise.then( function( pizzas ) {
+		const [ one, two, three ] = pizzas
+		console.log( one, two, three )
+	} )
+
+	dinnerPromise.then( function( [ one, two, three ] ) ) {
+		console.log( one, two, three )
+	}
+
+	//	get first to finish
+	const firstPizza = Promise.race( [ pizzaPromise1, pizzaPromise2, pizzaPromise3 ] )
+	firstPizza.then( pizza => console.log( 'first' + pizza ) )
+
+;```
+
+
+
