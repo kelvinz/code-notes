@@ -2979,6 +2979,38 @@ so they can be tabbed/switched via keyboard
 
 
 
+## the event loop & callback hell
+
+```js
+
+	const go = document.querySelector( '.go' )
+
+	go.addEventListener( 'click', function( e ) {
+		const el = e.currentTarget
+
+		el.textContent = 'Go!'
+
+		setTimeout( function() {
+			el.classList.add( 'circle' )
+
+			setTimeout( function() {
+				el.classList.add( 'red' )
+
+				setTimeout( function() {
+					el.classList.remove( 'circle' )
+
+					setTimeout( function() {
+						el.classList.remove( 'red' )
+						el.classList.add( 'purple' )
+
+						setTimeout( function() {
+							el.classList.add( 'fadeout' )
+						}, 500 )
+					}, 300 )
+				}, 250 )
+			}, 500 )
+		}, 2000 )
+	} )
 
 ;```
 
