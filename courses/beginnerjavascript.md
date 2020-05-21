@@ -3084,3 +3084,43 @@ so they can be tabbed/switched via keyboard
 
 
 
+## error handling
+
+```js
+
+	function makePizza( toppings ) {
+		return new Promise( function( resolve, reject ) {
+
+			if ( toppings.includes( 'pineapple' ) ) {
+				reject( 'No!' )
+			}
+
+			setTimeout( function() {
+				resolve( `🍕 with ${ toppings.join( ' ' ) }` )
+			}, 1000 )
+
+		} )
+	}
+
+	makePizza( [ 'cheese', 'pineapple' ] )
+		.then( pizza => {
+			console.log( pizza )
+		} )
+		.catch( err => {
+			console.log( err )
+		} )
+
+	//	only 1 catch is needed for chained promises
+	//	but 1 error breaks chain
+	//	use this instead if you need to continue
+	const p1 = makePizza( [ 'pep' ] )
+	const p2 = makePizza( [ 'pineapple' ] )
+	const dinnerPromise = Promise.all( [ p1, p2 ] )
+	dinnerPromise.then( results => {
+		console.log( results ) // 1 success, 1 error
+	} )
+
+;```
+
+
+
