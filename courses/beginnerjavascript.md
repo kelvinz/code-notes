@@ -3124,3 +3124,52 @@ so they can be tabbed/switched via keyboard
 
 
 
+## refactoring callback hell to promise land
+
+```js
+
+	function wait( ms = 0 ) {
+		return new Promise( function( resolve ) {
+			setTimeout( resolve, ms )
+		} )
+	}
+	// or shorter
+	const wait = ( ms = 0 ) => new Promise( resolve => setTimeout( resolve, ms ) )
+
+
+
+	const go = document.querySelector( '.go' )
+
+	function animate() {
+		const el = e.currentTarget
+		el.textContent = 'Go!'
+
+		wait( 2000 )
+			.then( ()=> {
+				el.classList.add( 'circle' )
+				return wait( 500 )
+			} )
+			.then( () => {
+				el.classList.add( 'red' )
+				return wait( 250 )
+			} )
+			.then( () => {
+				el.classList.remove( 'circle' )
+				return wait( 500 )
+			} )
+			.then( () => {
+				el.classList.remove( 'red' )
+				el.classList.add( 'purple' )
+				return wait( 500 )
+			} )
+			.then( () => {
+				el.classList.add( 'fadeout' )
+			} )
+	}
+
+	go.addEventListener( 'click', animate )
+
+;```
+
+
+
