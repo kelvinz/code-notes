@@ -3207,3 +3207,23 @@ so they can be tabbed/switched via keyboard
 
 
 
+	//	fuction declaration
+	async function fd() {}
+
+	//	arrow function
+	const arrowFn = async () => {}
+
+	// callback
+	window.addEventListener( 'click', async function() {} )
+
+	const person = {
+		//	method
+		sayHi: async function() {},
+		//	method shorthand
+		async sayHello() {},
+		//	function property
+		sayHey: async () => {}
+	}
+
+
+
