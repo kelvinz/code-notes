@@ -3173,3 +3173,37 @@ so they can be tabbed/switched via keyboard
 
 
 
+## async await
+
+```js
+
+	function wait( ms = 0 ) {
+		return new Promise( resolve => {
+			setTimeout( resolve, ms )
+		} )
+	}
+
+	function go() {
+		console.log( 'starting' )
+		await wait( 2000 )
+		console.log( 'ending' )
+	}
+	go()
+	//	starting, ending, wait ends
+
+	async function go() {
+		console.log( 'starting' )
+		await wait( 2000 )
+		console.log( 'ending' )
+	}
+	go()
+	//	starting, wait ends, ending
+
+
+
+	//	await can only happen in async functions
+	//	async functions are promises too
+	//	can .then().catch() on them when running if needed
+
+
+
