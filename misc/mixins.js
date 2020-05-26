@@ -140,3 +140,9 @@ export const wait = ( amount = 0 ) => {
 		setTimeout( resolve, amount )
 	} )
 }
+
+
+
+export const addCommaToNum = ( num ) => {
+	return num.toString().replace( /\B(?=(\d{3})+(?!\d))/g, ',' )
+}
