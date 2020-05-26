@@ -3227,3 +3227,32 @@ so they can be tabbed/switched via keyboard
 
 
 
+	function makePizza( toppings ) {
+		return new Promise( function( resolve, reject ) {
+
+			if ( toppings.includes( 'pineapple' ) ) {
+				reject( 'No!' )
+			}
+
+			setTimeout( function() {
+				resolve( `🍕 with ${ toppings.join( ' ' ) }` )
+			}, 1000 )
+
+		} )
+	}
+
+	async function makeDinner() {
+		const pizza1 = await makePizza( [ 'pepperoni' ] )
+		const pizza2 = await makePizza( [ 'mushrooms' ] )
+		//	after pizza 1 finishes, pizza 2 starts
+
+		const pizzaPromise1 = makePizza( [ 'pepperoni' ] )
+		const pizzaPromise2 = makePizza( [ 'mushrooms' ] )
+		const pizzas = await Promise.all( [ pizzaPromise1, pizzaPromise2 ] )
+		//	waits for both to be done, but both starts at same time
+	}
+
+	makeDinner()
+
+
+
