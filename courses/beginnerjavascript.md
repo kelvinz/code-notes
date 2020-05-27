@@ -3256,3 +3256,23 @@ so they can be tabbed/switched via keyboard
 
 
 
+	async function animate() {
+		const el = e.currentTarget
+		el.textContent = 'Go!'
+		await wait( 2000 )
+		el.classList.add( 'circle' )
+		await wait( 500 )
+		el.classList.add( 'red' )
+		await wait( 250 )
+		el.classList.remove( 'circle' )
+		await wait( 500 )
+		el.classList.remove( 'red' )
+		el.classList.add( 'purple' )
+		await wait( 500 )
+		el.classList.add( 'fadeout' )
+	}
+
+;```
+
+
+
