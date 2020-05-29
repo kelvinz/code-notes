@@ -3336,3 +3336,116 @@ so they can be tabbed/switched via keyboard
 
 
 
+
+```js
+
+	const wait = ( ms = 0 ) => new Promise( resolve => setTimeout( resolve, ms ) )
+
+	async function destroyPopup( popup ) {
+		popup.classList.remove( 'open' )
+		await wait( 1000 )
+		//	old way to remove from dom
+		//	popup.parentElement.removeChild( popup )
+		//	new way .remove()
+		popup.remove()
+
+		//	remove from memory
+		popup = null
+	}
+
+	function ask( options ) {
+		return new Promise( async resolve => {
+			//	createElement instead of string literal so we can attach eventlisteners to it
+			//	otherwise we need to attach to dom before being able to add eventlisteners
+			const popup = document.createElement( 'form' )
+			popup.classList.add( 'popup' )
+			popup.insertAdjacentHTML( 'afterbegin', `
+				<fieldset>
+					<label>${ options.title }</label>
+					<input type="text" name="input" />
+					<button type="submit">Submit</button>
+				</fieldset>
+			`)
+
+			if ( options.cancel ) {
+				const skipButton = document.createElement( 'button' )
+				skipButton.type = 'button'
+				skipButton.textContent = 'Cancel'
+				popup.firstElementChild.appendChild( skipButton )
+
+				skipButton.addEventListener( 'click', () => {
+					resolve( null )
+				}, { once: true } )
+				destroyPopup( popup )
+			}
+
+			popup.addEventListener( 'submit', e => {
+				e.preventDefault()
+				//	.input is the 'name' property of the input
+				//	<input type="text" name="input" />
+				resolve( e.target.input.value )
+				destoryPopup( popup )
+			}, { once: true } )
+
+			document.body.appendChild( popup )
+			//	popup & open added at same time
+			//	css doesn't play transition
+			//	add small timeout to allow it to play
+			await wait( 50 )
+			popup.classList.add( 'open' )
+		} )
+
+	}
+
+	async function askQuestion( e ) {
+		const button = e.currentTarget
+		const answer = await ask( {
+			title: button.dataset.question,
+			cancel: button.hasAttribute( 'data-cancel' )
+		} )
+		//	or use
+		//	const cancel = 'cancel' in button.dataset
+		//	to check if it exists
+	}
+
+	const buttons = document.querySelectorAll( '[ data-question ]' )
+	buttons.forEach( button => button.addEventListener( 'click', askQuestion ) )
+
+
+
+	//	asking 1 after another
+	const questions = [
+		{ title: `what is your name?` },
+		{ title: `what is your age`, cancel: true },
+		{ title: `what is your dog's name?` },
+	]
+
+	async function askMany() {
+		//	map or forEach doesn't pause loops
+		//	'of' allows for pausing
+		for ( const question of questions ) {
+			console.log( await ask( question ) )
+		}
+	}
+
+	//	utility
+	async function asyncMap( arr, callback ) {
+		const results = []
+		for ( const item of arr ) {
+			results.push( await callback( item ) )
+		}
+		return results
+	}
+
+	async function go() {
+		const answers = await asyncMap( question, ask )
+		console.log( answers )
+	}
+
+	go()
+
+;```
+
+
+
+## typer ui - two ways
