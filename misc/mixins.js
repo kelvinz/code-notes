@@ -91,7 +91,7 @@ export const getRandomIntInc = ( min, max ) => {
 
 
 //	debounce - wait for end of burst events like window resize
-export const debounce = ( fn, delay, immediate ) => {
+export const debounce = ( fn, delay = 100, immediate = true ) => {
 	let timer
 	return ( ...args ) => {
 		const myFn = fn.bind( this, ...args )
@@ -105,7 +105,7 @@ export const debounce = ( fn, delay, immediate ) => {
 
 
 //	throttle - limit number of checks like scrolling
-export const throttle = ( fn, delay, immediate ) => {
+export const throttle = ( fn, delay = 100, immediate = true ) => {
 	let timer
 	return ( ...args ) => {
 		const myFn = fn.bind( this, ...args )

@@ -3276,3 +3276,63 @@ so they can be tabbed/switched via keyboard
 
 
 
+## error handling
+
+```js
+
+	//	try, catch
+	async function go() {
+		try {
+			const pizza = await makePizza( [ 'pineapple' ] )
+			console.log( pizza )
+		} catch ( err ) {
+			console.log( err )
+		}
+	}
+
+	go()
+
+	//	.catch
+	function handleError( err ) {
+		console.log( err )
+	}
+
+	async function go() {
+		const pizza = await makePizza( [ 'pineapple' ] )
+							.catch( handleError )
+		console.log( pizza )
+	}
+
+	go()
+
+	//	or catch when async called
+	function handleError( err ) {
+		console.log( err )
+	}
+
+	async function go() {
+		const pizza = await makePizza( [ 'pineapple' ] )
+		console.log( pizza )
+	}
+
+	go().catch( handleError )
+
+	//	higer order function
+	async function go() {
+		const pizza = await makePizza( [ 'pineapple' ] )
+		console.log( pizza )
+	}
+
+	function makeSafe( fn, handleError ) {
+		return function() {
+			fn().catch( handleError )
+		}
+	}
+
+	const safeGo = makeSafe( go, handleError )
+	safeGo()
+
+;```
+
+
+
