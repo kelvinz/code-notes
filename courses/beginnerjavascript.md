@@ -3336,6 +3336,7 @@ so they can be tabbed/switched via keyboard
 
 
 
+## prompt ui
 
 ```js
 
@@ -3449,3 +3450,61 @@ so they can be tabbed/switched via keyboard
 
 
 ## typer ui - two ways
+
+div with data-type, data-type-min, data-type-max
+
+> for...of
+> arrays, strings, etc
+> for...in
+> gets property/key of objects
+
+```js
+
+	const wait = ( ms = 0 ) => new Promise( resolve => setTimeout( resolve, ms ) )
+
+	//	pass ran so that it can be tested with a fixed numer
+	//	& function will return constant result
+	//	random in function not good for tests
+	const getRandomBetween = ( min, max, ran = Math.random() ) => {
+		Math.floor( ran * ( max - min ) + min )
+	}
+
+	//	async for...of loop
+	async function draw( el ) {
+		const text = el.textContent
+		let soFar = ``
+		for ( const letter of text ) {
+			soFar += letter
+			el.textContent = soFar
+			const { typeMin, typeMax } = el.dataset
+			await wait( getRandomBetween( typeMin, typeMax ) )
+		}
+	}
+
+	document.querySelectorAll( '[ data-type ]' ).forEach( draw )
+
+
+	//	async recursion
+	function draw( el ) {
+		let index = 1
+		const text = el.textContent
+		const { typeMin, typeMax } = el.dataset
+
+		async function drawLetter() {
+			el.textContent = text.slice( 0, index )
+			index++
+			await wait( getRandomBetween( typeMin, typeMax ) )
+			if ( index <= text.length ) {
+				drawLetter()
+			}
+		}
+
+		drawLetter()
+	}
+
+	document.querySelectorAll( '[ data-type ]' ).forEach( draw )
+
+;```
+
+
+
