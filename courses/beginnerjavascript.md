@@ -3508,3 +3508,37 @@ div with data-type, data-type-min, data-type-max
 
 
 
+## ajax & api
+
+```js
+
+	const endpoint = `https://api.github.com/users/wesbos`
+
+	function handleError( err ) {
+		console.log( err )
+	}
+
+	const wesPromise = fetch( endpoint )
+	wesPromise
+		.then( res => {
+			return res.json()
+		} )
+		.then( data => {
+			console.log( data )
+		} )
+		.catch( handleError )
+
+
+	//	async version
+	async function displayUser() {
+		const res = await fetch( endpoint )
+		const data = await res.json()
+		console.log( data )
+	}
+
+	displayUser().catch( handleError )
+
+;```
+
+
+
