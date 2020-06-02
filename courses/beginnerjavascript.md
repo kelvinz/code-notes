@@ -3542,3 +3542,66 @@ div with data-type, data-type-min, data-type-max
 
 
 
+## cors & recipes
+
+cors => cross origin resource sharing
+sharing data across different domains
+
+cors policy in server has to allow
+
+babel not to transpile async await
+package.json
+"browserslist": [ "last 1 chrome versions" ]
+
+proxy is a middleman from one domain to another domain
+don't use with any sensitive data as the data will go thru the proxy
+
+```js
+
+	const proxy = `https://cros-anywhere.herokuapp.com/`
+	const baseEndpoint = `http://www.recipepuppy.com/api`
+	const form = document.querySelector( 'form.search' )
+	const recipesGrid = document.querySelector( '.recipes' )
+
+	async function fetchRecipes( query ) {
+		const res = fetch( `${ proxy }${ baseEndpoint }?q=${ query }` )
+		const data = await res.json()
+		return data
+	}
+
+	function handleSubmit( e ) {
+		e.preventDefault()
+		fetchAndDisplay( form.query.value )
+	}
+
+	async function fetchAndDisplay( query ) {
+		form.submit.disabled = true
+		const recipes = await fetchRecipes( query )
+		form.submit.disabled = false
+		displayRecipes( recipes )
+	}
+
+	function displayRecipes( recipes ) {
+		const html = recipes.map(
+			recipe => `<div>
+				<h2>${ recipe.title }</h2>
+				<p>${ recipe.ingredients }</p>
+				${ recipe.thumbnail &&
+					`<img src="${ recipe.thumbnail }" alt="${ recipe.title }" />`
+				}
+			</div>`
+		)
+		recipesGrid.innerHTML = html.join( '' )
+	}
+
+	form.addEventListener( 'submit', handleSubmit )
+	fetchAndDisplay( 'pizza' )
+
+;```
+
+
+
+---
+
+
+
