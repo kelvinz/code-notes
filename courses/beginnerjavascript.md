@@ -3667,3 +3667,68 @@ don't use with any sensitive data as the data will go thru the proxy
 
 
 
+## currency converter
+
+```js
+
+	const fromInput = document.querySelector( '[name="from_amount"]' )
+	const fromSelect = document.querySelector( '[name="from_currency"]' )
+	const toSelect = document.querySelector( '[name="to_currency"]' )
+	const toEl = document.querySelector( '.to_amount' )
+	const form = document.querySelector( '.app form' )
+	const currencies = { USD: 'United States Dollar', ... etc }
+	const endpoint = 'https://api.exchangeratesapi.io/latest'
+	const ratesByBase = {}
+
+	function generateOptions( options ) {
+		return Object.entries( options )
+				.map( [ currencyCode, currencyName ] => {
+					return `<option value="${ currencyCode}">
+								${ currencyCode } - ${ currencyName }
+							</options>`
+				} )
+				.join( '' )
+	}
+
+	async function fetchRates( base = 'USD' ) {
+		const res = await fetch( `${ endpoint }?base=${ base }` )
+		const rates = await res.json()
+		return rates
+	}
+
+	async function convert( amount, from, to ) {
+		if ( !ratesByBase[ from ] ) {
+			const rates = await fetchRates( from )
+			ratesByBase[ from ] = rates
+		}
+		const rate = ratesByBase[ from ].rates[ to ]
+		const convertedAmount = rate * amount
+		return convertedAmount
+	}
+
+	function formatCurrency( amount, currency ) {
+		return Intl.NumberFormat( 'en-US', {
+			style: 'currency',
+			currency
+		} ).format( amount )
+	}
+
+	async function handleInput( e ) {
+		const rawAmount = await convert(
+									fromInput.value,
+									fromSelect.value,
+									toSelect.value
+								)
+		toEl.textContent = formatCurrency( rawAmount, toSelect.value )
+	}
+
+	const optionsHTML = generateOptions( currencies )
+	fromSelect.innerHTML = optionsHTML
+	toSelect.innerHTML = optionsHTML
+	form.addEventListener( 'input', handleInput )
+
+;```
+
+
+
+## modules
