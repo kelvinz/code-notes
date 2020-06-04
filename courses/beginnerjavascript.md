@@ -3732,3 +3732,65 @@ don't use with any sensitive data as the data will go thru the proxy
 
 
 ## modules
+
+```html
+
+	<script src="./scripts.js" type="module"></script>
+
+;```
+
+```js
+
+	//	each file is a module with own scope
+
+
+
+	//	named export - as many as you want
+	export const last = 'zhao'
+	export function returnHi( name ) {
+		return `hi ${ name }`
+	}
+	const name = 'kelvin'
+	//	export at bottom
+	export { name }
+
+	//	named import
+	import { returnHi, last } from './utils.js'
+	returnHi( last )
+	//	hi zhao
+
+	//	rename as you import
+	import { returnHi as sayHi } from './utils.js'
+
+	//	import all
+	import * as everything from './utils.js'
+	//	kinda like an object
+	//	everything.var1
+	//	everything.func()
+
+
+
+	//	default export - only 1 per module
+	const person = {
+		name: 'kelvin',
+		last: 'zhao'
+	}
+	export default person
+
+	//	default import - name it as anything
+	import kel from './utils.js'
+
+
+
+	//	dynamic imports
+	//	above imports are all evaluated at load times
+	//	below is on demand
+	export async function handleButtonClick( e ) {
+		const currencies = await import( './currencies.js' )
+		console.log( currencies )
+	}
+
+;```
+
+
+
