@@ -3794,3 +3794,48 @@ don't use with any sensitive data as the data will go thru the proxy
 
 
 
+## currency modules refactor
+
+```js
+
+	//	elements.js
+	export const ...
+
+	//	currencies.js
+	const currencies = { ... }
+	export default currencies
+
+	//	utils.js
+	export function generateOptions( options ) { ... }
+	export function formatCurrency( amount, currency ) { ... }
+
+	//	lib.js
+	import { fromSelect, toSelect } from './elements.js'
+	import { generateOptions } from 'utils.js'
+	const endpoint = `...`
+	const ratesByBase = `...`
+	export async function fetchRates( base = 'USD' ) { ... }
+	export async function convert( amount, from, to ) { ... }
+
+	//	handlers.js
+	import { convert } from './lib.js'
+	import { formatCurrency } from './utils.js'
+	import { fromInput, fromSelect, toSelect, toEl } from './elements.js'
+	export async function handleInput( e ) { ... }
+
+	//	init.js
+	import { fromInput, toSelect } from './elements.js'
+	import { generateOptions } from './utils.js'
+	import currencies from './currencies.js'
+	import { handleInput } from './handlers.js'
+	export function init() { ... }
+
+	//	money.js
+	import { init } from './init.js'
+	const app = document.querySelector( '.app' )
+	app.eventlistener( 'mouseenter', init, { once: true } )
+
+;```
+
+
+
