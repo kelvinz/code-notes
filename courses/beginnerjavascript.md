@@ -3839,3 +3839,47 @@ don't use with any sensitive data as the data will go thru the proxy
 
 
 
+## dad jokes modules refactor
+
+```js
+
+	//	data/buttonText.js
+	const buttonText = { ... }
+	export default buttonText
+
+	//	lib/utils.js
+	export function randomItemFromArray( arr, not ) { ... }
+
+	//	lib/handlers.js
+	import { fetchJoke } from 'lib/index.js'
+	import { loader, jokeHolder, jokeButtonSpan } from './lib/elements.js'
+	import { randomItemFromArray } from './lib/utils.js'
+	import buttonText from '../data/buttonText.js'
+	export async function handleClick( loader ) { ... }
+
+	//	lib/index.js
+	export async function fetchJoke( loader ) { ... }
+
+	//	lib/elements.js
+	export const jokeButton = '...'
+	export const jokeButtonSpan = '...'
+	export const jokeHolder = '...'
+	export const loader = '...'
+
+	//	jokes.js
+	import { handleClick } from './lib/handlers.js'
+	import { jokeButton } from '.lib/elements.js'
+	//	few ways to modify the click if elements not seperated
+	//	& we need to pass in loader to handle click
+	jokeButton.addEventListener( 'click', () => handleClick( loader ) )
+	jokeButton.addEventListener( 'click', handleClick.bind( null, loader ) )
+	jokeButton.addEventListener( 'click', function() {
+		handleClick( loader )
+	} )
+	//	since elements are seperated out now we can just
+	jokeButton.addEventListener( 'click', handleClick )
+
+;```
+
+
+
