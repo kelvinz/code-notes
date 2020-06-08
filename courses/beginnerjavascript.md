@@ -3883,3 +3883,22 @@ don't use with any sensitive data as the data will go thru the proxy
 
 
 
+## bundling & building with parcel
+
+```js
+
+	npm init -y
+	npm install parcel-bundler -D
+
+	"scripts": {
+		"serve": "parcel index.html",
+		"build": "parcel build index.html"
+	},
+	"browserslist": [
+		"last 1 chrome versions"
+	]
+
+;```
+
+
+
