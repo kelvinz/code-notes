@@ -3902,3 +3902,79 @@ don't use with any sensitive data as the data will go thru the proxy
 
 
 
+## using open source npm packages
+
+```js
+
+	import wait from 'waait'
+	async function go() {
+		console.log( 'going' )
+		await wait( 200 )
+		console.log( 'done' )
+	}
+	go()
+
+
+
+	import faker from 'faker'
+	console.log( `Hello ${ faker.name.firstName() }` )
+	import { name } from 'faker'
+	const fakeNames = Array.from( { length: 10 }, name.firstName )
+
+
+
+	import { formatDistance, format } from 'date-fns'
+	const diff = formatDistance(
+		new Data(),
+		new Data( 2020, 3, 4, 10, 32, 0 ),
+		{ addSuffix: true }
+	)
+	console.log( diff )
+	const data = new Date()
+	const formatted = format( date, `LLLL 'the' do, y` )
+	console.log( formatted )
+
+
+
+	import axios from 'axios'
+	async function getJoke() {
+		const res = await axios.get( 'https://icanhazdadjoke.com', {
+			headers: {
+				Accept: 'application/json'
+			}
+		} )
+		console.log( res )
+	}
+
+
+
+	import _ from 'lodash'
+	const person1 = { name: 'kelvin' }
+	const person2 = { name: 'kelvin' }
+	console.log( person1 === person2 ) // false
+	console.log( _.isEqual( person1, person2 ) ) // true
+
+
+
+	import to from 'await-to-js'
+	function checkIfNameIsCool( name ) {
+		return new Promise( function( res, err ) {
+			if ( name === 'kelvin' ) {
+				return res( 'cool name' )
+			}
+			err( new Error( 'bad name' ) )
+		})
+	}
+	async function checkName() {
+		const [ err, successValue ] = await to( checkIfNameIsCool( 'snickers' ) )
+		if ( err ) {
+			// do something with error
+		} else {
+			// do something with successValue
+		}
+	}
+
+;```
+
+
+

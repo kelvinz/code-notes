@@ -546,3 +546,12 @@ if ( !e.target.matches( 'input' ) ) return
 
 
 
+
+/*	algos
+---------------------------------------------------------------------------------- */
+
+//	where n = 4
+//	returns results similar to 4 + 3 + 2 + 1
+function sumUp( n ) {
+	return ( n / 2 ) * ( 1 + n )
+}
