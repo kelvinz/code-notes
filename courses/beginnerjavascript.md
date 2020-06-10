@@ -4000,3 +4000,72 @@ don't use with any sensitive data as the data will go thru the proxy
 
 
 
+## web speech colours game
+
+```js
+
+	const colors = {
+		black: '#000000',
+		...
+	}
+
+	const colorsByLength = Object.keys( colors ).sort( ( a, b ) => {
+		a.length - b.length
+	} )
+
+	function isDark( colorName ) {
+		const hex = colors[ colorName ].substring( 1, 7 )
+		const r = parseInt( hex.substring( 0, 2 ), 16 )
+		const g = parseInt( hex.substring( 2, 4 ), 16 )
+		const b = parseInt( hex.substring( 4, 6 ), 16 )
+		return r * .299 + g * .587 + b * .114 < 120
+	}
+
+	function displayColors( colors ) {
+		return colors.map( color => {
+			return `<span class="color ${ color } ${ isDark( color ) ? 'dark' : '' }"
+					style="background: ${ color };">
+						${ color }
+					</span>`
+		} ).join( '' )
+	}
+
+	function isValidColor( word ) {
+		//	double bang makes it true or false
+		return !!colors[ word ]
+	}
+
+	window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
+	function start() {
+		if ( !('SpeechRecognition' in window ) ) {
+			console.log( 'sorry your browser does not support speech recognition' )
+			return
+		}
+
+		const recognition = new SpeechRecognition()
+		recognition.continuous = true
+		recognition.interimResults = true
+		recognition.onresult = handleResult
+		recognition.start()
+	}
+
+	function handleResult( { results } ) {
+		const words = results[ results.length - 1 ][ 0 ].transcript
+		let color = words.toLowerCase()
+		color = color.replace( /\s/g, '' ) // remove spaces
+		console.log( color )
+		if ( !isValidColor( color ) ) return
+		const colorSpan = document.querySelector( `.${ color }` )
+		colorSpan.classList.add( 'got' )
+		document.body.style.backgroundColor = color
+	}
+
+
+	start()
+	displayColors( colorsByLength )
+
+;```
+
+
+
+## audio visualization
