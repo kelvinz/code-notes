@@ -3978,3 +3978,25 @@ don't use with any sensitive data as the data will go thru the proxy
 
 
 
+## security
+
+1. api keys - try not to be in client, but sometimes okay as there is rate limit
+2. prices - always double check in server before processing, price can be changed by user in client
+3. sanitize html input - users can dump in code to be run to hack site ( xxs )
+
+```js
+
+	import { sanitize } from 'dompurify'
+	const clean = sanitize( input.value ) // remove js by default
+	const clean = sanitize( input.value, {
+		FORBID_ATTR: [ 'width', 'height', 'style' ],
+		FORBID_TAGS: [ 'style' ]
+	} ) // add options to remove styles too
+	output.innerHTML = clean.replace( /\n/g, '<br>' )
+
+;```
+
+4. use https apis as they are encrypted
+
+
+
