@@ -34,6 +34,22 @@ keys.forEach( key => key.addEventListener( 'transitionend', removeTransition ) )
 
 # css + js clock
 
+```css
+
+.hand {
+	top: 50%;
+	width: 50%;
+	height: 6px;
+	background: black;
+	position: absolute;
+	transition: all .05s;
+	transform-origin: 100%;
+	transform: rotate( 90deg );
+	transition-timing-function: cubic-bezier( .1, 2.7, .58, 1 );
+}
+
+;```
+
 ```js
 
 
