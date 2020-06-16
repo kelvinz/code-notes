@@ -52,7 +52,30 @@ keys.forEach( key => key.addEventListener( 'transitionend', removeTransition ) )
 
 ```js
 
+const secondHand = document.querySelector( '.second-hand' )
+const minHand = document.querySelector( '.min-hand' )
+const hourHand = document.querySelector( '.hour-hand' )
 
+function setDate() {
+	const now = new Date()
+	const seconds = now.getSeconds()
+	const secondsDegrees = ( seconds / 60 ) * 360 + 90 // 90 to offset the initial css 90
+	secondHand.style.transform = `rotate( ${ secondsDegrees }deg )`
+
+	const min = now.getMintes()
+	const minDegrees = ( min / 60 ) * 360 + 90
+	minHand.style.transform = `rotate( ${ minDegrees }deg )`
+
+	const hour = now.getHours()
+	const hourDegrees = ( hour / 24 ) * 360 + 90
+	hourHand.style.transform = `rotate( ${ hourDegrees }deg )`
+}
+
+setInterval( setDate, 1000 )
+
+//	when it hits 12, it does a full rotate backwards to hit 0
+//	to fix let the degrees keep adding instead
+//	or remove transition right before it hits 0
 
 ;```
 
