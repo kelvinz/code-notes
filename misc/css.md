@@ -79,3 +79,13 @@ main::before {
 
 
 ---
+
+<!-- text from top down -->
+
+```css
+
+.vertical-rl {
+	writing-mode: vertical-rl;
+}
+
+;```

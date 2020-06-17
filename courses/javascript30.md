@@ -83,9 +83,35 @@ setInterval( setDate, 1000 )
 
 # playing with css variables & js
 
+```css
+
+:root {
+	--base: #ffc600;
+	--spacing: 10px;
+	--blur: 10px;
+}
+
+img {
+	padding: var( --spacing );
+	background: var( --base );
+	filter: blur( var( --blur ) );
+}
+
+;```
+
 ```js
 
+const inputs = document.querySelectorAll( '.controls input' )
 
+function handleUpdate() {
+	//	data-sizing="px" in input slider
+	const suffix = this.dataset.sizing || ''
+	//	closer scope --var overrides the root --var
+	document.documentElement.style.setProperty( `--${ this.name }`, this.value + suffix )
+}
+
+inputs.forEach( input => input.addEventListener( 'change', handleUpdate ) )
+inputs.forEach( input => input.addEventListener( 'mousemove', handleUpdate ) )
 
 ;```
 
