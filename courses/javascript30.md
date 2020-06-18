@@ -121,7 +121,76 @@ inputs.forEach( input => input.addEventListener( 'mousemove', handleUpdate ) )
 
 ```js
 
+const inventors = [
+	{ first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
+	...
+]
 
+//	filter
+//	get list of inventors born in the 1500s
+const fifteen = inventors.filter( inventor => inventor.year >= 1500 && inventor.year < 1600  )
+
+//	map
+//	array of first & last name of inventors
+const fullNames = inventors.map( inventor => `${ inventor.first } ${ inventor.last }` )
+
+//	sort
+//	inventors by birthdate, oldest to youngest
+const ordered = inventors.sort( ( a, b ) => a.year > b.year ? 1 : -1 )
+
+//	reduce
+//	how many years did all the inventors live
+const totalYears = inventors.reduce( ( total, inventor ) => {
+	return total + ( inventor.passed - inventor.year )
+}, 0 )
+
+//	sort inventors by years lived
+const oldest = inventors.sort( ( a, b ) => {
+	const lastGuy = a.passed - a.year
+	const nextGuy = b.passed - b.year
+	return lastGuy > nextGuy ? 1 : -1
+})
+
+
+
+//	create list of boulevards in paris that contain 'de' in name
+//	https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+const category = document.querySelector( '.mw-category' )
+//	nodelist to array
+const links = Array.from( category.querySelectorAll( 'a' ) )
+//	alt way to convert using spread
+const links = [ ...category.querySelectorAll( 'a' ) ]
+const de = links
+			.map( link => link.textContent )
+			.filter( streetName => streetName.includes( 'de' ) )
+
+
+
+const people = [
+	'Beck, Glenn',
+	...
+]
+
+//	sort people by last name
+const alpha = people.sort( ( a, b ) => {
+	const [ aLast, aFirst ] = a.split( ', ' )
+	const [ bLast, bFirst ] = b.split( ', ' )
+	return aLast > bLast ? 1 : -1
+} )
+
+
+
+const data = [
+	'car',
+	...
+]
+
+//	sum up instances of all
+const transportation = data.reduce( ( obj, item ) => {
+	if ( !obj[ item ] ) obj[ item ] = 0
+	obj[ item ]++
+	return obj
+}, {} )
 
 ;```
 
