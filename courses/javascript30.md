@@ -274,7 +274,55 @@ searchInput.addEventListener( 'keyup', displayMatches )
 
 ```js
 
+const people = [
+	{ name: 'Wes', year: 1988 },
+	...
+]
 
+const comments = [
+	{ text: 'Love this!', id: 523423 },
+	...
+]
+
+
+
+//	some
+const isAdult = people.some( person => {
+	const currentYear = ( new Date() ).getFullYear()
+	return currentYear - person.year >= 19
+} )
+//	if any 1 is true, isAdult = true
+
+
+
+//	every
+const isAdult = people.every( person => {
+	const currentYear = ( new Date() ).getFullYear()
+	return currentYear - person.year >= 19
+} )
+//	if all is true, isAdult = true
+
+
+
+//	find
+const comment = comments.find( comment => comment.id === 523423 )
+//	finds first 1 that returns true
+//	comment = the actual comment item
+
+
+
+//	findIndex
+const index = comments.findIndex( comment => comment.id === 523423 )
+//	returns index of item in array
+
+comments.splice( index, 1 )
+//	deletes off the comment in comments array
+
+const newComments = [
+	...comments.slice( 0, index ),
+	...comments.slice( index + 1 )
+]
+//	build new array of comments without the comment that was found
 
 ;```
 
