@@ -381,7 +381,55 @@ canvas.addEventListener( 'mouseout', () => isDrawing = false )
 
 ```js
 
+//	1
+//	elements panel, click element you want to inspect
+//	right click > break on > attribute modifications
+//	now when it changes, code will pause & show where it was modified
 
+//	2 - interpolate strings
+console.log( `hello i am ${ myVar }` )
+
+//	3 - styled logs
+console.log( '%c hello', 'font-size: 20px; background: red;')
+
+//	4 - warning
+console.warn( 'Oh no!' )
+
+//	5 - error
+console.error( 'Shit!')
+
+//	6 - info
+console.info( 'Some stuff' )
+
+//	7 - testing, will only show if it's wrong
+console.assert( 1 === 2 )
+
+//	8 - clear console
+console.clear()
+
+//	9 - view dom elements
+console.log( p ) // actual element
+console.dir( p ) // property / methods on element
+
+//	10/11 - grouping
+dogs.forEach( dog => {
+	console.groupCollapsed( `${ dog.name }` ) // or just console.group
+	console.log( `this is ${ dog.name }` )
+	console.log( `he is ${ dog.age } years old` )
+	console.groupEnd( `${ dog.name }` )
+} )
+console.group()
+
+//	12 - counting, shows how many times it was called
+console.count( myVar )
+
+//	13 - timing, shows time taken
+console.time( 'fetching data' )
+// do something
+console.timeEnd( 'fetching data' )
+
+//	14 - table
+console.table( myArr )
 
 ;```
 
