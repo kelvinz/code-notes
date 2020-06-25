@@ -439,7 +439,28 @@ console.table( myArr )
 
 ```js
 
+const checkboxes = document.querySelectorAll( '.inbox input[type="checkboxes"]' )
 
+let lastChecked
+
+function handleCheck( e ) {
+	let inBetween = false
+	//	if shift key is down & checking checkbox
+	if ( e.shiftKey && this.checked ) {
+		checkboxes.forEach( checkbox => {
+			//	if first or last, top bottom or bottom top
+			if ( checkbox === this || checkbox === lastChecked ) {
+				inbetween = !inbetween
+			}
+			if ( inBetween ) {
+				checkbox.checked = true
+			}
+		} )
+	}
+	lastChecked = this
+}
+
+checkboxes.forEach( checkbox => checkbox.addEventListener( 'click', handleCheck ) )
 
 ;```
 
