@@ -713,9 +713,25 @@ progress.addEventListener( 'mousemove', e => mousedown && scrub( e ) )
 
 # key sequence detection ( konami code )
 
+```html
+
+<script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+
+;```
+
 ```js
 
+const pressed = []
+const code = 'kelvinzhao'
 
+window.addEventListener( 'keyup', e => {
+	pressed.push( e.key )
+	pressed.splice( -code.length - 1, pressed.length - code.length )
+	if ( pressed.join( '' ).includes( code ) ) {
+		console.log( 'code entered!' )
+		cornify_add()
+	}
+} )
 
 ;```
 
