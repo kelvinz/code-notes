@@ -741,7 +741,35 @@ window.addEventListener( 'keyup', e => {
 
 ```js
 
+const sliderImages = document.querySelectorAll( '.slide-in' )
 
+function debounce( fn, delay, immediate ) {
+	let timer
+	return ( ...args ) => {
+		const myFn = fn.bind( this, ...args )
+		clearTimeout( timer )
+		if ( immediate && !timer ) myFn()
+		const callFn = immediate ? () => { timer = null } : myFn
+		timer = setTimeout( callFn, delay )
+	}
+}
+
+function checkSlide( e ) {
+	sliderImages.forEach( slideImage => {
+		//	halfway of image
+		const slideInAt = ( window.scrollY + window.innerHeight ) - sliderImage.height / 2
+		const imageBottom = sliderImage.offsetTop + sliderImage.height
+		const isHalfShown = slideInAt > sliderImage.offsetTop
+		const isNotScrolledPast = window.scrollY < imageBottom
+		if ( isHalfShown && isNotScrolledPast ) {
+			sliderImage.classList.add( 'active' )
+		} else {
+			sliderImage.classList.remove( 'active' )
+		}
+	} )
+}
+
+window.addEventListener( 'scroll', debounce( checkSlide, 100 ) )
 
 ;```
 
