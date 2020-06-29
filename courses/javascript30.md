@@ -779,7 +779,38 @@ window.addEventListener( 'scroll', debounce( checkSlide, 100 ) )
 
 ```js
 
+let age = 100
+let age2 = age
+console.log( age, age2 ) // 100, 100
+age = 200
+console.log( age, age2 ) // 200, 100
 
+const players = [ 'kelvin', 'alan', 'irene' ]
+const team = players
+console.log( players, team ) // [ 'kelvin', 'alan', 'irene' ], [ 'kelvin', 'alan', 'irene' ]
+team[ 3 ] = 'xh'
+console.log( players, team ) // [ 'kelvin', 'alan', 'xh' ], [ 'kelvin', 'alan', 'xh' ]
+//	arrays => reference, not copy
+
+//	ways to copy instead of reference
+const team2 = players.slice()
+const team3 = [].concat( players )
+const team4 = [ ...players ]
+const team5 = Array.from( players )
+
+
+const person = {
+	name: 'kelvin',
+	age: 18
+}
+//	objects => reference, not copy
+
+//	ways to copy instead of reference
+const cap = Object.assign( {}, person ) // copy
+const cap2 = Object.assign( {}, person, { age: 38 } ) // copy + update stuff
+//	but it's a shallow copy, 1 level, deeper nested ones are still referenced, not copied
+const cap3 = JSON.parse( JSON.stringify( person ) )	// cheap way of deep clone, but not recommended
+//	best, use lodash/underscore to do deep clone if needed
 
 ;```
 
