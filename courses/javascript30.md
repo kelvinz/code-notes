@@ -1188,9 +1188,50 @@ stopButton.addEventListener( 'click', () => toggle( false ) )
 
 # sticky nav
 
+```css
+
+.fixed-nav nav {
+	position: fixed;
+	box-shadow: 0 5px rgba( 0, 0, 0, .1 );
+}
+
+li.logo {
+	max-width: 0;
+	overflow: hidden;
+	transition: all .5s;
+}
+
+.fixed-nav li.logo {
+	max-width: 500px;
+}
+
+.site-wrap {
+	transition: all .5s;
+	transform: scale( .9 );
+}
+
+.fixed-nav .site-wrap {
+	transform: scale( 1 );
+}
+
+;```
+
 ```js
 
+const nav = document.querySelector( '#main' )
+const topOfNav = nav.offsetTop
 
+function fixNav() {
+	if ( window.scrollY >= topOfNav ) {
+		document.body.style.paddingTop = `${ nav.offsetHeight }px`
+		document.body.classList.add( 'fixed-nav' )
+	} else {
+		document.body.style.paddingTop = 0
+		document.body.classList.remove( 'fixed-nav' )
+	}
+}
+
+window.addEventListener( 'scroll', fixNav )
 
 ;```
 
