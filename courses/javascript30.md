@@ -1239,9 +1239,39 @@ window.addEventListener( 'scroll', fixNav )
 
 # event capture, propagation, bubbling & once
 
+```html
+
+<div class="one">
+	<div class="two">
+		<div class="three">
+		</div>
+	</div>
+</div>
+
+;```
+
 ```js
 
+//	capture goes from top to down
+//	bubbling goes from down to top
 
+const divs = document.querySelectorAll( 'div' )
+
+function logText( e ) {
+	//	when clicking three
+	console.log( this.classList.value )	//	normal case => three, two, one
+
+	e.stopPropagation()	//	prevent bubbling
+}
+
+divs.forEach( div => div.addEventListener( 'click', logText ) )
+
+divs.forEach( div => div.addEventListener( 'click', logText, {
+	capture: true,	//	cause capture event to go top down
+					//	default is false where it bubbles up instead
+
+	once: true	//	if set to true, it will auto unbind after first click
+} ) )
 
 ;```
 
