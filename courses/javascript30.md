@@ -1279,9 +1279,61 @@ divs.forEach( div => div.addEventListener( 'click', logText, {
 
 # stripe follow along dropdown
 
+```css
+
+.dropdown {
+	opacity: 0;
+	display: none;
+	transition: all .5s;
+}
+
+.trigger-enter .dropdown {
+	display: block;
+}
+
+.trigger-enter-active .dropdown {
+	opacity: 1;
+}
+
+;```
+
 ```js
 
+const triggers = document.querySelectorAll( '.cool > li' )
+const background = document.querySelector( '.dropdownBackground' )
+const nav = document.querySelector( '.top' )
 
+function handleEnter() {
+	this.classList.add( 'trigger-enter' )
+	setTimeout( () => {
+		if ( this.classList.contains( 'trigger-enter' ) ) {
+			this.classList.add( 'trigger-enter-active' )
+		}
+	}, 150 )
+	background.classList.add( 'open' )
+
+	const dropdown = this.querySelector( '.dropdown' ) // dropdown that is inside the hover li
+	const dropdownCoords = dropdown.getBoundingClientRect()
+	const navCoords = nav.getBoundingClientRect()
+
+	const coords = {
+		height: dropdownCoords.height,
+		width: dropdownCoords.width,
+		top: dropdownCoords.top - navCoords.top,
+		left: dropdownCoords.left - navCoords.left
+	}
+
+	background.style.setProperty( 'width', `${ coords.width }px` )
+	background.style.setProperty( 'height', `${ coords.height }px` )
+	background.style.setProperty( 'transform', `translate( ${ coords.left }px, ${ coords.top }px )` )
+}
+
+function handleLeave() {
+	this.classList.remove( 'trigger-enter', 'trigger-enter-active' )
+}
+
+triggers.forEach( trigger => trigger.addEventListener( 'mouseenter', handleEnter ) )
+triggers.forEach( trigger => trigger.addEventListener( 'mouseleave', handleLeave ) )
 
 ;```
 
