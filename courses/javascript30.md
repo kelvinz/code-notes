@@ -1343,7 +1343,35 @@ triggers.forEach( trigger => trigger.addEventListener( 'mouseleave', handleLeave
 
 ```js
 
+const slider = document.querySelector( '.items' )
+let isDown = false
+let startX
+let scrollLeft
 
+function handleStart( e ) {
+	isDown = true
+	slider.classList.add( 'active' )
+	startX = e.pageX - slider.offsetLeft
+	scrollLeft = slider.scrollLeft
+}
+
+function handleAction( e ) {
+	if ( !isDown ) return
+	e.preventDefault()
+	const x = e.pageX - slider.offsetLeft
+	const walk = ( x - startX ) * 3
+	slider.scrollLeft = scrollLeft - walk
+}
+
+function handleEnd() {
+	isDown = false
+	slider.classList.remove( 'active' )
+}
+
+slider.addEventListener( 'mousedown', handleStart )
+slider.addEventListener( 'mousemove', handleAction )
+slider.addEventListener( 'mouseleave', handleEnd )
+slider.addEventListener( 'mouseup', handleEnd )
 
 ;```
 
