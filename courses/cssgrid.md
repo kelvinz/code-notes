@@ -1,27 +1,7 @@
 
 
 
-<https://cssgrid.io//>
-
-
-
-# welcome
-
-```css
-
-
-
-;```
-
-
-
-# starter files & tooling setup
-
-```css
-
-
-
-;```
+<https://cssgrid.io/>
 
 
 
@@ -29,7 +9,20 @@
 
 ```css
 
+.container {
+	display: grid;
 
+	/* 4 columns with different sizes */
+	grid-template-columns: 100px auto 200px 100px;
+
+	/* 5 columns with 100px each */
+	grid-template-columns: repeat( 5, 100px );
+
+	/* 3 rows with 100px each */
+	grid-template-rows: 100px 100px 100px
+
+	grid-gap: 20px;
+}
 
 ;```
 
