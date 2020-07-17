@@ -30,11 +30,16 @@
 
 # css grid dev tools
 
-```css
+firefox console, layout tab
 
+- display line numbers
+- display area names
+- extend lines infinitely
 
-
-;```
+dashed line - explicit track
+dotted line - implicit track
+diagonal dashed line - gap
+solid line - end of explicit grid
 
 
 
