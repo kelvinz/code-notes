@@ -47,7 +47,19 @@ solid line - end of explicit grid
 
 ```css
 
+.container {
+	display: grid;
+	grid-gap: 20px;
 
+	/* the two columns are explicit */
+	grid-template-columns: 200px 400px;
+
+	/* if there are left over elements that wrap */
+	/* those elements are implicit */
+
+	/* implicit rows size */
+	grid-auto-rows: 300px;
+}
 
 ;```
 
