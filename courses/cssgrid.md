@@ -69,7 +69,15 @@ solid line - end of explicit grid
 
 ```css
 
+.container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 400px 200px;
 
+	/* by default extra divs will wrap to next row */
+	/* change it to wrap to column instead */
+	grid-auto-flow: column;
+}
 
 ;```
 
