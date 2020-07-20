@@ -87,7 +87,21 @@ solid line - end of explicit grid
 
 ```css
 
+.container {
+	display: grid;
+	grid-gap: 20px;
 
+	/* if you use % width it doesn't consider gap */
+	/* so 100% may exceed size & cause scroll */
+	/* fr units takes leftover space after gap is counted */
+	grid-template-columns: 200px 200px 1fr;
+
+	/* 2fr is twice of 1fr of leftover space */
+	grid-template-columns: 200px 2fr 1fr;
+
+	/* column 1 - auto will take up it's own content size for column 1 */
+	grid-template-columns: auto 1fr;
+}
 
 ;```
 
