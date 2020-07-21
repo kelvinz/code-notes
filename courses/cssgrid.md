@@ -111,7 +111,16 @@ solid line - end of explicit grid
 
 ```css
 
+.container {
+	display: grid;
+	grid-gap: 20px;
 
+	/* 4 columns with 1fr size each */
+	grid-template-columns: repeat( 4, 1fr );
+
+	/* 8 columns with 1fr 2fr sized columns repeated */
+	grid-template-columns: repeat( 4, 1fr 2fr );
+}
 
 ;```
 
