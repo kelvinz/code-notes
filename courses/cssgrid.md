@@ -130,7 +130,17 @@ solid line - end of explicit grid
 
 ```css
 
+.container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat( 5, 1fr );
+}
 
+.item-9 {
+	/* span col pr row to size it according to grid */
+	grid-column: span 2;
+	grid-row: span 2;
+}
 
 ;```
 
