@@ -150,7 +150,28 @@ solid line - end of explicit grid
 
 ```css
 
+.container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat( 5, 1fr );
+}
 
+.item-9 {
+	grid-column-start: 2;
+	grid-column-end: 5;
+
+	/* shorthand */
+	grid-column: 2 / 5;
+
+	/* where to start & how big */
+	grid-column: 2 / span 3;
+
+	/* where to end & how big */
+	grid-column: span 3 / 5;
+
+	/* end at last col */
+	grid-column: 1 / -1;
+}
 
 ;```
 
