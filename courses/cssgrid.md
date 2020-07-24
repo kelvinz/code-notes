@@ -181,7 +181,43 @@ solid line - end of explicit grid
 
 ```css
 
+.container {
+	display: grid;
+	grid-gap: 20px;
 
+	grid-template-columns: repeat( 5, 1fr, 2fr );
+
+	grid-template-rows: repeat( 10, 50px );
+}
+
+.item1 {
+	grid-column: 3 / 5;
+}
+
+.item2 {
+	grid-column: 5 / -1;
+}
+
+.item5 {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.item8 {
+	grid-row: span 2;
+}
+
+.item15 {
+	grid-column: 1 / -1;
+}
+
+.item18 {
+	grid-column: span 4 / 9;
+}
+
+.item20 {
+	grid-row: 4 / span 3;
+}
 
 ;```
 
