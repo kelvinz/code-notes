@@ -227,7 +227,16 @@ solid line - end of explicit grid
 
 ```css
 
+.container {
+	display: grid;
+	grid-gap: 20px;
 
+	/* number of cols will expand according to content */
+	grid-template-columns: repeat( auto-fill, 150px );
+
+	/* number of cols will contract according to content */
+	grid-template-columns: repeat( auto-fit, 150px );
+}
 
 ;```
 
