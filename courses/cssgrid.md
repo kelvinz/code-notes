@@ -246,7 +246,22 @@ solid line - end of explicit grid
 
 ```css
 
+.container {
+	display: grid;
+	grid-gap: 20px;
 
+	/* min of 150px, if can't fit, it will be 1fr */
+	/* will maintain 150px if it has more width */
+	grid-template-columns: repeat( auto-fill, minmax( 150px, 1fr ) );
+
+	/* min of 150px, if can't fit, it will be 1fr */
+	/* will stretch to fill if it has more width */
+	grid-template-columns: repeat( auto-fit, minmax( 150px, 1fr ) );
+
+	/* if auto might stretch to way bigger than you want */
+	/* fit-content is auto but with a max width */
+	grid-template-columns: fit-content( 100px ) 150px 150px 150px;
+}
 
 ;```
 
