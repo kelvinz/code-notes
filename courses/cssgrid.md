@@ -338,7 +338,21 @@ solid line - end of explicit grid
 
 ```css
 
+.container {
+	display: grid;
+	grid-gap: 20px;
 
+	grid-template-columns:
+		[sidebar-start site-left] 1fr [sidebar-end content-start] 500px [content-end] 1fr [side-right];
+
+	grid-template-rows:
+		[content-top] repeat( 10, auto ) [content-bottom];
+}
+
+.item3 {
+	grid-column: content-start;
+	grid-row: content-top / content-bottom;
+}
 
 ;```
 
