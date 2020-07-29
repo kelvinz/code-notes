@@ -362,6 +362,25 @@ solid line - end of explicit grid
 
 ```css
 
+.container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat( 10, 1fr );
+	grid-auto-flow: dense;
+}
+
+.item:nth-child( 6n ) {
+	grid-column: span 6;
+}
+
+.item:nth-child( 8n ) {
+	grid-column: span 2;
+}
+
+.item:nth-child( 9n ) {
+	grid-row: span 2;
+}
+
 
 
 ;```
