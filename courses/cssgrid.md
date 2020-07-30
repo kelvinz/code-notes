@@ -389,9 +389,31 @@ solid line - end of explicit grid
 
 # css grid alignment + centering
 
+**justify - x axis**
+**align - y axis**
+
 ```css
 
+.container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat( 10, 1fr );
+	grid-template-rows: repeat( 5, 100px );
 
+	justify-items: center;
+	align-items: center;
+
+	/* shorthand, not supported for all browsers */
+	place-item: center center;
+
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.itm5 {
+	justify-self: center;
+	align-self: center;
+}
 
 ;```
 
