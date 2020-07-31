@@ -423,7 +423,26 @@ solid line - end of explicit grid
 
 ```css
 
+.container {
+	display: grid;
+	grid-column: 20px;
+	grid-template-columns: repeat( 10, 1fr );
+}
 
+.logo {
+	grid-column: span 2;
+	order: 2;
+}
+
+.nav {
+	grid-column: span 8;
+	order: 1;
+}
+
+.content {
+	grid-column: 1 / -1;
+	order: 3;
+}
 
 ;```
 
