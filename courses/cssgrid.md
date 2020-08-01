@@ -452,7 +452,25 @@ solid line - end of explicit grid
 
 ```css
 
+.albums {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat( auto-fit, minmax( 400px, 1fr ) );
+}
 
+.album {
+	padding: 20px;
+
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 150px 1fr;
+
+	align-items: center;
+}
+
+.album__artwork {
+	width: 100%;
+}
 
 ;```
 
