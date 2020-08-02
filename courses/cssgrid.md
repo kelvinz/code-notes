@@ -480,7 +480,133 @@ solid line - end of explicit grid
 
 ```css
 
+.gallery {
+	display: grid;
+	grid-auto-rows: 100px;
+	grid-auto-flow: dense;
+	grid-template-columns: repeat( auto-fill, 100px );
+}
 
+.item {
+	overflow: hidden;
+
+	display: grid;
+	grid-template-rows: 1;
+	grid-template-columns: 1;
+}
+
+.item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+	grid-row: 1 / -1;
+	grid-column: 1 / -1;
+}
+
+.item__overlay {
+	grid-row: 1 / -1;
+	grid-column: 1 / -1;
+
+	position: relative;
+
+	display: grid;
+	align-items: center;
+	justify-items: center;
+
+	transition: .2s;
+	transform: translateY( 100% );
+}
+
+.overlay {
+	position: fixed;
+	background: rgba( 0, 0, 0, .7 );
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	z-index: 2;
+}
+
+.overlay.open {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+.item:hover .item__overlay {
+	transform: translateY( 0 );
+}
+
+.item.v2 {
+	grid-row: span 2;
+}
+
+.item.v3 {
+	grid-row: span 3;
+}
+
+.item.v4 {
+	grid-row: span 4;
+}
+
+.item.v2 {
+	grid-column: span 2;
+}
+
+.item.v3 {
+	grid-column: span 3;
+}
+
+.item.v4 {
+	grid-column: span 4;
+}
+
+;```
+
+```js
+
+const gallery = document.querySelector( '.gallery' )
+const overlay = document.querySelector( '.overlay' )
+const overlayImage = overlay.querySelector( 'img' )
+const overlayClose = overlay.querySelector( '.close' )
+
+function generateHTML( [ h, v ] ) {
+	return `
+		<div class="item h${ h } v${ v }">
+			<img src="images/${ randomNumber( 12 ) }.jpg">
+			<div class="item__overlay">
+				<button>View ></button>
+			</div>
+		</div>
+	`
+}
+
+function randomNumber( limit ) {
+	return Math.floor( Math.random() * limit ) + 1
+}
+
+function handleClick( e ) {
+	const src = e.currentTarget.querySelector( 'img' ).src
+	overlayImage.src = src
+	overlay.classList.add( 'open' )
+}
+
+function close() {
+	overlay.classList.remove( 'open' )
+}
+
+const digits = Array.from( { length: 50 }, () => [ randomNumber( 4 ), randomNumber( 4 ) ] )
+					.concat( [ [ 1, 1 ], [ 1, 1 ], [ 1, 1 ], [ 1, 1 ], [ 1, 1 ], [ 1, 1 ], [ 1, 1 ] ] )
+
+const html = digits.map( generateHTML ).join( '' )
+gallery.innerHTML = html
+
+const items = document.querySelectorAll( '.item' )
+
+items.forEach( item => item.addEventListenser( 'click', handleClick ) )
+overlayClose.addEventListenser( 'click', close )
 
 ;```
 
