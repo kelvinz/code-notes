@@ -616,7 +616,125 @@ overlayClose.addEventListenser( 'click', close )
 
 ```css
 
+/* axis flipping */
+.flipper {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat( auto-fit, minmax( 50px, 1fr ) );
+}
 
+.flipper.flip {
+	grid-template-columns: 1fr;
+}
+
+
+
+/* controls on the right */
+.track {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr;
+}
+
+
+
+/* flex on items */
+.controls {
+	display: flex;
+	align-items: center;
+}
+
+.scrubber {
+	min-width: 100px;
+	flex: 1;
+}
+
+.controls {
+	display: grid;
+	grid-template-columns: auto auto auto 1fr auto auto;
+}
+
+.scrubber {
+	min-width: 100px;
+}
+
+
+
+/* perfect center */
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero {
+	display: grid;
+	justify-items: center;
+	align-content: center;
+}
+
+
+
+/* self control */
+.corners {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	/* grid-template: 1fr 1fr / 1fr 1fr; */
+	align-items: end;
+	justify-items: end;
+}
+
+.corner:nth-child( 1 ),
+.corner:nth-child( 2 ) {
+	align-self: start;
+}
+
+.corner:nth-child( 1 ),
+.corner:nth-child( 3 ) {
+	justify-self: start;
+}
+
+
+
+/* self control stack */
+.stacked {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+
+/* unknown content size */
+.known {
+	display: grid;
+	grid-gap: 20px;
+	justify-content: center;
+	grid-template-columns: repeat( 5, auto );
+}
+
+
+
+/* unknown number of items */
+.unknown {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat( auto-fit, minmax( 50px, 1fr ) );
+}
+
+
+
+/* variable width on each row */
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-container>* {
+	flex: 1;
+}
 
 ;```
 
