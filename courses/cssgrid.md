@@ -744,7 +744,45 @@ overlayClose.addEventListenser( 'click', close )
 
 ```css
 
+.codepen {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: auto 1fr 1fr auto;
+}
 
+.code {
+	display: grid;
+	grid-template-columns: repeat( 3, 1fr );
+}
+
+.editor {
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
+
+.editor__header {
+	display: grid;
+	grid-gap: 5px;
+	align-items: center;
+	grid-template-columns: auto 1fr auto;
+}
+
+.editor__code {
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
+
+.pen {
+	display: grid;
+	grid-gap: 10px;
+	align-items: center;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr;
+}
+
+.preview {
+	display: grid;
+}
 
 ;```
 
