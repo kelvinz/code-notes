@@ -792,7 +792,16 @@ overlayClose.addEventListenser( 'click', close )
 
 ```css
 
+.grid {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat( 12, minmax( 0, 1fr ) );
+}
 
+.item {
+	width: 100%;
+	grid-column: span 1;
+}
 
 ;```
 
