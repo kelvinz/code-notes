@@ -811,7 +811,167 @@ overlayClose.addEventListenser( 'click', close )
 
 ```css
 
+.wrapper {
+	display: grid;
+	grid-gap: 20px;
+}
 
+.top {
+	display: grid;
+	grid-template-areas:
+		"hero hero cta1"
+		"hero hero cta2";
+}
+
+.hero {
+	grid-area: hero;
+	min-height: 400px;
+
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.cta {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+}
+
+.cta1 {
+	grid-area: cta1;
+}
+
+.cta2 {
+	grid-area: cta2;
+}
+
+.menu ul {
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax( 100px, 1fr ) );
+}
+
+.menu a {
+	display: block;
+}
+
+[aria-controls="menu-list"] {
+	display: none;
+}
+
+.features {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ) );
+}
+
+.about {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 400px 1fr;
+}
+
+.gallery {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ) );
+}
+
+.gallery h2 {
+	grid-column: 1 / -1;
+
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr auto 1fr;
+}
+
+.gallery h2:before,
+.gallery h2:after {
+	display: block;
+	content: '';
+	height: 10px;
+	background: linear-gradient( to left, yellow, transparent );
+}
+
+.gallery h2:after {
+	background: linear-gradient( to right, yellow, transparent );
+}
+
+.gallery img {
+	width: 100%;
+}
+
+@media( max-width: 1000px ) {
+	.menu {
+		order: -1;
+		perspective: 800px;
+	}
+
+	[aria-controls="menu-list"] {
+		display: block;
+	}
+
+	.menu ul {
+		max-height: 0;
+		overflow: hidden;
+		transform: rotateX( 90deg );
+		transition: all .5s;
+	}
+
+	[aria-expanded="true"] ~ ul {
+		display: grid;
+		max-height: 500px;
+		transform: rotateX( 0 );
+	}
+
+	[aria-expanded="false"] .close {
+		display: none;
+	}
+
+	[aria-expanded="true"] .close {
+		display: inline-block;
+	}
+
+	[aria-expanded="true"] .open {
+		display: none;
+	}
+}
+
+@media ( max-width: 700px ) {
+	.top {
+		grid-template-areas:
+			"hero hero"
+			"cta1 cta2";
+	}
+
+	.about {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media ( max-width: 500px ) {
+	.top {
+		grid-template-areas:
+			"hero"
+			"cta1"
+			"cta2";
+	}
+}
+
+;```
+
+```js
+
+const navButton = document.querySelector( 'button [aria-expanded]')
+
+function toggleNav( { target } ) {
+	const expanded = target.getAttribute( 'aria-expanded' ) === 'true' || false
+	navButton.setAttribute( 'aria-expanded', !expanded )
+}
+
+navButton.addEventListenser( 'click', toggleNav )
 
 ;```
 
