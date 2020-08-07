@@ -981,6 +981,37 @@ navButton.addEventListenser( 'click', toggleNav )
 
 ```css
 
+.post {
+	display: grid;
+	max-width: 1000px;
+	margin: 200px auto;
+	grid-gap: 10px 50px;
+	grid-template-columns: 3fr 12fr 5fr;
+}
+
+.post > * {
+	grid-column: 2 / -2;
+}
+
+.post > figure {
+	margin: 0;
+	grid-column: 1 / -1;
+}
+
+.post > blockquote {
+	text-align: center;
+	grid-column: 1 / -1;
+}
+
+.tip-left {
+	text-align: right;
+	grid-column: 1 / span 1;
+}
+
+.tip-right {
+	text-align: left;
+	grid-column: span 1 / -1;
+}
 
 
 ;```
