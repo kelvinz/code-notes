@@ -47,3 +47,50 @@ console.log( auth )
 
 ---
 
+# your first component
+
+npm install vue-router
+
+```js
+
+// main.js
+import VueRouter from 'vue-router'
+Vue.use( VueRouter )
+
+import Home from './components/Home'
+const router = new VueRouter( {
+	routes: [
+		{ path: '/', component: Home }
+	]
+} )
+
+;```
+
+```html
+
+<!-- Home.vue -->
+<template>
+	<div>
+		<h3>Home</h3>
+	</div>
+</template>
+
+
+
+<!-- App.vue -->
+<template>
+	<div id="app">
+		<header>
+			<h1>Vue Voxer</h1>
+			<p>Realtime Voice Chat</p>
+		</header>
+	</div>
+	<router-view></router-view>
+</template>
+
+;```
+
+
+
+---
+
