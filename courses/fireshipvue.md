@@ -94,3 +94,61 @@ const router = new VueRouter( {
 
 ---
 
+# anonymous auth
+
+firebase dashboard enable anonymous
+
+```html
+
+<!-- Home.vue -->
+<template>
+	<div>
+		<h3>Home</h3>
+		<Login />
+	</div>
+</template>
+
+;```
+
+```js
+
+import Login from './Login'
+
+export default {
+	components: {
+		Login
+	}
+}
+
+;```
+
+```html
+
+<!-- Login.vue -->
+<template>
+	<aside>
+		<h3>Sign in Anonymously</h3>
+		<button @click="auth.signInAnonymously()">Sign In</button>
+	</aside>
+</template>
+
+;```
+
+```js
+
+import { auth } from '../firebase'
+
+export default {
+	data() {
+		return {
+			auth,
+		}
+	}
+}
+
+;```
+
+
+
+---
+
