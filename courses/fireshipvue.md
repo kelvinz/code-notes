@@ -152,3 +152,85 @@ export default {
 
 ---
 
+# realtime auth state
+
+npm i @vue/composition-api
+
+```js
+
+// main.js
+import VueCompositionApi from '@vue/composition-api'
+Vue.use( VueCompositionApi )
+
+;```
+
+```html
+
+<!-- User.vue -->
+<template>
+	<div>
+		<slot name="user" v-bind:user="user"></slot>
+	</div>
+</template>
+
+;```
+
+```js
+
+import { ref } from '@vue/composition-api'
+
+export default {
+	setup() {
+		const user = ref( null )
+		const unsubscribe = auth.onAuthStateChanged(
+			firebaseUser => user.value = firebaseUser
+		)
+
+		return {
+			user,
+			unsubscribe,
+		}
+	},
+	destoryed() {
+		this.unsubscribe()
+	}
+}
+
+;```
+
+```html
+
+<!-- Home.vue -->
+<template>
+	<div>
+		<h3>Home</h3>
+
+		<User v-slot:user="{ user }">
+			<div v-if="user">
+				Logged in as {{ user.uid }}
+			</div>
+			<Login v-else />
+		</User>
+	</div>
+</template>
+
+;```
+
+```js
+
+import Login from './Login'
+import User from './User'
+
+export default {
+	components: {
+		Login,
+		User
+	}
+}
+
+;```
+
+
+
+---
+
