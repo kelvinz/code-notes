@@ -234,3 +234,71 @@ export default {
 
 ---
 
+# user profile
+
+```html
+
+<!-- UserProfile.vue -->
+<template>
+	<div>
+		Logged in as {{ user.uid }}
+
+		<button @click="auth.signOut()">Sign Out</button>
+	</div>
+</template>
+
+;```
+
+```js
+
+import { auth } from '../firebase'
+
+export default {
+	data() {
+		return {
+			auth
+		}
+	},
+	props: [ 'user' ]
+}
+
+;```
+
+```html
+
+<!-- Home.vue -->
+<template>
+	<div>
+		<h3>Home</h3>
+
+		<User v-slot:user="{ user }">
+			<div v-if="user">
+				<UserProfile :user="user" />
+			</div>
+			<Login v-else />
+		</User>
+	</div>
+</template>
+
+;```
+
+```js
+
+import Login from './Login'
+import User from './User'
+import UserProfile from './UserProfile'
+
+export default {
+	components: {
+		Login,
+		User,
+		UserProfile
+	}
+}
+
+;```
+
+
+
+---
+
