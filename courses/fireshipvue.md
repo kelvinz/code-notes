@@ -373,3 +373,78 @@ export default {
 
 ---
 
+
+create database in firebase dashboard
+start with a single 'chat' collection
+
+```html
+
+<!-- Home.vue -->
+<template>
+	<div>
+		<h3>Home</h3>
+
+		<User v-slot:user="{ user }">
+			<div v-if="user">
+				<UserProfile :user="user" />
+				<ChatList :uid="user.uid" />
+			</div>
+			<Login v-else />
+		</User>
+	</div>
+</template>
+
+;```
+
+```js
+
+import Login from './Login'
+import User from './User'
+import UserProfile from './UserProfile'
+import ChatList from './ChatList'
+
+export default {
+	components: {
+		Login,
+		User,
+		UserProfile
+	}
+}
+
+;```
+
+```html
+
+<!-- ChatList.vue -->
+<template>
+	<div>
+		<button @click="createChatRoom()">Create New Chat Room</button>
+	</div>
+</template>
+
+;```
+
+```js
+
+import { db } from '../firebase'
+
+export default {
+	methods: {
+		async createChatRoom() {
+			const newChat = await db.collection( 'chats' ).add( {
+				createdAt: Date.now(),
+				owner: this.uid,
+				members: [ this.uid ],
+			} )
+		}
+	},
+	props: [ 'uid' ]
+}
+
+;```
+
+
+
+---
+
+# query chat rooms
