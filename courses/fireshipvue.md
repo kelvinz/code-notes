@@ -373,6 +373,7 @@ export default {
 
 ---
 
+# create chat rooms
 
 create database in firebase dashboard
 start with a single 'chat' collection
@@ -448,3 +449,55 @@ export default {
 ---
 
 # query chat rooms
+
+```html
+
+<!-- ChatList.vue -->
+<template>
+	<div>
+
+		<ul>
+			<li v-for="chat of chats" :key="chat.id">
+				{{ chat.id }}
+			</li>
+		</ul>
+
+		<button @click="createChatRoom()">Create New Chat Room</button>
+	</div>
+</template>
+
+;```
+
+```js
+
+import { db } from '../firebase'
+
+export default {
+	data() {
+		return {
+			chats: []
+		}
+	},
+	firestore() {
+		return {
+			chats: db.collection( 'chats' ).where( 'owner', '==', this.uid )
+		}
+	},
+	methods: {
+		async createChatRoom() {
+			const newChat = await db.collection( 'chats' ).add( {
+				createdAt: Date.now(),
+				owner: this.uid,
+				members: [ this.uid ],
+			} )
+		}
+	},
+	props: [ 'uid' ]
+}
+
+;```
+
+
+
+---
+
