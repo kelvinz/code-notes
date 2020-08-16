@@ -501,3 +501,67 @@ export default {
 
 ---
 
+# dynamic routing
+
+```js
+
+// main.js
+import Home from './components/Home'
+import ChatRoom from './components/ChatRoom'
+
+const router = new VueRouter( {
+	routes: [
+		{ path: '/', component: Home },
+		{ path: '/chats/:id', component: ChatRoom }
+	]
+} )
+
+;```
+
+```html
+
+<!-- ChatList.vue -->
+<template>
+	<div>
+
+		<ul>
+			<li v-for="chat of chats" :key="chat.id">
+				<router-link :to="{ name: 'chat', params: { id: chat.id } }">
+					{{ chat.id }}
+				</router-link>
+			</li>
+		</ul>
+
+		<button @click="createChatRoom()">Create New Chat Room</button>
+	</div>
+</template>
+
+;```
+
+```html
+
+<!-- ChatRoom.vue -->
+<template>
+	<main>
+		<h3>Welcome to ChatRoom {{ chatId }}</h3>
+	</main>
+</template>
+
+;```
+
+```js
+
+export default {
+	computed: {
+		chatId() {
+			return this.$route.params.id
+		}
+	}
+}
+
+;```
+
+
+
+---
+
