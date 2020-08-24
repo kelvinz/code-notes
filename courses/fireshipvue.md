@@ -1053,3 +1053,20 @@ export default {
 
 ---
 
+# wrap up
+
+```js
+
+service cloud.firestore {
+	match /databases/{database}/documents {
+		match /chats/{chatId=**} {
+			allow read, write: if request.auth.uid != null
+		}
+	}
+}
+
+;```
+
+
+
+---
