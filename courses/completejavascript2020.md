@@ -132,5 +132,40 @@ console.log( tips, finalValues )
 
 
 
+## Objects & Properties
+## Objects & Methods
+## Coding Challenge 4
+## Coding Challenge 4: Solution
+
+```js
+
+const john = {
+	fullName: 'John Smith',
+	mass: 110,
+	height: 1.95,
+	calcBMI() {
+		return this.mass / ( this.height * this.height )
+	}
+}
+const mark = {
+	fullName: 'Mark Miller',
+	mass: 78,
+	height: 1.69,
+	calcBMI() {
+		return this.bmi = this.mass / ( this.height * this.height )
+	}
+}
+if ( john.calcBMI() > mark.calcBMI() ) {
+	console.log( `${ john.fullName } has a higher BMI of ${ john.bmi }` )
+} else if ( mark.bmi > john.bmi ) {
+	console.log( `${ mark.fullName } has a higher BMI of ${ mark.bmi }` )
+} else {
+	console.log( `They have the same BMI` )
+}
+
+;```
+
+
+
 
 ---
