@@ -255,5 +255,44 @@ if ( john.average > mark.average ) {
 
 
 
+# 03 - How JavaScript Works Behind the Scenes
+
+
+
+## Section Intro
+## Download the Code
+
+<https://github.com/jonasschmedtmann/complete-javascript-course/tree/master/3-how-JS-works>
+
+
+
+## How Our Code Is Executed: JavaScript Parsers & Engines
+## Execution Contexts & the Execution Stack
+
+**Execution Context**
+
+- a box, a container, or a wrapper
+- stores variables
+- in which a piece of our code is evaluated & executed
+
+
+
+**The Default**
+
+- global execution context
+- code that is not inside any function
+- associated with the global object
+- in the browser, that's the window object
+- lastName === window.lastName
+
+
+
+1. everytime a function is called
+2. a new execution context is created
+3. it will be added to the execution stack
+4. it will be popped off the stack when it finishes running
+
+
+
 
 ---
