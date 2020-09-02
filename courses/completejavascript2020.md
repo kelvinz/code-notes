@@ -294,5 +294,30 @@ if ( john.average > mark.average ) {
 
 
 
+## Execution Contexts in Detail: Creation & Execution Phases & Hoisting
+
+1. **Creation Phase**
+	- Creation of the Variable Object ( VO )
+	- Creation of the scope chain
+	- Determine value of the 'this' variable
+
+2. **Execution Phase**
+	- function that generated the current execution context is run line by line
+
+
+
+## Hoisting in Practice
+## Scoping & the Scope Chain
+
+- scoping answers the question 'where can we access a certain variable'
+
+- each new function creates a scope: the space/environment
+- in which the variables it defines are accessible
+
+- lexical scoping: a function that is lexically within another function
+- gets access to the scope of the outer function
+
+
+
 
 ---
