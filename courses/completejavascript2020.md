@@ -335,5 +335,29 @@ if ( john.average > mark.average ) {
 
 
 
+# 04 - JavaScript in the Browser: DOM Manipulation & Events
+
+
+
+## Section Intro
+## Download the Code
+
+<https://github.com/jonasschmedtmann/complete-javascript-course/tree/master/4-DOM-pig-game>
+
+
+
+## The DOM & DOM Manipulation
+## 5-Minute HTML & CSS Crash Course
+## Project Setup & Details
+## First DOM Access & Manipulation
+## Events & Event Handling: Rolling the Dice
+## Updating Scores & Changing the Active Player
+## Implementing Our 'Hold' Function & the DRY Principle
+## Creating a Game Initialization
+## Finishing Touches: State Variables
+## Coding Challenge 6
+## Coding Challenge 6: Solution, Part 1
+## Coding Challenge 6: Solution, Part 2
+## Coding Challenge 6: Solution, Part 3
 
 ---
