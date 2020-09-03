@@ -319,5 +319,21 @@ if ( john.average > mark.average ) {
 
 
 
+## The 'this' Keyword
+
+- regular function call: the 'this' keyword points at the global object, window for browsers
+- method call ( object's function ): the 'this' variable points to the object that is calling the method
+- the 'this' keyword is not assigned a value until a function where it is defined is actually called
+
+
+
+## The 'this' Keyword in Practice
+
+
+
+---
+
+
+
 
 ---
