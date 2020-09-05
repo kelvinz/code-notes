@@ -494,4 +494,43 @@ function init() {
 
 
 
+# 05 - Advanced JavaScript: Objects & Functions
+
+
+
+## Section Intro
+## Download the Code
+
+<https://github.com/jonasschmedtmann/complete-javascript-course/tree/master/5-advanced-JS>
+
+
+
+## Everything Is an Object: Inheritance & the Prototype Chain
+
+Almost everything.
+
+1. **Primitives**
+	- Numbers
+	- Strings
+	- Booleans
+	- Undefined
+	- Null
+
+2. **Object**
+	- Arrays
+	- Functions
+	- Objects
+	- Dates
+	- Wrappers for Numbers, Strings, Booleans
+
+Each object has a prototype property.
+It works like a chain.
+Method or property called on an object.
+It will look for it's prototype.
+If it's not found.
+It goes up to it's parent to find it.
+All the way to the root object.
+
+
+
 ---
