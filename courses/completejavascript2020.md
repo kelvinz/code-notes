@@ -533,4 +533,46 @@ All the way to the root object.
 
 
 
+## Creating Objects: Function Constructors
+
+```js
+
+//	object
+const john = {
+	name: 'John',
+	dob: 1990,
+	job: 'Teacher',
+}
+
+//	function constructor
+const Person = function( name, dob, job ) {
+	this.name = name
+	this.dob = dob
+	this.job = job
+	this.calculateAge = function() {
+		console.log( 2020 - this.dob )
+	}
+}
+
+//	new keyword creates an empty object
+//	then runs function constructor
+//	making the this point to the empty object
+const john = new Person( 'John', 1990, 'teacher' )
+
+john.calculateAge()
+//	30
+
+//	attaching prototype to constructor
+//	will be inherited by Person's child
+Person.prototype.agePlusTwo = function() {
+	console.log( 2020 - this.dob + 2 )
+}
+
+john.agePlusTwo()
+//	32
+
+;```
+
+
+
 ---
