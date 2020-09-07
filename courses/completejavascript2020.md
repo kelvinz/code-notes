@@ -575,4 +575,16 @@ john.agePlusTwo()
 
 
 
+## The Prototype Chain in the Console
+
+__proto__ is where you can see the prototype of an object
+from there you can see its constructor
+when you click in, you can find its __proto__
+all the way up the chain to the mother object
+
+john.hasOwnProperty( 'name' ) // false
+john instance of Person // true
+
+
+
 ---
