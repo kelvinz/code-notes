@@ -727,4 +727,33 @@ interviewQuestion( 'teacher' )( 'Mark' ) // What subject do you teach, Mark?
 
 
 
+## Immediately Invoked Function Expressions ( IIFE )
+
+```js
+
+function game() {
+	const score = Math.random() * 10
+	console.log( score >= 5 )
+}
+
+game()
+
+
+
+( function () {
+	const score = Math.random() * 10
+	console.log( score >= 5 )
+} )()
+
+
+
+( function ( goodLuck ) {
+	const score = Math.random() * 10
+	console.log( score >= 5 - goodLuck )
+} )( 5 )
+
+;```
+
+
+
 ---
