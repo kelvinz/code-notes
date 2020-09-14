@@ -798,4 +798,50 @@ interviewQuestion( 'teacher' )( 'John' )
 
 
 
+## Bind, Call & Apply
+
+```js
+
+const john = {
+	name: 'John',
+	age: 26,
+	job: 'teacher',
+	presentation( style, timeOfDay ) {
+		if ( style === 'formal' ) {
+			console.log( `Good ${ timeOfDay }, Ladies and gentlemen! I'm ${ this.name }, I'm a ${ this.job } and I'm ${ this.age } years old.` )
+		} else if ( style === 'friendly' ) {
+			console.log( `Hey! What's up? I'm ${ this.name }, I'm a ${this.job} and I'm ${this.age} years old. Have a nice ${ timeOfDay }.` )
+		}
+	}
+}
+
+const emily = {
+	name: 'Emily',
+	age: 35,
+	job: 'designer'
+}
+
+john.presentation( 'formal', 'morning' )
+//	Good morning, Ladies and gentlemen! I'm John, I'm a teacher and I'm 26 years old.
+
+john.presentation.call( emily, 'friendly', 'afternoon' )
+//	Hey! What's up? I'm Emily, I'm a designer and I'm 35 years old. Have a nice afternoon.
+
+john.presentation.apply( emily, [ 'friendly', 'afternoon' ] )
+//	Hey! What's up? I'm Emily, I'm a designer and I'm 35 years old. Have a nice afternoon.
+
+const johnFriendly = john.presentation.bind( john, 'friendly' )
+
+johnFriendly( 'morning' )
+//	Hey! What's up? I'm John, I'm a teacher and I'm 26 years old. Have a nice morning.
+
+johnFriendly( 'night' )
+//	Hey! What's up? I'm John, I'm a teacher and I'm 26 years old. Have a nice night.
+
+const emilyFormal = john.presentation.bind( emily, 'formal' )
+emilyFormal( 'afternoon' )
+//	Good afternoon, Ladies and gentlemen! I'm Emily, I'm a designer and I'm 35 years old.
+
+
+
 ---
