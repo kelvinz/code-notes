@@ -999,4 +999,43 @@ console.log( fullJapan ) // [ true, true, true, false, false ]
 
 
 ---
+
+
+
+# 06 - Putting It All Together: The Budget App Project
+
+
+
+## Section Intro
+## Download the Code
+
+<https://github.com/jonasschmedtmann/complete-javascript-course/tree/master/6-budgety>
+
+
+
+## Project Setup & Details
+## Project Planning & Architecture: Step 1
+## Implementing the Module Pattern
+## Setting up the First Event Listeners
+## Reading Input Data
+## Creating an Initialization Function
+## Creating Incoming & Expense Function Constructors
+## Adding a New Item to Our Budget Controller
+## Adding a New Item to the UI
+## Clearing Our Input Fields
+## Updating the Budget: Controller
+## Updating the Budget: Budget Controller
+## Updating the Budget: UI Controller
+## Project Planning & Architecture: Step 2
+## Event Delegation
+## Setting up the Delete Event Listener Using Event Delegation
+## Deleting an Item from Our Buddget Controller
+## Deleting an Item from the UI
+## Project Planning & Architecture: Step 3
+## Updating the Percentages: Controller
+## Updating the Percentages: Buddget Controller
+## Updating the Percentages: UI Controller
+## Formatting Our Buddget Numbers: String Manipulation
+## Displaying the Current Month & Year
+## Finishing Touches: Improving the UX
 ---
