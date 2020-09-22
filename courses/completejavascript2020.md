@@ -1478,6 +1478,25 @@ controller.init()
 
 
 
+# 07 - Next Generation JavaScript: Intro to ES6/ES2015
+
+
+
+## Section Intro
+## Download the Code
+
+<https://github.com/jonasschmedtmann/complete-javascript-course/tree/master/7-ES6>
+
+
+
+## What's new in ES6/ES2015
+## Variable Declarations with let & const
+
+var is function scoped
+let & const is block scoped
+
+
+
 
 ;```
 
