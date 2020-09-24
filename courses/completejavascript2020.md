@@ -1497,6 +1497,30 @@ let & const is block scoped
 
 
 
+## Blocks & IIFEs
+
+```js
+
+//	block
+{
+	const a = 1
+}
+console.log( a )
+//	error
+
+
+
+//	iife
+( function() {
+	var b = 1
+} )()
+console.log( b )
+//	error
+
+;```
+
+
+
 
 ;```
 
