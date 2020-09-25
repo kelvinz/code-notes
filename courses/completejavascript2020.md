@@ -1521,6 +1521,19 @@ console.log( b )
 
 
 
+## Strings in ES6/ES2015
+
+```js
+
+myString.startsWith( 'a' )
+myString.endsWith( 'a' )
+myString.includes( 'a' )
+myString.repeat( 5 )
+
+;```
+
+
+
 
 ;```
 
