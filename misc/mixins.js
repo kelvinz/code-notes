@@ -143,6 +143,28 @@ export const wait = ( amount = 0 ) => {
 
 
 
+//	1000 => 1,000
 export const addCommaToNum = ( num ) => {
 	return num.toString().replace( /\B(?=(\d{3})+(?!\d))/g, ',' )
+}
+
+
+
+// $( '.item' )
+window.$ = document.querySelector.bind( document )
+
+//	$$( '.items' )
+window.$$ = document.querySelectorAll.bind( document )
+
+//	$( '.item' ).on( 'click', el => { } )
+Node.prototype.on = window.on = function ( name, fn ) {
+	this.addEventListener( name, fn )
+}
+
+//	nodelist to act like list
+NodeList.prototype.__proto__ = Array.prototype
+NodeList.prototype.on = NodeList.prototype.addEventListener = function ( name, fn ) {
+  this.forEach( function ( elem, i ) {
+    elem.on( name, fn )
+  } )
 }
