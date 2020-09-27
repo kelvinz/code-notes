@@ -1534,6 +1534,54 @@ myString.repeat( 5 )
 
 
 
+## Arrow Functions: Basics
+## Arrow Functions: Lexical 'this' Keyword
+
+```js
+
+const box = {
+	color: 'green',
+	myClick: function() {
+		document.querySelector( '.green' ).addEventListener( 'click', function() {
+			console.log( this.color )
+			//	undefined
+		} )
+	}
+}
+
+const box = {
+	color: 'green',
+	myClick: function() {
+		const self = this
+		document.querySelector( '.green' ).addEventListener( 'click', function() {
+			console.log( self.color )
+			//	green
+		} )
+	}
+}
+
+const box = {
+	color: 'green',
+	myClick: function() {
+		document.querySelector( '.green' ).addEventListener( 'click', () => {
+			console.log( this.color )
+			//	green
+		} )
+	}
+}
+
+const box = {
+	color: 'green',
+	myClick: () => {
+		document.querySelector( '.green' ).addEventListener( 'click', () => {
+			console.log( this.color )
+			//	undefined
+		} )
+	}
+}
+
+;```
+
 
 ;```
 
