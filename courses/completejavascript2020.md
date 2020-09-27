@@ -1582,6 +1582,25 @@ const box = {
 
 ;```
 
+```js
+
+function Person( name ) {
+	this.name = name
+}
+
+Person.prototype.myFriends = function( friends ) {
+	const arr = friends.map( function( el ) {
+		return `${ this.name } is friends with ${ el }`
+	} )
+	console.log( arr )
+}
+
+const friends = [ 'Kelvin', 'Kelly' ]
+new Person( 'John' ).myFriends( friends )
+//	[ " is friends with Kelvin", " is friends with Kelly" ]
+
+
+
 
 ;```
 
