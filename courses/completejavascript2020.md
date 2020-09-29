@@ -1618,6 +1618,23 @@ new Person( 'John' ).myFriends( friends )
 
 
 
+function Person( name ) {
+	this.name = name
+}
+
+Person.prototype.myFriends = function( friends ) {
+	const arr = friends.map( el => `${ this.name } is friends with ${ el }` )
+	console.log( arr )
+}
+
+const friends = [ 'Kelvin', 'Kelly' ]
+new Person( 'John' ).myFriends( friends )
+//	[ "John is friends with Kelvin", "John is friends with Kelly" ]
+
+;```
+
+
+
 
 ;```
 
