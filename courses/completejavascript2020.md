@@ -1668,6 +1668,33 @@ const [ age, retirement ] = calcRetirementAge( 1990 )
 
 
 
+## Arrays in ES6/ES2015
+
+```js
+
+const boxes = document.querySelectorAll( '.box' )
+const boxesArray = Array.from( boxes )
+
+for ( const current of boxesArray ) {
+	if ( current.className.includes( 'blue' ) ) {
+		continue;
+		//	similar to break
+		//	but the loop continues instead of stopping the loop
+		//	just skipping this round of the loop
+	}
+	current.textContent = 'I am blue'
+}
+
+
+
+const ages = [ 12, 17, 8, 21, 14, 11 ]
+console.log( ages.findIndex( cur => cur >= 18 ) ) // 3
+console.log( ages.find( cur => cur >= 18 ) ) // 21
+
+;```
+
+
+
 
 ;```
 
