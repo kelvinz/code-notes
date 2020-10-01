@@ -1635,6 +1635,39 @@ new Person( 'John' ).myFriends( friends )
 
 
 
+## Destructuring
+
+```js
+
+const [ name, age ] = [ 'John', 26 ]
+//	name = 'John'
+//	age = 26
+
+
+
+const obj = {
+	firstName: 'John',
+	lastName: 'Smith',
+}
+const { firstName, lastName } = obj
+//	firstName = 'John'
+//	lastName = 'Smith'
+const { firstName: firsty, lastName: lasty } = obj
+//	firsty = 'John'
+//	lasty = 'Smith'
+
+
+
+function calcRetirementAge( year ) {
+	const age = new Date().getFullYear() - year
+	return [ age, 65 - age ]
+}
+const [ age, retirement ] = calcRetirementAge( 1990 )
+
+;```
+
+
+
 
 ;```
 
