@@ -1695,6 +1695,34 @@ console.log( ages.find( cur => cur >= 18 ) ) // 21
 
 
 
+## The Spread Operator
+## Rest Parameters
+
+```js
+
+//	with no args, it takes in anything into arguments
+function isFullAge() {
+	const years = Array.from( arguments )
+	years.forEach( cur => console.log( 2020 - cur ) )
+}
+isFullAge( 1990, 1999, 1965 ) // 30, 21, 55
+
+
+
+function isFullAge( ...years ) {
+	years.forEach( cur => console.log( 2020 - cur ) )
+}
+isFullAge( 1990, 1999, 1965 ) // 30, 21, 55
+
+function isFullAge( limit, ...years ) {
+	years.forEach( cur => console.log( 2020 - cur >= limit ) )
+}
+isFullAge( 21, 1990, 1999, 1965 ) // true, true, true
+
+;```
+
+
+
 
 ;```
 
