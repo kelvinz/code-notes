@@ -1753,6 +1753,26 @@ for ( let [ key, value ] of question.entries() ) {
 
 
 
+## Classes
+
+```js
+
+//	es5
+const Person = function( name, yob, job ) {
+	this.name = name
+	this.yob = yob
+	this.job = job
+}
+
+Person.prototype.age = function() {
+	console.log( new Date().getFullYear() - this.yob )
+}
+
+const john = new Person( 'John', 1990, 'teacher' )
+john.age() // 30
+
+
+
 
 ;```
 
