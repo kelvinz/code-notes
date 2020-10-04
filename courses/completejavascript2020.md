@@ -1723,6 +1723,36 @@ isFullAge( 21, 1990, 1999, 1965 ) // true, true, true
 
 
 
+## Default Parameters
+## Maps
+
+```js
+
+const question = new Map()
+question.set( 'question', 'how are you' )
+question.set( 1, 'good' )
+question.set( 2, 'so-so' )
+question.set( 3, 'bad' )
+question.set( 'correct', 2 )
+question.set( true, 'correct' )
+question.set( false, 'wrong' )
+
+console.log( question.get( 'question' ) ) // how are you
+console.log( question.size ) // 7
+console.log( question.delete( 3 ) ) // 3, 'bad' is deleted
+console.log( question.has( 3 ) ) // false
+question.clear() // map is empty now
+
+question.forEach( ( value, key ) => console.log( key, value ) )
+
+for ( let [ key, value ] of question.entries() ) {
+	console.log( key, value, typeof( key ) ) // typeof returns string, number, boolean, etc
+}
+
+;```
+
+
+
 
 ;```
 
