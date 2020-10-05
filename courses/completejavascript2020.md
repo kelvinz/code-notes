@@ -1773,6 +1773,27 @@ john.age() // 30
 
 
 
+//	es6 - syntactic sugar
+//	same as above but written in different way
+class Person {
+	constructor ( name, yob, job ) {
+		this.name = name
+		this.yob = yob
+		this.job = job
+	}
+
+	age() {
+		console.log( new Date().getFullYear() - this.yob )
+	}
+}
+
+const john = new Person( 'John', 1990, 'teacher' )
+john.age() // 30
+
+;```
+
+
+
 
 ;```
 
