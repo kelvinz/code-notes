@@ -1794,6 +1794,38 @@ john.age() // 30
 
 
 
+## Classes with Subclasses
+
+```js
+
+//	es5
+const Person = function( name, yob, job ) {
+	this.name = name
+	this.yob = yob
+	this.job = job
+}
+
+Person.prototype.age = function() {
+	console.log( new Date().getFullYear() - this.yob )
+}
+
+const Athlete = function( name, yob, job, medals ) {
+	Person.call( this, name, yob, job )
+	this.medals = medals
+}
+
+Athlete.prototype = Object.create( Person.prototype )
+
+Athlete.prototype.won = function() {
+	console.log( this.medals )
+}
+
+const john = new Athlete( 'John', 1990, 'teacher', 10 )
+john.age() // 30
+john.won() // 10
+
+
+
 
 ;```
 
