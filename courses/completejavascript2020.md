@@ -1826,6 +1826,40 @@ john.won() // 10
 
 
 
+//	es6 - syntactic sugar
+//	same as above but written in different way
+class Person {
+	constructor ( name, yob, job ) {
+		this.name = name
+		this.yob = yob
+		this.job = job
+	}
+
+	age() {
+		console.log( new Date().getFullYear() - this.yob )
+	}
+}
+
+class Athlete extends Person {
+	constructor( name, yob, job, medals ) {
+		super( name, yob, job )
+		this.medals = medals
+	}
+
+	won() {
+		console.log( this.medals )
+	}
+}
+
+const john = new Athlete( 'John', 1990, 'teacher', 10 )
+john.age() // 30
+john.won() // 10
+
+
+;```
+
+
+
 
 ;```
 
