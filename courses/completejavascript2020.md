@@ -1979,6 +1979,21 @@ reportStreets( allStreets )
 
 
 
+---
+
+
+
+# 08 - Asynchronous JavaScript: Promises, Async/Await & Ajax
+
+
+
+## Section Intro
+## Download the Code
+
+<https://github.com/jonasschmedtmann/complete-javascript-course/tree/master/8-asynchronous-JS>
+
+
+
 
 ;```
 
