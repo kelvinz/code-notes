@@ -1951,6 +1951,29 @@ function reportParks( p ) {
 	*/
 }
 
+function reportStreets( s ) {
+	console.log( `------- Streets Report -------`)
+
+	//	total & average length of the town's streets
+	const [ totalLength, avgLength ] = calc( s.map( el => el.length ) )
+	console.log( `Our ${ s.length } streets have a total length of ${ totalLength }km, with an average of ${ avgLength }km.` )
+	/*
+		Our 4 streets have a total length of 7.1000000000000005km, with an average of 1.7750000000000001km.
+	*/
+
+	//	classify sizes
+	s.forEach( el => el.classifyStreet() )
+
+	/*
+		Ocean Avenue, build in 1999, is a big street.
+		Evergreen Street, build in 2008, is a small street.
+		4th Street, build in 2015, is a normal street.
+		Sunset Boulevard, build in 1982, is a huge street.
+	*/
+}
+
+reportParks( allParks )
+reportStreets( allStreets )
 
 ;```
 
