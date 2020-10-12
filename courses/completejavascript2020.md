@@ -594,7 +594,7 @@ john instance of Person // true
 const personProto = {
 	calculateAge() {
 	console.log( 2016 - this.yearOfBirth )
-    }
+	}
 }
 
 const john = Object.create( personProto )
@@ -604,9 +604,9 @@ john.yearOfBirth = 1990
 john.job = 'teacher'
 
 const jane = Object.create( personProto, {
-    name: { value: 'Jane' },
-    yearOfBirth: { value: 1969 },
-    job: { value: 'designer' }
+	name: { value: 'Jane' },
+	yearOfBirth: { value: 1969 },
+	job: { value: 'designer' }
 } )
 
 ;```
@@ -1994,6 +1994,27 @@ reportStreets( allStreets )
 
 
 
+## An Example of Asynchronous JavaScript
+
+```js
+
+const second = () => {
+	console.log( 'second' )
+}
+
+const first = () => {
+	console.log( 'hey there' )
+	second()
+	console.log( 'the end' )
+}
+
+//	hey there
+//	second
+//	the end
+
+;```
+
+```js
 
 ;```
 
