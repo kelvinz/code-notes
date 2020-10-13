@@ -2016,6 +2016,26 @@ const first = () => {
 
 ```js
 
+const second = () => {
+	setTimeout( () => {
+		console.log( 'async hey there' )
+	}, 2000 )
+}
+
+const first = () => {
+	console.log( 'hey there' )
+	second()
+	console.log( 'the end' )
+}
+
+//	hey there
+//	the end
+//	async hey there
+
+;```
+
+
+
 ;```
 
 
