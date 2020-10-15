@@ -2036,6 +2036,50 @@ const first = () => {
 
 
 
+## Understanding Asynchronous JavaScript: The Event Loop
+## The Old Way: Asynchronous JavaScript with Callbacks
+
+```js
+
+function getRecipe() {
+
+	setTimeout( () => {
+
+		const recipeID = [ 523, 883, 432, 794 ]
+		console.log( recipeID )
+
+		setTimeout( id => {
+			const recipe = {
+				title: `Fresh tomato pasta`,
+				publisher: `Jonas`,
+			}
+			console.log( `${ id }: ${ recipe.title }` )
+
+			setTimeout( publisher => {
+				const recipe = {
+					title: `Italian pizza`,
+					publisher,
+				}
+				console.log( recipe )
+
+			}, 1500, recipe.publisher )
+
+		}, 1500, recipeID[ 2 ] )
+
+	}, 1500 )
+
+}
+
+getRecipe()
+
+//	[ 523, 883, 432, 794 ]
+//	432: Fresh tomato pasta
+//	{ title: `Italian pizza`, publisher: `Jonas`, }
+
+;```
+
+
+
 ;```
 
 
