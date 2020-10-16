@@ -2080,6 +2080,62 @@ getRecipe()
 
 
 
+## From Callback Hell to Promises
+
+```js
+
+const getIDs = new Promise( ( resolve, reject ) => {
+	setTimeout( () => {
+		resolve( [ 523, 883, 432, 794 ] )
+	}, 1500 )
+} )
+
+const getRecipe = recID => {
+	return new Promise( ( resolve, reject ) => {
+		setTimeout( ID => {
+			const recipe = {
+				title: `Fresh tomato pasta`,
+				publisher: `Jonas`,
+			}
+			resolve( `${ id }: ${ recipe.title }` )
+		}, 1500, recID )
+	} )
+}
+
+const getRelated = publisher => {
+	return new Promise( ( resolve, reject ) => {
+		setTimeout( publisher => {
+			const recipe = {
+				title: `Italian pizza`,
+				publisher,
+			}
+			return( recipe )
+		}, 1500, publisher )
+	} )
+}
+
+getIDs
+.then( IDs => {
+	console.log( IDs )
+	return getRecipe( IDs[ 2 ] )
+} )
+.then( recipe => {
+	console.log( recipe )
+	return getRelated( `Jonas` )
+} )
+.then( recipe => {
+	console.log( recipe )
+} )
+.catch( err => console.log( err ) )
+
+//	[ 523, 883, 432, 794 ]
+//	432: Fresh tomato pasta
+//	{ title: `Italian pizza`, publisher: `Jonas`, }
+
+;```
+
+
+
 ;```
 
 
