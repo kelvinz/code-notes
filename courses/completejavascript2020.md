@@ -2136,6 +2136,59 @@ getIDs
 
 
 
+## From Promises to Async/Await
+
+```js
+
+const getIDs = new Promise( ( resolve, reject ) => {
+	setTimeout( () => {
+		resolve( [ 523, 883, 432, 794 ] )
+	}, 1500 )
+} )
+
+const getRecipe = recID => {
+	return new Promise( ( resolve, reject ) => {
+		setTimeout( ID => {
+			const recipe = {
+				title: `Fresh tomato pasta`,
+				publisher: `Jonas`,
+			}
+			resolve( `${ id }: ${ recipe.title }` )
+		}, 1500, recID )
+	} )
+}
+
+const getRelated = publisher => {
+	return new Promise( ( resolve, reject ) => {
+		setTimeout( publisher => {
+			const recipe = {
+				title: `Italian pizza`,
+				publisher,
+			}
+			return( recipe )
+		}, 1500, publisher )
+	} )
+}
+
+async function getRecipes() {
+	const IDs = await getIDs
+	console.log( IDs )
+	const recipe = await getRecipe( IDs[ 2 ] )
+	console.log( recipe )
+	const related = await getRelated( `Jonas` )
+	console.log( related )
+}
+
+getRecipes()
+
+//	[ 523, 883, 432, 794 ]
+//	432: Fresh tomato pasta
+//	{ title: `Italian pizza`, publisher: `Jonas`, }
+
+
+
+;```
+
 ;```
 
 
