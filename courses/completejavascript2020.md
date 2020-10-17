@@ -2189,6 +2189,32 @@ getRecipes()
 
 ;```
 
+```js
+
+async function getRecipes() {
+	const IDs = await getIDs
+	console.log( IDs )
+	const recipe = await getRecipe( IDs[ 2 ] )
+	console.log( recipe )
+	const related = await getRelated( `Jonas` )
+	console.log( related )
+
+	return recipe
+}
+
+const rec = getRecipes()
+console.log( rec )
+//	Promise
+
+getRecipes().then( result => {
+	console.log( result )
+} )
+//	432: Fresh tomato pasta
+
+;```
+
+
+
 ;```
 
 
