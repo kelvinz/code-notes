@@ -2215,6 +2215,24 @@ getRecipes().then( result => {
 
 
 
+## Ajax & APIs
+
+Ajax => Asynchronous JavaScript And XML
+API  => Application Programming Interface
+
+
+
+## Making Ajax Calls with Fetch & Promises
+
+```js
+
+fetch( `https://crossorigin.me/https://www.metaweather.com/api/location/2487956/` )
+.then( res => res.json() ) // return res.json promise
+.then( data => console.log( data ) )
+.catch( err => console.log( err ) )
+
+;```
+
 ;```
 
 
