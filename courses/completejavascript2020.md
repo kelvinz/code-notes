@@ -2233,6 +2233,27 @@ fetch( `https://crossorigin.me/https://www.metaweather.com/api/location/2487956/
 
 ;```
 
+```js
+
+function getWeather( woeid ) {
+	fetch( `https://crossorigin.me/https://www.metaweather.com/api/location/${ woeid }/` )
+	.then( res => {
+		return res.json()
+	} )
+	.then( data => {
+		const today = data.consolidated_weather[ 0 ]
+		console.log( `Temp in ${ data.title } stay between ${ today.min_temp } and ${ today.max_temp }.` )
+	} )
+	.catch( err => console.log( err ) )
+}
+
+getWeather( 2487956 )
+getWeather( 44418 )
+
+;```
+
+
+
 ;```
 
 
