@@ -2254,6 +2254,32 @@ getWeather( 44418 )
 
 
 
+## Making Ajax Callback with Fetch & Async/Await
+
+```js
+
+async function getWeather( woeid ) {
+	try {
+		const result = await fetch( `https://crossorigin.me/https://www.metaweather.com/api/location/${ woeid }/` )
+		const data = await result.json()
+		const today = data.consolidated_weather[ 0 ]
+		console.log( `Temp in ${ data.title } stay between ${ today.min_temp } and ${ today.max_temp }.` )
+	} catch( err ) {
+		console.log( err )
+	}
+}
+
+getWeather( 2487956 )
+getWeather( 44418 )
+
+;```
+
+
+
+---
+
+
+
 ;```
 
 
