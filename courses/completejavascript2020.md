@@ -2280,6 +2280,55 @@ getWeather( 44418 )
 
 
 
+# 09 - Modern JavaScript: Using ES6, NPM, Babel & Webpack
+
+
+
+## Section Intro
+## Download the Code
+
+<https://github.com/jonasschmedtmann/complete-javascript-course/tree/master/9-forkify>
+
+
+
+## Project Overview
+## An Overview of Modern JavaScript
+## A Brief Introduction to the Command Line
+## A Modern Setup: Installing Node.js & NPM
+## Note: Tooling Changes
+## A Modern Setup: Configuring Webpack
+## A Modern Setup: The Webpack Dev Server
+## A Modern Setup: Babel
+## Planning our Project Architecture with MVC
+## How ES6 Modules Work
+## Please Read: Changes to the Project API
+## Making our First API Calls
+
+https://corsproxy.github.io/
+https://cors-anywhere.herokuapp.com/
+
+```js
+
+import axios from 'axios'
+
+async function getResults( query ) {
+	const proxy = 'https://cors-anywhere.herokuapp.com/'
+	const key = '462b1cc8d4f2730071462fbc65136320'
+	try {
+		const res = await axios( `${ proxy }http://food2fork.com/api/search?key=${ key }&q=${ query }`)
+		const recipes = res.data.recipes
+		console.log( recipes )
+	} catch( error ) {
+		alert( error )
+	}
+}
+
+getResults( 'pizza' )
+
+;```
+
+
+
 ;```
 
 
