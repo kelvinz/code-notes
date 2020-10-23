@@ -2329,6 +2329,44 @@ getResults( 'pizza' )
 
 
 
+## Building the Search Model
+
+search.js
+
+```js
+
+import axios from 'axios'
+
+export default class Search {
+	constructor( query ) {
+		this.query = query
+	}
+
+	async getResults() {
+		const proxy = 'https://cors-anywhere.herokuapp.com/'
+		const key = '462b1cc8d4f2730071462fbc65136320'
+		try {
+			const res = await axios( `${ proxy }http://food2fork.com/api/search?key=${ key }&q=${ this.query }` )
+			this.result = res.data.recipes
+		} catch( error ) {
+			alert( error )
+		}
+	}
+}
+
+;```
+
+```js
+
+import Search from './models/Search'
+
+const search = new Search( 'pizza' )
+search.getResults()
+
+;```
+
+
+
 ;```
 
 
