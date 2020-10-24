@@ -2367,6 +2367,119 @@ search.getResults()
 
 
 
+## Building the Search Controller
+## Building the Search View - Part 1
+## Building the Search View - Part 2
+
+base.js
+
+```js
+
+export const elements = {
+	searchForm: document.querySelector( '.search' ),
+	searchInput: document.querySelector( '.search__field' ),
+	searchResList: document.querySelector( '.results__list' ),
+}
+
+;```
+
+
+
+index.js
+
+```js
+
+import Search from './models/Search'
+import * as searchView from './views/searchView'
+import { elements } from './views/base'
+
+const state = {}
+
+const controlSearch = async () => {
+	// 1. get query from view
+	const query = searchView.getInput()
+
+	if ( query ) {
+		// 2. new search object added to state
+		state.search = new Search( query )
+
+		// 3. prepare ui for search
+		searchView.clearInput()
+		searchView.clearResults()
+
+		// 4. search for recipes
+		await state.search.getResults()
+
+		// 5. render results on ui
+		searchView.renderResults( state.search.result )
+	}
+}
+
+elements.searchForm.addEventListener( 'submit', e => {
+	e.preventDefault()
+	controlSearch()
+} )
+
+;```
+
+
+
+searchView.js
+
+```js
+
+import { elements } from './base'
+
+export const getInput = () => elements.searchInput.value
+
+export const clearInput = () => {
+	elements.searchInput.value = ''
+}
+
+export const clearResults = () => {
+	elements.searchResList.innerHTML = ''
+}
+
+const limitRecipeTitle = ( title, limit = 17 ) => {
+	const newTitle = []
+	if ( title.length > limit ) {
+		title.split( ' ' ).reduce( ( acc, cur ) => {
+			if ( acc + cur.length <= limit ) {
+				newTitle.push( cur )
+			}
+			return acc + cur.length
+		}, 0 )
+
+		return `${ newTitle.join( ' ' ) } ...`
+	}
+	return title
+}
+
+const renderRecipe = recipe => {
+	const markup = `
+		<li>
+			<a href="#${ recipe.recipe_id }">
+				<figure>
+					<img src="${ recipe.image_url }" alt="${ recipe.title }">
+				</figure>
+				<div>
+					<h4>${ limitRecipeTitle( recipe.title ) }</h4>
+					<p>${ recipe.publisher }</p>
+				</div>
+			</a>
+		</li>
+	`
+	elements.searchResList.insertAdjacentHTML( 'beforeend', markup )
+}
+
+export const renderResults = recipes => {
+	recipes.forEach( renderRecipe )
+}
+
+;```
+
+
+
 ;```
 
 
