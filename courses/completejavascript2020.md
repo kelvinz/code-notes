@@ -2480,6 +2480,84 @@ export const renderResults = recipes => {
 
 
 
+## Rendering an Ajax Loading Spinner
+
+base.js
+
+```js
+
+export const elements = {
+	searchForm: document.querySelector( '.search' ),
+	searchInput: document.querySelector( '.search__field' ),
+	searchRes: document.querySelector( '.results' ),
+	searchResList: document.querySelector( '.results__list' ),
+}
+
+export const elementStrings = {
+	loader: 'loader'
+}
+
+export const renderLoader = parent => {
+	const loader = `
+		<div class="${ elementStrings.loader }">
+			<svg>
+				<use href="img/icons.svg#icon-cw"></use>
+			</svg>
+		</div>
+	`
+	parent.insertAdjacentHTML( 'afterbegin', loader )
+}
+
+export const clearLoader = () => {
+	const loader = document.querySelector( `.${ elementStrings.loader }` )
+	if ( loader ) loader.parentElement.removeChild( loader )
+}
+
+;```
+
+
+
+index.js
+
+```js
+
+import Search from './models/Search'
+import * as searchView from './views/searchView'
+import { elements, renderLoader, clearLoader } from './views/base'
+
+const state = {}
+
+const controlSearch = async () => {
+	// 1. get query from view
+	const query = searchView.getInput()
+
+	if ( query ) {
+		// 2. new search object added to state
+		state.search = new Search( query )
+
+		// 3. prepare ui for search
+		searchView.clearInput()
+		searchView.clearResults()
+		renderLoader( elements.searchRes )
+
+		// 4. search for recipes
+		await state.search.getResults()
+
+		// 5. render results on ui
+		clearLoader()
+		searchView.renderResults( state.search.result )
+	}
+}
+
+elements.searchForm.addEventListener( 'submit', e => {
+	e.preventDefault()
+	controlSearch()
+} )
+
+;```
+
+
+
 ;```
 
 
