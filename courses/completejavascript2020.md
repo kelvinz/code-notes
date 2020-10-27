@@ -2734,6 +2734,61 @@ elements.searchResPages.addEventListener( 'click', e => {
 
 
 
+## Building the Recipe Model - Part 1
+
+config.js
+
+```js
+
+export const proxy = `https://cors-anywhere.herokuapp.com/`
+export const key = `462b1cc8d4f2730071462fbc65136320`
+
+;```
+
+
+
+recipe.js
+
+```js
+
+import axios from 'axios'
+import { key, proxy } from '../config.js'
+
+export default class Recipe {
+	constructor( id ) {
+		this.id = id
+	}
+
+	async getRecipe() {
+		try {
+			const res = await axios( `${ proxy }http://food2fork.com/api/get?key=${ key }&rId=${ this.id }` )
+			this.title = res.data.recipe.title
+			this.author = res.data.recipe.publisher
+			this.img = res.data.recipe.image_url
+			this.url = res.data.recipe.source_url
+			this.ingredients = res.data.recipe.ingredients
+		} catch( err ) {
+			alert( `Something went wrong!` )
+			console.log( err )
+		}
+	}
+
+	calcTime() {
+		//	assuming 15 mins for every 3 ingredients
+		const numIng = this.ingredients.length
+		const periods = Math.ceil( numIng / 3 )
+		this.time = periods * 15
+	}
+
+	calcServings() {
+		this.servings = 4
+	}
+}
+
+;```
+
+
+
 ;```
 
 
