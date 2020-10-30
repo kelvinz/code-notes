@@ -2877,6 +2877,101 @@ r.getRecipe()
 
 
 
+## Building the Recipe Controller
+
+index.js
+
+```js
+
+import Search from './models/Search'
+import Recipe from './models/Recipe'
+import * as searchView from './views/searchView'
+import { elements, renderLoader, clearLoader } from './views/base'
+
+const state = {}
+
+
+
+//	search controller
+const controlSearch = async () => {
+	// 1. get query from view
+	const query = searchView.getInput()
+
+	if ( query ) {
+		// 2. new search object added to state
+		state.search = new Search( query )
+
+		// 3. prepare ui for search
+		searchView.clearInput()
+		searchView.clearResults()
+		renderLoader( elements.searchRes )
+
+		try {
+			// 4. search for recipes
+			await state.search.getResults()
+
+			// 5. render results on ui
+			clearLoader()
+			searchView.renderResults( state.search.result )
+		} catch( err ) {
+			alert( `Something went wrong with the serach...` )
+			clearLoader()
+		}
+	}
+}
+
+elements.searchForm.addEventListener( 'submit', e => {
+	e.preventDefault()
+	controlSearch()
+} )
+
+elements.searchResPages.addEventListener( 'click', e => {
+	const btn = e.target.closest( '.btn-inline' )
+	if ( btn ) {
+		const goToPage = parseInt( btn.dataset.goto, 10 )
+		searchView.clearResults()
+		searchView.renderResults( state.search.result, goToPage )
+	}
+} )
+
+
+
+//	recipe controller
+const controlRecipe = async () => {
+	//	get id from url
+	const id = window.location.hash.replace( '#', '' )
+
+	if ( id ) {
+		//	prepare ui for changes
+
+		//	create new recipe obj
+		state.recipe = new Recipe( id )
+
+		try {
+			//	get recipe data
+			await state.recipe.getRecipe()
+
+			//	calculate time & servings
+			state.recipe.calcTime()
+			state.recipe.calcServings()
+
+			//	render recipe
+
+		} catch ( err ) {
+			alert( `Error processing recipe!` )
+		}
+	}
+}
+
+// window.addEventListener( 'hashchange', controlRecipe )
+// window.addEventListener( 'load', controlRecipe )
+
+[ 'hashchange', 'load' ].forEach( e => window.addEventListener( e, controlRecipe ) )
+
+;```
+
+
+
 ;```
 
 
