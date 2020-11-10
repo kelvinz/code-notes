@@ -3840,6 +3840,65 @@ elements.searchResPages.addEventListener( 'click', e => {
 
 
 
+//	recipe controller
+const controlRecipe = async () => {
+	//	get id from url
+	const id = window.location.hash.replace( '#', '' )
+
+	if ( id ) {
+		//	prepare ui for changes
+		recipeView.clearRecipe()
+		renderLoader( elements.recipe )
+
+		//	highlight selected search item
+		if ( state.search ) searchView.highlightSelected( id )
+
+		//	create new recipe obj
+		state.recipe = new Recipe( id )
+
+		try {
+			//	get recipe data
+			await state.recipe.getRecipe()
+
+			//	calculate time & servings
+			state.recipe.calcTime()
+			state.recipe.calcServings()
+
+			//	render recipe
+			clearLoader()
+			recipeView.renderRecipe( state.recipe )
+		} catch ( err ) {
+			alert( `Error processing recipe!` )
+		}
+	}
+}
+
+// window.addEventListener( 'hashchange', controlRecipe )
+// window.addEventListener( 'load', controlRecipe )
+
+[ 'hashchange', 'load' ].forEach( e => window.addEventListener( e, controlRecipe ) )
+
+
+
+//	handling recipe button clicks
+elements.recipe.addEventListener( 'click', e => {
+	//	if click on btn-decrease
+	//	or any child of btn-decrease *
+	if ( e.target.matches( '.btn-decrease, .btn-decrease *' ) ) {
+		if ( state.recipe.servings > 1 ) {
+			state.recipe.updateServings( 'dec' )
+			recipeView.updateServingsIngredients( state.recipe )
+		}
+	} else if ( e.target.matches( '.btn-increase, .btn-increase *' ) ) {
+		state.recipe.updateServings( 'inc' )
+		recipeView.updateServingsIngredients( state.recipe )
+	}
+} )
+
+;```
+
+
+
 ;```
 
 
