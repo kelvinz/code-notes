@@ -4324,6 +4324,46 @@ elements.searchResPages.addEventListener( 'click', e => {
 
 
 
+//	recipe controller
+const controlRecipe = async () => {
+	//	get id from url
+	const id = window.location.hash.replace( '#', '' )
+
+	if ( id ) {
+		//	prepare ui for changes
+		recipeView.clearRecipe()
+		renderLoader( elements.recipe )
+
+		//	highlight selected search item
+		if ( state.search ) searchView.highlightSelected( id )
+
+		//	create new recipe obj
+		state.recipe = new Recipe( id )
+
+		try {
+			//	get recipe data
+			await state.recipe.getRecipe()
+
+			//	calculate time & servings
+			state.recipe.calcTime()
+			state.recipe.calcServings()
+
+			//	render recipe
+			clearLoader()
+			recipeView.renderRecipe( state.recipe )
+		} catch ( err ) {
+			alert( `Error processing recipe!` )
+		}
+	}
+}
+
+// window.addEventListener( 'hashchange', controlRecipe )
+// window.addEventListener( 'load', controlRecipe )
+
+[ 'hashchange', 'load' ].forEach( e => window.addEventListener( e, controlRecipe ) )
+
+
+
 ;```
 
 
