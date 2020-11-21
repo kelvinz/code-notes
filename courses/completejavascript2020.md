@@ -4378,6 +4378,24 @@ const controlList = () => {
 
 
 
+//	handle delete & update list item events
+elements.shopping.addEventListener( 'click', e => {
+	const id = e.target.closet( '.shopping__item' ).dataset.itemid
+	if ( e.target.matches( '.shopping__delete, .shopping__delete *' ) ) {
+		//	delete from state
+		state.list.deleteItem( id )
+
+		//	delete from ui
+		listView.deleteItem( id )
+	} else if ( e.target.matches( '.shopping__count-value' ) ) {
+		//	count update
+		const val = praseFloat( e.target.value, 10 )
+		state.list.updateCount( id, val )
+	}
+} )
+
+
+
 ;```
 
 
