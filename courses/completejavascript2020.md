@@ -4555,6 +4555,20 @@ const controlRecipe = async () => {
 
 
 
+//	list controller
+const controlList = () => {
+	//	create a new list if there is none yet
+	if ( !state.list ) state.list = new List()
+
+	//	add each ingredient to the list & ui
+	state.recipe.ingredients.forEach( el => {
+		const item = state.list.addItem( el.count, el.unit, el.ingredient )
+		listView.renderItem( item )
+	} )
+}
+
+
+
 ;```
 
 
