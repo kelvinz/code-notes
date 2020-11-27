@@ -4569,6 +4569,29 @@ const controlList = () => {
 
 
 
+//	like controller
+const controlLike = () => {
+	if ( !state.likes ) state.likes = new Likes()
+
+	const currentID = state.recipe.id
+	if ( !state.likes.isLiked( currentID ) ) {
+		//	not liked
+
+		const newLike = state.likes.addLike(
+			currentID,
+			state.recipe.title,
+			state.recipe.author,
+			state.recipe.img
+		)
+	} else {
+		//	liked
+
+		state.likes.deleteLike( currentID )
+	}
+}
+
+
+
 ;```
 
 
