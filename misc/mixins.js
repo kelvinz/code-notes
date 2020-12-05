@@ -156,7 +156,7 @@ window.$ = document.querySelector.bind( document )
 //	$$( '.items' )
 window.$$ = document.querySelectorAll.bind( document )
 
-//	$( '.item' ).on( 'click', el => { } )
+//	$( '.item' ).on( 'click', e => { } )
 Node.prototype.on = window.on = function ( name, fn ) {
 	this.addEventListener( name, fn )
 }
