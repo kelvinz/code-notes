@@ -5113,4 +5113,20 @@ elements.shopping.addEventListener( 'click', e => {
 
 
 
+//	restore liked recipe on page load
+window.addEventListener( 'load', () => {
+	state.likes = new Likes()
+
+	//	restore likes
+	state.likes.readStorage()
+
+	//	toggle like menu button
+	likesView.toggleLikeMenu( state.likes.getNumLikes() )
+
+	//	render likes
+	state.likes.likes.forEach( like => likesView.renderLike( like ) )
+} )
+
+
+
 ---
