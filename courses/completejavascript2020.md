@@ -5129,4 +5129,29 @@ window.addEventListener( 'load', () => {
 
 
 
+//	handling recipe button clicks
+elements.recipe.addEventListener( 'click', e => {
+	//	if click on btn-decrease
+	//	or any child of btn-decrease *
+	if ( e.target.matches( '.btn-decrease, .btn-decrease *' ) ) {
+		if ( state.recipe.servings > 1 ) {
+			state.recipe.updateServings( 'dec' )
+			recipeView.updateServingsIngredients( state.recipe )
+		}
+	} else if ( e.target.matches( '.btn-increase, .btn-increase *' ) ) {
+		state.recipe.updateServings( 'inc' )
+		recipeView.updateServingsIngredients( state.recipe )
+	} else if ( e.target.matches( '.recipe__btn--add, .recipe__btn--add *' ) ) {
+		//	add ingredients to shopping list
+		controlList()
+	} else if ( e.target.matches( '.recipe__love, .recipe__love *' ) ) {
+		//	like controller
+		controlLike()
+	}
+} )
+
+;```
+
+
+
 ---
