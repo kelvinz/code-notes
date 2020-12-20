@@ -5188,4 +5188,46 @@ const formatCount = count => {
 
 
 
+# 10 - Final Course Exam: 30 Questions to Test Your JavaScript Knowledge
+
+
+
+## Some Considerations Before You Start
+## Quiz 1: 30 Questions to Test Your JavaScript Knowledge
+
+
+
+---
+
+
+
+# 11 - Conclusion
+
+
+
+## Where to Go from Here
+
+<https://www.jonas.io>
+
+
+
+## Be the First to Know About New Course Launches!
+
+
+
+---
+
+
+
+# 12 - Bonus: A Node.js Crash Course
+
+
+
+## A Quick Overview of Node.js
+## Download the Code
+
+<https://github.com/jonasschmedtmann/complete-javascript-course/tree/master/99-bonus-1>
+
+
+
 ---
