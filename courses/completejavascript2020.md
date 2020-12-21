@@ -5230,4 +5230,44 @@ const formatCount = count => {
 
 
 
+## The Laptop Store Project, Part 1
+
+sudo npm install nodemon -g
+nodemon
+
+```js
+
+const fs = require( 'fs' )
+const http = require( 'http' )
+const url = require( 'url' )
+
+const json = fs.readFileSync( `${ __dirname }/data/data.json`, 'utf-8' )
+const laptopData = JSON.parse( json )
+
+const server = http.createServer( ( req, res ) => {
+
+	const pathName = url.parse( req.url, true ).pathname
+	const id = url.parse( req.url, true ).query.id
+
+	if ( pathName === '/products' || pathName === '/' ) {
+		res.writeHead( 200, { 'Content-type': 'text/html' } )
+		res.end( 'products page' )
+	} else if ( pathName === '/laptop' && id < laptopData.length ) {
+		res.writeHead( 200, { 'Content-type': 'text/html' } )
+		res.end( `laptop ${ id } page` )
+	} else {
+		res.writeHead( 404, { 'Content-type': 'text/html' } )
+		res.end( 'not found' )
+	}
+
+} )
+
+server.listen( 1337, '127.0.0.1', () => {
+	console.log( 'listening' )
+} )
+
+;```
+
+
+
 ---
