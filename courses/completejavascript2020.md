@@ -141,3 +141,41 @@ console.log( Number.isInteger( 23 / 0 ) ) // false
 
 
 
+## Math & Rounding
+
+```js
+
+// square root
+console.log( Math.sqrt( 25 ) ) // 5
+console.log( 25 ** ( 1 / 2 ) ) // 5
+
+// cubic root
+console.log( 25 ** ( 1 / 3 ) ) // 2
+
+// find largest or smallest
+console.log( Math.max( 4, 18, 20, 3, 28 ) ) // 28
+console.log( Math.min( 4, 18, 20, 3, 28 ) ) // 3
+
+// find area of circle - PI * radius squared
+console.log( Math.PI * Number.parseFloat( '10px' ) ** 2 ) // 314.1592653589793
+
+// not sure if this is the best way, double check with
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+const randomInt = ( min, max ) => Math.floor( Math.random() * ( max - min ) + 1 ) + min
+
+// getting integers from floating numbers
+// coercion to numbers also occurs
+console.log( Math.trunc( 23.3 ) ) // remove decimals
+console.log( Math.ceil( 23.3 ) ) // always rounding up
+console.log( Math.floor( 23.3 ) ) // always rounding down
+console.log( Math.round( 23.3 ) ) // rounding to nearest integer
+
+// rounding decimals
+console.log( ( 2.7 ).toFixed( 0 ) ) // '3' - result is string, need to convert to num
+console.log( ( 2.7 ).toFixed( 3 ) ) // '2.700' - result is string, need to convert to num
+console.log( +( 2.7 ).toFixed( 3 ) ) // 2.700
+
+;```
+
+
+
