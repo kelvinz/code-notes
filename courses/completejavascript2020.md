@@ -179,3 +179,20 @@ console.log( +( 2.7 ).toFixed( 3 ) ) // 2.700
 
 
 
+## The Remainder Operator
+
+```js
+
+// 5 / 2 = 2.5 ~= 2
+// 2 * 2 = 4
+// 5 - 5 = 1
+console.log( 5 % 2 ) // 1
+
+const isEven = n => n % 2 === 0
+console.log( isEven( 8 ) ) // true
+console.log( isEven( 23 ) ) // false
+
+;```
+
+
+
