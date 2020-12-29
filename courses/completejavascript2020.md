@@ -196,3 +196,29 @@ console.log( isEven( 23 ) ) // false
 
 
 
+## Working with BigInt
+
+```js
+
+// biggest number js can accurately count & store
+console.log( 2 ** 53 - 1 ) // 9007199254740991
+console.log( Number.MAX_SAFE_INTEGER ) // 9007199254740991
+
+// new js which can count & store any size number
+console.log( 123456789123456789n )
+console.log( BigInt( 123456789123456789 ) )
+
+// operations
+console.log( 123456n + 123456n )
+
+// can't mix int & bigint
+console.log( 20n + 20 ) // error
+console.log( 20n + BigInt( 20 ) ) // 40n
+
+// bigint nums auto round to nearest n
+console.log( 20n / 3n ) // 6n
+
+;```
+
+
+
