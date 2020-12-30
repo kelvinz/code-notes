@@ -222,3 +222,56 @@ console.log( 20n / 3n ) // 6n
 
 
 
+## Creating Dates
+
+```js
+
+console.log( new Date() )
+// Fri Dec 18 2020 21:22:28 GMT+0800 (Singapore Standard Time)
+
+console.log( new Date( 'Fri Dec 18 2020 21:22:28' ) )
+// Fri Dec 18 2020 21:22:28 GMT+0800 (Singapore Standard Time)
+
+console.log( new Date( 'August 31, 1982' ) )
+// Tue Aug 31 1982 00:00:00 GMT+0800 (Singapore Standard Time)
+
+console.log( new Date( 2037, 10, 19, 15, 23, 5 ) )
+// Thu Nov 19 2037 15:23:05 GMT+0800 (Singapore Standard Time)
+// 0 based thus 10 month is november
+
+console.log( new Date( 2037, 10, 33, 15, 23, 5 ) )
+// Thu Dec 03 2037 15:23:05 GMT+0800 (Singapore Standard Time)
+// auto count up 33 days to next month
+
+console.log( new Date( 0 ) )
+// Thu Jan 01 1970 07:30:00 GMT+0730 (Singapore Standard Time)
+// start of unix time
+
+console.log( new Date( 3 * 24 * 60 * 60 * 1000 ) )
+// Sun Jan 04 1970 07:30:00 GMT+0730 (Singapore Standard Time)
+// 3 days after unix
+// 24 hrs * 60 mins * 60 secs * 1000 ms
+
+// working with dates
+const future = new Date( 2037, 10, 19, 15, 23 )
+console.log( future.getFullYear() ) // 2037
+console.log( future.getMonth() ) // 10 - 0 based thus 10 = november
+console.log( future.getDate() ) // 19
+console.log( future.getDay() ) // 4
+console.log( future.getHours() ) // 15
+console.log( future.getMinutes() ) // 23
+console.log( future.getSeconds() ) // 0
+console.log( future.toISOString() ) // 2037-11-19T07:23:00.000Z
+console.log( future.getTime() ) // 2142228180000 - time since unix
+console.log( new Date( 2142228180000 ) ) // Thu Nov 19 2037 15:23:00 GMT+0800 (Singapore Standard Time)
+
+console.log( Date.now() ) // 1608298477721
+
+// updating a date, it will auto correct its day, etc according to new date
+console.log( future.setFullYear( 2020 ) )
+// also has setMonth, setDate, etc etc
+
+;```
+
+
+
