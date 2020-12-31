@@ -275,3 +275,23 @@ console.log( future.setFullYear( 2020 ) )
 
 
 
+## Adding Dates to 'Bankist' App
+
+```js
+
+const now = new Date()
+const day = `${ now.getDate() }`.padStart( 2, 0 )
+const month = `${ now.getMonth() + 1 }`.padStart( 2, 0 )
+const year = now.getFullYear()
+const hour = now.getHours()
+const min = now.getMinutes()
+
+console.log( `${ day }/${ month }/${ year }, ${ hour }:${ min }` ) // 19/12/2020, 9:23
+
+console.log( new Date().toDateString() ) // Sat Dec 19 2020
+console.log( new Date().toISOString() ) // 2020-12-19T01:36:42.451Z
+
+;```
+
+
+
