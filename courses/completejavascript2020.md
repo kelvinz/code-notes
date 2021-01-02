@@ -322,3 +322,27 @@ const formatDate = ( date ) => {
 
 
 
+## Internationalizing Dates ( Intl )
+
+```js
+
+const now = new Date()
+const options = {
+	hour: 'numeric',
+	minute: 'numeric',
+	day: 'numeric',
+	month: 'long', // numeric, long, short, 2-digit
+	year: 'numeric', // numeric, 2-digit
+	weekday: 'long', // long, short, narrow
+}
+console.log( new Intl.DateTimeFormat( 'en-US' ).format( now ) ) // 12/19/2020
+console.log( new Intl.DateTimeFormat( 'en-US', options ).format( now ) ) // Saturday, December 19, 2020, 12:52 PM
+
+// get user's browser locale
+const locale = navigator.language
+console.log( locale ) // en-US
+
+;```
+
+
+
