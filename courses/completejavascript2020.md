@@ -346,3 +346,20 @@ console.log( locale ) // en-US
 
 
 
+## Internationalizing Numbers ( Intl )
+
+```js
+
+const num = 23592938479
+const options = {
+	style: 'currency',
+	currency: 'EUR',
+	// unit: 'mile-per-hour', // celsius, etc
+}
+console.log( new Intl.NumberFormat( 'en-US' ).format( num ) ) // 23,592,938,479
+console.log( new Intl.NumberFormat( 'en-US', options ).format( num ) ) // €23,592,938,479.00
+
+;```
+
+
+
