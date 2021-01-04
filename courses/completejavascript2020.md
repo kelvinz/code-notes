@@ -363,3 +363,28 @@ console.log( new Intl.NumberFormat( 'en-US', options ).format( num ) ) // €23,
 
 
 
+## Timers: setTimeout & setInterval
+
+```js
+
+setTimeout( () => console.log( '🍕' ), 3000 )
+console.log( 'waiting' )
+//	waiting
+//	🍕
+
+setTimeout( ( a, b ) => console.log( a, b ), 3000, 'item1', 'item2' )
+
+const items = [ 'item1', 'item2' ]
+const testTimer = setTimeout( ( a, b ) => console.log( a, b ), 3000, ...items )
+if ( items.includes( 'item2' ) ) clearTimeout( testTimer )
+
+setInterval( () => {
+	const now = new Date()
+	console.log( now )
+}, 1000 )
+//	repeats every 1 sec
+
+;```
+
+
+
