@@ -388,3 +388,33 @@ setInterval( () => {
 
 
 
+## Implementing a Countdown Timer
+
+```js
+
+let timer
+const startLogOutTimer = () => {
+	let time = 100
+
+	const tick = () => {
+		const min = String( Math.trunc( time / 60 ) ).padStart( 2, 0 )
+		const sec = String( time % 60 ).padStart( 2, 0 )
+		console.log( `${ min }:${ sec }` )
+		if ( time === 0 ) clearInterval( timer )
+		time--
+	}
+
+	return timer = setInterval( tick, 1000 )
+}
+
+if ( timer ) clearInterval( timer )
+timer = startLogOutTimer()
+
+;```
+
+
+
+---
+
+
+
