@@ -418,3 +418,64 @@ timer = startLogOutTimer()
 
 
 
+# 13 - Advanced DOM & Events
+
+
+
+---
+
+
+
+# 14 - Object-Oriented Programming ( OOP ) With JavaScript
+
+
+
+---
+
+
+
+# 15 - Mapty App: OOP, Geolocation, External Libraries & More!
+
+
+
+---
+
+
+
+# 16 - Asynchronous JavaScript: Promises, Async/Await & AJAX
+
+
+
+---
+
+
+
+# 17 - Modern JavaScript Development: Modules & Tooling
+
+
+
+---
+
+
+
+# 18 - Forkify App: Building a Modern Application
+
+
+
+---
+
+
+
+# 19 - Setting Up Git & Development
+
+
+
+---
+
+
+
+# 20 - The End!
+
+
+
+---
