@@ -111,6 +111,19 @@ console.log( arr ) // [ 'a', 'b', 'c', 'd', 'e' ]
 
 
 
+// splice
+// mutates original array
+// ( start, no. to delete )
+let arr = [ 'a', 'b', 'c', 'd', 'e' ]
+console.log( arr.splice( 2 ) ) // [ 'c', 'd', 'e' ]
+console.log( arr ) // [ 'a', 'b' ]
+arr = [ 'a', 'b', 'c', 'd', 'e' ]
+console.log( arr.splice( -1 ) ) // [ 'e' ]
+arr = [ 'a', 'b', 'c', 'd', 'e' ]
+console.log( arr.splice( 1, 2 ) ) // [ 'b', 'c' ]
+
+
+
 ---
 
 
