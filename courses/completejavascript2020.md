@@ -124,6 +124,14 @@ console.log( arr.splice( 1, 2 ) ) // [ 'b', 'c' ]
 
 
 
+// reverse
+// mutates original array
+arr = [ 'a', 'b', 'c', 'd', 'e' ]
+console.log( arr.reverse() ) // [ 'e', 'd', 'c', 'b', 'a' ]
+console.log( arr )  // [ 'e', 'd', 'c', 'b', 'a' ]
+
+
+
 ---
 
 
