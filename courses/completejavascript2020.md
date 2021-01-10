@@ -132,6 +132,15 @@ console.log( arr )  // [ 'e', 'd', 'c', 'b', 'a' ]
 
 
 
+// concat
+// returns new array
+let arr1 = [ 'a', 'b' ]
+let arr2 = [ 'c', 'd' ]
+console.log( console.log( arr1.concat( arr2 ) ) ) // [ 'a', 'b', 'c', 'd' ]
+console.log( console.log( [ ...arr1, ...arr2 ] ) ) // [ 'a', 'b', 'c', 'd' ]
+
+
+
 ---
 
 
