@@ -141,6 +141,17 @@ console.log( console.log( [ ...arr1, ...arr2 ] ) ) // [ 'a', 'b', 'c', 'd' ]
 
 
 
+// join
+// returns new string
+arr = [ 'a', 'b', 'c', 'd', 'e' ]
+console.log( arr.join() ) // a,b,c,d,e
+console.log( arr.join( '' ) ) // abcde
+console.log( arr.join( '-' ) ) // a-b-c-d-e
+
+;```
+
+
+
 ---
 
 
