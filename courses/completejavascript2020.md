@@ -180,6 +180,26 @@ movements.forEach( ( movement ) => {
 
 
 
+## forEach With Maps & Sets
+
+```js
+
+const currencies = new Map( [
+	[ 'usd', 'united states dollar' ],
+	[ 'eur', 'euro' ],
+	[ 'gbp', 'pound sterling' ],
+] )
+
+currencies.forEach( ( value, key, map ) => {
+	console.log( `${ key }: ${ value}` )
+} )
+// usd: united states dollar
+// eur: euro
+// gbp: pound sterling
+;```
+
+
+
 ---
 
 
