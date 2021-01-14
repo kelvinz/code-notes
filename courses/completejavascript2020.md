@@ -196,6 +196,21 @@ currencies.forEach( ( value, key, map ) => {
 // usd: united states dollar
 // eur: euro
 // gbp: pound sterling
+
+
+
+const currenciesUnique = new Set( [ 'usd', 'gbp', 'usd', 'eur', 'eur' ] )
+currenciesUnique.forEach( ( value, _, map ) => {
+	console.log( `${ value }: ${ _ }` )
+} )
+// usd: usd
+// gbp: gbp
+// eur: eur
+
+;```
+
+
+
 ;```
 
 
