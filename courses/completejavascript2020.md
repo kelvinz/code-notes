@@ -262,6 +262,19 @@ checkDogs( [ 3, 5, 2, 12, 7 ], [ 4, 1, 15, 8, 3 ] )
 
 
 
+## The Map Method
+
+```js
+
+const eurToUsd = 1.1
+
+// convert movements from euro to usd
+movements.map( m => m * eurToUsd )
+
+;```
+
+
+
 ;```
 
 
