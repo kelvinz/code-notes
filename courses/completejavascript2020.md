@@ -275,6 +275,30 @@ movements.map( m => m * eurToUsd )
 
 
 
+## Computing Usernames
+
+```js
+
+const user = 'Steven Thomas Williams'
+const username = user.toLowerCase().split( ' ' ).map( name => name[ 0 ] ).join( '' )
+// stw
+
+const createUserNames = accs => {
+	accs.forEach( acc => {
+		acc.username = acc.owner
+			.toLowerCase()
+			.split( ' ' )
+			.map( name => name[ 0 ] )
+			.join( '' )
+	} )
+}
+
+createUserNames( accounts )
+
+;```
+
+
+
 ;```
 
 
