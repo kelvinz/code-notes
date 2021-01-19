@@ -299,6 +299,21 @@ createUserNames( accounts )
 
 
 
+## The Filter Method
+
+```js
+
+// filter
+const deposits = movements.filter( mov => mov > 0 )
+
+// for loop
+const depositsFor = []
+for ( const mov of movements ) if ( mov > 0 ) depositesFor.push( mov )
+
+;```
+
+
+
 ;```
 
 
