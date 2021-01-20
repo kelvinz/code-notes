@@ -314,6 +314,37 @@ for ( const mov of movements ) if ( mov > 0 ) depositesFor.push( mov )
 
 
 
+## The Reduce Method
+
+```js
+
+const movements = [ 200, 450, -400, 3000, -650, -130, 70, 1300 ]
+
+const balance = movements.reduce( ( acc, cur, i, arr ) => {
+	console.log( i, acc )
+	return acc + cur
+}, 0 )
+// 0 0
+// 1 200
+// 2 650
+// 3 250
+// 4 3250
+// 5 2600
+// 6 2470
+// 7 2540
+
+
+
+const max = movements.reduce( ( acc, mov ) => {
+	if ( acc > mov ) return acc
+	else return mov
+}, movements[ 0 ] )
+// 3000
+
+;```
+
+
+
 ;```
 
 
