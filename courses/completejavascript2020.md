@@ -364,6 +364,20 @@ console.log( calcAverageHumanAge( [ 5, 2, 4, 1, 15, 8, 3 ] ) )
 
 
 
+## The Magic of Chaining Methods
+
+```js
+
+const eurToUsd = 1.1
+const totalDepositsUSD = movements
+		.filter( mov => mov > 0 )
+		.map( mov => mov * eurToUsd )
+		.reduce( ( acc, mov ) => acc + mov, 0 )
+
+;```
+
+
+
 ;```
 
 
