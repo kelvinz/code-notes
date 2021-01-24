@@ -396,6 +396,21 @@ console.log( calcAverageHumanAge( [ 5, 2, 4, 1, 15, 8, 3 ] ) )
 
 
 
+## The Find Method
+
+```js
+
+const movements = [ 200, 450, -400, 3000, -650, -130, 70, 1300 ]
+
+// returns the first el that satisfy the condition
+const firstWithdrawal = movements.find( mov => mov < 0 )
+console.log( firstWithdrawal )
+// -400
+
+;```
+
+
+
 ;```
 
 
