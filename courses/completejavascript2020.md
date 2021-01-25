@@ -411,6 +411,27 @@ console.log( firstWithdrawal )
 
 
 
+## Implementing Login
+## Implementing Transfers
+## The findIndex Method
+
+```js
+
+btnClose.addEventListener( 'click', e => {
+	e.preventDefault()
+
+	if ( inputCloseUsername.value !== currentAccount.username ) return
+	if ( Number( inputClosePin.value ) !== currentAccount.pin ) return
+
+	const index = accounts.findIndex( acc => acc.username === currentAccount.username )
+	accounts.splice( index, 1 )
+	containerApp.style.opacity = 0
+} )
+
+;```
+
+
+
 ;```
 
 
