@@ -463,6 +463,35 @@ console.log( movements.filter( deposit ) )
 
 
 
+## Flat & flatMap
+
+```js
+
+// nested array
+const arr = [ [ 1, 2, 3 ], [ 4, 5, 6 ], 7, 8 ]
+console.log( arr.flat() ) // [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+
+// deep nested array
+// add depth value, defaults is 1
+const arr2 = [ [ [ 1, 2 ], 3 ], [ 4, [ 5, 6 ] ], 7, 8 ]
+console.log( arr2.flat() ) // [ Array(2), 3, 4, Array(2), 7, 8 ]
+console.log( arr2.flat( 2 ) ) // [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+
+// flatmap
+// flat then map
+const overallBalance = accounts
+	.map( acc => acc.movements )
+	.flat()
+	.reduce( ( acc, mov ) => acc + mov, 0 )
+
+const overallBalance = accounts
+	.flatMap( acc => acc.movements )
+	.reduce( ( acc, mov ) => acc + mov, 0 )
+
+;```
+
+
+
 ;```
 
 
