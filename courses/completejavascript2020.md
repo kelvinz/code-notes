@@ -492,6 +492,18 @@ const overallBalance = accounts
 
 
 
+## Sorting Arrays
+
+```js
+
+// sort alphabetically
+// mutates original arr
+const owners = [ 'Jonas', 'Zach', 'Adam', 'Martha' ]
+console.log( owners.sort() ) // [ 'Adam', 'Jonas', 'Martha', 'Zach' ]
+console.log( owners ) // [ 'Adam', 'Jonas', 'Martha', 'Zach' ]
+
+
+
 ;```
 
 
