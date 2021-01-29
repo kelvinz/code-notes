@@ -504,6 +504,25 @@ console.log( owners ) // [ 'Adam', 'Jonas', 'Martha', 'Zach' ]
 
 
 
+const movements = [ 200, 450, -400, 3000, -650, -130, 70, 1300 ]
+
+// return < 0 ---> a, b
+// return > 0 ---> b, a
+
+movements.sort( ( a, b ) => a > b ? 1 : -1 )
+// [ -650, -400, -130, 70, 200, 450, 1300, 3000 ]
+movements.sort( ( a, b ) => a - b )
+// [ -650, -400, -130, 70, 200, 450, 1300, 3000 ]
+
+
+
+// to not affect orginal arr
+movements.slice().sort( ( a, b ) => a - b )
+
+;```
+
+
+
 ;```
 
 
