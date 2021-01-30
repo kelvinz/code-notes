@@ -523,6 +523,19 @@ movements.slice().sort( ( a, b ) => a - b )
 
 
 
+## More Ways of Creating & Filtering Arrays
+
+```js
+
+const x = new Array( 7 )
+console.log( x ) // [ empty × 7 ]
+
+// fill
+console.log( x.fill( 1, 3, 5 ) ) // [ empty × 3, 1, 1, empty × 2 ]
+console.log( x.fill( 1 ) ) // [ 1, 1, 1, 1, 1, 1, 1 ]
+
+
+
 ;```
 
 
