@@ -555,6 +555,29 @@ const movementUI = Array.from( document.querySelectorAll( '.movement__value' ), 
 
 
 
+## Summary: Which Array Method to Use?
+
+```js
+
+/*	to mutate original array
+------------------- */
+
+// add to original
+.push // to end
+.unshift // to start
+
+// remove from original
+.pop // from end
+.shift // from start
+.splice // from any
+
+// others
+.reverse
+.sort
+.fill
+
+
+
 ;```
 
 
