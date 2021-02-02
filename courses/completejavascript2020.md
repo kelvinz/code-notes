@@ -578,6 +578,26 @@ const movementUI = Array.from( document.querySelectorAll( '.movement__value' ), 
 
 
 
+/*	to a new array
+------------------- */
+// from original
+.map // loop
+
+// filter using condition
+.filter
+
+// portion of original
+.slice
+
+// adding original to another
+.concat
+
+// flatten original
+.flat
+.flatMap
+
+
+
 ;```
 
 
