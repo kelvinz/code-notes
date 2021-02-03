@@ -598,6 +598,16 @@ const movementUI = Array.from( document.querySelectorAll( '.movement__value' ), 
 
 
 
+/*	an array index
+------------------- */
+// based on value
+.indexOf
+
+// based on test condition
+.findIndex
+
+
+
 ;```
 
 
