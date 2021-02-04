@@ -608,6 +608,13 @@ const movementUI = Array.from( document.querySelectorAll( '.movement__value' ), 
 
 
 
+/*	an array element
+------------------- */
+// based on test condition
+.find
+
+
+
 ;```
 
 
