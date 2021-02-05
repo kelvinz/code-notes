@@ -615,6 +615,18 @@ const movementUI = Array.from( document.querySelectorAll( '.movement__value' ), 
 
 
 
+/*	know if array includes
+------------------- */
+
+// basd on value
+.includes
+
+// based on test condition
+.some
+.every
+
+
+
 ;```
 
 
