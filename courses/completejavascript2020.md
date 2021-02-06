@@ -627,6 +627,14 @@ const movementUI = Array.from( document.querySelectorAll( '.movement__value' ), 
 
 
 
+/*	a new string
+------------------- */
+
+// based on a sseparator
+.join
+
+
+
 ;```
 
 
