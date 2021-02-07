@@ -635,6 +635,14 @@ const movementUI = Array.from( document.querySelectorAll( '.movement__value' ), 
 
 
 
+/*	to transform to value
+------------------- */
+
+// based on accumulator
+.reduce // boil to single value
+
+
+
 ;```
 
 
