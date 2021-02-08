@@ -643,6 +643,16 @@ const movementUI = Array.from( document.querySelectorAll( '.movement__value' ), 
 
 
 
+/*	to just loop array
+------------------- */
+
+// based on callback
+.forEach // does not create new array
+
+;```
+
+
+
 ;```
 
 
