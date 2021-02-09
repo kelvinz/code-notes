@@ -653,6 +653,30 @@ const movementUI = Array.from( document.querySelectorAll( '.movement__value' ), 
 
 
 
+## Coding Challenge #4
+
+```js
+
+const dogs = [
+	{ weight: 22, curFood: 250, owners: [ 'Alice', 'Bob' ] },
+	{ weight: 8, curFood: 200, owners: [ 'Matilda' ] },
+	{ weight: 13, curFood: 275, owners: [ 'Sarah', 'John' ] },
+	{ weight: 32, curFood: 340, owners: [ 'Michael' ] },
+]
+
+
+
+/*	1.
+------------------- */
+dogs.forEach( dog => dog.recFood = Math.trunc( dog.weight ** .75 * 28 ) )
+console.log( dogs )
+// { weight: 22, curFood: 250, owners: Array(2), recFood: 284 }
+// { weight: 8, curFood: 200, owners: Array(1), recFood: 133 }
+// { weight: 13, curFood: 275, owners: Array(2), recFood: 191 }
+// { weight: 32, curFood: 340, owners: Array(1), recFood: 376 }
+
+
+
 ;```
 
 
