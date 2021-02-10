@@ -677,6 +677,16 @@ console.log( dogs )
 
 
 
+/*	2
+------------------- */
+const dogSarah = dogs.find( dog => dog.owners.includes( 'Sarah' ) )
+console.log( dogSarah )
+// { weight: 13, curFood: 275, owners: Array(2), recFood: 191 }
+console.log( `Sarah's dog is eating too ${ dogSarah.curFood > dogSarah.recFood ? 'much' : 'little' }!` )
+// Sarah's dog is eating too much!
+
+
+
 ;```
 
 
