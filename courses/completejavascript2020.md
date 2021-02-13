@@ -714,6 +714,14 @@ console.log( `${ ownersEatTooLittle.join( ' and ' ) }'s dogs eat too little!` )
 
 
 
+/*	5
+------------------- */
+console.log( dogs.some( dog => dog.curFood === dog.recFood ) )
+// false
+// there are no dogs eating exactly the recommended amount of food
+
+
+
 ;```
 
 
