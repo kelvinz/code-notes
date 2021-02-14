@@ -81,6 +81,394 @@
 
 
 
+## Section Intro
+## Section Roadmap
+## Default Parameters
+
+```js
+
+const bookings = []
+
+const createBooking = ( flightNum, numPassengers = 1, price = 199 * numPassengers ) => {
+	// old way of setting default parameters
+	// numPassengers = numPassengers || 1
+	// price = price || 199
+	const booking = {
+		price,
+		flightNum,
+		numPassengers,
+	}
+	console.log( booking )
+	bookings.push( booking )
+}
+
+createBooking( 'LH123' )
+// { price: 199, flightNum: "LH123", numPassengers: 1 }
+
+createBooking( 'LH123', 2 )
+// { price: 398, flightNum: "LH123", numPassengers: 2 }
+
+// skip 2nd parameter
+createBooking( 'LH123', undefined, 1000 )
+// { price: 1000, flightNum: "LH123", numPassengers: 1 }
+
+;```
+
+
+
+## How Passing Arguments Works: Value vs Reference
+
+```js
+
+const flight = 'LH234'
+const jonas = {
+	name: 'Jonas Schedtmann',
+	passport: 123456789,
+}
+
+const checkIn = ( flightNum, passenger ) => {
+	flightNum = 'LH999'
+	passenger.name = 'Mr ' + passenger.name
+
+	if ( passenger.passport === 123456789 ) {
+		console.log( 'checked in' )
+	} else {
+		console.log( 'wrong passport' )
+	}
+}
+
+checkIn( flight, jonas ) // checked in
+console.log( flight ) // LH1234
+console.log( jonas ) // { name: 'Mr Jonas Schedtmann', passport: 123456789 }
+
+const newPassport = ( person ) => {
+	person.passport = Math.trunc( Math.random() * 1000000 )
+}
+
+newPassport( jonas )
+checkIn( flight, jonas ) // wrong passport
+
+;```
+
+
+
+## First-Class & Higher-Order Functions
+
+**first-class functions**
+
+- JavaScript treats functions as first-class citizens
+- this means that functions are simply values
+- functions are just another type of object
+
+
+
+**higher-order functions**
+
+- a function that
+	- receives another function as an argument
+	- that returns a new function
+	- or both
+- this is only possible because of first-class functions
+
+
+
+## Functions Accepting Callback Functions
+
+```js
+
+const oneWord = ( str ) => {
+	return str.replace( / /g, '' ).toLowerCase()
+}
+
+const upperFirstWord = ( str ) => {
+	const [ first, ...others ]= str.split( ' ' )
+	return [ first.toUpperCase(), ...others ].join( ' ' )
+}
+
+const transformer = ( str, fn ) => {
+	console.log( str )
+	console.log( `${ fn( str ) }` )
+	console.log( `transformed by ${ fn.name }` )
+}
+
+transformer( 'JavaScript is the best!', oneWord )
+// JavaScript is the best!
+// javascriptisthebest!
+// transformed by oneWord
+
+transformer( 'JavaScript is the best!', upperFirstWord )
+// JavaScript is the best!
+// JAVASCRIPT is the best!
+// transformed by upperFirstWord
+
+;```
+
+
+
+## Functions Returning Functions
+
+```js
+
+const greet = ( greeting ) => {
+	return ( name ) => {
+		console.log( `${ greeting } ${ name }` )
+	}
+}
+
+const greetHey = greet( 'Hey' )
+greetHey( 'Jonas' ) // Hey Jonas
+
+greet( 'Hello' )( 'Steven' ) // Hello Steven
+
+const greetArrow = gretting => name => console.log( `${ greeting } ${ name }` )
+greetArrow( 'Hello' )( 'Jonas' ) // Hello Jonas
+
+;```
+
+
+
+## The Call & Apply Methods
+
+```js
+
+const sia = {
+	airline: 'Singapore Airlines',
+	code: 'SIA',
+	bookings: [],
+	book( flightNum, name ) {
+		console.log( `${ name } booked a seat on ${ this.airline } ${ this.code } ${ flightNum }` )
+		this.bookings.push( { flight: `${ this.code } ${ flightNum }`, name } )
+	},
+}
+
+sia.book( 239, 'Jonas' )
+// Jonas booked a seat on Singapore Airlines SIA 239
+
+const eva = {
+	airline: 'EVA Air',
+	code: 'EVA',
+	bookings: [],
+}
+
+const book = sia.book
+
+// book( 23, 'Sarah' )
+// error
+
+book.call( eva, 23, 'Sarah' )
+// Sarah booked a seat on EVA Air EVA 23
+
+book.apply( eva, [ 123, 'John' ] )
+// John booked a seat on EVA Air EVA 123
+
+;```
+
+
+
+## The Bind Method
+
+```js
+
+const bookEva = book.bind( eva )
+bookEva( 987, 'Williams' )
+// Williams booked a seat on EVA Air EVA 987
+
+const bookEva23 = book.bind( eva, 23 )
+bookEva23( 'Peggy' )
+// Peggy booked a seat on EVA Air EVA 23
+
+
+
+sia.planes = 300
+sia.buyPlane = function() {
+	this.planes++
+	console.log( this.planes )
+}
+
+document.querySelector( '.buy' ).addEventListener( 'click', sia.buyPlane.bind( sia ) )
+// 301
+
+
+
+// partial application
+const addTax = ( rate, value ) => value + value * rate
+console.log( addTax( .1, 200 ) ) // 220
+
+const addGST = addTax.bind( null, .07 )
+console.log( addGST( 100 ) ) // 107
+
+const addTaxRate = ( rate ) => {
+	return ( value ) => {
+		return value + value * rate
+	}
+}
+
+const addGST2 = addTaxRate( .07 )
+console.log( addGST2( 100 ) ) // 107
+
+;```
+
+
+
+## Coding Callenge #1
+
+```js
+
+const poll = {
+	question: 'What is your fav coding lang?',
+	options: [ '0: JS', '1: Python', '2: C++', '3: Ruby' ],
+	answers: new Array( 4 ).fill( 0 ),
+	registerNewAnswer() {
+		const answer = Number(
+			prompt(
+				`${ this.question }\n${ this.options.join( '\n' ) }\n(Write no.)`
+			)
+		)
+		console.log( answer )
+		typeof answer === 'number' && answer < this.answers.length && this.answers[ answer ]++
+		console.log( this.answers )
+		this.displayResults()
+		this.displayResults( 'string' )
+	},
+	displayResults( type = 'array' ) {
+		if ( type === 'array' ) {
+			console.log( this.answers )
+		} else if ( type === 'string' ) {
+			console.log( `Poll results are ${ this.answers.join( ', ' ) }` )
+		}
+	}
+}
+
+poll.registerNewAnswer()
+// document.querySelector( '.poll' ).addEventListener( 'click', poll.registerNewAnswer.bind( poll ) )
+
+poll.displayResults.call( { answers: [ 5, 2, 3 ] } )
+
+;```
+
+
+
+## Immediately Invoked Function Expressions ( IIFE )
+
+```js
+
+// used to keep scope private
+(
+	() => console.log( 'this will never run again' )
+	const isPrivate = 23
+)()
+// this will never run again
+console.log( isPrivate ) // not defined
+
+
+// es6 has block scoped so iife not used that often anymore
+{
+	const isPrivate = 23
+	var notPrivate = 32
+}
+console.log( isPrivate ) // not defined
+console.log( notPrivate ) // 32
+
+;```
+
+
+
+## Closures
+
+```js
+
+const secureBooking = () => {
+	let passengerCount = 0
+
+	return () => {
+		passengerCount++
+		console.log( `${ passengerCount }` )
+	}
+}
+
+const booker = secureBooking()
+booker()
+// 1
+booker()
+// 2
+booker()
+// 3
+
+;```
+
+
+
+## More Closure Examples
+
+```js
+
+let f
+
+const g = () => {
+	const a = 23
+	f = () => {
+		console.log( a * 2 )
+	}
+}
+
+const h = () => {
+	const b = 777
+	f = () => {
+		console.log( b * 2 )
+	}
+}
+
+g()
+f()
+// 46
+// console.dir( f )s
+
+h()
+f()
+// 1554
+// console.dir( f )
+
+
+
+const boardPassengers = ( n, wait ) => {
+	const perGroup = n / 3
+	setTimeout( () => {
+		console.log( `we are now boarding all ${ n } passengers` )
+		console.log( `there are 3 groups, each with ${ perGroup } passengers` )
+	}, wait * 1000 )
+	console.log( `will start boarding in ${ wait } seconds` )
+}
+
+const perGroup = 1000 // closure has priority over this global var
+boardPassengers( 180, 3 )
+// will start boarding in 3 seconds
+// ...
+// we are now boarding all 180 passengers
+// there are 3 groups, each with 60 passengers
+
+;```
+
+
+
+## Coding Challenge #2
+
+```js
+
+(
+	() => {
+		const header = document.querySelector( 'h1' )
+		header.style.color = 'red'
+
+		document.querySelector( 'body' ).addEventListener( 'click', () => {
+			header.style.color = 'blue'
+		} )
+	}
+)
+
+;```
+
+
+
 ---
 
 
