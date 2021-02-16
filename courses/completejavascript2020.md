@@ -1117,6 +1117,13 @@ console.log( dogs.some( checkEatingOkay ) ) // true
 
 
 
+/*	7
+------------------- */
+console.log( dogs.filter( checkEatingOkay ) )
+// { weight: 32, curFood: 340, owners: [ 'Michael' ], recFood: 376 }
+
+
+
 ;```
 
 
