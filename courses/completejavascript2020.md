@@ -1124,6 +1124,22 @@ console.log( dogs.filter( checkEatingOkay ) )
 
 
 
+/*	8
+------------------- */
+const dogFoodAscending = dogs.slice().sort( ( a, b ) => a.recFood - b.recFood )
+console.log( dogFoodAscending )
+// { weight: 8, curFood: 200, owners: Array(1), recFood: 133 }
+// { weight: 13, curFood: 275, owners: Array(2), recFood: 191 }
+// { weight: 22, curFood: 250, owners: Array(2), recFood: 284 }
+// { weight: 32, curFood: 340, owners: Array(1), recFood: 376 }
+
+const dogFoodDescending = dogs.slice().sort( ( a, b ) => b.recFood - a.recFood )
+console.log( dogFoodDescending )
+// { weight: 32, curFood: 340, owners: Array(1), recFood: 376 }
+// { weight: 22, curFood: 250, owners: Array(2), recFood: 284 }
+// { weight: 13, curFood: 275, owners: Array(2), recFood: 191 }
+// { weight: 8, curFood: 200, owners: Array(1), recFood: 133 }
+
 ;```
 
 
