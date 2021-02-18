@@ -1509,6 +1509,28 @@ timer = startLogOutTimer()
 
 
 
+## Section Intro
+## Section Roadmap
+## An Overview of Modules in JavaScript
+## Exporting & Importing in ES6
+## The Module Pattern
+## CommonJS Modules
+## A Brief Introduction to the Command Line
+## Introduction to NPM
+## Bundling With Parcel & NPM Scripts
+## Configuring Babel & Polyfilling
+## Review: Writing Clean & Modern JavaScript
+
+**Readable Code**
+
+- write code so that *others* can understand it
+- write code so that *you* can understand it in 1 year
+- avoid too *clever* & overcomplicated solutions
+- use descriptive variable names: *what they contain*
+- use descriptive function names: *what they do*
+
+
+
 ---
 
 
