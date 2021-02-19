@@ -1531,6 +1531,15 @@ timer = startLogOutTimer()
 
 
 
+**General**
+
+- use *DRY* principle ( refactor your code )
+- don't pollute global namespace, encapsulate instead
+- don't use *var*
+- use *strong type checks* ( === & !== )
+
+
+
 ---
 
 
