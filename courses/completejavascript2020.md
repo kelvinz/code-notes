@@ -1540,6 +1540,16 @@ timer = startLogOutTimer()
 
 
 
+**Functions**
+
+- generally, functions should *do only one thing*
+- don't use more than *3 function parameters*
+- use *default parameters* whenever possible
+- generally, *return same data type* as received
+- use *arrow functions* when they make code more readable
+
+
+
 ---
 
 
