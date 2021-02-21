@@ -1550,6 +1550,15 @@ timer = startLogOutTimer()
 
 
 
+**Oop**
+
+- use *es6 classes*
+- *encapsulate data & don't mutate* it from outside the class
+- implement *method chaining*
+- *do not* use arrow functions as methods ( in regular objects )
+
+
+
 ---
 
 
