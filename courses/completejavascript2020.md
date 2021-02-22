@@ -1559,6 +1559,16 @@ timer = startLogOutTimer()
 
 
 
+**Avoid Nested Code**
+
+- use *early return* ( guard clauses )
+- use *ternary* ( conditional ) or *logical operators* instead of if
+- use *multiple if* instead of if / else-if
+- avoid for loops, use *array methods* instead
+- avoid *callback-based asynchronous API*
+
+
+
 ---
 
 
