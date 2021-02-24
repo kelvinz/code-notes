@@ -1925,6 +1925,14 @@ btnScrollTo.addEventListener( 'click', ( e ) => {
 
 
 
+**Asynchronous Code**
+
+- consume promises with *async/await* for best readability
+- whenever possible, run promises in *parallel* ( promise.all )
+- *handle errors* & promise rejections
+
+
+
 ---
 
 
