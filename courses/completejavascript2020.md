@@ -1701,6 +1701,26 @@ logBigExpenses( 1000 )
 
 
 
+## Declarative & Functional JavaScript Principles
+
+**imperative**
+
+- programmer explains *how* to do things
+- we explain to the computer *every single step* it has to follow to achieve a result
+- eg. step-by-step recipe of a cake
+
+```js
+
+const arr = [ 2, 4, 6, 8 ]
+const doubled = []
+for ( let i = 0; i < arr.length; i++ ) {
+	doubled[ i ] = arr[ i ] * 2
+}
+
+;```
+
+
+
 ---
 
 
