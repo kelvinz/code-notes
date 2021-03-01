@@ -1721,6 +1721,22 @@ for ( let i = 0; i < arr.length; i++ ) {
 
 
 
+**declarative**
+
+- programmer tells *what* to do
+- we simply *describe* the way the computer should achieve the result
+- the *how* gets abstracted away
+- eg. description of a cake
+
+```js
+
+const arr = [ 2, 4, 6, 8 ]
+const doubled = arr.map( n => n * 2 )
+
+;```
+
+
+
 ---
 
 
