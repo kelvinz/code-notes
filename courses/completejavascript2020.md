@@ -1737,6 +1737,24 @@ const doubled = arr.map( n => n * 2 )
 
 
 
+**functional programming**
+
+- *declarative* programming paradigm
+- based on the idea of writing software by combining many *pure functions*
+- avoiding *side effects* & *mutating* data
+
+- side effect => *modification/mutation* of any data outside of the function
+- like mutating external variables, logging to console, writing to DOM, etc
+
+- pure function => function without side effects
+- *does not depend on external variables*
+- given same inputs, always returns same outputs
+
+- immutability => *state/data is never modified*
+- instead state is *copied* & the copy is *mutated* & *returned*
+
+
+
 ---
 
 
