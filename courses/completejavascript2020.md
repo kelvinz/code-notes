@@ -1755,6 +1755,15 @@ const doubled = arr.map( n => n * 2 )
 
 
 
+**functional programming techniques**
+
+- try to avoid data mutations
+- use built-in methods that don't produce side effects
+- do data transformations with methods such as .map, .filter, .reduce
+- try to avoid side effects in functions: of course not always possible
+
+
+
 ---
 
 
