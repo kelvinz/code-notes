@@ -1764,6 +1764,15 @@ const doubled = arr.map( n => n * 2 )
 
 
 
+**declarative syntax**
+
+- use array & object destructuring
+- use the spread operator
+- use ternary/conditional operator
+- use template literals
+
+
+
 ---
 
 
