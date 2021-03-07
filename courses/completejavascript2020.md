@@ -1514,6 +1514,15 @@ document.addEventListener( 'keydown', ( e ) => {
 
 
 
+## How the DOM Really Works
+
+**event target**
+
+- .addEventListener()
+- .removeEventListener()
+
+
+
 ---
 
 
