@@ -1523,6 +1523,15 @@ document.addEventListener( 'keydown', ( e ) => {
 
 
 
+**Node**
+
+- .textContent
+- .childNodes
+- .parentNode
+- .cloneNode()
+
+
+
 ---
 
 
