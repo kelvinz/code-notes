@@ -1532,6 +1532,23 @@ document.addEventListener( 'keydown', ( e ) => {
 
 
 
+**element**
+
+- .innerHTML
+- .classList
+- .children
+- .parentElement
+- .append()
+- .remove()
+- .insertAdjacentHTML()
+- .querySelector()
+- .closest()
+- .matches()
+- .scrollIntoView()
+- .setAttribute()
+
+
+
 ---
 
 
