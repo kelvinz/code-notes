@@ -1549,6 +1549,14 @@ document.addEventListener( 'keydown', ( e ) => {
 
 
 
+**document**
+
+- .querySelector()
+- .createElement()
+- .getElementById()
+
+
+
 ---
 
 
