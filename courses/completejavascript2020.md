@@ -1557,6 +1557,25 @@ document.addEventListener( 'keydown', ( e ) => {
 
 
 
+## Selecting, Creating & Deleting Elements
+
+```js
+
+// selecting elements
+
+document.documentElement // whole document
+document.head
+document.body
+
+document.querySelector( '.header' )
+document.querySelectorAll( '.section' ) // nodelist, doesn't update if dom changes
+
+document.getElementById( 'section--1' )
+document.getElementsByTagName( 'button' ) // html collection, auto updates when dom changes
+document.getElementsByClassName( 'btn' ) // html collection, auto updates when dom changes
+
+
+
 ---
 
 
