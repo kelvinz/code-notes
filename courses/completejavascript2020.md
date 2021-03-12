@@ -1576,6 +1576,23 @@ document.getElementsByClassName( 'btn' ) // html collection, auto updates when d
 
 
 
+// creating & inserting elements
+
+// .insertAdjacentHTML -> refer to previous examples
+
+const message = document.createElement( 'div' )
+message.classList.add( 'cookie-message' )
+// message.textContent = `We use cookies for analytics.`
+message.innerHTML = `We use cookies for analytics. <button class="btn btn--close-cookie">Got it!</button>`
+const header = document.querySelector( '.header' )
+header.append( message )
+// header.prepend( message ) // once element added, same el can't be added to dom again
+// header.prepend( message.cloneNode( true ) ) // to duplicate of same element to add into dom
+// header.before( message )
+// header.after( message )
+
+
+
 ---
 
 
