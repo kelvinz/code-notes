@@ -1593,6 +1593,20 @@ header.append( message )
 
 
 
+// delete elements
+
+document.querySelector( '.btn--close-cookie' ).addEventListener( 'click', () => {
+	// message.parentElement.removeChild( message ) // old way
+	message.remove()
+
+	// document.querySelector( '.cookie-message' ).remove()
+	// can select it too but since we already have element in a const
+} )
+
+;```
+
+
+
 ---
 
 
