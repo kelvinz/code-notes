@@ -1607,6 +1607,25 @@ document.querySelector( '.btn--close-cookie' ).addEventListener( 'click', () => 
 
 
 
+## Styles, Attributes & Classes
+
+```js
+
+// styles
+
+myElement.style.backgroundColor = '#37383d'
+myElement.style.width = '120%'
+
+console.log( getComputedStyle( myElement ).color )
+
+myElementHeight = Number.parseFloat( getComputedStyle( myElement ).height, 10 )
+myElement.style.height = myElementHeight + 30 + 'px'
+
+// set :root var
+document.documentElement.style.setProperty( '--color-primary', 'orangered' )
+
+
+
 ---
 
 
