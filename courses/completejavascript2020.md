@@ -1626,6 +1626,20 @@ document.documentElement.style.setProperty( '--color-primary', 'orangered' )
 
 
 
+// attributes
+
+const logo = document.querySelector( '.nav__logo' )
+console.log( logo.src ) // can get & set
+console.log( logo.alt ) // can get & set
+console.log( logo.setAttribute( 'myCustomAttribute', 'hello' ) )
+console.log( logo.getAttribute( 'myCustomAttribute' ) )
+
+// data attributes
+// data-something-custom
+console.log( logo.dataset.somethingCustom )
+
+
+
 ---
 
 
