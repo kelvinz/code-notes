@@ -1640,6 +1640,17 @@ console.log( logo.dataset.somethingCustom )
 
 
 
+// classes
+
+logo.classList.add( 'test' )
+logo.classList.remove( 'test' )
+logo.classList.toggle( 'test' )
+logo.classList.contains( 'test' )
+
+;```
+
+
+
 ---
 
 
