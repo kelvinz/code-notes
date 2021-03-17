@@ -1651,6 +1651,40 @@ logo.classList.contains( 'test' )
 
 
 
+## Implementing Smooth Scrolling
+
+```js
+
+// button smooth scrolling
+
+const btnScrollTo = document.querySelector( '.btn--scroll-to' )
+const section1 = document.querySelector( '#section--1' )
+
+
+
+// old way
+
+btnScrollTo.addEventListener( 'click', ( e ) => {
+	console.log( e.target.getBoundingClientRect() )
+	console.log( 'scroll x/y', window.pageXOffset, window.pageYOffset )
+	console.log( 'h/w viewport', document.documentElement.clientHeight, document.documentElement.clientWidth )
+
+	const s1 = section1.getBoundingClientRect()
+	// window.scrollTo( s1.left + window.pageXOffset, s1.top + window.pageYOffset )
+	window.scrollTo( {
+		left: s1.left + window.pageXOffset,
+		top: s1.top + window.pageYOffset,
+		behavior: 'smooth',
+	} )
+} )
+
+
+
+
+;```
+
+
+
 ---
 
 
