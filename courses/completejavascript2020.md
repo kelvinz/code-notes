@@ -1680,6 +1680,18 @@ btnScrollTo.addEventListener( 'click', ( e ) => {
 
 
 
+// new way for modern browsers
+
+btnScrollTo.addEventListener( 'click', ( e ) => {
+	section1.scrollIntoView( {
+		behavior: 'smooth',
+	} )
+} )
+
+;```
+
+
+
 
 ;```
 
