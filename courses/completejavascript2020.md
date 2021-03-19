@@ -1692,6 +1692,27 @@ btnScrollTo.addEventListener( 'click', ( e ) => {
 
 
 
+## Types of Events & Event Handlers
+
+```js
+
+const h1 = document.querySelector( 'h1' )
+h1.addEventListener( 'mouseenter', ( e ) => alert( 'heyo' ) )
+
+// https://developer.mozilla.org/en-US/docs/Web/Events
+
+h1.onmouseenter = ( e ) => alert( 'also works, but old way' )
+// can't have multiple fns attached
+// can't remove unless overwrite
+
+const alertMe = () => alert( 'hihi' )
+h1.addEventListener( 'mouseenter', alertMe )
+h1.removeEventListener( 'mouseenter', alertMe )
+
+;```
+
+
+
 
 ;```
 
