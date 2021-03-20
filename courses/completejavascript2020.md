@@ -1713,6 +1713,38 @@ h1.removeEventListener( 'mouseenter', alertMe )
 
 
 
+## Event Propagation: Bubbling & Capturing
+## Event Propagation in Practice
+
+capturing moves down
+bubbling moves up
+
+```js
+
+const randomInt = ( min, max ) => Math.floor( Math.random() * ( max - min + 1 ) + min )
+const rgb = () => randomInt( 0, 255 )
+const randomColor = () => `rgb( ${ rgb() }, ${ rgb() }, ${ rgb() } }`
+
+document.querySelector( '.nav__link' ).addEventListener( 'click', function( e ) {
+	this.style.backgroundColor = randomColor()
+	console.log( e.target )
+	// e.stopPropagation() // stop bubbling
+} )
+
+document.querySelector( '.nav__links' ).addEventListener( 'click', function( e ) {
+	this.style.backgroundColor = randomColor()
+	console.log( e.target )
+} )
+
+document.querySelector( '.nav' ).addEventListener( 'click', function( e ) {
+	this.style.backgroundColor = randomColor()
+	console.log( e.target )
+}, true ) // run at capturing & not bubbling
+
+;```
+
+
+
 
 ;```
 
