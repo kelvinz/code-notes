@@ -1745,6 +1745,39 @@ document.querySelector( '.nav' ).addEventListener( 'click', function( e ) {
 
 
 
+## Event Delegation: Implementing Page Navigation
+
+```js
+
+// page navigation smooth scrolling
+
+// document.querySelectorAll( '.nav__link' ).forEach( el => {
+// 	el.addEventListener( 'click', function( e ) {
+// 		e.preventDefault()
+// 		const id = this.getAttribute( 'href' )
+// 		document.querySelector( id ).scrollIntoView( { behavior: 'smooth' } )
+// 	} )
+// } )
+
+// instead of attaching a function to each & every every element
+// add only 1 to the parent
+// more memory efficient
+
+// 1. add event listener to common parent
+document.querySelector( '.nav__links' ).addEventListener( 'click', function( e ) {
+	e.preventDefault()
+
+	// 2. determine what element originated the event
+	if ( e.target.classList.contains( 'nav__link' ) ) {
+		const id = this.getAttribute( 'href' )
+		document.querySelector( id ).scrollIntoView( { behavior: 'smooth' } )
+	}
+} )
+
+;```
+
+
+
 
 ;```
 
