@@ -1778,6 +1778,34 @@ document.querySelector( '.nav__links' ).addEventListener( 'click', function( e )
 
 
 
+## DOM Traversing
+
+```js
+
+const h1 = document.querySelector( 'h1' )
+
+// going downwards: child
+console.log( h1.querySelectorAll( '.highlight' ) ) // all the way, all
+console.log( h1.childNodes ) // direct child
+console.log( h1.children ) // direct child
+console.log( h1.firstElementChild ) // first child
+
+// going upwards: parents
+console.log( h1.parentNode ) // direct parent
+console.log( h1.parentElement ) // direct parent
+// all the way till finds 1
+// return self ( if matches ) or matching, else null
+console.log( h1.closest( '.header' ) )
+
+// going sideways: siblings
+console.log( h1.previousElementSibling ) // prev sibling
+console.log( h1.nextElementSibling ) // next sibling
+console.log( h1.parentElement.children ) // all siblings
+
+;```
+
+
+
 
 ;```
 
