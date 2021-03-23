@@ -1806,6 +1806,34 @@ console.log( h1.parentElement.children ) // all siblings
 
 
 
+## Building a Tabbed Component
+
+```js
+
+// tabbed component
+const tabsContainer = document.querySelector( '.operations__tab-container' )
+const tabs = document.querySelectorAll( '.operations__tab' )
+const tabsContent = document.querySelector( '.operations__tab-content' )
+
+tabsContainer.addEventListener( 'click', ( e ) => {
+	// span within tab could be the target depending on how accurately you click
+	// or the tab button could be the target depending on how accurately you click
+	// so we need a way to make sure we are getting the tab button only
+	const clicked = e.target.closest( '.operations__tab' )
+
+	if ( !clicked ) return
+	tabs.forEach( el => el.classList.remove( 'operations__tab--active' ) )
+	clicked.classList.add( 'operations__tab--active' )
+
+	tabsContent.forEach( el => el.classList.remove( 'operations__content--active' ) )
+	document.querySelector( `.operations__content--${ clicked.dataset.tab  }` )
+		.classList.add( 'operations__content--active' )
+} )
+
+;```
+
+
+
 
 ;```
 
