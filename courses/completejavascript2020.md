@@ -1834,6 +1834,33 @@ tabsContainer.addEventListener( 'click', ( e ) => {
 
 
 
+## Passing Arguments to Event Handlers
+
+```js
+
+// menu fade animation
+const nav = document.querySelector( '.nav' )
+
+const handleHover = ( e ) => {
+	if ( e.target.classList.contains( 'nav__link' ) ) {
+		const link = e.target
+		const siblings = link.closest( '.nav' ).querySelectorAll( '.nav__link' )
+		const logo = link.closest( '.nav' ).querySelector( 'img' )
+
+		siblings.forEach( el => if ( el !== link ) el.style.opacity = this )
+		logo.style.opacity = this
+	}
+}
+
+// nav.addEventListener( 'mouseover', ( e ) => handleHover( e, .5 ) )
+// nav.addEventListener( 'mouseout', ( e ) => handleHover( e, 1 ) )
+nav.addEventListener( 'mouseover', handleHover.bind( .5 ) ) // changing the this keyword
+nav.addEventListener( 'mouseout', handleHover.bind( 1 ) ) // changing the this keyword
+
+;```
+
+
+
 
 ;```
 
