@@ -1861,6 +1861,27 @@ nav.addEventListener( 'mouseout', handleHover.bind( 1 ) ) // changing the this k
 
 
 
+## Implementing a Sticky Navigation: The Scroll Event
+
+```css
+
+.sticky { position: fixed; }
+
+```
+
+```js
+
+const initialCoords = section1.getBoundingClientRect()
+
+// not performant
+window.addEventListener( 'scroll', () => {
+	if ( window.scrollY > initialCoords.top ) nav.classList.add( 'sticky' )
+} )
+
+;```
+
+
+
 
 ;```
 
