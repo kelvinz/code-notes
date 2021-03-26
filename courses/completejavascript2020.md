@@ -1882,6 +1882,25 @@ window.addEventListener( 'scroll', () => {
 
 
 
+## A Better Way: The Intersection Observer API
+
+```js
+
+// eg how it works
+
+const obsCallback = ( entries, observer ) => {
+	entries.forEach( entry => {
+
+	} )
+}
+
+const obsOptions = {
+	root: null, // = viewport
+	threshold: [ 0, .2 ],
+}
+
+const observer = new IntersectionObserver( obsCallback, obsOptions )
+observer.observe( section1 )
 
 ;```
 
