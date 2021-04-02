@@ -2019,6 +2019,96 @@ imgTargets.forEach( img => imgObserver.observe( img ) )
 
 
 
+## Building a Slider Component: Part 1
+## Building a Slider Component: Part 2
+
+```css
+
+.slider {
+	max-width: 100rem;
+	height: 50rem;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 50rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 1s;
+}
+
+.slide > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.slider__btn {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+
+	border: none;
+	background: rgba(255, 255, 255, 0.7);
+	font-family: inherit;
+	color: #333;
+	border-radius: 50%;
+	height: 5.5rem;
+	width: 5.5rem;
+	font-size: 3.25rem;
+	cursor: pointer;
+}
+
+.slider__btn--left {
+	left: 6%;
+	transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+	right: 6%;
+	transform: translate(50%, -50%);
+}
+
+.dots {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+.dots__dot {
+	border: none;
+	background-color: #b9b9b9;
+	opacity: 0.7;
+	height: 1rem;
+	width: 1rem;
+	border-radius: 50%;
+	margin-right: 1.75rem;
+	cursor: pointer;
+	transition: all 0.5s;
+
+	/* Only necessary when overlying images */
+	/* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+	margin: 0;
+}
+
+.dots__dot--active {
+	background-color: #888;
+	opacity: 1;
+}
+
+;```
+
 
 
 ---
