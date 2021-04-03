@@ -2109,6 +2109,82 @@ imgTargets.forEach( img => imgObserver.observe( img ) )
 
 ;```
 
+```js
+
+const slider = () => {
+	const slides = document.querySelectorAll( '.slide' )
+	const btnLeft = document.querySelector( '.slider__btn-left' )
+	const btnRight = document.querySelector( '.slider__btn-right' )
+	const dotContainer = document.querySelector( '.dots' )
+
+	let curSlide = 0
+	const maxSlide = slides.length - 1
+
+	const createDots = () => {
+		slides.forEach( ( _, i ) => {
+			dotContainer.insertAdjacentHTML( 'beforeend', `
+				<button class="dots__dot" data-slide="${ i }"></button>
+			` )
+		} )
+	}
+
+	const activateDot = ( slide ) => {
+		document.querySelectorAll( 'dots__dot' )
+			.forEach( dot => dot.classList.remove( 'dots__dot--active' ) )
+		document.querySelector( `.dots__dot[ data-slide="${ slide }" ]` )
+			.classList.add( 'dots__dot--active' )
+	}
+
+
+	const goToSlide = ( slide ) => {
+		slides.forEach( ( s, i ) => {
+			s.style.transform = `translateX( ${ 100 * ( i - slide ) }% )` 
+		} )
+	}
+
+	const nextSlide = () => {
+		curSlide === maxSlide ?	curSlide = 0 : curSlide++
+		goToSlide( curSlide )
+		activeDot( curSlide )
+	}
+
+	const prevSlide = () = {
+		curSlide === 0 ? curSlide = maxSlide : curSlide--
+		goToSlide( curSlide )
+		activeDot( curSlide )
+	}
+
+	const init = () => {
+		createDots()
+		activateDot( 0 )
+		goToSlide( 0 )
+	}
+
+	init()
+
+	btnRight.addEventListener( 'click', nextSlide )
+	btnRight.addEventListener( 'click', prevSlide )
+
+	document.addEventListener( 'keydown', ( e ) => {
+		if ( e.key === 'ArrowLeft' ) prevSlide()
+		if ( e.key === 'ArrowRight' ) nextSlide()
+	} )
+
+	dotContainer.addEventListener( 'click', ( e ) => {
+		if ( e.target.classList.contains( 'dots__dot' ) ) {
+			const { slide } = e.target.dataset
+			goToSlide( slide )
+			activeDot( slide )
+		}
+	} )
+}
+
+slider()
+
+;```
+
+
+
 
 
 ---
