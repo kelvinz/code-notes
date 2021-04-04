@@ -2185,6 +2185,29 @@ slider()
 
 
 
+## Lifecycle DOM Events
+
+```js
+
+document.addEventListener( 'DOMContentLoaded', e => {
+	console.log( 'HTML parsed & DOM tree built!' )
+} )
+
+window.addEventListener( 'load', e => {
+	console.log( 'Page fully loaded!' )
+} )
+
+// before user leaves page
+window.addeventListener( 'beforeunload', e => {
+	e.preventDefault()
+	console.log( e )
+	e.returnValue = ''
+} )
+
+;```
+
+
+
 
 
 ---
