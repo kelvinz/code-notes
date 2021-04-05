@@ -2208,6 +2208,28 @@ window.addeventListener( 'beforeunload', e => {
 
 
 
+## Efficient Script Loading: Defer & Async
+
+// <script defer src="xxx">
+
+**regular**
+
+- on head
+	parse html
+	fetch script
+	execute
+	finish parsing html
+	DOMContentLoaded
+
+- body end
+	parsing html
+	fetch script
+	execute
+	finish parsing html
+	DOMContentLoaded
+
+
+
 
 
 ---
