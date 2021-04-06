@@ -2230,6 +2230,18 @@ window.addeventListener( 'beforeunload', e => {
 
 
 
+**async**
+*good for 3rd party scripts that you don't need to wait for like analytics*
+
+- on head
+	parsing html + fetch script
+	waiting
+	execute ( not in order, depends on which script loads faster )
+	finish parsing html
+	DOMContentLoaded ( can happen before fetch finish )
+
+
+
 
 
 ---
