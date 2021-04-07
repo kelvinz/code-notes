@@ -2242,6 +2242,16 @@ window.addeventListener( 'beforeunload', e => {
 
 
 
+**defer**
+*overall best solution for loading scripts*
+
+- on head
+	parsing html + fetch script
+	finish parsing html
+	waiting
+	execute ( script is executed in order as listed )
+	DOMContentLoaded ( only after fetch completes )
+
 
 
 ---
