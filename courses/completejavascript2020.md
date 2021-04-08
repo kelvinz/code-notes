@@ -2278,6 +2278,17 @@ window.addeventListener( 'beforeunload', e => {
 
 
 
+## Section Intro
+## Section Roadmap
+## Asynchronous JavaScript, AJAX & APIs
+
+**synchronous code**
+
+- most code is synchronous
+- synchronous code is executed line by line
+- each line of code waits for previous line to finish
+- long-running operations block code execution
+
 ---
 
 
