@@ -2289,6 +2289,13 @@ window.addeventListener( 'beforeunload', e => {
 - each line of code waits for previous line to finish
 - long-running operations block code execution
 
+**asynchronous code**
+
+- asynchronous code is executed after a task that runs in the background finishes
+- asynchronous code is non-blocking
+- execution doesn't wait for an asynchronous task to finish its work
+- callback functions alone do *not* make code asynchronous
+
 ---
 
 
