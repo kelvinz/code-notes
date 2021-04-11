@@ -2296,6 +2296,14 @@ window.addeventListener( 'beforeunload', e => {
 - execution doesn't wait for an asynchronous task to finish its work
 - callback functions alone do *not* make code asynchronous
 
+**API**
+
+- Application Programming Interface
+- piece of sofware that can be used by another piece of software
+- allow applications to talk to each other
+
+
+
 ---
 
 
