@@ -2341,6 +2341,29 @@ getCountryData( 'portugal' )
 
 
 
+## How the Web Works: Requests & Responses
+
+1.	when api is called dns lookup happens first
+	translate domain name to ip address
+
+2.	tcp/ip socket connection to web server opens
+	breaks data into packets to send over
+	remains open till done
+
+3.	http request
+	get, post, rest/v2/name/xxx
+	headers
+	body
+
+4.	http response
+	response code
+	headers
+	body
+
+5.	file arrives to browser
+
+
+
 ---
 
 
