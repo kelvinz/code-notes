@@ -2304,6 +2304,43 @@ window.addeventListener( 'beforeunload', e => {
 
 
 
+## Our First AJAX Call: XMLHttpRequest
+
+```js
+
+const btn = document.querySelector( '.btn-country' )
+const countriesContainer = document.querySelector( '.countries' )
+
+// old way
+const getCountryData = ( country ) => {
+	const request = new XMLHttpRequest()
+	request.open( 'GET', `https://restcountries.eu/rest/v2/name/${ country }` )
+	request.send()
+	request.addEventListener( 'load', function() {
+		// destructure resulting array's [ 0 ] into data
+		const [ data ] = JSON.parse( this.responseText )
+
+		console.log( data.flag )
+		console.log( data.name )
+		console.log( data.region )
+		console.log( ( +data.population / 1000000 ).toFixed( 1 ) )
+		console.log( data.languages[ 0 ].name )
+		console.log( data.currencies[ 0 ].name )
+	} )
+}
+
+getCountryData( 'portugal' )
+// https://restcountries.eu/data/prt.svg
+// Portugal
+// Europe
+// 10.4
+// Portuguese
+// Euro
+
+;```
+
+
+
 ---
 
 
