@@ -2364,6 +2364,22 @@ getCountryData( 'portugal' )
 
 
 
+## Welcome to Callback Hell
+## Promises & the Fetch API
+
+```js
+
+const request = fetch( 'https://restcountries.eu/rest/v2/name/portugal' )
+console.log( request ) // pending promise
+// a placeholder for a future value
+
+// 1. pending
+// 2. settled - fulfilled or rejected
+
+;```
+
+
+
 ---
 
 
