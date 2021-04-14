@@ -2380,6 +2380,22 @@ console.log( request ) // pending promise
 
 
 
+## Consuming Promises
+
+```js
+
+const getCountryData = ( country ) => {
+	fetch( `https://restcountries.eu/rest/v2/name/${ country }` )
+	.then( res => res.json() )
+	.then( data => console.log( data ) )
+}
+
+getCountryData( 'portugal' )
+
+;```
+
+
+
 ---
 
 
