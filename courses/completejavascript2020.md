@@ -2420,6 +2420,28 @@ getCountryData( 'portugal' )
 
 
 
+## Handling Rejected Promises
+
+```js
+
+const getCountryData = ( country ) => {
+	fetch( `https://restcountries.eu/rest/v2/name/${ country }` )
+	.then( res => res.json(), err => console.log( err ) ) // catch err in each request
+	.then( data => {
+		console.log( data )
+
+		const neighbor = data[ 0 ].borders[ 0 ]
+		if ( !neighbor ) return
+		return fetch( `https://restcountries.eu/rest/v2/name/${ neighbor }` )
+	} )
+	.then( res => res.json(), err => console.log( err ) ) // catch err in each request
+	.then( data => console.log( data ) )
+}
+
+getCountryData( 'portugal' )
+
+;```
+
 ---
 
 
