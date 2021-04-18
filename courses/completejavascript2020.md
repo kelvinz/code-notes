@@ -2442,6 +2442,27 @@ getCountryData( 'portugal' )
 
 ;```
 
+```js
+
+const getCountryData = ( country ) => {
+	fetch( `https://restcountries.eu/rest/v2/name/${ country }` )
+	.then( res => res.json() )
+	.then( data => {
+		console.log( data )
+
+		const neighbor = data[ 0 ].borders[ 0 ]
+		if ( !neighbor ) return
+		return fetch( `https://restcountries.eu/rest/v2/name/${ neighbor }` )
+	} )
+	.then( res => res.json() )
+	.then( data => console.log( data ) )
+	.catch( err => console.log( err ) ) // catch any err in whole chain
+}
+
+getCountryData( 'portugal' )
+
+;```
+
 ---
 
 
