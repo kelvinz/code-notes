@@ -2463,6 +2463,32 @@ getCountryData( 'portugal' )
 
 ;```
 
+```js
+
+const getCountryData = ( country ) => {
+	fetch( `https://restcountries.eu/rest/v2/name/${ country }` )
+	.then( res => res.json() )
+	.then( data => {
+		console.log( data )
+
+		const neighbor = data[ 0 ].borders[ 0 ]
+		if ( !neighbor ) return
+		return fetch( `https://restcountries.eu/rest/v2/name/${ neighbor }` )
+	} )
+	.then( res => res.json() )
+	.then( data => console.log( data ) )
+	.catch( err => console.log( err ) )
+	.finally( () => {
+		console.log( '"Finally" always happens at end of promise chain, no matter if success or error' )
+	} )
+}
+
+getCountryData( 'portugal' )
+
+;```
+
+
+
 ---
 
 
