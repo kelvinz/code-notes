@@ -2489,6 +2489,39 @@ getCountryData( 'portugal' )
 
 
 
+## Throwing Errors Manually
+
+```js
+
+const getCountryData = ( country ) => {
+	fetch( `https://restcountries.eu/rest/v2/name/${ country }` )
+	.then( res => {
+		if ( !res.ok ) {
+			throw new Error( `Country not found ( ${ res.status } )` )
+		}
+		return res.json()
+	} )
+	.then( data => {
+		console.log( data )
+
+		const neighbor = data[ 0 ].borders[ 0 ]
+		if ( !neighbor ) return
+		return fetch( `https://restcountries.eu/rest/v2/name/${ neighbor }` )
+	} )
+	.then( res => {
+		if ( !res.ok ) {
+			throw new Error( `Country not found ( ${ res.status } )` )
+		}
+		return res.json()
+	} )
+	.then( data => console.log( data ) )
+	.catch( err => console.log( err ) )
+}
+
+getCountryData( 'kelvin' )
+
+;```
+
 ---
 
 
