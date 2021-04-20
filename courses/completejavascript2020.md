@@ -2522,6 +2522,35 @@ getCountryData( 'kelvin' )
 
 ;```
 
+```js
+
+const getJSON = ( url, errMsg = 'Something went wrong.' ) => {
+	return fetch( url )
+	.then( res => {
+		if ( !res.ok ) throw new Error( `${ errMsg } ( ${ res.status } )` )
+		return res.json()
+	} )
+}
+
+const getCountryData = ( country ) => {
+	getJSON( `https://restcountries.eu/rest/v2/name/${ country }`, `Country not found.` )
+	.then( data => {
+		console.log( data )
+
+		const neighbor = data[ 0 ].borders[ 0 ]
+		if ( !neighbor ) throw new Error( 'No neighbor found.' )
+		return getJSON( `https://restcountries.eu/rest/v2/name/${ neighbor }`, `Country not found.` )
+	} )
+	.then( data => console.log( data ) )
+	.catch( err => console.log( err ) )
+}
+
+getCountryData( 'kelvin' )
+
+;```
+
+
+
 ---
 
 
