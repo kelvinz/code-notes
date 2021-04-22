@@ -2551,6 +2551,37 @@ getCountryData( 'kelvin' )
 
 
 
+## Coding Challenge #1
+
+```js
+
+const whereAmI = ( lat, lng ) => {
+	fetch( `https://geocode.xyz/${ lat },${ lng }?geoit-json` )
+	.then( res => {
+		if ( !res.ok ) throw new Error( `Problem with geocoding ${ res.status }` )
+		res.json()
+	} )
+	.then( data => {
+		console.log( `You are in ${ data.city }, ${ data.country }` )
+
+		return fetch( `https://restcountries.eu/rest/v2/name/${ data.country }` )
+	} )
+	.then( res => {
+		if ( !res.ok ) throw new Error( `Country not found ( ${ res.status } )` )
+
+		return res.json()
+	} )
+	.then( data => console.log( data ) )
+	.catch( err => console.log( err.message ) )
+}
+
+whereAmI( 52.508, 13.381 )
+
+;```
+
+
+
+## Asynchronous Behind the Scenes: The Event Loop
 ---
 
 
