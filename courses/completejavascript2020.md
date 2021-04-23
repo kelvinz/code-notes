@@ -2582,6 +2582,25 @@ whereAmI( 52.508, 13.381 )
 
 
 ## Asynchronous Behind the Scenes: The Event Loop
+## The Event Loop in Practice
+
+```js
+
+console.log( 'test start' ) // added straight to execution stack
+setTimeout( () => console.log( '0 sec timer' ), 0 ) // callback queue
+Promise.resolve( 'resolved promise 1' )
+.then( res => console.log( res ) ) // micro task ( promises ) has priority over callback queue
+console.log( 'test end' ) // added straight to execution stack
+
+// test start
+// test end
+// resolved promise 1
+// 0 sec timer
+
+;```
+
+
+
 ---
 
 
