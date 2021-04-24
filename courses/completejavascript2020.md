@@ -2601,6 +2601,27 @@ console.log( 'test end' ) // added straight to execution stack
 
 
 
+## Building a Simple Promise
+
+```js
+
+const lottoPromise = new Promise( ( resolve, reject ) => {
+	console.log( `lotto start` )
+	setTimeout( () => {
+		if ( Math.random() >= .5 ) resolve( `you win` )
+		else reject( new Error( `you lost` ) )
+	}, 1000 )
+} )
+
+lottoPromise
+.then( res => console.log( res ) )
+.catch( err => console.log( err ) )
+
+// lottoPromise stores result, aka promise runs only once
+// return new promise to be able to run it again everytime
+
+;```
+
 ---
 
 
