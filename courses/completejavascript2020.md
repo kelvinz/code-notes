@@ -2622,6 +2622,25 @@ lottoPromise
 
 ;```
 
+```js
+
+const wait = ( seconds ) => {
+	return new Promise( resolve => {
+		setTimeout( resolve, seconds * 1000 )
+	} )
+}
+
+wait( 2 )
+.then( () => {
+	console.log( `heyo` )
+	return wait( 1 )
+} )
+.then( () => console.log( `hi` ) )
+
+;```
+
+
+
 ---
 
 
