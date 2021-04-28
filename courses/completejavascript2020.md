@@ -2691,6 +2691,50 @@ const whereAmI = () => {
 
 
 
+## Coding Challenge #2
+
+```js
+
+const imgContainer = document.querySelector( '.images' )
+
+const createImg = ( imgPath ) => {
+	return new Promise( ( resolve, reject ) => {
+		const img = document.createElement( 'img' )
+		img.src = imgPath
+		img.addEventListener( 'load', () => {
+			imgContainer.append( img )
+			resolve( img )
+		} )
+		img.addEventListener( 'error', () => {
+			reject( new Error( 'Image not found' ) )
+		} )
+	} )
+}
+
+createImg( `img/img-1.jpg` )
+.then( img => {
+	currentImg = img
+	console.log( 'image 1 loaded' )
+	return wait( 2 )
+} )
+.then( () => {
+	currentImg.style.display = 'none'
+	return createImg( `img/img-2.jpg` )
+} )
+.then( () => {
+	currentImg = img
+	console.log( 'image 2 loaded' )
+	return wait( 2 )
+} )
+.then( () => {
+	currentImg.style.display = 'none'
+} )
+.catch( err => console.log( err ) )
+
+;```
+
+
+
 ---
 
 
