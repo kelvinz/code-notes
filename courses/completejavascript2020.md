@@ -2735,6 +2735,26 @@ createImg( `img/img-1.jpg` )
 
 
 
+## Consuming Promises with Async/Await
+
+```js
+
+const whereAmI = async () => {
+	const pos = await getPosition()
+	const { latitude: lat, longitude: lng } = pos.coords
+	const resGeo = await fetch( `https://geocode.xyz/${ lat },${ lng }?geoit=json` )
+	const dataGeo = await resGeo.json()
+	const res = await fetch( `https://restcountries.eu/rest/v2/name/${ dataGeo.country }` )
+	const data = await res.json()
+	console.log( data )
+}
+
+whereAmI()
+
+;```
+
+
+
 ---
 
 
