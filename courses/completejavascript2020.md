@@ -2781,6 +2781,33 @@ whereAmI()
 
 
 
+## Returning Values from Async Functions
+
+```js
+
+const whereAmI = async () => {
+	try {
+		const pos = await getPosition()
+		const { latitude: lat, longitude: lng } = pos.coords
+		const resGeo = await fetch( `https://geocode.xyz/${ lat },${ lng }?geoit=json` )
+		if ( !resGeo.ok ) throw new Error( `no location data` )
+		const dataGeo = await resGeo.json()
+		const res = await fetch( `https://restcountries.eu/rest/v2/name/${ dataGeo.country }` )
+		if ( !res.ok ) throw new Error( `problem getting country` )
+		const data = await res.json()
+		return data
+	} catch ( err ) {
+		throw err
+	}
+}
+
+whereAmI()
+.then( res => console.log( res ) )
+.catch( err => console.log( err ) )
+.finally( () => console.log( `end` ) )
+
+;```
+
 ---
 
 
