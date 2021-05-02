@@ -2808,6 +2808,22 @@ whereAmI()
 
 ;```
 
+```js
+
+( async () => {
+	try {
+		const data = await whereAmI()
+		console.log( data )
+	} catch ( err ) {
+		console.log( err )
+	}
+	console.log( `end` )
+} )()
+
+;```
+
+
+
 ---
 
 
