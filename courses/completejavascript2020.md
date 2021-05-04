@@ -2851,6 +2851,35 @@ get3Countries( 'portugal', 'singapore', 'canada' )
 
 ;```
 
+```js
+
+const getJSON = ( url, errMsg = 'Something went wrong.' ) => {
+	return fetch( url )
+	.then( res => {
+		if ( !res.ok ) throw new Error( `${ errMsg } ( ${ res.status } )` )
+		return res.json()
+	} )
+}
+
+const get3Countries = async ( c1, c2, c3 ) => {
+	try {
+		const data = await Promise.all( [
+			getJSON( `https://restcountries.eu/rest/v2/name/${ c1 }` ),
+			getJSON( `https://restcountries.eu/rest/v2/name/${ c2 }` ),
+			getJSON( `https://restcountries.eu/rest/v2/name/${ c3 }` )
+		] )
+		console.log( data.map( d => d[ 0 ].capital ) )
+	} catch ( err ) {
+		console.log( err )
+	}
+}
+
+get3Countries( 'portugal', 'singapore', 'canada' )
+
+;```
+
+
+
 ---
 
 
