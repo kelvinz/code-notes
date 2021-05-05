@@ -2880,6 +2880,31 @@ get3Countries( 'portugal', 'singapore', 'canada' )
 
 
 
+## Other Promise Combinators: race, allSettled & any
+
+```js
+
+const getJSON = ( url, errMsg = 'Something went wrong.' ) => {
+	return fetch( url )
+	.then( res => {
+		if ( !res.ok ) throw new Error( `${ errMsg } ( ${ res.status } )` )
+		return res.json()
+	} )
+}
+
+( async () => {
+	const res = await Promise.race( [
+		getJSON( `https://restcountries.eu/rest/v2/name/${ 'portugal' }` ),
+		getJSON( `https://restcountries.eu/rest/v2/name/${ 'singapore' }` ),
+		getJSON( `https://restcountries.eu/rest/v2/name/${ 'canada' }` )
+	] )
+	console.log( res[ 0 ] )
+	// only show the first finishing promise
+	// also will show err if err finishes first before any promise did
+} )()
+
+
+
 ---
 
 
