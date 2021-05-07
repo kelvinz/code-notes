@@ -2922,6 +2922,17 @@ Promise.race( [
 
 ;```
 
+**Promise.allSettled**
+- takes in array of promise
+- returns all in array no matter if reject or resolve
+
+**Promise.any**
+- takes in array of promise
+- return the first successful promise
+- ignores rejects
+
+
+
 ---
 
 
