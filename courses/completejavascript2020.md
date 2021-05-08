@@ -2933,6 +2933,29 @@ Promise.race( [
 
 
 
+## Coding Challenge #3
+
+```js
+
+const loadNPause = async () => {
+	try {
+		let img = await createImage( 'img/img-1.jpg' )
+		console.log( `image 1 loaded` )
+		await wait( 2 )
+		img.style.display = `none`
+		img = await createImage( 'img/img-2.jpg' )
+		console.log( `image 2 loaded` )
+		await wait( 2 )
+		img.style.display = `none`
+	} catch { // possible to catch without the ( err ) in es6
+		console.log( err )
+	}
+}
+
+loadNPause()
+
+;```
+
 ---
 
 
