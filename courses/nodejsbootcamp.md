@@ -30,6 +30,22 @@ node
 
 
 
+## Using Modules 1 Core Modules
+
+```js
+
+// run script
+node index.js
+
+// import modules into your index.js
+const fs = require( 'fs' )
+
+// https://nodejs.org/docs
+
+;```
+
+
+
 
 
 
