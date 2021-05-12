@@ -46,6 +46,24 @@ const fs = require( 'fs' )
 
 
 
+## Reading & Writing Files
+
+```js
+
+const fs = require( 'fs' )
+
+// read
+const textIn = fs.readFileSync( './txt/input.txt', 'utf-8' )
+console.log( textIn )
+
+// write
+const textOut = `This is what we know: ${ textIn }.\n Created on ${ Date.now() }.`
+fs.writeFileSync( './txt/output.txt', textOut )
+
+;```
+
+
+
 
 
 
