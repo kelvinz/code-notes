@@ -64,6 +64,24 @@ fs.writeFileSync( './txt/output.txt', textOut )
 
 
 
+## Blocking & Non-Blocking Asynchronous Nature of Node.js
+
+```js
+
+const fs = require( 'fs' )
+
+// blocking code
+const input = fs.readFileSync( 'input.txt', 'utf-8' )
+console.log( input )
+
+// non-blocking code
+const readFile( 'input.txt', ( err, data ) => console.log( data ) )
+console.log( 'reading file...' )
+
+;```
+
+
+
 
 
 
