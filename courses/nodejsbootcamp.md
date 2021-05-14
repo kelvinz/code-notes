@@ -82,6 +82,32 @@ console.log( 'reading file...' )
 
 
 
+## Reading & Writing Files Asynchronously
+
+```js
+
+const fs = require( 'fs' )
+
+fs.readFile( './txt/start.txt', 'utf-8', ( err, data1 ) => {
+	if ( err ) return console.log( '💥' )
+	fs.readFile( `./txt/${ data1 }.txt`, 'utf-8', ( err, data2 ) => {
+		if ( err ) return console.log( '💥' )
+		console.log( data2 )
+		fs.readFile( `./txt/append.txt`, 'utf-8', ( err, data3 ) => {
+			if ( err ) return console.log( '💥' )
+			console.log( data3 )
+			fs.writeFile( './txt/final.txt', `${ data2 }\n${ data3 }`, 'utf-8', err => {
+				if ( err ) return console.log( '💥' )
+				console.log( 'file written' )
+			} )
+		} )
+	} )
+} )
+
+;```
+
+
+
 
 
 
