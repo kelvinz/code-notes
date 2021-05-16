@@ -127,6 +127,34 @@ server.listen( 8000, '127.0.0.1', () => {
 
 
 
+## Routing
+
+```js
+
+const http =  require( 'http' )
+const url = require( 'url' )
+
+const server = http.createServer( ( req, res ) => {
+	const pathName = req.url
+
+	if ( pathName === '/' || pathName === '/overview' ) {
+		res.end( 'overview' )
+	} else if ( pathName === '/product' ) {
+		res.end( 'product' )
+	} else {
+		res.writeHead( 404, { 'Content-type': 'text/html' } )
+		res.end( '<h1>page not found</h1>' )
+	}
+} )
+
+server.listen( 8000, '127.0.0.1', () => {
+	console.log( 'server started listening on port 8000' )
+} )
+
+;```
+
+
+
 
 
 
