@@ -49,3 +49,13 @@ person.hobbies?.[ 0 ]
 person.hobbies?.[ 0 ].toLowerCase()
 
 ;```
+
+```js
+
+// better way of looping objects
+for ( const [ key, value ] of Object.entries( myObj ) ) {
+
+}
+
+;```
+
