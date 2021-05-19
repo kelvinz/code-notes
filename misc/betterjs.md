@@ -59,3 +59,18 @@ for ( const [ key, value ] of Object.entries( myObj ) ) {
 
 ;```
 
+```js
+
+const memoize = fn => ( ( cache = {} ) => arg => cache[ arg ] || ( cache[ arg ] = fn( arg ) ) )()
+
+// count fibonacci
+const fibo = memoize( n => n <= 2 ? 1 : fibo( n - 1 ) + fibo( n - 2 ) )
+
+fib( 1 ) // 1
+fib( 2 ) // 1
+fib( 3 ) // 2
+fib( 4 ) // 3
+fib( 5 ) // 5
+fib( 6 ) // 8
+
+;```
