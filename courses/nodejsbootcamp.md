@@ -259,6 +259,37 @@ server.listen( 8000, '127.0.0.1', () => {
 
 
 
+## Parsing Variables from URLs
+
+```js
+
+const http =  require( 'http' )
+const url = require( 'url' )
+const fs =  require( 'fs' )
+
+const tempOverview = fs.readFileSync( `${ __dirname }/templates/template-overview.html`, 'utf-8' )
+const tempCard = fs.readFileSync( `${ __dirname }/templates/template-card.html`, 'utf-8' )
+const tempProduct = fs.readFileSync( `${ __dirname }/templates/template-product.html`, 'utf-8' )
+
+const data = fs.readFileSync( `${ __dirname }/dev-data/data.json`, 'utf-8' )
+const dataObj = JSON.parse( data )
+
+
+const replacementTemplate = ( temp, product ) => {
+	let outout = temp.replace( /{%PRODUCTNAME%}/g, product.productName )
+	outout = output.replace( /{%IMAGE%}/g, product.image )
+	outout = output.replace( /{%PRICE%}/g, product.price )
+	outout = output.replace( /{%FROM%}/g, product.from )
+	outout = output.replace( /{%NUTRIENTS%}/g, product.nutrients )
+	outout = output.replace( /{%QUANTITY%}/g, product.quantity )
+	outout = output.replace( /{%DESCRIPTION%}/g, product.description )
+	outout = output.replace( /{%ID%}/g, product.id )
+	if ( !product.organic ) output = output.replace( /{%NOT_ORGANIC%}/g, 'not-organic' )
+	return output
+}
+
+
+;```
 
 
 
