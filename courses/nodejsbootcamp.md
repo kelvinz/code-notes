@@ -288,6 +288,43 @@ const replacementTemplate = ( temp, product ) => {
 	return output
 }
 
+const server = http.createServer( ( req, res ) => {
+	const { query, pathname } = url.parse( req.url, true )
+
+	// overview page
+	if ( pathname === '/' || pathname === '/overview' ) {
+		const cardsHtml = dataObj.map( el => replaceTemplate( tempCard, el ) ).join( '' )
+		const output = tempOverview.replace( '{%PRODUCT_CARDS%}', cardsHtml )
+		
+		res.writeHead( 200, { 'Content-Type': 'text/html' } )
+		res.end( output )
+
+	// product page
+	} else if ( pathname === '/product' ) {
+		const product = dataObj[ query.id ]
+		const output = replaceTemplate( tempProduct, product )
+
+		res.writeHead( 200, { 'Content-Type': 'text/html' } )
+		res.end( output )
+
+	// api
+	} else if ( pathname === '/api' ) {
+		res.writeHead( 200, { 'Content-Type': 'application/json' } )
+		res.end( data )
+	} else {
+		res.writeHead( 404, { 'Content-type': 'text/html' } )
+		res.end( '<h1>page not found</h1>' )
+	}
+} )
+
+server.listen( 8000, '127.0.0.1', () => {
+	console.log( 'listening on port 8000' )
+} )
+
+;```
+
+
+
 
 ;```
 
