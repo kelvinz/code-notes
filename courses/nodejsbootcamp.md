@@ -325,6 +325,33 @@ server.listen( 8000, '127.0.0.1', () => {
 
 
 
+## Using Modules 2 Our Own Modules
+
+```js
+
+// replaceTemplate.js
+module.exports = ( temp, product ) => {
+	let outout = temp.replace( /{%PRODUCTNAME%}/g, product.productName )
+	outout = output.replace( /{%IMAGE%}/g, product.image )
+	outout = output.replace( /{%PRICE%}/g, product.price )
+	outout = output.replace( /{%FROM%}/g, product.from )
+	outout = output.replace( /{%NUTRIENTS%}/g, product.nutrients )
+	outout = output.replace( /{%QUANTITY%}/g, product.quantity )
+	outout = output.replace( /{%DESCRIPTION%}/g, product.description )
+	outout = output.replace( /{%ID%}/g, product.id )
+	if ( !product.organic ) output = output.replace( /{%NOT_ORGANIC%}/g, 'not-organic' )
+	return output
+}
+
+// index.js
+// dont have to use __dirname for require
+// ./ will do
+const replaceTemplate = require( './modules/replaceTemplate' )
+
+;```
+
+
+
 
 ;```
 
