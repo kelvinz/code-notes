@@ -352,6 +352,27 @@ const replaceTemplate = require( './modules/replaceTemplate' )
 
 
 
+## Introduction to NPM & the package.json File
+## Types of Packages & Installs
+
+<!-- tab to autocomplete in terminal -->
+
+<!-- shorthand for install is i -->
+npm i slugify
+
+<!-- shorthand for save-dev is -D -->
+npm i nodemon -D
+
+```js
+
+"scripts": {
+	"start": "nodemon index.js"
+}
+
+;```
+
+
+
 
 ;```
 
