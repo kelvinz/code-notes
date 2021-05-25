@@ -373,6 +373,17 @@ npm i nodemon -D
 
 
 
+## Using Modules 3 3rd Party Modules
+
+```js
+
+const slugify = require( 'slugify' )
+const slugs = dataObj.map( el => slugify( el.productName ), { lowercase: true } )
+
+;```
+
+
+
 
 ;```
 
