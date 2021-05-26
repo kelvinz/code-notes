@@ -384,6 +384,18 @@ const slugs = dataObj.map( el => slugify( el.productName ), { lowercase: true } 
 
 
 
+## Package Versioning & Updating
+
+**semantic version notation**
+* allow all version
+^ allow all minor updates
+~ allow only patch updates
+1 - major ( breaking change )
+0 - minor ( no breaking change )
+0 - patch ( fixes )
+
+
+
 
 ;```
 
