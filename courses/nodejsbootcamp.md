@@ -396,6 +396,23 @@ const slugs = dataObj.map( el => slugify( el.productName ), { lowercase: true } 
 
 
 
+**updating packages**
+npm i slugify@1.0.0
+npm outdated
+npm update slugify
+npm uninstall slugify
+
+
+
+## Setting up Prettier in VS Code
+## Recap & What's Next
+
+
+
+---
+
+
+
 
 ;```
 
