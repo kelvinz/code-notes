@@ -413,6 +413,31 @@ npm uninstall slugify
 
 
 
+# 03 - Introduction to Back-End Web Development
+
+
+
+## Section Intro
+## An Overview of How the Web Works
+
+client -request-> server
+client <-response- server
+
+protocol - http/https
+domain name - google.com
+resource - /maps
+ip address - 216.58.211.206
+port number - :443 ( default for https ) :80 ( default for http )
+https - uses tls or ssl to encrypt packets sent/recieved
+
+1. dns lookup converts domain name to ip address
+2. tcp/ip socket connection ( opens/alive till all packets transferred )
+3. http request ( get/post )
+4. https response ( with status code like 404, 200 )
+5. html/css/js renders
+
+
+
 
 ;```
 
