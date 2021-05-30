@@ -438,6 +438,17 @@ https - uses tls or ssl to encrypt packets sent/recieved
 
 
 
+## HTTP in Action
+## Front-End vs Back-End Web Development
+
+**front-end**
+
+- on browser
+- html/css/js
+- frameworks/libraries - vue/react/angular
+
+
+
 
 ;```
 
