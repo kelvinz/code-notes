@@ -449,6 +449,14 @@ https - uses tls or ssl to encrypt packets sent/recieved
 
 
 
+**back-end**
+
+- on web server
+- http server/app/files/database
+- nodejs/mongodb
+
+
+
 
 ;```
 
