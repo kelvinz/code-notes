@@ -457,6 +457,16 @@ https - uses tls or ssl to encrypt packets sent/recieved
 
 
 
+## Static vs Dynamic vs API
+
+**static**
+
+- html/css/js
+- already rendered
+- heavy work happens on browser
+
+
+
 
 ;```
 
