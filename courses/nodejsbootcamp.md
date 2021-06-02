@@ -467,6 +467,14 @@ https - uses tls or ssl to encrypt packets sent/recieved
 
 
 
+**dynamic**
+
+- database
+- rendered on server before sending to browser
+- server side rendered
+
+
+
 
 ;```
 
