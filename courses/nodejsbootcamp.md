@@ -475,6 +475,18 @@ https - uses tls or ssl to encrypt packets sent/recieved
 
 
 
+**api**
+
+- database
+- json to browser
+- browser renders site as it loads
+
+
+
+---
+
+
+
 
 ;```
 
