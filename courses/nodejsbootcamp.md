@@ -487,6 +487,18 @@ https - uses tls or ssl to encrypt packets sent/recieved
 
 
 
+# 04 - How Node.js Works A Look Behind the Scenes
+
+
+
+## Section Intro
+## Node, V8, Libuv & C++
+
+V8 engine to interpret Javascript ( written in C++ & JavaScript )
+Libuv for event loop, thread pool ( written in C++ )
+
+
+
 
 ;```
 
