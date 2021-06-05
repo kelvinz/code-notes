@@ -499,6 +499,22 @@ Libuv for event loop, thread pool ( written in C++ )
 
 
 
+## Processes, Threads & the Thread Pool
+
+**Nodejs process** ( instance of a program in execution on a computer )
+
+
+
+**Single thread** ( sequence of instructions )
+
+- initialize program
+- execute top level code
+- require modules
+- register event callbacks
+- start event loop
+
+
+
 
 ;```
 
