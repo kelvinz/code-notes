@@ -515,6 +515,18 @@ Libuv for event loop, thread pool ( written in C++ )
 
 
 
+**Thread pool**
+
+- 4 additional threads
+- offload work from the event loop
+- handle heavy ( expensive ) tasks
+	- file system API
+	- cryptography
+	- compression
+	- DNS lookups
+
+
+
 
 ;```
 
