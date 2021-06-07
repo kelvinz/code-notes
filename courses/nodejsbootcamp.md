@@ -541,6 +541,20 @@ Libuv for event loop, thread pool ( written in C++ )
 
 
 
+**4 main phases in one cycle**
+
+1. expired timer callbacks => callback q
+2. i/o polling & callbacks => callback q
+3. setImmediate callbacks => callback q
+4. close callbacks => callback q
+
+- minor phases
+	- process.nexttick() q
+	- other microtasks q ( resolved promises )
+	- happens inbetween 4 main phases
+
+
+
 
 ;```
 
