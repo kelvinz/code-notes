@@ -527,6 +527,20 @@ Libuv for event loop, thread pool ( written in C++ )
 
 
 
+## The Node.js Event Loop
+
+**Event loop**
+
+- all application code that is inside callback functions ( non-top-level code )
+- nodejs is built around callback functions
+- event-driven architecture
+	- events are emitted
+	- event loop picks them up
+	- callbacks are called
+- event loop does 
+
+
+
 
 ;```
 
