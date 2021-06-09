@@ -555,6 +555,15 @@ Libuv for event loop, thread pool ( written in C++ )
 
 
 
+**don't block the event loop**
+
+- don't use sync versions of functions in fs, crypto, zlib modules in your callback functions
+- don't perform complex calculations ( eg. loop inside loops )
+- be careful with JSON in large objecs
+- don't use too complex regular expressions ( eg. nested quantifiers )
+
+
+
 
 ;```
 
