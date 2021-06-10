@@ -564,6 +564,52 @@ Libuv for event loop, thread pool ( written in C++ )
 
 
 
+## The Event Loop in Practice
+
+```js
+
+const fs = require( 'fs' )
+const crypto = require( 'crypto' )
+
+const start = Date.Date.now()
+process.env.UV_THREADPOOL_SIZE = 4 // default, can remove if not changing threadpool
+
+// out of event loop
+setTimeout( () => console.log( 'Timer 1 finished' ), 0 )
+setImmediate( () => console.log( 'Immediate 1 finished' ) )
+
+fs.readFile( 'text-file.txt', () => {
+	console.log( 'i/o finished' )
+
+	// within event loop
+	setTimeout( () => console.log( 'Timer 2 finished' ), 0 )
+	setTimeout( () => console.log( 'Timer 3 finished' ), 3000 )
+	setImmediate( () => console.log( 'Immediate 2 finished' ) )
+
+	process.nextTick( () => console.log( 'process.nextTick' ) )
+
+	crypto.pbkdf2( 'password', 'salt', 100000, 1024, 'sha152', () => {
+		console.log( Date.now() - start, 'password encrypted' )
+	} )
+} )
+
+console.log( 'hello from top-level code' )
+
+// hello from top-level code
+// timer 1 finished
+// immediate 1 finished
+// i/o finished
+
+// process.nextTick
+// immediate 2 finished
+// timer 2 finished
+// 1855 password encrypted
+// timer 3 finished
+
+;```
+
+
+
 
 ;```
 
