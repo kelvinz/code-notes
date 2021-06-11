@@ -610,6 +610,29 @@ console.log( 'hello from top-level code' )
 
 
 
+## Events & Event-Driven Architecture
+
+event emitter => emit events => event listener => calls => callback function
+
+```js
+
+// event emitter on server
+// request 127.0.0.1:8000
+
+// event listener
+const server = http.createServer()
+server.on( 'request', ( req, res ) => {
+	console.log( 'request received' )
+	res.end( 'request recieved' )
+} )
+
+// results
+// display 'request received'
+
+;```
+
+
+
 
 ;```
 
