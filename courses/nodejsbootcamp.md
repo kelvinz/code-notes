@@ -633,6 +633,30 @@ server.on( 'request', ( req, res ) => {
 
 
 
+## Events in Practice
+
+```js
+
+const EventEmitter = require( 'events' )
+
+const myEmitter = new EventEmitter()
+
+myEmitter.on( 'newSale', () => {
+	console.log( 'new sale!' )
+} )
+
+myEmitter.on( 'newSale', () => {
+	console.log( 'cx name jonas' )
+})
+
+myEmitter.on( 'newSale', stock => {
+	console.log( ${ stock } )
+} )
+
+myEmitter.emit( 'newSale', 9 )
+
+;```
+
 
 ;```
 
