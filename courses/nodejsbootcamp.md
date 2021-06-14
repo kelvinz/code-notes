@@ -671,6 +671,27 @@ const myEmitter = new Sales()
 
 ;```
 
+```js
+
+const server = http.createServer()
+
+server.on( 'request', ( req, res ) => {
+	console.log( 'request received' )
+	res.end( 'request received' )
+} )
+
+server.on( 'close', () => {
+	console.log( 'server closed' )
+} )
+
+server.listen( 8000, '127.0.0.1', () => {
+	console.log( 'waiting for requests...' )
+} )
+
+;```
+
+
+
 
 ;```
 
