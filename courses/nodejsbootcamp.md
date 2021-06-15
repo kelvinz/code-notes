@@ -692,6 +692,14 @@ server.listen( 8000, '127.0.0.1', () => {
 
 
 
+## Introduction to Streams
+
+used to process ( read & write ) data piece by piece ( chunks )
+without completing the whole read or write operation
+therefore without keeping all the data in memory
+
+
+
 
 ;```
 
