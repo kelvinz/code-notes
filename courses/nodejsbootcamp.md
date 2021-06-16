@@ -700,6 +700,29 @@ therefore without keeping all the data in memory
 
 
 
+**readable streams**
+
+*description*
+
+- streams from which we can read ( consume ) data
+
+*example*
+
+- http requests
+- fs read streams
+
+*important events*
+
+- data
+- end
+
+*important functions*
+
+- pipe()
+- read()
+
+
+
 
 ;```
 
