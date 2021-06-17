@@ -723,6 +723,29 @@ therefore without keeping all the data in memory
 
 
 
+**writable streams**
+
+*description*
+
+- streams from which we can write data
+
+*example*
+
+- http responses
+- fs write streams
+
+*important events*
+
+- drain
+- finish
+
+*important functions*
+
+- write()
+- end()
+
+
+
 
 ;```
 
