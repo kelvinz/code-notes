@@ -746,6 +746,18 @@ therefore without keeping all the data in memory
 
 
 
+**duplex streams**
+
+*description*
+
+- streams that are both readable & writable
+
+*example*
+
+- net web socket
+
+
+
 
 ;```
 
