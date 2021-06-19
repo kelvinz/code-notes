@@ -758,6 +758,18 @@ therefore without keeping all the data in memory
 
 
 
+**transform streams**
+
+*description*
+
+- transform data as it is written or read
+
+*example*
+
+- zlip gzip creation
+
+
+
 
 ;```
 
