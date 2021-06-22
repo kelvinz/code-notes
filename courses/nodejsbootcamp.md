@@ -784,6 +784,20 @@ server.on( 'request', ( req, res ) => {
 		res.end( data )
 	})
 
+	// solution 2: streams ( send in chunks, may overwhelm if read is faster than ability to write )
+	const readable = fs.createReadStream( 'test-file.txt' )
+	readable.on( 'data', chunk => {
+		res.write( chunk )
+	} )
+	readable.on( 'end', () => {
+		res.end()
+	} )
+	readable.on( 'error', err => {
+		console.log( err )
+		res.statusCode( 500 )
+		res.end( 'file not found' )
+	} )
+
 } )
 
 server.listen( 8000, '127.0.0.1', () => {
