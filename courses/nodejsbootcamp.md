@@ -812,6 +812,17 @@ server.listen( 8000, '127.0.0.1', () => {
 
 
 
+## How Requiring Modules Really Works
+
+- each js file is treated as a separate module
+- nodejs uses commonjs module system: require(), exports or module.exports
+- es module system is used in browsers: import/export
+- there has been attempts to bring es modules to nodejs ( .mjs )
+
+resolving & loading => wrapping => execution => returning exports => caching
+
+
+
 
 ;```
 
