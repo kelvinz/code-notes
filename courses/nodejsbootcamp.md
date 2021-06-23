@@ -798,6 +798,10 @@ server.on( 'request', ( req, res ) => {
 		res.end( 'file not found' )
 	} )
 
+	// solution 3: pipe stream ( handle stream smoothly )
+	const readable = fs.createReadStream( 'test-file.txt' )
+	readable.pipe( res )
+
 } )
 
 server.listen( 8000, '127.0.0.1', () => {
