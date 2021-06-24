@@ -823,6 +823,26 @@ resolving & loading => wrapping => execution => returning exports => caching
 
 
 
+## Requiring Modules in Practice
+
+```js
+
+module.exports = class {
+	add( a, b ) {
+		return a + b
+	}
+
+	multiply( a, b ) {
+		return a * b
+	}
+
+	divide( a, b ) {
+		return a / b
+	}
+}
+
+;```
+
 
 ;```
 
