@@ -860,6 +860,15 @@ exports.divide = ( a, b ) => a / b
 
 ;```
 
+```js
+
+// calc2 object
+const calc2 = require( './test-module-2' )
+console.log( calc2.multiply( 2, 5 ) )
+
+// destructured
+const { add, multiply, divide } = require( './test-module-2' )
+console.log( divide( 2, 5 ) )
 
 ;```
 
