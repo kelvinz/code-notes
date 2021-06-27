@@ -852,6 +852,14 @@ console.log( calc1.add( 2, 5 ) )
 
 ;```
 
+```js
+
+exports.add = ( a, b ) => a + b
+exports.multiply = ( a, b ) => a * b
+exports.divide = ( a, b ) => a / b
+
+;```
+
 
 ;```
 
