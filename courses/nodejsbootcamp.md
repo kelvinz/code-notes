@@ -875,3 +875,12 @@ console.log( divide( 2, 5 ) )
 
 
 ---
+
+
+
+# 05 - Asynchronous JavaScript Promises & AsyncAwait
+# 06 - Express Let's Start Building the Natours API!
+
+
+
+---
