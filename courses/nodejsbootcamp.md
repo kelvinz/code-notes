@@ -883,4 +883,14 @@ console.log( divide( 2, 5 ) )
 
 
 
+## Section Intro
+## What is Express
+
+- minimal nodejs framework
+- contains robust set of features like complex routing, easier handling of req, res, server side rendering, etc
+- allows rapid development
+- easier to organize into mvc architecture
+
+
+
 ---
