@@ -893,4 +893,38 @@ console.log( divide( 2, 5 ) )
 
 
 
+## Installing Postman
+## Setting up Express & Basic Routing
+
+npm i express
+app.js
+
+```js
+
+const express = require( 'express' )
+
+const app = express()
+
+app.get( '/', ( req, res ) => {
+	// res.status( 200 ).send( 'hello from server' )
+	res.status( 200 )
+		.json( {
+			app: 'Natours',
+			messages: 'hello from server'
+		} )
+} )
+
+app.post( '/', ( req, res ) => {
+	res.send( 'you can post to this endpoint...' )
+} )
+
+const port = 3000
+app.listen( port, () => {
+	console.log( 'app is running...' )
+} )
+
+;```
+
+
+
 ---
