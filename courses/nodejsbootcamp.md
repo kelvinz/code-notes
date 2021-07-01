@@ -927,4 +927,14 @@ app.listen( port, () => {
 
 
 
+## APIs & RESTful API Design
+
+1. seperate API into logical resources
+2. expose structured, resource-based URLs ie. tours
+3. use http methods ( verbs ) ie. POST/GET/PUT/PATCH/DELETE ( CRUD = CREATE/READ/UPDATE/DELETE )
+4. send data as JSON
+5. be stateless
+
+
+
 ---
