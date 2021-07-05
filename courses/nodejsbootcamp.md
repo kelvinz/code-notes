@@ -985,4 +985,31 @@ app.post( 'api/v1/tours', ( req, res ) => {
 
 
 
+## Responding to URL Parameters
+
+```js
+
+app.get( '/api/v1/tours/:id', ( req, res ) => {
+	const id = req.params * 1
+	const tour = tours.find( el => el.id === id )
+
+	if ( !tour ) {
+		return res.status( 404 ).json( {
+			status: 'fail',
+			message: 'invalid id'
+		} )
+	}
+
+	res.status( 200 ).json( {
+		status: 'success',
+		data: {
+			tour
+		}
+	} )
+} )
+
+;```
+
+
+
 ---
