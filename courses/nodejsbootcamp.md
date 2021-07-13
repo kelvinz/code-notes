@@ -1170,4 +1170,11 @@ app.route( '/api/v1/tours/:id' )
 
 
 
+## Middleware & the Request-Response Cycle
+## Creating Our Own Middleware
+
+order matters,
+each middleware calls next() to go to next middleware,
+until res is sent which ends the req
+
 ---
