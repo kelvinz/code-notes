@@ -1177,4 +1177,16 @@ order matters,
 each middleware calls next() to go to next middleware,
 until res is sent which ends the req
 
+```js
+
+app.use( ( req, res, next ) => {
+	console.log( 'hello from middleware' )
+	next()
+} )
+
+app.use( ( req, res, next ) => {
+	req.requestTime = new Data().toISOString()
+	next()
+} )
+
 ---
