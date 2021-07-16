@@ -1189,4 +1189,23 @@ app.use( ( req, res, next ) => {
 	next()
 } )
 
+const getAllTours = ( req, res ) => {
+	const newId = tours[ tours.length - 1 ].id + 1
+	const newTour = Object.assign( { id: newId }, req.body )
+	tours.push( newTour )
+	fs.writeFile( `${__dirname}/dev-data/data/tours-simple.json }`, JSON.stringify( tours ), err => {
+		res.status( 201 ).json( {
+			status: 'success',
+			requestedAt: res.requestTime,
+			data: {
+				tour: newTour
+			}
+		} )
+	} )
+}
+
+;```
+
+
+
 ---
