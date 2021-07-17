@@ -1208,4 +1208,19 @@ const getAllTours = ( req, res ) => {
 
 
 
+## Using 3rd-Party Middleware
+
+npm i morgan
+
+```js
+
+const morgan = require( 'morgan' )
+
+app.use( morgan( 'dev' ) )
+// shows req, res, res time, res status in console
+
+;```
+
+
+
 ---
