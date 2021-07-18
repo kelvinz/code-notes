@@ -1223,4 +1223,23 @@ app.use( morgan( 'dev' ) )
 
 
 
+## Implementing the Users Routes
+
+```js
+
+// etc etc
+
+app.route( '/api/v1/users' )
+	.get( getAllUsers )
+	.post( createUsers )
+
+app.route( '/api/v1/users/:id' )
+	.get( getUser )
+	.patch( updateUser )
+	.delete( deleteUser )
+
+;```
+
+
+
 ---
