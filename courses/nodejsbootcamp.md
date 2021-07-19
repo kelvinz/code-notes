@@ -1242,4 +1242,40 @@ app.route( '/api/v1/users/:id' )
 
 
 
+## Creating & Mounting Multiple Routers
+
+```js
+
+const tourRouter = express.Router()
+const userRouter = express.Router()
+
+tourRouter
+	.route( '/' )
+	.get( getAllTours )
+	.post( createTour )
+
+tourRouter
+	.route( '/:id' )
+	.get( getTour )
+	.patch( updateTour )
+	.delete( deleteTour )
+
+userRouter
+	.route( '/' )
+	.get( getAllUsers )
+	.post( createUsers )
+
+userRouter
+	.route( '/:id' )
+	.get( getUser )
+	.patch( updateUser )
+	.delete( deleteUser )
+
+app.use( '/api/v1/tours', tourRouter )
+app.use( '/api/v1/users', userRouter )
+
+;```
+
+
+
 ---
