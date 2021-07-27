@@ -1441,4 +1441,28 @@ app.listen( port, () => {
 
 
 
+## Param Middleware
+
+```js
+
+router.param( 'id', tourController.checkID )
+
+;```
+
+```js
+
+exports.checkID = ( req, res, next, val ) => {
+	if ( val * 1 > tours.length ) {
+		return res.status( 400 ).json( {
+			status: 'fail',
+			message: 'invalid ID'
+		} )
+	}
+	next()
+}
+
+;```
+
+
+
 ---
