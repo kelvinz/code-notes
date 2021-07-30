@@ -1492,4 +1492,14 @@ router.
 
 
 
+## Serving Static Files
+
+```js
+
+app.use( express.static( `${ __dirname }/public` ) )
+
+;```
+
+
+
 ---
