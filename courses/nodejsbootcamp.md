@@ -1502,4 +1502,17 @@ app.use( express.static( `${ __dirname }/public` ) )
 
 
 
+## Environment Variables
+
+config.env
+
+```js
+
+NODE_ENV=development
+PORT=8000
+USERNAME=kelvin
+PASSWORD=123456
+
+;```
+
 ---
