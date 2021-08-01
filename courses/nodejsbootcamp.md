@@ -1515,4 +1515,24 @@ PASSWORD=123456
 
 ;```
 
+npm i dotenv
+
+```js
+
+const dotenv = require( 'dotenv' )
+dotenv.config( { path: './config.env' } )
+
+const app = require( './app' )
+
+if ( process.env.NODE_ENV ===  'development' ) app.use( morgan( 'dev' ) )
+
+const port = process.env.PORT || 3000
+
+;```
+
+to change to production instead of normal nodemon server.js to start, use
+NODE_ENV=production nodemon server.js
+
+
+
 ---
