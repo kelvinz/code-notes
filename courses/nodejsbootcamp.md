@@ -1535,4 +1535,36 @@ NODE_ENV=production nodemon server.js
 
 
 
+## Setting up ESLint + Prettier in VS Code
+
+
+
+---
+
+
+
+# 07 - Introduction to MongoDB
+
+
+
+## Section Intro
+## What is MongoDB
+
+- **document based**
+	mongodb stores data in documents, field-value pair data structures
+
+- **scalable**
+	very easy to distribute data across multiple machines as your users & amount of data grows
+
+- **flexible**
+	no document data schema required, so each document can have different number & type of fields
+
+- **performant**
+	embedded data models, indexing, sharding, flexible documents, native duplication
+
+- **free & open source**
+	published under SSPL license
+
+
+
 ---
