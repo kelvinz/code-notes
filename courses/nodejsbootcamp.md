@@ -1567,4 +1567,20 @@ NODE_ENV=production nodemon server.js
 
 
 
+## Installing MongoDB on macOS
+## Installing MongoDB on Windows
+## Creating a Local Database
+
+enter mongo shell, enter commands, exit
+
+> mongo
+> use natours-test
+> db.tours.insertOne({ name: "The Forest Hiker", price: 297, rating: 4.7 })
+> db.tours.find()
+> show dbs
+> show collection
+> quit()
+
+
+
 ---
