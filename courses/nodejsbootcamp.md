@@ -1583,4 +1583,10 @@ enter mongo shell, enter commands, exit
 
 
 
+## CRUD Creating Documents
+
+> db.tours.insertMany([ { name: "The Sea Explorer", price: 497, rating: 4.8 }, { name: "The Snow Adventure", price: 997, rating: 4.9, difficulty: "easy" } ])
+
+
+
 ---
