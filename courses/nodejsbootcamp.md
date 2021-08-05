@@ -1589,4 +1589,15 @@ enter mongo shell, enter commands, exit
 
 
 
+## CRUD Querying ( Reading ) Documents
+
+> db.tours.find()
+> db.tours.find({ name: "The Forest Hiker" })
+> db.tours.find({ difficulty: "easy" })
+> db.tours.find({ price: { $lte: 500 } })
+> db.tours.find({ price: { $lt: 500 }, rating: { $gte: 4.8 } })
+> db.tours.find({ $or: [{ price: { $lt: 500 }}, { rating: { $gte: 4.8 } }] })
+
+
+
 ---
