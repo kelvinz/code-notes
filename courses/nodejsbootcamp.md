@@ -1600,4 +1600,12 @@ enter mongo shell, enter commands, exit
 
 
 
+## CRUD Updating Documents
+
+> db.tours.updateOne({ name:  "The Snow Adventure" }, { $set: { price: 597 } })
+> db.tours.updateMany({ price: { $gt: 500 }, rating: { $gte: 4.8 } }, { $set: { premium: true } })
+> db.tours.replaceOne({ xxx }})
+
+
+
 ---
