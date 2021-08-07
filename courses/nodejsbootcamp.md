@@ -1608,4 +1608,12 @@ enter mongo shell, enter commands, exit
 
 
 
+## CRUD Deleting Documents
+
+> db.tours.deleteMany({ rating: { $lt: 4.8 } })
+> db.tours.deleteMany({})
+// deletes all if empty object is passed in // careful
+
+
+
 ---
