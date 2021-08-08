@@ -1616,4 +1616,18 @@ enter mongo shell, enter commands, exit
 
 
 
+## Using Compass App for CRUD Operations
+## Creating a Hosted Database with Atlas
+## Connecting to Our Hosted Database
+
+NODE_ENV=development
+PORT=8000
+PASSWORD=123456
+
+
+
+---
+
+
+
 ---
