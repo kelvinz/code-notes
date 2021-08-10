@@ -1630,4 +1630,18 @@ PASSWORD=123456
 
 
 
+# 08 - Using MongoDB with Mongoose
+
+
+
+## Section Intro
+## Connecting Our Database with the Express App
+
+NODE_ENV=development
+PORT=8000
+DATABASE=mongodb+srv://jonas:<PASSWORD>@cluster0-pwikv.mongodb.net/natours?retryWrites=true
+DATABASE_LOCAL=mongodb://localhost:27017/natours
+PASSWORD=123456
+
+```js
 ---
