@@ -1665,4 +1665,14 @@ app.listen( port, () => console.log( `App running on port ${ port }...` ) )
 
 
 
+## What is Mongoose
+
+- an Object Data Modelling ( ODM ) library for MongoDB & Node.js, a higher level of abstraction
+- allows for rapid & simple development of mongoDB database interactions
+- schemas to model data & relationships, easy data validation, simple query API, middleware, etc
+- Mongoose schema: where we model our data by describing the structure of the data, default values, validation
+- Mongoose model: a wrapper for the schema, providing an interface to the database for CRUD operations 
+
+
+
 ---
