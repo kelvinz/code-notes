@@ -1702,4 +1702,23 @@ const Tour = mongoose.model( 'Tour', tourSchema )
 
 
 
+## Creating Documents & Testing the Model
+
+```js
+
+const testTour = new Tour( {
+	name: 'The Forest Hiker',
+	rating: 4.7,
+	price: 497,
+} )
+
+testTour
+.save()
+.then( doc => console.log( doc ) )
+.catch( err => console.log( err ) )
+
+;```
+
+
+
 ---
