@@ -1721,4 +1721,16 @@ testTour
 
 
 
+## Intro to Back-End Architecture Types of Logic & More
+
+**application logic**
+
+- code that is only concerned about the application's implementation
+- not the underlying business problem we're trying to solve ( e.g. showing & selling tours )
+- concerned about managing requests & responses
+- about the app's more technical aspects
+- bridge between model & view layers
+
+
+
 ---
