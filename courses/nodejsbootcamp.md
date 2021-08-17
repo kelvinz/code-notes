@@ -1733,4 +1733,15 @@ testTour
 
 
 
+**business logic**
+
+- code that actually solves the business problem we set out to solve
+- directly related to business rules, how the business works, business needs
+	- creating new tours in database
+	- checking if user's password is correct
+	- validating user input data
+	- ensuring only users who bought a tour can review it
+
+
+
 ---
