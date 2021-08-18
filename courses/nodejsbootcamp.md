@@ -1744,4 +1744,11 @@ testTour
 
 
 
+**fat model/thin controller**
+
+- offloading as much logic as possible into the models
+- keep the controllers as simple & lean as possible
+
+
+
 ---
