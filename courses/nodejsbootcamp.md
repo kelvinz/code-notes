@@ -1784,4 +1784,14 @@ module.exports = Tour
 
 
 
+tourController.js
+
+```js
+
+const Tour = require( './../models/tourModel' )
+
+;```
+
+
+
 ---
