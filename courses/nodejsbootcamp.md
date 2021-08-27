@@ -2024,4 +2024,40 @@ if ( process.argv[ 2 ] === '--import' ) {
 
 
 
+## Making the API Better - Filtering
+
+```js
+
+exports.getAllTours = async ( req, res ) => {
+	try {
+		// build query
+		const queryObj = { ...req.query }
+		const excludedFields = [ 'page', 'sort', 'limit', 'fields' ]
+		excludedFields.forEach( el => delete queryObj[ el ] )
+
+		const query = Tour.find( queryObj )
+
+		// execute query
+		const tours = await query
+
+		// send response
+		res.status( 200 ).json( {
+			status: 'success',
+			results: tours.length,
+			data: {
+				tours
+			}
+		} )
+	} catch ( err ) {
+		res.status( 404 ).json( {
+			status: 'error',
+			message: err,
+		} )
+	}
+}
+
+;```
+
+
+
 ---
