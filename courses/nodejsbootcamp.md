@@ -2060,4 +2060,46 @@ exports.getAllTours = async ( req, res ) => {
 
 
 
+## Making the API Better - Advanced Filtering
+
+```js
+
+exports.getAllTours = async ( req, res ) => {
+	try {
+		// build query
+		const queryObj = { ...req.query }
+		const excludedFields = [ 'page', 'sort', 'limit', 'fields' ]
+		excludedFields.forEach( el => delete queryObj[ el ] )
+
+		let queryStr = JSON.stringify( queryObj )
+		// add $ to these 4 query gte, gt, lte, lt
+		// so it matches mongo query command
+		queryStr = queryStr.replace( /\b(gte|gt|lte|lt)\b/g, match => `$${ match }` )
+
+		const query = Tour.find( JSON.parse( queryStr ) )
+
+		// execute query
+		const tours = await query
+
+		// send response
+		res.status( 200 ).json( {
+			status: 'success',
+			results: tours.length,
+			data: {
+				tours
+			}
+		} )
+	} catch ( err ) {
+		res.status( 404 ).json( {
+			status: 'error',
+			message: err,
+		} )
+	}
+}
+
+;```
+
+
+
+## Making the API Better - Sorting
 ---
