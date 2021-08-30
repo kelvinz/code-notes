@@ -2149,4 +2149,60 @@ exports.getAllTours = async ( req, res ) => {
 
 
 
+## Making the API Better - Limiting Fields
+
+```js
+
+exports.getAllTours = async ( req, res ) => {
+	try {
+		// build query
+		const queryObj = { ...req.query }
+		const excludedFields = [ 'page', 'sort', 'limit', 'fields' ]
+		excludedFields.forEach( el => delete queryObj[ el ] )
+
+		let queryStr = JSON.stringify( queryObj )
+		// add $ to these 4 query gte, gt, lte, lt
+		// so it matches mongo query command
+		queryStr = queryStr.replace( /\b(gte|gt|lte|lt)\b/g, match => `$${ match }` )
+
+		let query = Tour.find( JSON.parse( queryStr ) )
+
+		if ( req.query.sort ) {
+			const sortBy = req.query.sort.split( ',' ).join( ' ' )
+			query = query.sort( sortBy )
+		} else {
+			query = query.sort( '-createdAt' )
+		}
+
+		if ( req.query.fields ) {
+			const fields = req.query.fields.split( ',' ).join( ' ' )
+			query = query.select( fields )
+		} else {
+			//	exclude mongo's default __v field
+			query = query.select( '-__v' )
+		}
+
+		// execute query
+		const tours = await query
+
+		// send response
+		res.status( 200 ).json( {
+			status: 'success',
+			results: tours.length,
+			data: {
+				tours
+			}
+		} )
+	} catch ( err ) {
+		res.status( 404 ).json( {
+			status: 'error',
+			message: err,
+		} )
+	}
+}
+
+;```
+
+
+
 ---
