@@ -2272,4 +2272,27 @@ exports.getAllTours = async ( req, res ) => {
 
 
 
+## Making the API Better - Aliasing
+
+```js
+
+router
+.route( '/top-5-cheap' )
+.get( tourController.aliasTopTours, tourController.getAllTours )
+
+;```
+
+```js
+
+exports.aliasTopTours = ( req, res, next ) => {
+	req.query.limit = '5'
+	req.query.sort = '-ratingsAverage,price'
+	req.query.fields = 'name,price,ratingsAverage,summary,difficulty'
+	next()
+}
+
+;```
+
+
+
 ---
