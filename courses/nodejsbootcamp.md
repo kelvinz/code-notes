@@ -2404,4 +2404,12 @@ exports.getTourStats = async ( req, res ) => {
 
 ;```
 
+```js
+
+router.route( '/tour-stats' ).get( tourController.getTourStats )
+
+;```
+
+
+
 ---
