@@ -2470,4 +2470,12 @@ exports.getMonthlyPlan = async ( req, res ) => {
 
 ;```
 
+```js
+
+router.route( '/monthly-plan/:year' ).get( tourController.getMonthlyPlan )
+
+;```
+
+
+
 ---
