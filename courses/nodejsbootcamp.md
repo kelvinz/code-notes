@@ -2497,4 +2497,24 @@ tourSchema.virtual( 'durationWeeks' ).get( function() {
 
 
 
+## Document Middleware
+
+```js
+
+const slugify = require( 'slugify' )
+
+// runs before .save() & .create()
+tourSchema.pre( 'save', function( next ) {
+	this.slug = slugify( this.name, { lower: true } )
+	next()
+} )
+
+tourSchema.post( 'save', function( doc, next ) {
+	next()
+} )
+
+;```
+
+
+
 ---
