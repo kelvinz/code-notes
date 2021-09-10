@@ -2517,4 +2517,25 @@ tourSchema.post( 'save', function( doc, next ) {
 
 
 
+## Query Middleware
+
+```js
+
+// find, findOne, findOneAndDelete, etc
+// regex /^find/
+tourSchema.pre( /^find/, function( next ) {
+	this.find( { secretTour: { $ne: true } } )
+	this.start = Date.now()
+	next()
+} )
+
+tourSchema.post( /^find/, function( docs, next ) {
+	console.log( Date.now() - this.start )
+	next()
+} )
+
+;```
+
+
+
 ---
