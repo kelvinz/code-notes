@@ -2557,4 +2557,39 @@ tourSchema.pre( 'aggregate', function( next ) {
 
 
 
+## Data Validation - Built-In Validators
+
+```js
+
+const tourSchema = new mongoose.Schema( {
+	name: {
+		type: String,
+		// required: true,
+		required: [ true, 'A tour must have a name' ],
+		unique: true,
+		trim: true,
+		maxlength: [ 40, 'A tour name must have less than 40 char' ],
+		minlength: [ 10, 'A tour name must have more than 10 char' ],
+	},
+	difficulty: {
+		type: String,
+		required: [ true, 'A tour must have a difficulty' ],
+		enum: {
+			values: [ 'easy', 'medium', 'difficult' ],
+			message: 'Difficulty is either easy, medium, difficult',
+		}
+	},
+	ratingsAverage: {
+		type: Number,
+		default: 4.5,
+		min: [ 1, 'rating must be above 1' ],
+		max: [ 5, 'rating must be below 5' ],
+	}
+	...
+} )
+
+;```
+
+
+
 ---
