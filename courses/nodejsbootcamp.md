@@ -2592,4 +2592,30 @@ const tourSchema = new mongoose.Schema( {
 
 
 
+## Data Validation - Custom Validatiors
+
+```js
+
+const tourSchema = new mongoose.Schema( {
+	priceDiscount: {
+		type: Number,
+		validate: {
+			validator: function( val ) {
+				// this only points to current doc on NEW document creation
+				return val < this.price
+			},
+			message: 'Discount cannot be greater than price',
+		},
+	},
+	...
+} )
+
+;```
+
+
+ 
+---
+
+
+
 ---
