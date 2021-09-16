@@ -2677,4 +2677,43 @@ const tourSchema = new mongoose.Schema( {
 
 
 
+# 11 - Modelling Data & Advanced Mongoose
+
+
+
+## Section Intro
+## MongoDB Data Modelling
+## Designing Our Data Model
+## Modelling Locations ( Geospatial Data )
+## Modelling Tour Guides Embedding
+## Modelling Tour Guides Child Referencing
+## Populating Tour Guides
+## Modelling Reviews Parent Referencing
+## Creating & Getting Reviews
+## Populating Reviews
+## Virtual Populate Tours & Reviews
+## Implementing Simple Nested Routes
+## Nested Routes with Express
+## Adding a Nested GET Endpoint
+## Building Handler Factory Functions Delete
+## Factory Functions Update & Create
+## Factory Functions Reading
+## Adding a me Endpoint
+## Adding Missing Authentication & Authorization
+## Importing Review & User Data
+## Improving Read Performance with Indexes
+## Calculating Average Rating on Tours - Part 1
+## Calculating Average Rating on Tours - Part 2
+## Preventing Duplicate Reviews
+## Geospatial Queries Finding Tours Within Radius
+## Geospatial Aggregation Calculating Distances
+## Creating API Documentation Using Postman
+
+
+
+
+---
+
+
+
 ---
