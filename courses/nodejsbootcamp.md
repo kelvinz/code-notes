@@ -2823,4 +2823,36 @@ module.exports = class Email {
 
 
 
+## Email Templates with Pug Welcome Emails
+## Sending Password Reset Emails
+## Using Sendgrid for Real Emails
+
+```js
+
+newTransport() {
+	if ( process.env.NODE_ENV === 'production' ) {
+		// sendgrid
+		return nodemailer.createTransport( {
+			service: 'SendGrid',
+			auth: {
+				user: process.env.SENDGRID_USERNAME,
+				pass: process.env.SENDGRID_PASSWORD,
+			}
+		} )
+	}
+
+	return nodemailer.createTransport( {
+		host: process.env.EMAIL_HOST,
+		port: process.env.EMAIL_PORT,
+		auth: {
+			user: process.env.EMAIL_USERNAME,
+			pass: process.env.EMAIL_PASSWORD,
+		}
+	} )
+}
+
+;```
+
+
+
 ---
