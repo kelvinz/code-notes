@@ -2855,4 +2855,13 @@ newTransport() {
 
 
 
+## Credit Card Payments with Stripe
+
+**back-end**
+
+-	*secret key*
+	create stripe checkout session
+
+
+
 ---
