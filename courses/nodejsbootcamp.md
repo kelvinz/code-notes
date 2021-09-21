@@ -2864,4 +2864,12 @@ newTransport() {
 
 
 
+**front-end**
+
+-	*request checkout session*
+-	*public key*
+	charge credit card using session
+
+
+
 ---
