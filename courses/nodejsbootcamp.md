@@ -3069,4 +3069,48 @@ exports.createBookingCheckout = catchAsync( async ( req, res, next ) => {
 
 
 
+## Rendering a Users Booked Tours
+## Finishing the Bookings API
+## Final Considerations
+
+
+
+---
+
+
+
+# 14 - Setting Up Git & Deployment
+
+
+
+## Section Intro
+## Setting Up Git & GitHub
+## Git Fundamentals
+## Pushing to Github
+## Preparing Our App for Deployment
+## Preparing Our App to Heroku
+## Testing for Secure HTTPS Connections
+## Responding to a SIGTERM Signal
+## Implementing CORS
+
+
+
+
+## Finishing Payments with Stripe Webhooks
+
+
+
+
+---
+
+
+
+# 15 - That's It, Everyone!
+
+
+
+## Where to Go from Here
+
+
+
 ---
