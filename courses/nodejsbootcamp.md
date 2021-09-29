@@ -3093,6 +3093,21 @@ exports.createBookingCheckout = catchAsync( async ( req, res, next ) => {
 ## Responding to a SIGTERM Signal
 ## Implementing CORS
 
+```js
+
+const cors = require( 'cors' )
+
+app.use( cors() )
+
+// only allow certain website
+// app.use( cors( {
+// 	origin: 'https://www.natours.com'
+// } ) )
+
+app.options( '*', cors() )
+// app.options( '/api/v1/tours/:id', cors() )
+
+;```
 
 
 
