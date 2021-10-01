@@ -23,6 +23,16 @@
 
 
 ## what is gatsby? why is it so awesome?
+
+- static site generator, pre-rendered pages in build phase rather than dynamically load stuff on browser
+- splits required css for each page for faster loading
+- partial hydration with dynamic app with static html
+- lazy load images automatically, compressed, format
+- routing easily, automatically
+- huge plugin library, ready for use
+
+
+
 ## pages in gatsby
 ## routing & navigation in gatsby
 ## creating layouts in gatsby
