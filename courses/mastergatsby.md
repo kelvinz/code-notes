@@ -34,6 +34,28 @@
 
 
 ## pages in gatsby
+
+- *public* folder is what you build into & deploy
+- *static* are files to be served without processing
+- *pages* folder in src auto generate routes ( index.js )
+
+```code
+// index.js
+
+import React from 'react'
+
+export default function HomePage() {
+	return (
+		<div>
+			<p>Im the home page</p>
+		</div>
+	)
+}
+
+;```
+
+
+
 ## routing & navigation in gatsby
 ## creating layouts in gatsby
 
