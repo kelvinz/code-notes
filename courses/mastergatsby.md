@@ -89,6 +89,25 @@ export default function Nav() {
 
 ;```
 
+```code
+// index.js
+
+import React from 'react'
+import Nav from '../components/Nav'
+
+export default function HomePage() {
+	return (
+		<div>
+			<Nav />
+			<p>Im the home page</p>
+		</div>
+	)
+}
+
+;```
+
+
+
 ## creating layouts in gatsby
 
 
