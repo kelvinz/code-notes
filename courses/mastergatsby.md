@@ -57,6 +57,38 @@ export default function HomePage() {
 
 
 ## routing & navigation in gatsby
+
+```code
+// components > Nav.js
+
+import React from 'react'
+import { Link, navigate } from 'gatsby'
+
+// can use arrow format too
+// const Nav = () => ()
+
+function goToBeers() {
+	// replace true to add to history
+	navigate( '/beers', { replace: true } )
+}
+
+export default function Nav() {
+	return (
+		<nav>
+			<ul>
+				<li>
+					<Link to="/">Home</Link>
+				</li>
+				<button type="button" onClick={ goToBeers }>
+					Beers
+				</button>
+			</ul>
+		</nav>
+	)
+}
+
+;```
+
 ## creating layouts in gatsby
 
 
