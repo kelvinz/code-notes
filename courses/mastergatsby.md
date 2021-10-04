@@ -110,6 +110,22 @@ export default function HomePage() {
 
 ## creating layouts in gatsby
 
+```code
+
+// components > Footer.js
+
+import React from 'react'
+
+export default function Footer() {
+	return (
+		<footer>
+			<p>&copy; Slick's slices { new Date().getFullYear() }</p>
+		</footer>
+	)
+}
+
+;```
+
 
 
 ---
