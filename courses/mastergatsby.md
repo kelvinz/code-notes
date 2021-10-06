@@ -126,6 +126,28 @@ export default function Footer() {
 
 ;```
 
+```code
+
+// components > Layout.js
+
+import React from 'react'
+import Nav from './Nav'
+import Footer from './Footer'
+
+// export default function Layout( props )
+// { props.children }
+export default function Layout({ children }) {
+	return (
+		<div>
+			<Nav />
+			{ children }
+			<Footer />
+		</div>
+	)
+}
+
+;```
+
 
 
 ---
