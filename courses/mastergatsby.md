@@ -148,6 +148,23 @@ export default function Layout({ children }) {
 
 ;```
 
+```code
+// index.js
+
+import React from 'react'
+import Nav from '../components/Nav'
+import Layout from '../components/Layout'
+
+export default function HomePage() {
+	return (
+		<Layout>
+			<p>Im the home page</p>
+		</Layout>
+	)
+}
+
+;```
+
 
 
 ---
