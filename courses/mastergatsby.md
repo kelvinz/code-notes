@@ -165,6 +165,21 @@ export default function HomePage() {
 
 ;```
 
+```code
+
+// if you want to auto wrap pages in Layout instead of typing it in each page
+// root > gatsby-browser.js
+
+import React from 'react'
+import Layout from './src/components/Layout'
+
+export function wrapPageElement({ element, props }) {
+	return <Layout { ...props }>{ element }</Layout>
+}
+
+
+;```
+
 
 
 ---
