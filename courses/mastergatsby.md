@@ -180,6 +180,21 @@ export function wrapPageElement({ element, props }) {
 
 ;```
 
+```code
+
+// for server rendering
+// root > gatsby-ssr.js
+
+import React from 'react'
+import Layout from './src/components/Layout'
+
+export function wrapPageElement({ element, props }) {
+	return <Layout { ...props }>{ element }</Layout>
+}
+
+
+;```
+
 
 
 ---
