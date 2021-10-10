@@ -206,6 +206,34 @@ export function wrapPageElement({ element, props }) {
 
 
 ## global styles
+
+```code
+
+// components > Layout.js
+
+import React from 'react'
+import Nav from './Nav'
+import Footer from './Footer'
+import 'normalize.css'
+import GlobalStyles from '../styles/GlobalStyles'
+
+// export default function Layout( props )
+// { props.children }
+export default function Layout({ children }) {
+	return (
+		<div>
+			<GlobalStyles />
+			<Nav />
+			{ children }
+			<Footer />
+		</div>
+	)
+}
+
+;```
+
+
+
 ## typography
 ## styling the nav & logo
 ## styling our layout
