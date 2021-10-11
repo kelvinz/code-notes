@@ -235,6 +235,30 @@ export default function Layout({ children }) {
 
 
 ## typography
+
+```code
+
+import { createGlobalStyle } from 'styled-components'
+import font from '../assets/fonts/frenchfries.woff'
+
+const Typography = createGlobalStyle`
+	@font-face {
+		font-family: Frechfries;
+		src: url( ${ font } )
+	}
+	html {
+		font-family: Frenchfries, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+		color: var( --black );
+	}
+
+`
+
+export default Typography
+
+;```
+
+
+
 ## styling the nav & logo
 ## styling our layout
 
