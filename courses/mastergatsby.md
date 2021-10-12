@@ -260,6 +260,36 @@ export default Typography
 
 
 ## styling the nav & logo
+
+```code
+
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+
+const NavStyles = styled.nav`
+	background: red;
+`
+
+export default function Nav() {
+	return (
+		<NavStyles>
+			<ul>
+				<li>
+					<Link to="/">Home</Link>
+				</li>
+				<button type="button" onClick={ goToBeers }>
+					Beers
+				</button>
+			</ul>
+		</NavStyles>
+	)
+}
+
+;```
+
+
+
 ## styling our layout
 
 
