@@ -319,6 +319,21 @@ const ContentStyles = styled.div`
 
 ;```
 
+**sidenote**
+
+react fragments
+<>
+...
+</>
+
+are similar to vue template
+<template>
+...
+</template>
+
+as root of components need to be single node
+these can be used to group them & render into nothing if you don't want to wrap in additional div
+
 
 
 ---
