@@ -344,7 +344,58 @@ these can be used to group them & render into nothing if you don't want to wrap 
 
 
 
-## setting up our headless cms
+## setting up our headless
+
+npm install -g @sanity/cli
+sanity init
+sanity init --reconfigure
+npm start
+
+/schemas/pizza.js
+
+```code
+
+export default {
+	name: 'pizza',
+	title: 'Pizzas',
+	type: 'document',
+	icon: () => `🍕`,
+	fields: [
+		{
+			name: 'name',
+			title: 'Pizza Name',
+			type: 'string',
+			description: 'Name of the pizza',
+		},
+		{
+			name: 'slug',
+			title: 'slug',
+			type: 'slug',
+			options: {
+				source: 'name',
+				maxLength: 100,
+			},
+		},
+		{
+			name: 'image',
+			title: 'Image',
+			type: 'image',
+			options: {
+				hotspot: true,
+			},
+		},
+		{
+			name: 'price',
+			title: 'Price',
+			type: 'number',
+			description: 'Price of pizza in cents',
+			validation: Rule => Rule.min(1000),
+		},
+	],
+}
+
+;```
+
 ## creating the toppings content type & custom previews
 ## creating data relationships
 ## creating our person data type
