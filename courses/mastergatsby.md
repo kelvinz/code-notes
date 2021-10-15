@@ -396,6 +396,21 @@ export default {
 
 ;```
 
+/schemas/schema.js
+
+```code
+
+import pizza from './pizza'
+
+export default createSchema({
+	name: 'default',
+	types: schemaTypes.concat([ pizza ])
+})
+
+;```
+
+
+
 ## creating the toppings content type & custom previews
 ## creating data relationships
 ## creating our person data type
