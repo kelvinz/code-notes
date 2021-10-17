@@ -412,6 +412,49 @@ export default createSchema({
 
 
 ## creating the toppings content type & custom previews
+
+/schemas/toppings.js
+
+```code
+
+export default {
+	name: 'pizza',
+	title: 'Pizzas',
+	type: 'document',
+	icon: () => `🥓`,
+	fields: [
+		{
+			name: 'name',
+			title: 'Topping Name',
+			type: 'string',
+			description: 'What is the name of the topping?',
+		},
+		{
+			name: 'vegetarian',
+			title: 'Vegetarian',
+			type: 'boolean',
+			description: 'Is this vegetarian?',
+			options: {
+				layout: 'checkbox',
+			},
+		},
+	],
+	preview: {
+		select: {
+			name: 'name',
+			vegetarian: 'vegetarian',
+		},
+		// prepare: fields => ({
+		//	title: `${ fields.name } ${ fields.vegetarian ? '🥬' : '🍖' }`,
+		// }),
+		prepare: ({ name, vegetarian }) => ({
+			title: `${ name } ${ vegetarian ? '🥬' : '🍖' }`,
+		}),
+	},
+}
+
+;```
+
 ## creating data relationships
 ## creating our person data type
 ## custom cms inputs in sanity
