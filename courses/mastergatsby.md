@@ -455,6 +455,22 @@ export default {
 
 ;```
 
+/schemas/schema.js
+
+```code
+
+import pizza from './pizza'
+import topping from './topping'
+
+export default createSchema({
+	name: 'default',
+	types: schemaTypes.concat([ pizza, topping ])
+})
+
+;```
+
+
+
 ## creating data relationships
 ## creating our person data type
 ## custom cms inputs in sanity
