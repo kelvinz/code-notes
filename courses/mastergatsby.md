@@ -737,6 +737,21 @@ export default {
 
 
 ## an intro to gatsby-config & sourcing data
+
+/gatsby-config.js
+
+```code
+
+export default {
+	siteMetadata: {
+		title: `Slicks Slices`,
+		siteUrl: `https://gatsby.pizza`,
+		description: `The best pizza place in Hamilton!`,
+	},
+}
+
+;```
+
 ## sourcing sanity data & graphql introduction
 ## learning gatsby queries
 
