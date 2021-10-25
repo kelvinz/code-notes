@@ -752,6 +752,22 @@ export default {
 
 ;```
 
+```code
+
+query MyQuery {
+	site {
+		siteMetadata {
+			description
+			siteUrl
+			description
+		}
+	}
+}
+
+;```
+
+
+
 ## sourcing sanity data & graphql introduction
 ## learning gatsby queries
 
