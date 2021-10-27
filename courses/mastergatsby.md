@@ -800,6 +800,14 @@ export default {
 
 ;```
 
+.env
+
+```js
+
+SANITY_TOKEN=qwertyasdfgh
+
+;```
+
 ## learning gatsby queries
 
 
