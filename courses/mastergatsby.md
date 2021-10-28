@@ -808,6 +808,34 @@ SANITY_TOKEN=qwertyasdfgh
 
 ;```
 
+>sanity graphql deploy production
+
+```code
+
+query MyQuery {
+	allSanityPizza {
+		nodes {
+			name
+			price
+			slug {
+				current
+			}
+			toppings {
+				name
+			}
+		}
+	}
+	allSanityPerson {
+		nodes {
+			name
+		}
+	}
+}
+
+;```
+
+
+
 ## learning gatsby queries
 
 
