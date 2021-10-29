@@ -838,6 +838,14 @@ query MyQuery {
 
 ## learning gatsby queries
 
+*page queries*
+- can be dynamic with variables
+- can only be run on a top level page
+
+*static queries*
+- can not be dynamic, no variables can be passed in
+- can be run anywhere
+
 
 
 ---
