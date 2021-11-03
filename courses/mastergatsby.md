@@ -954,6 +954,11 @@ export default function PizzaList({ pizzas }) {
 
 
 ## loading in sample data
+
+>sanity dataset import ./sample-data/all-sample-data.gz production --replace
+
+
+
 ## styling our pizza grid with css subgrid
 ## static queries & building the toppings filter
 
