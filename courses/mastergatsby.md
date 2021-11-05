@@ -1010,6 +1010,35 @@ export default function PizzaList({ pizzas }) {
 
 ## static queries & building the toppings filter
 
+```code
+
+import React from 'react'
+import { useStaticQuery, graphql, Link } from 'gatsby'
+import styled from 'styled-components'
+
+const ToppingsStyles = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-bottom: 4rem;
+	a {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-gap: 0 1rem;
+		align-items: center;
+		padding: 5px;
+		background: var(--grey);
+		border-radius: 2px;
+		.count {
+			background: white;
+			padding: 2px 5px;
+		}
+		.active {
+			background: var(--yellow);
+		}
+	}
+`
+
 
 
 ---
