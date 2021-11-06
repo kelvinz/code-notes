@@ -1039,6 +1039,27 @@ const ToppingsStyles = styled.div`
 	}
 `
 
+function countPizzasInToppings( pizzas ) {
+	pizzas
+	.map( pizza => pizza.toppings )
+	.flat()
+	.reduce( ( acc, topping ) => {
+		const existingTopping = acc[ topping.id ]
+		if ( existingTopping ) {
+			existingTopping.count += 1
+		} else {
+			acc[ topping.id ] = {
+				id: topping.id,
+				name: topping.name,
+				count: 1
+			}
+		}
+		return acc
+	}, {} )
+	const sortedToppings = Object.values( counts ).sort( ( a, b ) => b.count - a.count )
+	return sortedToppings
+}
+
 
 
 ---
