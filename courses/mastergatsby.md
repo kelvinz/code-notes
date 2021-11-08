@@ -802,7 +802,7 @@ export default {
 
 .env
 
-```js
+```code
 
 SANITY_TOKEN=qwertyasdfgh
 
@@ -1060,6 +1060,43 @@ function countPizzasInToppings( pizzas ) {
 	return sortedToppings
 }
 
+export default function ToppingsFilter() {
+	const { toppings, pizzas } = useStaticQuery( graphql`
+		query {
+			toppings: allSanityTopping {
+				nodes {
+					name
+					id
+					vegetarian
+				}
+			}
+			pizzas: allSanityPizza {
+				nodes {
+					toppings {
+						name
+						id
+					}
+				}
+			}
+		}
+	` )
+
+	const toppingsWithCounts = countPizzasInToppings( pizzas.nodes )
+
+
+	return (
+		<ToppingsStyles>
+			{ toppingsWithCounts.map( topping => (
+				<Link to={ `/topping/${ topping.name }` } key={ topping.id }>
+					<span classname="name">{ topping.name }</span>
+					<span classname="count">{ topping.count }</span>
+				</Link>
+			) ) }
+		</ToppingsStyles>
+	)
+}
+
+;```
 
 
 ---
