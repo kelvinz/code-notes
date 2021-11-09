@@ -99,7 +99,7 @@ if ( team === 'japan' || team === 'singapore' ) {
 	// do something
 }
 
-[ 'japan', 'singapore' ].includes( team ) {
+if ( [ 'japan', 'singapore' ].includes( team ) ) {
 	// do something
 }
 
