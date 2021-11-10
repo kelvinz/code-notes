@@ -1115,6 +1115,40 @@ export default function PizzaPage({ data }) {
 	)
 }
 
+export const query = graphql`
+	query PizzaQuery {
+		pizzas: allSanityPizza {
+			nodes {
+				name
+				id
+				slug {
+					current
+				}
+				toppings {
+					id
+					name
+				}
+				image {
+					asset {
+						fluid(maxWidth: 400) {
+							...GatsbySanityImageFluid
+						}
+					}
+				}
+			}
+		}
+	}
+
+`
+
+;```
+
+
+
+---
+
+
+
 
 ---
 
