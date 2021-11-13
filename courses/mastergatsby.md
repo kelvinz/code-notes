@@ -1195,6 +1195,44 @@ export async function createPages( params ) {
 
 ;```
 
+/templates/Pizza.js
+
+```code
+
+import React from 'React'
+import { graphql } from 'gatsby'
+
+export default function SinglePizzaPage() {
+
+}
+
+export const query = graphql`
+	query( $slug: String! ) {
+		pizza: sanityPizza( slug: {	current: { eq: $slug } } ) {
+			pizza: sanityPizza {
+				name
+				id
+				image {
+					asset {
+						fluid( maxWidth: 800 ) {
+							...GatsbySanityImageFluid
+						}
+					}
+				}
+				toppings {
+					name
+					id
+					vegetarian
+				}
+			}
+		}
+	}
+`
+
+;```
+
+
+
 
 ---
 
