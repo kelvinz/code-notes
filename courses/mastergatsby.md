@@ -1294,6 +1294,42 @@ export const query = graphql`
 
 
 
+## dynamically creating toppings pages
+
+
+/gatsby-node.js
+
+```code
+
+import path from 'path'
+
+async function turnPizzasIntoPages({ graphql, actions }) {
+	const pizzaTemplate = path.resolve( './src/template/Pizza.js' )
+
+	const { data } = await graphql(`
+		query {
+			pizzas: allSanityPizza {
+				nodes {
+					name
+					slug {
+						current
+					}
+				}
+			}
+		}
+	`)
+
+	data.pizzas.forEach( pizza => {
+		actions.createPage({
+			path: `pizza/${ pizza.slug.current }`,
+			component: pizzaTemplate,
+			context: {
+				slug: pizza.slug.current,
+			}
+		})
+	})
+}
+
 
 ---
 
