@@ -1330,9 +1330,31 @@ async function turnPizzasIntoPages({ graphql, actions }) {
 	})
 }
 
+async function turnToppingsIntoPages() {
+	const toppingTemplate = path.resolve( './src/templates/pizza.js' )
+	const { data } = await graphql(`
+		query {
+			toppings: allSanityTopping {
+				nodes {
+					name
+					id
+				}
+			}
+		}
+	`)
+	data.toppings.nodes.forEach( topping => {
+		actions.createPage({
+			path: `topping/${ topping.name }`,
+			component: toppingTemplate,
+			context: {
+				topping: topping.name,
+			}
+		})
+	})
+}
 
----
 
+;```
 
 
 # making gatsby dynamic
