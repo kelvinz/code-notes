@@ -1353,11 +1353,16 @@ async function turnToppingsIntoPages() {
 	})
 }
 
+export async function createPages( params ) {
+	await Promise.all([
+		turnPizzasIntoPages( params ),
+		turnToppingsIntoPages( params ),
+	])
+}
 
 ;```
 
 
-# making gatsby dynamic
 
 
 
