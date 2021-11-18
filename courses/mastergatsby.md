@@ -1379,6 +1379,41 @@ export default function PizzaPage({ data }) {
 	)
 }
 
+export const query = graphql`
+	query PizzaQuery( $topping: [ String ] ) {
+		pizzas: allSanityPizza( filter: {
+			toppings: {
+				elemMatch: {
+					name: {
+						in: $topping
+					}
+				}
+			}
+		} ) {
+			nodes {
+				name
+				id
+				slug {
+					current
+				}
+				toppings {
+					id
+					name
+				}
+				image {
+					asset {
+						fluid(maxWidth: 400) {
+							...GatsbySanityImageFluid
+						}
+					}
+				}
+			}
+		}
+	}
+
+`
+
+;```
 
 
 
