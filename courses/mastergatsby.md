@@ -1417,10 +1417,34 @@ export const query = graphql`
 
 
 
-## dynamically creating pages with gatsby-node
-## templating & styling our single pizza page
-## dynamically creating toppings pages
 ## sourcing data from an external api
+
+
+```code
+
+import fetch from 'isomorphic-fetch'
+
+async function fetchBeersAndTurnIntoNodes({ actions, createNodeId, createContentDigest }) {
+	const res = await fetch( 'https://sampleapis.com/beers/api/ale' )
+	const beers = await res.json()
+	for ( const beer of beers ) {
+		const nodeMeta = {
+			id: createNodeId( `beer-${ beer.name }` ),
+			parent: null,
+			children: [],
+			internal: {
+				type: 'Beer',
+				mediaType: 'application/json',
+				contentDigest: createContentDigest( beer ),
+			}
+		}
+	}
+	actions.createNode({
+		...beer,
+		...nodeMeta
+	})
+}
+
 ## querying, displaying & styling the beers page
 
 
