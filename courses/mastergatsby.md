@@ -1445,6 +1445,16 @@ async function fetchBeersAndTurnIntoNodes({ actions, createNodeId, createContent
 	})
 }
 
+export async function sourceNodes( params ) {
+	await Promise.all([
+		fetchBeersAndTurnIntoNodes( params )
+	])
+}
+
+;```
+
+
+
 ## querying, displaying & styling the beers page
 
 
