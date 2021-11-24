@@ -1587,6 +1587,25 @@ const SlicemasterStyles = styled.div`
 	}
 `
 
+export default function SlicemastersPage() {
+	const slicemasters = data.slicemasters.nodes
+	return (
+		<>
+			<SlicemasterGrid>
+			{ slicemasters.map( person => (
+				<SlicemasterStyles>
+					<Link to={ `/slicemaster/${ person.slug.current }` }>
+						<h2>{ person.name }</h2>
+					</Link>
+					<Img fluid={ person.image.asset.fluid } />
+					<p classname="description">{ person.description }</p>
+				</SlicemasterStyles>
+			))}
+			</SlicemasterGrid>
+		</>
+	)
+}
+
 ## paginating data in gatsby
 ## filtering the data based on pagination
 ## creating a reuseable pagination component
