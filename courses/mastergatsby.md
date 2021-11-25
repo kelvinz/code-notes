@@ -1606,6 +1606,33 @@ export default function SlicemastersPage() {
 	)
 }
 
+export const query = graphql`
+	query {
+		slicemasters: allSanityPerson {
+			totalCount
+			nodes {
+				name
+				id
+				slug {
+					current
+				}
+				description
+				image {
+					asset {
+						fluid( maxWidth: 410 ) {
+							...GatsbySanityImageFluid
+						}
+					}
+				}
+			}
+		}
+	}
+`
+
+;```
+
+
+
 ## paginating data in gatsby
 ## filtering the data based on pagination
 ## creating a reuseable pagination component
