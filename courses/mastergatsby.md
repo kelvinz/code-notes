@@ -1634,6 +1634,44 @@ export const query = graphql`
 
 
 ## paginating data in gatsby
+
+```code
+
+async function turnSlicemastersIntoPages({ graphql, actions }) {
+	const { data } = await graphql(`
+		query {
+			slicemasters: allSanityPerson {
+				totalCount
+				nodes {
+					name
+					id
+					slug {
+						current
+					}
+				}
+			}
+		}
+
+	)`
+	const pageSize = 4
+	const pageCount = Math.ceil( data.slicemasters.totalCount / pageSize )
+	Array.from({ length: pageCount }).forEach(( _, i ) => {
+		actions.createPage({
+			path: `/slicemaster/${ i + 1 }`,
+			component: path.resolve( './src/pages/slicemasters.js' )
+			context: {
+				skip: i * pageSize,
+				currentPage: i + 1,
+				pageSize,
+			}
+		})
+	})
+}
+
+;```
+
+
+
 ## filtering the data based on pagination
 ## creating a reuseable pagination component
 
