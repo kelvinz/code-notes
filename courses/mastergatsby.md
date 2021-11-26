@@ -1673,6 +1673,36 @@ async function turnSlicemastersIntoPages({ graphql, actions }) {
 
 
 ## filtering the data based on pagination
+
+```code
+
+export const query = graphql`
+	query( $skip: Int = 0, $pageSize: Int = 4 ) {
+		slicemasters: allSanityPerson( limit: $pageSize, skip: $skip ) {
+			totalCount
+			nodes {
+				name
+				id
+				slug {
+					current
+				}
+				description
+				image {
+					asset {
+						fluid( maxWidth: 410 ) {
+							...GatsbySanityImageFluid
+						}
+					}
+				}
+			}
+		}
+	}
+`
+
+;```
+
+
+
 ## creating a reuseable pagination component
 
 
