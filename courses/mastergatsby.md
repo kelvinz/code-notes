@@ -1705,6 +1705,31 @@ export const query = graphql`
 
 ## creating a reuseable pagination component
 
+```code
+
+import React from 'react'
+
+export default function Pagination({ perPage, totalCount, currentPage, skip, base }) {
+	const totalPages = Math.ceil( totalCount / perPage )
+	const prevPage = currentPage - 1
+	const nextPage = currentPage + 1
+	const hasPrevPage = prevPage <= totalPages
+	const hasNextPage = nextPage <= totalPages
+	return (
+		<div>
+			<Link disabled={ !hasPrevPage } to={ `${ base }/${ prevPage }` }>← Prev</Link>
+			{
+				Array.from({ length: totalPages }).map( ( _, i ) => {
+					<Link to={ `${ base }/${ i > 0 ? i + 1 : '' }` }>{ i + 1 }</Link>
+				} )
+			}
+			<Link disabled={ !hasNextPage } to={ `${ base }/${ nextPage }` }>Next →</Link>
+		</div>
+	)
+}
+
+;```
+
 
 
 ---
