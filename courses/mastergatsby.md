@@ -1730,6 +1730,18 @@ export default function Pagination({ perPage, totalCount, currentPage, skip, bas
 
 ;```
 
+```code
+
+<Pagination
+	pageSize={ 4 }
+	totalCount={ data.slicemasters.totalCount }
+	currentPage={ pageContext.currentPage || 1 }
+	skip={ pageContext.skip }
+	base="/slicemasters"
+/>
+
+;```
+
 
 
 ---
