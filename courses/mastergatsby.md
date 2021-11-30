@@ -1753,6 +1753,22 @@ export default function Pagination({ perPage, totalCount, currentPage, skip, bas
 
 
 ## single slicemaster pages
+
+```code
+
+data.slicemasters.nodes.forEach( slicemaster => {
+	actions.createPage({
+		component: resolve( './src/templates/Slicemaster.js' ),
+		path: '/slicemaster/${ slicemaster.slug.current }',
+		context: {
+			name: slicemaster.person,
+			slug: slicemaster.slug.current,
+		}
+	})
+})
+
+;```
+
 ## gatsby seo & head tags
 
 
