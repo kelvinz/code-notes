@@ -1769,6 +1769,23 @@ data.slicemasters.nodes.forEach( slicemaster => {
 
 ;```
 
+```code
+
+export default function SlicemastersPage({ data: { person } }) {
+	return (
+		<div>
+			<Img fluid={ person.image.asset.fluid } />
+			<h2>{ person.name }</h2>
+			<p>{ person.description }</p>
+		</div>
+	)
+}
+
+
+;```
+
+
+
 ## gatsby seo & head tags
 
 
