@@ -1897,6 +1897,29 @@ export default function OrderPage() {
 
 ;```
 
+```code
+
+import { useState } from 'react'
+
+export default function useForm( defaults ) {
+	const [ values, setValues ] = useState( defaults )
+
+	function updateValue( e ) {
+		let value = parseInt( e.target.value )
+		if ( e.)
+		setValues({
+			...values,
+			[ e.target.name ]: value
+		})
+	}
+
+	return { values, updateValue }
+}
+
+;```
+
+
+
 ## styling our order form
 ## custom hook for our order form
 ## calculating our order total
