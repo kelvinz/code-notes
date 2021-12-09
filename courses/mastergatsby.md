@@ -2030,6 +2030,38 @@ export default function usePizza({ pizzas, inputs }) {
 
 ;```
 
+```code
+
+export default function PizzaOrder({
+	order,
+	pizzas,
+	removeFromOrder,
+}) {
+	return <>
+		{
+			order.map(( singleOrder, index ) => {
+				return <MenuItemStyles key={ singleOrder.id }>
+					<Img fluid={ pizza.image.asset.fluid }></Img>
+					<h2>{ singleOrder.id }</h2>
+					<p>{ calculatePizzaPrice( pizza.price, singleOrder.size ) }</p>
+					<button
+						type="button"
+						className="remove"
+						title={ `Remove ${ singleOrder.size } ${ pizza.name } from Order` }
+						onClick={ () => removeFromOrder( index ) }
+					>
+						&times;
+					</button>
+				</MenuItemStyles>
+			})
+		}
+	</>
+}
+
+;```
+
+
+
 ## calculating our order total
 
 
