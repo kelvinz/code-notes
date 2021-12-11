@@ -2086,6 +2086,26 @@ export default function calculateOrderTotal( order, pizzas ) {
 
 
 ## moving our order state to react context with a custom provider
+
+```code
+
+import React, { useState } from 'react'
+
+const OrderContext = React.createContext()
+
+function OrderProvider({ children }) {
+	const [ order, setOrder ] = useState( '' )
+	return (
+		<OrderContext. value={[ order, setOrder ]}>
+			{ children }
+		</OrderContext.Provider>
+	)
+}
+
+export default OrderContext
+
+;```
+
 ## an intro to serverless functions
 ## modifying our custom hook to send the order data
 ## coding our serverless function
