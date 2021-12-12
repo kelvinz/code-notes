@@ -2106,6 +2106,15 @@ export default OrderContext
 
 ;```
 
+```code
+
+// 1const [ order, setOrder ] = useState([])
+const [ order, setOrder ] = useContext( OrderContext )
+
+;```
+
+
+
 ## an intro to serverless functions
 ## modifying our custom hook to send the order data
 ## coding our serverless function
