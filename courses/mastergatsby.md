@@ -2116,6 +2116,16 @@ const [ order, setOrder ] = useContext( OrderContext )
 
 
 ## an intro to serverless functions
+
+// netlify.toml
+
+```code
+
+[ build ]
+	functions = "functions/"
+
+;```
+
 ## modifying our custom hook to send the order data
 ## coding our serverless function
 ## setting error, loading & success states
