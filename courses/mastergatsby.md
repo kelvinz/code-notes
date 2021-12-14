@@ -2126,6 +2126,14 @@ const [ order, setOrder ] = useContext( OrderContext )
 
 ;```
 
+// functions/placeOrder.js
+// npm install nodemailer
+
+MAIL_HOST="smtp.ethereal.email"
+MAIL_USER="keshawn.schulist69@ethereal.email"
+MAIL_PASS="CD4YMkyUJv14Tqxv2t"
+
+```code
 ## modifying our custom hook to send the order data
 ## coding our serverless function
 ## setting error, loading & success states
