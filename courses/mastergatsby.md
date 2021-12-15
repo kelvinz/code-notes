@@ -2134,6 +2134,36 @@ MAIL_USER="keshawn.schulist69@ethereal.email"
 MAIL_PASS="CD4YMkyUJv14Tqxv2t"
 
 ```code
+
+const nodemailer = require( 'nodemailer' )
+
+const transporter = nodemailer.createTransport({
+	host: process.env.MAIL_HOST,
+    port: 587,
+    auth: {
+        user: process.env.MAIL_USER,
+        pass: process.env.MAIL_PASS,
+    }
+})
+
+export.handler = async ( event, context ) => {
+	const info = await transporter.sendMail({
+		from: 'Slick Slices <slick@example.com>',
+		to: 'orders@example.com',
+		subject: 'New Order!',
+		html: `<p>Your new pizza order is here!</p>`,
+	})
+
+	return {
+		statusCode: 200,
+		body: JASON.stringify( info ),
+	}
+}
+
+;```
+
+
+
 ## modifying our custom hook to send the order data
 ## coding our serverless function
 ## setting error, loading & success states
