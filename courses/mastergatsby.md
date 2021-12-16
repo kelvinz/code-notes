@@ -2165,6 +2165,41 @@ export.handler = async ( event, context ) => {
 
 
 ## modifying our custom hook to send the order data
+
+```code
+
+import { useState, useContext } from 'react'
+import OrderContext from '../components/OrderContext'
+
+export default function usePizza({ pizzas, inputs }) {
+	const [ order, setOrder ] = useState( OrderContext )
+	const [ error, setError ] = useState()
+	const [ loading, setLoading ] = useState( false )
+	const [ message, setMessage ] = useState( false )
+
+	function addToOrder( orderedPizza ) {
+		setOrder([ ...order, orderedPizza ])
+	}
+
+	function removeFromOrder( index ) {
+		setOrder([
+			...order.slice( 0, index ),
+			...order.slice( index + 1 ),
+		])
+	}
+
+	return {
+		order,
+		addToOrder,
+		removeFromOrder,
+		error,
+		loading,
+		message,
+	}
+}
+
+;```
+
 ## coding our serverless function
 ## setting error, loading & success states
 ## creating a honey pot to defend against bots
