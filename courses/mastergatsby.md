@@ -2200,6 +2200,44 @@ export default function usePizza({ pizzas, inputs }) {
 
 ;```
 
+```code
+
+export default function OrderPage() {
+	const { values, updateValue } = useForm({
+		name: '',
+		email: '',
+	})
+
+	return (
+		<>
+			<SEO title="order a Pizza!" />
+			<form>
+				<fieldset>
+					<legend>Your Info</legend>
+					<label htmlFor="name">Name</label>
+					<input
+						type="text"
+						name="name"
+						value={ values.name }
+						onChange={ updateValue }
+					/>
+					<label htmlFor="email">Email</label>
+					<input
+						type="email"
+						name="email"
+						value={ values.email }
+						onChange={ updateValue }
+					/>
+				</fieldset>
+			</form>
+		</>
+	)
+}
+
+;```
+
+
+
 ## coding our serverless function
 ## setting error, loading & success states
 ## creating a honey pot to defend against bots
