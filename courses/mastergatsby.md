@@ -2262,6 +2262,21 @@ function generateOrderEmail( { order, total } ) {
 	`
 }
 
+exports.handler = async ( event, context ) => {
+	const body = JSON.parse( event.body )
+	const requiredFields = [ 'email', 'name', 'order' ]
+
+	for ( const field of requiredFields ) {
+		if ( !body[ field ] ) {
+			return {
+				statusCode: 400,
+				body: JSON.stringify({
+					message: `Oops! Your are missing the ${ field } field.`,
+				})
+			}
+		}
+	}
+
 
 ;```
 
