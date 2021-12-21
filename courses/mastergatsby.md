@@ -2295,6 +2295,24 @@ exports.handler = async ( event, context ) => {
 
 
 ## setting error, loading & success states
+
+add a 'disabled' field to all the clickable items when loading is true
+
+```code
+
+if ( !body.order.length ) {
+	return {
+		status: 400,
+		body: JSON.stringify({
+			message: `Why would you order nothing?!`,
+		}),
+	}
+}
+
+;```
+
+
+
 ## creating a honey pot to defend against bots
 ## creating a one-off store settings page
 ## custom hook for client side data fetching
