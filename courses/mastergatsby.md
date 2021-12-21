@@ -2314,6 +2314,22 @@ if ( !body.order.length ) {
 
 
 ## creating a honey pot to defend against bots
+
+```code
+
+<input
+	type="mapleSyrup"
+	name="mapleSyrup"
+	id="mapleSyrup"
+	value={ values.mapleSyrup }
+	onChange={ updateValue }
+	class="mapleSyrup"
+/>
+
+.mapleSyrup { display: none; }
+
+;```
+
 ## creating a one-off store settings page
 ## custom hook for client side data fetching
 
