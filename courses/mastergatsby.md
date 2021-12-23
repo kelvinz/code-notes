@@ -2330,6 +2330,21 @@ if ( !body.order.length ) {
 
 ;```
 
+```code
+
+if ( body.mapleSyrup ) {
+	return {
+		statusCode: 400,
+		body: JSON.stringify({
+			message: `Boop beep bop goodbye!`,
+		})
+	}
+}
+
+;```
+
+
+
 ## creating a one-off store settings page
 ## custom hook for client side data fetching
 
