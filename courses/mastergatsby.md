@@ -2405,6 +2405,50 @@ export default function Sidebar() {
 
 ## custom hook for client side data fetching
 
+```code
+
+import { useState } from 'react'
+
+function useLatestData() {
+	const [ hotSlices, setHotSlices ] = useState()
+	const [ slicemasters, setSlicemasters ] = useState()
+
+	useEffect( function() {
+		fetch( process.env.GATSBY_GRAPHQL_ENDPOINT, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({
+				query: `
+					query {
+						storeSettings( id: 'downtown' ) {
+							name
+							slicemasters {
+								name
+							}
+							hotSlices {
+								name
+							}
+						}
+					}
+				`})
+			} )
+		.then( res => res.json() )
+		.then( res => {
+			setHotSlices( res.data.storeSettings.hotSlices )
+			setSlicemasters( res.data.storeSettings.slicemaster )
+		})
+	}, [] )
+
+	return {
+		hotSlices,
+		slicemasters,
+	}
+}
+
+;```
+
 
 
 ---
