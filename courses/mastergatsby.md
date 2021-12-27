@@ -2460,6 +2460,23 @@ function useLatestData() {
 
 
 ## creating a skeleton screen while loading items
+
+```code
+
+text-align: center;
+position: relative;
+
+img {
+	height: auto;
+	font-size: 0;
+	border: 1px solid red;
+}
+
+
+;```
+
+
+
 ## displaying the home page data
 
 
