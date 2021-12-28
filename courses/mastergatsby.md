@@ -2472,6 +2472,17 @@ img {
 	border: 1px solid red;
 }
 
+p {
+	left: 0;
+	width: 100%;
+	position: absolute;
+	transform: rotate( -2deg ) translateY( -50% );
+}
+
+.mark {
+	display: inline;
+}
+
 
 ;```
 
