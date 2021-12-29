@@ -2483,6 +2483,27 @@ p {
 	display: inline;
 }
 
+@keyframes shine {
+	from {
+		background-position: 200%;
+	}
+
+	to {
+		background-position: -40px;
+	}
+}
+
+img.loading {
+	--shine: white;
+	--background: var( --grey );
+	background-image: linear-gradient(
+		90deg,
+		var( --background ) 0px,
+		var( --shine ) 40px,
+		var( --background ) 80px
+	)
+	animation: shine 1s infinite linear;
+}
 
 ;```
 
