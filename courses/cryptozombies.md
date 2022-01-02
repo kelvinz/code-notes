@@ -16,6 +16,29 @@ There's also an int data type for signed integers.
 
 Note: In Solidity, uint is actually an alias for uint256, a 256-bit unsigned integer. You can declare uints with less bits — uint8, uint16, uint32, etc.. But in general you want to simply use uint except in specific cases, which we'll talk about in later lessons.
 
+```solidity
+
+pragma solidity >=0.5.0 <0.6.0;
+
+contract ZombieFactory {
+
+	event NewZombie(uint zombieId, string name, uint dna);
+
+	uint dnaDigits = 16;
+	uint dnaModulus = 10 ** dnaDigits;
+
+	struct Zombie {
+        string name;
+        uint dna;
+    }
+
+    Zombie[] public zombies;
+
+
+}
+
+```
+
 ## Zombies Attack Their Victims
 ## Advanced Solidity Concepts
 ## Zombie Battle System
