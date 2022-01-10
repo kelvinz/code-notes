@@ -102,6 +102,30 @@ Storage refers to variables stored permanently on the blockchain. Memory variabl
 
 Most of the time you don't need to use these keywords because Solidity handles them by default. State variables (variables declared outside of functions) are by default storage and written permanently to the blockchain, while variables declared inside functions are memory and will disappear when the function call ends.
 
+```solidity
+
+pragma solidity >=0.5.0 <0.6.0;
+
+import "./zombiefactory.sol";
+
+contract KittyInterface {
+  function getKitty(uint256 _id) external view returns (
+    bool isGestating,
+    bool isReady,
+    uint256 cooldownIndex,
+    uint256 nextActionAt,
+    uint256 siringWithId,
+    uint256 birthTime,
+    uint256 matronId,
+    uint256 sireId,
+    uint256 generation,
+    uint256 genes
+  )
+}
+
+
+}
+
 
 ```
 
