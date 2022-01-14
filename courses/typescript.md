@@ -20,3 +20,15 @@ type of value return from this function
 
 ---
 
+# Two Fer
+
+```typescript
+
+export const twoFer = ( name: string = 'you' ): string => `One for ${ name }, one for me.`
+
+```
+
+
+
+---
+
