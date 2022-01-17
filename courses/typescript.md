@@ -99,3 +99,39 @@ export const decodedValue = ( arr: string[] ): number => {
 
 ---
 
+# Resistor Color Trio
+
+```typescript
+
+const map: { [ x: string ]: number } = {
+    'black': 0,
+    'brown': 1,
+    'red': 2,
+    'orange': 3,
+    'yellow': 4,
+    'green': 5,
+    'blue': 6,
+    'violet': 7,
+    'grey': 8,
+    'white': 9,
+}
+
+const getAbc = ( a:string, b: string, c: string ): string => {
+  const aNum: number = map[ a ]
+  const bNum: number = map[ b ]
+  const cNum: number = map[ c ]
+  const abcNum: number = +`${ aNum }${ bNum }${ '0'.repeat( cNum ) }`
+  return abcNum >= 1000 ? `${ abcNum / 1000 } kilo` : `${ abcNum } `
+}
+
+export const decodedResistorValue = ( arr: string[] ): string => {
+    const abc:string = getAbc( arr[ 0 ], arr[ 1 ], arr[ 2 ] )
+	return `${ abc }ohms`
+}
+
+```
+
+
+
+---
+
