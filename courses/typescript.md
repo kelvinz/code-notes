@@ -151,3 +151,27 @@ export const isLeap = ( year: number ): boolean => {
 
 ---
 
+# Rna Transcription
+
+```typescript
+
+const dnaToRna: { [ dna: string ]: string } = {
+	'G': 'C',
+	'C': 'G',
+	'T': 'A',
+	'A': 'U',
+}
+
+export const toRna = ( dna: string ): string => {
+	const dnaArr: string[] = dna.split('')
+	const rna: string = dnaArr.map( dna => dnaToRna[ dna ] ).join('')
+	if ( rna.length === dna.length ) return rna
+	throw new Error( 'Invalid input DNA.' )
+}
+
+```
+
+
+
+---
+
