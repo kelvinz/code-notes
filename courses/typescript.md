@@ -202,3 +202,46 @@ export const age = ( planet: string, seconds: number ): number => {
 
 ---
 
+# DnD Character
+
+```typescript
+
+export class DnDCharacter {
+
+	strength: number
+	dexterity: number
+	constitution: number
+	intelligence: number
+	wisdom: number
+	charisma: number
+	
+	hitpoints: number
+
+	constructor() {
+		this.strength = DnDCharacter.generateAbilityScore()
+		this.dexterity = DnDCharacter.generateAbilityScore()
+		this.constitution = DnDCharacter.generateAbilityScore()
+		this.intelligence = DnDCharacter.generateAbilityScore()
+		this.wisdom = DnDCharacter.generateAbilityScore()
+		this.charisma = DnDCharacter.generateAbilityScore()
+		
+		this.hitpoints = 10 + DnDCharacter.getModifierFor( this.constitution )
+	}
+
+	public static generateAbilityScore(): number {
+		const min: number = 3 // 4 dices - 1
+		const max: number = 18 // 4 dices - 1
+		return Math.round( Math.random() * ( max - min ) + min )
+	}
+
+	public static getModifierFor( abilityValue: number ): number {
+		return Math.floor( ( abilityValue - 10 ) / 2 )
+	}
+}
+
+```
+
+
+
+---
+
