@@ -245,3 +245,26 @@ export class DnDCharacter {
 
 ---
 
+# Acronym
+
+```typescript
+
+export const parse = ( phrase: string ): string => {
+	return phrase
+		// add space before capitalized, if prev isn't capitalized
+		.replace( /([a-z])([A-Z])/g, '$1 $2' )
+		// break spaces & dashes
+		.split( /[- ]/ )
+		// combine first letters
+		.reduce( ( prev: string, curr: string ): string => {
+			return prev += curr.charAt( 0 )
+		}, '' )
+		.toUpperCase()
+}
+
+```
+
+
+
+---
+
