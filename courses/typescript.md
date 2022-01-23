@@ -268,3 +268,37 @@ export const parse = ( phrase: string ): string => {
 
 ---
 
+# Bob
+
+```typescript
+
+const isQuestion = ( msg: string ): boolean => {
+	msg = msg.trim() 
+	return msg.charAt( msg.length - 1 ) === '?'
+}
+
+const hasLetters = ( msg: string ): boolean => {
+	return /[a-z]/i.test( msg )
+}
+
+const isAllCaps = ( msg: string ): boolean => {
+	return hasLetters( msg ) && msg === msg.toUpperCase()
+}
+
+const isNothing = ( msg: string ): boolean => {
+	return !/[a-z0-9]/i.test( msg )
+}
+
+export const hey = ( msg: string ): string => {
+	if ( isQuestion( msg ) && isAllCaps( msg ) ) return `Calm down, I know what I'm doing!`
+	if ( isQuestion( msg ) ) return `Sure.`
+	if ( isAllCaps( msg ) ) return `Whoa, chill out!`
+	if ( isNothing( msg ) ) return `Fine. Be that way!`
+	return `Whatever.`
+}
+
+```
+
+
+
+---
