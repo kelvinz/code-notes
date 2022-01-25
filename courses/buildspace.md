@@ -46,3 +46,32 @@ useEffect( () => {
 
 
 ### 🔒 Accessing the user's account.
+
+<https://docs.phantom.app/integrating/establishing-a-connection#eagerly-connecting>
+
+```code
+
+const checkIfWalletIsConnected = async () => {
+	try {
+		const { solana } = window
+
+		if ( solana ) {
+			if ( solana.isPhantom ) {
+				console.log( 'Phantom wallet found!' )
+
+				const res = await solana.connect({ onlyIfTrusted: true })
+				console.log( `Connected with Public Key: ${ res.publicKey.toString() }`)
+			}
+		} else {
+			alert( 'Solana object not found! Get a Phantom Wallet 👻' )
+		}
+	} catch ( err ) {
+		console.log( err )
+	}
+}
+
+
+```
+
+
+
