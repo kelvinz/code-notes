@@ -75,3 +75,37 @@ const checkIfWalletIsConnected = async () => {
 
 
 
+### 🛍 Render connect to wallet button.
+
+```code
+
+const [ walletAddress, setWalletAddress ] = useState( null )
+
+const checkIfWalletIsConnected = async () => {
+	try {
+		const { solana } = window
+
+		if ( solana ) {
+			if ( solana.isPhantom ) {
+				console.log( 'Phantom wallet found!' )
+
+				const res = await solana.connect({ onlyIfTrusted: true })
+				console.log( `Connected with Public Key: ${ res.publicKey.toString() }`)
+
+				setWalletAddress( res.publicKey.toString() )
+			}
+		} else {
+			alert( 'Solana object not found! Get a Phantom Wallet 👻' )
+		}
+	} catch ( err ) {
+		console.log( err )
+	}
+}
+
+
+```
+
+
+
+---
+
