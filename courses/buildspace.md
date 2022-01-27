@@ -102,6 +102,22 @@ const checkIfWalletIsConnected = async () => {
 	}
 }
 
+const connectWallet = () => {
+	const { solana } = window
+
+	if ( solana ) {
+		const res = await solana.connect()
+		console.log( 'Connected with Public Key:', res.publicKey.toString() )
+		setWalletAddress( res.publicKey.toString() )
+	}
+}
+
+```
+
+
+
+---
+
 
 ```
 
