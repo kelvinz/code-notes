@@ -118,6 +118,30 @@ const connectWallet = () => {
 
 ---
 
+## 2. 🍭 Deploy your NFT Candy Machine.
+
+
+
+### 🤖 Install the pre-reqs
+
+```terminal
+
+git version
+> git version 2.31.1 (or higher!)
+
+node --version
+> v14.17.0 (or higher, below v17 -- we found that node v16 works best)
+
+yarn --version
+> 1.22.11 (or higher!)
+
+ts-node --version
+> v10.2.1 (or higher!)
+
+```
+
+
+
 
 ```
 
