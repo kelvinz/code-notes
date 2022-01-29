@@ -142,6 +142,23 @@ ts-node --version
 
 
 
+### 🔥 Install Solana
+
+<https://docs.solana.com/cli/install-solana-cli-tools#use-solanas-install-tool>
+
+```terminal
+
+sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
+
+solana --version
+
+solana config set --url devnet
+solana config get
+
+```
+
+
+
 
 ```
 
