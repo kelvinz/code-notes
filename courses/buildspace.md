@@ -159,6 +159,20 @@ solana config get
 
 
 
+### 🤩 Getting started with the Metaplex CLI
+
+```terminal
+
+git clone --branch v1.0.0 https://github.com/metaplex-foundation/metaplex.git ~/metaplex-foundation/metaplex
+
+yarn install --cwd ~/metaplex-foundation/metaplex/js/
+
+ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts --version
+
+```
+
+
+
 
 ```
 
