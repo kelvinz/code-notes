@@ -173,6 +173,40 @@ ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts 
 
 
 
+### ✨ Create the NFTs of your dreams.
+
+<https://github.com/metaplex-foundation/metaplex/issues/511>
+<https://docs.metaplex.com/nft-standard#json-structure>
+
+0.png
+0.json
+
+```code
+
+{
+	"name": "NAME_OF_NFT",
+	"symbol": "",
+	"image": "0.png",
+	"properties": {
+		"files": [
+			{
+				"uri": "0.png",
+				"type": "image/png"
+			}
+		],
+		"creators": [
+			{
+				"address": "INSERT_CREATOR_WALLET_ADDRESS_HERE",
+				"share": 100
+			}
+		]
+	}
+}
+
+```
+
+
+
 
 ```
 
