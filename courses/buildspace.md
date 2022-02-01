@@ -207,6 +207,26 @@ ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts 
 
 
 
+### 🔑 Setting up a Solana keypair.
+
+```terminal
+
+solana-keygen new --outfile ~/.config/solana/devnet.json
+
+solana config set --keypair ~/.config/solana/devnet.json
+
+solana balance
+
+solana airdrop 2
+
+ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts upload ./assets --env devnet --keypair ~/.config/solana/devnet.json
+
+ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts verify --keypair ~/.config/solana/devnet.json
+
+```
+
+
+
 
 ```
 
