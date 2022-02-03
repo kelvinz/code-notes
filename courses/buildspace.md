@@ -241,6 +241,24 @@ ts-node ~/metaplex-foundation/metaplex/js/packages/cli/src/candy-machine-cli.ts 
 
 ---
 
+## 3. 👑 Let users start minting NFTs from your web app.
+
+
+
+### 🌲 Setup .env properties
+
+.env
+
+```code
+
+REACT_APP_CANDY_MACHINE_CONFIG=
+REACT_APP_CANDY_MACHINE_ID=
+REACT_APP_TREASURY_ADDRESS=
+REACT_APP_SOLANA_NETWORK=
+REACT_APP_SOLANA_RPC_HOST=
+
+```
+
 
 ```
 
