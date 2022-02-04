@@ -259,6 +259,26 @@ REACT_APP_SOLANA_RPC_HOST=
 
 ```
 
+**.cache/devnet-temp**
+can be found at the root of your folder after running the Metaplex command in previous steps.
+
+**REACT_APP_CANDY_MACHINE_CONFIG**
+This can be found in your .cache/devnet-temp JSON file that was created. Look for the value associated with the config key.
+
+**REACT_APP_CANDY_MACHINE_ID**
+This can also be found in the same .cache/devnet-temp JSON file, look for the value associated with the candyMachineAddress key.
+
+**REACT_APP_TREASURY_ADDRESS**
+This can also be found in the same .cache/devnet-temp JSON file, look for the value associated with the authority key.
+
+**REACT_APP_SOLANA_NETWORK**
+Set this to devnet as this is just the network in which we are accessing our candy machine from
+
+**REACT_APP_SOLANA_RPC_HOST**
+This is pretty much the same as above. Since we are accessing out Candy Machine on devnet we need to point the RPC to that devnet link which is https://explorer-api.devnet.solana.com
+
+
+
 
 ```
 
