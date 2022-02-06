@@ -295,6 +295,23 @@ If you mess up even one of these steps, everything will break. So, watch out.
 
 
 
+### 📞 Make a call to your candy machine.
+
+```code
+
+import React, { useEffect } from 'react'
+
+const CandyMachine = ({ walletAddress }) => {
+	useEffect( () => {
+		getCandyMachineState()
+	}, [] )
+}
+
+
+```
+
+
+
 
 ```
 
