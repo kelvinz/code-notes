@@ -363,6 +363,61 @@ const getCandyMachineState = async () => {
 
 ---
 
+## 4. ✨ Finishing touches.
+
+
+
+
+---
+
+
+
+# Build your own DAO with just Javascript in a weekend
+
+
+
+## 1. 💻 Setup client app for DAO
+
+
+
+### ⛓ Specify your chain and wallet type.
+
+```code
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+
+import { ThirdwebWeb3Provider } from '@3rdweb/hooks'
+
+// chain to support
+// 4 = Rinkeby
+// <https://besu.hyperledger.org/en/stable/Concepts/NetworkID-And-ChainID/>
+const supportedChainIds = [ 4 ]
+
+// type of wallet to support
+// metamask is an injected wallet
+const connectors = {
+	injected: {},
+}
+
+ReactDOM.render(
+	<React.StrictMode>
+		<ThirdwebWeb3Provider
+			connectors={ connectors }
+			supportedChainIds={ supportedChainIds }
+	>
+			<App />
+		</ThirdwebWeb3Provider>
+	</React.StrictMode>,
+	document.getElementById( 'root' )
+);
+
+```
+
+
+
 
 ```
 
