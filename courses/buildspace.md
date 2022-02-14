@@ -562,6 +562,38 @@ const app = sdk.getAppModule( '0x040595B27b6Dc540A8d0Fc04b630336608416f8B' );
 
 
 
+### 👾 Setup NFT Data.
+
+```code
+
+import sdk from './1-initialize-sdk.js'
+import { readFileSync } from 'fs'
+
+const bundleDrop = sdk.getBundleDropModule(
+	'0x43C0c52c706Bf3D1c2C560AF1a0094a0f6C28377',
+);
+
+( async () => {
+	try {
+		await bundleDrop.createBatch([
+			{
+				name: 'So Dao Access Card',
+				description: 'This NFT will give you access to So Dao!',
+				image: readFileSync( 'scripts/assets/hww.png' ),
+			},
+		])
+		console.log( '✅ Successfully created a new NFT in the drop!' )
+	} catch( error ) {
+		console.error( 'failed to create the new NFT', error )
+	}
+} )()
+
+// Your app address is:  0x040595B27b6Dc540A8d0Fc04b630336608416f8B
+
+```
+
+
+
 
 ```
 
