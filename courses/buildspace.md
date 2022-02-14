@@ -594,6 +594,37 @@ const bundleDrop = sdk.getBundleDropModule(
 
 
 
+### 😼 Setup claim condition.
+
+```code
+
+import sdk from './1-initialize-sdk.js'
+
+const bundleDrop = sdk.getBundleDropModule(
+	'0x43C0c52c706Bf3D1c2C560AF1a0094a0f6C28377',
+);
+
+( async () => {
+	try {
+		const claimConditionFactory = bundleDrop.getClaimConditionFactory()
+		// Specify conditions.
+		claimConditionFactory.newClaimPhase({
+			startTime: new Date(),
+			maxQuantity: 100,
+			maxQuantityPerTransaction: 1,
+		})
+
+		await bundleDrop.setClaimCondition( 0, claimConditionFactory )
+		console.log( '✅ Successfully set claim condition on bundle drop:', bundleDrop.address )
+	} catch( error ) {
+		console.error( 'Failed to set claim condition', error )
+	}
+} )()
+
+```
+
+
+
 
 ```
 
