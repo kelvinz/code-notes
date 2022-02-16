@@ -625,6 +625,70 @@ const bundleDrop = sdk.getBundleDropModule(
 
 
 
+### 🤔 Check if user owns a membership NFT.
+
+```code
+
+import { ThirdwebSDK } from "@3rdweb/sdk"
+import { useEffect, useMemo, useState } from 'react'
+import { useWeb3 } from '@3rdweb/hooks'
+
+const sdk = new ThirdwebSDK( 'rinkeby' );
+
+const bundleDropModule = sdk.getBundleDropModule(
+	'0x43C0c52c706Bf3D1c2C560AF1a0094a0f6C28377',
+)
+
+const App = () => {
+	const { connectWallet, address, error, provider } = useWeb3()
+	console.log( '👋🏻 Address: ', address )
+
+	const [ hasClaimedNFT, setHasClaimedNFT ] = useState( false )
+
+	useEffect( () => {
+		if ( !address ) return
+
+		return bundleDropModule
+			.balanceOf( address, '0' ) // check for id 0 nft
+			.then( balance => {
+				if ( balance.gt( 0 ) ) {
+					setHasClaimedNFT( true )
+					console.log( '🌟 this user has a membership NFT!' )
+				} else {
+					setHasClaimedNFT( false )
+					console.log( `😭 this user doesn't have a membership NFT.` )
+				}
+			} )
+			.catch( error => {
+				setHasClaimedNFT( false )
+				console.log( 'failed to nft balance', error )
+			} )
+	}, [ address ] )
+
+	if ( !address ) {
+		return (
+			<div className="landing">
+				<h1>Welcome to So Dao</h1>
+				<button onClick={ () => connectWallet( 'injected' ) } className="btn-hero">
+					Connect your wallet
+				</button>
+			</div>
+		)
+	}
+
+	return (
+		<div className="landing">
+			<h1>👀 wallet connected, now what?</h1>
+		</div>
+	)
+}
+
+export default App
+
+```
+
+
+
 
 ```
 
