@@ -689,6 +689,48 @@ export default App
 
 
 
+### ✨ Build a "Mint NFT" button.
+
+```code
+
+import { ThirdwebSDK } from '@3rdweb/sdk'
+import { useEffect, useMemo, useState } from 'react'
+import { useWeb3 } from '@3rdweb/hooks'
+
+const sdk = new ThirdwebSDK( 'rinkeby' );
+
+const bundleDropModule = sdk.getBundleDropModule(
+	'0x43C0c52c706Bf3D1c2C560AF1a0094a0f6C28377',
+)
+
+const App = () => {
+	const { connectWallet, address, error, provider } = useWeb3()
+	console.log( '👋🏻 Address: ', address )
+
+	// The signer is required to sign transactions on the blockchain.
+		// Without it we can only read data, not write.
+	// https://docs.ethers.io/v5/api/signer/
+	const signer = provider ? provider.getSigner() : undefined
+
+	const [ hasClaimedNFT, setHasClaimedNFT ] = useState( false )
+	// isClaiming lets us easily keep a loading state while the NFT is minting.
+	const [ isClaiming, setIsClaiming ] = useState( false )
+
+	useEffect( () => {
+		// We pass the signer to the sdk, which enables us to interact with
+			// our deployed contract!
+		sdk.setProviderOrSigner( signer )
+	}, [ signer ] )
+
+
+```
+
+
+
+---
+
+
+
 
 ```
 
