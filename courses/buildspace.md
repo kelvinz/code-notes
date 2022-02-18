@@ -722,6 +722,37 @@ const App = () => {
 		sdk.setProviderOrSigner( signer )
 	}, [ signer ] )
 
+	useEffect( () => {
+		if ( !address ) return
+
+		return bundleDropModule
+			.balanceOf( address, '0' ) // check for id 0 nft
+			.then( balance => {
+				if ( balance.gt( 0 ) ) {
+					setHasClaimedNFT( true )
+					console.log( '🌟 this user has a membership NFT!' )
+				} else {
+					setHasClaimedNFT( false )
+					console.log( `😭 this user doesn't have a membership NFT.` )
+				}
+			} )
+			.catch( error => {
+				setHasClaimedNFT( false )
+				console.log( 'failed to nft balance', error )
+			} )
+	}, [ address ] )
+
+	if ( !address ) {
+		return (
+			<div className="landing">
+				<h1>Welcome to So Dao</h1>
+				<button onClick={ () => connectWallet( 'injected' ) } className="btn-hero">
+					Connect your wallet
+				</button>
+			</div>
+		)
+	}
+
 
 ```
 
