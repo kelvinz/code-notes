@@ -762,6 +762,46 @@ const App = () => {
 		)
 	}
 
+	const mintNft = () => {
+		setIsClaiming( true )
+		// Call bundleDropModule.claim( '0', 1 ) to mint nft to user's wallet.
+		bundleDropModule
+			.claim( '0', 1 )
+			.then( () => {
+				setHasClaimedNFT( true )
+				console.log( `🌊 Successfully Minted! Check it our on OpenSea: https://testnets.opensea.io/assets/${ bundleDropModule.address }/0` )
+			} )
+			.catch( err => {
+				console.error( 'failed to claim', err )
+			} )
+			.finally( () => {
+				setIsClaiming( false )
+			} )
+	}
+
+	return (
+		<div className="mint-nft">
+			<h1>Mint your free 🍪 DAO Membership NFT</h1>
+			<button
+				disabled={ isClaiming }
+				onClick={ () => mintNft() }
+			>
+				{ isClaiming ? 'Minting...' : 'Mint your free nft (FREE)' }
+			</button>
+		</div>
+	)
+}
+
+export default App
+
+```
+
+
+
+---
+
+
+
 
 ```
 
