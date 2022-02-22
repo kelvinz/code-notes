@@ -802,6 +802,47 @@ export default App
 
 
 
+## 3. 💎 Create your own token + on-chain governance
+
+
+
+### 🥵 Deploy your token.
+
+```code
+
+import sdk from './1-initialize-sdk.js'
+
+const app = sdk.getAppModule( '0x040595B27b6Dc540A8d0Fc04b630336608416f8B' );
+
+// https://github.com/nftlabs/nftlabs-protocols/blob/main/contracts/Coin.sol
+
+( async () => {
+	try {
+		// Deploy a standard ERC-20 contract.
+		const tokenModule = await app.deployTokenModule({
+			// What's your token's name? Ex. 'Ethereum'
+			name: 'So Dao Governance Token',
+			// What's your token's symbol? Ex. 'ETH'
+			symbol: 'HWW',
+		})
+
+		console.log(
+			'✅ Successfully deployed token module, address:',
+			tokenModule.address,
+		)
+
+	} catch( err ) {
+		console.error( 'failed to deploy token module', err )
+	}
+} )()
+
+// ✅ Successfully deployed token module, address: 0xebc8a89936644Eb4c5BB777520E2b90Ccca873A9
+
+```
+
+
+
+### 💸 Create your token’s supply.
 
 ```
 
