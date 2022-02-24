@@ -881,6 +881,28 @@ const tokenModule = sdk.getTokenModule(
 
 
 
+### ✈️ Airdrop it.
+
+```code
+
+import { ethers } from 'ethers'
+import sdk from './1-initialize-sdk.js'
+
+// This is the address to our ERC-1155 membership NFT contract.
+const bundleDropModule = sdk.getBundleDropModule(
+	'0x43C0c52c706Bf3D1c2C560AF1a0094a0f6C28377',
+);
+
+// This is the address to our ERC-20 token contract.
+const tokenModule = sdk.getTokenModule(
+	'0xebc8a89936644Eb4c5BB777520E2b90Ccca873A9',
+);
+
+
+```
+
+
+
 ```
 
 
