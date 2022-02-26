@@ -940,6 +940,25 @@ const tokenModule = sdk.getTokenModule(
 
 
 
+### 🥺 Retrieve token holders on web app.
+
+```code
+
+import { ethers } from 'ethers'
+import { ThirdwebSDK } from '@3rdweb/sdk'
+import { useEffect, useMemo, useState } from 'react'
+import { useWeb3 } from '@3rdweb/hooks'
+
+const sdk = new ThirdwebSDK( 'rinkeby' );
+
+const bundleDropModule = sdk.getBundleDropModule(
+	'0x43C0c52c706Bf3D1c2C560AF1a0094a0f6C28377',
+);
+
+const tokenModule = sdk.getTokenModule(
+	'0xebc8a89936644Eb4c5BB777520E2b90Ccca873A9'
+);
+
 
 ```
 
