@@ -1134,6 +1134,60 @@ export default App
 
 
 
+### 📝 Deploy a governance contract.
+
+```code
+
+import sdk from './1-initialize-sdk.js'
+
+// Grab the app module address.
+const appModule = sdk.getAppModule(
+	'0x040595B27b6Dc540A8d0Fc04b630336608416f8B',
+);
+
+( async () => {
+	try {
+		const voteModule = await appModule.deployVoteModule({
+		// Give your governance contract a name.
+		name: `So Dao Epic Proposals`,
+
+		// This is the location of our governance token, our ERC-20 contract!
+		votingTokenAddress: '0xebc8a89936644Eb4c5BB777520E2b90Ccca873A9',
+
+		// After a proposal is created, when can members start voting?
+		// For now, we set this to immediately.
+		proposalStartWaitTimeInSeconds: 0,
+
+		// How long do members have to vote on a proposal when it's created?
+		// Here, we set it to 24 hours (86400 seconds)
+		proposalVotingTimeInSeconds: 24 * 60 * 60,
+
+		// Will explain more below.
+		// % of min tokens must vote before execution.
+		votingQuorumFraction: 0,
+
+		// What's the minimum # of tokens a user needs to be allowed to create a proposal?
+		// I set it to 0. Meaning no tokens are required for a user to be allowed to
+		// create a proposal.
+		minimumNumberOfTokensNeededToPropose: '0',
+		})
+
+		console.log(
+		'✅ Successfully deployed vote module, address:',
+		voteModule.address,
+		)
+	} catch( err ) {
+		console.error( 'Failed to deploy vote module', err )
+	}
+} )()
+
+
+// ✅ Successfully deployed vote module, address: 0xe3a17512d7B8038E664140762ED4CbD7d734ae27
+
+```
+
+
+
 
 ```
 
