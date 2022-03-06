@@ -1765,6 +1765,34 @@ if ( error instanceof UnsupportedChainIdError ) {
 
 
 
+# Create your own mini turn-based NFT browser game
+
+
+
+## 1. 🤠 Ship your NFT character system.
+
+
+
+### 📝 Write our starter contract.
+
+```solidity
+
+// SPDX-License-Identifier: UNLICENSED
+
+pragma solidity ^0.8.0;
+
+import 'hardhat/console.sol';
+
+contract MyEpicGame {
+	constructor() {
+		console.log( 'this is my game contract. nice.' );
+	}
+}
+
+```
+
+
+
 ```
 
 
