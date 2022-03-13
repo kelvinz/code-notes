@@ -2165,6 +2165,53 @@ contract MyEpicGame is ERC721 {
 		uint attackDamage;
 	}
 
+	// The tokenId is the NFTs unique identifier, it's just a number that goes
+	// 0, 1, 2, 3, etc.
+	using Counters for Counters.Counter;
+	Counters.Counter private _tokenIds;
+
+	CharacterAttributes[] defaultCharacters;
+
+	// We create a mapping from the nft's tokenId => that NFTs attributes.
+	mapping( uint256 => CharacterAttributes ) public nftHolderAttributes;
+
+	// A mapping from an address => the NFTs tokenId. Gives me an ez way
+	// to store the owner of the NFT and reference it later.
+	mapping( address => uint256 ) public nftHolders;
+
+	constructor(
+		string[] memory characterNames,
+		string[] memory characterImageURIs,
+		uint[] memory characterHp,
+		uint[] memory characterAttackDmg
+
+		// Below, you can also see I added some special identifier symbols for our NFT.
+		// This is the name and symbol for our token, ex Ethereum and ETH. I just call mine
+		// Heroes and HERO. Remember, an NFT is just a token!
+	)
+		ERC721( "Heroes", "HERO" )
+	{
+		for ( uint i = 0; i < characterNames.length; i += 1 ) {
+			defaultCharacters.push( CharacterAttributes( {
+				characterIndex: i,
+				name: characterNames[ i ],
+				imageURI: characterImageURIs[ i ],
+				hp: characterHp[ i ],
+				maxHp: characterHp[ i ],
+				attackDamage: characterAttackDmg[ i ]
+			} ) );
+
+			CharacterAttributes memory c = defaultCharacters[ i ];
+
+			// Hardhat's use of console.log() allows up to 4 parameters in any order of following types: uint, string, bool, address
+			console.log( "Done initializing %s w/ HP %s, img %s", c.name, c.hp, c.imageURI );
+		}
+
+		// I increment _tokenIds here so that my first NFT has an ID of 1.
+		// More on this in the lesson!
+		_tokenIds.increment();
+	}
+
 ```
 
 
