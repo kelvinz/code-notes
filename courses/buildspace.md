@@ -2273,6 +2273,16 @@ contract MyEpicGame is ERC721 {
 
 
 
+### 🤑 Getting some fake $
+
+**Rinkeby Test Network Faucets**
+| MyCrypto | <https://app.mycrypto.com/faucet>
+| Buildspace | <https://buildspace-faucet.vercel.app/>
+| Ethily | <https://ethily.io/rinkeby-faucet/>
+| Rinkeby | <https://faucet.rinkeby.io/>
+
+
+
 ```
 
 
