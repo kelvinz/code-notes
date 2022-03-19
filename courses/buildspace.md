@@ -2338,6 +2338,28 @@ runMain()
 
 
 
+### 📈 Deploy to Rinkeby testnet.
+
+```code
+
+module.exports = {
+  solidity: '0.8.0',
+  networks: {
+    rinkeby: {
+      url: 'xxx',
+      accounts: [ 'xxx' ],
+    },
+  },
+};
+
+```
+
+
+
+---
+
+
+
 ```
 
 
