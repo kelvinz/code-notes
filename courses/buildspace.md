@@ -2360,6 +2360,42 @@ module.exports = {
 
 
 
+## 2. 🎮 Ship the game logic.
+
+
+
+### 🙀 Building our boss.
+
+```solidity
+
+// SPDX-License-Identifier: UNLICENSED
+
+pragma solidity ^0.8.0;
+
+// NFT contract to inherit from.
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+
+// Helper functions OpenZeppelin provides.
+import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
+
+// Helper we wrote to encode in Base64
+import "./libraries/Base64.sol";
+
+import 'hardhat/console.sol';
+
+// Our contract inherits from ERC721, which is the standard NFT contract!
+contract MyEpicGame is ERC721 {
+
+	struct CharacterAttributes {
+		uint characterIndex;
+		string name;
+		string imageURI;
+		uint hp;
+		uint maxHp;
+		uint attackDamage;
+	}
+
 ```
 
 
