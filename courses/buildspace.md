@@ -2396,6 +2396,41 @@ contract MyEpicGame is ERC721 {
 		uint attackDamage;
 	}
 
+	// The tokenId is the NFTs unique identifier, it's just a number that goes
+	// 0, 1, 2, 3, etc.
+	using Counters for Counters.Counter;
+	Counters.Counter private _tokenIds;
+
+	CharacterAttributes[] defaultCharacters;
+
+	// We create a mapping from the nft's tokenId => that NFTs attributes.
+	mapping( uint256 => CharacterAttributes ) public nftHolderAttributes;
+
+	// A mapping from an address => the NFTs tokenId. Gives me an ez way
+	// to store the owner of the NFT and reference it later.
+	mapping( address => uint256 ) public nftHolders;
+
+	struct BigBoss {
+		string name;
+		string imageURI;
+		uint hp;
+		uint maxHp;
+		uint attackDamage;
+	}
+
+	BigBoss public bigBoss;
+
+	constructor(
+		string[] memory characterNames,
+		string[] memory characterImageURIs,
+		uint[] memory characterHp,
+		uint[] memory characterAttackDmg,
+
+		string memory bossName, // These new variables would be passed in via run.js or deploy.js.
+		string memory bossImageURI,
+		uint bossHp,
+		uint bossAttackDamage
+
 ```
 
 
