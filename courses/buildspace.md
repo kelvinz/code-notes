@@ -2431,6 +2431,44 @@ contract MyEpicGame is ERC721 {
 		uint bossHp,
 		uint bossAttackDamage
 
+		// Below, you can also see I added some special identifier symbols for our NFT.
+		// This is the name and symbol for our token, ex Ethereum and ETH. I just call mine
+		// Heroes and HERO. Remember, an NFT is just a token!
+	)
+		ERC721( "Heroes", "HERO" )
+	{
+
+		bigBoss = BigBoss({
+			name: bossName,
+			imageURI: bossImageURI,
+			hp: bossHp,
+			maxHp: bossHp,
+			attackDamage: bossAttackDamage
+		});
+
+		console.log( "Done initializing boss %s w/ HP %s, img %s", bigBoss.name, bigBoss.hp, bigBoss.imageURI );
+
+		for ( uint i = 0; i < characterNames.length; i += 1 ) {
+			defaultCharacters.push( CharacterAttributes( {
+				characterIndex: i,
+				name: characterNames[ i ],
+				imageURI: characterImageURIs[ i ],
+				hp: characterHp[ i ],
+				maxHp: characterHp[ i ],
+				attackDamage: characterAttackDmg[ i ]
+			} ) );
+
+			CharacterAttributes memory c = defaultCharacters[ i ];
+
+			// Hardhat's use of console.log() allows up to 4 parameters in any order of following types: uint, string, bool, address
+			console.log( "Done initializing %s w/ HP %s, img %s", c.name, c.hp, c.imageURI );
+		}
+
+		// I increment _tokenIds here so that my first NFT has an ID of 1.
+		// More on this in the lesson!
+		_tokenIds.increment();
+	}
+
 ```
 
 
