@@ -2624,6 +2624,16 @@ function checkIfUserHasNFT() public view returns ( CharacterAttributes memory ) 
 	}
 }
 
+function getAllDefaultCharacters() public view returns ( CharacterAttributes[] memory ) {
+	return defaultCharacters;
+}
+
+function getBigBoss() public view returns ( BigBoss memory ) {
+	return bigBoss;
+}
+
+```
+
 ```
 
 
