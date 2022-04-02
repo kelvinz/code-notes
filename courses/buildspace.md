@@ -2634,6 +2634,11 @@ function getBigBoss() public view returns ( BigBoss memory ) {
 
 ```
 
+Why do we do userNftTokenId > 0? Well, basically there's no way to check if a key in a map exists. We set up our map like this: mapping(address => uint256) public nftHolders. No matter what key we look for, there will be a default value of 0.
+This is a problem for user's with NFT tokenId of 0. That's why earlier, I did tokenIds.increment() in the constructor! That way, no one is allowed to have tokenId 0. This is one of those cases where we need to be smart in how we set up our code because of some of the quirks of Solidity :).
+
+
+
 ```
 
 
