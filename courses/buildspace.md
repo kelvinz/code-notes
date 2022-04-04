@@ -2671,6 +2671,13 @@ contract MyEpicGame is ERC721 {
 		uint attackDamage;
 	}
 
+	// The tokenId is the NFTs unique identifier, it's just a number that goes
+	// 0, 1, 2, 3, etc.
+	using Counters for Counters.Counter;
+	Counters.Counter private _tokenIds;
+
+	CharacterAttributes[] defaultCharacters;
+
 ```
 
 
