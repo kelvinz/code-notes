@@ -2688,6 +2688,16 @@ contract MyEpicGame is ERC721 {
 	event CharacterNFTMinted( address sender, uint256 tokenId, uint256 characterIndex );
 	event AttackComplete( uint newBossHp, uint newPlayerHp );
 
+	struct BigBoss {
+		string name;
+		string imageURI;
+		uint hp;
+		uint maxHp;
+		uint attackDamage;
+	}
+
+	BigBoss public bigBoss;
+
 ```
 
 
