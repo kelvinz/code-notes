@@ -2698,6 +2698,32 @@ contract MyEpicGame is ERC721 {
 
 	BigBoss public bigBoss;
 
+	constructor(
+		string[] memory characterNames,
+		string[] memory characterImageURIs,
+		uint[] memory characterHp,
+		uint[] memory characterAttackDmg,
+
+		string memory bossName, // These new variables would be passed in via run.js or deploy.js.
+		string memory bossImageURI,
+		uint bossHp,
+		uint bossAttackDamage
+
+		// Below, you can also see I added some special identifier symbols for our NFT.
+		// This is the name and symbol for our token, ex Ethereum and ETH. I just call mine
+		// Heroes and HERO. Remember, an NFT is just a token!
+	)
+		ERC721( "Heroes", "HERO" )
+	{
+
+		bigBoss = BigBoss({
+			name: bossName,
+			imageURI: bossImageURI,
+			hp: bossHp,
+			maxHp: bossHp,
+			attackDamage: bossAttackDamage
+		});
+
 ```
 
 
