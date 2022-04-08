@@ -2724,6 +2724,18 @@ contract MyEpicGame is ERC721 {
 			attackDamage: bossAttackDamage
 		});
 
+		console.log( "Done initializing boss %s w/ HP %s, img %s", bigBoss.name, bigBoss.hp, bigBoss.imageURI );
+
+		for ( uint i = 0; i < characterNames.length; i += 1 ) {
+			defaultCharacters.push( CharacterAttributes( {
+				characterIndex: i,
+				name: characterNames[ i ],
+				imageURI: characterImageURIs[ i ],
+				hp: characterHp[ i ],
+				maxHp: characterHp[ i ],
+				attackDamage: characterAttackDmg[ i ]
+			} ) );
+
 ```
 
 
