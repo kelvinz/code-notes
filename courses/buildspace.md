@@ -2798,6 +2798,13 @@ contract MyEpicGame is ERC721 {
 			)
 		);
 
+		string memory output = string(
+			abi.encodePacked( "data:application/json;base64,", json )
+		);
+
+		return output;
+	}
+
 ```
 
 
