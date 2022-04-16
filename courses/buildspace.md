@@ -2876,6 +2876,37 @@ contract MyEpicGame is ERC721 {
 
 
 
+## 3. 🚢 Ship the web app.
+
+
+
+### 🌅 Using the Ethereum object.
+
+```code
+
+const [ currentAccount, setCurrentAccount ] = useState( null )
+
+const checkIfWalletIsConnected = async () => {
+	try {
+		const { ethereum } = window
+		if ( !ethereum ) {
+			console.log( 'Make sure you have MetaMask!' )
+			return
+		} else {
+			console.log( 'We have the ethereum object', ethereum )
+			const accounts = await ethereum.request({ method: 'eth_accounts' })
+			if ( accounts.length !== 0 ) {
+				const account = accounts[ 0 ]
+				console.log( 'Found an authorized account:', account )
+				setCurrentAccount( account )
+			} else {
+				console.log( 'No authorised account found' )
+			}
+		}
+	} catch ( err ) {
+		console.log( err )
+	}
+}
 
 ```
 
