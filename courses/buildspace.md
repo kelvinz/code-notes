@@ -2907,6 +2907,23 @@ const checkIfWalletIsConnected = async () => {
 		console.log( err )
 	}
 }
+const connectWalletAction = async () => {
+	try {
+		const { ethereum } = window
+		if ( !ethereum ) {
+			alert( 'Get MetaMask!' )
+			return
+		}
+		const accounts = await ethereum.request({ method: 'eth_requestAccounts' })
+		console.log( 'Connected', account[ 0 ] )
+		setCurrentAccount( account[ 0 ] )
+	} catch ( err ) {
+		console.log( err )
+	}
+}
+useEffect( () => {
+	checkIfWalletIsConnected()
+}, [] )
 
 ```
 
