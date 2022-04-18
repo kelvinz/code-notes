@@ -2929,6 +2929,10 @@ useEffect( () => {
 
 
 
+### 📁 Get the latest ABI file.
+
+When you compile your smart contract, the compiler spits out a bunch of files needed that lets you interact with the contract. You can find these files in the artifacts folder located in the root of your Solidity project.
+
 
 ```
 
