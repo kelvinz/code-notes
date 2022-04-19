@@ -2933,6 +2933,21 @@ useEffect( () => {
 
 When you compile your smart contract, the compiler spits out a bunch of files needed that lets you interact with the contract. You can find these files in the artifacts folder located in the root of your Solidity project.
 
+Our web app relies on the ABI file to know how to communicate with our contract. Read more about it here.
+
+The contents of the ABI file can be found in a fancy JSON file in your hardhat project:
+artifacts/contracts/MyEpicGame.sol/MyEpicGame.json
+
+So, the question becomes - how do we get this JSON file into our frontend? The good 'ol copy / paste method!
+
+Copy the contents from your MyEpicGame.json file and then head to your web app. You are going to make a new folder called utils under src. Under utils create a file named MyEpicGame.json. So the full path will look like: src/utils/MyEpicGame.json
+
+Paste the ABI file contents right there in our new file.
+
+SWEET. Now that we have our file set up, we need to import it into our App.js file to utilize it!
+
+
+
 
 ```
 
