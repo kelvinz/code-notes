@@ -2948,6 +2948,24 @@ SWEET. Now that we have our file set up, we need to import it into our App.js fi
 
 
 
+### 🌐 Check your Network!
+
+```code
+
+const checkNetwork = async () => {
+	try {
+		if ( window.ethereum.networkVersion !== '4' ) {
+			alert( "Please connect to Rinkeby!" )
+		}
+	} catch( err ) {
+		console.log( err )
+	}
+}
+
+```
+
+
+
 
 ```
 
