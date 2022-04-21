@@ -2966,6 +2966,26 @@ const checkNetwork = async () => {
 
 
 
+### ⭕️ Bringing it full circle.
+
+```code
+
+const CONTRACT_ADDRESS = '0xf462E45D10FF3b96C205F67734785f99F9437d42'
+
+const transformCharacterData = ( characterData ) => {
+	return {
+		name: characterData.name,
+		imageURI: characterData.imageURI,
+		hp: characterData.hp.toNumber(),
+		maxHp: characterData.maxHp.toNumber(),
+		attackDamage: characterData.attackDamage.toNumber(),
+	}
+}
+
+export { CONTRACT_ADDRESS, transformCharacterData }
+
+```
+
 
 ```
 
