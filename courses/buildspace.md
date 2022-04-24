@@ -3048,6 +3048,27 @@ const SelectCharacter = ({ setCharacterNFT }) => {
 		}
 	}, [] )
 
+	useEffect( () => {
+		const getCharacters = async () => {
+			try {
+				console.log( 'Getting contract characters to mint' )
+
+				// Call contract to get all mint-able characters
+				const charactersTxn = await gameContract.getAllDefaultCharacters()
+				console.log( 'charactersTxn:', charactersTxn )
+
+				// Go through all of our characters and transform the data
+				const characters = charactersTxn.map(( characterData ) =>
+					transformCharacterData( characterData )
+				)
+
+				// Set all mint-able characters in state
+				setCharacters( characters )
+			} catch ( err ) {
+				console.error( 'Something went wrong fetching characters:', err )
+			}
+		}
+
 
 ```
 
