@@ -3069,6 +3069,35 @@ const SelectCharacter = ({ setCharacterNFT }) => {
 			}
 		}
 
+		const onCharacterMint = async ( sender, tokenId, characterIndex ) => {
+			console.log(
+				`CharacterNFTMinted - sender: ${ sender } tokenId: ${ tokenId.toNumber() } characterIndex: ${ characterIndex.toNumber() }`
+			)
+
+			if ( gameContract ) {
+				const characterNFT = await gameContract.checkIfUserHasNFT()
+				console.log( 'CharacterNFT: ', characterNFT )
+				setCharacterNFT( transformCharacterData( characterNFT ) )
+			}
+		}
+
+		// If our gameContract is ready, let's get characters!
+		if ( gameContract ) {
+			getCharacters()
+
+			// minted listener
+			gameContract.on( 'CharacterNFTMinted', onCharacterMint )
+		}
+
+		return () => {
+			if ( gameContract ) {
+				if ( gameContract ) {
+					gameContract.off( 'CharacterNFTMinted', onCharacterMint )
+				}
+			}
+		}
+	}, [ gameContract ] )
+
 
 ```
 
