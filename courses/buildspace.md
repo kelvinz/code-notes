@@ -3116,6 +3116,19 @@ const SelectCharacter = ({ setCharacterNFT }) => {
 		)
 	)
 
+	const mintCharacterNFTAction = ( characterId ) => async () => {
+		try {
+			if ( gameContract ) {
+				console.log( 'Minting character in progress...' )
+				const mintTxn = await gameContract.mintCharacterNFT( characterId )
+				await mintTxn.wait()
+				console.log( 'mintTxn:', mintTxn )
+			}
+		} catch ( err ) {
+			console.warn( 'MintCharacterAction Error:', err )
+		}
+	}
+
 
 ```
 
