@@ -50,7 +50,7 @@ revert - undo by committing previous version to current head
 
 // change author date
 
-git commit --amend --date="2020-08-16 08:38:28 +0800"
+git commit --amend --date="2022-05-02 08:38:28 +0800"
 
 :wq! ( to exit interactive rebase )
 
@@ -58,6 +58,6 @@ git commit --amend --date="2020-08-16 08:38:28 +0800"
 
 // change commit date
 
-GIT_COMMITTER_DATE="2020-08-16 08:38:28 +0800" git commit --amend
+GIT_COMMITTER_DATE="2022-05-02 08:38:28 +0800" git commit --amend
 
 :wq! ( to exit interactive rebase )
