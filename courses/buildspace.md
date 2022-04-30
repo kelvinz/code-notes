@@ -3149,3 +3149,21 @@ export default SelectCharacter
 
 ---
 
+
+
+## 4. 🦄 Wrapping it all up.
+
+
+
+### Key Notes
+
+1. create contract
+2. have functions and events in contract
+3. setup your frontend
+4. use ether.js to ping contract
+5. hit functions and watch for events
+6. the end
+
+
+
+---
