@@ -53,6 +53,8 @@ contract ZombieFactory {
 
 ```
 
+
+
 ## Zombies Attack Their Victims
 
 ```solidity
@@ -156,7 +158,6 @@ contract ZombieFeeding is ZombieFactory {
 
 
 
-
 ## Advanced Solidity Concepts
 
 After you deploy a contract to Ethereum, it’s immutable, which means that it can never be modified or updated again.
@@ -164,6 +165,88 @@ After you deploy a contract to Ethereum, it’s immutable, which means that it c
 The initial code you deploy to a contract is there to stay, permanently, on the blockchain. This is one reason security is such a huge concern in Solidity. If there's a flaw in your contract code, there's no way for you to patch it later. You would have to tell your users to start using a different smart contract address that has the fix.
 
 But this is also a feature of smart contracts. The code is law. If you read the code of a smart contract and verify it, you can be sure that every time you call a function it's going to do exactly what the code says it will do. No one can later change that function and give you unexpected results.
+
+ownable.sol
+
+```solidity
+
+pragma solidity >=0.5.0 <0.6.0;
+
+/**
+* @title Ownable
+* @dev The Ownable contract has an owner address, and provides basic authorization control
+* functions, this simplifies the implementation of "user permissions".
+*/
+contract Ownable {
+  address private _owner;
+
+  event OwnershipTransferred(
+    address indexed previousOwner,
+    address indexed newOwner
+  );
+
+  /**
+  * @dev The Ownable constructor sets the original `owner` of the contract to the sender
+  * account.
+  */
+  constructor() internal {
+    _owner = msg.sender;
+    emit OwnershipTransferred(address(0), _owner);
+  }
+
+  /**
+  * @return the address of the owner.
+  */
+  function owner() public view returns(address) {
+    return _owner;
+  }
+
+  /**
+  * @dev Throws if called by any account other than the owner.
+  */
+  modifier onlyOwner() {
+    require(isOwner());
+    _;
+  }
+
+  /**
+  * @return true if `msg.sender` is the owner of the contract.
+  */
+  function isOwner() public view returns(bool) {
+    return msg.sender == _owner;
+  }
+
+  /**
+  * @dev Allows the current owner to relinquish control of the contract.
+  * @notice Renouncing to ownership will leave the contract without an owner.
+  * It will not be possible to call the functions with the `onlyOwner`
+  * modifier anymore.
+  */
+  function renounceOwnership() public onlyOwner {
+    emit OwnershipTransferred(_owner, address(0));
+    _owner = address(0);
+  }
+
+  /**
+  * @dev Allows the current owner to transfer control of the contract to a newOwner.
+  * @param newOwner The address to transfer ownership to.
+  */
+  function transferOwnership(address newOwner) public onlyOwner {
+    _transferOwnership(newOwner);
+  }
+
+  /**
+  * @dev Transfers control of the contract to a newOwner.
+  * @param newOwner The address to transfer ownership to.
+  */
+  function _transferOwnership(address newOwner) internal {
+    require(newOwner != address(0));
+    emit OwnershipTransferred(_owner, newOwner);
+    _owner = newOwner;
+  }
+}
+
+```
 
 ## Zombie Battle System
 ## ERC721 & Crypto-Collectibles
