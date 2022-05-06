@@ -325,6 +325,14 @@ contract KittyInterface {
   );
 }
 
+contract ZombieFeeding is ZombieFactory {
+
+  KittyInterface kittyContract;
+
+  function setKittyContractAddress(address _address) external onlyOwner {
+    kittyContract = KittyInterface(_address);
+  }
+
 ## Zombie Battle System
 ## ERC721 & Crypto-Collectibles
 ## App Front-ends & Web3.js
