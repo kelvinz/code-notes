@@ -61,3 +61,18 @@ git commit --amend --date="2022-05-02 08:38:28 +0800"
 GIT_COMMITTER_DATE="2022-05-02 08:38:28 +0800" git commit --amend
 
 :wq! ( to exit interactive rebase )
+
+
+
+// change old name
+git rebase -i HEAD~<how many back>
+
+// use delete and type reword on commit
+// esc, then :wq!
+// next screen, del, type changed message
+
+// to change author date, commit date
+// instead of reword, type edit
+// esc, :wq!
+// then use the above 2 commands as the head will be changed
+// then git rebase --continue to complete
