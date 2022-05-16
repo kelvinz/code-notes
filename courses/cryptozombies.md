@@ -435,6 +435,15 @@ contract ZombieHelper is ZombieFeeding {
     _;
   }
 
+  function withdraw() external onlyOwner {
+    address _owner = owner();
+    _owner.transfer(address(this).balance);
+  }
+
+  function setLevelUpFee(uint _fee) external onlyOwner {
+    levelUpFee = _fee;
+  }
+
 ## ERC721 & Crypto-Collectibles
 ## App Front-ends & Web3.js
 
