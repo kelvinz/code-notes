@@ -444,6 +444,11 @@ contract ZombieHelper is ZombieFeeding {
     levelUpFee = _fee;
   }
 
+  function levelUp(uint _zombieId) external payable {
+    require(msg.value == levelUpFee);
+    zombies[_zombieId].level++;
+  }
+
 ## ERC721 & Crypto-Collectibles
 ## App Front-ends & Web3.js
 
