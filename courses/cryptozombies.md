@@ -473,6 +473,9 @@ contract ZombieHelper is ZombieFeeding {
 
 ```
 
+It is important to note that you cannot transfer Ether to an address unless that address is of type address payable.
+But the _owner variable is of type uint160, meaning that we must explicitly cast it to address payable.
+
 ## ERC721 & Crypto-Collectibles
 ## App Front-ends & Web3.js
 
