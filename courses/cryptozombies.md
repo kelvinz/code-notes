@@ -476,6 +476,23 @@ contract ZombieHelper is ZombieFeeding {
 It is important to note that you cannot transfer Ether to an address unless that address is of type address payable.
 But the _owner variable is of type uint160, meaning that we must explicitly cast it to address payable.
 
+zombieattack.sol
+
+```solidity
+
+pragma solidity >=0.5.0 <0.6.0;
+
+import "./zombiehelper.sol";
+
+contract ZombieAttack is ZombieHelper {
+  uint randNonce = 0;
+  uint attackVictoryProbability = 70;
+
+  function randMod(uint _modulus) internal returns(uint) {
+    randNonce++;
+    return uint(keccak256(abi.encodePacked(now, msg.sender, randNonce))) % _modulus;
+  }
+
 ## ERC721 & Crypto-Collectibles
 ## App Front-ends & Web3.js
 
