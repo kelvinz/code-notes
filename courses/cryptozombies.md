@@ -577,6 +577,36 @@ contract ZombieFeeding is ZombieFactory {
 
 ```
 
+zombiefactory.sol
+
+```solidity
+
+pragma solidity >=0.5.0 <0.6.0;
+
+import "./ownable.sol";
+
+contract ZombieFactory is Ownable {
+
+    event NewZombie(uint zombieId, string name, uint dna);
+
+    uint dnaDigits = 16;
+    uint dnaModulus = 10 ** dnaDigits;
+    uint cooldownTime = 1 days;
+
+    struct Zombie {
+      string name;
+      uint dna;
+      uint32 level;
+      uint32 readyTime;
+      uint16 winCount;
+      uint16 lossCount;
+    }
+
+    Zombie[] public zombies;
+
+    mapping (uint => address) public zombieToOwner;
+    mapping (address => uint) ownerZombieCount;
+
 ## ERC721 & Crypto-Collectibles
 ## App Front-ends & Web3.js
 
