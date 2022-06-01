@@ -650,6 +650,29 @@ contract ERC721 {
 
 ```
 
+zombiefeeding.sol
+
+```solidity
+
+pragma solidity >=0.5.0 <0.6.0;
+
+import "./zombiefactory.sol";
+
+contract KittyInterface {
+  function getKitty(uint256 _id) external view returns (
+    bool isGestating,
+    bool isReady,
+    uint256 cooldownIndex,
+    uint256 nextActionAt,
+    uint256 siringWithId,
+    uint256 birthTime,
+    uint256 matronId,
+    uint256 sireId,
+    uint256 generation,
+    uint256 genes
+  );
+}
+
 ## App Front-ends & Web3.js
 
 
