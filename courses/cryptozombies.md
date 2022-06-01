@@ -673,6 +673,15 @@ contract KittyInterface {
   );
 }
 
+contract ZombieFeeding is ZombieFactory {
+
+  KittyInterface kittyContract;
+
+  modifier onlyOwnerOf(uint _zombieId) {
+    require(msg.sender == zombieToOwner[_zombieId]);
+    _;
+  }
+
 ## App Front-ends & Web3.js
 
 
