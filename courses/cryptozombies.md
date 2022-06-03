@@ -682,6 +682,10 @@ contract ZombieFeeding is ZombieFactory {
     _;
   }
 
+  function setKittyContractAddress(address _address) external onlyOwner {
+    kittyContract = KittyInterface(_address);
+  }
+
 ## App Front-ends & Web3.js
 
 
