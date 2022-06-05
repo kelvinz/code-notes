@@ -690,6 +690,10 @@ contract ZombieFeeding is ZombieFactory {
     _zombie.readyTime = uint32(now + cooldownTime);
   }
 
+  function _isReady(Zombie storage _zombie) internal view returns (bool) {
+      return (_zombie.readyTime <= now);
+  }
+
 ## App Front-ends & Web3.js
 
 
