@@ -732,6 +732,10 @@ contract ZombieOwnership is ZombieAttack, ERC721 {
     return ownerZombieCount[_owner];
   }
 
+  function ownerOf(uint256 _tokenId) external view returns (address) {
+    return zombieToOwner[_tokenId];
+  }
+
 ## App Front-ends & Web3.js
 
 
