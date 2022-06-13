@@ -757,6 +757,17 @@ contract ZombieOwnership is ZombieAttack, ERC721 {
 
 ```
 
+Let's say we have a uint8, which can only have 8 bits. That means the largest number we can store is binary 11111111 (or in decimal, 2^8 - 1 = 255).
+
+Take a look at the following code. What is number equal to at the end?
+
+uint8 number = 255;
+number++;
+In this case, we've caused it to overflow — so number is counterintuitively now equal to 0 even though we increased it.
+(If you add 1 to binary 11111111, it resets back to 00000000, like a clock going from 23:59 to 00:00).
+
+An underflow is similar, where if you subtract 1 from a uint8 that equals 0, it will now equal 255 (because uints are unsigned, and cannot be negative).
+
 ## App Front-ends & Web3.js
 
 
