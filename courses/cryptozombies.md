@@ -768,6 +768,26 @@ In this case, we've caused it to overflow — so number is counterintuitively no
 
 An underflow is similar, where if you subtract 1 from a uint8 that equals 0, it will now equal 255 (because uints are unsigned, and cannot be negative).
 
+zombieownership.sol
+
+```solidity
+
+pragma solidity >=0.5.0 <0.6.0;
+
+import "./zombieattack.sol";
+import "./erc721.sol";
+import "./safemath.sol";
+
+contract ZombieOwnership is ZombieAttack, ERC721 {
+
+  using SafeMath for uint256;
+
+  mapping (uint => address) zombieApprovals;
+
+  function balanceOf(address _owner) external view returns (uint256) {
+    return ownerZombieCount[_owner];
+  }
+
 ## App Front-ends & Web3.js
 
 
