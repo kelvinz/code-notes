@@ -848,6 +848,15 @@ contract ZombieFactory is Ownable {
   mapping (uint => address) public zombieToOwner;
   mapping (address => uint) ownerZombieCount;
 
+  function _createZombie(string memory _name, uint _dna) internal {
+    // Note: We chose not to prevent the year 2038 problem... So don't need
+    // worry about overflows on readyTime. Our app is screwed in 2038 anyway ;)
+    uint id = zombies.push(Zombie(_name, _dna, 1, uint32(now + cooldownTime), 0, 0)) - 1;
+    zombieToOwner[id] = msg.sender;
+    ownerZombieCount[msg.sender] = ownerZombieCount[msg.sender].add(1);
+    emit NewZombie(id, _name, _dna);
+  }
+
 ## App Front-ends & Web3.js
 
 
