@@ -947,6 +947,15 @@ index.html
           }
         }, 100);
 
+        cryptoZombies.events.Transfer({ filter: { _to: userAccount } })
+        .on("data", function(event) {
+          let data = event.returnValues;
+          // The current user just received a zombie!
+          // Do something here to update the UI to show it
+          getZombiesByOwner(userAccount).then(displayZombies);
+        }).on("error", console.error);
+      }
+
 
 
 
