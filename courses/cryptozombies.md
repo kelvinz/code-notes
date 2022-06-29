@@ -978,6 +978,24 @@ index.html
         }
       }
 
+      function createRandomZombie(name) {
+        // This is going to take a while, so update the UI to let the user know
+        // the transaction has been sent
+        $("#txStatus").text("Creating new zombie on the blockchain. This may take a while...");
+        // Send the tx to our contract:
+        return cryptoZombies.methods.createRandomZombie(name)
+        .send({ from: userAccount })
+        .on("receipt", function(receipt) {
+          $("#txStatus").text("Successfully created " + name + "!");
+          // Transaction was accepted into the blockchain, let's redraw the UI
+          getZombiesByOwner(userAccount).then(displayZombies);
+        })
+        .on("error", function(error) {
+          // Do something to alert the user their transaction has failed
+          $("#txStatus").text(error);
+        });
+      }
+
 
 
 
