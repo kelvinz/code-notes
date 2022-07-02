@@ -56,6 +56,13 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 rm -r User
 ln -s /Users/Kelvin/Documents/Dropbox/Sync/Misc/Sublime/User
 
+// vscode sync
+cd ./.vscode
+ln -s <where your extension folder is>
+
+cd ~/Library/Application\ Support/Code
+ln -s <where your user folder is>
+
 
 
 
