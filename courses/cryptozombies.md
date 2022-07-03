@@ -1021,6 +1021,10 @@ index.html
         });
       }
 
+      function getZombieDetails(id) {
+        return cryptoZombies.methods.zombies(id).call()
+      }
+
 
 
 
