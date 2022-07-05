@@ -1029,6 +1029,10 @@ index.html
         return cryptoZombies.methods.zombieToOwner(id).call()
       }
 
+      function getZombiesByOwner(owner) {
+        return cryptoZombies.methods.getZombiesByOwner(owner).call()
+      }
+
 
 
 
