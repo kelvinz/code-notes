@@ -1056,6 +1056,12 @@ index.html
 
 In order to filter events and only listen for changes related to the current user, our Solidity contract would have to use the indexed keyword, like we did in the Transfer event of our ERC721 implementation:
 
+```solidity
+
+event Transfer(address indexed _from, address indexed _to, uint256 _tokenId);
+
+```
+
 
 
 ---
