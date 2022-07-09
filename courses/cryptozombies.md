@@ -1062,6 +1062,7 @@ event Transfer(address indexed _from, address indexed _to, uint256 _tokenId);
 
 ```
 
+We can even query past events using getPastEvents, and use the filters fromBlock and toBlock to give Solidity a time range for the event logs ("block" in this case referring to the Ethereum block number):
 
 
 ---
