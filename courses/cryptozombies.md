@@ -1064,5 +1064,13 @@ event Transfer(address indexed _from, address indexed _to, uint256 _tokenId);
 
 We can even query past events using getPastEvents, and use the filters fromBlock and toBlock to give Solidity a time range for the event logs ("block" in this case referring to the Ethereum block number):
 
+```solidity
+cryptoZombies.getPastEvents("NewZombie", { fromBlock: 0, toBlock: "latest" })
+.then(function(events) {
+  // `events` is an array of `event` objects that we can iterate, like we did above
+  // This code will get us a list of every zombie that was ever created
+});
+```
+
 
 ---
