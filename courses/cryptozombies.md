@@ -1086,5 +1086,42 @@ For example, we could use this as a historical record of zombie battles — we c
 
 
 
+# Chainlink
+
+
+
+## Data Feedds & Computation
+
+
+
+---
+
+
+
+# Advanced Solidity
+
+
+
+## Testing Smart Contracts with Truffle
+## Deploying DApps with Truffle
+## How to Build an Oracle
+## How to Build an Oracle - Part 2
+## How to Build an Oracle - Part 3
+
+
+
+---
+
+
+
+# Beyond Ethereum
+
+
+
+## Intro to zkSync
+## Advanced zkSync Concepts
+
+>>>>>>> Stashed changes
+
 
 ---
