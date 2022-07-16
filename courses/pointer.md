@@ -47,6 +47,25 @@ export async function getApp () {
 
 
 
+1-create-bundle-module.js
+
+```js
+
+import { getApp } from './helpers.js'
+
+async function main () {
+	const app = await getApp()
+
+	console.log( 'Deploying bundle collection module...' )
+
+	const bundleModule = await app.deployBundleModule( {
+		name: 'Lootbox Bundle',
+		sellerFeeBasisPoints: 0, // 100 means 1% royalty fee
+	} )
+
+	console.log( `Deployed bundle collection module with address ${ bundleModule.address }` )
+}
+
 
 ```
 
