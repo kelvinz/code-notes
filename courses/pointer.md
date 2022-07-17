@@ -66,6 +66,19 @@ async function main () {
 	console.log( `Deployed bundle collection module with address ${ bundleModule.address }` )
 }
 
+try {
+	await main()
+} catch ( error ) {
+	console.error( 'Error creating the bundle collection module', error )
+	process.exit( 1 )
+}
+
+// 0x1a6CEa2bdAFB15D034fCF81C800a4B754Cef9316
+
+```
+
+
+
 
 ```
 
