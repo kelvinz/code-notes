@@ -79,6 +79,63 @@ try {
 
 
 
+2-mint-bundle-nfts.js
+
+```js
+
+import { readFileSync } from 'fs'
+import { sdk } from './helpers.js'
+
+async function main () {
+	// Paste in the address from when you created the bundle collection module
+	const bundleModuleAddress = '0x1a6CEa2bdAFB15D034fCF81C800a4B754Cef9316'
+	const bundleModule = sdk.getBundleModule( bundleModuleAddress )
+
+	console.log( 'Creating NFT batch...' )
+
+	const created = await bundleModule.createAndMintBatch( [
+		{
+			metadata: {
+				name: '#2764',
+				description: 'Just a doodle.',
+				image: readFileSync( './assets/2764.png' ),
+				properties: {
+					rarity: 'a bit rare',
+					fanciness: 5,
+				}
+			},
+			supply: 50,
+		},
+		{
+			metadata: {
+				name: '#6914',
+				description: 'Just a doodle.',
+				image: readFileSync( './assets/6914.png' ),
+				properties: {
+					rarity: 'a bit rare',
+					fanciness: 5,
+				}
+			},
+			supply: 50,
+		},
+		{
+			metadata: {
+				name: '#9243',
+				description: 'Just a doodle.',
+				image: readFileSync( './assets/9243.png' ),
+				properties: {
+					rarity: 'super rare!',
+					fanciness: 10,
+				}
+			},
+			supply: 1,
+		}
+	] )
+
+	console.log( 'NFTs created!' )
+	console.log( JSON.stringify( created, null, 2 ) )
+}
+
 
 ```
 
