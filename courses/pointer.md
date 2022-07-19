@@ -136,6 +136,17 @@ async function main () {
 	console.log( JSON.stringify( created, null, 2 ) )
 }
 
+try {
+	await main()
+} catch ( error ) {
+	console.error( "Error minting the NFTs", error )
+	process.exit( 1 )
+}
+
+```
+
+
+
 
 ```
 
