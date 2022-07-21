@@ -166,6 +166,19 @@ async function main () {
 	console.log( `Deployed pack module with address ${ packModule.address }` )
 }
 
+try {
+	await main()
+} catch ( error ) {
+	console.error( 'Error creating the pack module', error )
+	process.exit( 1 )
+}
+
+// 0x1B5f9fD92882d50da47cA73Ce9762Ee02Bd6d1c9
+
+```
+
+
+
 
 ```
 
