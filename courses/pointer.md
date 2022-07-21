@@ -179,6 +179,26 @@ try {
 
 
 
+4-create-pack-from-bundle.js
+
+```js
+
+import { readFileSync } from 'fs'
+import { sdk } from './helpers.js'
+
+async function main () {
+	const bundleModuleAddress = '0x1a6CEa2bdAFB15D034fCF81C800a4B754Cef9316' // your bundle module address
+	const bundleModule = sdk.getBundleModule( bundleModuleAddress )
+
+	const packModuleAddress = '0x1B5f9fD92882d50da47cA73Ce9762Ee02Bd6d1c9' // your pack module address
+	const packModule = sdk.getPackModule( packModuleAddress )
+
+	console.log( 'Getting all NFTs from bundle...' )
+	const nftsInBundle = await bundleModule.getAll()
+
+	console.log( 'NFTs in bundle:' )
+	console.log( nftsInBundle )
+
 
 ```
 
