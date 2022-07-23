@@ -199,6 +199,23 @@ async function main () {
 	console.log( 'NFTs in bundle:' )
 	console.log( nftsInBundle )
 
+	console.log( 'Creating a pack containing the NFTs from bundle...' )
+	const created = await packModule.create( {
+		assetContract: bundleModuleAddress,
+		metadata: {
+			name: 'Fancy Doodles Pack!',
+			image: readFileSync( './assets/2764.png' ),
+		},
+		assets: nftsInBundle.map( nft => ( {
+			tokenId: nft.metadata.id,
+			amount: nft.supply,
+		} ) ),
+	} )
+
+	console.log( 'Pack created!' )
+	console.log( created )
+}
+
 
 ```
 
