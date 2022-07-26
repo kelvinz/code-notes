@@ -250,6 +250,12 @@ async function main () {
 	console.log( balance )
 }
 
+try {
+	await main()
+} catch ( error ) {
+	console.error( 'Error depositing the LINK', error )
+	process.exit( 1 )
+}
 
 ```
 
