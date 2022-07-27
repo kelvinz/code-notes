@@ -261,3 +261,19 @@ try {
 
 
 
+6-open-pack.js
+
+```js
+
+import { sdk } from './helpers.js'
+
+async function main () {
+	const packModuleAddress = '0x1B5f9fD92882d50da47cA73Ce9762Ee02Bd6d1c9'
+	const packModule = sdk.getPackModule( packModuleAddress )
+
+	console.log( 'Opening the pack...' )
+	const opened = await packModule.open( '0' )
+	console.log( 'Opened the pack!' )
+	console.log( opened )
+}
+
