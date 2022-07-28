@@ -277,3 +277,11 @@ async function main () {
 	console.log( opened )
 }
 
+try {
+	await main()
+} catch ( error ) {
+	console.error( 'Error opening the pack', error )
+	process.exit( 1 )
+}
+
+```
