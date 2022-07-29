@@ -12,6 +12,16 @@
 
 # trees
 
+**Data Structure**
+A particular way to organize and store data so that a computer can quickly and efficiently access and modify it
+
+- Doubly Linked List
+- Linked Lists
+- Arrays
+- Trees
+
+
+
 
 
 ---
