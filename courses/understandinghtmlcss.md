@@ -22,6 +22,21 @@ A particular way to organize and store data so that a computer can quickly and e
 
 
 
+**The Language of Trees**
+
+- root
+- ancestors
+- parent
+- siblings
+- children
+- descendants
+- node
+
+
+
+**Traversal and Search**
+A way of moving around the tree structure to find data
+
 
 
 ---
