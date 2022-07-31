@@ -43,6 +43,12 @@ A way of moving around the tree structure to find data
 
 # html
 
+**Agent**
+Something that acts on someone else's behalf
+*User Agent:* software that acts on the user's behalf
+
+
+
 
 
 ---
