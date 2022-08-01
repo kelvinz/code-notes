@@ -49,6 +49,15 @@ Something that acts on someone else's behalf
 
 
 
+**User Agents**
+We want to help user agents do their job successfully
+
+- browsers
+- screen readers
+- googlebots
+
+
+
 
 
 ---
