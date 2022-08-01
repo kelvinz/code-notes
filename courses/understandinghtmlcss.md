@@ -58,6 +58,16 @@ We want to help user agents do their job successfully
 
 
 
+**Tags**
+Start and End tag
+
+- a way to 'markup' the document that is friendly to user agents
+- and easy for humans to read and write
+- the 'markup' describes the document
+- by 'marking up' a document you are attempting to add meaning
+
+
+
 
 
 ---
