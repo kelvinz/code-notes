@@ -68,6 +68,15 @@ Start and End tag
 
 
 
+**Language**
+
+- consistent vocabulary
+- can convey meaning clearly
+- exists to facilitate communication
+- when learning, can go to a dictionary and look it up!
+
+
+
 
 
 ---
