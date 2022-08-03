@@ -77,6 +77,12 @@ Start and End tag
 
 
 
+**Tags** - give meaning to content
+**Attributes** - related pieces of information or instructions
+**Elements** - Tags + Attributes
+
+
+
 
 
 ---
