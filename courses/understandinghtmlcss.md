@@ -83,6 +83,14 @@ Start and End tag
 
 
 
+**Specification**
+A standard of precise requirements
+Internet technologies are governed by many specifications
+Somtimes we just call it the 'spec'
+<https://html.spec.whatwg.org/>
+
+
+
 
 
 ---
