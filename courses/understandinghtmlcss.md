@@ -91,6 +91,13 @@ Somtimes we just call it the 'spec'
 
 
 
+**HTML**
+HTML is the World Wide Web's core markup language.
+Originally, HTML was primarily designed as a language for *semantically describing* scientific *documents*.
+Its general design, however, has enabled it to be adapted, over the subsequent years, *to describe a number of other types of documents and even applications*.
+
+
+
 
 
 ---
