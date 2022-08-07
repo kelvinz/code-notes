@@ -98,6 +98,10 @@ Its general design, however, has enabled it to be adapted, over the subsequent y
 
 
 
+**Content Model**
+A description of the element's intented contents
+<element>What we agree is allowed to go here?</element>
+
 
 
 ---
