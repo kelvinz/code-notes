@@ -137,6 +137,12 @@ Including the DOCTYPE in a document ensures that the browser makes a best-effort
 
 
 
+**Sectioning Root**
+A node in the tree that represents the root of a new section of the document.
+We can look at a tree and think of a portion of the tree (a sub-tree) as having its own root.
+
+
+
 ---
 
 # grouping things
