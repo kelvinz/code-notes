@@ -148,6 +148,25 @@ The article element represents a *complete, or self-contained, composition* in a
 *This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.*
 When article elements are nested, the inner article elements represent articles that are in principle related to the contents of the outer article. For instance, a blog entry on a site that accepts user-submitted comments could represent the comments as article elements nested within the article element for the blog entry.
 
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Resume of Tony Alicea</title>
+	</head>
+	<body>
+		<article>
+			Hi! I'm Tony Alicea and I'm happy to have you as a student in my courses. Don't imitate, understand!
+		</article>
+	</body>
+</html>
+
+```
+
+
+
 ---
 
 # grouping things
