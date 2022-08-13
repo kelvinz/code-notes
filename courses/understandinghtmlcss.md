@@ -167,6 +167,10 @@ When article elements are nested, the inner article elements represent articles 
 
 
 
+**section**
+The section element represents a *generic section of a document* or application.
+A section, in this context, is a thematic grouping of content, typically with a heading.
+
 ---
 
 # grouping things
