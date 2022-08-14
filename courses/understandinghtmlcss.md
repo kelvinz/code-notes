@@ -171,6 +171,24 @@ When article elements are nested, the inner article elements represent articles 
 The section element represents a *generic section of a document* or application.
 A section, in this context, is a thematic grouping of content, typically with a heading.
 
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Resume of Tony Alicea</title>
+	</head>
+	<body>
+		Resume
+        <section>
+            Tony Alicea
+            Coder, UX Designer, and Instructor
+            Website: google.com
+            Phone: 555-555-1111
+            Twitter: @anthonypalicea
+        </section>
+
 ---
 
 # grouping things
