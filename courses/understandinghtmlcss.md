@@ -189,6 +189,10 @@ A section, in this context, is a thematic grouping of content, typically with a 
             Twitter: @anthonypalicea
         </section>
 
+        <article>
+            Hi! I'm Tony Alicea and I'm happy to have you as a student in my courses. Don't imitate, understand!
+        </article>
+
 ---
 
 # grouping things
