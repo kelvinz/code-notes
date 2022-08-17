@@ -200,6 +200,16 @@ A section, in this context, is a thematic grouping of content, typically with a 
             Training
         </section>
 
+        <section>
+            Skills
+            HTML
+            Markup your content with semantic HTML.
+            CSS
+            Layout your content visually for multiple devices.
+            JavaScript
+            Make your content more interactive, and build web applications.
+        </section>
+
 ---
 
 # grouping things
