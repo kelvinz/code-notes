@@ -229,6 +229,12 @@ A section, in this context, is a thematic grouping of content, typically with a 
             Portfolio
         </section>
 
+        <section>
+            Testimonials
+            I love Tony's courses!
+            Tony's courses helped me get a job.
+        </section>
+
 ---
 
 # grouping things
