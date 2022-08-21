@@ -235,6 +235,18 @@ A section, in this context, is a thematic grouping of content, typically with a 
             Tony's courses helped me get a job.
         </section>
 
+        <section>
+            Mailing Address
+            111 Main St.
+            Somewhere, NY 33333
+        </section>
+	</body>
+</html>
+
+```
+
+
+
 ---
 
 # grouping things
