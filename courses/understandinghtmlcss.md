@@ -250,6 +250,24 @@ A section, in this context, is a thematic grouping of content, typically with a 
 **Aside**
 The aside element represents a section of a page that consists of content that is *tangentially related* to the content around the aside element, and which could be *considered seperate* from that content. Such sections are often represented as sidebars in printed typography.
 
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Resume of Tony Alicea</title>
+	</head>
+	<body>
+		Resume
+        <section>
+            Tony Alicea
+            Coder, UX Designer, and Instructor
+            Website: google.com
+            Phone: 555-555-1111
+            Twitter: @anthonypalicea
+        </section>
+
 ---
 
 # grouping things
