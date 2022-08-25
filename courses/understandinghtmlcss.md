@@ -272,6 +272,13 @@ The aside element represents a section of a page that consists of content that i
             Hi! I'm Tony Alicea and I'm happy to have you as a student in my courses. <aside>Don't imitate, understand!</aside>
         </article>
 
+        <section>
+            Services
+            Web Development
+            App Development
+            Training
+        </section>
+
 ---
 
 # grouping things
