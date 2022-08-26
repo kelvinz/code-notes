@@ -279,6 +279,16 @@ The aside element represents a section of a page that consists of content that i
             Training
         </section>
 
+        <section>
+            Skills
+            HTML
+            Markup your content with semantic HTML.
+            CSS
+            Layout your content visually for multiple devices.
+            JavaScript
+            Make your content more interactive, and build web applications.
+        </section>
+
 ---
 
 # grouping things
