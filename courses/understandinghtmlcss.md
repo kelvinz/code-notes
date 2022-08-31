@@ -326,6 +326,12 @@ The aside element represents a section of a page that consists of content that i
 
 
 
+**Headings and Rank**
+Heading content defines the *heading of a section* (whether *explicitly marked up* using sectioning content elements, or *implied* by the heading content itself).
+These elements have a rank given by the number in their name.
+The h1 element is said to have the highest rank, the h6 element has the lowest rank, and two elements with the same name have equal rank.
+Subsequent headings of *equal or higher rank* start new (implied) sections, headings of *lower rank start implied subsections* that are part of the previous one.
+
 ---
 
 # grouping things
