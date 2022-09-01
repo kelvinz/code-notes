@@ -332,6 +332,22 @@ These elements have a rank given by the number in their name.
 The h1 element is said to have the highest rank, the h6 element has the lowest rank, and two elements with the same name have equal rank.
 Subsequent headings of *equal or higher rank* start new (implied) sections, headings of *lower rank start implied subsections* that are part of the previous one.
 
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Resume of Tony Alicea</title>
+	</head>
+	<body>
+	</body>
+</html>
+
+```
+
+
+
 ---
 
 # grouping things
