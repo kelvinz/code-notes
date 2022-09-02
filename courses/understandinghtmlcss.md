@@ -341,6 +341,15 @@ Subsequent headings of *equal or higher rank* start new (implied) sections, head
 		<title>Resume of Tony Alicea</title>
 	</head>
 	<body>
+		<h1>Resume</h1>
+        <section>
+            <h2>Tony Alicea</h2>
+            Coder, UX Designer, and Instructor
+            Website: google.com
+            Phone: 555-555-1111
+            Twitter: @anthonypalicea
+        </section>
+
 	</body>
 </html>
 
