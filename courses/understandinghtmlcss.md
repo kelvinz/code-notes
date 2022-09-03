@@ -350,6 +350,10 @@ Subsequent headings of *equal or higher rank* start new (implied) sections, head
             Twitter: @anthonypalicea
         </section>
 
+        <article>
+            Hi! I'm Tony Alicea and I'm happy to have you as a student in my courses. <aside>Don't imitate, understand!</aside>
+        </article>
+
 	</body>
 </html>
 
