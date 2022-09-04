@@ -354,6 +354,13 @@ Subsequent headings of *equal or higher rank* start new (implied) sections, head
             Hi! I'm Tony Alicea and I'm happy to have you as a student in my courses. <aside>Don't imitate, understand!</aside>
         </article>
 
+        <section>
+            <h2>Services</h2>
+            Web Development
+            App Development
+            Training
+        </section>
+
 	</body>
 </html>
 
