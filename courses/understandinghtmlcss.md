@@ -361,6 +361,16 @@ Subsequent headings of *equal or higher rank* start new (implied) sections, head
             Training
         </section>
 
+        <section>
+            <h2>Skills</h2>
+            HTML
+            Markup your content with semantic HTML.
+            CSS
+            Layout your content visually for multiple devices.
+            JavaScript
+            Make your content more interactive, and build web applications.
+        </section>
+
 	</body>
 </html>
 
