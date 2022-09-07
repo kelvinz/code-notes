@@ -386,6 +386,9 @@ Subsequent headings of *equal or higher rank* start new (implied) sections, head
             2 years
         </section>
 
+        <section>
+            <h2>Portfolio</h2>
+        </section>
 	</body>
 </html>
 
