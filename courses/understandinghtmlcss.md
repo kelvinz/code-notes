@@ -389,6 +389,13 @@ Subsequent headings of *equal or higher rank* start new (implied) sections, head
         <section>
             <h2>Portfolio</h2>
         </section>
+
+        <section>
+            <h2>Testimonials</h2>
+            I love Tony's courses!
+            Tony's courses helped me get a job.
+        </section>
+
 	</body>
 </html>
 
