@@ -396,6 +396,18 @@ Subsequent headings of *equal or higher rank* start new (implied) sections, head
             Tony's courses helped me get a job.
         </section>
 
+        <section>
+            <h2>Mailing Address</h2>
+            111 Main St.
+            Somewhere, NY 33333
+        </section>
+	</body>
+</html>
+
+```
+
+
+
 	</body>
 </html>
 
