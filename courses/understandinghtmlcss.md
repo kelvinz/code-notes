@@ -408,6 +408,12 @@ Subsequent headings of *equal or higher rank* start new (implied) sections, head
 
 
 
+**Headers and Footers**
+A header element is intented to usually *contain the section's heading* (an h1-h6 element or an hgroup element), but this is not required. The header element can also be used to wrap a section's *table of contents, a search form, or any relevant logos*.
+The footer element represents a *footer for its nearest ancestor* sectioning content or sectioning root element.
+A footer typically contains *information about its section such as who wrote it*, links to related documents, copyright data, and the like.
+When the footer element contains entire sections, they represent *appendices, indexes, long colophons, verbose license agreements, and other such content*.
+
 	</body>
 </html>
 
