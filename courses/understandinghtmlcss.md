@@ -414,6 +414,14 @@ The footer element represents a *footer for its nearest ancestor* sectioning con
 A footer typically contains *information about its section such as who wrote it*, links to related documents, copyright data, and the like.
 When the footer element contains entire sections, they represent *appendices, indexes, long colophons, verbose license agreements, and other such content*.
 
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Resume of Tony Alicea</title>
+	</head>
 	</body>
 </html>
 
