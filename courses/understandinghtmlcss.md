@@ -432,6 +432,10 @@ When the footer element contains entire sections, they represent *appendices, in
             Twitter: @anthonypalicea
         </section>
 
+        <article>
+        	<header>
+        		<h2>About me</h2>
+        	</header>
 	</body>
 </html>
 
