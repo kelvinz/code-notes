@@ -442,6 +442,13 @@ When the footer element contains entire sections, they represent *appendices, in
             </footer>
         </article>
 
+        <section>
+            <h2>Services</h2>
+            Web Development
+            App Development
+            Training
+        </section>
+
 	</body>
 </html>
 
