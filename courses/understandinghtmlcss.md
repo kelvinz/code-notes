@@ -449,6 +449,16 @@ When the footer element contains entire sections, they represent *appendices, in
             Training
         </section>
 
+        <section>
+            <h2>Skills</h2>
+            HTML
+            Markup your content with semantic HTML.
+            CSS
+            Layout your content visually for multiple devices.
+            JavaScript
+            Make your content more interactive, and build web applications.
+        </section>
+
 	</body>
 </html>
 
