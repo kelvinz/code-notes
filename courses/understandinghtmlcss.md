@@ -474,6 +474,10 @@ When the footer element contains entire sections, they represent *appendices, in
             2 years
         </section>
 
+        <section>
+            <h2>Portfolio</h2>
+        </section>
+
 	</body>
 </html>
 
