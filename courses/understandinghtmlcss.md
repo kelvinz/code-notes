@@ -478,6 +478,12 @@ When the footer element contains entire sections, they represent *appendices, in
             <h2>Portfolio</h2>
         </section>
 
+        <section>
+            <h2>Testimonials</h2>
+            I love Tony's courses!
+            Tony's courses helped me get a job.
+        </section>
+
 	</body>
 </html>
 
