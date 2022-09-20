@@ -484,6 +484,18 @@ When the footer element contains entire sections, they represent *appendices, in
             Tony's courses helped me get a job.
         </section>
 
+        <section>
+            <h2>Mailing Address</h2>
+            111 Main St.
+            Somewhere, NY 33333
+        </section>
+	</body>
+</html>
+
+```
+
+
+
 	</body>
 </html>
 
