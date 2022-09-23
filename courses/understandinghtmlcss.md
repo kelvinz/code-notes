@@ -500,6 +500,14 @@ When the footer element contains entire sections, they represent *appendices, in
 The address element must not be used to represent arbitrary addresses (e.g. postal addresses), unless those addresses are in fact the relevant contact information. (The p element is the appropriate element for marking up postal addresses in general.)
 The address element must not contain information other than contact information.
 
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Resume of Tony Alicea</title>
+	</head>
 	</body>
 </html>
 
