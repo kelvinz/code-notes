@@ -518,6 +518,16 @@ The address element must not contain information other than contact information.
             Twitter: @anthonypalicea
         </section>
 
+        <article>
+        	<header>
+        		<h2>About me</h2>
+        	</header>
+            Hi! I'm Tony Alicea and I'm happy to have you as a student in my courses. <aside>Don't imitate, understand!</aside>
+            <footer>
+            	Contact me
+            </footer>
+        </article>
+
 	</body>
 </html>
 
