@@ -535,6 +535,15 @@ The address element must not contain information other than contact information.
             Training
         </section>
 
+        <section>
+            <h2>Skills</h2>
+            HTML
+            Markup your content with semantic HTML.
+            CSS
+            Layout your content visually for multiple devices.
+            JavaScript
+            Make your content more interactive, and build web applications.
+        </section>
 	</body>
 </html>
 
