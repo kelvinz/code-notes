@@ -544,6 +544,22 @@ The address element must not contain information other than contact information.
             JavaScript
             Make your content more interactive, and build web applications.
         </section>
+
+        <section>
+            <h2>Work History</h2>
+            UX/UI Designer
+            XYZ Corp
+            3 years
+        
+            Web Developer
+            ABC Corp
+            5 years
+        
+            Carpet Cleaner
+            123 Inc.
+            2 years
+        </section>
+
 	</body>
 </html>
 
