@@ -564,6 +564,19 @@ The address element must not contain information other than contact information.
             <h2>Portfolio</h2>
         </section>
 
+        <section>
+            <h2>Testimonials</h2>
+            I love Tony's courses!
+            Tony's courses helped me get a job.
+        </section>
+
+        <section>
+            <h2>Mailing Address</h2>
+            <address>
+            	111 Main St.
+            	Somewhere, NY 33333
+            </address>
+        </section>
 	</body>
 </html>
 
@@ -574,6 +587,11 @@ The address element must not contain information other than contact information.
 ---
 
 # grouping things
+
+
+
+**paragraphs**
+A paragraph is typically a run of phrasing content that forms a block of text with one or more sentences that discuss a particular topic, as in typography, but can also be used for more general thematic grouping. For instance, an address is also a paragraph, as is a part of a form, a byline, or a stanza in a poem.
 
 
 
