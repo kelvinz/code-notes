@@ -595,6 +595,9 @@ A paragraph is typically a run of phrasing content that forms a block of text wi
 
 
 
+**quotes**
+The blockquote element represents a section that is quoted from another source.
+
 ---
 
 # text itself
