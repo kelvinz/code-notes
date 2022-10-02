@@ -598,6 +598,17 @@ A paragraph is typically a run of phrasing content that forms a block of text wi
 **quotes**
 The blockquote element represents a section that is quoted from another source.
 
+```html
+
+<blockquote>
+    <p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Aperiam facere culpa distinctio earum labore assumenda, velit temporibus, repudiandae ex. Accusantium corrupti deleniti perferendis. Qui nobis quasi recusandae animi! Molestiae, natus.</p>
+</blockquote>
+<p>- Kelvin Zhao</p>
+
+```
+
+
+
 ---
 
 # text itself
