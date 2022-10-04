@@ -624,6 +624,12 @@ The ul element represents a list of items, where the order of the items is not i
 
 
 
+**ordered lists**
+The ol element represents a list of items, where the items have been intentionally ordered, such that changing the order would change the meaning of the document.
+
+The reversed attribute is a boolean attribute. If present, it indicates that the list is a descending list.
+The start attribute, if present, must be a valid integer. It is used to determine the starting value of the list.
+
 ---
 
 # text itself
