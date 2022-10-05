@@ -630,6 +630,25 @@ The ol element represents a list of items, where the items have been intentional
 The reversed attribute is a boolean attribute. If present, it indicates that the list is a descending list.
 The start attribute, if present, must be a valid integer. It is used to determine the starting value of the list.
 
+```html
+
+<ol reversed>
+    <li>
+        UX/UI Designer
+        XYZ Corp
+        3 Years
+    </li>
+    <li>
+        Web Developer
+        ABC Corp
+        5 Years
+    </li>
+</ol>
+
+```
+
+
+
 ---
 
 # text itself
