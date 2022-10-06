@@ -649,6 +649,11 @@ The start attribute, if present, must be a valid integer. It is used to determin
 
 
 
+**association lists**
+The dl element represents an association list consisting of zero or more name-value groups (a description list).
+The dt element represents the term, or name, part of a term-description group in a description list.
+The dd element represents the description, definition, or value, part of a term-description in a description list.
+
 ---
 
 # text itself
