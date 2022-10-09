@@ -668,6 +668,25 @@ The dd element represents the description, definition, or value, part of a term-
 
 Closing tags are optional, but preferred to better group/visualise and for consistency.
 
+```html
+
+<dl>
+    <dt>Website</dt>
+    <dd>kelvinzhao.com</dd>
+    <dt>Phone</dt>
+    <dd>555-555-1111</dd>
+    <dt>Twitter</dt>
+    <dd>@kelvin___</dd>
+</dl>
+
+```
+
+
+
+**multidimensional content**
+
+
+
 ---
 
 # text itself
