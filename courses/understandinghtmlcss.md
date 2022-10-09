@@ -666,6 +666,8 @@ The dd element represents the description, definition, or value, part of a term-
 
 ```
 
+Closing tags are optional, but preferred to better group/visualise and for consistency.
+
 ---
 
 # text itself
