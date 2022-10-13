@@ -11,3 +11,11 @@
 
 
 
+# Design & Concepting
+
+## Best Practices
+	- Focus on a solid use case
+	- Make it social
+	- Design for different device types
+	- Design for repeat use
+	- Keep it simple
