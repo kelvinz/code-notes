@@ -28,3 +28,12 @@
 	- Avoid the edges of the screen
 	- Give people something to capture with the lowest amount of effort
 	- Keep interactions obvious
+	- Avoid using gestures that conflict with system-level commands
+		- switch camera = double tap
+		- camera zoom = pinch (except when resizing stickers or objects)
+		- video zoom = touch/hold camera capture button & drag up
+		- return to Fb news feed = swipe left
+		- keep interactions to a minimum
+	- Be mindful of accessibility concerns
+		- if your effect contains flashing lights, consider giving a warning
+
