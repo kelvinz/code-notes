@@ -37,3 +37,8 @@
 	- Be mindful of accessibility concerns
 		- if your effect contains flashing lights, consider giving a warning
 
+## Filetypes
+	- 2D Assets
+		- PNG
+		- JPEG
+		- SVG
