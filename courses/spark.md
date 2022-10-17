@@ -42,3 +42,9 @@
 		- PNG
 		- JPEG
 		- SVG
+	- 3D Models
+		- FBX
+		- gITF
+		- COLLADA / DAE
+		- OBJ
+		- DAE
