@@ -48,3 +48,9 @@
 		- COLLADA / DAE
 		- OBJ
 		- DAE
+	- Audio
+		- Mono M4A
+		- AAC codec 44.1KHz
+	- Fonts
+		- TrueType/OpenType
+
