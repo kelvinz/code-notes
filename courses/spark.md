@@ -54,3 +54,15 @@
 	- Fonts
 		- TrueType/OpenType
 
+## Patch Editor Data types
+	- Boolean Signal
+	- Scalar
+	- Pulse
+	- 3D Point
+	- 2D Point
+	- Color
+	- Progress
+	- Vector
+	- Matrix
+	- Texture 2D
+
