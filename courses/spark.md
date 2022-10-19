@@ -66,3 +66,15 @@
 	- Matrix
 	- Texture 2D
 
+## Types of Patches
+	- Interaction
+	- Face Landmarks
+	- Facial Gesture Patches
+	- Animation Patches
+	- Audio Patches
+	- Shaders
+	- Math
+	- Logic Patches
+	- Utility Patches
+	- User Interface Patches
+
