@@ -83,3 +83,5 @@ A set of algorithms that determines the appearance of a 3D object's surface.
 Shaders are particularly useful for applying complex changes to a material.
 Experienced creators can use Shader Code Asset to write custom shaders in Spark AR Studio.
 Or you can use Patch Editor to create & connect a group of patches called a visual shader.
+	- Consumer Patch
+		Visually represents a property of a material, like its position or scale. usually appears at the end of a graph to specify how the material appears in the effect
