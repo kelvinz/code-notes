@@ -85,3 +85,9 @@ Experienced creators can use Shader Code Asset to write custom shaders in Spark 
 Or you can use Patch Editor to create & connect a group of patches called a visual shader.
 	- Consumer Patch
 		Visually represents a property of a material, like its position or scale. usually appears at the end of a graph to specify how the material appears in the effect
+	- Texture Asset
+		a producer patch that applies a texture to the material
+	- Blend
+		blends two colors or textures together
+	- Color Space
+		outputs a texture’s RGB, HSV, and HSL color values. useful for isolating the color values to change the texture’s appearance
