@@ -91,3 +91,5 @@ Or you can use Patch Editor to create & connect a group of patches called a visu
 		blends two colors or textures together
 	- Color Space
 		outputs a texture’s RGB, HSV, and HSL color values. useful for isolating the color values to change the texture’s appearance
+	- Composition
+		outputs two combined functions as a single data stream
