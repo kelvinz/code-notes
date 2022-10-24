@@ -93,3 +93,5 @@ Or you can use Patch Editor to create & connect a group of patches called a visu
 		outputs a texture’s RGB, HSV, and HSL color values. useful for isolating the color values to change the texture’s appearance
 	- Composition
 		outputs two combined functions as a single data stream
+	- Fallback
+		automatically outputs a fallback value when you disconnect the main value. for example, a color could be used as a fallback value for an image
