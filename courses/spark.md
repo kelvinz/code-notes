@@ -95,3 +95,5 @@ Or you can use Patch Editor to create & connect a group of patches called a visu
 		outputs two combined functions as a single data stream
 	- Fallback
 		automatically outputs a fallback value when you disconnect the main value. for example, a color could be used as a fallback value for an image
+	- Fragment Stage
+		processes each fragment in a texture individually instead of processing a texture at the vertices
