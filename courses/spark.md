@@ -99,3 +99,5 @@ Or you can use Patch Editor to create & connect a group of patches called a visu
 		processes each fragment in a texture individually instead of processing a texture at the vertices
 	- Function
 		used as an identity function. it always returns the same value as its argument
+	- Gradient
+		creates a grayscale gradient. can be used with a Mix patch to create a color gradient
