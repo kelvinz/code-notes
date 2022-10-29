@@ -101,3 +101,5 @@ Or you can use Patch Editor to create & connect a group of patches called a visu
 		used as an identity function. it always returns the same value as its argument
 	- Gradient
 		creates a grayscale gradient. can be used with a Mix patch to create a color gradient
+	- Gradient Step
+		defines each color you want to use in a color gradient. use this patch multiple times to add multiple colors
