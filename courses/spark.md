@@ -105,3 +105,5 @@ Or you can use Patch Editor to create & connect a group of patches called a visu
 		defines each color you want to use in a color gradient. use this patch multiple times to add multiple colors
 	- Render Target Size
 		outputs the render target size. useful for building effects using shaders requiring the exact pixel size, like pixel blurring
+	- Shader Derivative
+		captures standard derivatives
