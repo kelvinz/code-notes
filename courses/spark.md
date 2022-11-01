@@ -107,3 +107,7 @@ Or you can use Patch Editor to create & connect a group of patches called a visu
 		outputs the render target size. useful for building effects using shaders requiring the exact pixel size, like pixel blurring
 	- Shader Derivative
 		captures standard derivatives
+	- Texture Sampler
+		samples a texture at the specified coordinates
+	- Texture Transform
+		used with a 2D Transform Pack patch to scale, rotate, pivot and reposition a 2D texture on a 2D or 3D object
