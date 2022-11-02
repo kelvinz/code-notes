@@ -111,3 +111,8 @@ Or you can use Patch Editor to create & connect a group of patches called a visu
 		samples a texture at the specified coordinates
 	- Texture Transform
 		used with a 2D Transform Pack patch to scale, rotate, pivot and reposition a 2D texture on a 2D or 3D object
+	- Vertex Attribute
+		provides the value of the selected vertex attribute among a selection of parameters
+	- Vertex Transform
+		provides a vertex transformation matrix from a dropdown
+
