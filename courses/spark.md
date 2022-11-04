@@ -122,3 +122,14 @@ Or you can use Patch Editor to create & connect a group of patches called a visu
 	- Enable Real-World Scale in the Inspector & Add Further Logic via Patch Editor or Scripting
 		This method allows you to hide the object until a real-scale signal is detected. This means the user only sees the object once it’s realistically scaled. Keep in mind that the number of triangles in a 3D object’s mesh (or the ‘triangle count) impacts performance, so it’s a good idea to keep the triangle count as low as possible. The Spark AR Blender toolkit was developed with this in mind so that creators could optimize their 3D objects. The maximum number of triangles per object should be below 50,000. Keep the total triangle count for all objects in an effect below 150,000.
 
+## AR Targets
+	- high contrast
+	- high resolution (at least 300x300px)
+	- sharp
+	- asymmetrical
+	- complex
+	- flat
+	- clear
+	- avoid blank space
+	- focus on placement
+
