@@ -138,3 +138,9 @@ Or you can use Patch Editor to create & connect a group of patches called a visu
 The standard material adds realistic depth to 3D objects, using a lighting system called the Phong model. When you create a material in Spark AR Studio it will generally be a standard material, unless you create it for a 2D object.
 	- Diffuse
 		Base color & pattern. You can use color + texture to create variations in the texture map.
+	- Specular
+		Shininess & highlight color of a surface.
+	- Normal
+		Create realistic textures like bumps, grooves & rivets without adding extra geometry.
+	- Emission
+		Illuminate from itself. Won't case rays so it won't affect other objects.
