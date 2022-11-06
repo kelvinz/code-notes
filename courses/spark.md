@@ -144,3 +144,14 @@ The standard material adds realistic depth to 3D objects, using a lighting syste
 		Create realistic textures like bumps, grooves & rivets without adding extra geometry.
 	- Emission
 		Illuminate from itself. Won't case rays so it won't affect other objects.
+	- Alpha
+		Mask the alpha channel, use invert to switch which part is masked.
+	- Tile
+		Scale textures applied.
+	- Offset
+		Shift the origin of the textures
+	- Render Options/Advance Render Options.
+		How material renders in scene
+	- Used by
+		Where this material is applied to.
+
