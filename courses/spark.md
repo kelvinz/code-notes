@@ -155,3 +155,9 @@ The standard material adds realistic depth to 3D objects, using a lighting syste
 	- Used by
 		Where this material is applied to.
 
+*Flat Material*
+Flat materials don’t respond to lighting and display color and texture values absolutely. You might use this material if there’s lighting and shadow present in your texture file already or if you’re creating a material for a 2D object.
+	...
+	- Environment
+		add environment texture
+
