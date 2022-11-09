@@ -161,3 +161,18 @@ Flat materials don’t respond to lighting and display color and texture values 
 	- Environment
 		add environment texture
 
+*Blended Material*
+The blended material includes a blending mode, to mix textures and colors together.
+	...
+	- Color
+		Add color from palette.
+	- Blend Mode
+		Normal, Add, Multiply.
+	- Opacity
+		Transparency of material on individual map level.
+	- Double-sided
+		Displays both sides of a face normal.
+	- Cull Mode
+		Front - Discard pieces of the mesh that are facing the viewer.
+		Back - Discard pieces of the mesh that are facing away from the viewer. Most effects use this mode to improve performance.
+
