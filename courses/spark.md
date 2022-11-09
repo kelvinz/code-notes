@@ -176,3 +176,15 @@ The blended material includes a blending mode, to mix textures and colors togeth
 		Front - Discard pieces of the mesh that are facing the viewer.
 		Back - Discard pieces of the mesh that are facing away from the viewer. Most effects use this mode to improve performance.
 
+*Physically-Based Material (PBR)*
+This material is used to create realistic-looking objects in Spark AR Studio. The different properties in this material allow you to add surface roughness, metallic effects, and lighting that mimics real world light.
+	...
+	- Base Texture
+		This forms the base material. To add color & details.
+	- ORM Texture
+		Define roughness, metallic details, occlusion strength.
+	- Normal Map
+		Create appearance of real-world texture like bumps, grooves, rivets without adding extra geometry.
+	- Occlusion
+		Approximates soft shadows based into creased areas of a surface.
+
