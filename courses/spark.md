@@ -188,3 +188,6 @@ This material is used to create realistic-looking objects in Spark AR Studio. Th
 	- Occlusion
 		Approximates soft shadows based into creased areas of a surface.
 
+*Face Paint Material*
+The face paint material is used to create a mask effect that shows the skin and features of the person using the effect, either behind a custom texture or a color. For example, you can use this material to create a tattoo or makeup effect.
+
