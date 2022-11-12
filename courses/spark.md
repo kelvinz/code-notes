@@ -191,3 +191,19 @@ This material is used to create realistic-looking objects in Spark AR Studio. Th
 *Face Paint Material*
 The face paint material is used to create a mask effect that shows the skin and features of the person using the effect, either behind a custom texture or a color. For example, you can use this material to create a tattoo or makeup effect.
 
+## Blend Mode
+	- Subtract
+		Subtracts pixel values of the source from the destination. In case of negative values, black is displayed.
+	- Replace
+		The non-transparent pixels of the source replace corresponding pixels of the destination.
+	- Alpha
+		Linear interpolation between the pixels of the source and destination as specified by the alpha values of the source.
+	- Associate Alpha
+		Same as alpha blend mode, but for source with RGB channels of each pixel premultiplied by its alpha.
+	- Add
+		Adds pixel values of the source to the destination.
+	- Multiply
+		Multiplies the RGB channels of each pixel from the source with the values of the corresponding pixel from the destination.
+	- Screen
+		Values of each pixel in the source and destination are inverted, multiplied, and then inverted again.
+
