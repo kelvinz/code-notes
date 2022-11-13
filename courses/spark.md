@@ -207,3 +207,19 @@ The face paint material is used to create a mask effect that shows the skin and 
 	- Screen
 		Values of each pixel in the source and destination are inverted, multiplied, and then inverted again.
 
+## Skin Retouching
+Skin retouching is an effect that can be applied when we want to give a smoother appearance to a face or scene, using a material in Spark AR Studio.
+
+## Working with textures
+You can apply one or more textures to a material, then apply the material to an object. Texturing with realistic lighting is difficult to achieve in AR effects and it takes a lot of processing power. To reduce the impact on performance you can do a few things;
+	- Bake lighting directly into 3D objects used for decoration in face effects to hint at highlights and shadows.
+	- Bake lighting into static (non-moving) objects such as furniture and accessories for a more realistic effect.
+	- Use a soft light setup without strong highlights or shadows. Baked lighting works best in environments where the light, intensity, and color don’t change throughout the effect.
+	- Use MatCap (material capture) reflection environment textures with flat shaders.
+You’re able to make a variety of textures in Spark AR Studio. For example, you can turn the video captured by the camera or the face tracker into a texture. You can also use visual shaders to create color gradients, and signed distance fields (SDF) to create shapes and patterns. You can even use the segmentation texture to separate the user from their background to transform the environment behind them.
+	- Compressing textures can make your effects perform better. It’s a good idea to look for opportunities to compress textures in your effects where you can.
+	- Max of 1024 * 1024 pixels.
+	- When transparency isn’t needed, use lower resolution JPG files instead of PNG files.
+
+
+
