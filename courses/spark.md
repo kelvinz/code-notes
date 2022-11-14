@@ -239,3 +239,11 @@ pass info between scripts and the patch by adding shared variables
 
 
 
+# Adding scene interactivity
+
+## patches to make things more interactive
+	- screen pan patch; detects swipe of finger
+	- divide patch; manipulate input from screen pan
+	- screen pinch patch; change scale
+	- screen rotate patch; rotate object
+
