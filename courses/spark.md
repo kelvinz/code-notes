@@ -223,3 +223,19 @@ You’re able to make a variety of textures in Spark AR Studio. For example, you
 
 
 
+# Features of Spark AR studio
+
+## javascript patch bridge
+pass info between scripts and the patch by adding shared variables
+7 types with differences between them
+( patch editor type vs script type )
+	- Boolean / Boolean
+	- Number / Scalar
+	- Pulse / EventSource
+	- Text / String
+	- Vector 2 / PixelPointSignal
+	- Vector 3 / VectorSignal or PointSignal
+	- Vector 4 / RgbaSignal
+
+
+
