@@ -247,3 +247,7 @@ pass info between scripts and the patch by adding shared variables
 	- screen pinch patch; change scale
 	- screen rotate patch; rotate object
 
+## tap patches
+	- screen tap patch; detect screen being tapped
+	- object tap patch; detect object being tapped
+
