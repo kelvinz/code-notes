@@ -251,3 +251,14 @@ pass info between scripts and the patch by adding shared variables
 	- screen tap patch; detect screen being tapped
 	- object tap patch; detect object being tapped
 
+## movements
+	- blink
+	- eyebrows lowered
+	- eyebrows raised
+	- head nod
+	- head rotation
+	- head shake
+	- left eye closed
+	- mouth open
+	- right eye closed
+
