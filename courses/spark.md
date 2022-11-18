@@ -262,3 +262,9 @@ pass info between scripts and the patch by adding shared variables
 	- mouth open
 	- right eye closed
 
+## gestures
+	- happy face
+	- kissing face
+	- smile
+	- surprised face
+
