@@ -268,3 +268,19 @@ pass info between scripts and the patch by adding shared variables
 	- smile
 	- surprised face
 
+## face landmarks
+	- cheek
+	- chin
+	- eyeball
+	- eyebrow
+	- eyelid
+	- forehead
+	- mouth
+	- nose
+
+## native ui
+	- picker ui
+	- slider ui
+
+
+
