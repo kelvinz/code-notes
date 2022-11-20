@@ -284,3 +284,14 @@ pass info between scripts and the patch by adding shared variables
 
 
 
+# Scene Optimization
+
+## guidelines
+	- no more than 50 objects
+	- max texture 1024x1024 px
+	- <20k vertices per object
+	- <50k tri count per object
+	- <150k tri count for effect
+	- 1 cm - 5 meters
+	- remove capabilities not used in effect
+
