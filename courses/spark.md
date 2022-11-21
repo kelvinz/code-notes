@@ -295,3 +295,11 @@ pass info between scripts and the patch by adding shared variables
 	- 1 cm - 5 meters
 	- remove capabilities not used in effect
 
+## optimisation
+	- use spark ar toolkit to optimize objects before exportring from blender
+	- for animations, use least number of bones & avoid complex blend shapes
+	- make textures as small as possible
+	- max 1024x1024 px
+	- textures sized to the power of 2 (2x2, 4x4, 16x16, 32x32)
+	- avoid long 2d texture sequences
+
