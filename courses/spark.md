@@ -303,3 +303,21 @@ pass info between scripts and the patch by adding shared variables
 	- textures sized to the power of 2 (2x2, 4x4, 16x16, 32x32)
 	- avoid long 2d texture sequences
 
+## limitations
+	- best at detecting people chest upwards with balanced lighting
+	- segmentation works only on newer devices iPhone 6s or later, S6 or later
+	- both segmentation & face tracker together don't perform too well
+
+## lights
+	- more light sources, more impact on performance
+	- lowest to to highest impact light types
+	- ambient < directional < point < spot < environment
+
+## optimizing logic
+	- group patches
+	- avoid duplicating logic
+	- when scripting, avoid subscriptions
+	- cast vars as const
+	- less callbacks
+	- less things called every frame
+
