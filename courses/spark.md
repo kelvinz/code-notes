@@ -321,3 +321,15 @@ pass info between scripts and the patch by adding shared variables
 	- less callbacks
 	- less things called every frame
 
+## texture compression
+	- automatic; finds best compression format
+	- manual; apply additional compression and control settings
+	- none; if you already compressed before uploading
+
+## image compression
+	- prioritize either file size or in-memory size
+	- file size = choose uncompressed and do your own optimisation
+	- in-memory size = choose etc
+	- etc textures have fixed compression ratio; image can be larger than equivalent png/jpg but will be smaller than full raw image
+	- on loading, etc textures remain same size while non compressed png/jpg will expand to full raw image
+
