@@ -333,3 +333,21 @@ pass info between scripts and the patch by adding shared variables
 	- etc textures have fixed compression ratio; image can be larger than equivalent png/jpg but will be smaller than full raw image
 	- on loading, etc textures remain same size while non compressed png/jpg will expand to full raw image
 
+## tips for saving/sharing files
+	- use patch groups / patch assets; shareable / import like normal assets, .arp
+	- use project bundles; file > package, quick & easy distribution of your work
+	- use ar blocks; share section of project, good for repeat / reuse of parts of your project
+		input/output types; pulse, boolean, scalar, vec2/3/4, color, number, text, texture
+	- .arfx file size;
+		ig = < 4mb
+		fb = < 2mb
+		fb ads = < 5mb
+	- .arexport upload to spark ar hub = < 40mb
+	- debug; console logging, signal watching
+	- dynamic instantiation can create, destroy, reorder objects dynamically via script
+		not displayed in UI by default
+		when a dynamic api is called within a script, notification prompts to switch mode
+		dynamic objects cannot be edited from ui, exclusively set via script
+
+
+
