@@ -351,3 +351,12 @@ pass info between scripts and the patch by adding shared variables
 
 
 
+# Publishing & Effect Management
+	1. upload your effect file to the spark ar hub
+	2. add your icon & video
+	3. submit your effect
+	4. allow up to 5 days for acceptance
+	5. if accepted, see your effect in action
+
+
+
