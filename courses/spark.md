@@ -360,3 +360,12 @@ pass info between scripts and the patch by adding shared variables
 
 
 
+# Practice: Working with clients
+
+
+
+# Glossary
+
+**.arexport**
+Final zipped file that is created when you export an effect in Studio. 40 MB limit.
+
