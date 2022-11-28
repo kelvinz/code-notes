@@ -372,3 +372,9 @@ Final zipped file that is created when you export an effect in Studio. 40 MB lim
 **.arproj**
 Project file (zipped JSON + internal assets). Instagram should be 4 MB or less on both iOS, Android and older Android. Facebook should be under 2 MB for the best reach, but they can be up to 10 MB. Facebook Ads should be under 5 MB
 
+**.arp**
+File extension used when you make a patch asset.
+
+**audio clips**
+Audio clips should be mono M4A, AAC codec, with a sampling frequency of 44.1KHz. You can import your own or choose from a huge range of free, licensed sound effects in the AR Library.
+
