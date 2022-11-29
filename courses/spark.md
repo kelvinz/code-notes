@@ -378,3 +378,7 @@ File extension used when you make a patch asset.
 **audio clips**
 Audio clips should be mono M4A, AAC codec, with a sampling frequency of 44.1KHz. You can import your own or choose from a huge range of free, licensed sound effects in the AR Library.
 
+**audio playback controller**
+The audio playback controller renders
+sound in the scene only after it’s connected to a speaker object. Use it to play sound continuously on a loop in your AR effect, or connect one-shot audio playback to boolean signals in the Patch Editor.
+
