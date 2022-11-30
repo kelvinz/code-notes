@@ -382,3 +382,13 @@ Audio clips should be mono M4A, AAC codec, with a sampling frequency of 44.1KHz.
 The audio playback controller renders
 sound in the scene only after it’s connected to a speaker object. Use it to play sound continuously on a loop in your AR effect, or connect one-shot audio playback to boolean signals in the Patch Editor.
 
+**blend mode**
+Sets the blend mode of blend material:
+	- Add
+	- Associative Alpha
+	- Alpha
+	- Subtract
+	- Multiply
+	- Replace
+	- Screen
+
