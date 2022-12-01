@@ -392,3 +392,9 @@ Sets the blend mode of blend material:
 	- Replace
 	- Screen
 
+**blended material**
+The blended material includes a blending mode, to mix textures and colors together.
+
+**bg influence**
+Multiplies a color or texture against a grayscale version of the video feed. Only available in the face paint material.
+
