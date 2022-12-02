@@ -398,3 +398,9 @@ The blended material includes a blending mode, to mix textures and colors togeth
 **bg influence**
 Multiplies a color or texture against a grayscale version of the video feed. Only available in the face paint material.
 
+**camera texture**
+A texture that extracts live video as it’s being captured by the device camera. The camera texture can be combined with segmentation to separate someone from their background. You can also manipulate the pixels in the texture to modify the image.
+
+**canvas**
+A container for laying out 2D objects and making them responsive to the size of the device screen.
+
