@@ -404,3 +404,14 @@ A texture that extracts live video as it’s being captured by the device camera
 **canvas**
 A container for laying out 2D objects and making them responsive to the size of the device screen.
 
+**color luts; color lookup textures**
+Color LUTs (Lookup Textures) are tables of RGB color values. In Spark AR, you can use color LUTs to quickly create color-graded effects across the entire scene.
+
+**cull mode**
+Describes how material is culled:
+	- Front
+		Discard pieces of the mesh that face the viewer.
+	- Back
+		Discard pieces of the mesh that face away from the viewer.
+		Most effects use this mode to improve performance.
+
