@@ -421,3 +421,9 @@ Occluders make AR effects more realistic by hiding things that wouldn’t be vis
 **segmentation**
 Used to identify and separate parts of the camera input. For example, to separate someone’s hair from the rest of the scene so you can change the color without changing anything else in the effect.
 
+**shader asset**
+A material type resulted from shader code.
+
+**signals**
+Signals are special objects that contain a value that changes over time.
+
