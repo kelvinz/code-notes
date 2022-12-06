@@ -427,3 +427,16 @@ A material type resulted from shader code.
 **signals**
 Signals are special objects that contain a value that changes over time.
 
+**speaker**
+The speaker is an object in Spark AR Studio that renders sound in your effect. You can add multiple speakers to a project to render different audio clips.
+
+**uv map**
+A UV map is a 2D representation of the surface of your 3D object.
+
+**visual shaders**
+A shader is a set of algorithms that determines the appearance of a 3D object’s surface. They’re particularly useful for applying complex changes to a material.
+
+
+
+---
+
