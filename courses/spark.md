@@ -440,3 +440,20 @@ A shader is a set of algorithms that determines the appearance of a 3D object’
 
 ---
 
+# Spark AR Curriculum
+
+## Where you can publish to
+	- Instagram
+		- Organic
+			- Post-capture
+			- Stories
+			- Reels
+	- Facebook
+		- Organic
+		- AR Ads
+	- Facebook Messenger
+		- Real Time Chat
+	- Portal
+		- Real Time Chat
+		- Storytime
+
