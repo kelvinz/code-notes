@@ -457,3 +457,11 @@ A shader is a set of algorithms that determines the appearance of a 3D object’
 		- Real Time Chat
 		- Storytime
 
+## Helper assets
+	- Blender Toolkit
+	- Adobe Substance Template & Export Settings
+	- Texture Packer Template
+	- Adobe Photoshop Facepaint Template
+	- Face Reference Assets
+	- Face Deformation Pack
+
