@@ -465,3 +465,10 @@ A shader is a set of algorithms that determines the appearance of a 3D object’
 	- Face Reference Assets
 	- Face Deformation Pack
 
+## Design Thinking steps
+	1. Empathise
+	2. Define
+	3. Ideate
+	4. Prototype
+	5. Test
+
