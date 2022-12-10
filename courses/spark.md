@@ -472,3 +472,10 @@ A shader is a set of algorithms that determines the appearance of a 3D object’
 	4. Prototype
 	5. Test
 
+## Power of 2
+Use square images in the power of 2
+512 x 512, 1024 x 1024
+for best optimisation
+else spark will resize to square and then back down again
+wasting resources
+
