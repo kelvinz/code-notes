@@ -479,3 +479,12 @@ for best optimisation
 else spark will resize to square and then back down again
 wasting resources
 
+## Tri count
+<50k each object
+<150k for scene
+
+## Exports
+.arexport - for uploading to hub, just the effect (to publish)
+.arproj - everything, including unused thing (your personal working folder)
+.arprojpkg - master copy, with all stuff critical to project (to share with collaborators)
+
