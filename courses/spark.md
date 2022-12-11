@@ -488,3 +488,32 @@ wasting resources
 .arproj - everything, including unused thing (your personal working folder)
 .arprojpkg - master copy, with all stuff critical to project (to share with collaborators)
 
+## Policies
+Effects
+	- performance; responsive, no stuttering or lag, load in a reasonable amount of time
+	- functionality; no hidden, unexpected features or functionality
+	- logos; to appear as natural part of effect
+	- text; don't prompt them to navigate away from platform
+	- controls; don't use custom controls
+	- photos; don't use people, real or fictional (even if you have approval)
+	- capabilities; use those permitted for platform only
+	- media library support; suitable for both vertical & horizontal photo/video
+Metadata & Media
+	- name; should not be duplicated for your own account or include your account name
+	- demo video; accurately demostrate your effect. no screencast/stock/recordings, must be live captured
+	- categories; should accurately represent the contents of the effect, spark ar may change the categories if it feels it's better suited for other categories
+AR Content Standards
+	- comply to community standards, laws, statutes, regulations
+	- no shocking, sensational, disrespectful, excessive violent content
+	- don't promote illegal products, services or activities, or inappropriate or unsafe
+	- not promote alcohol, tobacco, marijuana, pharmaceutical medical products, nor brands associated with such products
+	- no adult, sexual content; nudity, depictions of people in explicit or suggestive positions
+	- content must not discriminate against, harass, provoke, disparage people
+	- not promote the use or depict the sale of potentially dangerous cosmetic procedures
+	- not promote online gambling, online games of skill that use real money or online lotteries
+	- content must not be spammy, misleading or deceptive
+	- no tags or links off the platform (hashtags, urls, qr codes, other scannable codes)
+	- okay to have social media handles with no call to action or urls that form a company's name
+	- no content that has intellectual property infringement
+
+
