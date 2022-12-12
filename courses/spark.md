@@ -517,3 +517,9 @@ AR Content Standards
 	- no content that has intellectual property infringement
 
 
+## Tips to Publishing
+	1. make original effects
+	2. build your brand
+	3. use related keywords
+	4. use good icons
+
