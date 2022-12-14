@@ -523,3 +523,10 @@ AR Content Standards
 	3. use related keywords
 	4. use good icons
 
+## Misc
+	- icon
+		Best practices must be followed for the icon to upload successfully.
+		Your image must have square, not have rounded corners.
+		Don't crop your image into a circle or oval shape.
+		Your image mustn't be too small.
+		Dimensions must be at least 200 x 200 pixels.
