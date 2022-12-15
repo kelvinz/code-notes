@@ -19,3 +19,20 @@
 		• Video zoom - touch and hold camera capture button then drag up.
 		• Return to Facebook News Feed - swipe left.
 	- Be mindful of accessibility concerns: no flashing lights
+
+
+
+---
+
+# Assets
+
+	- 2D: png, jpeg, svg
+	- 3D: fbx, glTF, collada/dae, obj, dae
+	- Audio: Mono M4A, AAC codec (44.1Khz), 16-bit
+	- Fonts: TrueType/OpenType
+
+
+
+---
+
+---
