@@ -56,4 +56,24 @@ Some patches can switch their data types to accommodate a creator's needs, as in
 
 
 
+## Main Patches
+
+	- Shader Render Pass: frame delays, glows, blur
+	- Audio Playback Controller: controls audio clips
+	- Animation: play animation once
+	- Loop Animation: play animation in a loop
+	- Frame Transition: control frames in an animation sequence
+	- Screen Tap: make something happen when the screen is tapped
+	- Object Tap: make something happen when someone taps a specific object
+	- Screen Pan: detects a swipe of the finger across the device screen (use it with Divide patch)
+	- Screen Pinch: use to change scales
+	- Screen Rotate: use to rotate an object
+	- Gallery Picker: user can add an image as texture from the gallery
+	- Picker UI: pick up to 10 options
+	- Slider UI: change a value with a slider (not visible on the simulator)
+	- Global Transform: relative to the scene
+	- Local Transform: relative to its parent object
+
+
+
 ---
