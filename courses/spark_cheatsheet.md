@@ -76,4 +76,15 @@ Some patches can switch their data types to accommodate a creator's needs, as in
 
 
 
+## Patch Editor Tips and Tricks
+
+	- Use a nullObject0 as a container to avoid changing the properties of an object
+	- Create a fade transition with the Mix Patch
+	- Both Multiply Patch and Negate Patch can be used to invert values
+	- An AND Patch can be used as a data passthrough (stoping it or continuing)
+
+
+
+---
+
 ---
