@@ -87,4 +87,22 @@ Some patches can switch their data types to accommodate a creator's needs, as in
 
 ---
 
+# Materials
+
+## Standard
+
+The standard material adds realistic depth to 3D objects using a lighting system called the Phong model.
+
+	- Diffuse: define the base color and pattern
+	- Specular: shininess
+	- Normal: realistic textures (bumps, grooves,...)
+	- Emission: illuminate from itself
+	- Alpha: mask the alpha channel
+	- Tile: scale textures
+	- Offset: shift the texture origin
+	- Render Options: how the material renders
+	- Used By: the object this material is applied to
+
+
+
 ---
