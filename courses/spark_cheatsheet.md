@@ -105,4 +105,13 @@ The standard material adds realistic depth to 3D objects using a lighting system
 
 
 
+## Flat
+
+Flat materials don't respond to lighting and display color and texture values absolutely
+
+	- Diffuse: add a color from the palette to your material
+	- Environment: check this box to add an environment texture to your material.
+
+
+
 ---
