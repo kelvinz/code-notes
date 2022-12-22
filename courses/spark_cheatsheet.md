@@ -114,4 +114,17 @@ Flat materials don't respond to lighting and display color and texture values ab
 
 
 
+## Blended
+
+The blended material includes a blending mode to mix textures and colors.
+
+	- Texture: texture file
+	- Color: from the palette
+	- Blend Mode: Normal/Add/Multiply
+	- Opacity: transparency
+	- Double-sided: both sides of a face normal
+	- Cull Mode: front / back (back improves performance)
+
+
+
 ---
