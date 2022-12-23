@@ -127,4 +127,19 @@ The blended material includes a blending mode to mix textures and colors.
 
 
 
+## Physically-Based Material (PBR)
+
+Used to create realistic-looking objects
+in Spark AR Studio. The different properties in this material allow you to add surface roughness, metallic effects, and lighting that mimics real-world light.
+
+Needs:
+
+	- A base texture: base with color and details
+	- An ORM texture: roughness, metallic details and occlusion strength
+	- A Difussion map: for the pattern
+	- A Specular map: for shininess
+	- A Normal map: for realistic textures (bumps, grooves,...)
+
+
+
 ---
