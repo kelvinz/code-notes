@@ -142,4 +142,12 @@ Needs:
 
 
 
+## Face Paint
+
+It is used to create a mask effect that shows the skin and features of the person using the effect, either behind a custom texture or a color.
+
+
+
+---
+
 ---
