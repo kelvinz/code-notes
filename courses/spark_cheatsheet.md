@@ -150,4 +150,18 @@ It is used to create a mask effect that shows the skin and features of the perso
 
 ---
 
+# Blend Modes
+
+	- Subtract: subtracts pixel values of the source from the destination. In the case of negative values, black is displayed.
+	- Replace: the non-transparent pixels of the source replaces the corresponding pixels of the destination.
+	- Alpha: linear interpolation between the pixels of the source and destination as specified by the alpha values of the source.
+	- Associate_Alpha: same as alpha blend mode, but for source with RGB channels of each pixel premultiplied by its alpha.
+	- Add: adds pixel values of the source to the destination.
+	- Multiply: multiplies the RGB channels of each pixel from the source with the values of the corresponding pixel from the destination.
+	- Screen: values of each pixel in the source and destination are inverted, multiplied, and then inverted again
+
+
+
+---
+
 ---
