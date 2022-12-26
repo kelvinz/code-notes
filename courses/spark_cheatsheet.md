@@ -164,4 +164,10 @@ It is used to create a mask effect that shows the skin and features of the perso
 
 ---
 
+# Textures
+
+A texture is an image file used to help define the appearance of an object in your scene.
+
+
+
 ---
