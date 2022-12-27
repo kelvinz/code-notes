@@ -170,4 +170,15 @@ A texture is an image file used to help define the appearance of an object in yo
 
 
 
+## Lighting
+
+To optimize realistic lighting:
+
+	- Bake lighting directly into 3D objects used for decoration in face effects to hint at highlights and shadows.
+	- Bake lighting into static (non-moving) objects such as furniture and accessories for a more realistic effect.
+	- Use a soft light setup without strong highlights or shadows. Baked lighting works best in environments where the light, intensity, and color don't change throughout the effect.
+	- Use MatCap (material capture) reflection environment textures with flat shaders.
+
+
+
 ---
