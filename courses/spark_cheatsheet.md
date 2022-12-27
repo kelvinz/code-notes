@@ -181,4 +181,16 @@ To optimize realistic lighting:
 
 
 
+## Things to consider
+
+	- Only PNG and JPG files
+	- Use JPG when transparency is not needed
+	- Up to 1024 x 1024 pixels in size
+	- Merge material as much as possible
+	- For repeating patterns, use a lower resolution image and apply visual shaders with texture tiling
+
+
+
+---
+
 ---
