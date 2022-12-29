@@ -193,4 +193,10 @@ To optimize realistic lighting:
 
 ---
 
+# Shaders
+
+A shader is a set of algorithms that determines the appearance of a 3D object's surface. Shaders are particularly useful for applying complex changes to the material.
+
+
+
 ---
