@@ -199,4 +199,27 @@ A shader is a set of algorithms that determines the appearance of a 3D object's 
 
 
 
+## Visual Shader Patches
+
+	- Consumer Patch: property of a material (position, scale, ...)
+	- Texture Asset: applies a texture to the material
+	- Blend: blend two colors or textures
+	- Color Space: outputs a texture's RGB, HSV and HSL color values. (useful for isolating colors)
+	- Composition: outputs two combined functions as a data stream
+	- Fallback: fallback value when you disconnect the main value.
+	- Fragment Stage: processes each fragment instead of at the vertices
+	- Function: identity function, outputs the its argument
+	- Gradient: creates a grayscale gradient (use w/ Mix to create a color gradient)
+	- Gradient Step: defines each color to be used in a color gradient
+	- Reder Target Size: useful to get the exact pixel size, like when pixel blurring
+	- Shader Derivative: captures standard derivatives
+	- Texture Sampler: samples a texture at the specified coordinates
+	- Texture Transform: scale, rotate, pivot and reposition a 2D texture on a 2D or 3D object
+	- Vertex Attribute: provides the value of the selected vertex attribute among a selection of parameters
+	- Vertex Transform: provides a vertex transformation matrix from a dropdown
+
+
+
+---
+
 ---
