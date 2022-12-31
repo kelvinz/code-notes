@@ -222,4 +222,12 @@ A shader is a set of algorithms that determines the appearance of a 3D object's 
 
 ---
 
+# Camera
+
+	- It represents the camera in the device showing your effect
+	- It can't be removed from a project
+	- Children objects move with the camera
+
+
+
 ---
