@@ -230,4 +230,14 @@ A shader is a set of algorithms that determines the appearance of a 3D object's 
 
 
 
+## Properties
+
+	- Transformations: Position, Scale and Rotation can't be edited
+	- Texture Extraction: when extracted, it appears in the Assets panel as cameraTexture0
+	- Segmentation: separates part of the scene
+
+
+
+---
+
 ---
