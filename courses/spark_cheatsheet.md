@@ -240,4 +240,18 @@ A shader is a set of algorithms that determines the appearance of a 3D object's 
 
 ---
 
+# Segmentation
+
+<https://www.facebookblueprint.com/student/collection/288527/path/247681/activity/247676>
+
+
+
+## Types
+
+	- Person Segmentation
+	- Hair Segmentation
+	- Skin Segmentation
+
+
+
 ---
