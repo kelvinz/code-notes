@@ -254,4 +254,15 @@ A shader is a set of algorithms that determines the appearance of a 3D object's 
 
 
 
+## Optimization
+
+	- From the chest upwards on immediate foreground
+	- Balanced lighting settings
+	- Only works on newer devices (iPhone 6S+, Galaxy S6+, ...)
+	- Avoid Face Tracker when using segmentation
+
+
+
+---
+
 ---
