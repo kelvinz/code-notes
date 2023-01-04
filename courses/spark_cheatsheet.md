@@ -273,4 +273,13 @@ A shader is a set of algorithms that determines the appearance of a 3D object's 
 
 ---
 
+# Trackers
+
+## Face Tracker
+
+	- Multiple face trackers impact on performance
+	- Can be used with Face Landmark patches
+
+
+
 ---
