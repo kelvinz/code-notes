@@ -282,4 +282,24 @@ A shader is a set of algorithms that determines the appearance of a 3D object's 
 
 
 
+## Target Tracker
+
+It is made of two textures:
+
+	- A semi-transparent preview of the target image
+	- A texture provided by Spark AR Studio that looks like a frame.
+
+A good target has/is:
+
+	- High contrast (avoid pastel colors)
+	- High Resolution (> 300x300 pixels)
+	- Sharp (no soft edges and gradients)
+	- Asymmetrical
+	- Complex
+	- Flat (no curved surfaces)
+	- Clear
+	- No blank space (around the actual image
+
+
+
 ---
