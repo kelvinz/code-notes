@@ -311,4 +311,29 @@ A good target has/is:
 
 ---
 
+# Techniques
+
+## Occlusion
+
+It is used to make something appear behind another thing.
+
+For example, for a ball orbiting a head effect, you would do the following:
+
+	- Download Face References assets <https://sparkar.facebook.com/ar-studio/learn/articles/people-tracking/face-reference-assets/>
+	- Add Asset > Import From Library > headOccluder.dae
+	- Move it into faceTracker0 object
+	- Scale it to match the head
+	- Reduce its material opacity and change Blend Mode to Alpha to see it through
+	- Add a new layer
+	- Select the headOccluder object and change its layer to the new one
+	- Change the order of the layers
+	- Change the opacity to zero
+	- Add a face mash to the face tracker
+	- Set it to the same layer as the occluder
+	- Uncheck eyes and mouth
+	- Set its material to the same one used in the headOccluder
+	- <https://www.facebookblueprint.com/student/collection/288527/path/247681/activity/247677>
+
+
+
 ---
