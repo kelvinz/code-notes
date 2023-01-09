@@ -336,4 +336,14 @@ For example, for a ball orbiting a head effect, you would do the following:
 
 
 
+## Custom animation transitions
+
+	- Add an Animation Patch
+	- Add a Keyframe Patch and attach it the Animation Patch
+	- Open the Keyframe Patch and change its keyframes
+	- Connect the Animation Patch with its trigger (eg. Mouth Open)
+	- Connect the Keyframe Patch with the property you want to change (eg. Scale)
+
+
+
 ---
