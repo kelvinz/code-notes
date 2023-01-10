@@ -361,4 +361,24 @@ For example, for a ball orbiting a head effect, you would do the following:
 
 ---
 
+# Platforms and Capabilities
+
+## Facebook
+
+	- Can't use Gallery Picker / Media Library Component
+
+
+
+## Scripting
+
+	- Persistence module is used as data storage
+	- Diagnostics is used for console logging (log() and watch())
+	- To monitor a signal, a subscribe() from a .getPulse() is used
+	- Reactive Programming helps with performance and treats values as signals
+	- Use val() from ReactiveModule to explicitly convert data to a signal
+	- To retrieve the value of a signal use pinLastValue()
+	- To use math operators on signals, use methods from ReactiveModule and ScalarSignal
+
+
+
 ---
