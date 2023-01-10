@@ -346,4 +346,19 @@ For example, for a ball orbiting a head effect, you would do the following:
 
 
 
+## Zoom Effect
+
+	- Extract the Camera Texture and use it in the Patch Editor
+	- Create a rectangle canvas and it's Material in the Patch Editor
+	- Connect the Texture RGBA output to a Texture Transform Patch
+	- Connect the Texture Transform Patch output to the material patch
+	- Add a Face Tracker and move it to the Patch Editor
+	- Connect it to a Mouth Open => Add => 2D Transform Pack patch
+	- Connect the 2D Transform Pack output to the Texture Transform Patch
+	- <https://sparkar.facebook.com/ar-studio/learn/tutorials/face-interactions-and-logic/#adding-the-mouth-open-patch>
+
+
+
+---
+
 ---
