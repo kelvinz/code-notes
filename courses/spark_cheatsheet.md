@@ -381,4 +381,18 @@ For example, for a ball orbiting a head effect, you would do the following:
 
 
 
+## Patch Editor Type <-> Script Type
+
+	- Boolean <-> Boolean
+	- Number <-> Scalar
+	- Pulse <-> EventSource
+	- Text <-> String
+	- Vector2 <-> PixelPointSignal
+	- Vector3 <-> VectorSignal or PointSignal
+	- Vector4 <-> RgbaSignal
+
+
+
+---
+
 ---
