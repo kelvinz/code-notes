@@ -395,4 +395,18 @@ For example, for a ball orbiting a head effect, you would do the following:
 
 ---
 
+# Publishing
+
+	- Platform Requirements: 4MB Insta / 10MB face / 5MB face ads
+	- View Assets Summary > File size breakdown for optimization
+	- Unique name up to 20 characters
+	- Squared icon in jpeg format and at least 200 x 200 pixels
+	- Up to 5 business days for review and acceptance
+	- Effects are supported for six months after release
+	- Demo video should be recorded using Face/Insta/SparkAR app
+
+
+
+---
+
 ---
