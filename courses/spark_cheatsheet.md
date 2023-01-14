@@ -409,4 +409,18 @@ For example, for a ball orbiting a head effect, you would do the following:
 
 ---
 
+# Policies
+
+	- General user base is age 13 and above
+	- Must not be shocking, sensational, disrespectful or excessively violent
+	- Must not promote illegal, inappropriate or unsafe stuff
+	- Must not promote any legal or illegal drugs
+	- Must not be of an adult or sexual nature
+	- Must not discriminate against people
+	- Must not promote cosmetic procedures
+
+
+
+---
+
 ---
