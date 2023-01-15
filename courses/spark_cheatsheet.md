@@ -434,4 +434,15 @@ For example, for a ball orbiting a head effect, you would do the following:
 
 ---
 
+# Layers and Render Options
+
+	- Layer in the bottom is rendered first
+	- Transparent objects rendered first might occlude other objects
+	- Use Write to Depth Buffer to always draw objects over other objects unless they also have this option enabled.
+	- You can use layers to change how lights affect objects
+
+
+
+---
+
 ---
