@@ -423,4 +423,15 @@ For example, for a ball orbiting a head effect, you would do the following:
 
 ---
 
+# Project Files
+
+	- .arproj: editor file
+	- .arexport: the effect to be published on SparkAR Hub (< 40MB)
+	- .arprojpkg: a bundle meant to be shared between creators (most complete)
+	- .arp: a patch asset file
+
+
+
+---
+
 ---
