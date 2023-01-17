@@ -445,4 +445,22 @@ For example, for a ball orbiting a head effect, you would do the following:
 
 ---
 
+# Optimization
+
+	- No more than 50 objects in a scene
+	- Max 20k vertices per object
+	- Max 50k triangle count per object
+	- Max 150k triangle count for all objects
+	- Heigh between 1cm and 5m
+	- Remove any capabilities that aren't used in a project
+	- Use the least number of bones when modeling 3D objects
+	- Make textures as small as you can
+	- Textures must be up to 1024x1024
+	- Textures must be squared and sized the power of 2 (2x2, 4x4,...)
+	- Avoid 24 or 30 FPS sequences
+	- Remove the ambient light that is auto-included in a project
+	- Group patches
+	- Avoid using subscription, constants and callbacks when scripting
+	- Compress files
+
 ---
