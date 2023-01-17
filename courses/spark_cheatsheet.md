@@ -463,4 +463,16 @@ For example, for a ball orbiting a head effect, you would do the following:
 	- Avoid using subscription, constants and callbacks when scripting
 	- Compress files
 
+## Troubleshooting
+
+### Flat material with PNG image has black color instead of transparent
+Change Blend Mode on Render Options to Alpha
+
+
+
+### Object is cut off
+Try enabling/disabling Use Depth Test and/or Use Write to Depth Buffer
+
+
+
 ---
