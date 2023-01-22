@@ -14,3 +14,7 @@ Use the Animation patch to drive an animation triggered by an Interaction patch 
 Use the Animation Player patch to drive more than one animation in a procedural animation.
 	animation asset + progress => animation
 
+*frame transition patch*
+Use the Frame Transition patch to control the frames in an animation sequence.
+	progress + frames + first frame => current frame
+
