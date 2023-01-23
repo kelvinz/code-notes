@@ -18,3 +18,7 @@ Use the Animation Player patch to drive more than one animation in a procedural 
 Use the Frame Transition patch to control the frames in an animation sequence.
 	progress + frames + first frame => current frame
 
+*loop animation patch*
+Use the Loop Animation patch to drive animations that play on a loop.
+	enable + duration + reset + mirrored => progress + looped
+
