@@ -22,3 +22,7 @@ Use the Frame Transition patch to control the frames in an animation sequence.
 Use the Loop Animation patch to drive animations that play on a loop.
 	enable + duration + reset + mirrored => progress + looped
 
+*progress patch*
+Use the Progress patch to convert an input value to a normalized value between 0 to 1.
+	value + start value + end value => progress
+
