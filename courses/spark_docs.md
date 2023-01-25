@@ -26,3 +26,9 @@ Use the Loop Animation patch to drive animations that play on a loop.
 Use the Progress patch to convert an input value to a normalized value between 0 to 1.
 	value + start value + end value => progress
 
+*transition patch*
+Use the Transition patch to transition something from one state to another depending on the data type selected. For example, you could transition an object from one position to another or from one color to another.
+	progress + start + end + curve => value
+
+
+
