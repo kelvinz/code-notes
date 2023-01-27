@@ -38,3 +38,7 @@ Use the Transition patch to transition something from one state to another depen
 Use the Audio Player patch to combine the audio clip in your project with either the Single or Multi-Clip Controller, to play audio in your scene.
 	audio clip + controller => audio
 
+*multi-clip controller patch*
+Use this patch to play an audio clip multiple times in response to triggers, without stopping the clip when a new clip starts to play.
+	controller => controller
+
