@@ -42,3 +42,7 @@ Use the Audio Player patch to combine the audio clip in your project with either
 Use this patch to play an audio clip multiple times in response to triggers, without stopping the clip when a new clip starts to play.
 	controller => controller
 
+*single-clip controller patch*
+Play, stop or loop a single audio clip at a time based on a specific trigger.
+	play + stop + loop => controller
+
