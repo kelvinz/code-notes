@@ -46,3 +46,7 @@ Use this patch to play an audio clip multiple times in response to triggers, wit
 Play, stop or loop a single audio clip at a time based on a specific trigger.
 	play + stop + loop => controller
 
+*audio analyzer patch*
+Use this patch to estimate the bandwidth and full-band signal power (loudness) in a range between 0 (silence) and 1 (max). Stereo signals will be mixed together and treated as mono.
+	audio => audio + band 1...8
+
