@@ -54,3 +54,7 @@ Use this patch to estimate the bandwidth and full-band signal power (loudness) i
 Use this patch to add a decaying echo effect to audio in your Spark AR Studio effects.
 	audio + active + time + feedback + dry(source) + wet(delay) + bypass => audio
 
+*bit crusher patch*
+Use the Bit Crusher patch to add low-fidelity distortion to an audio source by simulating a low sample rate and low bit resolution rate. For example, with the Bit Crusher patch you can simulate an 8kHz/6bit signal even if the audio is actually of better quality. This patch is useful for creating robotic or crackly voice effects.
+	audio + mix + sample rate + bits + bypass => audio
+
