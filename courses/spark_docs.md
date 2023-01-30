@@ -50,3 +50,7 @@ Play, stop or loop a single audio clip at a time based on a specific trigger.
 Use this patch to estimate the bandwidth and full-band signal power (loudness) in a range between 0 (silence) and 1 (max). Stereo signals will be mixed together and treated as mono.
 	audio => audio + band 1...8
 
+*audio delay patch*
+Use this patch to add a decaying echo effect to audio in your Spark AR Studio effects.
+	audio + active + time + feedback + dry(source) + wet(delay) + bypass => audio
+
