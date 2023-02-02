@@ -62,3 +62,7 @@ Use the Bit Crusher patch to add low-fidelity distortion to an audio source by s
 Use the Denoiser patch to remove background noise from an audio source.
 	audio + amount + bypass => audio
 
+*distortion patch*
+Use the Distortion patch to distort the sound of an audio source, for example to add a gritty or fuzzy sound effect.
+	audio + drive + grain + mix + bypass => audio
+
