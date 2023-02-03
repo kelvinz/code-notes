@@ -66,3 +66,7 @@ Use the Denoiser patch to remove background noise from an audio source.
 Use the Distortion patch to distort the sound of an audio source, for example to add a gritty or fuzzy sound effect.
 	audio + drive + grain + mix + bypass => audio
 
+*energy meter patch*
+Use this patch to estimate the signal power (loudness) of an audio input in a range between 0 (silence) and 1 (max).
+	audio + window + cut-off => audio + energy + energy left + energy right
+
