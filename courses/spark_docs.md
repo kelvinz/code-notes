@@ -70,3 +70,6 @@ Use the Distortion patch to distort the sound of an audio source, for example to
 Use this patch to estimate the signal power (loudness) of an audio input in a range between 0 (silence) and 1 (max).
 	audio + window + cut-off => audio + energy + energy left + energy right
 
+*energy meter patch (next gen)*
+This patch outputs a numerical value between 0-1 that corresponds to the signal power (loudness) of an audio input. You can use this output signal to drive something in your effect, like an animation.
+
