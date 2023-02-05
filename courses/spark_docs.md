@@ -73,3 +73,9 @@ Use this patch to estimate the signal power (loudness) of an audio input in a ra
 *energy meter patch (next gen)*
 This patch outputs a numerical value between 0-1 that corresponds to the signal power (loudness) of an audio input. You can use this output signal to drive something in your effect, like an animation.
 
+The Energy Meter (Next Gen) is a more flexible and customizable version of the Energy Meter patch. For example, you can set the dynamic range and minimum and maximum frequencies that you want to output.
+	audio + energy floor (dB) + dynamic range (dB) + min frequency (Hz) + max frequency (Hz) + snapshot => energy + raw
+
+*instagram music patch*
+Use the Instagram Music patch to let people play tracks from the Instagram Music Library in an AR effect. People using the effect will be able to choose the track.
+
