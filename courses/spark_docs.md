@@ -79,3 +79,8 @@ The Energy Meter (Next Gen) is a more flexible and customizable version of the E
 *instagram music patch*
 Use the Instagram Music patch to let people play tracks from the Instagram Music Library in an AR effect. People using the effect will be able to choose the track.
 
+Combining this patch with the Energy Meter and Audio Analyzer patches can make things happen in an effect in response to the music - for example trigger animations. Follow this tutorial to build an effect that responds to audio with the Energy Meter and Audio Analyzer patches.
+
+The Instagram Music patch should only be connected to the Energy Meter and Audio Analyzer patches or the Audio input in a patch representing Speaker. You can't for example use it with audio effect patches like the Reverb or Distortion patches.
+	audio => audio
+
