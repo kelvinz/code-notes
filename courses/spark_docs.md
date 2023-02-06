@@ -84,3 +84,7 @@ Combining this patch with the Energy Meter and Audio Analyzer patches can make t
 The Instagram Music patch should only be connected to the Energy Meter and Audio Analyzer patches or the Audio input in a patch representing Speaker. You can't for example use it with audio effect patches like the Reverb or Distortion patches.
 	audio => audio
 
+*ring modulator patch*
+Use the Ring Modulator patch to create an oscillating sound effect with varying pitches. Modulation is often used as an experimental audio effect and is found in many synthesizers.
+	audio + frequency + mix + bypass => audio
+
