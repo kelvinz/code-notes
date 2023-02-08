@@ -88,3 +88,11 @@ The Instagram Music patch should only be connected to the Energy Meter and Audio
 Use the Ring Modulator patch to create an oscillating sound effect with varying pitches. Modulation is often used as an experimental audio effect and is found in many synthesizers.
 	audio + frequency + mix + bypass => audio
 
+*parametric equalizer patch*
+A three-band parametric equalizer. Use this patch to shape audio in your Spark AR effects by boosting or cutting areas of frequency.
+type - notch: Removes a focused range of frequencies from the audio source.
+type - peak: Passes a narrow band of frequencies and stops all other frequencies.
+type - low shelf: Increases or reduces frequencies below the shelf frequency value.
+type - high shelf: Increases or reduces frequencies above the shelf frequency value.
+	audio + band 1...3 ( type + frequency + quality + grain ) + bypass => audio
+
