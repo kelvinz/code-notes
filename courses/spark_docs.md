@@ -96,3 +96,7 @@ type - low shelf: Increases or reduces frequencies below the shelf frequency val
 type - high shelf: Increases or reduces frequencies above the shelf frequency value.
 	audio + band 1...3 ( type + frequency + quality + grain ) + bypass => audio
 
+*pitch shifter patch*
+Use the Pitch Shifter patch to make the pitch of an audio source in Spark AR Studio deeper or higher, for example to create cartoon style voice effects like a monster or chipmunk.
+	audio + semitone adjustment + bypass => audio
+
