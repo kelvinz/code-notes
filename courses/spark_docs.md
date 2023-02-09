@@ -100,3 +100,9 @@ type - high shelf: Increases or reduces frequencies above the shelf frequency va
 Use the Pitch Shifter patch to make the pitch of an audio source in Spark AR Studio deeper or higher, for example to create cartoon style voice effects like a monster or chipmunk.
 	audio + semitone adjustment + bypass => audio
 
+*reverb patch*
+Use the Reverb patch to add a sense of space or depth to audio in your Spark AR Studio effects. You can simulate anything from sound in a tiny box to a large concert hall.
+	audio + mix + early reflections gain + diffusion gain + room size + reflectivity + reflectivity high + reflectivity low + early reflections + bypass => audio
+
+
+
