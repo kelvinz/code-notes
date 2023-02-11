@@ -106,3 +106,9 @@ Use the Reverb patch to add a sense of space or depth to audio in your Spark AR 
 
 
 
+## body landmark patches
+
+*head 2d patch*
+Use the Head 2D patch to position an object on specific parts of a user's head.
+	body => chin + top head + nose + left eye + right eye + left ear + right ear
+
