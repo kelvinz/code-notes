@@ -120,3 +120,9 @@ Use the Left/Right Arm 2D patch to position an object on a specific part of a us
 Use the Left Leg 2D patch to position an object on a specific part of a user's leg.
 	body => left/right hip + left/right knee + left/right ankle
 
+*neck 2d patch*
+Use the Neck 2D patch to position an object on a user's neck.
+	body => neck
+
+
+
