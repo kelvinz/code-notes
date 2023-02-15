@@ -126,3 +126,9 @@ Use the Neck 2D patch to position an object on a user's neck.
 
 
 
+## device patches
+
+*device motion patch*
+The device motion patch outputs the device's gyroscope rotation relative to the world coordinate system.
+	=> 3d rotation
+
