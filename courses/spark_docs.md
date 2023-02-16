@@ -132,3 +132,11 @@ Use the Neck 2D patch to position an object on a user's neck.
 The device motion patch outputs the device's gyroscope rotation relative to the world coordinate system.
 	=> 3d rotation
 
+*locale patch*
+Use the Locale patch to retrieve the user's device language or region as a string signal, allowing you to customize your effect for users in different regions.
+
+The device language is provided as an ISO 639-1 formatted code, while the device region is provided as an ISO 3166-1 formatted code.
+	=> language + region
+
+
+
