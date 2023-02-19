@@ -150,3 +150,7 @@ Use the Cheek patch to position an object on a precise location on the user’s 
 Use the Chin patch to position an object on the tip of the user’s chin.
 	face => chin tip
 
+*eyeball patch*
+Use the Eyeball patch to position an object on a precise location on the user’s eyes. This patch is used for iris tracking.
+	face => left/right iris + left/right eyeball center + left/right eyeball rotation
+
