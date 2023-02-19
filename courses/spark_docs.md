@@ -146,3 +146,7 @@ The device language is provided as an ISO 639-1 formatted code, while the device
 Use the Cheek patch to position an object on a precise location on the user’s cheeks, such as the center of a cheek or a cheekbone.
 	face => left/right center + left/right cheekbone
 
+*chin patch*
+Use the Chin patch to position an object on the tip of the user’s chin.
+	face => chin tip
+
