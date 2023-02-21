@@ -154,3 +154,7 @@ Use the Chin patch to position an object on the tip of the user’s chin.
 Use the Eyeball patch to position an object on a precise location on the user’s eyes. This patch is used for iris tracking.
 	face => left/right iris + left/right eyeball center + left/right eyeball rotation
 
+*eyebrow patch*
+Use the Eyebrow patch to position an object on a precise location on the user’s eyebrows, such as the middle of an eyebrow.
+	face => left/right inside end + left/right outside end + left/right top
+
