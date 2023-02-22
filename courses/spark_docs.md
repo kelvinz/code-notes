@@ -162,3 +162,7 @@ Use the Eyebrow patch to position an object on a precise location on the user’
 Use the Eyelid patch to position an object on a precise location on the user’s eyelid, such as the inside or outside corner of an eye. This patch also allows you to track the degree the eye is open.
 	face => left/right center position + left/right inside corner position + left/right outside corner position + left/right lower eyelid center position + left/right upper eyelid center position + left/right openness
 
+*forehead patch*
+Use the Forehead patch to position an object on the center or top of the user’s forehead.
+	face => center + top
+
