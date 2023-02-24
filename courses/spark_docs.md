@@ -166,3 +166,7 @@ Use the Eyelid patch to position an object on a precise location on the user’s
 Use the Forehead patch to position an object on the center or top of the user’s forehead.
 	face => center + top
 
+*mouth patch*
+Use the Mouth patch to detect a specific part of someone's mouth.
+	face => upper/lower lip center + left/right corner
+
