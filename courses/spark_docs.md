@@ -170,3 +170,9 @@ Use the Forehead patch to position an object on the center or top of the user’
 Use the Mouth patch to detect a specific part of someone's mouth.
 	face => upper/lower lip center + left/right corner
 
+*nose patch*
+Use the Nose patch to position an object on a precise location on the user’s nose, such as a nostril or the tip of the nose.
+	face => bridge + left/right nostril + nose tip
+
+
+
