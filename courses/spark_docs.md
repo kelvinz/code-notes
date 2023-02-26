@@ -182,3 +182,7 @@ Use the Nose patch to position an object on a precise location on the user’s n
 Use the Screen Tap patch to make something happen when the screen is tapped.
 	enabled => gesture state + 2D position
 
+*object tap*
+Use the Object Tap patch to make something happen to an object when it’s tapped on the screen.
+	object + enabled => tap
+
