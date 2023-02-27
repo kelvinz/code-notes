@@ -186,3 +186,7 @@ Use the Screen Tap patch to make something happen when the screen is tapped.
 Use the Object Tap patch to make something happen to an object when it’s tapped on the screen.
 	object + enabled => tap
 
+*screen rotate*
+The Screen Rotate patch enables two-finger, rotation gestures. These gestures can be used to rotate objects in your effect or as a trigger for other interactivity.
+	reset + enabled => state + rotation
+
