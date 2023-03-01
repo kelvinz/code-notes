@@ -196,3 +196,7 @@ Use the Screen Pan patch to make something happen when you move your finger acro
 Panning the screen returns a value based on the 2D X and Y coordinates of the finger movements. The value returned differs depending on the size of the screen used.
 	reset + enabled => gesture state + 2d offset + 2d position
 
+*screen tap and hold*
+Use the Screen Tap and Hold patch to make something happen while the screen is pressed for over half a second.
+	enabled => gesture state + 2d position*
+
