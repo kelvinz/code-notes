@@ -190,3 +190,9 @@ Use the Object Tap patch to make something happen to an object when it’s tappe
 The Screen Rotate patch enables two-finger, rotation gestures. These gestures can be used to rotate objects in your effect or as a trigger for other interactivity.
 	reset + enabled => state + rotation
 
+*screen pan*
+Use the Screen Pan patch to make something happen when you move your finger across the screen in any direction.
+
+Panning the screen returns a value based on the 2D X and Y coordinates of the finger movements. The value returned differs depending on the size of the screen used.
+	reset + enabled => gesture state + 2d offset + 2d position
+
