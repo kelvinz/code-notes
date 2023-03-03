@@ -200,3 +200,7 @@ Panning the screen returns a value based on the 2D X and Y coordinates of the fi
 Use the Screen Tap and Hold patch to make something happen while the screen is pressed for over half a second.
 	enabled => gesture state + 2d position*
 
+*Screen Pinch*
+Use the Screen Pinch patch to make something happen while the screen is pinched.
+	reset + enabled => gesture state + scale
+
