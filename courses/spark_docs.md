@@ -204,3 +204,7 @@ Use the Screen Tap and Hold patch to make something happen while the screen is p
 Use the Screen Pinch patch to make something happen while the screen is pinched.
 	reset + enabled => gesture state + scale
 
+*Head Rotation*
+Use the Head Rotation patch to make something happen while the user’s head moves in a certain direction.
+	face => left/right turn state + left/right lean state + forward/back lean state
+
