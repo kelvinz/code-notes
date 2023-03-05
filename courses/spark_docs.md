@@ -208,3 +208,7 @@ Use the Screen Pinch patch to make something happen while the screen is pinched.
 Use the Head Rotation patch to make something happen while the user’s head moves in a certain direction.
 	face => left/right turn state + left/right lean state + forward/back lean state
 
+*Head Nod*
+Use the Head Nod patch to make something happen when the user nods.
+	face => nod
+
