@@ -212,3 +212,7 @@ Use the Head Rotation patch to make something happen while the user’s head mov
 Use the Head Nod patch to make something happen when the user nods.
 	face => nod
 
+*Head Shake*
+Use the Head Shake patch to make something happen when the user moves their head from left to right or right to left and returns to the center.
+	face => shake
+
