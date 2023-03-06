@@ -216,3 +216,7 @@ Use the Head Nod patch to make something happen when the user nods.
 Use the Head Shake patch to make something happen when the user moves their head from left to right or right to left and returns to the center.
 	face => shake
 
+*Mouth Open*
+Use the Mouth Open patch to make something happen in an effect while the user's mouth is open.
+	face => mouth open + mouth openness
+
