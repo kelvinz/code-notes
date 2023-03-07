@@ -220,3 +220,7 @@ Use the Head Shake patch to make something happen when the user moves their head
 Use the Mouth Open patch to make something happen in an effect while the user's mouth is open.
 	face => mouth open + mouth openness
 
+*Blink*
+Use the Blink patch to make something happen when the user blinks.
+	face => blink
+
