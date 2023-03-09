@@ -224,3 +224,7 @@ Use the Mouth Open patch to make something happen in an effect while the user's 
 Use the Blink patch to make something happen when the user blinks.
 	face => blink
 
+*Eyebrows Raised*
+Use the Eyebrows Raised patch to make something happen while the user’s eyebrows are raised.
+	face => raised
+
