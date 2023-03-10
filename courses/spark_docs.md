@@ -228,3 +228,7 @@ Use the Blink patch to make something happen when the user blinks.
 Use the Eyebrows Raised patch to make something happen while the user’s eyebrows are raised.
 	face => raised
 
+*Eyebrows Lowered*
+Use the Eyebrows Lowered patch to make something happen while the user’s eyebrows are lowered.
+	face => output
+
