@@ -232,3 +232,7 @@ Use the Eyebrows Raised patch to make something happen while the user’s eyebro
 Use the Eyebrows Lowered patch to make something happen while the user’s eyebrows are lowered.
 	face => output
 
+*Left/Right Eye Closed*
+Use the Left Eye Closed patch to make something happen while the user’s left eye is closed.
+	face => closed state
+
