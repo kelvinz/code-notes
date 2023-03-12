@@ -236,3 +236,7 @@ Use the Eyebrows Lowered patch to make something happen while the user’s eyebr
 Use the Left Eye Closed patch to make something happen while the user’s left eye is closed.
 	face => closed state
 
+*Kissing Face*
+Use the Kissing Face patch to make something happen while the user brings the corners of the mouth together to make a kissing face.
+	face => output
+
