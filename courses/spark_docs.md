@@ -240,3 +240,7 @@ Use the Left Eye Closed patch to make something happen while the user’s left e
 Use the Kissing Face patch to make something happen while the user brings the corners of the mouth together to make a kissing face.
 	face => output
 
+*Smile*
+Use the Smile patch to make something happen while the user smiles.
+	face => gesture state
+
