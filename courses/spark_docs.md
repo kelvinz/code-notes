@@ -244,3 +244,7 @@ Use the Kissing Face patch to make something happen while the user brings the co
 Use the Smile patch to make something happen while the user smiles.
 	face => gesture state
 
+*Happy Face*
+Use the Happy Face patch to make something happen while the user makes a happy face. The Happy Face patch detects movements across the face, such as the movement of the corners of the mouth and raising eyebrows.
+	face => output
+
