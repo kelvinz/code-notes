@@ -254,3 +254,9 @@ Use the Surprised Face patch to make something happen while the user makes a sur
 
 
 
+## logic patches
+
+*And Patch*
+Use the And patch to make something happen when two conditions are met at the same time like the user’s mouth being open and eyebrows raised.
+	first boolean + second boolean => output
+
