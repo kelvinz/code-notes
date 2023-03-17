@@ -260,3 +260,7 @@ Use the Surprised Face patch to make something happen while the user makes a sur
 Use the And patch to make something happen when two conditions are met at the same time like the user’s mouth being open and eyebrows raised.
 	first boolean + second boolean => output
 
+*Equals Patch*
+Use the Equals patch to make something happen when the value coming from the input patch is within a close range or around a certain number. For example, if you want the user to face roughly a certain point on an axis to make something happen.
+	first number + second number + tolerance => equal
+
