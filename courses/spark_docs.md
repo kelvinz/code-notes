@@ -264,3 +264,7 @@ Use the And patch to make something happen when two conditions are met at the sa
 Use the Equals patch to make something happen when the value coming from the input patch is within a close range or around a certain number. For example, if you want the user to face roughly a certain point on an axis to make something happen.
 	first number + second number + tolerance => equal
 
+*Equals Exactly Patch*
+Use the Equals Exactly patch to make something happen when the value coming from the input patch is an exact number.
+	first number + second number => exactly equal
+
