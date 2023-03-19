@@ -272,3 +272,7 @@ Use the Equals Exactly patch to make something happen when the value coming from
 Use the Greater Than patch to make something happen if the value coming from the input patch is greater than a preset value.
 	first input + second input => greater than
 
+*Greater or Equal Patch*
+Use the Greater or Equal patch to make something happen when the value coming from the input patch is greater than or equal to a preset value.
+	first input + second input => greater or equal
+
