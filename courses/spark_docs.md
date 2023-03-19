@@ -268,3 +268,7 @@ Use the Equals patch to make something happen when the value coming from the inp
 Use the Equals Exactly patch to make something happen when the value coming from the input patch is an exact number.
 	first number + second number => exactly equal
 
+*Greater Than Patch*
+Use the Greater Than patch to make something happen if the value coming from the input patch is greater than a preset value.
+	first input + second input => greater than
+
