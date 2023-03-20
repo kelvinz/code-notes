@@ -276,3 +276,7 @@ Use the Greater Than patch to make something happen if the value coming from the
 Use the Greater or Equal patch to make something happen when the value coming from the input patch is greater than or equal to a preset value.
 	first input + second input => greater or equal
 
+*If Then Else Patch*
+Use the If Then Else patch to switch between two states in response to something depending on the data type selected.
+	condition + then + else => output
+
