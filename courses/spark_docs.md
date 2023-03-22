@@ -284,3 +284,7 @@ Use the If Then Else patch to switch between two states in response to something
 Use the Less or Equal patch to make something happen when the value coming from the input patch is less than or equal to a preset value.
 	first input + second input => less or equal
 
+*Less Than Patch*
+Use the Less Than patch to make something happen when the value coming from the input patch is less than a preset value.
+	first input + second input => less than
+
