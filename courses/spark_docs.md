@@ -280,3 +280,7 @@ Use the Greater or Equal patch to make something happen when the value coming fr
 Use the If Then Else patch to switch between two states in response to something depending on the data type selected.
 	condition + then + else => output
 
+*Less Or Equal Patch*
+Use the Less or Equal patch to make something happen when the value coming from the input patch is less than or equal to a preset value.
+	first input + second input => less or equal
+
