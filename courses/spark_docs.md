@@ -288,3 +288,7 @@ Use the Less or Equal patch to make something happen when the value coming from 
 Use the Less Than patch to make something happen when the value coming from the input patch is less than a preset value.
 	first input + second input => less than
 
+*Not Patch*
+Use the Not patch to reverse the signal coming from a patch. For example, if a true boolean signal is being sent from a patch, the Not patch makes the boolean signal false.
+	signal => reverse signal
+
