@@ -292,3 +292,9 @@ Use the Less Than patch to make something happen when the value coming from the 
 Use the Not patch to reverse the signal coming from a patch. For example, if a true boolean signal is being sent from a patch, the Not patch makes the boolean signal false.
 	signal => reverse signal
 
+*Or Patch*
+Use the Or patch to make something happen when one of two conditions are met like a tap or a long press on the device screen.
+	first boolean + second boolean => output
+
+
+
