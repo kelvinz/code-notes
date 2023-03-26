@@ -298,3 +298,10 @@ Use the Or patch to make something happen when one of two conditions are met lik
 
 
 
+## math patches
+
+Math patches can be used to perform math operations on inputted patches.
+
+*delay*
+Delays a value by some time.
+
