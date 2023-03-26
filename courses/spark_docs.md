@@ -305,3 +305,6 @@ Math patches can be used to perform math operations on inputted patches.
 *delay*
 Delays a value by some time.
 
+*Exponential Smoothing*
+Returns a smoothed signal based on a damping factor measured in milliseconds.
+
