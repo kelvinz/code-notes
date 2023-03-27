@@ -308,3 +308,110 @@ Delays a value by some time.
 *Exponential Smoothing*
 Returns a smoothed signal based on a damping factor measured in milliseconds.
 
+*Arccosine*
+Calculates the arccosine of an argument.
+
+*Arcsine*
+Calculates the arcsine of an argument.
+
+*Arctangent*
+Calculates the angle of a triangle given its X and Y dimensions.
+
+*Cosine*
+Calculates the cosine of an argument.
+
+*Exponential*
+Calculates the natural exponentiation of an argument.
+
+*Logarithm*
+Calculates the natural logarithm of an argument.
+
+*Power*
+Calculates the value of the first parameter raised to the power of the second.
+
+*Sine*
+Calculates the sine of an argument.
+
+*Square Root*
+Calculates the square root of a value.
+
+*Tangent*
+Calculates the tangent of an argument.
+
+*Add*
+Adds two value together.
+
+*Ceiling*
+Rounds up a value.
+
+*Divide*
+Divides one value by another value.
+
+*Floor*
+Rounds down a value.
+
+*Maximum*
+Returns the greater of two values.
+
+*Minimum*
+Returns the lesser of two values.
+
+*Modulo*
+Calculates remainder when two values are divided.
+
+*Multiply*
+Multiplies two values.
+
+*Round*
+Rounds a number to the nearest integer.
+
+*Subtract*
+Subtracts one value from another value.
+
+*Absolute*
+Calculates the absolute value of an argument.
+
+*Clamp*
+Constrains a value between a minimum and maximum limit.
+
+*From Range*
+Maps a value from a specified range to the [0,1] range.
+
+*Mix*
+Perfom linear interpolation between two values modulated by an alpha value.
+
+*Negate*
+Change a value from positive to negative or from negative to positive.
+
+*Sign*
+Extracts the sign of a value. The output is -1 for negative, 0 for zero and +1 for positive.
+
+*Smooth Step*
+Performs Hermite interpolation between two values.
+
+*Step*
+Generates a step function by comparing two values.
+
+*To Range*
+Maps a value from the [0,1] range to a specified range.
+
+*Cross Product*
+Calculates the cross product of two vectors.
+
+*Distance*
+Calculates the distance between two points.
+
+*Dot Product*
+Calculates the dot product of two vectors.
+
+*Length*
+Calculates the length (or magnitude) of a value.
+
+*Normalize*
+Calculates the unit value in the same direction as the original value.
+
+*Reflect*
+Calculates the unit value in the same direction as the original value.
+
+
+
