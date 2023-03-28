@@ -415,3 +415,15 @@ Calculates the unit value in the same direction as the original value.
 
 
 
+## multipeer patches
+
+Use multipeer patches to build effects that can be applied to a group on a video call.
+
+For example, you could create an effect where one participant tapping the screen triggers something else to happen in other instances of the effect, like changing the other participants’ background. This type of effect is called a group effect in Meta Spark Studio.
+
+Group effects:
+Run separately on each participant’s device.
+Can communicate with other instances of the effect, within the same video call.
+
+
+
