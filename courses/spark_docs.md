@@ -427,3 +427,9 @@ Can communicate with other instances of the effect, within the same video call.
 
 
 
+## shader patches - visual shaders
+
+A shader is a set of algorithms that determines the appearance of a 3D object's surface. They're particularly useful for applying complex changes to a material.
+
+
+
