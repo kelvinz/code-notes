@@ -441,3 +441,9 @@ You can use SDFs in place of large custom textures to keep your effect size to a
 
 
 
+## time patches
+
+Use the Runtime patch to track the number of seconds an effect is running. You can use this patch with a Logic patch to make something happen after an effect has been running for a specific length of time.
+
+
+
