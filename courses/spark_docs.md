@@ -433,3 +433,11 @@ A shader is a set of algorithms that determines the appearance of a 3D object's 
 
 
 
+## shader patches - signed distance fields (SDFs)
+
+Use signed distance fields (SDFs) to create procedural textures like shapes and patterns.
+
+You can use SDFs in place of large custom textures to keep your effect size to a minimum. Using SDFs can also help overcome aliasing issues like jagged edges on scaled-up textures.
+
+
+
