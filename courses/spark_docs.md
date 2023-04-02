@@ -447,3 +447,9 @@ Use the Runtime patch to track the number of seconds an effect is running. You c
 
 
 
+## user interface patches
+
+*Picker UI Patch*
+Use the Picker UI patch to input up to 10 uncompressed textures and display them as icons on the user’s device screen. When a user selects an option on screen it triggers an option update in the Picker UI patch and changes an element in the effect.
+	visible + start index + texture 1...10 => selected option index + selected texture
+
