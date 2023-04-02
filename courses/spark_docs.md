@@ -453,3 +453,9 @@ Use the Runtime patch to track the number of seconds an effect is running. You c
 Use the Picker UI patch to input up to 10 uncompressed textures and display them as icons on the user’s device screen. When a user selects an option on screen it triggers an option update in the Picker UI patch and changes an element in the effect.
 	visible + start index + texture 1...10 => selected option index + selected texture
 
+*Slider UI Patch*
+The Slider UI patch creates a sliding bar that users can interact with to change elements in an effect. For example, connecting the Slider UI patch to a patch representing the intensity property of a light in the scene lets users adjust the light with an on-screen slider.
+	visible + start value => slider value
+
+
+
