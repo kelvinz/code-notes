@@ -459,3 +459,9 @@ The Slider UI patch creates a sliding bar that users can interact with to change
 
 
 
+## utility patches
+
+*3D Transform Pack Patch/3D Inverse Transform Pack*
+Use the 3D Transform Pack to generate a 3D transform defined by position, scale and rotation input values. The 3D Inverse Transform Pack generates an inverse 3D transform by inverting position, rotation and scale input values.
+	translation + scale + rotation => 3d transform
+
