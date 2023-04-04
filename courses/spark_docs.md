@@ -465,3 +465,7 @@ The Slider UI patch creates a sliding bar that users can interact with to change
 Use the 3D Transform Pack to generate a 3D transform defined by position, scale and rotation input values. The 3D Inverse Transform Pack generates an inverse 3D transform by inverting position, rotation and scale input values.
 	translation + scale + rotation => 3d transform
 
+*2D Transform Pack Patch*
+Use the 2D Transform Pack patch with a Texture Transform patch to scale, rotate, pivot and reposition a 2D texture on a 2D or 3D object.
+	translation + scale + rotation + pivot => 2d transform
+
