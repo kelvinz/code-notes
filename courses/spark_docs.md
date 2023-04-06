@@ -469,3 +469,7 @@ Use the 3D Transform Pack to generate a 3D transform defined by position, scale 
 Use the 2D Transform Pack patch with a Texture Transform patch to scale, rotate, pivot and reposition a 2D texture on a 2D or 3D object.
 	translation + scale + rotation + pivot => 2d transform
 
+*Body Bounding Box Patch*
+The body bounding box is used together with the Body Finder and Body Select patches to form part of a series of patches used to track the user’s body. The Body Bounding Box patch plots an invisible box around a person’s body, outputting the 2D coordinates of the four corners of the box. You can use the bounding box to create effects that use or react to someone’s body, for example making 2D textures or text follow the body. You can also create interesting effects by pixelating the edges of the bounding box or adding color filters over the box.
+	body => top/bottom left/right 2d coordinates + width + height + is tracked
+
