@@ -473,3 +473,8 @@ Use the 2D Transform Pack patch with a Texture Transform patch to scale, rotate,
 The body bounding box is used together with the Body Finder and Body Select patches to form part of a series of patches used to track the user’s body. The Body Bounding Box patch plots an invisible box around a person’s body, outputting the 2D coordinates of the four corners of the box. You can use the bounding box to create effects that use or react to someone’s body, for example making 2D textures or text follow the body. You can also create interesting effects by pixelating the edges of the bounding box or adding color filters over the box.
 	body => top/bottom left/right 2d coordinates + width + height + is tracked
 
+*Body Finder and Body Select Patches*
+The Body Finder and Body Select patches are used together with body landmark patches to create full body effects.
+	=> bodies + count
+	bodies + index => body
+
