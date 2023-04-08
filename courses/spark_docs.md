@@ -478,3 +478,7 @@ The Body Finder and Body Select patches are used together with body landmark pat
 	=> bodies + count
 	bodies + index => body
 
+*Bounding Box Patch*
+The Bounding Box patch plots the 3D coordinates of an invisible box around a 3D object, outputting the 3D coordinates of the 8 corners of the box. This patch is used to add shadows to 3D objects through the simple shadow action. You could also use it for other kinds of effects, for example to identify when two objects collide and make something happen as a result.
+	object => top/bottom left/right front/back
+
