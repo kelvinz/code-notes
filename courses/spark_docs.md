@@ -496,3 +496,8 @@ Use the Comment patch to comment on one or more patches.
 *Delay Value Patch*
 In Spark AR Studio, a unit of execution is known as a frame. One frame covers the entire execution cycle, from the input to the final output. A set of inputs are processed to produce a set of outputs, for example an image or sound.
 
+The Delay Value patch delays the given input by one frame, outputting the input value from the previous frame, onto the next frame. This means you can take the output of a patch and connect it to a patch that’s connected before it in your graph.
+
+This cyclical relationship, enabled by the Delay Value patch, isn't normally possible in the Patch Editor.
+	initial value + value => reciever
+
