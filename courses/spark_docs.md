@@ -501,3 +501,7 @@ The Delay Value patch delays the given input by one frame, outputting the input 
 This cyclical relationship, enabled by the Delay Value patch, isn't normally possible in the Patch Editor.
 	initial value + value => reciever
 
+*Store Value Patch*
+Store Value is a patch asset created using a Delay Value patch. This patch asset stores an input value the instant a pulse is fired. The Input can be a value of any data type. The Store Trigger input takes a pulse as a trigger. The Output is the currently stored value.
+	store trigger + input => output
+
