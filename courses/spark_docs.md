@@ -505,3 +505,136 @@ This cyclical relationship, enabled by the Delay Value patch, isn't normally pos
 Store Value is a patch asset created using a Delay Value patch. This patch asset stores an input value the instant a pulse is fired. The Input can be a value of any data type. The Store Trigger input takes a pulse as a trigger. The Output is the currently stored value.
 	store trigger + input => output
 
+*Face Finder Patch*
+asdf
+	asdf
+
+*Face Select Patch*
+asdf
+	asdf
+
+*Global and Local Transform Patches*
+asdf
+	asdf
+
+*Hand Bounding Box Patch*
+asdf
+	asdf
+
+*Hand Finder Patch*
+asdf
+	asdf
+
+*Hand Select Patch*
+asdf
+	asdf
+
+*Hit Test Patch*
+asdf
+	asdf
+
+*Insets Unpack Patch*
+asdf
+	asdf
+
+*Matrix Pack Patch*
+asdf
+	asdf
+
+*Offset Patch*
+asdf
+	asdf
+
+*Option Picker Patch*
+asdf
+	asdf
+
+*Option Sender Patch*
+asdf
+	asdf
+
+*Option Switch Patch*
+asdf
+	asdf
+
+*Orthographic Projection Matrix Patch*
+asdf
+	asdf
+
+*Pack Patch*
+asdf
+	asdf
+
+*Perspective Projection Matrix Patch*
+asdf
+	asdf
+
+*Plane Finder Patch*
+asdf
+	asdf
+
+*Plane Select Patch*
+asdf
+	asdf
+
+*Plane Tracker Patch*
+asdf
+	asdf
+
+*Point Trackable Patch*
+asdf
+	asdf
+
+*Pulse Patch*
+asdf
+	asdf
+
+*Pulse Merge Patch*
+asdf
+	asdf
+
+*Random Patch*
+asdf
+	asdf
+
+*Screen to World Position Patch*
+asdf
+	asdf
+
+*Start Patch*
+asdf
+	asdf
+
+*String Contains Patch*
+asdf
+	asdf
+
+*Switch Patch*
+asdf
+	asdf
+
+*Swizzle Patch*
+asdf
+	asdf
+
+*To String Patch*
+asdf
+	asdf
+
+*Unpack Patch*
+asdf
+	asdf
+
+*Value Patch*
+asdf
+	asdf
+
+*World to Screen Position Patch*
+asdf
+	asdf
+
+
+
+## video calling participant patches
+## render pass patches
+## blocks
