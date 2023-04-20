@@ -34,3 +34,14 @@ masterpiece
 highly intricate
 3d render
 
+-------camera-------
+50mm
+80mm
+24mm
+28mm
+bokeh
+anthropomorphic
+ultra wide angle
+telephoto lens
+low aperture
+
