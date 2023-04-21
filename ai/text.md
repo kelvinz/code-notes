@@ -45,3 +45,27 @@ ultra wide angle
 telephoto lens
 low aperture
 
+-------artists-------
+yoji shinkawa style
+jung gi kim style
+pixar style
+disney style
+studio ghibli
+john singer sargent
+edgar degas
+paul cézanne
+jan van eyck
+leonardo davinci
+vincent van gogh
+johannes vermeer
+rembrandt
+jackson pollock
+albrecht dürer
+leonardo da vinci
+michelangelo
+jean-auguste-dominique ingres
+thomas moran
+claude monet
+alfred bierstadt
+frederic edwin church
+
