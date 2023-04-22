@@ -69,3 +69,9 @@ claude monet
 alfred bierstadt
 frederic edwin church
 
+-------lighting-------
+cinematic lighting
+volumetric lighting
+dramatic lighting
+soft studio lighting
+
