@@ -75,3 +75,36 @@ volumetric lighting
 dramatic lighting
 soft studio lighting
 
+-------theme-------
+blurred city scene
+oil painting
+landscape art
+pencil drawing
+pen drawing
+staring into sunset
+post apocalyptic
+desert
+galaxy
+dystopian
+steam punk
+ancient city
+cyberpunk
+zombie
+robotic parts
+ninja
+samurai
+cowboy
+joker
+kimono
+hanfu
+demons
+angels
+archangel
+demon
+devil
+lost city
+maya civilisation
+pirates
+underwater
+victorian
+
