@@ -108,3 +108,20 @@ pirates
 underwater
 victorian
 
+-------type-------
+doodle
+blueprint
+abstract
+geometric
+minimalist
+impressionist
+pop art
+cubism
+surrealism
+contemporary
+fantasy
+modern
+graffiti
+ethereal bohemian
+baroque
+neoclassical
