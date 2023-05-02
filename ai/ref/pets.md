@@ -5,3 +5,5 @@ Tiny cute 3D felt fiber toy frog, made from Felt fibers, a 3D render, trending o
 
 cat cyberpunk syle, character portrait, portrait, close up, concept art, intricate details, highly detailed by jean giraud, 4k, 8k, very defined details, very beautiful, vaporwave
 
+historical photograph of a ((pug)) wearing sunglasses and an old school baseball hat, highly detailed
+
