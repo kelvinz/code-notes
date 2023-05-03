@@ -7,3 +7,9 @@ cat cyberpunk syle, character portrait, portrait, close up, concept art, intrica
 
 historical photograph of a ((pug)) wearing sunglasses and an old school baseball hat, highly detailed
 
+***
+a detailed full body portrait of a Ragdoll cat queen, by dorian cleavenger, greg rutkowski, wlop, astri lohne, zdzisław beksinski trending on artstation
+Negative prompt:
+Disfigured, bad art, amateur, poorly drawn, ugly, flat, deformed, poorly drawn, extra limbs, close up, b&w, weird colors, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
+Steps: 50, Sampler: PLMS, CFG scale: 5.5, Seed: 824789654 + img2img and some inpainting
+
