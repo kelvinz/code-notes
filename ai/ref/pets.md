@@ -13,3 +13,7 @@ Negative prompt:
 Disfigured, bad art, amateur, poorly drawn, ugly, flat, deformed, poorly drawn, extra limbs, close up, b&w, weird colors, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
 Steps: 50, Sampler: PLMS, CFG scale: 5.5, Seed: 824789654 + img2img and some inpainting
 
+symmetry, crystalized Emissive Ragdoll cat with jeweled mask, retro futuristic poster scifi, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, dreamlike, art by artgerm
+Negative prompt:
+Disfigured, bad art, amateur, poorly drawn, ugly, flat, deformed, poorly drawn, extra limbs, close up, b&w, weird colors, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
+Steps: 50, Sampler: DDIM, CFG scale: 14, Seed: 553970275 + some inpainting
