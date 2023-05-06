@@ -17,3 +17,6 @@ symmetry, crystalized Emissive Ragdoll cat with jeweled mask, retro futuristic p
 Negative prompt:
 Disfigured, bad art, amateur, poorly drawn, ugly, flat, deformed, poorly drawn, extra limbs, close up, b&w, weird colors, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
 Steps: 50, Sampler: DDIM, CFG scale: 14, Seed: 553970275 + some inpainting
+
+a beautiful portrait of a cute cyberpunk dog by greg rutkowski and wlop, purple blue color scheme, high key lighting, volumetric light, digital art, highly detailed, fine detail, intricate, ornate, complex, octane render, unreal engine, photorealistic
+
