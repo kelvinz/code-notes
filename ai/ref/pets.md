@@ -20,3 +20,6 @@ Steps: 50, Sampler: DDIM, CFG scale: 14, Seed: 553970275 + some inpainting
 
 a beautiful portrait of a cute cyberpunk dog by greg rutkowski and wlop, purple blue color scheme, high key lighting, volumetric light, digital art, highly detailed, fine detail, intricate, ornate, complex, octane render, unreal engine, photorealistic
 
+***
+a portrait of an animal wearing a shirt. highly detailed painting by gaston bussiere, craig mullins, j. c. leyendecker, furry
+
