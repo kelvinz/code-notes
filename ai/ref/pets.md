@@ -23,3 +23,5 @@ a beautiful portrait of a cute cyberpunk dog by greg rutkowski and wlop, purple 
 ***
 a portrait of an animal wearing a shirt. highly detailed painting by gaston bussiere, craig mullins, j. c. leyendecker, furry
 
+dog as mourning crying phantom, very detailed face, detailed features, fantasy, circuitry, explosion, dramatic, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by gustave dore, octane render
+
