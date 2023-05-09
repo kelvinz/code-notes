@@ -25,3 +25,5 @@ a portrait of an animal wearing a shirt. highly detailed painting by gaston buss
 
 dog as mourning crying phantom, very detailed face, detailed features, fantasy, circuitry, explosion, dramatic, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by gustave dore, octane render
 
+symmetry!! portrait of a small cute dog, dnd, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
+
