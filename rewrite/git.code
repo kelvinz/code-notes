@@ -73,6 +73,9 @@ git rebase -i HEAD~<how many back>
 
 // to change author date, commit date
 // instead of reword, type edit
+// "delete, delete, delete, delete, a, backspace, edit"
 // esc, :wq!
 // then use the above 2 commands as the head will be changed
 // then git rebase --continue to complete
+
+// force push to finish
