@@ -27,3 +27,6 @@ dog as mourning crying phantom, very detailed face, detailed features, fantasy, 
 
 symmetry!! portrait of a small cute dog, dnd, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
 
+***
+3D resin miniature sculpture by Jean-Baptiste Carpeaux and Luo Li Rong, european lady, prefect symmetrical face, academic art, realistic,  8K, Introduction factory photo, Product Introduction Photo, Hyperrealism. Subsurface scattering, raytracing, Octane Render, Zbrush, simple background
+
