@@ -30,3 +30,4 @@ symmetry!! portrait of a small cute dog, dnd, intricate, elegant, highly detaile
 ***
 3D resin miniature sculpture by Jean-Baptiste Carpeaux and Luo Li Rong, european lady, prefect symmetrical face, academic art, realistic,  8K, Introduction factory photo, Product Introduction Photo, Hyperrealism. Subsurface scattering, raytracing, Octane Render, Zbrush, simple background
 
+an ascended chihuahua living in an extradimensional reality, in the style of wlop, illustration, epic, fantasy, hyper detailed, smooth, unreal engine, sharp focus, ray tracing, physically based rendering, renderman, beautiful
