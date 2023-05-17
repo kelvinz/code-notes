@@ -7,3 +7,6 @@ xxx, portrait, dramatic lighting, pastel colors, cyberpunk, neon city, raining, 
 ***
 portrait of xxx as gandalf, trending in artstation, cinematic lighting, studio quality, smooth render, unreal engine 5 rendered, octane rendered, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart
 
+***
+xxx portrait, dramatic lighting, pastal colors, illustration, greg rutkowski, yoji shinkawa, 8k, digital art, concept art, trending on artstation
+
