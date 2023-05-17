@@ -10,3 +10,5 @@ portrait of xxx as gandalf, trending in artstation, cinematic lighting, studio q
 ***
 xxx portrait, dramatic lighting, pastal colors, illustration, greg rutkowski, yoji shinkawa, 8k, digital art, concept art, trending on artstation
 
+***
+xxx, portrait, dramatic lighting, pastel colors, cyberpunk city, snowing, illustration, by artist greg rutkowski, by artist yoji shinkawa, studio ghibli, 8k, poster, sharp focus, digital art, concept art, trending on artstation
