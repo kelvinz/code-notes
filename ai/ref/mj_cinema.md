@@ -17,3 +17,12 @@
 	28mm
 
 # shot
+
+	aerial shot
+	close-up shot
+	crowd shot
+	establishing shot
+	extreme close-up
+	low angle shot
+	over-the-shoulder shot
+
