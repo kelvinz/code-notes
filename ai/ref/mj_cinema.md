@@ -37,3 +37,15 @@
 	warm color grading
 	duotone color grading
 
+# keywords
+
+	cgi
+	chromatic abberations
+	cinemascope
+	light leaks
+	bokeh
+	depth of field
+	rear projection
+	starbursts
+	motion blur
+
