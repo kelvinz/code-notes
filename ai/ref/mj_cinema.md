@@ -26,3 +26,14 @@
 	low angle shot
 	over-the-shoulder shot
 
+# color
+
+	cool-toned color grading
+	pastel color grading
+	bright color grading
+	vibrant color grading
+	muted color grading
+	neon color grading
+	warm color grading
+	duotone color grading
+
