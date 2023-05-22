@@ -49,3 +49,14 @@
 	starbursts
 	motion blur
 
+# genre
+
+	adventure
+	b-horror
+	epic fantasy
+	film noir
+	horror
+	indie
+	western
+	thriller
+
