@@ -60,3 +60,12 @@
 	western
 	thriller
 
+# location
+
+	vietnam
+	germany
+	pakistan
+	nigeria
+
+---
+
