@@ -69,3 +69,17 @@
 
 ---
 
+# animation override
+
+	an animated film still of [ xxx ]
+
+# prefix
+
+	anime
+	2d animation
+	hand drawn
+	cel animation
+	computer generated
+	rotoscoping
+	cutout animation
+	cg animation
