@@ -13,3 +13,11 @@ shot on [ film ],
 
 ---
 
+# position
+
+	centered view
+	side view
+	from behind
+
+---
+
