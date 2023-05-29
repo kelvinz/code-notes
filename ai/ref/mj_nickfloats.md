@@ -21,3 +21,18 @@ shot on [ film ],
 
 ---
 
+# shot
+
+	low-angle
+	low-angle from below
+	extreme low-angle from below
+	high-angle
+	high-angle from above
+	extreme high-angle from above
+	birds-eye-view
+	drone shot
+	aerial
+	eye-level (default look)
+
+---
+
