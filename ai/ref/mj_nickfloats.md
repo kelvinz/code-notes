@@ -36,3 +36,13 @@ shot on [ film ],
 
 ---
 
+# lockup
+
+	closeup
+	extreme closeup
+	medium-full
+	medium-long
+	full-body
+
+---
+
