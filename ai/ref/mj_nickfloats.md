@@ -46,3 +46,22 @@ shot on [ film ],
 
 ---
 
+# fashion
+
+	gucci
+	louis vuitton
+	prada
+	dior
+
+	nike
+	athleta
+	rock climbing
+	snowboarding
+
+	net-a-porter
+	karmaloop
+	nastygal
+	asos
+
+---
+
