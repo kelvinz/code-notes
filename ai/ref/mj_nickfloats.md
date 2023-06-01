@@ -73,3 +73,17 @@ shot on [ film ],
 
 ---
 
+# material
+
+	leather
+	nylon
+	linen
+	wool
+
+	black/green
+	green/black
+	floral maxi dress
+	paisley maxi dress
+
+---
+
