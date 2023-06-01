@@ -65,3 +65,11 @@ shot on [ film ],
 
 ---
 
+# type
+
+	fashion
+	clothing
+	apparel
+
+---
+
