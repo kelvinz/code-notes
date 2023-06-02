@@ -87,3 +87,12 @@ shot on [ film ],
 
 ---
 
+# styling
+
+outer to inner wear
+
+	turtleneck and peacoat
+	slim-fitting peacoat and turtleneck
+
+---
+
