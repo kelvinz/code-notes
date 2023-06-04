@@ -114,3 +114,31 @@ outer to inner wear
 
 ---
 
+# film
+
+	Fujifilm Superia 400
+	Lomography Color Negative 800
+	CineStill 800T
+	Ilford XP2 400
+	Fujichrome Velvia 50
+	Kodak Ektar 100
+	Kodak Portra 400
+	Fujifilm Neopan Acros 100
+	Kodak Gold 200
+	Agfa Vista 400
+	Fujifilm Pro 400H
+	Kodak T-MAX 400
+	Kodak Ektachrome E100
+
+	Canon EOS R6 Mark II Mirrorless
+	FUJIFILM X-T5 Mirrorless
+	Canon PowerShot G7 X Mark II
+	Control
+	Insta360
+	Light L16
+	Leica M10
+	Security Camera Footage
+	Hasselblad X1D
+
+---
+
