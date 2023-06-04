@@ -96,3 +96,21 @@ outer to inner wear
 
 ---
 
+# color
+
+	blue
+	red
+	green
+	yellow
+	orange
+	black
+	white
+
+	royal
+	natural brown tones
+	earthy
+	scarlet
+	cerulean
+
+---
+
