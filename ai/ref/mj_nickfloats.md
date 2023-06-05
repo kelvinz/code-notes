@@ -142,3 +142,22 @@ outer to inner wear
 
 ---
 
+# ambiance
+
+	misty
+	smokey
+	steamy
+	dreamy
+	spooky
+
+	background mist, misty background atmosphere, backlit mist, misty late-night
+	red & purple background smoke, backlight, late-night, soho
+	red & purple background smoke, red & purple backlit smoke, late-night, soho
+	red background smoke, smokey background, smokey purple background atmosphere, purple & red backlit smoke
+	green background smoke, smokey background, smokey blue background atmosphere, green & blue backlit smoke
+	orange background smoke, smokey pink background, smokey pink background atmosphere, orange & pink backlit smoke
+	background mist, misty background, misty background atmosphere, backlit mist, misty late-night
+	background smoke, smokey background, smokey background atmosphere, backlit smoke, smokey late-night
+
+---
+
