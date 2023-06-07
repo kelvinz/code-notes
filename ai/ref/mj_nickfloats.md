@@ -161,3 +161,42 @@ outer to inner wear
 
 ---
 
+# lighting
+
+	sunny
+	partly cloudy
+	rainy
+	snowy
+	cloudy
+	overcast
+	foggy
+	hazy
+	lightning
+	sunrise
+	morning
+	afternoon
+	golden hour
+	sunset
+	twilight
+	evening
+	night
+	midnight
+	partly cloudy sunrise
+	overcast afternoon
+	foggy evening
+	sunny morning
+
+	front lighting
+	backlighting
+	side lighting left
+	side lighting right
+	red colored side light
+	blue colored side light
+
+	hard lighting
+	soft lighting
+	specular lighting
+	diffused lighting
+
+---
+
