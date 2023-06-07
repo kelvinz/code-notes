@@ -200,3 +200,11 @@ outer to inner wear
 
 ---
 
+# environment
+
+	new york
+	ancient egypt
+	underwater
+
+---
+
