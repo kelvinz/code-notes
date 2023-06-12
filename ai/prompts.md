@@ -2,3 +2,5 @@ portrait of anthropomorphic mecha - camel spider caddisfly - mathematician, intr
 
 clay figurine of rishi sunake, blender, unreal engine, concept art, octane render, highly detailed, smooth, sharp focus
 
+Lofi smiling portrait, Pixar style by Joe Fenton and Stanley Artgerm and Tom Bagshaw and Tim Burton
+
