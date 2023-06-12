@@ -4,3 +4,5 @@ clay figurine of rishi sunake, blender, unreal engine, concept art, octane rende
 
 Lofi smiling portrait, Pixar style by Joe Fenton and Stanley Artgerm and Tom Bagshaw and Tim Burton
 
+Portrait of ninja turtle, D&D, muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
+
