@@ -8,3 +8,5 @@ Portrait of ninja turtle, D&D, muscular, fantasy, intricate, elegant, highly det
 
 young woman with shoulder length light brown hair and hazel eyes dressed in a sharp dark teal military uniform and beret, smiling, blurred city background in twilight lighting, ilya kuvshinov, greg rutkowski, guweiz, ross tran, loish, svetlana tigai, artgerm, artstation trending, concept art, digital painting
 
+amazing lifelike award winning pencil illustration of Magda goebbels on art station artgerm Greg rutkowski alphonse mucha cinematic
+
