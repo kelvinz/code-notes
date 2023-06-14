@@ -6,3 +6,5 @@ Lofi smiling portrait, Pixar style by Joe Fenton and Stanley Artgerm and Tom Bag
 
 Portrait of ninja turtle, D&D, muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
 
+young woman with shoulder length light brown hair and hazel eyes dressed in a sharp dark teal military uniform and beret, smiling, blurred city background in twilight lighting, ilya kuvshinov, greg rutkowski, guweiz, ross tran, loish, svetlana tigai, artgerm, artstation trending, concept art, digital painting
+
