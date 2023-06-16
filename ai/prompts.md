@@ -10,3 +10,5 @@ young woman with shoulder length light brown hair and hazel eyes dressed in a sh
 
 amazing lifelike award winning pencil illustration of Magda goebbels on art station artgerm Greg rutkowski alphonse mucha cinematic
 
+nekopara fantastically detailed shining reflecting eyes modern anime style art cute vibrant detailed ears cat girl neko dress portrait shinkai makoto Studio ghibli kyoto animation hideaki anno Sakimichan Stanley Artgerm Lau Rossdraws James Jean Marc Simonetti elegant highly detailed digital painting artstation pixiv
+
