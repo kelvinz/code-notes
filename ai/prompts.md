@@ -12,3 +12,5 @@ amazing lifelike award winning pencil illustration of Magda goebbels on art stat
 
 nekopara fantastically detailed shining reflecting eyes modern anime style art cute vibrant detailed ears cat girl neko dress portrait shinkai makoto Studio ghibli kyoto animation hideaki anno Sakimichan Stanley Artgerm Lau Rossdraws James Jean Marc Simonetti elegant highly detailed digital painting artstation pixiv
 
+portrait painting of a nepali female in the gym, ultra realistic, concept art, intricate details, eerie, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and alphonse mucha
+
