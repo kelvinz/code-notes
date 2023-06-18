@@ -16,3 +16,5 @@ portrait painting of a nepali female in the gym, ultra realistic, concept art, i
 
 portrait painting of a post - apocalyptic older american man blindfolded and wearing monk garbs with a scrap pauldron, ultra realistic, concept art, intricate details, eerie, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and charlie bowater and magali villeneuve and alphonse mucha
 
+oil paining of robotic humanoid ( pale shani from witcher 3 ), intricate mechanisms, highly detailed, professional digital painting, unreal engine 5, photorealism, hd quality, 8 k resolution, cinema 4 d, 3 d, cinematic, professional photography, art by artgerm and greg rutkowski and alphonse mucha and loish and wlop
+
