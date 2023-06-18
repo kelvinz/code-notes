@@ -14,3 +14,5 @@ nekopara fantastically detailed shining reflecting eyes modern anime style art c
 
 portrait painting of a nepali female in the gym, ultra realistic, concept art, intricate details, eerie, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and alphonse mucha
 
+portrait painting of a post - apocalyptic older american man blindfolded and wearing monk garbs with a scrap pauldron, ultra realistic, concept art, intricate details, eerie, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and charlie bowater and magali villeneuve and alphonse mucha
+
