@@ -18,3 +18,5 @@ portrait painting of a post - apocalyptic older american man blindfolded and wea
 
 oil paining of robotic humanoid ( pale shani from witcher 3 ), intricate mechanisms, highly detailed, professional digital painting, unreal engine 5, photorealism, hd quality, 8 k resolution, cinema 4 d, 3 d, cinematic, professional photography, art by artgerm and greg rutkowski and alphonse mucha and loish and wlop
 
+portrait of a cyberpunk machine, machine face, upper half portrait, decorated with chinese opera motifs, asian, fine china, traditional chinese art, intricate, elegant, highly detailed, symmetry, headpiece, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, 8 k
+
