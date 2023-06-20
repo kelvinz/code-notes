@@ -20,3 +20,5 @@ oil paining of robotic humanoid ( pale shani from witcher 3 ), intricate mechani
 
 portrait of a cyberpunk machine, machine face, upper half portrait, decorated with chinese opera motifs, asian, fine china, traditional chinese art, intricate, elegant, highly detailed, symmetry, headpiece, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, 8 k
 
+symmetry!! portrait of a hybrid robot elephant, floral! horizon zero dawn machine, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, 8 k
+
