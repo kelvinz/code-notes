@@ -22,3 +22,5 @@ portrait of a cyberpunk machine, machine face, upper half portrait, decorated wi
 
 symmetry!! portrait of a hybrid robot elephant, floral! horizon zero dawn machine, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, 8 k
 
+bust portrait of human with cat face, head and shoulders, highly detailed, d & d, fantasy, highly detailed, digital painting, trending on artstation, concept art, sharp focus, illustration, global illumination, ray tracing, realistic shaded, art by artgerm and greg rutkowski and fuji choko and viktoria gavrilenko and hoang lap
+
