@@ -24,3 +24,5 @@ symmetry!! portrait of a hybrid robot elephant, floral! horizon zero dawn machin
 
 bust portrait of human with cat face, head and shoulders, highly detailed, d & d, fantasy, highly detailed, digital painting, trending on artstation, concept art, sharp focus, illustration, global illumination, ray tracing, realistic shaded, art by artgerm and greg rutkowski and fuji choko and viktoria gavrilenko and hoang lap
 
+Portrait of the Mona Lisa but she is chinese, real life skin, intricate, elegant, highly detailed, artstation, concept art, smooth, sharp focus, art by artgerm and greg rutkowski and alphonse mucha
+
