@@ -26,3 +26,5 @@ bust portrait of human with cat face, head and shoulders, highly detailed, d & d
 
 Portrait of the Mona Lisa but she is chinese, real life skin, intricate, elegant, highly detailed, artstation, concept art, smooth, sharp focus, art by artgerm and greg rutkowski and alphonse mucha
 
+a portrait of a ( female ) cyberpunk machine, machine face, upper half portrait, decorated with chinese opera motifs, asian, fine china, wuxia, traditional chinese art, intricate, elegant, highly detailed, symmetry, headpiece, digital painting, artstation concept art smooth sharp focus, illustration, art by artgerm and greg rutkowski alphonse mucha 8 k
+
