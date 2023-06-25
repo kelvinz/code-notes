@@ -30,3 +30,5 @@ a portrait of a ( female ) cyberpunk machine, machine face, upper half portrait,
 
 realistic detailed face portrait of otherworldly alien baroque cyberpunk queen marie antoinette by alphonse mucha, ayami kojima, amano, greg hildebrandt, and mark brooks, art nouveau, female, feminine, rococo cyberpunk, neo - gothic, gothic, character concept design
 
+Cyborg biomechanical jellyfish angel girl, sci-fi, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
+
