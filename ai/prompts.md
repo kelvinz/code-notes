@@ -28,3 +28,5 @@ Portrait of the Mona Lisa but she is chinese, real life skin, intricate, elegant
 
 a portrait of a ( female ) cyberpunk machine, machine face, upper half portrait, decorated with chinese opera motifs, asian, fine china, wuxia, traditional chinese art, intricate, elegant, highly detailed, symmetry, headpiece, digital painting, artstation concept art smooth sharp focus, illustration, art by artgerm and greg rutkowski alphonse mucha 8 k
 
+realistic detailed face portrait of otherworldly alien baroque cyberpunk queen marie antoinette by alphonse mucha, ayami kojima, amano, greg hildebrandt, and mark brooks, art nouveau, female, feminine, rococo cyberpunk, neo - gothic, gothic, character concept design
+
