@@ -32,3 +32,5 @@ realistic detailed face portrait of otherworldly alien baroque cyberpunk queen m
 
 Cyborg biomechanical jellyfish angel girl, sci-fi, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
 
+portrait of rudy giuliani in clown makeup eating hamburgers, extra onions and ketchup, luscious patty with sesame seeds, feminine ethereal, handsome, d & d, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, matte, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
+
