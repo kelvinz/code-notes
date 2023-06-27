@@ -34,3 +34,5 @@ Cyborg biomechanical jellyfish angel girl, sci-fi, highly detailed, digital pain
 
 portrait of rudy giuliani in clown makeup eating hamburgers, extra onions and ketchup, luscious patty with sesame seeds, feminine ethereal, handsome, d & d, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, matte, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
 
+A beautiful portrait of a pretty warrior princess holding a sword, cinematic, fantasy character portrait, epic fantasy, in the style of Akihikio Yoshida. 3d with depth of field, blurred background. female. nautilus. A highly detailed epic cinematic concept art CG render. made in Blender and Photoshop, octane render, excellent composition, cinematic dystopian brutalist atmosphere. dynamic lighting. dramatic lighting. cinematic lighting. aesthetic. stylized. very inspirational. Golden hour. detailed. hq. realistic. warm light. vibrant color scheme. highly detailed. muted colors. Moody. Filmic. Dreamy
+
