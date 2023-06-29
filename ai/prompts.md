@@ -36,3 +36,5 @@ portrait of rudy giuliani in clown makeup eating hamburgers, extra onions and ke
 
 A beautiful portrait of a pretty warrior princess holding a sword, cinematic, fantasy character portrait, epic fantasy, in the style of Akihikio Yoshida. 3d with depth of field, blurred background. female. nautilus. A highly detailed epic cinematic concept art CG render. made in Blender and Photoshop, octane render, excellent composition, cinematic dystopian brutalist atmosphere. dynamic lighting. dramatic lighting. cinematic lighting. aesthetic. stylized. very inspirational. Golden hour. detailed. hq. realistic. warm light. vibrant color scheme. highly detailed. muted colors. Moody. Filmic. Dreamy
 
+photorealistic portrait of oriental female humanoid with freckle cheeks, cyber neon lightings, highly detailed, cyberpunk high fashion, elegant, crispy quality, trending in artstation, trending in pinterest, glamor pose, no signature, no watermark, cinematic, octane render, art by artgerm, art by greg rutkowski, art by pascal blanche
+
