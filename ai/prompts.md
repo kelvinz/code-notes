@@ -38,3 +38,5 @@ A beautiful portrait of a pretty warrior princess holding a sword, cinematic, fa
 
 photorealistic portrait of oriental female humanoid with freckle cheeks, cyber neon lightings, highly detailed, cyberpunk high fashion, elegant, crispy quality, trending in artstation, trending in pinterest, glamor pose, no signature, no watermark, cinematic, octane render, art by artgerm, art by greg rutkowski, art by pascal blanche
 
+portrait of demon girl, dreamy and ethereal, expressive pose, big black eyes, exciting expression, fantasy, intricate, elegant, dark and moody smoke, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by nekro borja, artgerm and greg rutkowski and ( alphonse mucha )
+
