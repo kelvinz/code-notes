@@ -40,3 +40,5 @@ photorealistic portrait of oriental female humanoid with freckle cheeks, cyber n
 
 portrait of demon girl, dreamy and ethereal, expressive pose, big black eyes, exciting expression, fantasy, intricate, elegant, dark and moody smoke, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by nekro borja, artgerm and greg rutkowski and ( alphonse mucha )
 
+champion splashart of symmetry!! old man, machine parts embedded into face, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, 8 k
+
