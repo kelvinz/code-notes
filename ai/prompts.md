@@ -42,3 +42,5 @@ portrait of demon girl, dreamy and ethereal, expressive pose, big black eyes, ex
 
 champion splashart of symmetry!! old man, machine parts embedded into face, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, 8 k
 
+portrait of a turkish masculine female hinata hyuga cyberpunk machine, machine face, full body portrait, decorated with ottoman opera motifs, muscular, asian, fine china, wuxia, traditional chinese art, intricate intense elegant, highly detailed symmetry headpiece digital painting artstation concept art smooth sharp focus illustration, art by artgerm and greg rutkowski alphonse mucha 8 k
+
