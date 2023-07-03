@@ -44,3 +44,5 @@ champion splashart of symmetry!! old man, machine parts embedded into face, intr
 
 portrait of a turkish masculine female hinata hyuga cyberpunk machine, machine face, full body portrait, decorated with ottoman opera motifs, muscular, asian, fine china, wuxia, traditional chinese art, intricate intense elegant, highly detailed symmetry headpiece digital painting artstation concept art smooth sharp focus illustration, art by artgerm and greg rutkowski alphonse mucha 8 k
 
+rick and morty fused with a lovecraft super fat space zombie wearing a exploding wig and exploding eyeballs, photo, portrait, 3 d, high details, intricate details, by vincent di fate, artgerm julie bell beeple, 9 0 s, smooth gradients, octane render, 8 k, volumetric lightning, high contrast, duo tone, depth of field, very coherent symmetrical artwork
+
