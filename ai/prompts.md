@@ -46,3 +46,5 @@ portrait of a turkish masculine female hinata hyuga cyberpunk machine, machine f
 
 rick and morty fused with a lovecraft super fat space zombie wearing a exploding wig and exploding eyeballs, photo, portrait, 3 d, high details, intricate details, by vincent di fate, artgerm julie bell beeple, 9 0 s, smooth gradients, octane render, 8 k, volumetric lightning, high contrast, duo tone, depth of field, very coherent symmetrical artwork
 
+daenerys targaryen, dark and ominous, gothic, comic cover, Alphonse Mucha, James Jean, character art, intricate detail, watercolor, digital illustration, high resolution, trending on ArtStation, in the style of Charlie Bowater, Tom Bagshaw, and Waterhouse, Adam Hughes, Artgerm, J. C. Leyendecker, cinematic lighting, beautiful, elegant, oil painting, cinematic, headroom, 8K, trending on artstation, volumetric light, lightrays, smoke, cinematic, atmospheric, octane render, Flickr, fantasy art, magic, filmic, CryEngine, ethereal, glowing lights and smoke in background, fantasy, psychedelic, moody, muted colors, multicolored, vibrant colors
+
