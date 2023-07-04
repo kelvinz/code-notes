@@ -48,3 +48,5 @@ rick and morty fused with a lovecraft super fat space zombie wearing a exploding
 
 daenerys targaryen, dark and ominous, gothic, comic cover, Alphonse Mucha, James Jean, character art, intricate detail, watercolor, digital illustration, high resolution, trending on ArtStation, in the style of Charlie Bowater, Tom Bagshaw, and Waterhouse, Adam Hughes, Artgerm, J. C. Leyendecker, cinematic lighting, beautiful, elegant, oil painting, cinematic, headroom, 8K, trending on artstation, volumetric light, lightrays, smoke, cinematic, atmospheric, octane render, Flickr, fantasy art, magic, filmic, CryEngine, ethereal, glowing lights and smoke in background, fantasy, psychedelic, moody, muted colors, multicolored, vibrant colors
 
+groundhog drug addict on the bed, realistic portrait, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, cinematic lighting, art by artgerm and greg rutkowski and alphonse mucha
+
