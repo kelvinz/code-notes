@@ -52,3 +52,5 @@ groundhog drug addict on the bed, realistic portrait, highly detailed, digital p
 
 portrait painting of an old man in sorrow, staring at the underworld, ultra realistic, concept art, intricate details, eerie, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and alphonse mucha
 
+Boris Johnson as Joker from The Dark Knight, portrait, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, cinematic lighting, art by artgerm and greg rutkowski and alphonse mucha
+
