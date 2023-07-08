@@ -54,3 +54,5 @@ portrait painting of an old man in sorrow, staring at the underworld, ultra real
 
 Boris Johnson as Joker from The Dark Knight, portrait, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, cinematic lighting, art by artgerm and greg rutkowski and alphonse mucha
 
+a portrait of a beautiful aztec queen, art by lois van baarle and loish and ross tran and rossdraws and sam yang and samdoesarts and artgerm and saruei, digital art, highly detailed, intricate, sharp focus, Trending on Artstation HQ, deviantart, unreal engine 5, 4K UHD image
+
