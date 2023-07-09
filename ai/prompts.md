@@ -56,3 +56,5 @@ Boris Johnson as Joker from The Dark Knight, portrait, highly detailed, digital 
 
 a portrait of a beautiful aztec queen, art by lois van baarle and loish and ross tran and rossdraws and sam yang and samdoesarts and artgerm and saruei, digital art, highly detailed, intricate, sharp focus, Trending on Artstation HQ, deviantart, unreal engine 5, 4K UHD image
 
+ultra realistic illustration, vampire king david bowie from diablo and baldurs gate, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
+
