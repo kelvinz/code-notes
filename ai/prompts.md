@@ -58,3 +58,5 @@ a portrait of a beautiful aztec queen, art by lois van baarle and loish and ross
 
 ultra realistic illustration, vampire king david bowie from diablo and baldurs gate, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
 
+haunting beautiful young woman, detailed photo realistic gorgeous face turning waves, dark, ominous, sad eyes, glowing hue of teal, vaporwave aesthetic, synthwave , digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
+
