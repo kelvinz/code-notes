@@ -60,3 +60,5 @@ ultra realistic illustration, vampire king david bowie from diablo and baldurs g
 
 haunting beautiful young woman, detailed photo realistic gorgeous face turning waves, dark, ominous, sad eyes, glowing hue of teal, vaporwave aesthetic, synthwave , digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
 
+a beautiful crying woman showing pain and remorse, highly detailed, digital painting, artstation, concept art, smooth, sharp, focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
+
