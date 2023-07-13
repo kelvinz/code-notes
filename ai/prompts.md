@@ -64,3 +64,5 @@ a beautiful crying woman showing pain and remorse, highly detailed, digital pain
 
 cyberpunk city street, foggy, raining, snowing, intricately detailed, purple, pink, pastel, sharp focus, beautiful light, Simon Stalenhag, Ian McQue, Ghibli Studio, Beeple
 
+vladimir putin as the simpsons character, realistic portrait, symmetrical, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, cinematic lighting, art by artgerm and greg rutkowski and alphonse mucha
+
