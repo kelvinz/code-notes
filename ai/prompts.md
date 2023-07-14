@@ -66,3 +66,5 @@ cyberpunk city street, foggy, raining, snowing, intricately detailed, purple, pi
 
 vladimir putin as the simpsons character, realistic portrait, symmetrical, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, cinematic lighting, art by artgerm and greg rutkowski and alphonse mucha
 
+symmetry!! portrait of floral! horizon zero dawn machine, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, 8 k
+
