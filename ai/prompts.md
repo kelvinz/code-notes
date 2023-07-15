@@ -68,3 +68,5 @@ vladimir putin as the simpsons character, realistic portrait, symmetrical, highl
 
 symmetry!! portrait of floral! horizon zero dawn machine, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, 8 k
 
+poseidon, jeff bridges, god of the ocean, D&D, fantasy, portrait, highly detailed, digital painting, trending on artstation, concept art, sharp focus, illustration, art by artgerm and greg rutkowski and magali villeneuve
+
