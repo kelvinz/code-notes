@@ -72,3 +72,5 @@ poseidon, jeff bridges, god of the ocean, D&D, fantasy, portrait, highly detaile
 
 Judge dread Frank Drebin, Judge dread, extremely detailed, full face, mouth, trending on artstation, pixiv, cgsociety, hyperdetailed Unreal Engine 4k 8k ultra HD, WLOP
 
+seth rogen, manga cover art, detailed color portrait, artstation trending, 8 k, greg rutkowski
+
