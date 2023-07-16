@@ -70,3 +70,5 @@ symmetry!! portrait of floral! horizon zero dawn machine, intricate, elegant, hi
 
 poseidon, jeff bridges, god of the ocean, D&D, fantasy, portrait, highly detailed, digital painting, trending on artstation, concept art, sharp focus, illustration, art by artgerm and greg rutkowski and magali villeneuve
 
+Judge dread Frank Drebin, Judge dread, extremely detailed, full face, mouth, trending on artstation, pixiv, cgsociety, hyperdetailed Unreal Engine 4k 8k ultra HD, WLOP
+
