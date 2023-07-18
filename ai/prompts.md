@@ -74,3 +74,5 @@ Judge dread Frank Drebin, Judge dread, extremely detailed, full face, mouth, tre
 
 seth rogen, manga cover art, detailed color portrait, artstation trending, 8 k, greg rutkowski
 
+closeup portrait shot of a western cowboy in a scenic western environment, intricate, elegant, highly detailed, centered, digital painting, artstation, concept art, smooth, sharp focus, illustration, artgerm, tomasz alen kopera, peter mohrbacher, donato giancola, joseph christian leyendecker, wlop, boris vallejo
+
