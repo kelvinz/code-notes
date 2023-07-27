@@ -30,3 +30,11 @@
 
 
 
+# Google Collab
+
+<https://colab.research.google.com/github/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/Retrieval_based_Voice_Conversion_WebUI.ipynb>
+add => !pip3 install git+https://github.com/JeremyCCHsu/Python-Wrapper-for-World-Vocoder.git
+maybe add => !pip3 install cloud-tpu-client
+
+
+
