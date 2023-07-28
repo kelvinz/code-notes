@@ -38,3 +38,29 @@ maybe add => !pip3 install cloud-tpu-client
 
 
 
+# Notes
+
+*Train*
+
+- Experiment name: *name*
+- Target sample rate: 40k
+- If the model have pitch... : true
+- Model architecture: v2
+- Threads: 16
+- Path to training folder: *your voice files*
+=> process data
+
+- Select pitch extraction: harvest
+=> feature extraction
+
+- saving frequency: 10
+- total training epochs: 200
+- batch size: 40?
+- save only latest: yes
+- cache all: no
+- save small finished: yes
+=> one-click training
+
+
+
+*Seperation of Accompaniment and Vocal*
