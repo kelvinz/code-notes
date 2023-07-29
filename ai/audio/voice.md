@@ -64,3 +64,11 @@ maybe add => !pip3 install cloud-tpu-client
 
 
 *Seperation of Accompaniment and Vocal*
+
+- remove input path, use select file from below instead
+- hp2 if no harmony, hp5 if with harmony
+- change output dir
+=> convert
+
+
+
