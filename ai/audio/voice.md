@@ -72,3 +72,15 @@ maybe add => !pip3 install cloud-tpu-client
 
 
 
+*Model Inference*
+
+=> refresh voice list
+- choose trained voice (inference voice)
+- transpose: -12, 0, 12 depending on pitch change
+- enter path to audio you want to change to
+- algo: harvest
+- rest to default
+- path to index - match your inference voice
+=> convert
+
+
