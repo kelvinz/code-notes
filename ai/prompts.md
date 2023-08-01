@@ -78,3 +78,5 @@ closeup portrait shot of a western cowboy in a scenic western environment, intri
 
 portrait of a chinese masculine male cyberpunk machine, machine face, upper half portrait, decorated with chinese opera motifs, muscular, asian, fine china, wuxia, traditional chinese art, intricate intense elegant, highly detailed symmetry headpiece digital painting artstation concept art smooth sharp focus illustration, art by artgerm and greg rutkowski alphonse mucha 8 k
 
+portrait of greg davies, d & d, muscular! fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
+
