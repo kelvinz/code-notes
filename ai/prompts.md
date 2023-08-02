@@ -80,3 +80,4 @@ portrait of a chinese masculine male cyberpunk machine, machine face, upper half
 
 portrait of greg davies, d & d, muscular! fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
 
+portrait of a machine from horizon zero dawn, machine face, upper body, decorated with opera motifs, traditional chinese art, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, 8 k
