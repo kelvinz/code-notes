@@ -84,3 +84,5 @@ portrait of a machine from horizon zero dawn, machine face, upper body, decorate
 
 graphic, hyperreal illustration of anthropomorphic sloth in traditional samurai armor : : digital art, concept art, character development : : illustrated by artgerm, yoji shinkawa, scott buoncristiano, nychos
 
+anime cute chibi girl in blue sweater white white pale hair black glasses standing gentle ( ( ( smile ) ) ) background by greg rutkowski makoto shinkai kyoto animation key art feminine mid shot wlop madhouse, ufotable, comixwave films, trending on artstation, trending on pixiv, anime visual
+
