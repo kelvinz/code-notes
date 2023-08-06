@@ -86,3 +86,5 @@ graphic, hyperreal illustration of anthropomorphic sloth in traditional samurai 
 
 anime cute chibi girl in blue sweater white white pale hair black glasses standing gentle ( ( ( smile ) ) ) background by greg rutkowski makoto shinkai kyoto animation key art feminine mid shot wlop madhouse, ufotable, comixwave films, trending on artstation, trending on pixiv, anime visual
 
+beautiful, detailed portrait, cell shaded, 4 k, concept art, by wlop, ilya kuvshinov, artgerm, krenz cushart, greg rutkowski, pixiv. cinematic dramatic atmosphere, sharp focus, volumetric lighting, cinematic lighting, studio quality
+
