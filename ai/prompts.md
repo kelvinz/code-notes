@@ -88,3 +88,5 @@ anime cute chibi girl in blue sweater white white pale hair black glasses standi
 
 beautiful, detailed portrait, cell shaded, 4 k, concept art, by wlop, ilya kuvshinov, artgerm, krenz cushart, greg rutkowski, pixiv. cinematic dramatic atmosphere, sharp focus, volumetric lighting, cinematic lighting, studio quality
 
+portrait of catriona balfe ( outlander ) as a kayan tribe woman with gold neck rings, hyper detailed ultra sharp trending on artstation, colorful, psychedelic, ornate, intricate, digital painting, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and h. r. giger, 8 k
+
