@@ -90,3 +90,5 @@ beautiful, detailed portrait, cell shaded, 4 k, concept art, by wlop, ilya kuvsh
 
 portrait of catriona balfe ( outlander ) as a kayan tribe woman with gold neck rings, hyper detailed ultra sharp trending on artstation, colorful, psychedelic, ornate, intricate, digital painting, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and h. r. giger, 8 k
 
+baroque oil painting headshot portrait character concept, anime key visual of young female maid nazi military secret police, straight long blonde hair blue eyes, studio lighting delicate features finely detailed perfect face directed gaze, black nazi uniform, ingsoc gapmoe kuudere grimdark, trending on pixiv fanbox, painted by greg rutkowski makoto shinkai takashi takeuchi studio ghibli
+
