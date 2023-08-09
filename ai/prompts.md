@@ -92,3 +92,5 @@ portrait of catriona balfe ( outlander ) as a kayan tribe woman with gold neck r
 
 baroque oil painting headshot portrait character concept, anime key visual of young female maid nazi military secret police, straight long blonde hair blue eyes, studio lighting delicate features finely detailed perfect face directed gaze, black nazi uniform, ingsoc gapmoe kuudere grimdark, trending on pixiv fanbox, painted by greg rutkowski makoto shinkai takashi takeuchi studio ghibli
 
+anime portrait of a handsome man, brown hair, yellow - orange eyes, wearing gold glasses and dark jacket, ilya kuvshinov, anime, pixiv top monthly, trending on artstation, cinematic, danbooru, zerochan art, kyoto animation
+
