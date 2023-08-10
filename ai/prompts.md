@@ -94,3 +94,5 @@ baroque oil painting headshot portrait character concept, anime key visual of yo
 
 anime portrait of a handsome man, brown hair, yellow - orange eyes, wearing gold glasses and dark jacket, ilya kuvshinov, anime, pixiv top monthly, trending on artstation, cinematic, danbooru, zerochan art, kyoto animation
 
+floating island in the sky, low poly, isometric art, 3d art, high detail, artstation, concept art, behance, ray tracing, smooth, sharp focus, ethereal lighting
+
