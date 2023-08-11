@@ -96,3 +96,5 @@ anime portrait of a handsome man, brown hair, yellow - orange eyes, wearing gold
 
 floating island in the sky, low poly, isometric art, 3d art, high detail, artstation, concept art, behance, ray tracing, smooth, sharp focus, ethereal lighting
 
+portrait of a rugged ranger, 2 5 years old, muscular, upper body, leather, hairy torso, d & d, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
+
