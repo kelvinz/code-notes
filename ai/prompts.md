@@ -98,3 +98,5 @@ floating island in the sky, low poly, isometric art, 3d art, high detail, artsta
 
 portrait of a rugged ranger, 2 5 years old, muscular, upper body, leather, hairy torso, d & d, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
 
+amazing watercolor portrait illustrations by hector trunnec
+
