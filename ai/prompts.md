@@ -106,3 +106,6 @@ portrait photo by 695 best portrait reference images on faces
 
 epingle par jalluc sur inspirations aquarelles portrait dessin
 
+perth artist tessa mackay's portrait of actor and producer david wenham titled through the looking glass, which won the 2019 archibald packing room prize
+
+artist: misulbu, watercolor {contemporary figurative art male head eyeglasses man face portrait painting #loveart}
