@@ -109,3 +109,6 @@ epingle par jalluc sur inspirations aquarelles portrait dessin
 perth artist tessa mackay's portrait of actor and producer david wenham titled through the looking glass, which won the 2019 archibald packing room prize
 
 artist: misulbu, watercolor {contemporary figurative art male head eyeglasses man face portrait painting #loveart}
+
+3d ceremonial armor close up profile solarpunk portrait ram skull. beautiful intricately detailed japanese crow kitsune mask and clasical japanese kimono. soft feathers, long feathers, jellyfish phoenix, bio luminescent, plasma, ice, water, wind, creature, artwork by tooth wu and wlop and beeple and greg rutkowski
+
