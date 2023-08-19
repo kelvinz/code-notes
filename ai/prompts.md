@@ -112,3 +112,7 @@ artist: misulbu, watercolor {contemporary figurative art male head eyeglasses ma
 
 3d ceremonial armor close up profile solarpunk portrait ram skull. beautiful intricately detailed japanese crow kitsune mask and clasical japanese kimono. soft feathers, long feathers, jellyfish phoenix, bio luminescent, plasma, ice, water, wind, creature, artwork by tooth wu and wlop and beeple and greg rutkowski
 
+(aurora), masterpiece artwork by Alena Aenami and (Mikko Lagerstedt) and rhads, (highly detailed), beautiful, (hd wallpaper), (calm), (ambient)
+Negative prompt: (blurry), (fuzzy), disfigured, misshaped, mutant, gross, disgusting, poorly drawn, ugly, terrible
+Steps: 20, Sampler: Euler a, CFG scale: 9, Seed: 774406843, Size: 1920x1216, Denoising strength: 0.7
+
