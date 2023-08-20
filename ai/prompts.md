@@ -116,3 +116,6 @@ artist: misulbu, watercolor {contemporary figurative art male head eyeglasses ma
 Negative prompt: (blurry), (fuzzy), disfigured, misshaped, mutant, gross, disgusting, poorly drawn, ugly, terrible
 Steps: 20, Sampler: Euler a, CFG scale: 9, Seed: 774406843, Size: 1920x1216, Denoising strength: 0.7
 
+thing you want here..., masterpiece artwork by Alena Aenami and (Mikko Lagerstedt) and rhads, (highly detailed), beautiful, (hd wallpaper), (calm), (ambient)
+Negative prompt: (blurry), (fuzzy), disfigured, misshaped, mutant, gross, disgusting, poorly drawn, ugly, terrible
+
