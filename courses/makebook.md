@@ -18,3 +18,9 @@ Build only the core functionality.
 The rest comes later.
 
 ## 🚀 Launch
+Launch early and multiple times.
+Launch to famous startups websites (like Product Hunt, Hacker News, The Next Web), mainstream websites (like Reddit) and mainstream press (like Forbes).
+But more importantly, find where your specific audience hangs out on the internet (or in real life) and launch there.
+Launch in a friendly way, that means "here's something I made that might be useful for you", instead of acting like you're some big giant new startup coming to change the world.
+
+## 🌱 Grow
