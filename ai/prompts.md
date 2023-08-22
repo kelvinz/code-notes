@@ -121,3 +121,6 @@ Negative prompt: (blurry), (fuzzy), disfigured, misshaped, mutant, gross, disgus
 
 detailed swirls of colour by artgerm and greg rutkowski, insanely detailed, soft lighting
 
+Portrait of an aasimar, D&D, headshot, trending on artstation and reddit, by Charlie Bowater, by Alice X. Zhang, by Donato Giancola, devil, leather armour, male
+Steps: 20, Sampler: Euler a, CFG scale: 7, Seed: 3573893946, Size: 512x512, Model hash: 7460a6fa (Restore Faces: On)
+
