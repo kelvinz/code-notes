@@ -24,3 +24,11 @@ But more importantly, find where your specific audience hangs out on the interne
 Launch in a friendly way, that means "here's something I made that might be useful for you", instead of acting like you're some big giant new startup coming to change the world.
 
 ## 🌱 Grow
+Grow organically.
+A great product that people really need which is better than the rest will pull people in.
+Don't hire people if there's no revenue yet.
+You don't need ads for that.
+Don't hire many people if there's revenue either.
+Stay lean and fast. Do things yourself.
+
+## 💰 Monetize
