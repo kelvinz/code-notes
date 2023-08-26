@@ -32,3 +32,9 @@ Don't hire many people if there's revenue either.
 Stay lean and fast. Do things yourself.
 
 ## 💰 Monetize
+Monetize by asking users for money.
+Don't sell their data.
+Don't put ads everywhere.
+Don't dilute your product.
+Be honest that you need money to build the product they love and they'll be fine paying for it.
+
