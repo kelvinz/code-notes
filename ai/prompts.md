@@ -127,3 +127,5 @@ Steps: 20, Sampler: Euler a, CFG scale: 7, Seed: 3573893946, Size: 512x512, Mode
 (positive weight), neutral weight, [negative weight]
 conjunctions: black-and-white better than black and white
 
+octane render by robert hubert and weta digital, inside a high - end exotic colorful pastel vintage <place>, deep depth of field, 8k, cinema 4d, raytraced lighting and reflections, very sharp focus, crisp render, trending on cgsociety
+
