@@ -129,3 +129,5 @@ conjunctions: black-and-white better than black and white
 
 octane render by robert hubert and weta digital, inside a high - end exotic colorful pastel vintage <place>, deep depth of field, 8k, cinema 4d, raytraced lighting and reflections, very sharp focus, crisp render, trending on cgsociety
 
+recursion, insanely detailed, dramatic lighting, imax, 4k
+
