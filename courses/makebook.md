@@ -38,3 +38,11 @@ Don't put ads everywhere.
 Don't dilute your product.
 Be honest that you need money to build the product they love and they'll be fine paying for it.
 
+## 🤖 Automate
+Automate by writing programs that do stuff that you do repeatedly.
+Only automate if it's worth the time saved.
+For stuff that's too hard to automate or not worth it, hire contractors.
+Let them work as autonomously as possible.
+Where possible let robots manage them (for example by giving them alerts when things happen in your product).
+This lets you take time off, or work on your next business.
+
