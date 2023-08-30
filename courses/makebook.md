@@ -46,3 +46,21 @@ Let them work as autonomously as possible.
 Where possible let robots manage them (for example by giving them alerts when things happen in your product).
 This lets you take time off, or work on your next business.
 
+## 🚪 Exit
+Exit by not putting your company for sale, but letting buyers come to you.
+Filter out the majority of buyers that aren't serious.
+With the serious buyers left, negotiate a price by valuating your own company.
+Price it agressively high.
+Always keep the bargaining power on your side of the table.
+Get paid in cash, not stock and don't fall for the trap of earnout bonuses.
+Make sure you're prepared for the emotional fallout of selling (and missing) your business.
+
+## 🤝 Ethics
+Not a chapter but important: be ethical, and don't cut corners on ethics.
+You'll be rewarded by not doing dodgy stuff like spamming, manipulating your users into doing stuff, growth hacking your search rankings or faking your social media, or abusing your power to compete unfairly if you're successful.
+If you make a good product, you don't need any of this.
+If you make mistakes, own up to them and say sorry.
+Be nice as a person and especially as a company.
+Karma always pays back in the end.
+Just being ethical and nice is a competitive advantage these days because most companies (and people) are not!
+
