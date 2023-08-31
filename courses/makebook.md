@@ -64,3 +64,13 @@ Be nice as a person and especially as a company.
 Karma always pays back in the end.
 Just being ethical and nice is a competitive advantage these days because most companies (and people) are not!
 
+## 📝 Homework
+Homework: Each chapter ends with homework exercises that you can do.
+Instead of just reading, I'd like you to use this book as a handbook while actually building and shipping a product.
+It doesn't matter if it fails.
+But you need to do something instead of just read!
+This is not startup porn!
+This is startup life.
+
+---
+
