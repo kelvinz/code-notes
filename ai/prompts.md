@@ -131,3 +131,5 @@ octane render by robert hubert and weta digital, inside a high - end exotic colo
 
 recursion, insanely detailed, dramatic lighting, imax, 4k
 
+Bejeweled regal figure <x person>, complex machine, fear and suffering, extreme wealth, zdzisław beksinski, greg rutkowski, highly detailed, cinematic, surrealism, dream
+
