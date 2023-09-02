@@ -133,3 +133,7 @@ recursion, insanely detailed, dramatic lighting, imax, 4k
 
 Bejeweled regal figure <x person>, complex machine, fear and suffering, extreme wealth, zdzisław beksinski, greg rutkowski, highly detailed, cinematic, surrealism, dream
 
+beautiful ice dragon, detailed face, (flowing frost hair), ((translucent icy skin)), ethereal, by Patrick Woodroffe and Justin Gerard, (((subsurface scattering))), octane, v-ray, intricate hyper-detailed, artstation concept art, smooth, sharp focus, ray tracing, vibrant, by Alphonse Mucha
+Negative prompt: face out of frame, long neck, extra heads, bad anatomy, bad proportions, extra limbs, extra fingers, mutated hands, poorly drawn hands, poorly drawn face
+Steps: 20, Sampler: Euler a, CFG scale: 12, Seed: 1618186532, Size: 768x512, Model hash: 30fe122e
+
