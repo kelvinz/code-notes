@@ -137,3 +137,8 @@ beautiful ice dragon, detailed face, (flowing frost hair), ((translucent icy ski
 Negative prompt: face out of frame, long neck, extra heads, bad anatomy, bad proportions, extra limbs, extra fingers, mutated hands, poorly drawn hands, poorly drawn face
 Steps: 20, Sampler: Euler a, CFG scale: 12, Seed: 1618186532, Size: 768x512, Model hash: 30fe122e
 
+complex 3d render ultra detailed of a beautiful porcelain profile woman android face, cyborg, robotic parts, 150 mm, beautiful studio soft light, rim light, vibrant details, luxurious cyberpunk, lace, hyperrealistic, anatomical, facial muscles, cable electric wires, microchip, elegant, beautiful background, octane render, H.R. Giger style, 8k
+Negatives:
+poor quality resolution, incoherent, poorly drawn, poorly drawn lines, low quality, messy drawing, poorly-drawn, poorly-drawn lines, bad resolution, deformed, disfigured, disjointed, asymmetrical face, cross-eyed
+LMS, 50 steps, CFG 10, Highres. Fix: Denoising 0.7
+
