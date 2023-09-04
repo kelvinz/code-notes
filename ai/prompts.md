@@ -142,3 +142,5 @@ Negatives:
 poor quality resolution, incoherent, poorly drawn, poorly drawn lines, low quality, messy drawing, poorly-drawn, poorly-drawn lines, bad resolution, deformed, disfigured, disjointed, asymmetrical face, cross-eyed
 LMS, 50 steps, CFG 10, Highres. Fix: Denoising 0.7
 
+female character from the movie Avatar, blue skin, still, 4k, hyperdetailed, by james cameron
+
