@@ -144,3 +144,5 @@ LMS, 50 steps, CFG 10, Highres. Fix: Denoising 0.7
 
 female character from the movie Avatar, blue skin, still, 4k, hyperdetailed, by james cameron
 
+futuristic open area with large windows and space craft flying in the distance, waterfall, intricate, highly detailed, digital matte painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha and stefan kostic, 8k, hq, octane
+
