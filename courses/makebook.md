@@ -74,3 +74,18 @@ This is startup life.
 
 ---
 
+# 📕 This book
+
+	- announce the writing of the book on Twitter before writing a single line
+	- typeform asking for $34.99 for a book that doesn't exist... yet
+	- workflowy list where customers can write in what they want in the book
+	- levelsio went through the list regulary and re-order to find patterns
+	- start to write first chapter in Google Docs
+	- invited customers to help edit along the way
+	- does live stream on Twitch while writing
+	- every time a chapter's draft is done, it's sent to all pre-order customers
+	- final process is done internally, but 90% of process is done in public
+	- same way levelsio build startups, together with users
+
+---
+
