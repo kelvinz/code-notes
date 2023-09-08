@@ -89,3 +89,24 @@ This is startup life.
 
 ---
 
+# 💡 Idea
+
+	- solve your own problems
+	- your problem might just be everyone else's
+	- you are the greatest expert at your own problems
+	- how well do you need to know a problem to solve it?
+	- be more original, and your ideas will be original
+	- the downside of solving only your own problems
+	- always start from the problem, not the solution
+	- to get big, you have to start small
+	- start with a micro niche
+	- from micro niche to multi-niche
+	- from multi-niche to adjacent markets
+	- from adjacent markets to becoming a platform
+	- you just become big by starting small!
+	- your idea does not have to be earth-shattering
+	- create a list of ideas and keep track of them
+	- should you make ideas alone or in a group?
+	- don't be afraid to share your ideas (ideas are just a multiplier of execution)
+
+## conclusion
