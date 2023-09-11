@@ -154,3 +154,5 @@ a professional photographic view picture of a alley in rivendell, photographic f
 
 4d abstract fluid artwork rendered in unreal engine 5, 4k, super highly detailed ribbons of color floating and contorting, amazing composition, non Newtonian fluid dynamics, dynamic shape of subject, 8k render, octane render, explosive colors, sharp details
 
+sea floor view of (cyberpunk man) walking through bustling street of atlantis, huge glass dome with whales swimming above, concept art, low angle, high detail, cool lighting, volumetric, godrays, vivid, beautiful, trending on artstation, by tooth wu and wlop and beeple, cinematic
+
