@@ -156,3 +156,9 @@ a professional photographic view picture of a alley in rivendell, photographic f
 
 sea floor view of (cyberpunk man) walking through bustling street of atlantis, huge glass dome with whales swimming above, concept art, low angle, high detail, cool lighting, volumetric, godrays, vivid, beautiful, trending on artstation, by tooth wu and wlop and beeple, cinematic
 
+Prompt: (ACTIONS/POSES), (DESCRIBE PERSON) casting a spell, (magic wand), masterpiece, glowing magical runes, swirling magic, oil on canvas, (ARTISTS), (SETTING), action scene
+Neg: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, cropped, worst quality, low quality, normal quality, jpeg artifacts, blurry, black and white, watermark, signature
+Artists: Norman Rockwell, Franz Xaver Winterhalter, Jeremy Mann, Artgerm, Ilya Kuvshinov, Anges Cecile, Michael Garmash
+Person: beautiful witch woman, Charming mage man
+Setting: Mostly "in a forest"
+
