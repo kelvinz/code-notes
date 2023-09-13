@@ -162,3 +162,5 @@ Artists: Norman Rockwell, Franz Xaver Winterhalter, Jeremy Mann, Artgerm, Ilya K
 Person: beautiful witch woman, Charming mage man
 Setting: Mostly "in a forest"
 
+sea floor view of (cyberpunk man) walking through bustling street of atlantis, huge glass dome with whales swimming above, concept art, low angle, high detail, cool lighting, volumetric, godrays, vivid, beautiful, trending on artstation, by tooth wu and wlop and beeple, cinematic
+
