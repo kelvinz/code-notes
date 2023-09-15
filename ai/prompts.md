@@ -164,3 +164,5 @@ Setting: Mostly "in a forest"
 
 sea floor view of (cyberpunk man) walking through bustling street of atlantis, huge glass dome with whales swimming above, concept art, low angle, high detail, cool lighting, volumetric, godrays, vivid, beautiful, trending on artstation, by tooth wu and wlop and beeple, cinematic
 
+dystopian mecha world battlefield 2042 metal slug professional majestic oil painting by Ed Blinkey,Atey Ghailan,Studio Ghibli,by ((Jeremy Mann)),Greg Manchess,Antonio Moro,(((trending on ArtStation))),trending on CGSociety,volumetric lighting,dramatic lighting,(dawn),refraction
+
