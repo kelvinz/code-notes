@@ -166,3 +166,5 @@ sea floor view of (cyberpunk man) walking through bustling street of atlantis, h
 
 dystopian mecha world battlefield 2042 metal slug professional majestic oil painting by Ed Blinkey,Atey Ghailan,Studio Ghibli,by ((Jeremy Mann)),Greg Manchess,Antonio Moro,(((trending on ArtStation))),trending on CGSociety,volumetric lighting,dramatic lighting,(dawn),refraction
 
+portrait of Gregory House, dramatic lighting, illustration by Greg rutkowski, yoji shinkawa, 4k, digital art, concept art, trending on artstation
+
