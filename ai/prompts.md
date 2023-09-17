@@ -170,3 +170,7 @@ portrait of Gregory House, dramatic lighting, illustration by Greg rutkowski, yo
 
 Judge dread Frank Drebin, Judge dread, extremely detailed, full face, mouth, trending on artstation, pixiv, cgsociety, hyperdetailed Unreal Engine 4k 8k ultra HD, WLOP
 
+Prompt: 3 5 mm photography, photo realistic, crisp image, highly detailed, 8 k, dramatic lighting, sharp focus, realistic depiction external outdoor view of a ((((massive indoor park)))) bioluminescence, phosphorescent, nanoclusters, photo realistic, (vivid alien plantlife)on a massive futuristic (science fiction space station), ((huge glass dome with stars nebulae and space, showing through)), peaceful, cozy, 3d, CGI, trending on cgsociety, octane render, by Fenghua Zhong lighting by artgerm, Yuumei,
+negatives: groups, painting, blurry, drawing, bokeh
+steps 50, euler a, 768x512, cfg 7.5, highres fix
+
