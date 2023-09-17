@@ -168,3 +168,5 @@ dystopian mecha world battlefield 2042 metal slug professional majestic oil pain
 
 portrait of Gregory House, dramatic lighting, illustration by Greg rutkowski, yoji shinkawa, 4k, digital art, concept art, trending on artstation
 
+Judge dread Frank Drebin, Judge dread, extremely detailed, full face, mouth, trending on artstation, pixiv, cgsociety, hyperdetailed Unreal Engine 4k 8k ultra HD, WLOP
+
