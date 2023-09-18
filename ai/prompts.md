@@ -174,3 +174,5 @@ Prompt: 3 5 mm photography, photo realistic, crisp image, highly detailed, 8 k, 
 negatives: groups, painting, blurry, drawing, bokeh
 steps 50, euler a, 768x512, cfg 7.5, highres fix
 
+tiny cute "ninja" toy, standing character, soft smooth lighting, soft pastel colors, skottie young, 3d blender render, polycount, modular constructivism, pop surrealism, physically based rendering, square image
+
