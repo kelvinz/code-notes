@@ -179,3 +179,5 @@ tiny cute "ninja" toy, standing character, soft smooth lighting, soft pastel col
 nousr robot hyper realistic cyborg fluid close up ornate details doe female eyes volumetric lighting subtle glows, 4k
 glowing eyes
 
+Arsene Wenger as an American soldier on D Day, epic, WWII, 1940s photo, cinematic, highly detailed, gritty, combat, sharp focus, closeup, intense
+
