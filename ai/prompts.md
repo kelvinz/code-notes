@@ -176,3 +176,6 @@ steps 50, euler a, 768x512, cfg 7.5, highres fix
 
 tiny cute "ninja" toy, standing character, soft smooth lighting, soft pastel colors, skottie young, 3d blender render, polycount, modular constructivism, pop surrealism, physically based rendering, square image
 
+nousr robot hyper realistic cyborg fluid close up ornate details doe female eyes volumetric lighting subtle glows, 4k
+glowing eyes
+
