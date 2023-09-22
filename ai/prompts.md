@@ -181,3 +181,5 @@ glowing eyes
 
 Arsene Wenger as an American soldier on D Day, epic, WWII, 1940s photo, cinematic, highly detailed, gritty, combat, sharp focus, closeup, intense
 
+Prompt: a fungal nousr robot, white plating, cyan and magenta fungus, mycelia, diseased, dynamic pose, (peter mohrbacher), 8k, highly detailed
+
