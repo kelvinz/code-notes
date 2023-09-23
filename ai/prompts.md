@@ -183,3 +183,8 @@ Arsene Wenger as an American soldier on D Day, epic, WWII, 1940s photo, cinemati
 
 Prompt: a fungal nousr robot, white plating, cyan and magenta fungus, mycelia, diseased, dynamic pose, (peter mohrbacher), 8k, highly detailed
 
+Negative: animation, cartoon, drawing, painting, lowres, cropped, watermark, jpeg artifacts, low quality, normal quality, bad anatomy, text error, worst quality, blurry
+Steps: 20
+CFG: 7
+Upscale: SD Upscale, 0.10 denoising, 7 CFG, 120 Steps
+
