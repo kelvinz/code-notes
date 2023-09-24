@@ -110,3 +110,14 @@ This is startup life.
 	- don't be afraid to share your ideas (ideas are just a multiplier of execution)
 
 ## conclusion
+To get ideas, try to find problems in your daily life.
+You're the foremost expert at problems you have, more than anyone else who doesn't have them.
+If you keep coming up with the same ideas as everyone else: try to make yourself a more original person by actively experiencing different things.
+Don't shy away from taboos and fringe ideas, that just mean you're ahead of the curve, they might become the next big thing.
+Don't think big, start thinking small first, then take it one step at a time, you'll become big by starting small.
+To avoid groupthink and drama: work alone, especially early on.
+Share your ideas freely to get other people's input on them.
+Log every idea you have, filter them, and see which ones you can execute upon.
+
+---
+
