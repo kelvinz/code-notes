@@ -19,3 +19,15 @@
 ---
 
 # Setting Yourself Up (for Success)
+
+## Find your focus, story, and plan.
+## How to set up your brand.
+## Find a good domain name and email address.
+## Have clear messaging everywhere.
+## “Getting started” myths.
+## How I got started.
+## Reputation is everything.
+## Build trust.
+
+---
+
