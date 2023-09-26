@@ -31,3 +31,19 @@
 
 ---
 
+# How to Get Work and Stand Out
+
+## Let them know you exist.
+## Finding your first client.
+## When to work for “free.”
+## Example: I created Nixon.com for “free.”
+## Go where the clients are.
+## Side projects show your passion.
+## Build a stellar portfolio.
+## What to do if you have no work.
+## Watch your online presence.
+## Learn the power of a question.
+## Try five ideas to get you noticed.
+
+---
+
