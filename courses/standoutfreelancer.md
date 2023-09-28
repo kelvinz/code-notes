@@ -47,3 +47,13 @@
 
 ---
 
+# Working with Clients
+
+## Communication is everything.
+## Be easy to work with.
+## Be upfront about your timing.
+## What clients care about.
+## Common mistakes to avoid.
+
+---
+
