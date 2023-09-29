@@ -57,3 +57,24 @@
 
 ---
 
+# Guide to Pricing
+
+## How I Charge.
+## Important: be flexible.
+## Follow these four steps to discover your pricing.
+## Consider project-based pricing.
+## Charge weekly (my favorite).
+## Value-based pricing.
+## Charge hourly (My least favorite).
+## Stop charging hourly (when/if you can).
+## Give them options.
+## Refer a friend > saying no.
+## What I charge for web design.
+## Take a percentage upfront when you can.
+## Consider getting creative with payments.
+## Learn how to invoice & accept payment.
+## Offer discounts.
+## Double your income.
+## Bonus: Up-sale the client.
+
+---
