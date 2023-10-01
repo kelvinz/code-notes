@@ -13,3 +13,9 @@
 ---
 
 # Importance of One Main CTA
+
+	- don't repeat your key cta
+	- if you must, have different importance via color/style
+	- hide double cta until scrolled is another way
+	- don't confuse user's first glance
+
