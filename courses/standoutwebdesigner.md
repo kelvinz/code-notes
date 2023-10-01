@@ -19,3 +19,15 @@
 	- hide double cta until scrolled is another way
 	- don't confuse user's first glance
 
+---
+
+# Clean Simple Lines
+
+	- clean outer margins
+	- don't overthink grids, it's for visitors not other designers
+	- align the left/right, esp in first view
+	- consistency makes things feel less broken
+
+---
+
+# How to Pack a 1-2-Maybe 3
