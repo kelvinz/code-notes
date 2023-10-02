@@ -31,3 +31,9 @@
 ---
 
 # How to Pack a 1-2-Maybe 3
+
+	- 1. main lockup, 2. product graphic, 3. clients
+	- 1. main lockup, 2. tease content below
+	- try to tease content below by cutting off
+
+---
