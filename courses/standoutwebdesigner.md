@@ -37,3 +37,12 @@
 	- try to tease content below by cutting off
 
 ---
+
+# End with an Action
+
+	- sums up your story
+	- buy now, go to another page, newsletter, even back to top is good
+	- as designers it's our job to direct users on what to do
+
+---
+
