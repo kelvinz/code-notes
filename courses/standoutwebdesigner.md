@@ -46,3 +46,11 @@
 
 ---
 
+# Consistent in EVERY View
+
+	- buttons should look similar, shape, color, caps, etc
+	- copy too, if there are too many variation of a action, users need to ask, which should I click
+	- feeling to users that something is not right
+	- use a design system
+
+---
