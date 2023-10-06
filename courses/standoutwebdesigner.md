@@ -54,3 +54,11 @@
 	- use a design system
 
 ---
+
+# Typography Musts
+
+	- content is king, thus typography is king
+	- kill widow words, it's calling unwanted attention to words, copy tweak, code tweak, margin tweak
+	- subtext contrast, make it easy to read
+
+---
