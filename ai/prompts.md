@@ -188,3 +188,5 @@ Steps: 20
 CFG: 7
 Upscale: SD Upscale, 0.10 denoising, 7 CFG, 120 Steps
 
+beautiful, detailed portrait, cell shaded, 4 k, concept art, by wlop, ilya kuvshinov, artgerm, krenz cushart, greg rutkowski, pixiv. cinematic dramatic atmosphere, sharp focus, volumetric lighting, cinematic lighting, studio quality
+
