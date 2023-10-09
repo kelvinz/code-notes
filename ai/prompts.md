@@ -194,3 +194,5 @@ portrait of tom holland with hazel eyes, hazel colored eyes, red shirt, intricat
 
 elsa from frozen, hyper realistic, hyper detailed, digital art, trending in artstation, cinematic lighting, studio quality, smooth render, unreal engine 5 rendered, octane rendered, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart
 
+symmetrical! unrealistic, highly detailed, close-up portrait of an intricate celestialowl ghost head wearing a tinsel, rendered hazel eyes, surrounded by colored smoke, night background, trending on artstation, masterpiece, 64k, octane render, volumetric lighting, illustration, art by artgem and greg rutkowski, digital painting
+
