@@ -196,3 +196,5 @@ elsa from frozen, hyper realistic, hyper detailed, digital art, trending in arts
 
 symmetrical! unrealistic, highly detailed, close-up portrait of an intricate celestialowl ghost head wearing a tinsel, rendered hazel eyes, surrounded by colored smoke, night background, trending on artstation, masterpiece, 64k, octane render, volumetric lighting, illustration, art by artgem and greg rutkowski, digital painting
 
+symmetrical! unrealistic, highly detailed, close-up portrait of an intricate celestialowl ghost head composed of glowing tinsel, rendered hazel eyes, fluffy, ornaments, night background, trending on artstation, masterpiece, 64k, octane render, volumetric lighting, illustration, art by artgem and greg rutkowski, digital painting
+
