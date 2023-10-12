@@ -198,3 +198,10 @@ symmetrical! unrealistic, highly detailed, close-up portrait of an intricate cel
 
 symmetrical! unrealistic, highly detailed, close-up portrait of an intricate celestialowl ghost head composed of glowing tinsel, rendered hazel eyes, fluffy, ornaments, night background, trending on artstation, masterpiece, 64k, octane render, volumetric lighting, illustration, art by artgem and greg rutkowski, digital painting
 
+Ragdoll cat king wearing a golden crown, intricate, elegant, highly detailed, centered, digital painting, artstation, concept art, smooth, sharp focus, illustration, artgerm, Tomasz Alen Kopera, Peter Mohrbacher, donato giancola, Joseph Christian Leyendecker, WLOP, Boris Vallejo
+Negative prompt:
+Disfigured, bad art, amateur, poorly drawn, ugly, flat, deformed, poorly drawn, extra limbs, close up, b&w, weird colors, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
+Steps: 50, Sampler: DDIM, CFG scale: 8, Seed: 559971723 + a lot of inpainting
+
+Token class as Big Boss from Metal Gear Solid, Digital painting by Yoji Shinkawa
+
