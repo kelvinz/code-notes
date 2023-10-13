@@ -205,3 +205,5 @@ Steps: 50, Sampler: DDIM, CFG scale: 8, Seed: 559971723 + a lot of inpainting
 
 Token class as Big Boss from Metal Gear Solid, Digital painting by Yoji Shinkawa
 
+Portrait of cute baby Childlike Empress from Never Ending Story, cute baby face, amazing digital ilustration By artgerm By cgsociety, amazing lighting, pixar style, bluesky studios
+
