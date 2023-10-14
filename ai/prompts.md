@@ -207,3 +207,6 @@ Token class as Big Boss from Metal Gear Solid, Digital painting by Yoji Shinkawa
 
 Portrait of cute baby Childlike Empress from Never Ending Story, cute baby face, amazing digital ilustration By artgerm By cgsociety, amazing lighting, pixar style, bluesky studios
 
+Pixar style little girl, 4k, 8k, unreal engine, octane render photorealistic by cosmicwonder, hdr, photography by cosmicwonder, high definition, symmetrical face, volumetric lighting, dusty haze, photo, octane render, 24mm, 4k, 24mm, DSLR, high quality, 60 fps, ultra realistic
+
+complex 3d render ultra detailed of a beautiful porcelain profile woman android face, cyborg, robotic parts, 150 mm, beautiful studio soft light, rim light, vibrant details, luxurious cyberpunk, lace, hyperrealistic, anatomical, facial muscles, cable electric wires, microchip, elegant, beautiful background, octane render, H.R. Giger style, 8k
