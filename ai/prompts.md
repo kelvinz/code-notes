@@ -213,3 +213,5 @@ complex 3d render ultra detailed of a beautiful porcelain profile woman android 
 
 beautiful femme fatale, photo realistic, cinematic lighting, epic, octane render, 8k
 
+Mickael jackson, long dark hairs, thriller, arcane style
+
