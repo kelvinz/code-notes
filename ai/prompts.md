@@ -217,3 +217,5 @@ Mickael jackson, long dark hairs, thriller, arcane style
 
 a vibrant professional studio portrait photography of a young, black with white hairs, goth, attractive, friendly, casual, delightful, intricate, gorgeous, female, piercing purple eyes, wears a silver necklace, femme fatale, nouveau, curated collection, annie leibovitz, nikon, award winning, breathtaking, groundbreaking, superb, outstanding, lensculture portrait awards, photoshopped, dramatic lighting, 8 k, hi res
 
+a vibrant professional studio portrait photography of a young, pale, goth, attractive, friendly, casual, delightful, intricate, gorgeous, female, piercing green eyes, wears a gold ankh necklace, femme fatale, nouveau, curated collection, annie leibovitz, nikon, award winning, breathtaking, groundbreaking, superb, outstanding, lensculture portrait awards, photoshopped, dramatic lighting, 8 k, hi res
+
