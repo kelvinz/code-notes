@@ -221,3 +221,5 @@ a vibrant professional studio portrait photography of a young, pale, goth, attra
 
 Portrait of nathalile Portman, dramatic lighting, illustration by greg rutkowski, yoji shinkawa, 4k, digital art, concept art, trending on artstation
 
+Jim carrey, portrait shinkai makoto studio ghibli studio key hideaki anno sakimichan stanley artgerm lau rossdraws james jean marc simonetti elegant highly detailed digital painting artstation pixiv
+
