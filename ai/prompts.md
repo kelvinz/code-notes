@@ -223,3 +223,5 @@ Portrait of nathalile Portman, dramatic lighting, illustration by greg rutkowski
 
 Jim carrey, portrait shinkai makoto studio ghibli studio key hideaki anno sakimichan stanley artgerm lau rossdraws james jean marc simonetti elegant highly detailed digital painting artstation pixiv
 
+portrait of a rugged 19th century man with favoris in a jacket, victorian, concept art, detailed face, fantasy, close up face, highly detailed, cinematic lighting, digital art painting by greg rutkowski
+
