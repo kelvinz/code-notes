@@ -225,3 +225,5 @@ Jim carrey, portrait shinkai makoto studio ghibli studio key hideaki anno sakimi
 
 portrait of a rugged 19th century man with favoris in a jacket, victorian, concept art, detailed face, fantasy, close up face, highly detailed, cinematic lighting, digital art painting by greg rutkowski
 
+An origami of a samurai made of crumbled paper, by Greg Rutkowski, trending on artstation, intricate détails, 8k
+
