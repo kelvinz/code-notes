@@ -227,3 +227,5 @@ portrait of a rugged 19th century man with favoris in a jacket, victorian, conce
 
 An origami of a samurai made of crumbled paper, by Greg Rutkowski, trending on artstation, intricate détails, 8k
 
+highly detailed portrait of pierce brisnan as old sailor, by Dustin Nguyen, Akihiko Yoshida, Greg Tocchini, Greg Rutkowski, Cliff Chiang, 4k resolution, Dishonored inspired, bravely default inspired, vibrant but dreary red, black and white color scheme!!!, epic extreme long shot, dark mood and strong backlighting, volumetric lights, smoke volutes, artstation HQ, unreal engine, octane renderer, HQ, 8K
+
