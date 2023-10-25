@@ -230,3 +230,6 @@ An origami of a samurai made of crumbled paper, by Greg Rutkowski, trending on a
 highly detailed portrait of pierce brisnan as old sailor, by Dustin Nguyen, Akihiko Yoshida, Greg Tocchini, Greg Rutkowski, Cliff Chiang, 4k resolution, Dishonored inspired, bravely default inspired, vibrant but dreary red, black and white color scheme!!!, epic extreme long shot, dark mood and strong backlighting, volumetric lights, smoke volutes, artstation HQ, unreal engine, octane renderer, HQ, 8K
 
 a portrait of an old coal miner in 19th century, beautiful painting with highly detailed face by greg rutkowski and magali villanueve
+
+Ronald McDonald as a horror film, highly detailed face by greg rutkowski and magali villanueve, Hyperrealism, volumetric lighting,
+
