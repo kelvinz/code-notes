@@ -233,3 +233,5 @@ a portrait of an old coal miner in 19th century, beautiful painting with highly 
 
 Ronald McDonald as a horror film, highly detailed face by greg rutkowski and magali villanueve, Hyperrealism, volumetric lighting,
 
+white hair, intricate azure armor, detailed gorgeous face, beautiful young South Korean girl, medium length white hair, toned stomach, showing midriff, Hyperrealism, by Greg Rutkowski, 8k
+
