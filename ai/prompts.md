@@ -235,3 +235,5 @@ Ronald McDonald as a horror film, highly detailed face by greg rutkowski and mag
 
 white hair, intricate azure armor, detailed gorgeous face, beautiful young South Korean girl, medium length white hair, toned stomach, showing midriff, Hyperrealism, by Greg Rutkowski, 8k
 
+a portrait of an old WW2 soldier, beautiful painting with highly detailed face by greg rutkowski and magali villanueve
+
