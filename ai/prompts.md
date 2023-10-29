@@ -240,3 +240,6 @@ a portrait of an old WW2 soldier, beautiful painting with highly detailed face b
 white hair, beautiful young asian girl, beautiful eyes, olive skin, medium length white hair, petite body, small breasts, toned body, wearing school girl uniform, showing midriff, perfect face, neon light smoke background, volumetric fog, Hyperrealism, cinematic lighting, highly detailed, breathtaking, 8k uhd,
 
 cyborg woman| with a visible detailed brain| muscles cable wires| biopunk| cybernetic| cyberpunk| white marble bust| canon m50| 100mm| sharp focus| smooth| hyperrealism| highly detailed| intricate details| carved by michelangelo
+
+full body portrait of Dilraba, slight smile, diffuse natural sun lights, autumn lights, highly detailed, digital painting, artstation, concept art, sharp focus, illustration
+
