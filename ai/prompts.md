@@ -243,3 +243,5 @@ cyborg woman| with a visible detailed brain| muscles cable wires| biopunk| cyber
 
 full body portrait of Dilraba, slight smile, diffuse natural sun lights, autumn lights, highly detailed, digital painting, artstation, concept art, sharp focus, illustration
 
+detailed portrait of Punk girl, standing hair line Sheen Holographic Futuristic sci-fi fashion cyberpunk, (neotokyo), synthwave, (aesthetics), futuristic, bladerunner movie scene by ismail inceoglu dragan bibin hans thoma greg rutkowski Alexandros Pyromallis Nekro Rene Margitte illustrated Perfect face, fine details, realistic shaded, fine-face, pretty face sharp chine
+
