@@ -245,3 +245,5 @@ full body portrait of Dilraba, slight smile, diffuse natural sun lights, autumn 
 
 detailed portrait of Punk girl, standing hair line Sheen Holographic Futuristic sci-fi fashion cyberpunk, (neotokyo), synthwave, (aesthetics), futuristic, bladerunner movie scene by ismail inceoglu dragan bibin hans thoma greg rutkowski Alexandros Pyromallis Nekro Rene Margitte illustrated Perfect face, fine details, realistic shaded, fine-face, pretty face sharp chine
 
+beautiful,  young woman, cybernetic, cyberpunk, detailed gorgeous face, flowing hair, vaporwave aesthetic, synthwave , digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha
+
