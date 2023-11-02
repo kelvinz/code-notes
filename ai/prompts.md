@@ -249,3 +249,5 @@ beautiful,  young woman, cybernetic, cyberpunk, detailed gorgeous face, flowing 
 
 painted portrait of rugged zeus, god of thunder, greek god, white hair, masculine, mature, handsome, upper body, muscular, hairy torso, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by gaston bussiere and alphonse mucha
 
+winds of winter, au naturel, grey eyes, hyper detailed, digital art, trending in artstation, cinematic lighting, studio quality, smooth render, unreal engine 5 rendered, octane rendered, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart
+
