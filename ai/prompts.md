@@ -252,3 +252,5 @@ painted portrait of rugged zeus, god of thunder, greek god, white hair, masculin
 winds of winter, au naturel, grey eyes, hyper detailed, digital art, trending in artstation, cinematic lighting, studio quality, smooth render, unreal engine 5 rendered, octane rendered, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart
 
 detailed portrait of European Pretty Young Girl Storm Rain movie Jacket coat, Futuristic sci-fi fashion, royal attire by ismail inceoglu dragan bibin hans thoma greg rutkowski Alexandros Pyromallis Nekro Rene Margitte illustrated Perfect face, sharp chine, fine details, realistic shaded, fine-face, pretty face cyberpunk, neotokyo, synthwave, aesthetics, futuristic, low-emission-neon, bladerunner movie scene
+
+light azure armor!!! long wild white hair!! covered chest!!! fantasy, d & d, intricate ornate details, digital painting, pretty face!!, symmetry, concept art, sharp focus, illustration, art by artgerm! greg rutkowski magali villeneuve wlop! ilya kuvshinov!!, octane render
