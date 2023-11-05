@@ -254,3 +254,7 @@ winds of winter, au naturel, grey eyes, hyper detailed, digital art, trending in
 detailed portrait of European Pretty Young Girl Storm Rain movie Jacket coat, Futuristic sci-fi fashion, royal attire by ismail inceoglu dragan bibin hans thoma greg rutkowski Alexandros Pyromallis Nekro Rene Margitte illustrated Perfect face, sharp chine, fine details, realistic shaded, fine-face, pretty face cyberpunk, neotokyo, synthwave, aesthetics, futuristic, low-emission-neon, bladerunner movie scene
 
 light azure armor!!! long wild white hair!! covered chest!!! fantasy, d & d, intricate ornate details, digital painting, pretty face!!, symmetry, concept art, sharp focus, illustration, art by artgerm! greg rutkowski magali villeneuve wlop! ilya kuvshinov!!, octane render
+
+Prompt: tattooed cyberpunk yakuza, art by ruan jia, highly detailed
+Negative prompt: (ugly, cartoon, bad anatomy, bad art, frame, deformed, disfigured, extra limbs, text, meme, low quality, mutated, ordinary, overexposed, pixelated, poorly drawn, signature, thumbnail, too dark, too light, unattractive, useless, watermark, writing, cropped:1.1)
+Steps: 50, Sampler: Euler a, CFG scale: 7
