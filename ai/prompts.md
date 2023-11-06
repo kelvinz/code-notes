@@ -258,3 +258,9 @@ light azure armor!!! long wild white hair!! covered chest!!! fantasy, d & d, int
 Prompt: tattooed cyberpunk yakuza, art by ruan jia, highly detailed
 Negative prompt: (ugly, cartoon, bad anatomy, bad art, frame, deformed, disfigured, extra limbs, text, meme, low quality, mutated, ordinary, overexposed, pixelated, poorly drawn, signature, thumbnail, too dark, too light, unattractive, useless, watermark, writing, cropped:1.1)
 Steps: 50, Sampler: Euler a, CFG scale: 7
+
+symmetry, crystalized Emissive Ragdoll cat with jeweled mask, retro futuristic poster scifi, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, dreamlike, art by artgerm
+Negative prompt:
+Disfigured, bad art, amateur, poorly drawn, ugly, flat, deformed, poorly drawn, extra limbs, close up, b&w, weird colors, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
+Steps: 50, Sampler: DDIM, CFG scale: 14, Seed: 553970275 + some inpainting
+
