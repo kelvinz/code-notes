@@ -264,3 +264,9 @@ Negative prompt:
 Disfigured, bad art, amateur, poorly drawn, ugly, flat, deformed, poorly drawn, extra limbs, close up, b&w, weird colors, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
 Steps: 50, Sampler: DDIM, CFG scale: 14, Seed: 553970275 + some inpainting
 
+((Knee Level Shot)) professional photo of a futuristic Venice, (((cyberpunk scifi scene))), ((ultra realistic wide canals)) with (((many people on big sidewalks))), ((ultra detailed realistic building facades)), bright and flashy skyscrapers at the background, street food stalls, ((spectacular moon)), futuristic sport boats designed by porsche, (((dark night and mysterious atmosphere))), cinematic lighting, 8K Ultra HD, (sharp focus), sigma art 85mm, (polarizing filter), inspired by Gattaca movie, by artist Alexander Jansson, by artist darek zabrocki, by artist Hassan Ragab, by artist Rashed AlAkroka, Hasselblad Award Winner, Award winning photograph, Masterpiece
+Negative prompt: illustration, low quality, deformed people
+Steps: 100
+Sampler: Euler a
+CFG scale: 7
+
