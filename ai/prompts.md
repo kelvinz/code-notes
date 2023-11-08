@@ -274,3 +274,8 @@ a detailed full body portrait of a Ragdoll cat queen, by dorian cleavenger, greg
 Negative prompt:
 Disfigured, bad art, amateur, poorly drawn, ugly, flat, deformed, poorly drawn, extra limbs, close up, b&w, weird colors, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry
 Steps: 50, Sampler: PLMS, CFG scale: 5.5, Seed: 824789654 + img2img and some inpainting
+
+Prompt: goat cyberpunk syle, character portrait, portrait, close up, concept art, intricate details, highly detailed by jean giraud, 4k, 8k, very defined details, very beautiful, vaporwave
+
+d.va from overwatch, character portrait, portrait, close up, concept art, intricate details, highly detailed by jean giraud
+
