@@ -279,3 +279,5 @@ Prompt: goat cyberpunk syle, character portrait, portrait, close up, concept art
 
 d.va from overwatch, character portrait, portrait, close up, concept art, intricate details, highly detailed by jean giraud
 
+historical photograph of a ((pug)) wearing sunglasses and an old school baseball hat, highly detailed
+
