@@ -281,3 +281,5 @@ d.va from overwatch, character portrait, portrait, close up, concept art, intric
 
 historical photograph of a ((pug)) wearing sunglasses and an old school baseball hat, highly detailed
 
+close up of sks yourname as undead zombie, close up, gore and horror look, hellfire, fire particles, dust and debris flying, action pose, cinematic scene, trending on artstation, highly realistic, 8k, cinematic lighting, ultra sharp, Artwork by Truls Espedal.
+
