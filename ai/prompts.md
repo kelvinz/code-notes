@@ -283,3 +283,5 @@ historical photograph of a ((pug)) wearing sunglasses and an old school baseball
 
 close up of sks yourname as undead zombie, close up, gore and horror look, hellfire, fire particles, dust and debris flying, action pose, cinematic scene, trending on artstation, highly realistic, 8k, cinematic lighting, ultra sharp, Artwork by Truls Espedal.
 
+cat cyberpunk syle, character portrait, portrait, close up, concept art, intricate details, highly detailed by jean giraud, 4k, 8k, very defined details, very beautiful, vaporwave
+
