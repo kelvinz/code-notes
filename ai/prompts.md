@@ -285,3 +285,5 @@ close up of sks yourname as undead zombie, close up, gore and horror look, hellf
 
 cat cyberpunk syle, character portrait, portrait, close up, concept art, intricate details, highly detailed by jean giraud, 4k, 8k, very defined details, very beautiful, vaporwave
 
+Tiny cute 3D felt fiber toy frog, made from Felt fibers, a 3D render, trending on cgsociety, rendered in maya, rendered in cinema4d, made of yarn, square image
+
