@@ -290,3 +290,7 @@ Tiny cute 3D felt fiber toy frog, made from Felt fibers, a 3D render, trending o
 a beautiful portrait of a cute cat with blue tinted starfield in the background by greg rutkowski and wlop, digital art, highly detailed, fine detail, intricate, ornate, complex
 Seed : 45745 | Scale : 7.5 | Steps : 50 | Img Width : 512 | Img Height : 512 | model_version : 1.5fp16
 
+pixel perfect portrait fashion photography of <dreambooth-token> wearing expensive clothing, (a swirling thick glowing crashing wave of grainy shining light), (grainy brilliant VFX particles), fiery smoke, (backlight), f/2.8, detailed background, trending on artstation, 4k resolution, high level of detail, masterpiece, dramatic lighting, sharp focus, intricate
+Negative prompt: rainbow, (((duplicate))), ((morbid)), (mutilated), [out of frame], extra fingers, mutated hands, ((poorly drawn hands)), ((poorly drawn face)), (((mutation), ((deformed)), (blurry, (bad anatomy)), ((bad proportions), (extra limbs), cloned face, (disfigured)), out of frame, extra limbs, (bad anatomy), gross proportions, ((malformed limbs), (missing arms)), (missing legs)), ((extra arms)), (extra legs)), mutated hands, (fused fingers), (too many fingers), (((long neck)))
+Steps: 20, Sampler: Euler a, CFG scale: 7
+
