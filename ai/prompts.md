@@ -294,3 +294,5 @@ pixel perfect portrait fashion photography of <dreambooth-token> wearing expensi
 Negative prompt: rainbow, (((duplicate))), ((morbid)), (mutilated), [out of frame], extra fingers, mutated hands, ((poorly drawn hands)), ((poorly drawn face)), (((mutation), ((deformed)), (blurry, (bad anatomy)), ((bad proportions), (extra limbs), cloned face, (disfigured)), out of frame, extra limbs, (bad anatomy), gross proportions, ((malformed limbs), (missing arms)), (missing legs)), ((extra arms)), (extra legs)), mutated hands, (fused fingers), (too many fingers), (((long neck)))
 Steps: 20, Sampler: Euler a, CFG scale: 7
 
+Masterpiece, ultra detailed, camp, realism, super eerie, farm, heavy rain, beautiful landscape, huts with light on, romantic , beautiful sky, ultra textures, nature, plants, beautiful
+
