@@ -296,3 +296,5 @@ Steps: 20, Sampler: Euler a, CFG scale: 7
 
 Masterpiece, ultra detailed, camp, realism, super eerie, farm, heavy rain, beautiful landscape, huts with light on, romantic , beautiful sky, ultra textures, nature, plants, beautiful
 
+cyberpunk syle, character portrait, portrait, close up, concept art, intricate details, highly detailed by jean giraud, 4k, 8k, very defined details, very beautiful, vaporwave
+
