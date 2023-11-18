@@ -298,3 +298,7 @@ Masterpiece, ultra detailed, camp, realism, super eerie, farm, heavy rain, beaut
 
 cyberpunk syle, character portrait, portrait, close up, concept art, intricate details, highly detailed by jean giraud, 4k, 8k, very defined details, very beautiful, vaporwave
 
+<subject, "Gal Gadot as Wonder Woman">, (humorous illustration, hyperrealistic, big depth of field, colors, whimsical cosmic night scenery, 3d octane render, 4k, concept art, hyperdetailed, hyperrealistic, trending on artstation:1.1)
+Negative prompt: text, b&w, (cartoon, 3d, bad art, poorly drawn, close up, blurry, disfigured, deformed, extra limbs:1.5)
+Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 5, Size: 512x704
+
