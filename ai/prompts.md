@@ -304,3 +304,7 @@ Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 5, Size: 512x704
 
 Ultra realistic illustration of [token] as lilith in a white dress, stunningly beautiful, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, with horns, red flowers in the background
 
+<portrait of subject>, (photo, hyperrealistic, big depth of field, natural lighting, soft light, 3d octane render, 4k, concept art, hyperdetailed, hyperrealistic, trending on artstation:1.1)
+Negative prompt: text, illustration, cartoon, 3d, bad art, poorly drawn, close up, blurry, disfigured, deformed
+Steps: 100, Sampler: DPM2 a Karras, CFG scale: 7, Size: 512x768, no face restoration
+
