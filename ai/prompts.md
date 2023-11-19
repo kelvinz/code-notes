@@ -302,3 +302,5 @@ cyberpunk syle, character portrait, portrait, close up, concept art, intricate d
 Negative prompt: text, b&w, (cartoon, 3d, bad art, poorly drawn, close up, blurry, disfigured, deformed, extra limbs:1.5)
 Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 5, Size: 512x704
 
+Ultra realistic illustration of [token] as lilith in a white dress, stunningly beautiful, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha, with horns, red flowers in the background
+
