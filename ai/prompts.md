@@ -308,3 +308,7 @@ Ultra realistic illustration of [token] as lilith in a white dress, stunningly b
 Negative prompt: text, illustration, cartoon, 3d, bad art, poorly drawn, close up, blurry, disfigured, deformed
 Steps: 100, Sampler: DPM2 a Karras, CFG scale: 7, Size: 512x768, no face restoration
 
+<portrait of **subject** with long hair and full beard> (photo, studio lighting, hard light, sony a7, 50 mm, hyperrealistic, big depth of field, mate skin, pores, wrinkles, 3d octane render, 4k, unreal engine, concept art, colors, hyperdetailed, hyperrealistic, trending on artstation)`
+Negative prompt: hands, glasses, shades, eyeglasseses, eye wear, face paint, make up, hood, hoodie, text, b&w, illustration, painting, cartoon, 3d, bad art, poorly drawn, close up, blurry, disfigured, deformed, extra limbs
+Steps: 65, Sampler: DPM2 a Karras, CFG scale: 7, Size: 512x768
+
