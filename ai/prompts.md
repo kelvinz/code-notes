@@ -312,3 +312,7 @@ Steps: 100, Sampler: DPM2 a Karras, CFG scale: 7, Size: 512x768, no face restora
 Negative prompt: hands, glasses, shades, eyeglasseses, eye wear, face paint, make up, hood, hoodie, text, b&w, illustration, painting, cartoon, 3d, bad art, poorly drawn, close up, blurry, disfigured, deformed, extra limbs
 Steps: 65, Sampler: DPM2 a Karras, CFG scale: 7, Size: 512x768
 
+rectangular, centered, portrait of [(Deborah Ann Woll:1.0):1], (elegant suit:1.0), detailed, intricate, (Painting knife) impasto Fauvism, by artist Greg Rutkowski and Rembrandt and Titian and Willem de Kooning and Loish and Bastien Lecouffe Deharme and Marc Simonetti
+Negative prompt: collage, white bars, animal, (deformed arms), (duplicate arms), picture_frame, out of frame, bad_anatomy, two_heads, brush strokes, cropped, worst_quality, low_quality, normal_quality, jpeg_artifacts, signature, watermark, username, blurry, ugly
+Steps: 36, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 1374657891, Size: 576x768, Model hash: 81761151, Denoising strength: 0.7, First pass size: 0x0
+
