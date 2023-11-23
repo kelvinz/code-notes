@@ -316,3 +316,6 @@ rectangular, centered, portrait of [(Deborah Ann Woll:1.0):1], (elegant suit:1.0
 Negative prompt: collage, white bars, animal, (deformed arms), (duplicate arms), picture_frame, out of frame, bad_anatomy, two_heads, brush strokes, cropped, worst_quality, low_quality, normal_quality, jpeg_artifacts, signature, watermark, username, blurry, ugly
 Steps: 36, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 1374657891, Size: 576x768, Model hash: 81761151, Denoising strength: 0.7, First pass size: 0x0
 
+(full body movie still of 3 females:1.5), (emma watson:amber heard:0.5),intricate greek goddess dress,silk robes ,baroque room, (candles:0.5) ,crowd ,cinematic lighting, 4k , tattoo, bokeh, photo is in focus with detailed atmospheric lighting, in a medieval renaissance palace, warm lighting, from movie caligula,game of thrones, award-winning photojournalism, photo, photorealistic, ultra realistic,, beautiful female, (stunningly attractive:1.25),(sexy eyes:1.15),(perfect face:1.5),centered
+Negative prompt: b&w, monochrome, photoshop, render, video game, 3d, painting, art, drawing, digital art, cartoon, doll, conjoined twins, multiple heads, extra legs, extra arms, fashion photos,, (collage:1.25),meme,deformed,elongated,twisted,fingers,strabismus,heterochromia,closed eyes,blurred,doll,cartoon,watermark,wedding,group
+
