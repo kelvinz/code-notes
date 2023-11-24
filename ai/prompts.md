@@ -319,3 +319,5 @@ Steps: 36, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 1374657891, Size: 576x7
 (full body movie still of 3 females:1.5), (emma watson:amber heard:0.5),intricate greek goddess dress,silk robes ,baroque room, (candles:0.5) ,crowd ,cinematic lighting, 4k , tattoo, bokeh, photo is in focus with detailed atmospheric lighting, in a medieval renaissance palace, warm lighting, from movie caligula,game of thrones, award-winning photojournalism, photo, photorealistic, ultra realistic,, beautiful female, (stunningly attractive:1.25),(sexy eyes:1.15),(perfect face:1.5),centered
 Negative prompt: b&w, monochrome, photoshop, render, video game, 3d, painting, art, drawing, digital art, cartoon, doll, conjoined twins, multiple heads, extra legs, extra arms, fashion photos,, (collage:1.25),meme,deformed,elongated,twisted,fingers,strabismus,heterochromia,closed eyes,blurred,doll,cartoon,watermark,wedding,group
 
+Prompt: A mass of ((fluffy)) tentacles, by Pixar concept artists, (((fur))), award winning, highly detailed, sharp focus, ((colorful)), vibrant colors Negative prompt: Face, eye, eyes
+
