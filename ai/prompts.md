@@ -321,3 +321,7 @@ Negative prompt: b&w, monochrome, photoshop, render, video game, 3d, painting, a
 
 Prompt: A mass of ((fluffy)) tentacles, by Pixar concept artists, (((fur))), award winning, highly detailed, sharp focus, ((colorful)), vibrant colors Negative prompt: Face, eye, eyes
 
+Prompt: portrait of (sksduo1:1), warhammer 40000, cyberpunk leds, in front of intricate whirlwind, elegant, highly detailed, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha and [Gustav Klimt::.1], ultrarealistic, leica 30mm
+Negative prompt: hat,(man:.5)
+Steps: 49, Sampler: DDIM, CFG scale: 6, Seed: 2388976720, Size: 512x512, Model hash: 118bd020, Batch size: 8, Batch pos: 4, Variation seed: 753461880, Variation seed strength: 0.18
+
