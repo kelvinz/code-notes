@@ -325,3 +325,7 @@ Prompt: portrait of (sksduo1:1), warhammer 40000, cyberpunk leds, in front of in
 Negative prompt: hat,(man:.5)
 Steps: 49, Sampler: DDIM, CFG scale: 6, Seed: 2388976720, Size: 512x512, Model hash: 118bd020, Batch size: 8, Batch pos: 4, Variation seed: 753461880, Variation seed strength: 0.18
 
+Prompt: photo of (sksduo1:.7) as cyberpunk warrior, intricate jacket, electronic (warrior intricate theme helmet), brown eyes, city, ultrarealistic, leica 30mm
+Negative prompt: [[asian]]
+Steps: 41, Sampler: DDIM, CFG scale: 6, Seed: 969001341, Size: 512x512, Model hash: 118bd020, Batch size: 6, Batch pos: 4
+
