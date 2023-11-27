@@ -333,3 +333,7 @@ Prompt: photo of (sksduo1:.7) as cyberpunk warrior, intricate jacket, electronic
 Negative prompt: [[asian]]
 Steps: 65, Sampler: DDIM, CFG scale: 6, Seed: 969001341, Size: 512x512, Model hash: 118bd020, Batch size: 8, Batch pos: 1, Variation seed: 3679040617, Variation seed strength: 0.14
 
+Prompt: cinematic still of (sksduo1:0.95) as rugged warrior,,short hair,cyberpunk armor, spaceship,ultrarealistic, leica 30mm
+Negative prompt: fat,man
+Steps: 37, Sampler: DDIM, CFG scale: 5, Seed: 238572871, Size: 512x512, Model hash: 118bd020, Batch size: 8, Batch pos: 5
+
