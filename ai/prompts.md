@@ -329,3 +329,7 @@ Prompt: photo of (sksduo1:.7) as cyberpunk warrior, intricate jacket, electronic
 Negative prompt: [[asian]]
 Steps: 41, Sampler: DDIM, CFG scale: 6, Seed: 969001341, Size: 512x512, Model hash: 118bd020, Batch size: 6, Batch pos: 4
 
+Prompt: photo of (sksduo1:.7) as cyberpunk warrior, intricate jacket, electronic (warrior intricate theme helmet), intricate large bracelet on arm, short hair, brown eyes, city, ultrarealistic, leica 30mm
+Negative prompt: [[asian]]
+Steps: 65, Sampler: DDIM, CFG scale: 6, Seed: 969001341, Size: 512x512, Model hash: 118bd020, Batch size: 8, Batch pos: 1, Variation seed: 3679040617, Variation seed strength: 0.14
+
