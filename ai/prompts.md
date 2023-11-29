@@ -341,3 +341,7 @@ Prompt: cinematic still of (sksduo1:0.95) as rugged warrior,,short hair,cyberpun
 Negative prompt: fat,man
 Steps: 37, Sampler: DDIM, CFG scale: 5, Seed: 993718768, Size: 512x512, Model hash: 118bd020, Batch size: 8, Batch pos: 5, Variation seed: 4149262296, Variation seed strength: 0.11
 
+Prompt: impressionist painting of 30 years (sksduo1:.9), long face by Daniel F Gerhartz, painted in an impressionist style, dark city
+Negative prompt: round face
+Steps: 22, Sampler: DDIM, CFG scale: 6, Seed: 3493264829, Size: 512x512, Model hash: 118bd020, Batch size: 4, Batch pos: 3
+
