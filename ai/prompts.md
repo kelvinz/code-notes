@@ -337,3 +337,7 @@ Prompt: cinematic still of (sksduo1:0.95) as rugged warrior,,short hair,cyberpun
 Negative prompt: fat,man
 Steps: 37, Sampler: DDIM, CFG scale: 5, Seed: 238572871, Size: 512x512, Model hash: 118bd020, Batch size: 8, Batch pos: 5
 
+Prompt: cinematic still of (sksduo1:0.95) as rugged warrior,,short hair,cyberpunk armor, alien movie (1986),ultrarealistic, leica 30mm
+Negative prompt: fat,man
+Steps: 37, Sampler: DDIM, CFG scale: 5, Seed: 993718768, Size: 512x512, Model hash: 118bd020, Batch size: 8, Batch pos: 5, Variation seed: 4149262296, Variation seed strength: 0.11
+
