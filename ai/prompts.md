@@ -348,3 +348,7 @@ Steps: 22, Sampler: DDIM, CFG scale: 6, Seed: 3493264829, Size: 512x512, Model h
 Prompt: photo of (sksduo1:0.85) as targryen warrior, intricate red jacket, long_hair (((white hair))), ((with)) targaryen princess with long hair, ultrarealistic, leica 30mm
 Steps: 34, Sampler: Euler a, CFG scale: 8.5, Seed: 607280256, Size: 704x512, Model hash: 118bd020, Batch size: 3, Batch pos: 1
 
+Prompt: photo of 15 years (sksduo1:1) as spiderman, ultrarealistic, hyperrealistic, leica 30mm
+Negative prompt: man
+Steps: 53, Sampler: DDIM, CFG scale: 8.5, Seed: 969001341, Size: 512x512, Model hash: 118bd020, Batch size: 8, Batch pos: 6, Variation seed: 3329533762, Variation seed strength: 0.11
+
