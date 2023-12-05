@@ -359,3 +359,5 @@ us astronaut conducting a spacewalk, hasselblad 500c, Zeiss Planar f-2.8/80mm le
 Negative prompt: (((deformed))), [blurry], bad anatomy, disfigured, poorly drawn face, mutation, mutated, (extra_limb), (ugly), (poorly drawn hands),messy drawing, malformed hands, malformed face, out of frame, out_of_frame, crop, preview, thumbnail, sample, mutation, mutated, closeup, (extra_limb), (ugly), text, ((((bad anatomy)))), ((((deformed)))), ((poorly drawn face)), ((poorly drawn hands)), ((ugly)), (((deformed))), [blurry], bad anatomy, disfigured, poorly drawn face, mutation, (((poorly drawn face))), ((poorly drawn hands)), (disfigured)), long neck, ((two heads)), two faces, malformed hands, malformed face, (((mutation))), (((mutated))), [blurry], bad anatomy, (extra limb), (messy drawing), ((ugly)), (((deformed))), [blurry], bad anatomy, disfigured,poorly drawn face, mutation, mutated, chubby, 3d render
 Steps: 100, Sampler: DDIM, CFG scale: 7, Size: 512x512, Model hash: a2a802b2
 
+(((@me))) digital painting by josan gonzales and greg rutkowski, male, highly detailed, comic art
+
