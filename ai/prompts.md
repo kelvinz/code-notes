@@ -361,3 +361,5 @@ Steps: 100, Sampler: DDIM, CFG scale: 7, Size: 512x512, Model hash: a2a802b2
 
 (((@me))) digital painting by josan gonzales and greg rutkowski, male, highly detailed, comic art
 
+Portrait of ((@me)) in style of cyberpunk neon - bordered male cyborg, 7 0 mm focal length, by ilya kuvshinov, krenz cushart, Greg Rutkowski, trending on artstation sharp focus illustration, aesthetic, very inspirational, arthouse
+
