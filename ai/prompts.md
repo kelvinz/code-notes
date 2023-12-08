@@ -365,3 +365,5 @@ Portrait of ((@me)) in style of cyberpunk neon - bordered male cyborg, 7 0 mm fo
 
 ((@me)), retro comic style artwork, highly detailed, comic book cover, symmetrical, vibrant
 
+colored pencil illustration of @me in a fancy jacket, victorian, beatrix potter, arthur rackham, cute, pastel, twee, british, children's book
+
