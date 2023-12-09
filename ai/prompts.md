@@ -367,3 +367,5 @@ Portrait of ((@me)) in style of cyberpunk neon - bordered male cyborg, 7 0 mm fo
 
 colored pencil illustration of @me in a fancy jacket, victorian, beatrix potter, arthur rackham, cute, pastel, twee, british, children's book
 
+((@me)) gta 5 cover art, handsome man, long curly hair, cirlycloseup, borderlands style, (celshading), symmetric highly detailed eyes, trending on artstation, by rhads, andreas rocha, rossdraws, makoto shinkai, laurie greasley, lois van baarle, ilya kuvshinov and greg rutkowski
+
