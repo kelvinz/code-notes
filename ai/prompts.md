@@ -369,3 +369,5 @@ colored pencil illustration of @me in a fancy jacket, victorian, beatrix potter,
 
 ((@me)) gta 5 cover art, handsome man, long curly hair, cirlycloseup, borderlands style, (celshading), symmetric highly detailed eyes, trending on artstation, by rhads, andreas rocha, rossdraws, makoto shinkai, laurie greasley, lois van baarle, ilya kuvshinov and greg rutkowski
 
+portrait of ((@me)) as a WW2 marine with helmet and uniform, dramatic historical colorized photograph, incredible lighting, bokeh, depth of field, D-Day, photorealistic, photograph, colorized
+
