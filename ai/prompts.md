@@ -373,3 +373,5 @@ portrait of ((@me)) as a WW2 marine with helmet and uniform, dramatic historical
 
 ((@me)), male portrait in the style of new yorker magazine cartoon, contemporary illustration, newspaper cartoon, corporate art, clip art, line drawing, cartoony, simplified shapes, geometric lines, black and white
 
+((@me)), highly detailed handsome portrait of @me as a male egyptian god with facial expression : happy in the style of artgerm
+
