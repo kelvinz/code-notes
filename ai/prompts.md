@@ -371,3 +371,5 @@ colored pencil illustration of @me in a fancy jacket, victorian, beatrix potter,
 
 portrait of ((@me)) as a WW2 marine with helmet and uniform, dramatic historical colorized photograph, incredible lighting, bokeh, depth of field, D-Day, photorealistic, photograph, colorized
 
+((@me)), male portrait in the style of new yorker magazine cartoon, contemporary illustration, newspaper cartoon, corporate art, clip art, line drawing, cartoony, simplified shapes, geometric lines, black and white
+
