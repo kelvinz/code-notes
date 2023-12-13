@@ -375,3 +375,5 @@ portrait of ((@me)) as a WW2 marine with helmet and uniform, dramatic historical
 
 ((@me)), highly detailed handsome portrait of @me as a male egyptian god with facial expression : happy in the style of artgerm
 
+Leonardo da vinci's lost sketch of ((@me)) as cybernetic human design
+
