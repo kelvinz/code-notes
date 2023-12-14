@@ -377,3 +377,5 @@ portrait of ((@me)) as a WW2 marine with helmet and uniform, dramatic historical
 
 Leonardo da vinci's lost sketch of ((@me)) as cybernetic human design
 
+@me vs @me
+
