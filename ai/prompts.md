@@ -379,3 +379,7 @@ Leonardo da vinci's lost sketch of ((@me)) as cybernetic human design
 
 @me vs @me
 
+samdoesarts style drunken beautiful woman as delirium from sandman, (hallucinating colorful soap bubbles), by jeremy mann, by sandra chevrier, by dave mckean and richard avedon and maciej kuciara, punk rock, tank girl, high detailed, 8k
+Negative prompt: cartoon, ((disfigured)), ((bad art)), ((deformed)), ((poorly drawn)), ((extra limbs)), ((close up)), ((b&w)), weird colors, blurry
+Size: 512x704, Seed: 2187392518, Steps: 30, Sampler: Euler a, CFG scale: 7, Batch pos: 2, Batch size: 4, Model hash: 8687d7a5
+
