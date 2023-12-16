@@ -383,3 +383,7 @@ samdoesarts style drunken beautiful woman as delirium from sandman, (hallucinati
 Negative prompt: cartoon, ((disfigured)), ((bad art)), ((deformed)), ((poorly drawn)), ((extra limbs)), ((close up)), ((b&w)), weird colors, blurry
 Size: 512x704, Seed: 2187392518, Steps: 30, Sampler: Euler a, CFG scale: 7, Batch pos: 2, Batch size: 4, Model hash: 8687d7a5
 
+samdoesarts style photorealistic painting ((full body)) portrait of ((stunningly attractive)) woman at a music festival, ((perfect feminine face)), (+long colorful wavy hair), (+glitter freckles), glitter, wearing a dress, intricate, 8k, highly detailed, volumetric lighting, digital painting, intense, sharp focus, art by artgerm and rutkowski and alphonse mucha, cgsociety
+Negative prompt: cartoon, ((disfigured)), ((bad art)), ((deformed)), ((poorly drawn)), ((extra limbs)), ((close up)), ((b&w)), weird colors, blurry
+Size: 512x704, Seed: 3232118422, Steps: 30, Sampler: Euler a, CFG scale: 7, Batch pos: 1, Batch size: 4, Model hash: 8687d7a5
+
