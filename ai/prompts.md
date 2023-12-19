@@ -394,3 +394,5 @@ Pixar style Mark Zuckerberg, 4k, 8k, unreal engine, octane render photorealistic
 Use Face Correction:10, Use Upscaling: RealESRGAN_x4plus
 | Seed : 3018 | Scale : 7 | Steps : 50 | Img Width : 640 | Img Height : 640 | model_version : 1.5fp16 |
 
+view of a monastery on a forested mountain, in the style of studio ghibli, distant, detailed, artstation, award winning illustration
+
