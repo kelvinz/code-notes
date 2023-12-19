@@ -396,3 +396,5 @@ Use Face Correction:10, Use Upscaling: RealESRGAN_x4plus
 
 view of a monastery on a forested mountain, in the style of studio ghibli, distant, detailed, artstation, award winning illustration
 
+love is patient love is kind, photorealistic oil painting by charlie bowater and mark blooms, wlop, trending on artstation
+
