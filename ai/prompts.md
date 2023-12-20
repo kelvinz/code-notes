@@ -398,3 +398,8 @@ view of a monastery on a forested mountain, in the style of studio ghibli, dista
 
 love is patient love is kind, photorealistic oil painting by charlie bowater and mark blooms, wlop, trending on artstation
 
+this is called a “prompt for stable diffusion" of a portrait of Christina Hendricks with cosmic energy in the background in the art style of artists called "artgerm", "greg rutkowski" and "alphonse mucha":
+"Ultra realistic photo portrait of Christina Hendricks cosmic energy, colorful, painting burst, beautiful face, symmetrical face, tone mapped, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, beautiful face, intricate, highly detailed, smooth, sharp focus, art by artgerm and greg rutkowski and alphonse mucha"
+The most important keywords are at the beginning and then every additional keywords are separated by a comma. If you add an art style by an artist or multiple artists, this information should always be at the end.
+By using a similar syntax, please write me a new "prompt for stable diffusion" of a “portrait of a cute Hogwarts student studying” in the art style of "van gogh" and "da vinci" but add more details
+
