@@ -403,3 +403,6 @@ this is called a “prompt for stable diffusion" of a portrait of Christina Hend
 The most important keywords are at the beginning and then every additional keywords are separated by a comma. If you add an art style by an artist or multiple artists, this information should always be at the end.
 By using a similar syntax, please write me a new "prompt for stable diffusion" of a “portrait of a cute Hogwarts student studying” in the art style of "van gogh" and "da vinci" but add more details
 
+gorgeous cinematography by midjourney, 1800s Beijing, close shot, Chinese people, post-production, depth of field, movie, cinema, professional color grading, 35mm lens, very detailed, film grain
+Negative prompt: deformities, ugly hands, stretched necks, extra heads, extra limbs, watermark, text, overlay, collage , modern cars, modern technology
+
