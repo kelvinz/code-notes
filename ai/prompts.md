@@ -411,3 +411,7 @@ Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, e
 
 full body photo portrait of goddess (Quan Yin)0.5 (Kali)0.5 cyborg nebulous destroyer shrouded in diaphonous gelatin dancing robes in dystopian ruins with pools of colorful liquid+ encrusted gemlike waterfalls and atm machine LED soul wisps, cutting edge old god beauty, (Voluminous VFX smoke)+, photo via 500px, tetrachromatic, cute, dreamlike, holographic, colorful, octane, UHDR [b&w, incoherent, deformed, extra limbs, extra fingers, extra digits, mutated hands, bad anatomy, bad proportions, poorly drawn hands] -s 32 -S 1926274499 -W 768 -H 1024 -C 8.5 --hires_fix -A k_euler
 
+Prompt: "Professional photograph of Game of Thrones as a Japanese NHK dorama, ultrarealistic uhd faces, unsplash, kodak ultra max 800, 85 mm, intricate, casual pose, centered symmetrical composition, stunning photos, masterpiece, grainy, centered composition, 4k, 8k"
+Negative Prompt: "oversaturated, ugly, 3d, render, cartoon, grain, low-res, kitsch, blender, cropped, lowres, poorly drawn face, out of frame, poorly drawn hands, blurry, bad art, blurred, text, watermark, disfigured, deformed, mangled, closed eyes"
+SD 2.1-base (512), DPM++ 30 steps, 4x upscale.
+
