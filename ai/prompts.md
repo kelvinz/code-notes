@@ -431,3 +431,10 @@ emma watson angry, epic volumetric lighting, (plugsuit:1.4), souryuu asuka langl
 Negative prompt: illustration by bad-artist, 3d, render, doll, plastic, blur, haze, monochrome, b&w, text, (ugly:1.2), unclear eyes, no arms, bad anatomy, cropped, censoring, asymmetric eyes, bad anatomy, bad proportions, cropped, cross-eyed, deformed, extra arms, extra fingers, extra limbs, fused fingers, jpeg artifacts, malformed, mangled hands, misshapen body, missing arms, missing fingers, missing hands, missing legs, poorly drawn, tentacle finger, too many arms, too many fingers, watermark, logo, text, letters, signature, username, words, blurry, cropped, jpeg artifacts, low quality, lowres
 Steps: 20, Sampler: DPM++ 2S a, CFG scale: 7, Seed: 1833838353, Size: 512x768, Model hash: 53d4559a, Model: elldrethSLucidMix_v10, ENSD: 31337
 
+Portrait photo of a fisherman, serious eyes, 50mm portrait photography
+Close up portrait of cute cat, 35mm portrait photography
+Photo of a husky dog in the snow, 50mm portrait photography
+Landscape photo of a modern house in German suburbs
+Portrait of modern living room, minimalist furniture, architecture digest portrait
+Landscape photo of Mount Fuji
+
