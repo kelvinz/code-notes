@@ -438,3 +438,11 @@ Landscape photo of a modern house in German suburbs
 Portrait of modern living room, minimalist furniture, architecture digest portrait
 Landscape photo of Mount Fuji
 
+Prompt: analog style young man at dusk at farmers market, soft smile, soft lighting, natural skin texture, woodsy colors, LUT, gigapixel portraits, frequency separation, RAW, prophoto rgb, 16bit, 35mm
+Negative prompt: ((overexposed))
+Other: Steps: 55, Sampler: Euler a, CFG scale: 16, Seed: 127134498, Size: 768x1056, Model hash: 9ca13f02, Model: analog-diffusion-1.0, Denoising strength: 0.4, First pass size: 328x528
+
+Prompt: analog style young woman at dusk on lavender farm, soft smile, soft lighting, natural skin texture, woodsy colors, home and gardens, gigapixel portraits, frequency separation, RAW, prophoto rgb, 16bit, 35mm
+Negative Prompt: ((overexposed))
+Other: Steps: 73, Sampler: Euler a, CFG scale: 16, Seed: 1099100366, Size: 768x1056, Model hash: 9ca13f02, Model: analog-diffusion-1.0, Denoising strength: 0.4, First pass size: 328x528
+
