@@ -453,3 +453,14 @@ Prompt: (insanely detailed, bloom:1.5), ((solo)), (highest quality, Alessandro C
 Negative Prompt: (bad art, low detail, pencil drawing, old, mature:1.6), (plain background, grainy, low quality, mutated hands and fingers:1.5), (watermark, thin lines:1.3), (deformed, signature:1.2), (big nipples, blurry, ugly, bad anatomy, extra limbs, undersaturated, low resolution), disfigured, deformations, out of frame, amputee, bad proportions, extra limb, missing limbs, distortion, floating limbs, out of frame, poorly drawn face, poorly drawn hands, text, malformed, error, missing fingers, cropped, jpeg artifacts, teeth, unsharp
 Settings: Steps: 30, Sampler: Euler a, CFG scale: 7, Size: 512x710
 
+text2img
+half body portrait of gorgeous young woman wearing a gold sexy dress, toasting with champagne, at a New Year's Eve party, beautiful face, (breasts exposed, open shirt), highly detailed face, elegant, smooth, sharp focus
+Negative prompt: bad fingers, muted hands, six fingers, huge breasts, outdoor, snow, forest, cross eyes, deformed hands, bad anatomy, closed eyes, poor drawing, bad illustration
+Steps: 34, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 1648368314, Face restoration: CodeFormer, Size: 512x704, Model hash: b5c0b653, Model: protogenV22OfficialR_22, ENSD: 31337
+img2img
+analog style half body portrait of gorgeous young woman wearing a gold sexy dress, joyful, (seductive smirk:1.2), toasting with champagne, at a New Year's Eve party, beautiful face, (breasts exposed, open shirt), highly detailed face, elegant, smooth, sharp focus
+Negative prompt: bad fingers, muted hands, six fingers, huge breasts, outdoor, snow, forest, cross eyes, deformed hands, bad anatomy, closed eyes, poor drawing, bad illustration
+Steps: 34, Sampler: DPM++ 2S a Karras, CFG scale: 7, Seed: 1147301249, Face restoration: CodeFormer, Size: 512x704, Model hash: 9ca13f02, Model: analog-diffusion-1.0, Denoising strength: 0.24, ENSD: 31337, Mask blur: 4, SD upscale overlap: 64, SD upscale upscaler: None
+SD upscale
+Steps: 34, Sampler: DPM++ 2S a Karras, CFG scale: 7, Seed: 973932933, Face restoration: CodeFormer, Size: 512x704, Model hash: 9ca13f02, Model: analog-diffusion-1.0, Denoising strength: 0.08, ENSD: 31337, Mask blur: 4, SD upscale overlap: 64, SD upscale upscaler: 4x_UniversalUpscalerV2-Neutral_115000_swaG
+
