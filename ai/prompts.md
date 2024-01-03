@@ -464,3 +464,7 @@ Steps: 34, Sampler: DPM++ 2S a Karras, CFG scale: 7, Seed: 1147301249, Face rest
 SD upscale
 Steps: 34, Sampler: DPM++ 2S a Karras, CFG scale: 7, Seed: 973932933, Face restoration: CodeFormer, Size: 512x704, Model hash: 9ca13f02, Model: analog-diffusion-1.0, Denoising strength: 0.08, ENSD: 31337, Mask blur: 4, SD upscale overlap: 64, SD upscale upscaler: 4x_UniversalUpscalerV2-Neutral_115000_swaG
 
+Prompt: dark and gloomy full body 8k unity render, female teen cyborg, Blue yonder hair, wearing broken battle armor, at cluttered and messy shack , action shot, tattered torn shirt, porcelain cracked skin, skin pores, detailed intricate iris, very dark lighting, heavy shadows, detailed, detailed face, (vibrant, photo realistic, realistic, dramatic, dark, sharp focus, 8k)
+Negative prompt: nude, Asian, black and white, close up, cartoon, 3d, denim, (disfigured), (deformed), (poorly drawn), (extra limbs), blurry, boring, sketch, lackluster, signature, letters, watermark, low res , horrific , mutated , artifacts , bad art , gross , b&w , poor quality , low quality , cropped
+Steps: 26, Sampler: DDIM, CFG scale: 7.5, Seed: 2388736887, Size: 768x1024, Model hash: d2ef38d0, Batch size: 4, Batch pos: 2
+
