@@ -468,3 +468,7 @@ Prompt: dark and gloomy full body 8k unity render, female teen cyborg, Blue yond
 Negative prompt: nude, Asian, black and white, close up, cartoon, 3d, denim, (disfigured), (deformed), (poorly drawn), (extra limbs), blurry, boring, sketch, lackluster, signature, letters, watermark, low res , horrific , mutated , artifacts , bad art , gross , b&w , poor quality , low quality , cropped
 Steps: 26, Sampler: DDIM, CFG scale: 7.5, Seed: 2388736887, Size: 768x1024, Model hash: d2ef38d0, Batch size: 4, Batch pos: 2
 
+(Audrey Hepburn), center of frame, 1girl, smile, realistic face, brown hair, brown eyes, realistic eyes, detailed eyes, dreamy eyes, looking at viewer, night city, ultra-detailed background, beautiful background, solo, portrait, masterpiece, best quality, high resolution, 8k
+Negative prompt: (bad legs), one leg, extra leg, (bad face), (bad eyes), ((bad hands, bad anatomy, bad feet, missing fingers, cropped:1.0)), worst quality, jpeg artifacts, signature, (((watermark))), (username), blurry, ugly, old, wide face, ((fused fingers)), ((too many fingers)), amateur drawing, odd, (fat), out of frame, (mutilated:1.3), (deformed:1.3), (gross proportions:1.3), (disfigured:1.3), (mutated hands:1.3), (bad hands:1.3), (extra fingers:1.3), long neck, extra limbs, broken limb, asymmetrical eyes, (earrings)
+Steps: 100, Sampler: Euler a, CFG scale: 15, Seed: 4001832079, Size: 512x512, Model hash: 8a3b8d01, Batch size: 6, Batch pos: 5
+
