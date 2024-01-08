@@ -485,3 +485,8 @@ Analog diffusion model with 8 steps, CFG set at 9
 Prompt: (analog style), the leftovers, still image, cinematographic lighting, professional color grading, cinematic hazel, masterpiece, intricate, highly detailed
 Neg: cartoon, blur
 
+Prompt:
+Vintage 90's anime style. stylish model posing in 7/11 convenience store., sci-fi.
+Negative prompt:
+cartoon, 3d, (disfigured), (bad art), (deformed), (poorly drawn), (extra limbs), (close up), strange colours, blurry, boring, sketch, lackluster, signature, letters, watermark
+
