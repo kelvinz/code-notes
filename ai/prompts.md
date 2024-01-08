@@ -481,3 +481,7 @@ canvas frame, cartoon, 3d, ((disfigured)), ((bad art)), ((deformed)),((extra lim
 Settings
 Steps: 20, Sampler: Euler a, CFG scale: 7.5, Seed: 1163154276, Face restoration: CodeFormer, Size: 1024x768, Model hash: 16e33692, Model: Protogen_V2.2, Denoising strength: 0.7, First pass size: 0x0
 
+Analog diffusion model with 8 steps, CFG set at 9
+Prompt: (analog style), the leftovers, still image, cinematographic lighting, professional color grading, cinematic hazel, masterpiece, intricate, highly detailed
+Neg: cartoon, blur
+
