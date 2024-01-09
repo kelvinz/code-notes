@@ -490,3 +490,7 @@ Vintage 90's anime style. stylish model posing in 7/11 convenience store., sci-f
 Negative prompt:
 cartoon, 3d, (disfigured), (bad art), (deformed), (poorly drawn), (extra limbs), (close up), strange colours, blurry, boring, sketch, lackluster, signature, letters, watermark
 
+1girl, (extremely detailed CG unity 8k wallpaper), full shot body photo of a beautiful young women ((sits with legs spread on the ground)) on the mars, (((spaceship in the background))), dressed in a ( future spacesuit), (gadgets on the body), (blue eyes), sci-fi , helmet, ((big breasts)), skinny, thin waist, solo, detailed skin, (bare belly:1.33), (bare shoulders:1.35), interesting background, ((texture clothing)), RTX, outside, easy smile, (sexy), trending on ArtStation, trending on CGSociety, Intricate, High Detail, dramatic, realism, beautiful and detailed lighting, shadows
+Negative prompt: bare breasts, nude, tights, bra, 2D, cartoon, 3D, digital, illustration, blurry, poorly drawwn face, mutated, deformed mangled, old, surreal, text
+Steps: 25, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 552663309, Size: 592x832, Model hash: b5c0b653, ENSD: 31337
+
