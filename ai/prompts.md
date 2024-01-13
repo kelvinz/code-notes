@@ -500,3 +500,10 @@ Steps: 20, Sampler: DDIM, CFG scale: 10, Seed: 3458625950, Size: 512x640, Model 
 
 dreamlikeart medium painting of the most beautiful artwork in the world featuring jeff bezos in the jungle delivering (amazon package) , smiling, short outfit, nostalgia, sexy,Studio Ghibli, by Jeremy Mann, Greg Manchess, Antonio Moro, trending on ArtStation, trending on CGSociety, Intricate, High Detail, Sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski,argerm,perfect hair Negative prompt: (watermark),(text), disfigured, deformed,duplicate,limbs,close up,mutilated,frame,extra fingers, mutated hands Steps: 25, Sampler: DDIM, CFG scale: 10.5, Seed: 2378795355, Size: 704x1024, Model hash: 60fe2f34, Denoising strength: 0.7, First pass size: 0x0
 
+Prompt: Future space soldier, at the battle of Uranus, go pro selfie perspective, realistic, 8k
+negatives: Camara, nasa, white, square, cellphone, lens, desert, field, disfigured, kitsch, ugly, oversaturated, grain, low-res, Deformed, blurry, bad anatomy, disfigured, poorly drawn face, mutation, mutated, extra limb, ugly, poorly drawn hands, missing limb, blurry, floating limbs, disconnected limbs, malformed hands, blur, out of focus, long neck, long body, ugly, disgusting, poorly drawn, childish, mutilated, mangled, old, surreal, text
+steps: 35
+cfg: 7
+model: dreamlike-diffusion-1.0
+sampler: DPM++ 2M KARRAS
+
