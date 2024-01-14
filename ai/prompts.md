@@ -507,3 +507,7 @@ cfg: 7
 model: dreamlike-diffusion-1.0
 sampler: DPM++ 2M KARRAS
 
+photo of the most beautiful artwork in the world featuring soft lustrous, industrial mechanic real world, fantastic location, working environment, rugged harsh situation worker, full body 8k unity render, action shot, skin pores, detailed intricate iris, very dark lighting, heavy shadows, detailed, detailed face, (vibrant, photo realistic, realistic, dramatic, dark, sharp focus, 8k), (weathered greasy dirty damaged old worn technician worker outfit:1.1), (intricate:1.1), (highly detailed:1.1), digital painting, octane render, artstation, concept art, smooth, sharp focus, illustration, art by artgerm, (loish:0.23), wlop ilya kuvshinov., (global illumination, studio light, volumetric light)
+Negative prompt: Asian, black and white, close up, cartoon, 3d, denim, (disfigured), (deformed), (poorly drawn), (extra limbs), blurry, boring, sketch, lackluster, signature, letters, watermark, low res , horrific , mutated , artifacts , bad art , gross , b&w , poor quality , low quality , cropped
+Steps: 30, Sampler: DPM++ SDE Karras, CFG scale: 10, Seed: 169686796, Size: 512x640, Model hash: 60fe2f34, Model: 1.4-1.5_protogenX34OfficialR_1, Denoising strength: 0.5, Hires upscale: 2, Hires upscaler: Latent
+
