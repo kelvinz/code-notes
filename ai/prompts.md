@@ -511,3 +511,13 @@ photo of the most beautiful artwork in the world featuring soft lustrous, indust
 Negative prompt: Asian, black and white, close up, cartoon, 3d, denim, (disfigured), (deformed), (poorly drawn), (extra limbs), blurry, boring, sketch, lackluster, signature, letters, watermark, low res , horrific , mutated , artifacts , bad art , gross , b&w , poor quality , low quality , cropped
 Steps: 30, Sampler: DPM++ SDE Karras, CFG scale: 10, Seed: 169686796, Size: 512x640, Model hash: 60fe2f34, Model: 1.4-1.5_protogenX34OfficialR_1, Denoising strength: 0.5, Hires upscale: 2, Hires upscaler: Latent
 
+Prompt:
+photo of Neytiri (Navi:1.2) from avatar in the jungle, (blue skin:1.2), (fantasy), (bra), cinematic, ((sharp focus))
+Negative prompt: cat ears, (bokeh), 2D, cartoon, 3D, digital, illustration, poorly drawn, man
+Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 1612219763, Size: 768x960, Model hash: cfc5de0e, Model: protogenX53OfficialR_10
+
+Prompt
+blue skin avatar man, from avatar movie, drip, swag, muscular, gold chains, rings, boss, smirking, sunglasses, standing in a forest
+Negative Prompt
+out of frame, duplicate, watermark, signature, text
+
