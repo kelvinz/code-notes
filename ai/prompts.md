@@ -521,3 +521,7 @@ blue skin avatar man, from avatar movie, drip, swag, muscular, gold chains, ring
 Negative Prompt
 out of frame, duplicate, watermark, signature, text
 
+photo of the most beautiful artwork in the world featuring soft lustrous, industrial real world, urban location, fire and smoke urban environment, rugged old male american firefighter, full body 8k unity render, action shot, skin pores, (ultra detailed brown eyes:1.2), very dark lighting, heavy shadows, detailed, detailed face, (vibrant, photo realistic, realistic, dramatic, dark, sharp focus, 8k), (weathered burned dirty damaged old worn firefighter outfit:1.1), (intricate:1.1), (highly detailed:1.1), digital painting, octane render, artstation, concept art, smooth, sharp focus, illustration, art by artgerm, (loish:0.23), wlop ilya kuvshinov., (global illumination, studio light, volumetric light), (rain, water particles:1.2)
+Negative prompt: Asian, black and white, close up, cartoon, 3d, denim, (disfigured), (deformed), (poorly drawn), (extra limbs), blurry, boring, sketch, lackluster, signature, letters, watermark, low res , horrific , mutated , artifacts , bad art , gross , b&w , poor quality , low quality , cropped
+Steps: 22, Sampler: DPM++ SDE Karras, CFG scale: 10, Seed: 1216915738, Size: 512x640, Model hash: cfc5de0e, Model: 1.4-1.5_protogenX53OfficialR_10, Denoising strength: 0.5, Hires upscale: 2.5, Hires upscaler: Latent
+
