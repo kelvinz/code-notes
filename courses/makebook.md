@@ -121,3 +121,50 @@ Log every idea you have, filter them, and see which ones you can execute upon.
 
 ---
 
+# 🛠 Build
+
+	-
+
+---
+
+# 🚀 Launch
+
+	-
+
+---
+
+# 🌱 Grow
+
+	-
+
+---
+
+# 💰 Monetize
+
+	-
+
+---
+
+# 🤖 Automate
+
+	-
+
+---
+
+# 🚪 Exit
+
+	-
+
+---
+
+# 🤝 Ethics
+
+	-
+
+---
+
+# 📝 Homework
+
+	-
+
+---
