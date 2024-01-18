@@ -525,3 +525,8 @@ photo of the most beautiful artwork in the world featuring soft lustrous, indust
 Negative prompt: Asian, black and white, close up, cartoon, 3d, denim, (disfigured), (deformed), (poorly drawn), (extra limbs), blurry, boring, sketch, lackluster, signature, letters, watermark, low res , horrific , mutated , artifacts , bad art , gross , b&w , poor quality , low quality , cropped
 Steps: 22, Sampler: DPM++ SDE Karras, CFG scale: 10, Seed: 1216915738, Size: 512x640, Model hash: cfc5de0e, Model: 1.4-1.5_protogenX53OfficialR_10, Denoising strength: 0.5, Hires upscale: 2.5, Hires upscaler: Latent
 
+Prompt
+Futuristic tank in jungle, detailed, digital painting, artstation, concept art, breathtaking, high details, extremely detailed, beautiful, establishing shot, hyperrealistic, unreal engine 5
+Negative Prompt
+out of frame, duplicate, watermark, signature, text, ugly, morbid, mutated, deformed, blurry, bad anatomy, bad proportions, cloned face, disfigured, fused fingers, fused limbs, too many fingers, long neck
+
