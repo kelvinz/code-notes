@@ -530,3 +530,8 @@ Futuristic tank in jungle, detailed, digital painting, artstation, concept art, 
 Negative Prompt
 out of frame, duplicate, watermark, signature, text, ugly, morbid, mutated, deformed, blurry, bad anatomy, bad proportions, cloned face, disfigured, fused fingers, fused limbs, too many fingers, long neck
 
+Prompt
+Future space soldier, at the battle of Uranus, go pro selfie perspective, realistic, 8k
+Negative Prompt
+teen, out of frame, duplicate, watermark, signature, text
+
