@@ -601,3 +601,5 @@ sharp focus, natural lighting, sunshine, subsurface scattering, f2, 50mm, film g
 - cartoon, 3d, ((disfigured)), ((bad art)), ((deformed)), ((poorly drawn)), ((extra limbs)), ((close up)), ((b&w)), weird colors, blurry, (((naked))) ,(((nude))), (((topless))), (((group))), (multiple people)
 Steps: 25, Sampler: DPM++ 2M Karras, CFG scale: 4.5, Seed: 3733495333, Size: 640x896, Model: Eros
 
+modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body photo of the most beautiful artwork in the world, medieval armor, professional majestic oil painting by ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski
+
