@@ -603,3 +603,5 @@ Steps: 25, Sampler: DPM++ 2M Karras, CFG scale: 4.5, Seed: 3733495333, Size: 640
 
 modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body photo of the most beautiful artwork in the world, medieval armor, professional majestic oil painting by ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski
 
+modelshoot style, (extremely detailed cg unity 8k wallpaper), (full shot body photo of the most creepy artwork in the world, old abandoned medieval dungeon at night with a medium shot of a ugly torturer waiting in the dark:1.4), prisoners, cells, dark, damp, and dirty, fire torches, professional majestic oil painting by ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski
+
