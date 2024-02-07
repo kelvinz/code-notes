@@ -607,3 +607,5 @@ modelshoot style, (extremely detailed cg unity 8k wallpaper), (full shot body ph
 
 modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body photo of the most beautiful artwork in the world, english medieval witch, black silk vale, pale skin, black silk robe, black cat, necromancy magic, sexy, medieval era, photorealistic painting by ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski
 
+modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body photo of the most beautiful artwork in the world, english medieval witch, green vale, pearl skin,golden crown, diamonds, medieval architecture, professional majestic oil painting by ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski
+
