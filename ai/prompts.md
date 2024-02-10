@@ -613,3 +613,5 @@ modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body pho
 
 modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body photo of the most beautiful artwork in the world, medieval princess, professional majestic oil painting by ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski
 
+a portrait of poor peasant girl, in old used 1800 peasant clothing , crazy mad aggressive face and eyes, fantasy, concept art, oil pastel painting , moody gray colors , gritty, messy stylestyle of malika favre, ilya kuvshinov, franz xaver winterhalter, alice pasquin(cel shaded:1.2), 2d, (oil painting:1.2) highly detailed, jeremy mann
+
