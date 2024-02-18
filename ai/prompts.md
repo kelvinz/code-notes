@@ -632,3 +632,5 @@ side portrait of a beautiful female cleric, ethereal, dreamy, backlit, highly de
 portrait futuristic tawny cyberpunk female paladin, in futuristic heavily raindrop tokyo rooftop cyberpunk night, ssci-fi, fantasy, intricate, very very beautiful, elegant, neon light, highly detailed, digital painting, concept art, human anatomy, soft light, hdri, smooth, sharp focus, illustration, art by tian zi and craig mullins and wlop and alphonse mucha
 modelshoot style, (extremely detailed cg unity 8k wallpaper), full body painting of the most beautiful artwork in the world, blonde man from the 40s, mustache, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting by midjourney, jeremy lipking, norman rockwell, by antonio j. manzanedo, by (alphonse mucha), gaston bussiere
 
+(extremely detailed cg unity 8k wallpaper), portrait of an elf in a black cloak, black hair, glowing eyes, male, detailed face, fantasy, , trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting by midjourney, greg rutkowski, john william waterhouse
+
