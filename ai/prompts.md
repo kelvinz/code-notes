@@ -634,3 +634,6 @@ modelshoot style, (extremely detailed cg unity 8k wallpaper), full body painting
 
 (extremely detailed cg unity 8k wallpaper), portrait of an elf in a black cloak, black hair, glowing eyes, male, detailed face, fantasy, , trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting by midjourney, greg rutkowski, john william waterhouse
 
+a beautiful cinematic female necromancer sorceress, galatic shamen with quantum energy fantasy, fantasy magic, undercut hairstyle, dark light night, intricate, elegant, sharp focus, illustration, highly detailed, digital painting, concept art, matte, art by wlop and artgerm and greg rutkowski and alphonse mucha, masterpiece
+modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body photo of the most beautiful artwork in the world, cloak armor, professional majestic oil painting by ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski
+
