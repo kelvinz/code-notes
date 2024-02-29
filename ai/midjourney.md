@@ -23,4 +23,8 @@ can also be used in parameters
 
 # parameters
 
+--ar 16:9
+--aspect 16:9
+sets aspect ratio
+
 ---
