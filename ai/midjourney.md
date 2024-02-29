@@ -27,4 +27,10 @@ can also be used in parameters
 --aspect 16:9
 sets aspect ratio
 
+--c 0
+--chaos 0
+more unexpected grids
+default → 0
+range → 0 - 100
+
 ---
