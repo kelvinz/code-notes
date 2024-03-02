@@ -33,4 +33,8 @@ more unexpected grids
 default → 0
 range → 0 - 100
 
+--no item
+don't include item
+can use comma to add more
+
 ---
