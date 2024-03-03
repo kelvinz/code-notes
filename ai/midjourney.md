@@ -44,4 +44,9 @@ time spent generating image
 default → 1
 range → 0.25 - 5
 
+--r 2
+--repeat 2
+range → 2-4, 2-10, 2-40
+depending on subscription
+
 ---
