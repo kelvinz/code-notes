@@ -37,4 +37,11 @@ range → 0 - 100
 don't include item
 can use comma to add more
 
+--q 1
+--quality 1
+soften/sharpen details
+time spent generating image
+default → 1
+range → 0.25 - 5
+
 ---
