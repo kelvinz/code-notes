@@ -49,4 +49,7 @@ range → 0.25 - 5
 range → 2-4, 2-10, 2-40
 depending on subscription
 
+--seed 0
+0-4294967295
+
 ---
