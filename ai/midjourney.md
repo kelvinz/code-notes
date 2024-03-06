@@ -52,4 +52,9 @@ depending on subscription
 --seed 0
 0-4294967295
 
+--stop 100
+default → 100
+range → 10 - 100
+low steps = blurry/noisier images
+
 ---
