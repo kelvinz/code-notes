@@ -57,4 +57,10 @@ default → 100
 range → 10 - 100
 low steps = blurry/noisier images
 
+--style raw
+push towards photorealism
+less mj styling
+--style random
+explore styles in v5.2
+
 ---
