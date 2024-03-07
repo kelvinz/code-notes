@@ -63,4 +63,10 @@ less mj styling
 --style random
 explore styles in v5.2
 
+--s 100
+--stylize 100
+default → 100
+range → 0 - 1000
+tunes mj influence
+
 ---
