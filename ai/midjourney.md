@@ -69,4 +69,7 @@ default → 100
 range → 0 - 1000
 tunes mj influence
 
+--tile
+make a repeating pattern
+
 ---
