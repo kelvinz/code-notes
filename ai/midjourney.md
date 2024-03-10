@@ -72,4 +72,10 @@ tunes mj influence
 --tile
 make a repeating pattern
 
+--v 6
+--version 6
+default → 6
+range → 1 - 6
+--niji 6
+
 ---
