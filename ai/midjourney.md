@@ -78,4 +78,7 @@ default → 6
 range → 1 - 6
 --niji 6
 
+--video
+create a video of generation
+
 ---
