@@ -81,4 +81,10 @@ range → 1 - 6
 --video
 create a video of generation
 
+-w 0
+--weird 0
+makes things weird
+default → 0
+range → 0 - 3000
+
 ---
