@@ -87,4 +87,11 @@ makes things weird
 default → 0
 range → 0 - 3000
 
+prompt::2
+add strength to words
+:: is a hard break too
+, is soft break
+default → 1
+range → is a multiplier 2 = 2x
+
 ---
