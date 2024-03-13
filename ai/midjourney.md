@@ -94,4 +94,8 @@ add strength to words
 default → 1
 range → is a multiplier 2 = 2x
 
+--no prompt
+don't have this word in image
+same as ::-0.5
+
 ---
