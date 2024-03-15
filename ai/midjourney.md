@@ -98,4 +98,7 @@ range → is a multiplier 2 = 2x
 don't have this word in image
 same as ::-0.5
 
+--sref url
+use images as styles in --v 6
+
 ---
