@@ -101,4 +101,11 @@ same as ::-0.5
 --sref url
 use images as styles in --v 6
 
+--sw 10
+tunes --sref influence
+default → 100
+range → 0 - 1000
+can control individual images with
+--sref urlA1::2 urlB::3 urlC::5
+
 ---
