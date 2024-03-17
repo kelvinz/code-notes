@@ -108,4 +108,11 @@ range → 0 - 1000
 can control individual images with
 --sref urlA1::2 urlB::3 urlC::5
 
+use image for prompt
+/imagine url prompt parameters
+--iw 0.5
+sets image influence vs text
+default → 1
+range → 0 - 3
+
 ---
