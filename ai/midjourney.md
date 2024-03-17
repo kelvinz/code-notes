@@ -115,4 +115,7 @@ sets image influence vs text
 default → 1
 range → 0 - 3
 
+--cref url
+add image as character reference
+
 ---
