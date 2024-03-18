@@ -118,4 +118,10 @@ range → 0 - 3
 --cref url
 add image as character reference
 
+--cw 100
+range → 0 - 100
+default → 100
+0 focus on face
+100 focus on face, hair, clothes
+
 ---
