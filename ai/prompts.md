@@ -653,3 +653,5 @@ beautiful woman, (from_side:1.3) (crossed_ankles:1.2), (hand_on_hip:1.2), black_
 
 (extremely detailed cg unity 8k wallpaper), movie poster of elite (victorian age:1.6) intricate count dracula in a battle stance, menacing face, showing teeth with blood, professional majestic oil painting by ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, by midjourney and greg rutkowski, realism, beautiful and detailed lighting, shadows, by jeremy lipking, by antonio j. manzanedo, by frederic remington, by hw hansen, by charles marion russell, by william herbert dunton
 
+photo of a warrior with metal jaguar themed armour, highly detailed, 4 k, hdr, smooth, sharp focus, high resolution, award - winning photo
+
