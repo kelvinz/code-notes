@@ -656,3 +656,6 @@ beautiful woman, (from_side:1.3) (crossed_ankles:1.2), (hand_on_hip:1.2), black_
 photo of a warrior with metal jaguar themed armour, highly detailed, 4 k, hdr, smooth, sharp focus, high resolution, award - winning photo
 
 photorealistic photo of a handsome male wizard, white wizard shirt with golden trim, white robe moving in the wind, long white hair, fully clothed, perfect face, handsome, (perfect composition:1.4), deviantart hd, artstation hd, concept art, detailed face and body, award-winning photography, margins, detailed face, detailed hands, ,backlight, 12k ultrarealistic, ray tracing, intense gaze, looking at the viewer, cinematic lighting, art by grzegorz rutkowski, embers, high fantasy background, action pose, hands up to 90 degrees, holding a small magic wand, water splash, misty
+
+style-empire, 8k portrait of beautiful woman with brown hair, intricate, elegant, highly detailed, majestic, digital photography, art by artgerm ruan jia and greg rutkowski surreal wet paint gold butterfly filigree, broken glass
+
