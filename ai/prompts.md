@@ -659,3 +659,5 @@ photorealistic photo of a handsome male wizard, white wizard shirt with golden t
 
 style-empire, 8k portrait of beautiful woman with brown hair, intricate, elegant, highly detailed, majestic, digital photography, art by artgerm ruan jia and greg rutkowski surreal wet paint gold butterfly filigree, broken glass
 
+(extremely detailed cg unity 8k wallpaper),full shot photo of the most beautiful artwork of a japanese school, ((japanese school)) professional majestic oil painting by ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski
+
