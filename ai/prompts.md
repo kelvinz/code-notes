@@ -661,3 +661,5 @@ style-empire, 8k portrait of beautiful woman with brown hair, intricate, elegant
 
 (extremely detailed cg unity 8k wallpaper),full shot photo of the most beautiful artwork of a japanese school, ((japanese school)) professional majestic oil painting by ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski
 
+a masterpiece portrait of smiling saya otonashi, kimono with koi karp print, modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body photo of the best artwork in the world, trending on artstation, trending on cgsociety, intricate
+
