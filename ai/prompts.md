@@ -665,3 +665,5 @@ a masterpiece portrait of smiling saya otonashi, kimono with koi karp print, mod
 
 (extremely detailed cg unity 8k wallpaper), full shot photo of the most beautiful artwork of a japanese village by the ocean, slightly cloudy at sunset, nostalgia, professional majestic oil painting by ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski
 
+modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body photo of the most beautiful artwork in the world, beautiful women, professional majestic oil painting by ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, sharp focus, dramatic, photorealistic painting art by midjourney and greg rutkowski
+
