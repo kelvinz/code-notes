@@ -669,3 +669,5 @@ modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body pho
 
 electronic robot and office, unreal engine, cozy indoor lighting, artstation, detailed, digital painting, cinematic, character design by mark ryden and pixar and hayao miyazaki, unreal 5, daz, hyperrealistic, octane render
 
+(extremely detailed 8k wallpaper),a medium shot photo of a fearful necromancer, intricate, high detail, dramatic
+
