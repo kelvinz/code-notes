@@ -673,3 +673,5 @@ electronic robot and office, unreal engine, cozy indoor lighting, artstation, de
 
 modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body photo of the most beautiful artwork in the world, beautiful ((ramen shop)), professional majestic impressionism oil painting by waterhouse, john constable, ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, dramatic, makoto shinkai kyoto animation key art, trending on artstation, trending on cgsociety
 
+landscape portrait of a lush magical fantasy valley between mountains, blue river flowing between forests, blue crystal rocks jutting out of the ground, stone pillars, enormous cave entrance, castle in background, daytime, white fluffy clouds, waterfall, (backlighting), realistic, masterpiece, highest quality, ((intricate armor)), fantasy forest in background, ((excited)), lens flare, shade, bloom, ((light sparkles)), [chromatic aberration], by jeremy lipking, by antonio j. manzanedo, by (alphonse mucha), digital painting
+
