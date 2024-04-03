@@ -671,3 +671,5 @@ electronic robot and office, unreal engine, cozy indoor lighting, artstation, de
 
 (extremely detailed 8k wallpaper),a medium shot photo of a fearful necromancer, intricate, high detail, dramatic
 
+modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body photo of the most beautiful artwork in the world, beautiful ((ramen shop)), professional majestic impressionism oil painting by waterhouse, john constable, ed blinkey, atey ghailan, studio ghibli, by jeremy mann, greg manchess, antonio moro, trending on artstation, trending on cgsociety, intricate, high detail, dramatic, makoto shinkai kyoto animation key art, trending on artstation, trending on cgsociety
+
