@@ -675,3 +675,5 @@ modelshoot style, (extremely detailed cg unity 8k wallpaper), full shot body pho
 
 landscape portrait of a lush magical fantasy valley between mountains, blue river flowing between forests, blue crystal rocks jutting out of the ground, stone pillars, enormous cave entrance, castle in background, daytime, white fluffy clouds, waterfall, (backlighting), realistic, masterpiece, highest quality, ((intricate armor)), fantasy forest in background, ((excited)), lens flare, shade, bloom, ((light sparkles)), [chromatic aberration], by jeremy lipking, by antonio j. manzanedo, by (alphonse mucha), digital painting
 
+masterpiece, best quality, [detailed], [intricate], digital painting, fullbody portrait of an undead skeletal samurai in winter, snow, noble, fantasy, sci-fi, dieselpunk, lotr, dnd, [wh40k], [highres], [absurdres], [sharp focus], bokeh, realistic shadows, lithograph by john william waterhouse and kyoto animation and yoshitaka amano and frank frazetta
+
