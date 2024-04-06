@@ -677,3 +677,4 @@ landscape portrait of a lush magical fantasy valley between mountains, blue rive
 
 masterpiece, best quality, [detailed], [intricate], digital painting, fullbody portrait of an undead skeletal samurai in winter, snow, noble, fantasy, sci-fi, dieselpunk, lotr, dnd, [wh40k], [highres], [absurdres], [sharp focus], bokeh, realistic shadows, lithograph by john william waterhouse and kyoto animation and yoshitaka amano and frank frazetta
 
+dark and gloomy 8k photo, cyberpunk saloon, action shot, sunset, detailed, detailed face, (vibrant, photo realistic, realistic, dramatic, dark, sharp focus, 8k)
