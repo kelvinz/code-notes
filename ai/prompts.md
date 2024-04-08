@@ -682,3 +682,6 @@ dark and gloomy 8k photo, cyberpunk saloon, action shot, sunset, detailed, detai
 dark and gloomy 8k photo, ronin iguana wearing broken battle armor, outside cyberpunk saloon, action shot, sunset, detailed, detailed face, (vibrant, photo realistic, realistic, dramatic, dark, sharp focus, 8k)
 
 dreamlikeart tree in a bottle, fluffy, realistic, photo, canon, dreamlike, art, colorfull leaves and branches with flowers on top of its head. hyperdetailed photorealism by greg rutkowski - h 1024 w 804 | f 1 6 lens mark 2:2 s 3555 mm film grain :1 lifelike high res sharp focus contrast!! intricate detailed atmospheric light refraction lighting unreal engine 5 cinematic concept photography masterpiece octane render trending at cgsociety rendered as
+
+dreamlikeart tree of live, colorful smoke, insane details, steampunk details, intricate details, hyperdetailed,
+
