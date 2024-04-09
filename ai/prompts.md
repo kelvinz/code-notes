@@ -685,3 +685,5 @@ dreamlikeart tree in a bottle, fluffy, realistic, photo, canon, dreamlike, art, 
 
 dreamlikeart tree of live, colorful smoke, insane details, steampunk details, intricate details, hyperdetailed,
 
+dreamlikeart iridescent fantasy town
+
