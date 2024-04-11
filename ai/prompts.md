@@ -687,3 +687,4 @@ dreamlikeart tree of live, colorful smoke, insane details, steampunk details, in
 
 dreamlikeart iridescent fantasy town
 
+end of the world, epic realistic, ((((hdr)))), ((((muted colors)))), apocalypse, abandoned, neutral colors, night, screen space refractions, (intricate details), ((intricate details, hyperdetailed)), artstation, cinematic shot, vignette, complex background, [[teal and orange]], technicolor, flipped over building
