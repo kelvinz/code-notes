@@ -688,3 +688,5 @@ dreamlikeart tree of live, colorful smoke, insane details, steampunk details, in
 dreamlikeart iridescent fantasy town
 
 end of the world, epic realistic, ((((hdr)))), ((((muted colors)))), apocalypse, abandoned, neutral colors, night, screen space refractions, (intricate details), ((intricate details, hyperdetailed)), artstation, cinematic shot, vignette, complex background, [[teal and orange]], technicolor, flipped over building
+
+a portrait of an angry, egypt god, intricate outfit, epic realistic, kit, aesthetic, cinematic, insane details, hyperdetailed, dimmed colors, muted colors, film grainy, slate, lut, spooky, vignette, tomb inside, mugshot, art by rutkowski,
