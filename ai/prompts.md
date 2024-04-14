@@ -690,3 +690,6 @@ dreamlikeart iridescent fantasy town
 end of the world, epic realistic, ((((hdr)))), ((((muted colors)))), apocalypse, abandoned, neutral colors, night, screen space refractions, (intricate details), ((intricate details, hyperdetailed)), artstation, cinematic shot, vignette, complex background, [[teal and orange]], technicolor, flipped over building
 
 a portrait of an angry, egypt god, intricate outfit, epic realistic, kit, aesthetic, cinematic, insane details, hyperdetailed, dimmed colors, muted colors, film grainy, slate, lut, spooky, vignette, tomb inside, mugshot, art by rutkowski,
+
+(mount everest:1.4), snow leopard snow-covered slope, rocky mountainside, snowy mountains, high mountains, high mountains in the background, high altitude, mountains, winter, blizzard, winter, heavy snowfall, snowfall, (blizzard:1.4), looks at the viewer, full body view, focus on the eyes, symmetrical, dramatic light, masterpiece, highest quality, incredible sharpness, high sharpness, (insanely detailed, bloom:1.5), (highly detailed photo:1.5), photorealistic, photography, realistic, real shadow, side view, by national geographic, by wildlife redesign, by wildlife photography workshop, wildlife photography awards, soft focus, hyper detailed eyes, ef 200mm
+
