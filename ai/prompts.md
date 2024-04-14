@@ -693,3 +693,5 @@ a portrait of an angry, egypt god, intricate outfit, epic realistic, kit, aesthe
 
 (mount everest:1.4), snow leopard snow-covered slope, rocky mountainside, snowy mountains, high mountains, high mountains in the background, high altitude, mountains, winter, blizzard, winter, heavy snowfall, snowfall, (blizzard:1.4), looks at the viewer, full body view, focus on the eyes, symmetrical, dramatic light, masterpiece, highest quality, incredible sharpness, high sharpness, (insanely detailed, bloom:1.5), (highly detailed photo:1.5), photorealistic, photography, realistic, real shadow, side view, by national geographic, by wildlife redesign, by wildlife photography workshop, wildlife photography awards, soft focus, hyper detailed eyes, ef 200mm
 
+a frightened 30 year old woman in a futuristic spacesuit runs through an alien jungle from a terrible huge ugly monster against the background of two moons artstation, cinematic, insane details, intricate details, hyperdetailed, ((hdr)), ((vignette))
+
