@@ -695,3 +695,5 @@ a portrait of an angry, egypt god, intricate outfit, epic realistic, kit, aesthe
 
 a frightened 30 year old woman in a futuristic spacesuit runs through an alien jungle from a terrible huge ugly monster against the background of two moons artstation, cinematic, insane details, intricate details, hyperdetailed, ((hdr)), ((vignette))
 
+a vast, hot desert landscape, with an open sky and a breathtaking (colorful waterfall) (water many colors) cascading down the rocky cliffs. the vibrant, colorful scene is reminiscent of a concept art . taken by bbc, very details, masterpiece high sharpness, extreme saturation &amp; contrast (insane detail: 1.2), high detail photo, 2k, 4k, 8k, realistic, medium shot, raytracing, photorealistic, dramatic lighting, soft shadows, cinematic lighting,
+
