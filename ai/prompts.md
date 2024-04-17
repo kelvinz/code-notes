@@ -697,3 +697,5 @@ a frightened 30 year old woman in a futuristic spacesuit runs through an alien j
 
 a vast, hot desert landscape, with an open sky and a breathtaking (colorful waterfall) (water many colors) cascading down the rocky cliffs. the vibrant, colorful scene is reminiscent of a concept art . taken by bbc, very details, masterpiece high sharpness, extreme saturation &amp; contrast (insane detail: 1.2), high detail photo, 2k, 4k, 8k, realistic, medium shot, raytracing, photorealistic, dramatic lighting, soft shadows, cinematic lighting,
 
+(extremely detailed cg unity 8k wallpaper),(masterpiece), (best quality), (realistic), cyberpunk, japan, scenery, banners, night, beautiful lighting, detailed, geisha in kimono, raining, umbrella
+
