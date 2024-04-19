@@ -701,3 +701,5 @@ a vast, hot desert landscape, with an open sky and a breathtaking (colorful wate
 
 a comfy landscape, highly detailed oil painting of a large mountain with trees and plants by simon stalenhag. trending on artstation 8k hq artwork octane render pixar unreal engine 5 cgsociety concept sketching zbrush central contest winner 3d behance hd global illumination rtx volumetric lighting subsurface scattering shiny skin reflections depth map machine room full-length view mirrorless wide shot dark background vray ray tracing ambient occlusion shadow specular highlights disney style atmosphere nikolay makoto shinkai award winning masterpiece wes cra
 
+photorealistic, ,best quality,masterpiece,highly detailed,ultra-detailed,a futuristic sports car in a cyberpunk city. 4k 3d render unreal engine 5 rendered with blender and octane global illumination from photorealistic hyper realism concept art by greg rutkowski loish rhads ferdinand knab makoto shinkai tian zi trending on cgsociety
+
