@@ -703,3 +703,5 @@ a comfy landscape, highly detailed oil painting of a large mountain with trees a
 
 photorealistic, ,best quality,masterpiece,highly detailed,ultra-detailed,a futuristic sports car in a cyberpunk city. 4k 3d render unreal engine 5 rendered with blender and octane global illumination from photorealistic hyper realism concept art by greg rutkowski loish rhads ferdinand knab makoto shinkai tian zi trending on cgsociety
 
+tiny cute isometric livingroom, soft smooth lighting, soft colors, dark color scheme, soft colors, 100mm, 3d blender render, octane render, global illumination, sharp focus in the middle
+
