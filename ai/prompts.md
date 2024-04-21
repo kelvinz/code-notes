@@ -705,3 +705,5 @@ photorealistic, ,best quality,masterpiece,highly detailed,ultra-detailed,a futur
 
 tiny cute isometric livingroom, soft smooth lighting, soft colors, dark color scheme, soft colors, 100mm, 3d blender render, octane render, global illumination, sharp focus in the middle
 
+raw photo, a close up portrait photo of brutal 45 y.o man in wastelander clothes, long haircut, pale skin, slim body, background is city ruins, (high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain, fujifilm xt3
+
