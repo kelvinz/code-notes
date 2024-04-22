@@ -707,3 +707,5 @@ tiny cute isometric livingroom, soft smooth lighting, soft colors, dark color sc
 
 raw photo, a close up portrait photo of brutal 45 y.o man in wastelander clothes, long haircut, pale skin, slim body, background is city ruins, (high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain, fujifilm xt3
 
+raw photo, a close up portrait photo of 30 y.o woman in wastelander clothes, redhair, short haircut, pale skin, slim body, background is city ruins, (high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain, fujifilm xt3
+
