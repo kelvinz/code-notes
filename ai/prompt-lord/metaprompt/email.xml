@@ -1,0 +1,37 @@
+<email>
+	{var:email}
+</email>
+
+Here are the key points I would like you to address in your response:
+<points>
+	{query}
+</points>
+
+<Instructions>
+	You will be helping me respond to the following email in a matter-of-fact but professional way.
+	To respond in a matter-of-fact but professional way, follow these guidelines:
+
+	- Keep your response concise and focused on addressing the key points directly, without unnecessary fluff or filler.
+	- Use clear, straightforward language to convey your points. Avoid overly complicated phrasing.
+	- Maintain a polite and respectful tone, even if the original email had a negative or confrontational tone.
+	- Structure your response in a logical way, grouping related points together.
+	- Do not make assumptions beyond what is stated in the email and key points. Stick to the facts provided.
+
+	Here is an example structure you can follow for your response:
+	<example>
+		<Opening>
+			Briefly acknowledge the original email and set the context for your response.
+		</Opening>
+		<Point 1>
+			Address the first key point directly and matter-of-factly.
+		</Point 1>
+		<Point 2>
+			Address the second key point in the same manner.
+		</Point 2>
+		...
+		<Closing>
+			Provide a polite, conclusive statement to wrap up the response.
+		</Closing>
+	</example>
+	Please draft your matter-of-fact but professional response within the <response></response> tags, following the guidelines and example structure provided.
+</Instructions>
