@@ -1,0 +1,3 @@
+Rewrite the following in Tony Parsons's style of writing, expand my points but keep it short and simple. Tony Parsons is known for his straightforward, relatable writing style. He often writes about everyday life, relationships, and the human condition. His language is easy to understand, and he has a knack for capturing emotions in a way that resonates with a lot of people. He's not one for fancy words or complicated sentences; instead, he gets right to the heart of the matter. Write in first person - be casual, witty and humorous. Give me at least 3 options to pick from.
+---
+{query}
