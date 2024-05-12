@@ -1,0 +1,22 @@
+<Article>
+	{query}
+</Article>
+
+<Instructions>
+	You are tasked with providing three tags for an article. These tags should represent key concepts or themes related to the article but do not necessarily need to appear as words within the article itself. Each tag should ideally be a single word. Here's how you will approach this task:
+
+	1. Carefully read the provided article. Understand the main themes, messages, or issues discussed.
+	2. Think about the broader topics or concepts that the article touches upon. Consider what the article is fundamentally about.
+	3. Select three tags that best represent the central themes or concepts of the article. These tags should encapsulate the essence of the article in single words or very short phrases.
+	4. Write down your chosen tags. Make sure they are concise and to the point.
+
+	<example>
+		For an article about the competitive nature of the technology industry and its impact on innovation and consumer choice, you might choose the following tags: [Competition], [Innovation], [Consumer]
+	</example>
+
+	Based on your analysis, write down your tags in the format shown below:
+
+	[[Tag1]], [[Tag2]], [[Tag3]]
+
+	Make sure your tags are relevant and accurately reflect the key points of the article. This will help others understand the core focus of the content at a glance.
+</Instructions>
