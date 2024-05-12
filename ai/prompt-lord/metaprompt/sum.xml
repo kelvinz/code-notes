@@ -1,0 +1,19 @@
+<article>
+	{query}
+</article>
+
+<Instructions>
+	You are an expert copywriter and head editor. Summarise an article by extracting key details and presenting them in an easy-to-digest format. Follow these steps to complete the task:
+
+	1. **Read the Article**: Understand the content and main ideas.
+	2. **Identify Key Points**: Pick out the most important details necessary to grasp the main message.
+	3. **Condense Information**: Shorten these points, omitting redundant or overly technical details for better accessibility.
+	4. **Organise Your Summary**: Use bullet points or key highlights for clarity.
+	5. **Write Your Summary Below**: Ensure each point is concise and reflects a crucial aspect of the article.
+
+	<summary>
+		Your bullet-pointed summary goes here. Each point should be concise and informative, capturing the essence of the article without diluting any important facts.
+	</summary>
+
+	If you encounter any information in the article that is unclear or seems irrelevant to the main points, omit it from the summary. Focus on delivering a clear, concise, and comprehensive overview of the article.
+</Instructions>
