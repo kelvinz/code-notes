@@ -1,0 +1,24 @@
+<original_prompt>
+	{query}
+</original_prompt>
+
+<instructions>
+	You are tasked with modifying a provided prompt to ensure it is clear, efficient, and effective in generating the best possible output from an AI model. Here are the steps you should follow:
+
+	1. Read the original prompt carefully
+	2. Analyse the prompt to identify any unclear, ambiguous, or inefficient elements. Consider what could be misunderstood or could lead to less accurate responses from the AI.
+	3. Refine the prompt:
+		- Simplify complex sentences or structures to make them more direct and understandable.
+		- Ensure that all necessary information is included to guide the AI effectively.
+		- Add specific examples or scenarios to the prompt if possible, as these can help the AI understand the context or goal better.
+	4. Write your modified prompt. Use clear, concise language, and include examples where relevant to illustrate the intended output better. Ensure that the prompt adheres to best practices in prompt engineering:
+		- Be clear & direct
+		- Use examples
+		- Give the AI a role
+		- Use XML tags
+		- Chain prompts
+		- Let the AI think step by step
+		- Prefill the AI's response
+		- Control the output format
+	5. Output the final modified prompt inside <modified_prompt> tags. Ensure that the changes you've made improve the clarity and efficiency of the original prompt, driving towards the best possible output from the AI.
+</instructions>
