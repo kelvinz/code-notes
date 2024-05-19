@@ -1,0 +1,18 @@
+<prompt>
+  {query}
+</prompt>
+
+<Instructions>
+	Your task is to enhance the clarity and usability of this prompt by suggesting additional examples. These examples should be relevant and directly demonstrate how to follow the instructions given in the prompt.
+	First, read the prompt carefully to understand what it's asking for. Think about the types of questions or tasks that might arise from this prompt. Consider what might be confusing or unclear. Generate at least three examples that address potential questions or clarify any ambiguities. Each example should directly relate to and exemplify the instructions in the prompt.
+	Ensure your examples are specific, practical, and easy to understand.
+
+	Here's how to structure your response:
+	<examples>
+		Example 1: Brief description {Insert a detailed example that illustrates a specific aspect of the prompt}
+		Example 2: Brief description {Insert a second example, focusing on another aspect or a common potential misunderstanding}
+		Example 3: Brief description {Insert a third example, perhaps demonstrating a more complex or less obvious aspect}
+	</examples>
+
+	These examples should serve as clear guides for anyone trying to follow the prompt. By the end of your task, the prompt should feel easier to understand and implement thanks to your examples. This will make the AI model more effective in its responses or actions based on the prompt.
+</Instructions>
