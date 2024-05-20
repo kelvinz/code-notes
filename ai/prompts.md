@@ -713,3 +713,4 @@ raw photo, desert landscape, oasis with palms and water, (rocks:1.2), 8k uhd, ds
 
 space ship,white, 4k, high resolution, realistic concept art. pilot. sense of awe and scale, (in the art style of filip hodas), future shape details,dramatic light,dramatic light,(fractals),thorax,nautilus, orchid, skull, betta fish, bioluminiscent creatures, octane render, trending on artstation,, epic realistic, faded, ((neutral colors)), art, (hdr:1.5), (muted colors:1.2), pastel, hyperdetailed, (artstation:1.5), warm lights, dramatic light, (intricate details:1.2), vignette, complex background, rutkowski
 
+minimalistic cyberpunk kitchen, interior, zaha hadid, wood finish, render, 8k, photorealistic, 3ds max
