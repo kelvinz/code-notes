@@ -717,3 +717,5 @@ minimalistic cyberpunk kitchen, interior, zaha hadid, wood finish, render, 8k, p
 
 retrofuturism style, retrofuturism style, an astronaut standing on a karst mountain overlooking a very vast landscape, water lakes, rivers, on an extrasolar planet complete with lush but very alien vegetation, night view, illustration, cartoon, soothing tones, calm colors, (dark shot:1.17), epic realistic, faded, ((neutral colors)), art, (hdr:1.5), (muted colors:1.2), hyperdetailed, (artstation:1.5), cinematic, warm lights, dramatic light, (intricate details:1.1), complex background, (rutkowski:0.8), (teal and orange:0.4)
 
+dark night (photo from bottom:1.05) of one black new dodge challenger hellcat with white rims and riding at high speed on dark highway with little bushes around and modern city with skyscrapes, star sky, (high speed motion blur:1.05) + styles from xpuct boosty channel
+
