@@ -725,3 +725,4 @@ a cute kitten made out of metal, cyborg, cyberpunk style, ((intricate details)),
 
 oldman in chair, complex stuff around, intricate in the background, art, close up, painting, detailed, cartoon, cinematic shot, fantasy, low saturation, vignette, [hdr]
 
+style-empire, photorealistic photo of a handsome male wizard, black wizard robe with a golden star symbol, short black hair neatly trimmed, fully clothed, perfect face, handsome, (perfect composition:1.4), deviantart hd, artstation hd, concept art, detailed face and body, award-winning photography, margins, detailed face, detailed hands, ,backlight, 12k ultrarealistic, ray tracing, intense gaze, looking at the viewer, cinematic lighting, art by grzegorz rutkowski, magic particles, high fantasy background, action pose
