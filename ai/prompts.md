@@ -722,3 +722,6 @@ dark night (photo from bottom:1.05) of one black new dodge challenger hellcat wi
 close up photo of man warrior with (glowing blue sword:1.2) (in hand:1.2), struggling to remain relevant in age-old battles, with tears in his eyes, screaming, (fur:1.2), (hairy man:1.2), realistic action photo, (((hdr))), hyperdetailed, cinematic, cool lights, intricate details, muscle, perspective view, uhd, 64k, unreal
 
 a cute kitten made out of metal, cyborg, cyberpunk style, ((intricate details)), hdr, ((intricate details, hyperdetailed)), cinematic shot, vignette
+
+oldman in chair, complex stuff around, intricate in the background, art, close up, painting, detailed, cartoon, cinematic shot, fantasy, low saturation, vignette, [hdr]
+
