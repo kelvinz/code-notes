@@ -732,3 +732,6 @@ cyborgdiffusion, style-psycho, beautiful, masterpiece, best quality, highest qua
 (cybernetics by emb-rrf2:1.15),(highly detailed:1.2),(best quality:1.2),(8k:1.2),sharp focus,(subsurface scattering:1.1),award-winning photograph,profile (cyborg:1.2), neon glow,face centered,(standing in a futuristic spaceport:1.3) (very detailed background:1.2),(sci-fi cyberpunk:1.2), knollingcase,(dreamlikeart:1.2), dramatic lighting, by jeremy lipking antonio j. manzanedo greg rutkowski alphonse mucha wlop
 
 masterpiece, best quality, 3\4 body shot, {{fantasy}}, drawing of a man wearing black coat, masculine, handsome, mucular, {long black hair}, {{blue eyes}}, pale skin, old castle on the background, eye level shot, extremely detailed, intricate details, digital art, painting, art by luis royo
+
+masterpiece, best quality, [detailed], [intricate], digital painting, an alien planet fern forest river landscape, fantasy, sci-fi, [highres], [absurdres], [sharp focus], bokeh, realistic shadows, lithograph by john william waterhouse and kyoto animation and yoshitaka amano and frank frazetta
+
