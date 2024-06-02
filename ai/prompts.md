@@ -735,3 +735,5 @@ masterpiece, best quality, 3\4 body shot, {{fantasy}}, drawing of a man wearing 
 
 masterpiece, best quality, [detailed], [intricate], digital painting, an alien planet fern forest river landscape, fantasy, sci-fi, [highres], [absurdres], [sharp focus], bokeh, realistic shadows, lithograph by john william waterhouse and kyoto animation and yoshitaka amano and frank frazetta
 
+beautiful portrait of cute jackalope in the middle of magical forrest at night, magic lights, sparkles, felt, felted, fuzzy, handmade, handcrafted, plushie, doll, diorama, scene, close up, tilt shift, award winning photography, intricate details, insanely detailed, cinematic lighting, sharp focus, 85mm lens, unreal engine, octane render
+
