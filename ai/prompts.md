@@ -737,3 +737,5 @@ masterpiece, best quality, [detailed], [intricate], digital painting, an alien p
 
 beautiful portrait of cute jackalope in the middle of magical forrest at night, magic lights, sparkles, felt, felted, fuzzy, handmade, handcrafted, plushie, doll, diorama, scene, close up, tilt shift, award winning photography, intricate details, insanely detailed, cinematic lighting, sharp focus, 85mm lens, unreal engine, octane render
 
+modelshoot style, (extremely detailed cg unity 8k wallpaper), teenage mutant turtle as a ((cowboy)), old west main street, realistic, masterpiece, highest quality, lens flare, unreal engine, digital painting, trending on artstation, trending on cgsociety, intricate, high detail, dramatic, realism, beautiful and detailed lighting
+
