@@ -739,3 +739,5 @@ beautiful portrait of cute jackalope in the middle of magical forrest at night, 
 
 modelshoot style, (extremely detailed cg unity 8k wallpaper), teenage mutant turtle as a ((cowboy)), old west main street, realistic, masterpiece, highest quality, lens flare, unreal engine, digital painting, trending on artstation, trending on cgsociety, intricate, high detail, dramatic, realism, beautiful and detailed lighting
 
+futuristic tank in jungle, ((close up)) detailed, muddy floor, rainy weather, digital painting, artstation, concept art, breathtaking, high details, extremely detailed, beautiful, establishing shot, hyperrealistic, unreal engine 5
+
