@@ -741,3 +741,4 @@ modelshoot style, (extremely detailed cg unity 8k wallpaper), teenage mutant tur
 
 futuristic tank in jungle, ((close up)) detailed, muddy floor, rainy weather, digital painting, artstation, concept art, breathtaking, high details, extremely detailed, beautiful, establishing shot, hyperrealistic, unreal engine 5
 
+masterpiece, best quality, high quality, extremely detailed cg unity 8k wallpaper, scenery, outdoors, sky, cloud, day, no humans, mountain, landscape, water, tree, blue sky, waterfall, cliff, nature, lake, river, cloudy sky,award winning photography, bokeh, depth of field, hdr, bloom, chromatic aberration ,photorealistic,extremely detailed, trending on artstation, trending on cgsociety, intricate, high detail, dramatic, art by midjourney
