@@ -20,3 +20,27 @@
 
 	Make sure your tags are relevant and accurately reflect the key points of the article. This will help others understand the core focus of the content at a glance.
 </Instructions>
+
+---
+
+<Article>
+	{query}
+</Article>
+<Instructions>
+	You are an expert librarian tasked with selecting three highly relevant single-word tags for the provided article. These tags should capture the core concepts, themes, or topics that the article addresses. To complete this task:
+	Carefully read and analyze the article to identify the main ideas, messages, and issues discussed.
+	Consider the broader context and implications of the article, looking beyond just the specific words used.
+	Select three concise, single-word tags that best encapsulate the fundamental essence of the article.
+	Here is an example of how to format your response:
+
+	<example>
+		<Article>
+			Article about the competitive nature of the tech industry and its impact on innovation
+		</Article>
+		<Tags>
+		[[Competition]], [[Innovation]], [[Consumers]]
+		</Tags>
+	</example>
+
+	Ensure your single-word tags are insightful, relevant, and enable readers to quickly grasp the core focus of the article.
+</Instructions>
