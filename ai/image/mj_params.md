@@ -124,4 +124,7 @@ default → 100
 0 focus on face
 100 focus on face, hair, clothes
 
+--p
+generate images to your liked style
+
 ---
