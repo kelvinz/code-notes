@@ -752,3 +752,6 @@ masterpiece, best quality, high quality, extremely detailed cg unity 8k wallpape
 masterpiece, best quality, high quality, extremely detailed cg unity 8k wallpaper,landscape with texture ,a place with lots of leaves on the ground and autumn colors,award winning photography, bokeh, depth of field, hdr, bloom, chromatic aberration ,photorealistic,extremely detailed, trending on artstation, trending on cgsociety, intricate, high detail, dramatic, art by midjourney
 
 masterpiece, best quality, high quality, extremely detailed cg unity 8k wallpaper,landscape with chroma ,a space environment with intergalactic and cosmic details,lake vanda,beech,matte paintings,award winning photography, bokeh, depth of field, hdr, bloom, chromatic aberration ,photorealistic,extremely detailed, trending on artstation, trending on cgsociety, intricate, high detail, dramatic, art by midjourney
+
+masterpiece, best quality, high quality, extremely detailed cg unity 8k wallpaper,seascapes ,a mountainous location full of icy boulders and snow,beaufort sea,sycamore,3d sculpting,award winning photography, bokeh, depth of field, hdr, bloom, chromatic aberration ,photorealistic,extremely detailed, trending on artstation, trending on cgsociety, intricate, high detail, dramatic, art by midjourney
+
