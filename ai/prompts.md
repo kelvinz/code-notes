@@ -755,3 +755,4 @@ masterpiece, best quality, high quality, extremely detailed cg unity 8k wallpape
 
 masterpiece, best quality, high quality, extremely detailed cg unity 8k wallpaper,seascapes ,a mountainous location full of icy boulders and snow,beaufort sea,sycamore,3d sculpting,award winning photography, bokeh, depth of field, hdr, bloom, chromatic aberration ,photorealistic,extremely detailed, trending on artstation, trending on cgsociety, intricate, high detail, dramatic, art by midjourney
 
+masterpiece, best quality, high quality, extremely detailed cg unity 8k wallpaper, a cat going through a magical portal, violet portal,oil paiting, award winning photography, bokeh, depth of field, hdr, bloom, chromatic aberration ,photorealistic,extremely detailed, trending on artstation, trending on cgsociety, intricate, high detail, dramatic, art by midjourney
