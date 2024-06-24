@@ -760,3 +760,5 @@ masterpiece, best quality, high quality, extremely detailed cg unity 8k wallpape
 (beautiful woman:1.2), cowboy astronaut, masterpiece, best quality, serious face, walking-stick, 1920's speak-easy, bar, pub, subsurface scattering, beautiful lighting, bandolier, explorer, satchel, sneer, detailed face and eyes, detailed skin, (freckles:0.8), extremely smug, (art by frederic remington and bob byerley:1.1), (workshop:1.1), intricate detail, hyper detailed, ultra realistic, sharp focus, octane render, volumetric, ray tracing, artstation trending, cgsociety, sense of awe, mystical, 4k, high saturation clarity contrast, deep levels, sharp, retouched, color graded, soft lighting
 
 [close up of an old asian man's face:abstract background:0.5], extremely detailed face and eyes, explosive pose, expressionism, digital art, colorful background, absurdist, highly detailed, (brush strokes:1.1), (acrylic paint:1.1), pointilism, muted colors, by satoshi kon, by alphonse mucha, by raphael
+
+woman with tired eyes standing in a personal study, cute, short hair, couch, lots of stuffed toys and various clutter and mess in background, intricate, highly detailed, gothic dress
