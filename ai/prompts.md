@@ -762,3 +762,6 @@ masterpiece, best quality, high quality, extremely detailed cg unity 8k wallpape
 [close up of an old asian man's face:abstract background:0.5], extremely detailed face and eyes, explosive pose, expressionism, digital art, colorful background, absurdist, highly detailed, (brush strokes:1.1), (acrylic paint:1.1), pointilism, muted colors, by satoshi kon, by alphonse mucha, by raphael
 
 woman with tired eyes standing in a personal study, cute, short hair, couch, lots of stuffed toys and various clutter and mess in background, intricate, highly detailed, gothic dress
+
+photo of a beautiful zen garden in the moutains, golden ratio, cinematic lighting, intricate details, 8k detail post processing, hyperealistic, professional photograph, soft focus, f2.8, postprocessing
+
