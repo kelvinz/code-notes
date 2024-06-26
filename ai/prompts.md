@@ -765,3 +765,4 @@ woman with tired eyes standing in a personal study, cute, short hair, couch, lot
 
 photo of a beautiful zen garden in the moutains, golden ratio, cinematic lighting, intricate details, 8k detail post processing, hyperealistic, professional photograph, soft focus, f2.8, postprocessing
 
+(sci-fi lab with lots of testing equipment and beakers and test tubes in background:1.1), robotic woman with electrical wiring for hair, highres, by jeremy lipking, by antonio j. manzanedo, raytracing, reflections, glowing eyes, (beautiful lighting:1.1), extremely detailed and intricate techwear clothing, smug,
