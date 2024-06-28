@@ -766,3 +766,5 @@ woman with tired eyes standing in a personal study, cute, short hair, couch, lot
 photo of a beautiful zen garden in the moutains, golden ratio, cinematic lighting, intricate details, 8k detail post processing, hyperealistic, professional photograph, soft focus, f2.8, postprocessing
 
 (sci-fi lab with lots of testing equipment and beakers and test tubes in background:1.1), robotic woman with electrical wiring for hair, highres, by jeremy lipking, by antonio j. manzanedo, raytracing, reflections, glowing eyes, (beautiful lighting:1.1), extremely detailed and intricate techwear clothing, smug,
+
+(casual clothes:1.1), (cyberpunk facemask:1.2), ultra detailed face and eyes, (album art:1.1), slum cyberpunk, frown, (slum old garage:1.1), (artpunk:1.0), unique pose, (trigun:1.1), (masterpiece:1.1), best quality, run-down, ultra high detail, (by antoine blanchard and casey baugh:1.1), (by zdzislaw beksinski:0.8), purple and black, extremely intricate, extreme detail, raytracing, reflections, beautiful lighting, harsh lighting, watercolor, high saturation clarity contrast, deep levels, sharp, retouched, color graded, soft lighting
