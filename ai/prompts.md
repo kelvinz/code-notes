@@ -795,3 +795,5 @@ Steps: 50, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 2203045971, Size: 512x7
 
 Prompt: photo of 30 years old average looking women, pale skin, working class in new york city, upper body, blonde hair, detailed skin, 20 megapixel, canon eos r3, detailed skin, detailed, detailed face
 Negative: cartoon, 3d, (disfigured), (bad art), (deformed), (poorly drawn), (extra limbs), (close up), strange colours, blurry, boring, sketch, lackluster, face portrait, self-portrait, signature, letters, watermark, grayscale
+
+Prompt: medium portrait (close up:0.5) of a Beautiful scottish ginger woman, (messy bun), sitting on a wooden chair, wearing a fancy Victorian era dress, seductively posing, medium breasts, pale skin, dark red lips, dark eye shadow, ornate pendant, sitting in front of a large stone fireplace, candle burning, in a luxurious fantasy castle, side lighting, cinematic, Renaissance style, (Fujifilm XT3:1.1), (high detailed face:1.3), perfect hands
