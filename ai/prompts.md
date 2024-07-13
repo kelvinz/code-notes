@@ -800,3 +800,6 @@ Prompt: medium portrait (close up:0.5) of a Beautiful scottish ginger woman, (me
 Negative prompt: (deformed mouth), (deformed lips), (deformed eyes), (cross-eyed), (deformed iris), (deformed hands), lowers, 3d render, cartoon, long body, wide hips, narrow waist, disfigured, ugly, cross eyed, squinting, grain, Deformed, blurry, bad anatomy, poorly drawn face, mutation, mutated, extra limb, ugly, (poorly drawn hands), missing limb, floating limbs, disconnected limbs, malformed hands, blur, out of focus, long neck, disgusting, poorly drawn, mutilated, , mangled, old, surreal, ((text))
 
 RAW uhd photo of a american asian androgynous model, high fashion clothing, haut couture, focus on the perfect face, (wide shot:1.4), nikon z30, award winning fashion photography, sharp focus, by annie leibovitz
+Negative prompt: render, cgi, digital painting, (text:1.2),(logo:1.2), (watermark:1.2), b&w, (cartoon, 3d, bad art, poorly drawn, close up, blurry, disfigured, deformed, extra limbs:1.5)
+Steps: 20, Sampler: DPM++ SDE Karras, CFG scale: 3.5, Seed: 1786446017, Size: 576x768, Model hash: 21c6d51e3e
+Realistic Vision 1.4
