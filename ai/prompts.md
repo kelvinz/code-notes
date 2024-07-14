@@ -803,3 +803,9 @@ RAW uhd photo of a american asian androgynous model, high fashion clothing, haut
 Negative prompt: render, cgi, digital painting, (text:1.2),(logo:1.2), (watermark:1.2), b&w, (cartoon, 3d, bad art, poorly drawn, close up, blurry, disfigured, deformed, extra limbs:1.5)
 Steps: 20, Sampler: DPM++ SDE Karras, CFG scale: 3.5, Seed: 1786446017, Size: 576x768, Model hash: 21c6d51e3e
 Realistic Vision 1.4
+
+(8k, RAW photo, best quality, masterpiece), (realistic, photo-realistic), ultra-detailed, (high detailed) award winning
+(van gogh starry night:1.2) in a big glass round bottle, dark room, glowing
+realistic, intricate complex details, sharp clear focus
+Negative prompt: nfixer nrealfixer
+Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 7, Size: 768x768, Model hash: cae1bee30e, Model: illuminatiDiffusionV1_v11
