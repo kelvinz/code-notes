@@ -809,3 +809,7 @@ Realistic Vision 1.4
 realistic, intricate complex details, sharp clear focus
 Negative prompt: nfixer nrealfixer
 Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 7, Size: 768x768, Model hash: cae1bee30e, Model: illuminatiDiffusionV1_v11
+
+golden ratio, SpiderMan, (gorgeous face:1. 2), (gorgeous body:1. 2), highly detailed, sweaty naked upper body, INTRICATE, centered, digital painting, artstation, concept art, smooth, sharp focus, illustration, artgerm, donato giancola, joseph christian leyendecker, les edwards, ed repka, WLOP <lora:epiNoiseoffset_v2:0.4>
+Negative prompt: watermark, low quality, blurry, (ugly face:1.3), (wrong anatomy:1.1), (wrong proportion:1.1), (wrong hands:1.1), (wrong fingers:1.3), (ugly eyes:1.0), (wrong eyeballs:1.0)
+Steps: 40, Sampler: DDIM, CFG scale: 11, Size: 624x880, Model hash: 9659439796, Denoising strength: 0.2, Hires upscale: 2, Hires steps: 20, Hires upscaler: 4x-UltraSharp
