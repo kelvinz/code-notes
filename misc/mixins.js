@@ -25,7 +25,7 @@ export const chance = ( percent = .5 ) => {
 
 //	objects has chance property, they add up to 1 making 100%
 export const pickOne = ( arr ) => {
-	let	i = 0
+	let i = 0
 	let r = Math.random()
 	while ( r > 0 ) {
 		r = r - arr[ i ].chance
@@ -40,9 +40,9 @@ export const pickOne = ( arr ) => {
 //	generate alphanumeric code without o, 0, i, l, 1
 export const generateCode = ( num ) => {
 	return Math.random()
-				.toString( 36 )
-				.replace( /[o0il1,.]+/g, '' )
-				.slice( -num )
+		.toString( 36 )
+		.replace( /[o0il1,.]+/g, '' )
+		.slice( -num )
 }
 
 
@@ -51,7 +51,7 @@ export const generateCode = ( num ) => {
 export const splitToChunks = ( array, size ) => {
 	let results = []
 	for ( i = 0, j = array.length; i < j; i += size ) {
-		results.push( array.slice( i ,i + size ) )
+		results.push( array.slice( i, i + size ) )
 	}
 	return results
 }
@@ -112,7 +112,7 @@ export const throttle = ( fn, delay = 100, immediate = true ) => {
 		if ( timer ) return
 		if ( immediate && !timer ) myFn()
 		timer = setTimeout( () => {
-			if( !immediate ) myFn()
+			if ( !immediate ) myFn()
 			timer = null
 		}, delay )
 	}
@@ -124,7 +124,7 @@ export const throttle = ( fn, delay = 100, immediate = true ) => {
 export const once = ( fn ) => {
 	let result
 	return ( ...args ) => {
-		if( fn ) {
+		if ( fn ) {
 			result = fn.apply( this, args )
 			fn = null
 		}
@@ -164,7 +164,11 @@ Node.prototype.on = window.on = function ( name, fn ) {
 //	nodelist to act like list
 NodeList.prototype.__proto__ = Array.prototype
 NodeList.prototype.on = NodeList.prototype.addEventListener = function ( name, fn ) {
-  this.forEach( function ( elem, i ) {
-    elem.on( name, fn )
-  } )
+	this.forEach( function ( elem, i ) {
+		elem.on( name, fn )
+	} )
+}
+
+
+
 }
