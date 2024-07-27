@@ -821,3 +821,7 @@ neg: airbrush, airbrushed, photoshop, photoshopped, plastic doll, plastic skin, 
 
 RAW photo, a portrait photo of a (nationality) (man/woman), night, city street, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3
 
+Best quality, illustration, detailed, 4k, retro science fiction, sci-fi, 60s style, Young beautiful 18-year-old woman, elegant, medium shot, (retro futuristic clothes:1.1), space station interior, illuminator, (art by Tyler Edlin:1.3)
+Negative prompt: (lowres:1.1), (worst quality:1.2), (low quality:1.1), bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, normal quality, jpeg artifacts, signature, watermark, username, blurry, asian, helmet, (3D:1.1)
+Model: adobisRealFlexibleMix_v2 (9e8a2c7a5d)
+
