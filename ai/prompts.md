@@ -831,3 +831,5 @@ Negative prompt: EasyNegative, paintings, sketches, (worst quality:2), (low qual
 (realistic:1.3), photo of a house, blue sky, cloud, trees, RAW photo, DSLR, Fujifilm XT3, green grasses around house, spring time,
 Negative prompt: ugly, render, digital art,,drawing, badly drawn, anime, cartoon, cartoony, painting, paintings, sketch, sketches, cgi, 3d, 2d, fake
 Steps: 39, Sampler: DPM++ SDE Karras, CFG scale: 7, Seed: 1179660009, Size: 799x608, Model hash: c35782bad8, Model: realistic vision 1.3, ControlNet Enabled: True, ControlNet Module: hed, ControlNet Model: control_sd15_hed [fef5e48e], ControlNet Weight: 1, ControlNet Guidance Start: 0, ControlNet Guidance End: 1
+
+masterpiece, hi detailed, photorealistic, 4k, Cute adorable kind creature. chibi, mountains elemental. huge eyes, cinematic, (defocuse:0.8), rim light, atmosphere.
