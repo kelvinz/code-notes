@@ -833,3 +833,8 @@ Negative prompt: ugly, render, digital art,,drawing, badly drawn, anime, cartoon
 Steps: 39, Sampler: DPM++ SDE Karras, CFG scale: 7, Seed: 1179660009, Size: 799x608, Model hash: c35782bad8, Model: realistic vision 1.3, ControlNet Enabled: True, ControlNet Module: hed, ControlNet Model: control_sd15_hed [fef5e48e], ControlNet Weight: 1, ControlNet Guidance Start: 0, ControlNet Guidance End: 1
 
 masterpiece, hi detailed, photorealistic, 4k, Cute adorable kind creature. chibi, mountains elemental. huge eyes, cinematic, (defocuse:0.8), rim light, atmosphere.
+
+film still of (Sandra Bullock) as Frodo, Lord of the Rings, intricate details, hyperrealism, realistic, hyperdetailed, soft cinematic light, muted colors, film grain
+Negative prompt: text, watermark, deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, mutation, mutated, ugly, disgusting
+Steps: 35, Sampler: DPM++ 2S a Karras, CFG scale: 7, Size: 512x512, Model hash: 5b2afec3d9, ControlNet Enabled: True, ControlNet Module: normal_map, ControlNet Model: control_normal-fp16 [63f96f7c], ControlNet Weight: 1, ControlNet Guidance Start: 0, ControlNet Guidance End: 1
+
