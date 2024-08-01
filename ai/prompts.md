@@ -838,3 +838,11 @@ film still of (Sandra Bullock) as Frodo, Lord of the Rings, intricate details, h
 Negative prompt: text, watermark, deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, mutation, mutated, ugly, disgusting
 Steps: 35, Sampler: DPM++ 2S a Karras, CFG scale: 7, Size: 512x512, Model hash: 5b2afec3d9, ControlNet Enabled: True, ControlNet Module: normal_map, ControlNet Model: control_normal-fp16 [63f96f7c], ControlNet Weight: 1, ControlNet Guidance Start: 0, ControlNet Guidance End: 1
 
+cute cotton candy monster, flirty cute stubborn determined, style of krenz cushart and craig davison, highly detailed,
+(best quality), (masterpiece), (high resolution), [:(intricate details):0.2], outdoors, detailed_background,
+Negative prompt: 1girl, woman, paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, ((monochrome)), ((grayscale)), (blurry), strabismus,
+Steps: 20, Sampler: DPM++ 2M Karras, CFG scale: 7, Seed: 2297803763, Size: 2048x2048, Model hash: 52b7098730,
+Model: 0.6(aBest_fantasticmix_v10) + 0.4(kotosmix_v10 + 1(noiseOffsetForTrue_v10 - SD-1-5)),
+Steps: 20, Sampler: DPM++ 2M Karras,
+CFG scale: 7, Seed: 3336064304, Size: 512x512, Model hash: 52b7098730,
+Model: 0.6(aBest_fantasticmix_v10) + 0.4(kotosmix_v10 + 1(noiseOffsetForTrue_v10 - SD-1-5)), ENSD: 31337
