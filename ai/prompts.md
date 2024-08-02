@@ -846,3 +846,11 @@ Model: 0.6(aBest_fantasticmix_v10) + 0.4(kotosmix_v10 + 1(noiseOffsetForTrue_v10
 Steps: 20, Sampler: DPM++ 2M Karras,
 CFG scale: 7, Seed: 3336064304, Size: 512x512, Model hash: 52b7098730,
 Model: 0.6(aBest_fantasticmix_v10) + 0.4(kotosmix_v10 + 1(noiseOffsetForTrue_v10 - SD-1-5)), ENSD: 31337
+
+Prompt:
+RAW photo, *subject*, (high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3
+Example: RAW photo, a close up portrait photo of 26 y.o woman in wastelander clothes, long haircut, pale skin, slim body, background is city ruins, (high detailed skin:1.2), 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3
+Negative Prompt:
+(deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime:1.4), text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck
+OR
+(deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers:1.4), (deformed, distorted, disfigured:1.3), poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation
