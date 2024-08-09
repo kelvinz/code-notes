@@ -878,3 +878,10 @@ Steps: 15, Sampler: DPM++ 2M Karras, CFG scale: 6.5, Seed: 405520477, Size: 1536
 akirabike , <lora:akirabikev0.2:0.75> <lora:Neonpunkai-8:0.5> Neonpunkai, atompunkstylesd15
 Negative prompt: girl, woman, man, person, paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2), dot, mole, lowres, normal quality, monochrome, grayscale, lowres, text, error, cropped, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, username, watermark, signature, (mole:1.4),nsFW
 Steps: 66, Sampler: Euler, CFG scale: 7, Seed: 1086381057, Size: 768x512, Model hash: 02aecf0c7d, Model: revAnimated_v12, Denoising strength: 0.44, Clip skip: 2, Hires upscale: 2, Hires steps: 128, Hires upscaler: 4x-UltraSharp, Lora hashes: "akirabikev0.2: 6cc965621338, Neonpunkai-8: 6f0ac864c1c9", Discard penultimate sigma: True, Version: v1.3.0-72-gb957dcfe
+
+Positive prompt: <name of a woman>, photo by alex webb, medium [[close up]], woman, portrait, short hair, nightclub, [acne], 8k
+Negative prompt: 3d, painting, makeup, render, artstation, cartoon, monochrome, sketch
+Guidance: 5
+Steps: 8 to 15
+Realistic Vision v2
+DDIM
