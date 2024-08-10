@@ -171,4 +171,11 @@ NodeList.prototype.on = NodeList.prototype.addEventListener = function ( name, f
 
 
 
+// deep clone an object
+export const deepClone = ( obj ) => {
+	return JSON.parse( JSON.stringify( obj ) )
+}
+
+
+
 }
