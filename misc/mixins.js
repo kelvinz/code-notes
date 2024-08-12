@@ -195,4 +195,11 @@ export const capitalize = ( str ) => {
 
 
 
+// remove duplicates from an array
+export const removeDuplicates = ( arr ) => {
+	return [ ...new Set( arr ) ]
+}
+
+
+
 }
