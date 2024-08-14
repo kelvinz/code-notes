@@ -202,4 +202,10 @@ export const removeDuplicates = ( arr ) => {
 
 
 
+// check if a date is valid
+export const isValidDate = ( date ) => {
+	return date instanceof Date && !isNaN( date )
+}
+
+
 }
