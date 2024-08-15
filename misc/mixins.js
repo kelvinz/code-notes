@@ -208,4 +208,13 @@ export const isValidDate = ( date ) => {
 }
 
 
+
+// get the difference between two dates in days
+export const daysBetween = ( date1, date2 ) => {
+	const oneDay = 24 * 60 * 60 * 1000
+	return Math.round( Math.abs( ( date1 - date2 ) / oneDay ) )
+}
+
+
+
 }
