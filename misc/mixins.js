@@ -217,4 +217,11 @@ export const daysBetween = ( date1, date2 ) => {
 
 
 
+// truncate a string to a specified length
+export const truncate = ( str, length, ending = '...' ) => {
+	return str.length > length ? str.substring( 0, length - ending.length ) + ending : str
+}
+
+
+
 }
