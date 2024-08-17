@@ -224,4 +224,19 @@ export const truncate = ( str, length, ending = '...' ) => {
 
 
 
+// escape HTML special characters
+export const escapeHTML = ( str ) => {
+	return str.replace( /[&<>"']/g, ( match ) => {
+		return {
+			'&': '&amp;',
+			'<': '&lt;',
+			'>': '&gt;',
+			'"': '&quot;',
+			"'": '&#39;'
+		}[ match ]
+	} )
+}
+
+
+
 }
