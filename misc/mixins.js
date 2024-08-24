@@ -252,3 +252,13 @@ export const memoize = ( fn ) => {
 		return result
 	}
 }
+
+
+
+// average of an array of numbers
+export const getAverage = ( numbers ) => {
+	return numbers.reduce( ( sum, num ) => sum + num, 0 ) / numbers.length
+}
+
+
+
