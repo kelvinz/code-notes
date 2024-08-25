@@ -885,3 +885,5 @@ Guidance: 5
 Steps: 8 to 15
 Realistic Vision v2
 DDIM
+
+Watercolor style image on a textured white paper background. In the center, elegant hand-lettered text reads 'POSHMARK ALGORITHM REVEALED' in a deep purple color with a slight watercolor bleed effect. Surrounding the text, soft watercolor illustrations represent key aspects of the algorithm: a magnifying glass (for search), a clock face (for timing of shares), a golden trophy (for Poshmark Ambassador status), and a stylized feed icon (for feed visibility). Use a muted color palette with purple, teal, gold, and soft pink tones. The watercolor elements should have gentle color gradients and subtle bleeding effects, with some areas of the white paper showing through. Add a few splatter effects in the background for texture. In the bottom right corner, a small graph with a rising trend line painted in a loose, artistic style.
