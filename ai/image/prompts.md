@@ -891,3 +891,4 @@ Watercolor style image on a textured white paper background. In the center, eleg
 The FLUX model is capable of generating a variety of styles.
 Based on its capabilities, here are some styles that it might be able to generate well for thumbnails:
 Flat Design: Simple, minimalist designs with solid colors and basic shapes.
+Isometric: 3D-like illustrations with a specific angle, giving depth to icons and objects.
