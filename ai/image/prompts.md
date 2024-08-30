@@ -894,3 +894,4 @@ Flat Design: Simple, minimalist designs with solid colors and basic shapes.
 Isometric: 3D-like illustrations with a specific angle, giving depth to icons and objects.
 Watercolor: Soft, painterly effects with blended colors and subtle textures.
 Neon: Bright, glowing elements on dark backgrounds, reminiscent of neon signs.
+Retro/Vintage: Designs inspired by past decades, like 80s or 90s aesthetics.
