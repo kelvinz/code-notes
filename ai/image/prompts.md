@@ -896,3 +896,4 @@ Watercolor: Soft, painterly effects with blended colors and subtle textures.
 Neon: Bright, glowing elements on dark backgrounds, reminiscent of neon signs.
 Retro/Vintage: Designs inspired by past decades, like 80s or 90s aesthetics.
 Comic Book: Bold outlines, halftone patterns, and vibrant colors mimicking comic art.
+Geometric: Designs composed of basic shapes like circles, triangles, and squares.
