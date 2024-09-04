@@ -898,3 +898,4 @@ Retro/Vintage: Designs inspired by past decades, like 80s or 90s aesthetics.
 Comic Book: Bold outlines, halftone patterns, and vibrant colors mimicking comic art.
 Geometric: Designs composed of basic shapes like circles, triangles, and squares.
 Doodle/Sketch: Hand-drawn look with simple lines and shading.
+Gradient: Smooth color transitions creating depth and visual interest.
