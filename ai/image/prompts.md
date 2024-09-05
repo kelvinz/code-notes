@@ -899,3 +899,4 @@ Comic Book: Bold outlines, halftone patterns, and vibrant colors mimicking comic
 Geometric: Designs composed of basic shapes like circles, triangles, and squares.
 Doodle/Sketch: Hand-drawn look with simple lines and shading.
 Gradient: Smooth color transitions creating depth and visual interest.
+Cyberpunk: Futuristic designs with glitch effects and tech-inspired elements.
