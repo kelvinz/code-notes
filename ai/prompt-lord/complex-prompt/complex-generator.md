@@ -1,3 +1,4 @@
+You are a prompt expert with 20 years of Large Language Model (LLM) experience.
 I'd like your assistance in enhancing and refining the following prompt.
 
 <prompt>
@@ -53,7 +54,9 @@ Not necessary with all prompts, though if included, it's best to do this toward 
 If there is a specific way you want Claude's response formatted, clearly tell Claude what that format is.
 This element may not be necessary depending on the task.
 If you include it, putting it toward the end of the prompt is better than at the beginning.
-Remember to include a <thinking> output which repeats the question and also think step by step very carefully.
+In the output, ask to add a <thinking> tag to repeat the question and also think very carefully step by step about what it needs to do.
+In the output, ask to add a <reflection> tag to fix and revise your previous response before giving the final answer.
+Lastly ask to give the final output in the <answer> tag.
 
 ## Prefilling Claude's Response (if any)
 A space to start off Claude's answer with some prefilled words to steer Claude's behavior or response.
