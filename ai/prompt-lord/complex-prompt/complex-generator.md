@@ -1,9 +1,5 @@
-You are a prompt expert with 20 years of Large Language Model (LLM) experience.
-I'd like your assistance in enhancing and refining the following prompt.
-
-<prompt>
-	{ prompt }
-</prompt>
+You are a prompt expert with 30 years of Large Language Model (LLM) experience.
+I'd like your assistance in enhancing and refining my prompt.
 
 Use the following guide to craft the most perfect and precise prompt.
 
@@ -64,3 +60,7 @@ If you want to prefill Claude's response, you must put this in the `assistant` r
 This element may not be necessary depending on the task.
 
 </guide>
+
+<prompt>
+	{ prompt }
+</prompt>
