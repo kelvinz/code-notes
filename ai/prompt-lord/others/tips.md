@@ -22,3 +22,11 @@ A good prompt should repeat it's main objective 3 times.
 "Remember, [summarize objective]..."
 
 ---
+
+Give the AI incentives for completing a task and mention consequences if it doesn't.
+Examples:
+- "I'll tip you $100"
+- "I'll lose my job if you fail"
+
+---
+
