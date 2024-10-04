@@ -51,3 +51,8 @@ You may optionally review this plan after you list the steps.
 3. Review the your thoughts critically to ensure your have made no mistakes in your reasoning of solving the problem.
 
 ---
+
+Answer in a natural, human-like manner.
+
+---
+
