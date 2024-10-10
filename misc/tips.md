@@ -192,3 +192,16 @@ function isBig ( num ) {
 ```
 
 ---
+
+# Spread Operator for Array/Object Cloning
+
+```
+const spells = ['fireball', 'ice storm', 'teleport']
+const newSpells = [...spells, 'invisibility']
+
+const wizard = { name: 'Merlin', age: 142 }
+const wizardUpdate = { ...wizard, level: 20 }
+```
+
+---
+
