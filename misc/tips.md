@@ -205,3 +205,13 @@ const wizardUpdate = { ...wizard, level: 20 }
 
 ---
 
+# Destructuring Assignment
+
+```
+const wizard = { name: 'Merlin', age: 142, tool: 'wand' }
+const { name, age } = wizard
+
+console.log(name, age) // Merlin 142
+```
+
+---
