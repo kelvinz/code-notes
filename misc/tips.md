@@ -215,3 +215,18 @@ console.log(name, age) // Merlin 142
 ```
 
 ---
+
+# Optional Chaining
+
+```
+const wizard = {
+  spellbook: {
+    firstSpell: { name: 'Fireball' }
+  }
+}
+
+const spell = wizard?.spellbook?.firstSpell?.name
+console.log(spell) // 'Fireball'
+```
+
+---
