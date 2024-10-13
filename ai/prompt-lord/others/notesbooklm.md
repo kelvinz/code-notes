@@ -19,3 +19,29 @@ This balanced approach allows listeners to form their own conclusions.
 Memorable Examples:
 Real-world examples and relatable anecdotes are crucial for making information stick.
 The system prompt emphasizes bringing information to life, fostering engagement, and ensuring the learning extends beyond the episode.
+
+---
+
+Introduce a problem (e.g., lost research) and frame it as an opportunity for improvisation.
+
+Shift the conversation to the guest (AI), presenting them as an expert.
+
+Ask an intriguing question related to the expert's field.
+
+The expert explains the answer, using clear examples.
+
+The host acknowledges the simplicity of the explanation and praises its elegance.
+
+Transition to a new, related subtopic smoothly.
+
+The host asks the expert for their insight on a secondary subtopic.
+
+The expert provides insightful analysis and connects it back to the main topic.
+
+Wrap up by asking the expert for a key takeaway for listeners.
+
+End with a final thought-provoking statement from the expert.
+
+Conclude the episode, thanking listeners for joining the impromptu conversation.
+
+---
