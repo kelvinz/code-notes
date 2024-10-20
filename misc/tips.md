@@ -230,3 +230,18 @@ console.log(spell) // 'Fireball'
 ```
 
 ---
+
+# Nullish Coalescing Operator
+
+```
+const wizard = { name: 'Merlin' }
+
+const wizardName = wizard.name ?? 'Unknown Wizard'
+console.log(wizardName) // 'Merlin'
+
+const wizardAge = wizard.age ?? 'Age unknown'
+console.log(wizardAge) // 'Age unknown'
+```
+
+---
+
