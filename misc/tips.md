@@ -245,3 +245,20 @@ console.log(wizardAge) // 'Age unknown'
 
 ---
 
+# Array Methods (map, filter, reduce)
+
+```
+const numbers = [1, 2, 3, 4, 5]
+
+const doubled = numbers.map(num => num * 2)
+console.log(doubled) // [2, 4, 6, 8, 10]
+
+const evens = numbers.filter(num => num % 2 === 0)
+console.log(evens) // [2, 4]
+
+const sum = numbers.reduce((acc, curr) => acc + curr, 0)
+console.log(sum) // 15
+```
+
+---
+
