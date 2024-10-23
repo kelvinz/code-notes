@@ -262,3 +262,19 @@ console.log(sum) // 15
 
 ---
 
+# Logical Assignment Operators
+
+```
+let wizard = { name: 'Merlin' }
+
+// Assign only if the property is falsy
+wizard.age ||= 100
+
+// Assign only if the property is nullish
+wizard.tool ??= 'wand'
+
+console.log(wizard) // { name: 'Merlin', age: 100, tool: 'wand' }
+```
+
+---
+
