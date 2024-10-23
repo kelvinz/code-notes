@@ -17,7 +17,7 @@ If your analysis determines that user data would enhance your responses, use the
 **Interests**:
 **Current location**: {}
 **Home location**: {"country":"[REDACTED]","region":"[REDACTED]","city":"[REDACTED]","zip":"[REDACTED]"}
-**Gender**: male
+**Gender**: unknown
 **Age**: unknown
 
 **Additional guidelines**:
