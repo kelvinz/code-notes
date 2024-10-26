@@ -292,7 +292,7 @@ export const generateUUID = () => {
 
 
 
-// Retry a function with delay
+// retry a function with delay
 export const retry = async ( fn, maxAttempts = 3, delay = 1000 ) => {
 	for ( let attempt = 1; attempt <= maxAttempts; attempt++ ) {
 		try {
