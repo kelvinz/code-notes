@@ -278,3 +278,13 @@ console.log(wizard) // { name: 'Merlin', age: 100, tool: 'wand' }
 
 ---
 
+# Array.flat() for Nested Arrays
+
+```
+const nestedSpells = ['fireball', ['ice storm', 'lightning bolt'], [['teleport']]]
+
+const flatSpells = nestedSpells.flat(2)
+console.log(flatSpells) // ['fireball', 'ice storm', 'lightning bolt', 'teleport']
+```
+
+---
