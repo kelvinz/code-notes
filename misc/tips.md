@@ -288,3 +288,18 @@ console.log(flatSpells) // ['fireball', 'ice storm', 'lightning bolt', 'teleport
 ```
 
 ---
+
+# Object.entries() and Object.fromEntries()
+
+```
+const wizard = { name: 'Merlin', age: 142, tool: 'wand' }
+
+const entries = Object.entries(wizard)
+console.log(entries) // [['name', 'Merlin'], ['age', 142], ['tool', 'wand']]
+
+const newWizard = Object.fromEntries(entries)
+console.log(newWizard) // { name: 'Merlin', age: 142, tool: 'wand' }
+```
+
+---
+
