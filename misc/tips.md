@@ -303,3 +303,19 @@ console.log(newWizard) // { name: 'Merlin', age: 142, tool: 'wand' }
 
 ---
 
+# Dynamic Object Property Names
+
+```
+const propertyName = 'spell'
+const propertyValue = 'Fireball'
+
+const wizard = {
+  name: 'Merlin',
+  [propertyName]: propertyValue
+}
+
+console.log(wizard) // { name: 'Merlin', spell: 'Fireball' }
+```
+
+---
+
