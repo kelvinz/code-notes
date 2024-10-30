@@ -319,3 +319,16 @@ console.log(wizard) // { name: 'Merlin', spell: 'Fireball' }
 
 ---
 
+# Object.assign() for Merging Objects
+
+```
+const baseWizard = { profession: 'Wizard', canCastSpells: true }
+const merlin = { name: 'Merlin', age: 142 }
+
+const merlinWizard = Object.assign({}, baseWizard, merlin)
+
+console.log(merlinWizard)
+// { profession: 'Wizard', canCastSpells: true, name: 'Merlin', age: 142 }
+```
+
+---
