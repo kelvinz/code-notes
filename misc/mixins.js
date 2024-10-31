@@ -306,3 +306,12 @@ export const retry = async ( fn, maxAttempts = 3, delay = 1000 ) => {
 
 
 
+// flatten a nested array
+export const flattenArray = ( arr ) => {
+	return arr.reduce( ( flat, toFlatten ) => {
+		return flat.concat( Array.isArray( toFlatten ) ? flattenArray( toFlatten ) : toFlatten )
+	}, [] )
+}
+
+
+
