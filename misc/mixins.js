@@ -333,3 +333,21 @@ export const generateKeyPair = async () => {
 
 
 
+// encrypt a message with the public key
+export const encrypt = async ( message, publicKey ) => {
+	const encoder = new TextEncoder()
+	const data = encoder.encode( message )
+
+	const encryptedData = await window.crypto.subtle.encrypt(
+		{
+			name: "RSA-OAEP"
+		},
+		publicKey,
+		data
+	)
+
+	return encryptedData
+}
+
+
+
