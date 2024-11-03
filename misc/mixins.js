@@ -351,3 +351,17 @@ export const encrypt = async ( message, publicKey ) => {
 
 
 
+// decrypt a message with the private key
+export const decrypt = async ( encryptedData, privateKey ) => {
+	const decryptedData = await window.crypto.subtle.decrypt(
+		{
+			name: "RSA-OAEP"
+		},
+		privateKey,
+		encryptedData
+	)
+
+	const decoder = new TextDecoder()
+	return decoder.decode( decryptedData )
+}
+
