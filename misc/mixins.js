@@ -365,3 +365,23 @@ export const decrypt = async ( encryptedData, privateKey ) => {
 	return decoder.decode( decryptedData )
 }
 
+
+
+// generate a digital signature
+export const signMessage = async ( message, privateKey ) => {
+	const encoder = new TextEncoder()
+	const data = encoder.encode( message )
+
+	const signature = await window.crypto.subtle.sign(
+		{
+			name: "RSA-PSS",
+			saltLength: 32,
+		},
+		privateKey,
+		data
+	)
+
+	return new Uint8Array( signature )
+}
+
+
