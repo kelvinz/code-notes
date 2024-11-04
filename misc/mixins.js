@@ -385,3 +385,21 @@ export const signMessage = async ( message, privateKey ) => {
 }
 
 
+
+// verify a digital signature
+export const verifySignature = async ( message, signature, publicKey ) => {
+	const encoder = new TextEncoder()
+	const data = encoder.encode( message )
+
+	return await window.crypto.subtle.verify(
+		{
+			name: "RSA-PSS",
+			saltLength: 32,
+		},
+		publicKey,
+		signature,
+		data
+	)
+}
+
+
