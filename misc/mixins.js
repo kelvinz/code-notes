@@ -420,3 +420,8 @@ export const hashMessage = async ( message ) => {
 
 
 
+// pipe functions (left to right)
+export const pipe = ( ...fns ) => x => fns.reduce( ( acc, fn ) => fn( acc ), x )
+
+
+
