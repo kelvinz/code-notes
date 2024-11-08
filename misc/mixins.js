@@ -425,3 +425,7 @@ export const pipe = ( ...fns ) => x => fns.reduce( ( acc, fn ) => fn( acc ), x )
 
 
 
+// delay/sleep utility using promises
+export const delay = ms => new Promise( resolve => setTimeout( resolve, ms ) )
+
+
