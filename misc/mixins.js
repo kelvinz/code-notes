@@ -429,3 +429,13 @@ export const pipe = ( ...fns ) => x => fns.reduce( ( acc, fn ) => fn( acc ), x )
 export const delay = ms => new Promise( resolve => setTimeout( resolve, ms ) )
 
 
+
+// group array of objects by key
+export const groupBy = ( array, key ) => {
+	return array.reduce( ( result, item ) => {
+		( result[ item[ key ] ] = result[ item[ key ] ] || [] ).push( item )
+		return result
+	}, {} )
+}
+
+
