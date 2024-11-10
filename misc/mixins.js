@@ -439,3 +439,14 @@ export const groupBy = ( array, key ) => {
 }
 
 
+
+// format number as currency
+export const formatCurrency = ( number, currency = 'USD', locale = 'en-US' ) => {
+	return new Intl.NumberFormat( locale, {
+		style: 'currency',
+		currency: currency
+	} ).format( number )
+}
+
+
+
