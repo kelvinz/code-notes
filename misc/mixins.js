@@ -450,3 +450,10 @@ export const formatCurrency = ( number, currency = 'USD', locale = 'en-US' ) => 
 
 
 
+// validate email address
+export const isValidEmail = ( email ) => {
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+	return emailRegex.test( email )
+}
+
+
