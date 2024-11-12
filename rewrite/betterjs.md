@@ -284,3 +284,36 @@ const newIngredients = this.ingredients.map( el => {
 for items that are not on the dom yet on load but dynamically added
 you can add event listeners to a parent node that is constant
 match or closest from the parent to find the event there
+
+
+
+---
+
+# Async/Await with Error Handling:
+
+```js
+const asyncWrapper = async ( promise ) => {
+	try {
+		const data = await promise
+		return [ data, null ]
+	} catch ( error ) {
+		return [ null, error ]
+	}
+}
+
+// Usage
+const getData = async () => {
+	const [ data, error ] = await asyncWrapper( fetch( `api/data` ) )
+
+	if ( error ) {
+		console.log( `Error:`, error )
+		return
+	}
+
+	// Use data safely
+	console.log( data )
+}
+;```
+
+
+---
