@@ -457,3 +457,21 @@ export const isValidEmail = ( email ) => {
 }
 
 
+
+// get query parameters from URL
+export const getQueryParams = ( url = window.location.href ) => {
+	const params = {}
+	const queryString = url.split( '?' )[ 1 ]
+
+	if ( !queryString ) return params
+
+	queryString.split( '&' ).forEach( param => {
+		const [ key, value ] = param.split( '=' )
+		params[ decodeURIComponent( key ) ] = decodeURIComponent( value || '' )
+	} )
+
+	return params
+}
+
+
+
