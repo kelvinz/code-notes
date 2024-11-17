@@ -21,3 +21,9 @@ const phoneRegex = /^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
 "(123) 456-7890".match( phoneRegex )	// ✓
 "123.456.7890".match( phoneRegex )		// ✓
 
+/*========== URL Validation ==========*/
+// Matches URLs with or without protocol
+const urlRegex = /^(https?:\/\/)?([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?$/
+"https://example.com/path".match( urlRegex )	// ✓
+"invalid.com/path?".match( urlRegex )			// ✗
+
