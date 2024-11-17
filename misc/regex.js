@@ -15,3 +15,9 @@ const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/
 "TestPass123".match( passwordRegex )	// ✓
 "weakpass".match( passwordRegex )		// ✗
 
+/*========== Phone Numbers ==========*/
+// Matches: (123) 456-7890, 123-456-7890, 1234567890
+const phoneRegex = /^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/
+"(123) 456-7890".match( phoneRegex )	// ✓
+"123.456.7890".match( phoneRegex )		// ✓
+
