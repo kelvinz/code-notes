@@ -27,3 +27,9 @@ const urlRegex = /^(https?:\/\/)?([\w-]+\.)+[\w-]+(\/[\w-./?%&=]*)?$/
 "https://example.com/path".match( urlRegex )	// ✓
 "invalid.com/path?".match( urlRegex )			// ✗
 
+/*========== Date Formats ==========*/
+// Matches: YYYY-MM-DD, DD/MM/YYYY, MM/DD/YYYY
+const dateRegex = /^(\d{4}-\d{2}-\d{2}|\d{2}\/\d{2}\/\d{4})$/
+"2024-01-31".match( dateRegex ) // ✓
+"31/01/2024".match( dateRegex ) // ✓
+
