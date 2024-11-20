@@ -33,3 +33,9 @@ const dateRegex = /^(\d{4}-\d{2}-\d{2}|\d{2}\/\d{2}\/\d{4})$/
 "2024-01-31".match( dateRegex ) // ✓
 "31/01/2024".match( dateRegex ) // ✓
 
+/*========== Credit Card Numbers ==========*/
+// Matches major card formats (strips spaces/dashes)
+const ccRegex = /^(\d{4}[-\s]?){3}\d{4}$/
+"4111-1111-1111-1111".match( ccRegex ) // ✓
+"4111 1111 1111 1111".match( ccRegex ) // ✓
+
