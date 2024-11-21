@@ -39,3 +39,8 @@ const ccRegex = /^(\d{4}[-\s]?){3}\d{4}$/
 "4111-1111-1111-1111".match( ccRegex ) // ✓
 "4111 1111 1111 1111".match( ccRegex ) // ✓
 
+/*========== Common Text Patterns ==========*/
+// Extract hashtags
+const hashtagRegex = /#[a-zA-Z0-9_]+/g
+"#javascript #coding".match( hashtagRegex ) // ['#javascript', '#coding']
+
