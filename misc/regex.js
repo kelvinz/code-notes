@@ -44,3 +44,7 @@ const ccRegex = /^(\d{4}[-\s]?){3}\d{4}$/
 const hashtagRegex = /#[a-zA-Z0-9_]+/g
 "#javascript #coding".match( hashtagRegex ) // ['#javascript', '#coding']
 
+// Extract mentions
+const mentionRegex = /@[a-zA-Z0-9_]+/g
+"Hello @user1 and @user2".match( mentionRegex ) // ['@user1', '@user2']
+
