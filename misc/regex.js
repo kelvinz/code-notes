@@ -48,3 +48,7 @@ const hashtagRegex = /#[a-zA-Z0-9_]+/g
 const mentionRegex = /@[a-zA-Z0-9_]+/g
 "Hello @user1 and @user2".match( mentionRegex ) // ['@user1', '@user2']
 
+// Remove HTML tags
+const stripHtmlRegex = /<[^>]*>/g
+"<p>Hello</p>".replace( stripHtmlRegex, '' ) // "Hello"
+
