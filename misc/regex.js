@@ -52,3 +52,8 @@ const mentionRegex = /@[a-zA-Z0-9_]+/g
 const stripHtmlRegex = /<[^>]*>/g
 "<p>Hello</p>".replace( stripHtmlRegex, '' ) // "Hello"
 
+/*========== Data Extraction ==========*/
+// Extract key-value pairs
+const kvRegex = /(\w+)\s*[:=]\s*([^,\n]+)/g
+"name: John, age: 30".match( kvRegex ) // ['name: John', 'age: 30']
+
