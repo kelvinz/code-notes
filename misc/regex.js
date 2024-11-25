@@ -57,3 +57,7 @@ const stripHtmlRegex = /<[^>]*>/g
 const kvRegex = /(\w+)\s*[:=]\s*([^,\n]+)/g
 "name: John, age: 30".match( kvRegex ) // ['name: John', 'age: 30']
 
+// Extract numbers with units
+const unitRegex = /(\d+\.?\d*)\s*(km|mi|kg|lb)/g
+"Distance: 12.5 km, Weight: 70 kg".match( unitRegex ) // ['12.5 km', '70 kg']
+
