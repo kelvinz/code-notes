@@ -61,3 +61,8 @@ const kvRegex = /(\w+)\s*[:=]\s*([^,\n]+)/g
 const unitRegex = /(\d+\.?\d*)\s*(km|mi|kg|lb)/g
 "Distance: 12.5 km, Weight: 70 kg".match( unitRegex ) // ['12.5 km', '70 kg']
 
+/*========== String Replacement ==========*/
+// Capitalize first letter of each word
+const capRegex = /\b[a-z]/g
+"hello world".replace( capRegex, c => c.toUpperCase() ) // "Hello World"
+
