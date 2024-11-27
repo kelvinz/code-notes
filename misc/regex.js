@@ -66,3 +66,6 @@ const unitRegex = /(\d+\.?\d*)\s*(km|mi|kg|lb)/g
 const capRegex = /\b[a-z]/g
 "hello world".replace( capRegex, c => c.toUpperCase() ) // "Hello World"
 
+// Convert snake_case to camelCase
+const snakeRegex = /_([a-z])/g
+"user_first_name".replace( snakeRegex, ( _, c ) => c.toUpperCase() ) // userFirstName
