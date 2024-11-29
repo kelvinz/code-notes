@@ -339,4 +339,12 @@ const validator = {
 
 const person = new Proxy( {}, validator )
 
+// Usage
+person.age = 30 // Works
+person.age = -1 // Throws RangeError
+person.age = `young` // Throws TypeError
+;```
+
+
+
 ---
