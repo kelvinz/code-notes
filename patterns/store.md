@@ -17,3 +17,12 @@ export const storeState = createGlobalState(
 
 ```
 
+```ts
+
+import { storeState } from '@/lib/store'
+
+const state = storeState()
+
+state.value.score = 1
+
+```
