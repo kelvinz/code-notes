@@ -289,9 +289,10 @@ match or closest from the parent to find the event there
 
 ---
 
-# Async/Await with Error Handling:
+# async/await with error handling:
 
 ```js
+
 const asyncWrapper = async ( promise ) => {
 	try {
 		const data = await promise
@@ -313,14 +314,16 @@ const getData = async () => {
 	// Use data safely
 	console.log( data )
 }
+
 ;```
 
 
 ---
 
-# Proxy for Validation:
+# proxy for validation:
 
 ```js
+
 const validator = {
 	set( obj, prop, value ) {
 		if ( prop === `age` ) {
@@ -343,6 +346,7 @@ const person = new Proxy( {}, validator )
 person.age = 30 // Works
 person.age = -1 // Throws RangeError
 person.age = `young` // Throws TypeError
+
 ;```
 
 
