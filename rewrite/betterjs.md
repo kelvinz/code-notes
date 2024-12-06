@@ -408,4 +408,17 @@ class EventEmitter {
 	}
 }
 
+// Usage
+const emitter = new EventEmitter()
+const greet = name => console.log( `Hello ${ name }` )
+emitter.on( 'greet', greet )
+emitter.emit( 'greet', 'World' ) // Hello World
+emitter.off( 'greet', greet )
+
+;```
+
+
+
+---
+
 ---
