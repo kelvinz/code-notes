@@ -421,4 +421,27 @@ emitter.off( 'greet', greet )
 
 ---
 
+# factory function
+
+```js
+
+const createUser = ( name, age ) => {
+return {
+	name,
+	age,
+	sayHello() {
+		console.log( `Hello, my name is ${ this.name } and I am ${ this.age } years old.` )
+	}
+}
+}
+
+// Usage
+const user1 = createUser( 'Alice', 30 )
+user1.sayHello() // Hello, my name is Alice and I am 30 years old.
+
+```
+
+
+
+---
 ---
