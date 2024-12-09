@@ -444,4 +444,21 @@ user1.sayHello() // Hello, my name is Alice and I am 30 years old.
 
 
 ---
+
+# function composition
+
+```js
+
+const compose = ( ...fns ) => ( x ) => fns.reduceRight( ( v, f ) => f( v ), x )
+
+// Usage
+const add = x => x + 1
+const multiply = x => x * 2
+const composedFunction = compose( add, multiply )
+console.log( composedFunction( 5 ) ) // 11
+
+```
+
+
+
 ---
