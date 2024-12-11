@@ -475,3 +475,20 @@ export const getQueryParams = ( url = window.location.href ) => {
 
 
 
+// debounced version of a function that runs on RAF
+export const rafDebounce = ( fn ) => {
+	let requestId = null
+
+	return ( ...args ) => {
+		if ( requestId ) {
+			cancelAnimationFrame( requestId )
+		}
+
+		requestId = requestAnimationFrame( () => {
+			fn.apply( this, args )
+		} )
+	}
+}
+
+
+
