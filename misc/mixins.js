@@ -492,3 +492,26 @@ export const rafDebounce = ( fn ) => {
 
 
 
+// get the time difference between two dates in human readable format
+export const getTimeDiff = ( startDate, endDate ) => {
+	const diff = Math.abs( endDate - startDate )
+	const units = {
+		year: 31536000000,
+		month: 2628000000,
+		day: 86400000,
+		hour: 3600000,
+		minute: 60000,
+		second: 1000
+	}
+
+	for ( const [ unit, ms ] of Object.entries( units ) ) {
+		if ( diff >= ms ) {
+			const value = Math.floor( diff / ms )
+			return `${ value } ${ unit }${ value !== 1 ? 's' : '' }`
+		}
+	}
+	return 'just now'
+}
+
+
+
