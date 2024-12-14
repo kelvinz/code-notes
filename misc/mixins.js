@@ -515,3 +515,12 @@ export const getTimeDiff = ( startDate, endDate ) => {
 
 
 
+// detect if device is touch-enabled
+export const isTouchDevice = () => {
+	return ( ( 'ontouchstart' in window ) ||
+		( navigator.maxTouchPoints > 0 ) ||
+		( navigator.msMaxTouchPoints > 0 ) )
+}
+
+
+
