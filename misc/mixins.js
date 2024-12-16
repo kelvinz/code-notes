@@ -538,3 +538,12 @@ export const getMedian = ( numbers ) => {
 
 
 
+// camelCase to kebab-case
+export const camelToKebab = ( str ) => {
+	return str.replace( /([a-z0-9])([A-Z])/g, '$1-$2' )
+		.replace( /([A-Z])([A-Z])(?=[a-z])/g, '$1-$2' )
+		.toLowerCase()
+}
+
+
+
