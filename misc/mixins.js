@@ -547,3 +547,12 @@ export const camelToKebab = ( str ) => {
 
 
 
+// kebab-case to camelCase
+export const kebabToCamel = ( str ) => {
+	return str.replace( /-([a-z0-9])/g, ( match, group ) =>
+		group.toUpperCase()
+	)
+}
+
+
+
