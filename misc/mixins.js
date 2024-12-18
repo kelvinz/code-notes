@@ -556,3 +556,13 @@ export const kebabToCamel = ( str ) => {
 
 
 
+// convert a string to snake_case
+export const toSnakeCase = ( str ) => {
+	return str.replace( /\W+/g, ' ' )
+		.split( / |\B(?=[A-Z])/ )
+		.map( word => word.toLowerCase() )
+		.join( '_' )
+}
+
+
+
