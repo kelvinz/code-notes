@@ -585,3 +585,10 @@ export const generateRandomString = ( length ) => {
 
 
 
+// check if an object is a plain object
+export const isPlainObject = ( obj ) => {
+	return Object.prototype.toString.call( obj ) === '[object Object]'
+}
+
+
+
