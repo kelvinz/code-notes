@@ -592,3 +592,12 @@ export const isPlainObject = ( obj ) => {
 
 
 
+// convert an array of objects to a CSV string
+export const arrayToCSV = ( arr, delimiter = ',' ) => {
+	const headers = Object.keys( arr[ 0 ] ).join( delimiter )
+	const rows = arr.map( obj => Object.values( obj ).join( delimiter ) ).join( '\n' )
+	return `${ headers }\n${ rows }`
+}
+
+
+
