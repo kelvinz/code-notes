@@ -601,3 +601,10 @@ export const arrayToCSV = ( arr, delimiter = ',' ) => {
 
 
 
+// get unique values from an array
+export const getUniqueValues = ( arr ) => {
+	return [ ...new Set( arr ) ]
+}
+
+
+
