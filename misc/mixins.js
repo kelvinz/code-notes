@@ -617,3 +617,10 @@ export const toOrdinal = ( num ) => {
 
 
 
+// get the last element of an array
+export const getLastElement = ( arr ) => {
+	return arr[ arr.length - 1 ]
+}
+
+
+
