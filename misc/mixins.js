@@ -624,3 +624,10 @@ export const getLastElement = ( arr ) => {
 
 
 
+// get the first n elements of an array
+export const getFirstNElements = ( arr, n ) => {
+	return arr.slice( 0, n )
+}
+
+
+
