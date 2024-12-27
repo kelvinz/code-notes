@@ -631,3 +631,10 @@ export const getFirstNElements = ( arr, n ) => {
 
 
 
+// remove falsy values from an array
+export const removeFalsyValues = ( arr ) => {
+	return arr.filter( Boolean )
+}
+
+
+
