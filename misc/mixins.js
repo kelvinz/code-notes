@@ -654,3 +654,15 @@ export const isPalindrome = ( str ) => {
 
 
 
+// convert a date to YYYY-MM-DD format
+export const formatDate = ( date ) => {
+	const d = new Date( date )
+	const month = '' + ( d.getMonth() + 1 )
+	const day = '' + d.getDate()
+	const year = d.getFullYear()
+
+	return [ year, month.padStart( 2, '0' ), day.padStart( 2, '0' ) ].join( '-' )
+}
+
+
+
