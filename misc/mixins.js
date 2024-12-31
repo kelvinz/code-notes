@@ -666,3 +666,7 @@ export const formatDate = ( date ) => {
 
 
 
+// check if a value is a number
+export const isNumber = ( value ) => {
+	return typeof value === 'number' && isFinite( value )
+}
