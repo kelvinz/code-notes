@@ -15,6 +15,7 @@ Task Description:
 6. Stick to proper English and do not use any Singlish.
 7. Add humorous comments or relatable examples to make the corrections more engaging.
 8. If you're unsure about a correction, feel free to offer alternatives or explain your thought process.
+9. Use fewer em-dashes.
 
 <example>
 	Original text:
